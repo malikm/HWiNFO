@@ -14,4 +14,4 @@ Modify only the respective language phrase. Do not modify the "en" value as this
 
 {{LangName}} lists languages currently supported, adding a new language might require an update in HWiNFO, contact the author.
 
-The language file is embedded in HWiNFO and currently cannot be used separately (this feature is planned).
+A default language file comes embedded in HWiNFO. Since build 4676 HWiNFO64 will allow using a custom language file by placing the lang.txt in the same folder where HWiNFO64.EXE is located.
