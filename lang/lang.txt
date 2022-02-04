@@ -119,7 +119,7 @@ he=לְבַטֵל
 {{}}
 en=Quit
 fr=Quitter
-de=Verlassen
+de=Beenden
 es=Salida
 pt=Desistir
 it=Esentato
@@ -335,7 +335,7 @@ he=זמן ריצה
 {{}}
 en=Expand window by adding a new table
 fr=Agrandir la fenêtre en ajoutant une nouvelle table
-de=Erweiternung von Fenster, indem eine neue Tabelle hinzufügt wird
+de=Fenster durch neue Tabelle erweitern
 es=Expandir la ventana agregando una nueva tabla
 pt=Expanda a janela adicionando uma nova tabela
 it=Espandi la finestra aggiungendo una nuova tabella
@@ -362,7 +362,7 @@ he=הרחב את החלון על ידי הוספת טבלה חדשה
 {{}}
 en=Shrink window by removing rightmost table
 fr=Réduire la fenêtre en supprimant la table la plus à droite
-de=Verkleinern von Fenster, indem die Tabelle ganz rechts entfernt wird
+de=Fenster durch entfernen der rechten Tabelle verkleinern
 es=Reducir la ventana quitando la tabla más a la derecha
 pt=Reduza a janela removendo a mesa mais à direita
 it=Riduci la finestra rimuovendo la tabella più a destra
@@ -605,7 +605,7 @@ he=KBytes
 {{Units}}
 en=MBytes
 fr=Mo
-de=MB
+de=MByte
 es=MBytes
 pt=MBytes
 it=MByte
@@ -35721,7 +35721,7 @@ he=אל תודיע על גרסאות בטא
 {{Settings}}
 en=Close
 fr=Fermer
-de=Nah dran
+de=Schließen
 es=Cerca
 pt=Fechar
 it=Vicino
