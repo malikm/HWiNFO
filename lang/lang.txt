@@ -1142,7 +1142,7 @@ el= υπολογιστές
 tr= bilgisayar
 he= מחשבים
 
-;could you please comment, maybe with other words, the meaning of "Maintenancy Expiry"? I couldn't understand and the translation to pt-br doesn't make sense
+; Expiration of the Maintenace Period defined in license
 {{}}
 en=Maintenance Expiry
 fr=Expiration de l'entretien
