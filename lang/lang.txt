@@ -1142,7 +1142,7 @@ el= υπολογιστές
 tr= bilgisayar
 he= מחשבים
 
-;could you please comment, maybe with other words, the meaning of "Maintenancy Expiry"? I couldn't understand and the translation to pt-br doesn't make sense
+; Expiration of the Maintenace Period defined in license
 {{}}
 en=Maintenance Expiry
 fr=Expiration de l'entretien
@@ -22866,10 +22866,11 @@ el=Μετονομάζω
 tr=Yeniden isimlendirmek
 he=שנה שם
 
+; Bold font type
 {{Settings}}
 en=Bold
 fr=Audacieux
-de=Fett
+de=Fettgedruckt
 es=Audaz
 pt-BR=Negrito
 it=Grassetto
@@ -22877,11 +22878,11 @@ nl=Stoutmoedig
 da=Fremhævet
 zh-CN=胆大
 zh-TW=膽大
-ja=はげ
+ja=太字
 ko=용감한
 vi=Dũng cảm
 ar=عريض
-ru=Смелый
+ru=Жирный
 cs=Tučně
 sk=Tučné
 hu=Bátor
@@ -22958,7 +22959,7 @@ nl=Decimale cijfers:
 da=Decimaltal:
 zh-CN=十进制数字：
 zh-TW=十進制數字：
-ja=10進数：
+ja=小数位：
 ko=10진수:
 vi=Chữ số thập phân:
 ar=أرقام عشرية:
