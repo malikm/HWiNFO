@@ -64534,7 +64534,7 @@ el=Επικύρωση θέσεων παραθύρων
 tr=Pencere Konumlarını Doğrula
 he=אימות עמדות חלון
 
-{{Sensors}}
+{{Settings}}
 en=When this option is enabled, HWiNFO will check if the last saved positions of its windows fall inside an active monitor area and if not, it will automatically move them to the default monitor. This can prevent displaying windows in invisible areas, but some users with multiple monitors might need to disable this option in case windows are not restored at their expected positions.
 fr=Lorsque cette option est activée, HWiNFO vérifiera si les dernières positions enregistrées de ses fenêtres se trouvent dans une zone de moniteur actif et si ce n'est pas le cas, il les déplacera automatiquement vers le moniteur par défaut. Cela peut empêcher l'affichage des fenêtres dans des zones invisibles, mais certains utilisateurs disposant de plusieurs moniteurs peuvent avoir besoin de désactiver cette option au cas où les fenêtres ne seraient pas restaurées à leurs positions attendues.
 de=Wenn diese Option aktiviert ist, prüft HWiINFO, ob die zuletzt gespeicherten Positionen seiner Fenster in einen aktiven Monitorbereich fallen, und wenn nicht, verschiebt es sie automatisch auf den Standardmonitor. Dies kann die Anzeige von Fenstern in unsichtbaren Bereichen verhindern, aber einige Benutzer mit mehreren Monitoren müssen diese Option möglicherweise deaktivieren, falls Fenster nicht an ihren erwarteten Positionen wiederhergestellt werden.
