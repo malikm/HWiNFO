@@ -1498,7 +1498,7 @@ he=שימוש בקובץ עמוד
 {{Sensors}}
 en=Memory Clock Ratio
 fr=Multiplicateur d'horloge de mémoire
-de=Speichertaktmultiplikator
+de=Speichertakt-Multiplikator
 es=Multiplicador de reloj de memoria
 pt-BR=Multiplicador do Clock da Memória
 it=Rapporto di clock della memoria
@@ -3688,7 +3688,7 @@ he=טמפרטורות ליבה
 {{SUBST}}
 en=Drive Temperature
 fr=Température du disque
-de=Festplattentemperatur
+de=Festplatten-Temperatur
 es=Temperatura del disco
 pt-BR=Temperatura do disco
 it=Temperatura del disco
@@ -3964,7 +3964,7 @@ de=Ströme
 es=Corrientes
 pt-BR=Correntes
 it=Correnti
-nl=Stromen
+nl=Ströme
 da=Strømme
 zh-CN=电流
 zh-TW=電流
@@ -7693,7 +7693,7 @@ he=+12V זרם כניסה
 {{Sensors}}
 en=+12V Bus Input Current
 fr=Courant d'entrée de bus +12 V
-de=+12V Bus-Eingangsstrom
+de=+12V Bus-Eingangs-Strom
 es=Corriente de entrada de bus de + 12V
 pt-BR=Corrente de entrada de barramento de +12V
 it=Corrente di ingresso bus +12V
@@ -13147,7 +13147,7 @@ he=טמפרטורת כונן הדיסק הנוכחית.
 {{Sensors}}
 en=Drive Airflow Temperature
 fr=Température du flux d'air du disque
-de=Scheibenluftstromtemperatur
+de=Laufwerks-Luftstrom-Temperatur
 es=Temperatura del flujo de aire del disco
 pt-BR=Temperatura do fluxo de ar do disco
 it=Temperatura del flusso d'aria del disco
@@ -13282,7 +13282,7 @@ he=חיי הדיסק שנותרו
 {{Sensors}}
 en=Drive remaining health estimated by its firmware.
 fr=Santé restante du disque estimée par son firmware.
-de=Die verbleibende Lebensdauer der Festplatte wird von der Firmware geschätzt.
+de=Verbleibende Lebensdauer der Festplatte von der Firmware geschätzt.
 es=Estado restante del disco estimado por su firmware.
 pt-BR=Integridade restante do disco estimada por seu firmware.
 it=Stato di salute rimanente del disco stimato dal firmware.
@@ -13309,7 +13309,7 @@ he=תקינות הדיסק שנותרה מוערכת לפי הקושחה שלו.
 {{Sensors}}
 en=Drive Failure
 fr=Défaillance du disque
-de=Festplattenfehler
+de=Festplatten-Fehler
 es=Fallo de disco
 pt-BR=Falha de disco
 it=Guasto del disco
@@ -13336,7 +13336,7 @@ he=כשל בדיסק
 {{Sensors}}
 en=Drive Warning
 fr=Avertissement de disque
-de=Festplattenwarnung
+de=Festplatten-Warnung
 es=Advertencia de disco
 pt-BR=Aviso de disco
 it=Avviso disco
@@ -13769,7 +13769,7 @@ he=חיישן זה מספק נתונים סטטיסטיים של דיסק שאו
 {{Sensors}}
 en=Read Activity
 fr=Activité de lecture
-de=Aktivität des Lesens
+de=Lese-Aktivität
 es=Actividad de lectura
 pt-BR=Atividade de leitura
 it=Attività di lettura
@@ -13796,7 +13796,7 @@ he=פעילות של קריאה
 {{Sensors}}
 en=Write Activity
 fr=Activité d'écriture
-de=Aktivität des Schreibens
+de=Schreib-Aktivität
 es=Actividad de escritura
 pt-BR=Atividade de Escrita
 it=Attività di scrittura
@@ -13823,7 +13823,7 @@ he=פעילות כתיבה
 {{Sensors}}
 en=Drive read activity percentage.
 fr=Pourcentage d'activité de lecture de disque.
-de=Prozentsatz der Festplattenleseaktivität.
+de=Prozentsatz der Festplatten-Leseaktivität.
 es=Porcentaje de actividad de lectura de disco.
 pt-BR=Porcentagem de atividade de leitura do disco.
 it=Percentuale di attività di lettura del disco.
@@ -13850,7 +13850,7 @@ he=אחוז פעילות קריאת הדיסק.
 {{Sensors}}
 en=Drive write activity percentage.
 fr=Pourcentage d'activité d'écriture sur le disque.
-de=Prozentsatz der Festplattenschreibaktivität.
+de=Prozentsatz der Festplatten-Schreibaktivität.
 es=Porcentaje de actividad de escritura en disco.
 pt-BR=Porcentagem de atividade de gravação de disco.
 it=Percentuale di attività di scrittura su disco.
@@ -13904,7 +13904,7 @@ he=אחוז פעילות סך הדיסק (קריאה + כתיבה).
 {{Sensors}}
 en=Total Activity
 fr=Activité totale
-de=Gesamtaktivität
+de=Gesamt-Aktivität
 es=Actividad total
 pt-BR=Atividade Total
 it=Attività totale
@@ -14039,7 +14039,7 @@ he=קצב הכתיבה הנוכחי של הדיסק
 {{Sensors}}
 en=Read Total
 fr=Lire le total
-de=Gesamt Lesen
+de=Summe gelesen
 es=Leer total
 pt-BR=Leia o total
 it=Leggi totale
@@ -14093,7 +14093,7 @@ he=סך הנתונים שנקראו מהדיסק מאז תחילת המערכת.
 {{Sensors}}
 en=Write Total
 fr=Écrivez le total
-de=Summe Geschreiben
+de=Summe geschrieben
 es=Escribe el total
 pt-BR=Gravar Total
 it=Scrivi totale
@@ -14120,7 +14120,7 @@ he=כתוב סך הכל
 {{Sensors}}
 en=Total data written to drive since system start.
 fr=Total des données écrites sur le disque depuis le démarrage du système.
-de=Gesamtzahl der seit dem Systemstart auf die Festplatte geschriebenen Daten.
+de=Summe der seit dem Systemstart auf die Festplatte geschriebenen Daten.
 es=Total de datos escritos en el disco desde el inicio del sistema.
 pt-BR=Total de dados gravados no disco desde o início do sistema.
 it=Dati totali scritti su disco dall'avvio del sistema.
@@ -18845,7 +18845,7 @@ he=חיישן זה מספק נתונים סטטיסטיים בסיסיים על 
 {{Sensors}}
 en=Total DL
 fr=Total téléchargé
-de=Gesamtzahl heruntergeladen
+de=Summe Download
 es=Total descargado
 pt-BR=Total baixado
 it=Totale scaricato
@@ -18872,7 +18872,7 @@ he=סה"כ הורדות
 {{Sensors}}
 en=Total UP
 fr=Total téléchargé
-de=Gesamt hochgeladen
+de=Summe Upload
 es=Total subido
 pt-BR=Total Carregado
 it=Totale caricato
@@ -18953,7 +18953,7 @@ he=כמות הנתונים הכוללת ששודרו (הועלתה) מאז הפ�
 {{Sensors}}
 en=Current DL rate
 fr=Taux de téléchargement actuel
-de=Aktuelle Downloadrate
+de=Aktuelle Download-Rate
 es=Tasa de descarga actual
 pt-BR=Taxa de download atual
 it=Tasso di download attuale
@@ -25111,7 +25111,7 @@ he=טמפרטורת המעבד.\nזו יכולה להיות הטמפרטורה �
 {{Sensors}}
 en=CPU (case) temperature read inside the CPU socket.
 fr=Température du processeur (boîtier) lue à l'intérieur du socket du processeur.
-de=CPU-(Gehäuse-)Temperatur im CPU-Sockel gelesen.
+de=CPU-(Gehäuse-)Temperatur im CPU-Sockel gemessen.
 es=Temperatura de la CPU (carcasa) leída dentro del zócalo de la CPU.
 pt-BR=Temperatura da CPU (caixa) lida dentro do soquete da CPU.
 it=Temperatura della CPU (case) letta all'interno del socket della CPU.
@@ -36102,7 +36102,7 @@ he=תפוגת תחזוקה
 {{Sensors}}
 en=Total Errors
 fr=Total des erreurs
-de=Gesamtfehler
+de=Summe Fehler
 es=Errores totales
 pt-BR=Total de erros
 it=Errori totali
@@ -37209,7 +37209,7 @@ he=מידע כללי
 {{Main}}
 en=Processor Name:
 fr=Nom du processeur:
-de=Prozessorname:
+de=Prozessor-Name:
 es=Nombre del procesador:
 pt-BR=Nome do processador:
 it=Nome del processore:
@@ -38046,7 +38046,7 @@ he=פלטפורמת מעבד:
 {{Main}}
 en=Processor Serial Number:
 fr=Numéro de série du processeur:
-de=Seriennummer des Prozessors:
+de=Prozessor-Seriennummer:
 es=Número de serie del procesador:
 pt-BR=Número de série do processador:
 it=Numero di serie del processore:
@@ -40504,7 +40504,7 @@ he=טווחי זיכרון
 {{Main}}
 en=Maximum Physical Address Size:
 fr=Taille maximale de l'adresse physique:
-de=Maximale Größe der physischen Adresse:
+de=Maximale physische Adressgröße:
 es=Tamaño máximo de dirección física:
 pt-BR=Tamanho máximo do endereço físico:
 it=Dimensione massima dell'indirizzo fisico:
@@ -40531,7 +40531,7 @@ he=גודל כתובת פיזית מקסימלית:
 {{Main}}
 en=Maximum Virtual Address Size:
 fr=Taille maximale de l'adresse virtuelle:
-de=Maximale Größe der virtuellen Adresse:
+de=Maximale virtuelle Adressgröße:
 es=Tamaño máximo de dirección virtual:
 pt-BR=Tamanho máximo do endereço virtual:
 it=Dimensione massima dell'indirizzo virtuale:
@@ -41314,7 +41314,7 @@ he=ספירת יחידות מעבד
 {{Main}}
 en=Number Of Processor Packages (Physical):
 fr=Nombre de packages de processeurs (physiques):
-de=Anzahl der Prozessorpakete (physisch):
+de=Anzahl der Prozessoren (physisch):
 es=Número de paquetes de procesador (físicos):
 pt-BR=Número de pacotes do processador (físico):
 it=Numero di pacchetti processore (fisico):
@@ -42692,7 +42692,7 @@ he=מידע על מנהל ההתקן
 {{Main}}
 en=Driver Manufacturer:
 fr=Fabricant du pilote:
-de=Treiber Hersteller:
+de=Treiber-Hersteller:
 es=Fabricante del controlador:
 pt-BR=Fabricante do driver:
 it=Produttore del driver:
@@ -42719,7 +42719,7 @@ he=יצרן דרייברים:
 {{Main}}
 en=Driver Description:
 fr=Description du pilote:
-de=Treiberbeschreibung:
+de=Treiber-Beschreibung:
 es=Descripción del controlador:
 pt-BR=Descrição do driver:
 it=Descrizione del conducente:
@@ -42746,7 +42746,7 @@ he=תיאור מנהל ההתקן:
 {{Main}}
 en=Driver Provider:
 fr=Fournisseur de pilotes:
-de=Treiberanbieter:
+de=Treiber-Anbieter:
 es=Proveedor de controladores:
 pt-BR=Fornecedor de driver:
 it=Fornitore di driver:
@@ -42773,7 +42773,7 @@ he=ספק מנהל התקן:
 {{Main}}
 en=Driver Version:
 fr=Version du pilote:
-de=Treiberversion:
+de=Treiber-Version:
 es=Versión del controlador:
 pt-BR=Versão do driver:
 it=Versione del driver:
@@ -42800,7 +42800,7 @@ he=גרסת דרייבר:
 {{Main}}
 en=Driver Date:
 fr=Date du pilote de périphérique:
-de=Datum des Gerätetreibers:
+de=Treiber-Datum:
 es=Fecha del controlador del dispositivo:
 pt-BR=Data do driver do dispositivo:
 it=Data del driver del dispositivo:
@@ -44961,7 +44961,7 @@ he=קצב פקודה (CR):
 {{Main}}
 en=Central Processor(s)
 fr=Processeur(s) Central(s)
-de=Zentralprozessor(en)
+de=Hauptprozessor(en)
 es=Procesador(es) Central
 pt-BR=Processador(es) Central
 it=Processore/i Centrale/i
@@ -46096,7 +46096,7 @@ he=רֶשֶׁת
 {{Main}}
 en=Serial Ports
 fr=Ports série
-de=Serielle Ports
+de=Serielle Schnittstellen
 es=Puertos seriales
 pt-BR=Portas Seriais
 it=Porte seriali
@@ -47527,7 +47527,7 @@ he=מספר סידורי:
 {{Main}}
 en=Processor Manufacturer:
 fr=Fabricant du processeur:
-de=Prozessorhersteller:
+de=Prozessor-Hersteller:
 es=Fabricante del procesador:
 pt-BR=Fabricante do processador:
 it=Produttore del processore:
@@ -47824,7 +47824,7 @@ he=מעבד לא מאוכלס
 {{Main}}
 en=Processor Type:
 fr=Type de processeur:
-de=Prozessortyp:
+de=Prozessor-Typ:
 es=Tipo de procesador:
 pt-BR=Tipo de processador:
 it=Tipo di processore:
@@ -47851,7 +47851,7 @@ he=סוג מעבד:
 {{Main}}
 en=Central Processor
 fr=Processeur central
-de=Zentralprozessor
+de=Hauptprozessor
 es=Procesador central
 pt-BR=Processador Central
 it=Processore centrale
@@ -47959,7 +47959,7 @@ he=מעבד וידאו
 {{Main}}
 en=Processor Voltage:
 fr=Tension du processeur:
-de=Prozessorspannung:
+de=Prozessor-Spannung:
 es=Voltaje del procesador:
 pt-BR=Tensão do processador:
 it=Tensione del processore:
@@ -47986,7 +47986,7 @@ he=מתח מעבד:
 {{Main}}
 en=Processor Status:
 fr=État du processeur:
-de=Prozessorstatus:
+de=Prozessor-Status:
 es=Estado del procesador:
 pt-BR=Status do processador:
 it=Stato del processore:
@@ -48040,7 +48040,7 @@ he=שדרוג מעבד:
 {{Main}}
 en=Socket Designation:
 fr=Désignation de la prise 
-de=Steckdosenbezeichnung:
+de=Sockel-Bezeichnung:
 es=Designación de enchufe:
 pt-BR=Designação de soquete:
 it=Designazione presa:
@@ -52441,7 +52441,7 @@ he=מכשיר גיבוי זיכרון נדיף נכשל:
 {{Main}}
 en=Drive Temperature:
 fr=Température du disque:
-de=Festplattentemperatur:
+de=Festplatten-Temperatur:
 es=Temperatura del disco:
 pt-BR=Temperatura do disco:
 it=Temperatura del disco:
@@ -52765,7 +52765,7 @@ he=שגיאות מדיה:
 {{Main}}
 en=Total Host Writes
 fr=Total des écritures de l'hôte
-de=Host-Schreibvorgänge insgesamt
+de=Host-Schreibvorgänge gesamt
 es=Escrituras totales del anfitrión
 pt-BR=Total de gravações de host
 it=Scritture host totali
@@ -52792,7 +52792,7 @@ he=סך המארח כותב
 {{Main}}
 en=Total Host Reads
 fr=Nombre total de lectures d'hôtes
-de=Host-Lesevorgänge insgesamt
+de=Host-Lesevorgänge gesamt
 es=Lecturas totales del anfitrión
 pt-BR=Total de leituras de host
 it=Letture host totali
@@ -57463,7 +57463,7 @@ he=גובה טיסה:
 {{SMART}}
 en=Spin High Current:
 fr=Spin High Current:
-de=Spin-Hochstrom:
+de=Einschalt-Strom:
 es=Giro de alta corriente:
 pt-BR=Corrente alta de giro:
 it=Spin ad alta corrente:
@@ -57598,7 +57598,7 @@ he=הלם במהלך כתיבה:
 {{SMART}}
 en=Disk Shift:
 fr=Décalage de disque:
-de=Festplattenverschiebung:
+de=Festplatten-Spindel-Verschiebung:
 es=Cambio de disco:
 pt-BR=Mudança de disco:
 it=Spostamento del disco:
@@ -58543,7 +58543,7 @@ he=ספירת בלוקים גרועים במפעל:
 {{SMART}}
 en=Airflow Temperature:
 fr=Température du flux d'air:
-de=Luftstromtemperatur:
+de=Luftstrom-Temperatur:
 es=Temperatura del flujo de aire:
 pt-BR=Temperatura do fluxo de ar:
 it=Temperatura del flusso d'aria:
@@ -59326,7 +59326,7 @@ he=טֶמפֶּרָטוּרָה:
 {{SMART}}
 en=Power Loss Protection Failure:
 fr=Échec de la protection contre les coupures de courant:
-de=Ausfall des Stromausfallschutzes:
+de=Stromausfall-Schutz-Fehler:
 es=Falla de protección contra pérdida de energía:
 pt-BR=Falha de proteção contra perda de energia:
 it=Guasto della protezione da perdita di alimentazione:
@@ -59461,7 +59461,7 @@ he=ספירת מחיקה מקסימלית לכל בלוק:
 {{SMART}}
 en=Power Loss Protection Error:
 fr=Erreur de protection contre les coupures de courant:
-de=Stromausfallschutzfehler:
+de=Stromausfall-Schutz-Fehler:
 es=Error de protección contra pérdida de energía:
 pt-BR=Erro de proteção contra perda de energia:
 it=Errore di protezione da perdita di alimentazione:
@@ -61216,7 +61216,7 @@ he=ספירת התאוששות POR:
 {{SMART}}
 en=Power Loss Protection:
 fr=Protection contre les coupures de courant:
-de=Stromausfallschutz:
+de=Stromausfall-Schutz:
 es=Protección contra pérdida de energía:
 pt-BR=Proteção contra perda de energia:
 it=Protezione da perdita di potenza:
@@ -62809,7 +62809,7 @@ he=דגל הפעלה מצערת כתיבה:
 {{Main}}
 en=System Summary
 fr=Résumé du système
-de=Systemzusammenfassung
+de=System-Zusammenfassung
 es=Resumen del sistema
 pt-BR=Resumo do sistema
 it=Riepilogo del sistema
@@ -62944,7 +62944,7 @@ he=הסר את החיבור
 {{Settings}}
 en=Enumerate Network
 fr=Énumérer le réseau
-de=Netzwerk aufzählen
+de=Netzwerk enumerieren
 es=Enumerar red
 pt-BR=Enumerar rede
 it=Enumera rete
