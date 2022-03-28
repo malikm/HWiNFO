@@ -200,7 +200,7 @@ he=שמור הגדרות וסגור
 {{}}
 en=Logging Start
 fr=Début de la journalisation
-de=Protokollierung Starten
+de=Protokollierung starten
 es=Inicio de registro
 pt-BR=Iniciar Registro
 it=Inizio registrazione
@@ -227,7 +227,7 @@ he=התחלת רישום
 {{}}
 en=Logging Stop
 fr=Arrêt de la journalisation
-de=Protokollierungs Stoppen
+de=Protokollierung stoppen
 es=Parada de registro
 pt-BR=Parar Registro
 it=Arresto registrazione
@@ -335,7 +335,7 @@ he=זמן ריצה
 {{}}
 en=Expand window by adding a new table
 fr=Agrandir la fenêtre en ajoutant une nouvelle table
-de=Fenster durch neue Tabelle erweitern
+de=Fenster um weitere Tabelle erweitern
 es=Expandir la ventana agregando una nueva tabla
 pt-BR=Expandir janela adicionando uma nova tabela
 it=Espandi la finestra aggiungendo una nuova tabella
@@ -848,7 +848,7 @@ he=רישיון אישי
 {{}}
 en=Enterprise License (Unlimited seats)
 fr=Licence Entreprise (Places illimitées)
-de=Enterprise-Lizenz (Unbegrenzte Plätze)
+de=Enterprise-Lizenz (Unlimitierte Geräte-Anzahl)
 es=Licencia Empresarial (puestos ilimitados)
 pt-BR=Licença Empresarial (Licenças ilimitadas)
 it=Licenza Enterprise (posti illimitati)
@@ -875,7 +875,7 @@ he=רישיון ארגוני (ללא הגבלה של מושבים)
 {{}}
 en=Engineer License
 fr=Licence d'ingénieur
-de=Ingenieurlizenz
+de=Ingenieur-Lizenz
 es=Licencia de ingeniero
 pt-BR=Licença de Engenheiro
 it=Licenza di ingegnere
@@ -902,7 +902,7 @@ he=רישיון מהנדס
 {{}}
 en=Corporate License
 fr=Licence d'entreprise
-de=Unternehmenslizenz
+de=Unternehmens-Lizenz
 es=Licencia Corporativa
 pt-BR=Licença Corporativa
 it=Licenza Aziendale
@@ -1146,7 +1146,7 @@ he= מחשבים
 {{}}
 en=Maintenance Expiry
 fr=Expiration de l'entretien
-de=Wartungsablauf
+de=Wartungs-Ablauf
 es=Caducidad de mantenimiento
 pt-BR=Período de Manutenção Expirado
 it=Scadenza della manutenzione
@@ -1173,7 +1173,7 @@ he=תפוגת תחזוקה
 {{}}
 en=None (Lifetime)
 fr=Aucun (à vie)
-de=Keine (Lebensdauer)
+de=Keine (Lebenslang)
 es=Ninguno (de por vida)
 pt-BR=Nenhum (Vitalício)
 it=Nessuno (a vita)
@@ -1444,7 +1444,7 @@ he=זיכרון פיזי זמין
 {{Sensors}}
 en=Physical Memory Load
 fr=Charge de mémoire physique
-de=Physische Speicherauslastung
+de=Physische Speicher-Auslastung
 es=Carga de memoria física
 pt-BR=Carga da Memória Física
 it=Carico della memoria fisica
@@ -1471,7 +1471,7 @@ he=עומס זיכרון פיזי
 {{Sensors}}
 en=Page File Usage
 fr=Utilisation du fichier d'échange
-de=Verwendung von Auslagerungsdateien
+de=Verwendung von Auslagerungs-Dateien
 es=Uso del archivo de página
 pt-BR=Utilização do Arquivo de Paginação
 it=Utilizzo del file di paging
@@ -1525,7 +1525,7 @@ he=מכפיל שעון זיכרון
 {{Sensors}}
 en=Memory Clock
 fr=Horloge de mémoire
-de=Speicher Takt
+de=Speicher-Takt
 es=Reloj de la memoria
 pt-BR=Clock da Memória
 it=Memoria orologio
@@ -1579,7 +1579,7 @@ he=תזמוני זיכרון
 {{Sensors}}
 en=This sensor provides general and operating system related information.
 fr=Ce capteur fournit des informations générales et relatives au système d'exploitation.
-de=Dieser Sensor liefert allgemeine und Betriebssystembezogene Informationen.
+de=Dieser Sensor liefert allgemeine und Betriebssystem-bezogene Informationen.
 es=Este sensor proporciona información general y relacionada con el sistema operativo.
 pt-BR=Este sensor provê informações gerais e relacionadas ao sistema operacional.
 it=Questo sensore fornisce informazioni generali e relative al sistema operativo.
@@ -2012,7 +2012,7 @@ he=זיכרון ראשי נוכחי רענון זמן שחזור.
 {{Sensors}}
 en=Current main memory Command Rate.
 fr=Taux de commande actuel de la mémoire principale.
-de=Aktuelle Hauptspeicherbefehlsrate.
+de=Aktuelle Hauptspeicher-Befehlsrate.
 es=Tasa de comando actual de la memoria principal.
 pt-BR=Taxa de Comando atual da memória principal.
 it=Command Rate corrente della memoria principale.
@@ -2039,7 +2039,7 @@ he=קצב הפקודה הנוכחי של הזיכרון הראשי.
 {{Sensors}}
 en=Current Memory Controller Gear Mode (ratio of DRAM speed to Memory Controller Clock).
 fr=Mode d'engrenage du contrôleur de mémoire actuel (rapport de la vitesse de la DRAM à l'horloge du contrôleur de mémoire).
-de=Aktueller Speichercontroller-Getriebemodus (Verhältnis von DRAM-Geschwindigkeit zu Speichercontrollertakt).
+de=Aktueller Speicher-Controller Gear-Mode (Verhältnis von DRAM-Geschwindigkeit zu Speicher-Controller-Takt).
 es=Modo de engranaje del controlador de memoria actual (relación entre la velocidad de la DRAM y el reloj del controlador de memoria).
 pt-BR=Modo Atual de Engrenagem do Controlador de Memória (Proporção da velocidade DRAM para o Clock do Controlador de Memória).
 it=Modalità Gear Controller di memoria corrente (rapporto tra velocità DRAM e clock del controller di memoria).
@@ -2337,7 +2337,7 @@ he=סדר מחדש את ה-GPUs
 {{Settings}}
 en=Prefer AMD ADL
 fr=Préférez AMD ADL
-de=Bevorzugen von AMD ADL
+de=Bevorzuge AMD ADL
 es=Prefiero AMD ADL
 pt-BR=Preferir AMD ADL
 it=Preferisci AMD ADL
@@ -2499,7 +2499,7 @@ he=Snapshot CPU Polling
 {{Settings}}
 en=Flush Buffers on Start
 fr=Vider les tampons au démarrage
-de=Puffer beim Start spülen
+de=Puffer beim Start leeren
 es=Limpiar los búferes al inicio
 pt-BR=Descarregar Buffers ao Iniciar
 it=Scarica i buffer all'avvio
@@ -2634,7 +2634,7 @@ he=מושבת (קל)
 {{Settings}}
 en=Keep Theme
 fr=Conserver le thème
-de=Thema behalten
+de=Theme behalten
 es=Mantener tema
 pt-BR=Manter Tema
 it=Mantieni il tema
@@ -2769,7 +2769,7 @@ he=בדוק עדכונים
 {{Settings}}
 en=Remember preferences on this machine: window positions, size and sensor settings.
 fr=Mémorisez les préférences sur cette machine : positions des fenêtres, taille et paramètres du capteur.
-de=Merken die Einstellungen dieses Geräts: Fensterpositionen, Größe und Sensoreinstellungen.
+de=Merken der Einstellungen auf diesem Gerät: Fensterpositionen, Größe und Sensoreinstellungen.
 es=Recuerde las preferencias de esta máquina: posiciones de la ventana, tamaño y configuración del sensor.
 pt-BR=Lembrar-se das preferências nesta máquina: posições de janela, configurações de tamanho e sensores.
 it=Ricorda le preferenze su questa macchina: posizioni delle finestre, dimensioni e impostazioni del sensore.
@@ -2796,7 +2796,7 @@ he=זכור העדפות במכונה זו: מיקומי חלונות, גודל 
 {{Settings}}
 en=Automatically open the System Summary screen when HWiNFO starts.
 fr=Ouvrir automatiquement l'écran Résumé du système au démarrage de HWiNFO.
-de=Beim Start von HWiNFO automatisch den Bildschirm „Systemzusammenfassung“ öffnen.
+de=Beim Start von HWiNFO automatisch das Fenster Systemzusammenfassung öffnen.
 es=Abre automáticamente la pantalla Resumen del sistema cuando se inicia HWiNFO.
 pt-BR=Abrir automaticamente a tela de Sumário do Sistema quando o HWiNFO for iniciado.
 it=Apri automaticamente la schermata Riepilogo sistema all'avvio di HWiNFO.
@@ -2823,7 +2823,7 @@ he=פתח אוטומטית את מסך סיכום המערכת כאשר HWiNFO �
 {{Settings}}
 en=Automatically open the Sensors screen when HWiNFO starts.
 fr=Ouvrir automatiquement l'écran Capteurs au démarrage de HWiNFO.
-de=Beim Start von HWiNFO automatisch den Bildschirm Sensoren öffnen.
+de=Beim Start von HWiNFO automatisch das Fenster Sensoren öffnen.
 es=Abre automáticamente la pantalla Sensores cuando se inicia HWiNFO.
 pt-BR=Abrir automaticamente a tela Sensores quando o HWiNFO for iniciado.
 it=Apri automaticamente la schermata Sensori all'avvio di HWiNFO.
@@ -2850,7 +2850,7 @@ he=פתח אוטומטית את מסך החיישנים כאשר HWiNFO מתחי
 {{Settings}}
 en=Automatically minimize the main window after start and do not display the welcome dialog.\nUseful in conjuction with automatically opening sensors screen.
 fr=Réduisez automatiquement la fenêtre principale après le démarrage et n'affichez pas la boîte de dialogue de bienvenue.\nUtile en conjonction avec l'ouverture automatique de l'écran des capteurs.
-de=Das Hauptfenster nach dem Start automatisch minimieren und den Willkommensdialog nicht anzeigen.\nNützlich in Verbindung mit dem automatisch öffnenden Sensorbildschirm.
+de=Das Hauptfenster nach dem Start automatisch minimieren und den Willkommensdialog nicht anzeigen.\nNützlich in Verbindung mit dem automatisch öffnenden Sensor-Fenster.
 es=Minimiza automáticamente la ventana principal después del inicio y no muestra el cuadro de diálogo de bienvenida.\nÚtil junto con la pantalla de sensores que se abren automáticamente.
 pt-BR=Minimizar a janela principal automáticamente após a inicialização e não exibir o diálogo de boas-vindas.\nÚtil em conjunto com a abertura automática da tela de sensores.
 it=Riduci a icona automaticamente la finestra principale dopo l'avvio e non visualizza la finestra di dialogo di benvenuto.\nUtile in combinazione con l'apertura automatica dello schermo dei sensori.
@@ -4342,7 +4342,7 @@ he=שעון
 {{SUBST}}
 en=Memory Controller
 fr=Contrôleur de mémoire
-de=Speichercontroller
+de=Speicher-Controller
 es=Controlador de Memoria
 pt-BR=Controlador de Memória
 it=Controller di Memoria
@@ -9151,7 +9151,7 @@ he=ניצול ממוצע של ה-GPU כפי שדווח באמצעות ממשק �
 {{Sensors}}
 en=GPU Memory Controller Utilization
 fr=Utilisation du contrôleur de mémoire GPU
-de=Auslastung des GPU-Speichercontrollers
+de=Auslastung des GPU-Speicher-Controllers
 es=Utilización del controlador de memoria de la GPU
 pt-BR=Utilização do controlador de memória GPU
 it=Utilizzo del controller di memoria GPU
@@ -9178,7 +9178,7 @@ he=שימוש בבקר זיכרון GPU
 {{Sensors}}
 en=Average utilization of the GPU Memory Controller
 fr=Utilisation moyenne du contrôleur de mémoire GPU
-de=Durchschnittliche Auslastung des GPU-Speichercontrollers
+de=Durchschnittliche Auslastung des GPU-Speicher-Controllers
 es=Utilización promedio del controlador de memoria GPU
 pt-BR=Utilização média do controlador de memória GPU
 it=Utilizzo medio del controller di memoria GPU
@@ -12850,7 +12850,7 @@ he=עומס ליבת GPU
 {{Sensors}}
 en=GPU Memory Controller Load
 fr=Charge du contrôleur de mémoire GPU
-de=Auslastung des GPU-Speichercontrollers
+de=Auslastung des GPU-Speicher-Controllers
 es=Carga del controlador de memoria de la GPU
 pt-BR=Carregamento do controlador de memória GPU
 it=Carico del controller di memoria GPU
@@ -15659,7 +15659,7 @@ he=היסט מתח מוחל על קו מתח מסוים.\nערך זה מסופק
 {{Sensors}}
 en=Integrated Memory Controller voltage.
 fr=Tension du contrôleur de mémoire intégré.
-de=Spannung des integrierten Speichercontrollers.
+de=Spannung des integrierten Speicher-Controllers.
 es=Voltaje del controlador de memoria integrado.
 pt-BR=Tensão do controlador de memória integrado.
 it=Tensione del controller di memoria integrato.
@@ -18116,7 +18116,7 @@ he=תדר יעד נוכחי של Infinity Fabric (FCLK).
 {{Sensors}}
 en=Memory Controller Clock (UCLK)
 fr=Horloge du contrôleur de mémoire (UCLK)
-de=Takt des Speichercontrollers (UCLK)
+de=Takt des Speicher-Controllers (UCLK)
 es=Reloj del controlador de memoria (UCLK)
 pt-BR=Relógio do controlador de memória (UCLK)
 it=Orologio del controller di memoria (UCLK)
@@ -18143,7 +18143,7 @@ he=שעון בקר זיכרון (UCLK)
 {{Sensors}}
 en=Current Memory Controller target frequency (UCLK).
 fr=Fréquence cible actuelle du contrôleur de mémoire (UCLK).
-de=Aktuelle Zielfrequenz des Speichercontrollers (UCLK).
+de=Aktuelle Zielfrequenz des Speicher-Controllers (UCLK).
 es=Frecuencia de destino actual del controlador de memoria (UCLK).
 pt-BR=Frequência de destino do controlador de memória atual (UCLK).
 it=Frequenza target del controller di memoria corrente (UCLK).
@@ -18683,7 +18683,7 @@ he=רוחב פס קריאת DRAM
 {{Sensors}}
 en=Current DDR Read Bandwidth measured by the Intergrated Memory Controller.
 fr=Bande passante de lecture DDR actuelle mesurée par le contrôleur de mémoire intégré.
-de=Aktuelle DDR-Lesebandbreite, gemessen vom integrierten Speichercontroller.
+de=Aktuelle DDR-Lesebandbreite, gemessen vom integrierten Speicher-Controller.
 es=Ancho de banda de lectura DDR actual medido por el controlador de memoria integrado.
 pt-BR=Largura de banda de leitura DDR atual medida pelo controlador de memória integrada.
 it=Larghezza di banda di lettura DDR corrente misurata dal controller di memoria integrato.
@@ -18737,7 +18737,7 @@ he=רוחב פס כתיבת DRAM
 {{Sensors}}
 en=Current DDR Write Bandwidth measured by the Intergrated Memory Controller.
 fr=Bande passante d'écriture DDR actuelle mesurée par le contrôleur de mémoire intégré.
-de=Aktuelle DDR-Schreibbandbreite, gemessen vom integrierten Speichercontroller.
+de=Aktuelle DDR-Schreibbandbreite, gemessen vom integrierten Speicher-Controller.
 es=Ancho de banda de escritura DDR actual medido por el controlador de memoria integrado.
 pt-BR=Largura de banda de gravação DDR atual medida pelo controlador de memória integrada.
 it=Larghezza di banda di scrittura DDR corrente misurata dal controller di memoria integrato.
@@ -27271,7 +27271,7 @@ he=שם קוד של GPU
 {{Main}}
 en=Video Chipset Codename:
 fr=Nom de code du chipset graphique:
-de=Codename des Grafikchipsatzes:
+de=Codename des Grafik-Chipsatzes:
 es=Nombre en clave del chipset de gráficos:
 pt-BR=Nome de código do chipset gráfico:
 it=Chipset grafico Nome in codice:
@@ -34698,7 +34698,7 @@ he=שגיאה: חיבור לאינטרנט נכשל.
 {{Settings}}
 en=ERROR: Failed to get version information
 fr=ERREUR : Échec de l'obtention des informations sur la version
-de=FEHLER: Versionsinformationen konnten nicht abgerufen werden
+de=FEHLER: Versions-Informationen konnten nicht abgerufen werden
 es=ERROR: no se pudo obtener la información de la versión
 pt-BR=ERROR: Falha ao obter informações sobre a versão
 it=ERRORE: impossibile ottenere le informazioni sulla versione
@@ -34725,7 +34725,7 @@ he=שגיאה: קבלת מידע על הגרסה נכשלה
 {{Settings}}
 en=Retrieving version information
 fr=Récupération des informations de version
-de=Abrufen von Versionsinformationen
+de=Abrufen von Versions-Informationen
 es=Recuperando información de la versión
 pt-BR=Recuperando informações de versão
 it=Recupero delle informazioni sulla versione
@@ -34779,7 +34779,7 @@ he=שגיאה: קבלת מידע על החבילה נכשלה
 {{Settings}}
 en=ERROR: Invalid version info
 fr=ERREUR : informations de version non valides
-de=FEHLER: Ungültige Versionsinfo
+de=FEHLER: Ungültige Versions-Info
 es=ERROR: información de versión no válida
 pt-BR=ERROR: informação de versão inválida
 it=ERRORE: informazioni sulla versione non valide
@@ -34806,7 +34806,7 @@ he=שגיאה: פרטי גרסה לא חוקיים
 {{Settings}}
 en=ERROR: Cannot read version info
 fr=ERREUR : Impossible de lire les informations sur la version
-de=FEHLER: Versionsinfo kann nicht gelesen werden
+de=FEHLER: Versions-Info kann nicht gelesen werden
 es=ERROR: no se puede leer la información de la versión
 pt-BR=ERROR: Não é possível ler as informações da versão
 it=ERRORE: impossibile leggere le informazioni sulla versione
@@ -34833,7 +34833,7 @@ he=שגיאה: לא ניתן לקרוא את פרטי הגרסה
 {{Settings}}
 en=ERROR: Cannot retrieve version link
 fr=ERREUR : impossible de récupérer le lien de version
-de=FEHLER: Versionslink kann nicht abgerufen werden
+de=FEHLER: Versions-Link kann nicht abgerufen werden
 es=ERROR: No se puede recuperar el enlace de la versión
 pt-BR=ERROR: Não é possível recuperar o link da versão
 it=ERRORE: impossibile recuperare il collegamento alla versione
@@ -34860,7 +34860,7 @@ he=שגיאה: לא ניתן לאחזר קישור לגרסה
 {{Settings}}
 en=ERROR: Invalid version link
 fr=ERREUR : lien de version non valide
-de=FEHLER: Ungültiger Versionslink
+de=FEHLER: Ungültiger Versions-Link
 es=ERROR: enlace de versión no válido
 pt-BR=ERROR: link de versão inválido
 it=ERRORE: collegamento alla versione non valida
@@ -34914,7 +34914,7 @@ he=שגיאה: שגיאה ביצירת תיקייה זמנית.
 {{Settings}}
 en=Retrieving update package..
 fr=Récupération du package de mise à jour..
-de=Update-Paket abrufen..
+de=Update-Paket abrufen ...
 es=Recuperando paquete de actualización ...
 pt-BR=Recuperando pacote de atualização ...
 it=Recupero pacchetto di aggiornamento...
@@ -34968,7 +34968,7 @@ he=שגיאה: קבלת החבילה נכשלה
 {{Settings}}
 en=ERROR: Failed to get package information
 fr=ERREUR : Échec de l'obtention des informations sur le package
-de=FEHLER: Paketinformationen konnten nicht abgerufen werden
+de=FEHLER: Paket-Informationen konnten nicht abgerufen werden
 es=ERROR: no se pudo obtener la información del paquete
 pt-BR=ERROR: Falha ao obter informações do pacote
 it=ERRORE: impossibile ottenere le informazioni sul pacchetto
@@ -35049,7 +35049,7 @@ he=שגיאה: אין מספיק זיכרון
 {{Settings}}
 en=ERROR: Error creating package file.
 fr=ERREUR : Erreur lors de la création du fichier de package.
-de=FEHLER: Fehler beim Erstellen der Paketdatei.
+de=FEHLER: Fehler beim Erstellen der Paket-Datei.
 es=ERROR: Error al crear el archivo de paquete.
 pt-BR=ERRO: Erro ao criar arquivo de pacote.
 it=ERRORE: errore durante la creazione del file del pacchetto.
@@ -35346,7 +35346,7 @@ he=יוצר קשר עם השרת...
 {{Settings}}
 en=Failed to retrive version information from Internet.\nPlease check your network connection.
 fr=Échec de la récupération des informations de version sur Internet.\nVeuillez vérifier votre connexion réseau.
-de=Versionsinformationen konnten nicht aus dem Internet abgerufen werden.\nBitte überprüfen Sie Ihre Netzwerkverbindung.
+de=Versions-Informationen konnten nicht aus dem Internet abgerufen werden.\nBitte überprüfen Sie Ihre Netzwerkverbindung.
 es=No se pudo recuperar la información de la versión de Internet.\nCompruebe su conexión de red.
 pt-BR=Falha ao recuperar informações de versão da Internet.\nVerifique sua conexão de rede.
 it=Impossibile recuperare le informazioni sulla versione da Internet.\nControlla la tua connessione di rete.
@@ -35589,7 +35589,7 @@ he=הגרסה שלך:
 {{Settings}}
 en=What's New?
 fr=Quoi de neuf?
-de=Was gibt's Neues?
+de=Was gibt es Neues?
 es=¿Qué hay de nuevo?
 pt-BR=O que há de novo?
 it=Cosa c'è di nuovo?
@@ -42097,7 +42097,7 @@ he=משאבי מערכת
 {{Main}}
 en=Interrupt Line:
 fr=Ligne d'interruption:
-de=Unterbrechungslinie:
+de=Interrupt-Leitung:
 es=Línea de interrupción:
 pt-BR=Linha de interrupção:
 it=Linea di interruzione:
@@ -42124,7 +42124,7 @@ he=קו פסיקה:
 {{Main}}
 en=Interrupt Pin:
 fr=Broche d'interruption:
-de=Unterbrechungsstift:
+de=Interrupt-Pin:
 es=Pin de interrupción:
 pt-BR=Pin de interrupção:
 it=Pin di interruzione:
@@ -42178,7 +42178,7 @@ he=כתובת בסיס I/O
 {{Main}}
 en=Memory Base Address
 fr=Adresse de la base mémoire
-de=Speicherbasisadresse
+de=Speicher-Basisadresse
 es=Dirección base de memoria
 pt-BR=Endereço de base de memória
 it=Indirizzo della base di memoria
@@ -44366,7 +44366,7 @@ he=תצורת ערוץ מומלצת:
 {{Main}}
 en=Memory Controller Voltage Level:
 fr=Niveau de tension du contrôleur de mémoire :
-de=Spannungspegel des Speichercontrollers:
+de=Spannungspegel des Speicher-Controllers:
 es=Nivel de voltaje del controlador de memoria:
 pt-BR=Nível de tensão do controlador de memória:
 it=Livello di tensione del controller di memoria:
@@ -46339,7 +46339,7 @@ he=ביצועים
 {{Main}}
 en=Graphics Processor Clock:
 fr=Fréquence du processeur graphique:
-de=Frequenz des Grafikprozessors:
+de=Frequenz des Grafik-Prozessors:
 es=Frecuencia del procesador de gráficos:
 pt-BR=Freqüência do processador gráfico:
 it=Frequenza del processore grafico:
@@ -46366,7 +46366,7 @@ he=תדירות מעבד גרפי:
 {{Main}}
 en=Graphics Processor Clock (2D):
 fr=Fréquence du processeur graphique (2D):
-de=Grafikprozessorfrequenz (2D):
+de=Grafik-Prozessor-Frequenz (2D):
 es=Frecuencia del procesador de gráficos (2D):
 pt-BR=Frequência do processador gráfico (2D):
 it=Frequenza del processore grafico (2D):
@@ -46393,7 +46393,7 @@ he=תדר מעבד גרפי (2D):
 {{Main}}
 en=Graphics Processor Clock (3D):
 fr=Fréquence du processeur graphique (3D):
-de=Grafikprozessorfrequenz (3D):
+de=Grafik-Prozessor-Frequenz (3D):
 es=Frecuencia del procesador de gráficos (3D):
 pt-BR=Frequência do processador gráfico (3D):
 it=Frequenza del processore grafico (3D):
@@ -46528,7 +46528,7 @@ he=תדירות יחידת וידאו:
 {{Main}}
 en=Graphics Memory Clock:
 fr=Fréquence de la mémoire graphique:
-de=Grafikspeicherfrequenz:
+de=Grafik-Speicher-Frequenz:
 es=Frecuencia de memoria gráfica:
 pt-BR=Frequência de memória gráfica:
 it=Frequenza della memoria grafica:
@@ -51928,7 +51928,7 @@ he=התקני USB
 {{Main}}
 en=Drive Controller:
 fr=Contrôleur de lecteur:
-de=Laufwerkcontroller:
+de=Laufwerks-Controller:
 es=Controlador de unidad:
 pt-BR=Controlador de unidade:
 it=Controller dell'unità:
@@ -63025,7 +63025,7 @@ he=שם המחשב
 {{Settings}}
 en=IP Address
 fr=Adresse IP
-de=IP Adresse
+de=IP-Adresse
 es=Dirección IP
 pt-BR=Endereço de IP
 it=Indirizzo IP
@@ -63970,7 +63970,7 @@ he=רֶשֶׁת
 {{Settings}}
 en=Sensor Settings
 fr=Paramètres des capteurs
-de=Sensoreinstellungen
+de=Sensor-Einstellungen
 es=Configuración de sensores
 pt-BR=Configurações de sensores
 it=Impostazioni dei sensori
@@ -64132,7 +64132,7 @@ he=בסדר
 {{Settings}}
 en=Driver Management
 fr=Gestion des pilotes
-de=Treiberverwaltung
+de=Treiber-Verwaltung
 es=Gestión de controladore
 pt-BR=Gerenciamento de Driver
 it=Gestione driver
@@ -64186,7 +64186,7 @@ he=שנה צבע
 {{Settings}}
 en=Expand Current Node
 fr=Développer le nœud actuel
-de=Erweitern des aktuellen Knoten
+de=Aktuellen Knoten aufklappen
 es=Expandir nodo actual
 pt-BR=Expandir Nó Atual
 it=Espandi il nodo corrente
@@ -64213,7 +64213,7 @@ he=הרחב את הצומת הנוכחי
 {{Settings}}
 en=Expand All
 fr=Développer tout
-de=Alle erweitern
+de=Alles aufklappen
 es=Expandir todo
 pt-BR=Expandir todos
 it=Espandi tutto
@@ -64240,7 +64240,7 @@ he=הרחב הכל
 {{Settings}}
 en=Collapse All
 fr=Réduire tout
-de=Alle reduzieren
+de=Alles zuklappen
 es=Desplegar todo
 pt-BR=Recolher todos
 it=Comprimi tutto
@@ -64267,7 +64267,7 @@ he=למוטט הכל
 {{Settings}}
 en=Show All
 fr=Afficher tout
-de=Zeigen alles
+de=Alles anzeigen
 es=Mostrar todo
 pt-BR=Mostre tudo
 it=Mostra tutto
@@ -64321,7 +64321,7 @@ he=חלון ראשי
 {{Settings}}
 en=Product Info
 fr=Information sur le produit
-de=Produktinformation
+de=Produkt-Information
 es=Información del producto
 pt-BR=Informação do produto
 it=Informazioni sul prodotto
@@ -64456,7 +64456,7 @@ he=העתק את התוצאה
 {{Main}}
 en=Current Computer
 fr=Ordinateur actuel
-de=Aktueller Rechner
+de=Aktueller Computer
 es=Computadora actual
 pt-BR=Computador atual
 it=Computer attuale
@@ -64510,7 +64510,7 @@ he=הגדרות ראשיות
 {{Settings}}
 en=Validate Window Positions
 fr=Valider les positions des fenêtres
-de=Fensterpositionen validieren
+de=Fenster-Positionen validieren
 es=Validar posiciones de ventana
 pt=Validar posições da janela
 it=Convalida le posizioni della finestra
@@ -64537,7 +64537,7 @@ he=אימות עמדות חלון
 {{Settings}}
 en=When this option is enabled, HWiNFO will check if the last saved positions of its windows fall inside an active monitor area and if not, it will automatically move them to the default monitor. This can prevent displaying windows in invisible areas, but some users with multiple monitors might need to disable this option in case windows are not restored at their expected positions.
 fr=Lorsque cette option est activée, HWiNFO vérifiera si les dernières positions enregistrées de ses fenêtres se trouvent dans une zone de moniteur actif et si ce n'est pas le cas, il les déplacera automatiquement vers le moniteur par défaut. Cela peut empêcher l'affichage des fenêtres dans des zones invisibles, mais certains utilisateurs disposant de plusieurs moniteurs peuvent avoir besoin de désactiver cette option au cas où les fenêtres ne seraient pas restaurées à leurs positions attendues.
-de=Wenn diese Option aktiviert ist, prüft HWiINFO, ob die zuletzt gespeicherten Positionen seiner Fenster in einen aktiven Monitorbereich fallen, und wenn nicht, verschiebt es sie automatisch auf den Standardmonitor. Dies kann die Anzeige von Fenstern in unsichtbaren Bereichen verhindern, aber einige Benutzer mit mehreren Monitoren müssen diese Option möglicherweise deaktivieren, falls Fenster nicht an ihren erwarteten Positionen wiederhergestellt werden.
+de=Wenn diese Option aktiviert ist prüft HWiINFO, ob die zuletzt gespeicherten Positionen seiner Fenster in einen aktiven Monitorbereich fallen. Falls nicht werden die Fenster auf den Standardmonitor verschoben. Dies kann die Anzeige von Fenstern in unsichtbaren Bereichen verhindern, aber einige Benutzer mit mehreren Monitoren müssen diese Option möglicherweise deaktivieren, falls Fenster nicht an ihren erwarteten Positionen wiederhergestellt werden.
 es=Cuando esta opción está habilitada, HWiNFO verificará si las últimas posiciones guardadas de sus ventanas se encuentran dentro de un área activa del monitor y, de no ser así, las moverá automáticamente al monitor predeterminado. Esto puede evitar que se muestren ventanas en áreas invisibles, pero es posible que algunos usuarios con varios monitores deban desactivar esta opción en caso de que las ventanas no se restablezcan en las posiciones esperadas.
 pt=Quando esta opção estiver habilitada, o HWiNFO verificará se as últimas posições salvas de suas janelas estão dentro de uma área de monitor ativa e, caso não, as moverá automaticamente para o monitor padrão. Isso pode impedir a exibição de janelas em áreas invisíveis, mas alguns usuários com vários monitores podem precisar desabilitar essa opção caso as janelas não sejam restauradas em suas posições esperadas.
 it=Quando questa opzione è abilitata, HWiNFO verificherà se le ultime posizioni salvate delle sue finestre ricade all'interno di un'area monitor attiva e, in caso contrario, le sposterà automaticamente sul monitor di default. Ciò può impedire la visualizzazione di finestre in aree invisibili, ma alcuni utenti con più monitor potrebbero dover disabilitare questa opzione nel caso in cui le finestre non vengano ripristinate nelle posizioni previste.
@@ -64591,7 +64591,7 @@ he=רישיון פג
 {{}}
 en=The maintenance period of your license is expired and this version is no longer covered by it.\nRenew the license or revert back to an older HWiNFO64 version covered by your license.\nRenewal notification e-mails are automatically sent prior to expiry, if you haven't received this e-mail please check your 2Checkout account or contact support.
 fr=La période de maintenance de votre licence a expiré et cette version n'est plus couverte par celle-ci.\nRenouvelez la licence ou revenez à une ancienne version de HWiNFO64 couverte par votre licence.\nLes e-mails de notification de renouvellement sont automatiquement envoyés avant l'expiration, si vous n'avez pas reçu cet e-mail, veuillez vérifier votre compte 2Checkout ou contacter l'assistance.
-de=Der Wartungszeitraum Ihrer Lizenz ist abgelaufen und diese Version wird nicht mehr davon abgedeckt.\nErneuern Sie die Lizenz oder kehren Sie zu einer älteren HWiNFO64-Version zurück, die von Ihrer Lizenz abgedeckt wird.\nE-Mails zur Verlängerungsbenachrichtigung werden automatisch vor Ablauf gesendet, wenn Sie diese E-Mail nicht erhalten haben, überprüfen Sie bitte Ihr 2Checkout-Konto oder wenden Sie sich an den Support.
+de=Der Wartungs-Zeitraum Ihrer Lizenz ist abgelaufen und diese Version wird nicht mehr davon abgedeckt.\nErneuern Sie die Lizenz oder kehren Sie zu einer älteren HWiNFO64-Version zurück, die von Ihrer Lizenz abgedeckt wird.\nE-Mails zur Verlängerungsbenachrichtigung werden automatisch vor Ablauf gesendet, wenn Sie diese E-Mail nicht erhalten haben, überprüfen Sie bitte Ihr 2Checkout-Konto oder wenden Sie sich an den Support.
 es=El período de mantenimiento de su licencia ha vencido y esta versión ya no está cubierta por ella.\nRenueve la licencia o vuelva a una versión anterior de HWiNFO64 cubierta por su licencia.\nLos correos electrónicos de notificación de renovación se envían automáticamente antes de que caduque, si no ha recibido este correo electrónico, verifique su cuenta de 2Checkout o comuníquese con soporte.
 pt=O período de manutenção de sua licença expirou e esta versão não é mais coberta por ela.\nRenove a licença ou volte para uma versão mais antiga do HWiNFO64 coberta por sua licença.\nE-mails de notificação de renovação são enviados automaticamente antes do vencimento, se você não recebeu este e-mail, verifique sua conta 2Checkout ou entre em contato com o suporte.
 it=Il periodo di manutenzione della tua licenza è scaduto e questa versione non è più coperta da essa.\nRinnova la licenza o ripristina una versione precedente di HWiNFO64 coperta dalla tua licenza.\nLe e-mail di notifica di rinnovo vengono inviate automaticamente prima della scadenza, se non ho ricevuto questa e-mail, controlla il tuo account 2Checkout o contatta l'assistenza.
@@ -64618,7 +64618,7 @@ he=פג תוקף תקופת התחזוקה של הרישיון שלך וגרסה
 {{}}
 en=HWiNFO Shared Memory Time Limit Exceeded
 fr=Limite de temps de mémoire partagée HWiNFO dépassée
-de=HWiINFO Shared Memory-Zeitlimit überschritten
+de=HWiINFO Shared-Memory-Zeitlimit überschritten
 es=Límite de tiempo de memoria compartida de HWiNFO excedido
 pt=Limite de tempo de memória compartilhada HWiNFO excedido
 it=Limite di tempo della memoria condivisa HWiNFO superato
@@ -64645,7 +64645,7 @@ he=חריגה ממגבלת הזמן של זיכרון משותף של HWiNFO
 {{}}
 en=HWiNFO64 Shared Memory limit of 12 hours has been exceeded and will be deactivated.\nUpgrade to HWiNFO64 Pro to remove this limit or enable Shared Memory Support again.
 fr=La limite de mémoire partagée HWiNFO64 de 12 heures a été dépassée et sera désactivée.\nMettre à niveau vers HWiNFO64 Pro pour supprimer cette limite ou réactiver la prise en charge de la mémoire partagée.
-de=Das HWiNFO64 Shared Memory-Limit von 12 Stunden wurde überschritten und wird deaktiviert.\nFühren Sie ein Upgrade auf HWiNFO64 Pro durch, um dieses Limit zu entfernen, oder aktivieren Sie die Shared Memory-Unterstützung erneut.
+de=Das HWiNFO64 Shared-Memory-Limit von 12 Stunden wurde überschritten und wird deaktiviert.\nFühren Sie ein Upgrade auf HWiNFO64 Pro durch um dieses Limit zu entfernen, oder aktivieren Sie die Shared-Memory-Unterstützung erneut.
 es=Se superó el límite de 12 horas de memoria compartida de HWiNFO64 y se desactivará.\nActualice a HWiNFO64 Pro para eliminar este límite o habilitar de nuevo la compatibilidad con memoria compartida.
 pt=O limite de memória compartilhada do HWiNFO64 de 12 horas foi excedido e será desativado.\nAtualize para o HWiNFO64 Pro para remover esse limite ou ative o suporte à memória compartilhada novamente.
 it=Il limite di memoria condivisa di HWiNFO64 di 12 ore è stato superato e verrà disattivato.\nEsegui l'upgrade a HWiNFO64 Pro per rimuovere questo limite o abilitare nuovamente il supporto della memoria condivisa.
