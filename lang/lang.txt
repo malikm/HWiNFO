@@ -1309,7 +1309,7 @@ he=בדוק את תנאי הרישיון ואפשרויות השדרוג
 {{Sensors}}
 en=Virtual Memory Committed
 fr=Mémoire virtuelle engagée
-de=Zugesagter virtueller Speicher
+de=Virtueller Speicher zugewiesen
 es=Memoria virtual comprometida
 pt-BR=Memória Virtual Comprometida
 it=Memoria virtuale impegnata
@@ -1390,7 +1390,7 @@ he=עומס זיכרון וירטואלי
 {{Sensors}}
 en=Physical Memory Used
 fr=Mémoire physique utilisée
-de=Verwendeter physischer Speicher
+de=Physischer Speicher verwendet
 es=Memoria física utilizada
 pt-BR=Memória Física Utilizada
 it=Memoria fisica utilizzata
@@ -1417,7 +1417,7 @@ he=זיכרון פיזי בשימוש
 {{Sensors}}
 en=Physical Memory Available
 fr=Mémoire physique disponible
-de=Physischer Speicher Verfügbar
+de=Physischer Speicher verfügbar
 es=Memoria física disponible
 pt-BR=Memória Física Disponível
 it=Memoria fisica disponibile
@@ -1471,7 +1471,7 @@ he=עומס זיכרון פיזי
 {{Sensors}}
 en=Page File Usage
 fr=Utilisation du fichier d'échange
-de=Verwendung von Auslagerungs-Dateien
+de=Auslastung der Auslagerungs-Datei
 es=Uso del archivo de página
 pt-BR=Utilização do Arquivo de Paginação
 it=Utilizzo del file di paging
@@ -1634,7 +1634,7 @@ he=תדר שעון פקודת הזיכרון הראשי הנוכחי. זיכרו
 {{Sensors}}
 en=Total amount of virtual memory (physical+page file) committed in operating system.
 fr=Quantité totale de mémoire virtuelle (fichier physique + page) engagée dans le système d'exploitation.
-de=Gesamtmenge des virtuellen Speichers (physischer + Auslagerungsdatei) im Betriebssystem festgeschrieben.
+de=Gesamtmenge des virtuellen Speichers (physischer + Auslagerungsdatei) die im Betriebssystem gebunden ist.
 es=Cantidad total de memoria virtual (física + archivo de página) comprometida en el sistema operativo .
 pt-BR=Quantidade total de memória virtual (física + arquivo de paginação) comprometida no sistema operacional.
 it=Quantità totale di memoria virtuale (fisica+file di paging) impegnata nel sistema operativo.
@@ -1769,7 +1769,7 @@ he=כמות כוללת של זיכרון פיזי פנוי במערכת ההפע
 {{Sensors}}
 en=Physical memory usage in operating system.
 fr=Utilisation de la mémoire physique dans le système d'exploitation.
-de=Physische Speichernutzung im Betriebssystem.
+de=Physische Speicher-Nutzung im Betriebssystem.
 es=Uso de memoria física en el sistema operativo.
 pt-BR=Utilização de memória física no sistema operacional.
 it=Utilizzo della memoria fisica nel sistema operativo.
@@ -1931,7 +1931,7 @@ he=זמן טעינה מוקדמת של שורה זיכרון ראשי נוכחי
 {{Sensors}}
 en=Current main memory Active to Precharge Time.
 fr=Mémoire principale actuelle active jusqu'au temps de précharge.
-de=Aktueller Hauptspeicher Aktiv bis Vorladezeit.
+de=Aktuelle Hauptspeicher Active to Precharge Time.
 es=Memoria principal actual Activo para tiempo de precarga.
 pt-BR=Tempo atual de Ativo à Pré-Carga da memória principal.
 it=Memoria principale corrente Attivo al tempo di precarica.
@@ -1958,7 +1958,7 @@ he=זיכרון ראשי נוכחי פעיל לזמן טעינה מוקדמת.
 {{Sensors}}
 en=Current main memory Active to Active/Refresh Time.
 fr=Mémoire principale actuelle Actif à Actif/Temps d'actualisation.
-de=Aktueller Hauptspeicher Active bis Active/Refresh Time.
+de=Aktuelle Hauptspeicher Active to Active/Refresh Time.
 es=Memoria principal actual Activo a Activo / Tiempo de actualización.
 pt-BR=Tempo atual de Ativo para Ativo/Atualização da memória principal.
 it=Memoria principale corrente Attivo ad Attivo/Tempo di aggiornamento.
@@ -2067,7 +2067,7 @@ he=מצב הילוך נוכחי של בקר זיכרון (יחס בין מהיר
 {{Settings}}
 en=Show System Summary on Startup
 fr=Afficher le résumé du système au démarrage
-de=Systemzusammenfassung beim Start anzeigen
+de=System-Zusammenfassung beim Start anzeigen
 es=Mostrar resumen del sistema al iniciar
 pt-BR=Mostrar Sumário do Sistema na Inicialização
 it=Mostra riepilogo di sistema all'avvio
@@ -2391,7 +2391,7 @@ he=זכור העדפות
 {{Settings}}
 en=Shared Memory Support
 fr=Prise en charge de la mémoire partagée
-de=Shared Memory-Unterstützung
+de=Shared-Memory-Unterstützung
 es=Soporte de memoria compartida
 pt-BR=Suporte à Memória Compartilhada
 it=Supporto per la memoria condivisa
@@ -2959,7 +2959,7 @@ he=נקה העדפות יישום HWiNFO שנשמרו בעבר.
 {{Settings}}
 en=Automatically start HWiNFO when Windows starts.\nStartup is implemented via Windows Task Scheduler, check there if further adjustments to startup options are required.
 fr=Démarrez automatiquement HWiNFO au démarrage de Windows.\nLe démarrage est implémenté via le Planificateur de tâches Windows, vérifiez-y si d'autres ajustements des options de démarrage sont nécessaires.
-de=HWiNFO beim Start von Windows automatisch starten.\nDer Start erfolgt über den Windows Taskplaner, dort prüfen, ob weitere Anpassungen der Startoptionen erforderlich sind.
+de=HWiNFO beim Start von Windows automatisch starten.\nDer Start erfolgt über den Windows Taskplaner. Dort prüfen, ob weitere Anpassungen der Start-Optionen erforderlich sind.
 es=Inicie HWiNFO automáticamente cuando se inicie Windows.\nEl inicio se implementa a través del Programador de tareas de Windows, verifique allí si se requieren más ajustes en las opciones de inicio.
 pt-BR=Iniciar o HWiNFO automaticamente quando o Windows iniciar.\nA inicialização é implementada através do Agendador de Tarefas do Windows, verifique se ajustes adicionais nas opções de inicialização são necessários.
 it=Avvia automaticamente HWiNFO all'avvio di Windows.\nL'avvio è implementato tramite l'Utilità di pianificazione di Windows, controlla lì se sono necessarie ulteriori modifiche alle opzioni di avvio.
@@ -3175,7 +3175,7 @@ he=יש לשטוף מאגרי קבצים (מטמון כתיבה בדיסק) לפ
 {{Settings}}
 en=Show the welcome screen and detection progress bar.\nThis is automatically disabled when Auto Start is used.
 fr=Affiche l'écran d'accueil et la barre de progression de la détection.\nCeci est automatiquement désactivé lorsque le démarrage automatique est utilisé.
-de=Anzeigen von Begrüßungsbildschirm und den Fortschrittsbalken für die Erkennung an.\nDies wird automatisch deaktiviert, wenn Autostart verwendet wird.
+de=Anzeigen des Begrüßungsbildschirms und des Fortschrittsbalkens für die Erkennung einschalten.\nDies wird automatisch deaktiviert, wenn Autostart verwendet wird.
 es=Muestra la pantalla de bienvenida y la barra de progreso de detección.\nEsto se desactiva automáticamente cuando se utiliza el inicio automático.
 pt-BR=Mostrar tela de boas-vindas e a barra de progresso da detecção.\nIsso é automaticamente desabilitado quando o Auto Inicialização usada.
 it=Mostra la schermata di benvenuto e la barra di avanzamento del rilevamento.\nQuesto viene automaticamente disabilitato quando si utilizza l'avvio automatico.
@@ -3202,7 +3202,7 @@ he=הצג את מסך הפתיחה וסרגל ההתקדמות של הזיהוי
 {{Settings}}
 en=This will backup application (e.g. window positions) and all sensor-specific settings which are stored in the registry.\nIt will save the settings into a .REG file, which when launched will load these settings back into registry.
 fr=Cela sauvegardera l'application (par exemple les positions des fenêtres) et tous les paramètres spécifiques aux capteurs qui sont stockés dans le registre.\nIl enregistrera les paramètres dans un fichier .REG qui, une fois lancé, chargera ces paramètres dans le registre.
-de=Dadurch werden die Anwendung (zB Fensterpositionen) und alle sensorspezifischen Einstellungen, die in der Registrierung gespeichert sind, gesichert.\nDie Einstellungen werden in einer .REG-Datei gespeichert, die beim Start diese Einstellungen wieder in die Registrierung lädt.
+de=Dadurch werden die Anwendung (z.B. Fensterpositionen) und alle sensorspezifischen Einstellungen gesichert, die in der Registrierung gespeichert sind.\nDie Einstellungen werden in einer .REG-Datei gespeichert, die beim Start diese Einstellungen wieder in die Registry lädt.
 es=Esto hará una copia de seguridad de la aplicación (por ejemplo, las posiciones de las ventanas) y todas las configuraciones específicas del sensor que están almacenadas en el registro.\nGuardará las configuraciones en un archivo .REG, que cuando se inicie cargará estas configuraciones nuevamente en el registro.
 pt-BR=Isso fará o backup do aplicativo (exemplo, posições das janelas) e de todas as configurações específicas de sensores que estão armazenadas no registro.\nIsso salvará as configurações em um arquivo .REG, que, quando iniciado, carregará essas configurações de volta no registro.
 it=Questo eseguirà il backup dell'applicazione (es. posizioni delle finestre) e di tutte le impostazioni specifiche del sensore che sono memorizzate nel registro.\nSalverà le impostazioni in un file .REG, che una volta avviato ricaricherà queste impostazioni nel registro.
@@ -3283,7 +3283,7 @@ he=כאשר אפשרות זו מופעלת תנחה HWiNFO לדווח על פר�
 {{Settings}}
 en=This option works on AMD Zen-based CPUs only.\nWhen enabled, a snapshot of the entire CPU package and state of all its cores is read at once.\nThis is different from the traditional approach when each core/thread determines its individual state (clock, voltage, etc.), which might cause it to interfere with the actual state.\nHence, this polling mode does most accurately reflect the actual CPU state by eliminating the "Observer Effect" to a minimum.\nNote, that in this mode some (i.e. per-thread) values might not be available
 fr=Cette option ne fonctionne que sur les processeurs AMD Zen.\nLorsqu'elle est activée, un instantané de l'ensemble du processeur et de l'état de tous ses cœurs est lu en même temps.\nCeci est différent de l'approche traditionnelle lorsque chaque cœur/thread détermine son état individuel (horloge, tension, etc.), ce qui pourrait l'amener à interférer avec l'état réel.\nPar conséquent, ce mode d'interrogation reflète le plus précisément l'état réel du processeur en éliminant au minimum "l'effet observateur".\nNotez que dans ce mode, certaines valeurs (c'est-à-dire par thread) peuvent ne pas être disponibles
-de=Diese Option funktioniert nur bei AMD Zen-basierten CPUs.\nWenn aktiviert, wird ein Snapshot des gesamten CPU-Pakets und des Zustands aller seiner Kerne auf einmal gelesen.\nDies unterscheidet sich vom herkömmlichen Ansatz, bei dem jeder Kern/Thread seinen individuellen Zustand bestimmt (Takt, Spannung usw.), was dazu führen kann, dass der aktuelle Zustand gestört wird.\nDaher spiegelt dieser Abfragemodus den tatsächlichen CPU-Zustand am genauesten wider, indem der "Beobachtereffekt" auf ein Minimum reduziert wird.\nBeachten Sie, dass in In diesem Modus sind möglicherweise einige (dh pro Thread) Werte nicht verfügbar
+de=Diese Option funktioniert nur bei AMD Zen-basierten CPUs.\nWenn aktiviert, wird ein Snapshot des gesamten CPU-Pakets und des Zustands aller seiner Kerne auf einmal gelesen.\nDies unterscheidet sich vom herkömmlichen Ansatz, bei dem jeder Kern/Thread seinen individuellen Zustand bestimmt (Takt, Spannung usw.), was dazu führen kann, dass der aktuelle Zustand gestört wird.\nDaher spiegelt dieser Abfragemodus den tatsächlichen CPU-Zustand am genauesten wieder, indem der "Beobachtereffekt" auf ein Minimum reduziert wird.\nBeachten Sie, dass in diesem Modus möglicherweise einige (dh pro Thread) Werte nicht verfügbar sind.
 es=Esta opción funciona solo en CPU basadas en AMD Zen.\nCuando está habilitada, se lee una instantánea de todo el paquete de CPU y el estado de todos sus núcleos a la vez.\nEsto es diferente del enfoque tradicional cuando cada núcleo / subproceso determina su estado individual (reloj, voltaje, etc.), lo que puede causar que interfiera con el estado real.\nPor lo tanto, este modo de sondeo refleja con mayor precisión el estado real de la CPU al eliminar el "Efecto de observador" al mínimo.\nNota, que en este modo algunos valores (es decir, por hilo) pueden no estar disponibles
 pt-BR=Esta opção funciona apenas em CPUs AMD Zen.\nQuando habilitada, uma imagem de todo o pacote da CPU e o estado de todos os seus núcleos é lido de uma vez.\nIsto é diferente da abordagem tradicional em que cada núcleo / thread determina seu estado individual (clock, tensão, etc.), o que pode fazer com que interfira com o estado real.\nPortanto, este modo de pooling reflete com mais precisão o estado real da CPU, eliminando o "Efeito do Observador" ao mínimo.\nObserve, que em neste modo, alguns valores (por exemplo, por thread) podem não estar disponíveis
 it=Questa opzione funziona solo su CPU basate su AMD Zen.\nQuando abilitata, viene letta un'istantanea dell'intero pacchetto CPU e dello stato di tutti i suoi core contemporaneamente.\nQuesto è diverso dall'approccio tradizionale quando ogni core/thread determina il suo stato individuale (clock, voltaggio, ecc.), che potrebbe causare interferenze con lo stato effettivo.\nQuindi, questa modalità di polling riflette in modo più accurato lo stato effettivo della CPU eliminando al minimo l'"effetto osservatore".\nNota, che in questa modalità alcuni valori (ad esempio per thread) potrebbero non essere disponibili
@@ -3310,7 +3310,7 @@ he=אפשרות זו פועלת על מעבדים מבוססי זן של AMD ב�
 {{Settings}}
 en=Dark Mode - Default / Grey
 fr=Mode sombre - Par défaut / Gris
-de=Dunkelmodus - Standard / Grau
+de=Dark-Mode - Standard / Grau
 es=Modo oscuro: predeterminado / gris
 pt-BR=Modo escuro - Padrão / Cinza
 it=Modalità scura - Predefinita/Grigio
@@ -3337,7 +3337,7 @@ he=מצב כהה - ברירת מחדל / אפור
 {{Settings}}
 en=In this mode HWiNFO will automatically use Dark Mode Grey skin if Color mode for apps in Windows is set to Dark during startup of HWiNFO. Switching between Dark/Light mode during runtime is not supported.\nNote that swiching the mode will require restarting HWiNFO.
 fr=Dans ce mode, HWiNFO utilisera automatiquement la peau grise en mode sombre si le mode couleur pour les applications sous Windows est défini sur Sombre au démarrage de HWiNFO. Le basculement entre le mode sombre/clair pendant l'exécution n'est pas pris en charge.\nNotez que le changement de mode nécessitera le redémarrage de HWiNFO.
-de=In diesem Modus verwendet HWiNFO automatisch den Dunkelmodus Graue Haut, wenn der Farbmodus für Apps in Windows beim Start von HWiNFO auf Dunkel eingestellt ist. Das Umschalten zwischen Dunkel-/Hell-Modus während der Laufzeit wird nicht unterstützt.\nBeachten Sie, dass das Umschalten des Modus einen Neustart von HWiNFO erfordert.
+de=In diesem Modus verwendet HWiNFO automatisch den Dark-Mode Grey skin, wenn der Farbmodus für Apps in Windows beim Start von HWiNFO auf Dunkel eingestellt ist. Das Umschalten zwischen Dunkel-/Hell-Modus während der Laufzeit wird nicht unterstützt.\nBeachten Sie, dass das Umschalten des Modus einen Neustart von HWiNFO erfordert.
 es=En este modo, HWiNFO utilizará automáticamente la piel gris del modo oscuro si el modo de color para aplicaciones en Windows está configurado en oscuro durante el inicio de HWiNFO. No se admite el cambio entre el modo Oscuro / Claro durante el tiempo de ejecución.\nNota, para cambiar el modo será necesario reiniciar HWiNFO.
 pt-BR=Neste modo, o HWiNFO usará automaticamente a skin do Modo Escuro Cinza se o modo de cores para aplicativos no Windows estiver definido como Escuro durante a inicialização do HWiNFO. Alternar entre o modo Escuro / Claro durante a execução não é suportado.\nNote que a alterar o modo de cor exigirá reiníciar o HWiNFO.
 it=In questa modalità HWiNFO utilizzerà automaticamente la skin Dark Mode Grey se la modalità Color per le app in Windows è impostata su Dark durante l'avvio di HWiNFO. Il passaggio dalla modalità Buio/Luce durante il runtime non è supportato.\nNota, il passaggio alla modalità richiederà il riavvio di HWiNFO.
@@ -3364,7 +3364,7 @@ he=במצב זה HWiNFO ישתמש באופן אוטומטי בעור אפור �
 {{Settings}}
 en=Dark Mode - Default / Black
 fr=Mode sombre - Par défaut / Noir
-de=Dunkelmodus - Standard / Schwarz
+de=Dark-Mode - Standard / Schwarz
 es=Modo oscuro: predeterminado / negro
 pt-BR=Modo Escuro - Padrão / Preto
 it=Modalità scura - Predefinita / Nero
@@ -3391,7 +3391,7 @@ he=מצב כהה - ברירת מחדל / שחור
 {{Settings}}
 en=In this mode HWiNFO will automatically use Dark Mode Black skin if Color mode for apps in Windows is set to Dark during startup of HWiNFO. Switching between Dark/Light mode during runtime is not supported.\nNote that swiching the mode will require restarting HWiNFO.
 fr=Dans ce mode, HWiNFO utilisera automatiquement la peau noire en mode sombre si le mode couleur pour les applications sous Windows est défini sur Sombre au démarrage de HWiNFO. Le basculement entre le mode sombre/clair pendant l'exécution n'est pas pris en charge.\nNotez que le changement de mode nécessitera le redémarrage de HWiNFO.
-de=In diesem Modus verwendet HWiNFO automatisch den dunklen Modus Schwarze Haut, wenn der Farbmodus für Apps in Windows beim Start von HWiNFO auf Dunkel eingestellt ist. Das Umschalten zwischen Dunkel-/Hell-Modus während der Laufzeit wird nicht unterstützt.\nBeachten Sie, dass das Umschalten des Modus einen Neustart von HWiNFO erfordert.
+de=In diesem Modus verwendet HWiNFO automatisch den Dark-Mode Black skin, wenn der Farbmodus für Apps in Windows beim Start von HWiNFO auf Dunkel eingestellt ist. Das Umschalten zwischen Dunkel-/Hell-Modus während der Laufzeit wird nicht unterstützt.\nBeachten Sie, dass das Umschalten des Modus einen Neustart von HWiNFO erfordert.
 es=En este modo, HWiNFO utilizará automáticamente la máscara negra del modo oscuro si el modo de color para aplicaciones en Windows está configurado en oscuro durante el inicio de HWiNFO. No se admite el cambio entre el modo Oscuro / Claro durante el tiempo de ejecución.\nNota, para cambiar el modo será necesario reiniciar HWiNFO.
 pt-BR=Neste modo o HWiNFO usará automaticamente a skin do Modo Escuro Preto se o modo de cores para aplicativos no Windows estiver definido como Escuro durante a inicialização do HWiNFO. Alternar entre o modo Escuro / Claro durante a execução não é suportado.\nNote que a alterar o modo de cor exigirá reiníciar o HWiNFO.
 it=In questa modalità HWiNFO utilizzerà automaticamente la skin Black Mode Dark se la modalità Color per le app in Windows è impostata su Dark durante l'avvio di HWiNFO. Il passaggio dalla modalità Buio/Luce durante il runtime non è supportato.\nNota, il passaggio alla modalità richiederà il riavvio di HWiNFO.
@@ -3418,7 +3418,7 @@ he=במצב זה HWiNFO ישתמש באופן אוטומטי בעור שחור �
 {{Settings}}
 en=Dark Mode - Disabled
 fr=Mode sombre - Désactivé
-de=Dunkelmodus - Deaktiviert
+de=Dark-Mode - Deaktiviert
 es=Modo oscuro: deshabilitado
 pt-BR=Modo Escuro - Desativado
 it=Modalità oscura - Disabilitata
@@ -3445,7 +3445,7 @@ he=מצב כהה - מושבת
 {{Settings}}
 en=In this mode HWiNFO will always use the standard Light Mode, regardless of the Dark Mode setting in Windows.\nNote, that swiching the mode will require restarting HWiNFO.
 fr=Dans ce mode, HWiNFO utilisera toujours le mode clair standard, quel que soit le réglage du mode sombre dans Windows.\nNotez que le changement de mode nécessitera le redémarrage de HWiNFO.
-de=In diesem Modus verwendet HWiNFO immer den Standard-Lichtmodus, unabhängig von der Einstellung für den Dunkelmodus in Windows.\nBeachten Sie, dass das Umschalten des Modus einen Neustart von HWiNFO erfordert.
+de=In diesem Modus verwendet HWiNFO immer den Standard-Light-Mode, unabhängig von der Einstellung für den Dark-Mode in Windows.\nBeachten Sie, dass das Umschalten des Modus einen Neustart von HWiNFO erfordert.
 es=En este modo, HWiNFO siempre usará el modo de luz estándar, independientemente de la configuración del modo oscuro en Windows.\nNota, que cambiar el modo requerirá reiniciar HWiNFO.
 pt-BR=Neste modo o HWiNFO sempre usará o Modo Claro padrão, independentemente da configuração do Modo Escuro no Windows.\nNote que alterar o modo exigirá reiníciar o HWiNFO.
 it=In questa modalità HWiNFO utilizzerà sempre la modalità Light standard, indipendentemente dall'impostazione della modalità Dark in Windows.\nNota, il passaggio alla modalità richiederà il riavvio di HWiNFO.
@@ -3500,7 +3500,7 @@ he=חיישן זה מספק מידע משותף לכל המעבדים.
 {{Sensors}}
 en=Voltage requested by particular core, not the voltage really supplied by voltage regulator.
 fr=Tension demandée par un noyau particulier, pas la tension réellement fournie par le régulateur de tension.
-de=Spannung, die von einem bestimmten Kern angefordert wird, nicht die Spannung, die tatsächlich vom Spannungsregler geliefert wird.
+de=Von einem bestimmten Kern angeforderte Spannung. Nicht jene Spannung, die tatsächlich vom Spannungsregler geliefert wird.
 es=Voltaje solicitado por un núcleo en particular, no el voltaje realmente suministrado por el regulador de voltaje.
 pt-BR=Tensão solicitada por um núcleo específico, não a tensão realmente fornecida pelo regulador de tensão.
 it=Tensione richiesta da un particolare nucleo, non la tensione realmente fornita dal regolatore di tensione.
@@ -3527,7 +3527,7 @@ he=מתח מתבקש על ידי ליבה מסוימת, לא המתח המסופ
 {{Sensors}}
 en=Voltage requested by the non-core part of the CPU, not the voltage really supplied by voltage regulator.
 fr=Tension demandée par la partie non centrale du CPU, pas la tension réellement fournie par le régulateur de tension.
-de=Spannung, die vom nicht zum Kern gehörenden Teil der CPU angefordert wird, nicht die Spannung, die tatsächlich vom Spannungsregler geliefert wird.
+de=Vom nicht zum CPU-Kern gehörenden Teil der CPU angeforderte Spannung. Nicht jene Spannung, die tatsächlich vom Spannungsregler geliefert wird.
 es=Voltaje solicitado por la parte no central de la CPU, no el voltaje realmente suministrado por el regulador de voltaje.
 pt-BR=Tensão solicitada pela parte não central da CPU, não a tensão realmente fornecida pelo regulador de tensão.
 it=Tensione richiesta dalla parte non core della CPU, non la tensione realmente fornita dal regolatore di tensione.
@@ -3581,7 +3581,7 @@ he=המתח המבוקש על ידי הגשר הצפוני המשולב במעב
 {{Sensors}}
 en=Voltage requested by the System Agent integrated in CPU, not the voltage really supplied by voltage regulator.
 fr=Tension demandée par l'agent système intégré au CPU, pas la tension réellement fournie par le régulateur de tension.
-de=Spannung, die vom in der CPU integrierten Systemagenten angefordert wird, nicht die Spannung, die tatsächlich vom Spannungsregler geliefert wird.
+de=Vom in der CPU integrierten System-Agenten angeforderte Spannung. Nicht jene Spannung, die tatsächlich vom Spannungsregler geliefert wird.
 es=Voltaje solicitado por el Agente del Sistema integrado en la CPU, no el voltaje realmente suministrado por el regulador de voltaje.
 pt-BR=Tensão solicitada pelo Agente do Sistema integrado na UCP, não a tensão realmente fornecida pelo regulador de tensão.
 it=Tensione richiesta dal System Agent integrato nella CPU, non la tensione realmente fornita dal regolatore di tensione.
@@ -3635,7 +3635,7 @@ he=שעון נוכחי (מיידי) נקבע כיחס * שעון אפיק בקצ
 {{Sensors}}
 en=Core Clocks
 fr=Horloges de base
-de=Kern Takte
+de=Kern-Takte
 es=Relojes centrales
 pt-BR=Relógios principais
 it=Orologi Core
@@ -3662,7 +3662,7 @@ he=שעוני ליבה
 {{Sensors}}
 en=Core Temperatures
 fr=Températures à cœur
-de=Kerntemperaturen
+de=Kern-Temperaturen
 es=Temperaturas centrales
 pt-BR=Temperaturas centrais
 it=Temperature al centro
@@ -3743,7 +3743,7 @@ he=טמפרטורות
 {{SUBST}}
 en=Temperature
 fr=Température
-;de=Temperatur
+de=Temperatur
 es=Temperatura
 pt-BR=Temperatura
 it=Temperatura
@@ -4016,7 +4016,7 @@ he=זֶרֶם
 {{Sensors}}
 en=Core Powers
 fr=Consommation d'énergie des cœurs
-de=Kerne-Leistungsaufnahme
+de=Kern-Leistungsaufnahmen
 es=Consumo de energía de los núcleos
 pt-BR=Consumo de energia dos núcleos
 it=Consumo energetico dei core
@@ -4722,7 +4722,7 @@ he=שעון נוכחי של החלק שאינו הליבה של המעבד.
 {{Sensors}}
 en=Current clock of the North Bridge part of the CPU.
 fr=Horloge actuelle de la partie North Bridge du CPU.
-de=Aktueller Takt des North Bridge-Teils der CPU.
+de=Aktueller Takt der North Bridge-Teils der CPU.
 es=Reloj actual de la parte North Bridge de la CPU.
 pt-BR=Relógio atual da parte North Bridge da CPU.
 it=Orologio corrente della parte North Bridge della CPU.
@@ -4749,7 +4749,7 @@ he=השעון הנוכחי של החלק הצפוני של הגשר של המע�
 {{Sensors}}
 en=Current Hyper-Transport bus clock.
 fr=Horloge actuelle du bus Hyper-Transport.
-de=Aktuelle Hyper-Transport Busuhr.
+de=Aktueller Hyper-Transport Bus-Takt.
 es=Reloj actual del bus Hyper-Transport.
 pt-BR=Relógio atual do barramento de hiper-transporte.
 it=Orologio attuale del bus Hyper-Transport.
@@ -4776,7 +4776,7 @@ he=שעון אוטובוס Hyper-Transport נוכחי.
 {{Sensors}}
 en=Current QuickPath Interconnect (QPI/CSI) bus clock.
 fr=Horloge actuelle du bus QuickPath Interconnect (QPI/CSI).
-de=Aktueller QuickPath Interconnect (QPI/CSI)-Bustakt.
+de=Aktueller QuickPath Interconnect (QPI/CSI)-Bus-Takt.
 es=Reloj de bus actual de QuickPath Interconnect (QPI / CSI).
 pt-BR=Relógio de barramento atual do QuickPath Interconnect (QPI / CSI).
 it=Clock corrente del bus QuickPath Interconnect (QPI/CSI).
@@ -4803,7 +4803,7 @@ he=שעון אפיק נוכחי של QuickPath Interconnect (QPI/CSI).
 {{Sensors}}
 en=Current Ultra Path Interconnect (UPI/Keizer Technology) bus clock.
 fr=Horloge actuelle du bus Ultra Path Interconnect (UPI/Keizer Technology).
-de=Aktueller Ultra Path Interconnect (UPI/Keizer Technology) Bustakt.
+de=Aktueller Ultra-Path-Interconnect (UPI/Keizer Technology) Bus-Takt.
 es=Reloj de bus actual Ultra Path Interconnect (UPI / Keizer Technology).
 pt-BR=Relógio de barramento atual de Ultra Path Interconnect (UPI / Keizer Technology).
 it=Attuale clock del bus Ultra Path Interconnect (UPI/Keizer Technology).
@@ -4857,7 +4857,7 @@ he=שעון DRAM משובץ נוכחי (EDRAM).
 {{Sensors}}
 en=Current PCI Express bus clock.
 fr=Horloge actuelle du bus PCI Express.
-de=Aktueller PCI-Express-Bustakt.
+de=Aktueller PCI-Express-Bus-Takt.
 es=Reloj actual del bus PCI Express.
 pt-BR=Relógio de barramento PCI Express atual.
 it=Clock corrente del bus PCI Express.
@@ -4992,7 +4992,7 @@ he=שעון ממוצע מחושב על פני מרווח הסקר הנוכחי �
 {{Sensors}}
 en=Average Effective Clock
 fr=Horloge efficace moyenne
-de=Durchschnittlicher Effektiver Takt
+de=Durchschnittlicher effektiver Takt
 es=Reloj efectivo promedio
 pt-BR=Relógio Efetivo Médio
 it=Orologio effettivo medio
@@ -5019,7 +5019,7 @@ he=שעון אפקטיבי ממוצע
 {{Sensors}}
 en=Average value of all cores Effective Clock.
 fr=Valeur moyenne de tous les cœurs Effective Clock.
-de=Durchschnittswert Effektiver Takt aller Kerne.
+de=Durchschnittswert effektiver Takt aller Kerne.
 es=Valor medio de todos los núcleos Reloj efectivo.
 pt-BR=Valor médio do relógio efetivo de todos os núcleos.
 it=Valore medio di tutti i core Orologio effettivo.
@@ -5046,7 +5046,7 @@ he=ערך ממוצע של כל הליבות שעון אפקטיבי.
 {{Sensors}}
 en=Core Usage
 fr=Utilisation principale
-de=Kern Auslastung
+de=Kern-Auslastung
 es=Uso principal
 pt-BR=Uso do núcleo
 it=Utilizzo principale
@@ -5127,7 +5127,7 @@ he=נוֹהָג
 {{Sensors}}
 en=Current core/thread utilization as reported by operating system counters.\nNote that Task Manager in Windows 8 and later reports Processor Utility% instead of time-based busy utilization.
 fr=Utilisation actuelle du cœur/unité d'exécution telle que rapportée par les compteurs du système d'exploitation.\nNotez que le Gestionnaire des tâches dans Windows 8 et versions ultérieures rapporte le pourcentage d'utilitaire de processeur au lieu d'une utilisation occupée basée sur le temps.
-de=Aktuelle Kern-/Thread-Auslastung, wie von Betriebssystemzählern gemeldet.\nBeachten Sie, dass der Task-Manager in Windows 8 und höher das Prozessor-Dienstprogramm % anstelle der zeitbasierten Auslastung meldet.
+de=Aktuelle Kern-/Thread-Auslastung, wie von Betriebssystem-Zählern gemeldet.\nBeachten Sie, dass der Task-Manager in Windows 8 und höher das Prozessor-Dienstprogramm % anstelle der zeitbasierten Auslastung meldet.
 es=Utilización actual de núcleos / subprocesos según lo informado por los contadores del sistema operativo.\nNote que el Administrador de tareas en Windows 8 y versiones posteriores informan el% de la utilidad del procesador en lugar de la utilización ocupada basada en el tiempo.
 pt-BR=Utilização atual do núcleo / thread conforme relatado pelos contadores do sistema operacional.\nObserve que o Gerenciador de Tarefas no Windows 8 e posterior relata% do Utilitário do Processador em vez da utilização ocupada com base no tempo.
 it=Utilizzo corrente di core/thread come riportato dai contatori del sistema operativo.\nNota che Task Manager in Windows 8 e versioni successive riporta l'utilità % del processore invece dell'utilizzo occupato basato sul tempo.
@@ -5262,7 +5262,7 @@ he=ניצול ממוצע של כל חבילת ה-CPU (סכום של כל ניצ�
 {{Sensors}}
 en=On-Demand Clock Modulation
 fr=Modulation d'horloge à la demande
-de=On-Demand-Taktmodulation
+de=On-Demand-Takt-Modulation
 es=Modulación de reloj bajo demanda
 pt-BR=Modulação do relógio sob demanda
 it=Modulazione dell'orologio su richiesta
@@ -5289,7 +5289,7 @@ he=אפנון שעון לפי דרישה
 {{Sensors}}
 en=Clock Modulation can be used to insert idle clocks to reduce performance. 100% means the clocks are not reduced.
 fr=La modulation d'horloge peut être utilisée pour insérer des horloges inactives afin de réduire les performances. 100% signifie que les horloges ne sont pas réduites.
-de=Taktmodulation kann verwendet werden, um Leerlauftakte einzufügen, um die Leistung zu reduzieren. 100 % bedeutet, dass die Takte nicht reduziert werden.
+de=Takt-Modulation kann verwendet werden, um Leerlauftakte einzufügen, um die Leistung zu reduzieren. 100% bedeutet, dass die Takte nicht reduziert werden.
 es=La modulación de reloj se puede utilizar para insertar relojes inactivos para reducir el rendimiento. 100% significa que los relojes no se reducen.
 pt-BR=A modulação do relógio pode ser usada para inserir relógios ociosos para reduzir o desempenho. 100% significa que os relógios não são reduzidos.
 it=La modulazione del clock può essere utilizzata per inserire clock inattivi per ridurre le prestazioni. 100% significa che gli orologi non vengono ridotti.
@@ -5316,7 +5316,7 @@ he=ניתן להשתמש באפנון שעון כדי להכניס שעוני ס
 {{Sensors}}
 en=Core Utility
 fr=Utilisation de base
-de=Kernverwertung
+de=Kern-Effizienz
 es=Utilización básica
 pt-BR=Utilização do núcleo
 it=Utilizzo del nucleo
@@ -5344,7 +5344,7 @@ he=ניצול ליבה
 {{SUBST}}
 en=Utility
 fr=Utilisation
-de=Verwertung
+de=Effizienz
 es=Utilización
 pt-BR=Utilização
 it=Utilizzo
@@ -5371,7 +5371,7 @@ he=שימוש
 {{SUBST}}
 en=Utilization
 fr=Utilisation
-de=Verwertung
+de=Auslastung
 es=Utilización
 pt-BR=Utilização
 it=Utilizzo
@@ -5479,7 +5479,7 @@ he=ניצול ממוצע של כל חבילת ה-CPU.\nזהו ניצול ה-CPU 
 {{Sensors}}
 en=Core Ratios
 fr=Multiplicateurs d'horloge de base
-de=Kerntaktmultiplikatoren
+de=Kern-Takt-Multiplikatoren
 es=Multiplicadores de reloj de núcleo
 pt-BR=Multiplicadores do Core Clock
 it=Moltiplicatori di clock del core
@@ -5533,7 +5533,7 @@ he=מַכפִּיל
 {{Sensors}}
 en=Current core clock to bus ratio. This value is determined during active state only, so it will not reflect sleeping states.
 fr=Ratio actuel de l'horloge de base sur le bus. Cette valeur est déterminée uniquement pendant l'état actif, elle ne reflétera donc pas les états de sommeil.
-de=Aktuelles Kerntakt-zu-Bus-Verhältnis. Dieser Wert wird nur während des aktiven Zustands bestimmt und spiegelt daher keine Schlafzustände.
+de=Aktuelles Kern-Takt-zu-Bus-Verhältnis. Dieser Wert wird nur während des aktiven Zustands bestimmt und spiegelt daher keine Schlafzustände.
 es=Relación actual de reloj central a bus. Este valor se determina solo durante el estado activo, por lo que no reflejará los estados de reposo.
 pt-BR=Relação atual do clock do núcleo para o barramento. Este valor é determinado apenas durante o estado ativo, portanto, não refletirá os estados de repouso.
 it=Rapporto corrente core clock/bus. Questo valore è determinato solo durante lo stato attivo, quindi non rifletterà gli stati di sospensione.
@@ -5641,7 +5641,7 @@ he=יחס שעון Hyper-Transport נוכחי.
 {{Sensors}}
 en=Current QuickPath Interconnect (QPI/CSI) clock ratio.
 fr=Rapport d'horloge QuickPath Interconnect (QPI/CSI) actuel.
-de=Aktuelles Taktverhältnis von QuickPath Interconnect (QPI/CSI).
+de=Aktuelles Takt-Verhältnis von QuickPath Interconnect (QPI/CSI).
 es=Relación de reloj actual de QuickPath Interconnect (QPI / CSI).
 pt-BR=Taxa de relógio atual do QuickPath Interconnect (QPI / CSI).
 it=Rapporto di clock attuale di QuickPath Interconnect (QPI/CSI).
@@ -5668,7 +5668,7 @@ he=יחס שעון נוכחי של QuickPath Interconnect (QPI/CSI).
 {{Sensors}}
 en=Current Ultra Path Interconnect (UPI/Keizer Technology) clock ratio.
 fr=Rapport d'horloge actuel de l'interconnexion Ultra Path (UPI/Keizer Technology).
-de=Aktuelles Taktverhältnis der Ultra Path Interconnect (UPI/Keizer-Technologie).
+de=Aktuelles Takt-Verhältnis der Ultra Path Interconnect (UPI/Keizer-Technologie).
 es=Relación de reloj actual de Ultra Path Interconnect (UPI / Keizer Technology).
 pt-BR=Relação de clock atual do Ultra Path Interconnect (UPI / Keizer Technology).
 it=Rapporto di clock attuale Ultra Path Interconnect (UPI/Keizer Technology).
@@ -6290,7 +6290,7 @@ he=אם כל הערכים מתחת לחיישן זה אפורים או 0, פיר
 {{Sensors}}
 en=If all vales under this sensor are grey or 0, it can mean the discrete GPU is disabled to preserve power (i.e. by NVIDIA Optimus). In such case the sensors will provide values as soon as the GPU wakes up.
 fr=Si toutes les valeurs sous ce capteur sont grises ou 0, cela peut signifier que le GPU discret est désactivé pour préserver l'alimentation (c'est-à-dire par NVIDIA Optimus). Dans ce cas, les capteurs fourniront des valeurs dès que le GPU se réveillera.
-de=Wenn alle Werte unter diesem Sensor grau oder 0 sind, kann dies bedeuten, dass die separate GPU deaktiviert ist, um Strom zu sparen (dh von NVIDIA Optimus). In diesem Fall liefern die Sensoren Werte, sobald die GPU aufwacht.
+de=Wenn alle Werte unter diesem Sensor grau oder 0 sind, kann dies bedeuten, dass die separate GPU deaktiviert ist um Strom zu sparen (dh von NVIDIA Optimus). In diesem Fall liefern die Sensoren Werte, sobald die GPU aufwacht.
 es=Si todos los valores debajo de este sensor son grises o 0, puede significar que la GPU discreta está deshabilitada para conservar energía (es decir, por NVIDIA Optimus). En tal caso, los sensores proporcionarán valores tan pronto como se active la GPU.
 pt-BR=Se todos os valores sob este sensor forem cinza ou 0, pode significar que a GPU discreta está desabilitada para preservar a energia (ou seja, pelo NVIDIA Optimus). Nesse caso, os sensores fornecerão valores assim que a GPU for ativada.
 it=Se tutti i valori sotto questo sensore sono grigi o 0, può significare che la GPU discreta è disabilitata per preservare la potenza (cioè da NVIDIA Optimus). In tal caso i sensori forniranno i valori non appena la GPU si riattiverà.
@@ -6371,7 +6371,7 @@ he=חיישן זה מספק מידע מ-GPU Voltage Regulator.
 {{Sensors}}
 en=Temperature provided from auxiliary board sensor.
 fr=Température fournie par le capteur de la carte auxiliaire.
-de=Vom Zusatzplatinensensor bereitgestellte Temperatur.
+de=Vom Zusatz-Platinen-Sensor bereitgestellte Temperatur.
 es=Temperatura proporcionada por el sensor de la placa auxiliar.
 pt-BR=Temperatura fornecida pelo sensor da placa auxiliar.
 it=Temperatura fornita da sensore scheda ausiliaria.
@@ -6614,7 +6614,7 @@ he=טמפרטורת צומת זיכרון GPU
 {{Sensors}}
 en=Average Junction temperature of GPU memory.\nThis is the internal junction temperature measured inside the silicon, not the external (case) temperature, so higher values (than usual Tcase) are expected here.\nTemperature limit here is about 105 C.
 fr=Température de jonction moyenne de la mémoire GPU.\nIl s'agit de la température de jonction interne mesurée à l'intérieur du silicium, et non de la température externe (boîtier), donc des valeurs plus élevées (que la Tcase habituelle) sont attendues ici.\nLa limite de température ici est d'environ 105 C.
-de=Durchschnittliche Sperrschichttemperatur des GPU-Speichers.\nDies ist die interne Sperrschichttemperatur, die innerhalb des Siliziums gemessen wird, nicht die externe (Gehäuse-)Temperatur, daher werden hier höhere Werte (als übliches Tcase) erwartet.\nDie Temperaturgrenze liegt hier bei etwa 105 °C.
+de=Durchschnittliche Sperrschicht-Temperatur des GPU-Speichers.\nDies ist die interne Sperrschicht-Temperatur, die innerhalb des Siliziums gemessen wird, nicht die externe (Gehäuse-)Temperatur, daher werden hier höhere Werte (als übliches Tcase) erwartet.\nDie Temperaturgrenze liegt hier bei etwa 105 °C.
 es=Temperatura de unión promedio de la memoria GPU.\nEsta es la temperatura de unión interna medida dentro del silicio, no la temperatura externa (carcasa), por lo que se esperan valores más altos (que la Tcase habitual) aquí.\nEl límite de temperatura aquí es de aproximadamente 105 C.
 pt-BR=Temperatura média de junção da memória da GPU.\nEsta é a temperatura de junção interna medida dentro do silício, não a temperatura externa (caixa), portanto, valores mais altos (do que o caso T normal) são esperados aqui.\nO limite de temperatura aqui é cerca de 105 C.
 it=Temperatura di giunzione media della memoria GPU.\nQuesta è la temperatura di giunzione interna misurata all'interno del silicio, non la temperatura esterna (case), quindi qui sono previsti valori più alti (rispetto al normale Tcase).\nIl limite di temperatura qui è di circa 105 C.
@@ -6668,7 +6668,7 @@ he=טמפרטורה ממוצעת של זיכרון GPU.
 {{Sensors}}
 en=Temperature of GPU Voltage Regulator for the core (VDDCR_GFX) rail.
 fr=Température du régulateur de tension GPU pour la ligne principale (VDDCR_GFX).
-de=Temperatur des GPU-Spannungsreglers für die Kernleitung (VDDCR_GFX).
+de=Temperatur des GPU-Spannungsreglers für die Kern-Schiene (VDDCR_GFX).
 es=Temperatura del regulador de voltaje de la GPU para la línea del núcleo (VDDCR_GFX).
 pt-BR=Temperatura do regulador de tensão da GPU para a linha central (VDDCR_GFX).
 it=Temperatura del regolatore di tensione GPU per la linea principale (VDDCR_GFX).
@@ -6695,7 +6695,7 @@ he=טמפרטורה של ווסת מתח GPU עבור קו הליבה (VDDCR_GFX
 {{Sensors}}
 en=Temperature of GPU Voltage Regulator for the memory (VDD_MEM) rail.
 fr=Température du régulateur de tension GPU pour la ligne mémoire (VDD_MEM).
-de=Temperatur des GPU-Spannungsreglers für die Speicherleitung (VDD_MEM).
+de=Temperatur des GPU-Spannungsreglers für die Speicher-Schiene (VDD_MEM).
 es=Temperatura del regulador de voltaje de la GPU para la línea de memoria (VDD_MEM).
 pt-BR=Temperatura do regulador de tensão da GPU para a linha de memória (VDD_MEM).
 it=Temperatura del regolatore di tensione GPU per la linea di memoria (VDD_MEM).
@@ -6938,7 +6938,7 @@ he=טמפרטורת ווסת מתח GPU.
 {{Sensors}}
 en=GPU memory voltage measured by auxiliary sensor.
 fr=Tension de la mémoire GPU mesurée par le capteur auxiliaire.
-de=GPU-Speicherspannung gemessen vom Zusatzsensor.
+de=GPU-Speicher-Spannung gemessen vom Zusatzsensor.
 es=Voltaje de la memoria de la GPU medido por el sensor auxiliar.
 pt-BR=Tensão da memória GPU medida por sensor auxiliar.
 it=Tensione della memoria GPU misurata dal sensore ausiliario.
@@ -7019,7 +7019,7 @@ he=מתח GPU מבוקש מהרוסת המתח.
 {{Sensors}}
 en=GPU +12V input voltage supplied to voltage regulator.
 fr=Tension d'entrée GPU +12V fournie au régulateur de tension.
-de=GPU +12V Eingangsspannung an den Spannungsregler geliefert.
+de=GPU +12V Eingangs-Spannung an den Spannungsregler geliefert.
 es=Voltaje de entrada GPU + 12V suministrado al regulador de voltaje.
 pt-BR=Tensão de entrada GPU + 12V fornecida ao regulador de tensão.
 it=Tensione di ingresso GPU +12V fornita al regolatore di tensione.
@@ -7100,7 +7100,7 @@ he=מתח GPU של קו הליבה (VDDC).
 {{Sensors}}
 en=GPU Core Voltage (VDDCR_GFX)
 fr=Tension du cœur du GPU (VDDCR_GFX)
-de=GPU-Kernspannung (VDDCR_GFX)
+de=GPU-Kern-Spannung (VDDCR_GFX)
 es=Voltaje del núcleo de la GPU (VDDCR_GFX)
 pt-BR=GPU Core Voltage (VDDCR_GFX)
 it=Tensione core GPU (VDDCR_GFX)
@@ -7127,7 +7127,7 @@ he=מתח ליבת GPU (VDDCR_GFX)
 {{Sensors}}
 en=GPU Core Voltage (VDDC)
 fr=Tension du cœur du GPU (VDDC)
-de=GPU-Kernspannung (VDDC)
+de=GPU-Kern-Spannung (VDDC)
 es=Voltaje del núcleo de la GPU (VDDC)
 pt-BR=GPU Core Voltage (VDDC)
 it=Tensione core GPU (VDDC)
@@ -7154,7 +7154,7 @@ he=מתח ליבת GPU (VDDC)
 {{Sensors}}
 en=GPU Core Voltage
 fr=Tension du cœur du GPU
-de=GPU-Kernspannung
+de=GPU-Kern-Spannung
 es=Voltaje del núcleo de la GPU
 pt-BR=GPU Core Voltage
 it=Tensione core GPU
@@ -7181,7 +7181,7 @@ he=מתח ליבת GPU
 {{Sensors}}
 en=GPU Memory Voltage
 fr=Tension de la mémoire GPU
-de=GPU-Speicherspannung
+de=GPU-Speicher-Spannung
 es=Voltaje de la memoria de la GPU
 pt-BR=Tensão da memória GPU
 it=Tensione di memoria GPU
@@ -7208,7 +7208,7 @@ he=מתח זיכרון GPU
 {{Sensors}}
 en=GPU voltage of the memory (VDDIO) rail.
 fr=Tension GPU de la ligne mémoire (VDDIO).
-de=GPU-Spannung der Speicherleitung (VDDIO).
+de=GPU-Spannung der Speicher-Schiene (VDDIO).
 es=Voltaje de la GPU de la línea de memoria (VDDIO).
 pt-BR=Tensão GPU da linha de memória (VDDIO).
 it=Tensione GPU della linea di memoria (VDDIO).
@@ -7235,7 +7235,7 @@ he=מתח GPU של קו הזיכרון (VDDIO).
 {{Sensors}}
 en=GPU voltage of the memory (MVDDC) rail.
 fr=Tension GPU de la ligne mémoire (MVDDC).
-de=GPU-Spannung der Speicherleitung (MVDDC).
+de=GPU-Spannung der Speicher-Schiene (MVDDC).
 es=Voltaje de la GPU de la línea de memoria (MVDDC).
 pt-BR=Tensão GPU da linha de memória (MVDDC).
 it=Tensione GPU della linea di memoria (MVDDC).
@@ -7262,7 +7262,7 @@ he=מתח GPU של קו הזיכרון (MVDDC).
 {{Sensors}}
 en=GPU voltage of the auxiliary (VDDCI) rail.
 fr=Tension GPU de la ligne auxiliaire (VDDCI).
-de=GPU-Spannung der Hilfsleitung (VDDCI).
+de=GPU-Spannung der Unterstützungs-Schiene (VDDCI).
 es=Voltaje GPU de la línea auxiliar (VDDCI).
 pt-BR=Tensão GPU da linha auxiliar (VDDCI).
 it=Tensione GPU della linea ausiliaria (VDDCI).
@@ -7289,7 +7289,7 @@ he=מתח GPU של קו העזר (VDDCI).
 {{Sensors}}
 en=GPU voltage of the SoC (VDDCR_SOC) rail.
 fr=Tension GPU de la ligne SoC (VDDCR_SOC).
-de=GPU-Spannung der SoC-(VDDCR_SOC)-Leitung.
+de=GPU-Spannung der SoC-(VDDCR_SOC)-Schiene.
 es=Voltaje GPU de la línea SoC (VDDCR_SOC).
 pt-BR=Tensão GPU da linha SoC (VDDCR_SOC).
 it=Tensione GPU della linea SoC (VDDCR_SOC).
@@ -7316,7 +7316,7 @@ he=מתח GPU של קו ה-SoC (VDDCR_SOC).
 {{Sensors}}
 en=GPU voltage of the memory (VDDCI_MEM) rail.
 fr=Tension GPU de la ligne mémoire (VDDCI_MEM).
-de=GPU-Spannung der Speicherleitung (VDDCI_MEM).
+de=GPU-Spannung der Speicher-Schiene (VDDCI_MEM).
 es=Voltaje de la GPU de la línea de memoria (VDDCI_MEM).
 pt-BR=Tensão GPU da linha de memória (VDDCI_MEM).
 it=Tensione GPU della linea di memoria (VDDCI_MEM).
@@ -7397,7 +7397,7 @@ he=מתח GPU +12V מסופק.
 {{Sensors}}
 en=Current GPU fan speed.
 fr=Vitesse actuelle du ventilateur du GPU.
-de=Aktuelle GPU-Lüftergeschwindigkeit.
+de=Aktuelle GPU-Lüfter-Geschwindigkeit.
 es=Velocidad actual del ventilador de la GPU.
 pt-BR=Velocidade atual do ventilador da GPU.
 it=Velocità attuale della ventola della GPU.
@@ -7451,7 +7451,7 @@ he=זרם נלקח מווסת מתח GPU.
 {{Sensors}}
 en=Current drawn by the GPU voltage regulator (VR input side).
 fr=Courant consommé par le régulateur de tension GPU (côté entrée VR).
-de=Strom, der vom GPU-Spannungsregler (VR-Eingangsseite) aufgenommen wird.
+de=Strom, der vom GPU-Spannungsregler (VR-Eingangsseite) gezogen wird.
 es=Corriente consumida por el regulador de voltaje de la GPU (lado de entrada VR).
 pt-BR=Corrente consumida pelo regulador de tensão da GPU (lado de entrada VR).
 it=Corrente assorbita dal regolatore di tensione della GPU (lato ingresso VR).
@@ -7478,7 +7478,7 @@ he=זרם נמשך על ידי ווסת מתח GPU (צד קלט VR).
 {{Sensors}}
 en=Current drawn by the GPU from voltage regulator (VR output side).
 fr=Courant tiré par le GPU du régulateur de tension (côté sortie VR).
-de=Strom, der von der GPU vom Spannungsregler (VR-Ausgangsseite) aufgenommen wird.
+de=Strom, der von der GPU vom Spannungsregler (VR-Ausgangsseite) gezogen wird.
 es=Corriente consumida por la GPU del regulador de voltaje (lado de salida VR).
 pt-BR=Corrente extraída pela GPU do regulador de tensão (lado de saída VR).
 it=Corrente assorbita dalla GPU dal regolatore di tensione (lato uscita VR).
@@ -7532,7 +7532,7 @@ he=זרם מצויר על ידי קו ליבת ה-GPU (VDDCR_GFX).
 {{Sensors}}
 en=Current drawn by the GPU memory (VDDIO) rail.
 fr=Courant tiré par la ligne de mémoire GPU (VDDIO).
-de=Strom, der von der GPU-Speicherleitung (VDDIO) gezogen wird.
+de=Strom, der von der GPU-Speicher-Schiene (VDDIO) gezogen wird.
 es=Corriente consumida por la línea de memoria GPU (VDDIO).
 pt-BR=Corrente desenhada pela linha de memória GPU (VDDIO).
 it=Corrente assorbita dalla linea di memoria GPU (VDDIO).
@@ -7559,7 +7559,7 @@ he=זרם מצויר על ידי קו זיכרון GPU (VDDIO).
 {{Sensors}}
 en=Current drawn by the GPU auxiliary rail.
 fr=Courant tiré par la ligne auxiliaire du GPU.
-de=Strom, der von der GPU-Hilfslinie gezogen wird.
+de=Strom, der von der GPU-Unterstützungs-Schiene gezogen wird.
 es=Corriente consumida por la línea auxiliar de la GPU.
 pt-BR=Corrente desenhada pela linha auxiliar da GPU.
 it=Corrente assorbita dalla linea ausiliaria della GPU.
@@ -7586,7 +7586,7 @@ he=זרם מצויר על ידי קו העזר של GPU.
 {{Sensors}}
 en=Current drawn by the GPU SoC (VDDCR_SOC) rail.
 fr=Courant consommé par la ligne GPU SoC (VDDCR_SOC).
-de=Strom, der von der GPU-SoC-(VDDCR_SOC)-Leitung gezogen wird.
+de=Strom, der von der GPU-SoC-(VDDCR_SOC)-Schiene gezogen wird.
 es=Corriente consumida por la línea GPU SoC (VDDCR_SOC).
 pt-BR=Corrente desenhada pela linha GPU SoC (VDDCR_SOC).
 it=Corrente disegnata dalla linea GPU SoC (VDDCR_SOC).
@@ -7613,7 +7613,7 @@ he=זרם מצויר על ידי קו GPU SoC (VDDCR_SOC).
 {{Sensors}}
 en=Current drawn by the GPU memory (VDDCI_MEM) rail.
 fr=Courant tiré par la ligne de mémoire GPU (VDDCI_MEM).
-de=Strom, der von der GPU-Speicherleitung (VDDCI_MEM) gezogen wird.
+de=Strom, der von der GPU-Speicher-Schiene (VDDCI_MEM) gezogen wird.
 es=Corriente consumida por la línea de memoria GPU (VDDCI_MEM).
 pt-BR=Corrente desenhada pela linha de memória GPU (VDDCI_MEM).
 it=Corrente assorbita dalla linea di memoria GPU (VDDCI_MEM).
@@ -7640,7 +7640,7 @@ he=זרם מצויר על ידי קו זיכרון GPU (VDDCI_MEM).
 {{Sensors}}
 en=Current drawn by the GPU +12V input rail.
 fr=Courant consommé par le rail d'entrée GPU +12V.
-de=Von der GPU +12V-Eingangsschiene gezogener Strom.
+de=Von der GPU +12V-Eingangs-Schiene gezogener Strom.
 es=Corriente consumida por el riel de entrada GPU +12V.
 pt-BR=Corrente extraída pelo trilho de entrada GPU + 12V.
 it=Corrente assorbita dalla guida di ingresso GPU +12V.
@@ -7667,7 +7667,7 @@ he=זרם נמשך על ידי מסילת הכניסה של GPU +12V.
 {{Sensors}}
 en=+12V Input Current
 fr=+12V courant d'entrée
-de=+12V Eingangsstrom
+de=+12V Eingangs-Strom
 es=+12V de corriente de entrada
 pt-BR=Corrente de entrada de +12V
 it=Corrente di ingresso +12V
@@ -7721,7 +7721,7 @@ he=+12V זרם כניסת אוטובוס
 {{Sensors}}
 en=Current drawn by the GPU +12V Bus input rail.
 fr=Courant consommé par le rail d'entrée du GPU +12V Bus.
-de=Von der GPU +12V Bus-Eingangsschiene gezogener Strom.
+de=Von der GPU +12V Bus-Eingangs-Schiene gezogener Strom.
 es=Corriente consumida por el carril de entrada del bus GPU + 12V.
 pt-BR=Corrente consumida pelo trilho de entrada do barramento GPU + 12V.
 it=Corrente assorbita dalla guida di ingresso del bus GPU +12V.
@@ -7748,7 +7748,7 @@ he=זרם נמשך על ידי מסילת הכניסה של GPU +12V Bus.
 {{Sensors}}
 en=Current drawn by the GPU +12V Bus input rail.
 fr=Courant consommé par la ligne d'entrée du GPU +12V Bus.
-de=Von der GPU +12V Bus-Eingangsleitung gezogener Strom.
+de=Von der GPU +12V Bus-Eingangs-Schiene gezogener Strom.
 es=Corriente consumida por la línea de entrada del bus GPU + 12V.
 pt-BR=Corrente desenhada pela linha de entrada do barramento GPU + 12V.
 it=Corrente assorbita dalla linea di ingresso bus GPU +12V.
@@ -7883,7 +7883,7 @@ he=GPU SoC Thermal Design Current (זרם מתמשך שניתן על ידי וו
 {{Sensors}}
 en=GPU VRM Power Out (POUT)
 fr=Puissance de sortie GPU VRM (POUT)
-de=GPU VRM-Leistungsausgang (POUT)
+de=GPU VRM-Leistungs-Abgabe (POUT)
 es=Salida de potencia de GPU VRM (POUT)
 pt-BR=Saída de potência GPU VRM (POUT)
 it=Potenza in uscita GPU VRM (POUT)
@@ -7937,7 +7937,7 @@ he=הספק הנצרך על ידי ה-GPU נמדד בצד הפלט של ווסת
 {{Sensors}}
 en=GPU VRM Power In (PIN)
 fr=Entrée d'alimentation GPU VRM (PIN)
-de=GPU-VRM-Stromeingang (PIN)
+de=GPU-VRM-Strom-Aufnahme (PIN)
 es=Entrada de alimentación GPU VRM (PIN)
 pt-BR=GPU VRM Power Input (PIN)
 it=Ingresso alimentazione GPU VRM (PIN)
@@ -8072,7 +8072,7 @@ he=כוח הנצרך על ידי קו ליבת GPU (VDDCR_GFX).
 {{Sensors}}
 en=GPU Memory Power
 fr=Puissance de la mémoire GPU
-de=GPU-Speicherleistung
+de=GPU-Speicher-Leistung
 es=Potencia de memoria de GPU
 pt-BR=Potência da memória GPU
 it=Potenza della memoria GPU
@@ -8126,7 +8126,7 @@ he=כוח הנצרך על ידי קו זיכרון GPU.
 {{Sensors}}
 en=GPU Memory Power (VDDIO)
 fr=Puissance de la mémoire GPU (VDDIO)
-de=GPU-Speicherleistung (VDDIO)
+de=GPU-Speicher-Leistung (VDDIO)
 es=Potencia de memoria de GPU (VDDIO)
 pt-BR=GPU Memory Power (VDDIO)
 it=Potenza della memoria GPU (VDDIO)
@@ -8153,7 +8153,7 @@ he=כוח זיכרון GPU (VDDIO)
 {{Sensors}}
 en=Power consumed by the GPU memory (VDDIO) rail.
 fr=Puissance consommée par la ligne de mémoire GPU (VDDIO).
-de=Von der GPU-Speicherleitung (VDDIO) verbrauchter Strom.
+de=Von der GPU-Speicher-Schiene (VDDIO) verbrauchter Strom.
 es=Energía consumida por la línea de memoria GPU (VDDIO).
 pt-BR=Energia consumida pela linha de memória GPU (VDDIO).
 it=Potenza consumata dalla linea di memoria GPU (VDDIO).
@@ -8180,7 +8180,7 @@ he=כוח הנצרך על ידי קו זיכרון ה-GPU (VDDIO).
 {{Sensors}}
 en=Power consumed by the GPU auxiliary rail.
 fr=Puissance consommée par la ligne auxiliaire GPU.
-de=Von der GPU-Hilfsleitung verbrauchter Strom.
+de=Von der GPU-Unterstützungs-Schiene verbrauchter Strom.
 es=Energía consumida por la línea auxiliar GPU.
 pt-BR=Energia consumida pela linha auxiliar da GPU.
 it=Potenza consumata dalla linea ausiliaria della GPU.
@@ -8207,7 +8207,7 @@ he=כוח הנצרך על ידי קו העזר של GPU.
 {{Sensors}}
 en=Power consumed by the GPU SoC (VDDCR_SOC) rail.
 fr=Puissance consommée par la ligne GPU SoC (VDDCR_SOC).
-de=Von der GPU-SoC-Leitung (VDDCR_SOC) verbrauchte Leistung.
+de=Von der GPU-SoC-Schiene (VDDCR_SOC) verbrauchte Leistung.
 es=Energía consumida por la línea GPU SoC (VDDCR_SOC).
 pt-BR=Energia consumida pela linha GPU SoC (VDDCR_SOC).
 it=Potenza consumata dalla linea GPU SoC (VDDCR_SOC).
@@ -8234,7 +8234,7 @@ he=כוח הנצרך על ידי קו GPU SoC (VDDCR_SOC).
 {{Sensors}}
 en=GPU Chip Power
 fr=Puissance de la puce GPU
-de=GPU-Chipleistung
+de=GPU-Chip-Leistung
 es=Potencia del chip GPU
 pt-BR=GPU Chip Power
 it=Potenza del chip GPU
@@ -8288,7 +8288,7 @@ he=כוח הנצרך על ידי ה-GPU.
 {{Sensors}}
 en=GPU Memory Power (VDDCI_MEM)
 fr=Puissance de la mémoire GPU (VDDCI_MEM)
-de=GPU-Speicherleistung (VDDCI_MEM)
+de=GPU-Speicher-Leistung (VDDCI_MEM)
 es=Potencia de memoria de GPU (VDDCI_MEM)
 pt-BR=Potência da memória GPU (VDDCI_MEM)
 it=Potenza della memoria GPU (VDDCI_MEM)
@@ -8315,7 +8315,7 @@ he=כוח זיכרון GPU (VDDCI_MEM)
 {{Sensors}}
 en=Power consumed by the GPU memory (VDDCI_MEM) rail.
 fr=Puissance consommée par la ligne de mémoire GPU (VDDCI_MEM).
-de=Von der GPU-Speicherleitung (VDDCI_MEM) verbrauchte Leistung.
+de=Von der GPU-Speicher-Schiene (VDDCI_MEM) verbrauchte Leistung.
 es=Energía consumida por la línea de memoria GPU (VDDCI_MEM).
 pt-BR=Energia consumida pela linha de memória GPU (VDDCI_MEM).
 it=Potenza consumata dalla linea di memoria GPU (VDDCI_MEM).
@@ -8396,7 +8396,7 @@ he=סך כוח ה-GPU הנצרך כסכום של כל הקווים הנמדדי�
 {{Sensors}}
 en=GPU Package Power Tracking current value.
 fr=Valeur actuelle du suivi de la puissance du package GPU.
-de=Aktueller Wert der GPU-Paketleistungsverfolgung.
+de=Aktueller Wert der GPU-Paket-Leistungs-Verfolgung.
 es=Valor actual de seguimiento de energía del paquete GPU.
 pt-BR=GPU Package Power Tracking current value.
 it=Valore corrente di monitoraggio della potenza del pacchetto GPU.
@@ -8423,7 +8423,7 @@ he=GPU Package Power Tracking ערך נוכחי.
 {{Sensors}}
 en=+12V Input Power
 fr=+12V Puissance d'entrée
-de=+12V Eingangsleistung
+de=+12V Eingangs-Leistung
 es=+12V de potencia de entrada
 pt-BR=Alimentação de entrada de +12V
 it=+12 V di alimentazione in ingresso
@@ -8477,7 +8477,7 @@ he=הספק הנצרך כפי שנמדד בקו הכניסה +12V.
 {{Sensors}}
 en=+12V Bus Input Power
 fr=Alimentation d'entrée du bus +12 V
-de=+12V Bus-Eingangsleistung
+de=+12V Bus-Eingangs-Leistung
 es=+ 12V de potencia de entrada del bus
 pt-BR=Alimentação de entrada de barramento de + 12V
 it=Alimentazione in ingresso bus +12V
@@ -8504,7 +8504,7 @@ he=+12V כניסת אוטובוס
 {{Sensors}}
 en=Power consumed as measured at the +12V Bus input rail.
 fr=Puissance consommée telle que mesurée sur le rail d'entrée du bus +12V.
-de=Stromaufnahme gemessen an der +12V Bus-Eingangsschiene.
+de=Stromaufnahme gemessen an der +12V Bus-Eingangs-Schiene.
 es=Energía consumida medida en el riel de entrada del bus de + 12V.
 pt-BR=Energia consumida conforme medida no trilho de entrada do barramento de + 12V.
 it=Potenza consumata misurata sulla guida di ingresso del bus +12V.
@@ -8558,7 +8558,7 @@ he=מגבלת PPT של GPU
 {{Sensors}}
 en=GPU Package Power Tracking limit.
 fr=Limite de suivi de puissance du package GPU.
-de=Limit für die Leistungsverfolgung des GPU.
+de=Limit für die Leistungs-Verfolgung der GPU.
 es=Límite de seguimiento de energía del paquete de GPU.
 pt-BR=Limite de rastreamento de energia do pacote GPU.
 it=Limite di monitoraggio della potenza del pacchetto GPU.
@@ -8585,7 +8585,7 @@ he=מגבלת כוח מעקב בחבילת GPU.
 {{Sensors}}
 en=Current GPU core (GFXCLK) frequency.
 fr=Fréquence actuelle du cœur du GPU (GFXCLK).
-de=Aktuelle GPU-Kernfrequenz (GFXCLK).
+de=Aktuelle GPU-Kern-Frequenz (GFXCLK).
 es=Frecuencia actual del núcleo de la GPU (GFXCLK).
 pt-BR=Frequência atual do núcleo da GPU (GFXCLK).
 it=Frequenza attuale del core della GPU (GFXCLK).
@@ -8693,7 +8693,7 @@ he=תדר יעיל של ליבת GPU נוכחית (GFXCLK).
 {{Sensors}}
 en=Current GPU geometry unit frequency.
 fr=Fréquence actuelle de l'unité de géométrie GPU.
-de=Aktuelle GPU-Geometrieeinheit-Frequenz.
+de=Aktuelle GPU-Geometrie-Einheit-Frequenz.
 es=Frecuencia actual de la unidad de geometría de la GPU.
 pt-BR=Frequência atual da unidade de geometria da GPU.
 it=Frequenza dell'unità di geometria della GPU corrente.
@@ -8747,7 +8747,7 @@ he=תדר ROP נוכחי של GPU.
 {{Sensors}}
 en=GPU Memory Clock
 fr=Horloge Mémoire GPU
-de=GPU-Speichertakt
+de=GPU-Speicher-Takt
 es=Reloj de Memoria GPU
 pt-BR=GPU Memory Clock
 it=Orologio Memoria GPU
@@ -8801,7 +8801,7 @@ he=תדר השעון הנוכחי של פקודת זיכרון GPU (לא קצב 
 {{Sensors}}
 en=Current GPU SoC domain frequency.
 fr=Fréquence actuelle du domaine GPU SoC.
-de=Aktuelle GPU-SoC-Domänenfrequenz.
+de=Aktuelle GPU-SoC-Domain-Frequenz.
 es=Frecuencia actual del dominio de GPU SoC.
 pt-BR=Frequência de domínio de SoC de GPU atual.
 it=Frequenza del dominio SoC GPU corrente.
@@ -8855,7 +8855,7 @@ he=מפענח וידאו אוניברסלי GPU נוכחי 1 תדר.
 {{Sensors}}
 en=Current GPU Universal Video Decoder 2 frequency.
 fr=Fréquence actuelle du décodeur vidéo universel 2 du GPU.
-de=Aktuelle GPU Universal Video Decoder 2 Frequenz.
+de=Aktuelle GPU Universal Video-Decoder 2 Frequenz.
 es=Frecuencia actual del decodificador de video universal 2 de la GPU.
 pt-BR=Frequência atual do decodificador de vídeo universal 2 da GPU.
 it=Frequenza corrente GPU Universal Video Decoder 2.
@@ -8882,7 +8882,7 @@ he=מפענח וידאו אוניברסלי GPU נוכחי 2 תדר.
 {{Sensors}}
 en=Current GPU Video Decoder (VCLK) frequency.
 fr=Fréquence actuelle du décodeur vidéo GPU (VCLK).
-de=Aktuelle GPU-Videodecoder (VCLK)-Frequenz.
+de=Aktuelle GPU-Video-Decoder (VCLK)-Frequenz.
 es=Frecuencia actual del decodificador de video GPU (VCLK).
 pt-BR=Frequência atual do decodificador de vídeo GPU (VCLK).
 it=Frequenza corrente del decodificatore video GPU (VCLK).
@@ -8909,7 +8909,7 @@ he=תדר נוכחי של מפענח וידאו של GPU (VCLK).
 {{Sensors}}
 en=Current GPU Video Encoder (DCLK) frequency.
 fr=Fréquence actuelle de l'encodeur vidéo GPU (DCLK).
-de=Aktuelle GPU Video Encoder (DCLK)-Frequenz.
+de=Aktuelle GPU Video-Encoder (DCLK)-Frequenz.
 es=Frecuencia actual del codificador de video GPU (DCLK).
 pt-BR=Frequência atual do codificador de vídeo GPU (DCLK).
 it=Frequenza corrente del codificatore video GPU (DCLK).
@@ -8936,7 +8936,7 @@ he=תדר הנוכחי של GPU Video Encoder (DCLK).
 {{Sensors}}
 en=Current GPU Video Coding Engine frequency.
 fr=Fréquence actuelle du moteur de codage vidéo GPU.
-de=Aktuelle GPU-Videocodierungs-Engine-Frequenz.
+de=Aktuelle GPU-Video-Codierungs-Engine-Frequenz.
 es=Frecuencia actual del motor de codificación de video de la GPU.
 pt-BR=Frequência atual do mecanismo de codificação de vídeo da GPU.
 it=Frequenza corrente del motore di codifica video GPU.
@@ -8963,7 +8963,7 @@ he=תדר מנוע קידוד וידאו נוכחי של GPU.
 {{Sensors}}
 en=Current GPU Video Core Next engine frequency.
 fr=Fréquence actuelle du moteur GPU Video Core Next.
-de=Aktuelle GPU-Videokernfrequenz der nächsten Engine.
+de=Aktuelle GPU-Video-Kern-Frequenz der nächsten Engine.
 es=Frecuencia actual del motor GPU Video Core Next.
 pt-BR=Frequência atual do motor GPU Video Core Next.
 it=Corrente GPU Video Core Prossima frequenza del motore.
@@ -9287,7 +9287,7 @@ he=שימושי GPU D3D
 {{Sensors}}
 en=Utilization of the Video Decoder GPU engine as reported via Direct 3D interface.
 fr=Utilisation du moteur GPU du décodeur vidéo tel que rapporté via l'interface Direct 3D.
-de=Verwendung der GPU-Engine des Videodecoders, wie über die Direct 3D-Schnittstelle gemeldet.
+de=Verwendung der GPU-Engine des Video-Decoders, wie über die Direct 3D-Schnittstelle gemeldet.
 es=Utilización del motor GPU Video Decoder según lo informado a través de la interfaz Direct 3D.
 pt-BR=Utilização do mecanismo de GPU do decodificador de vídeo conforme relatado por meio da interface Direct 3D.
 it=Utilizzo del motore GPU Video Decoder come riportato tramite interfaccia Direct 3D.
@@ -9314,7 +9314,7 @@ he=ניצול מנוע ה-Video Decoder GPU כפי שדווח באמצעות מ�
 {{Sensors}}
 en=Utilization of the Video Encoder GPU engine as reported via Direct 3D interface.
 fr=Utilisation du moteur GPU Video Encoder tel que rapporté via l'interface Direct 3D.
-de=Verwendung der GPU-Engine des Video Encoders, wie über die Direct 3D-Schnittstelle gemeldet.
+de=Verwendung der GPU-Engine des Video-Encoders, wie über die Direct 3D-Schnittstelle gemeldet.
 es=Utilización del motor de GPU Video Encoder según lo informado a través de la interfaz Direct 3D.
 pt-BR=Utilização do mecanismo de GPU do codificador de vídeo conforme relatado por meio da interface Direct 3D.
 it=Utilizzo del motore GPU Video Encoder come riportato tramite interfaccia Direct 3D.
@@ -9368,7 +9368,7 @@ he=ניצול מנוע ה-GPU Computing כפי שדווח באמצעות ממש�
 {{Sensors}}
 en=Utilization of the Video Processing GPU engine as reported via Direct 3D interface.
 fr=Utilisation du moteur GPU de traitement vidéo tel que rapporté via l'interface Direct 3D.
-de=Nutzung der GPU-Engine für die Videoverarbeitung, wie über die Direct 3D-Schnittstelle gemeldet.
+de=Nutzung der GPU-Engine für die Video-Verarbeitung, wie über die Direct 3D-Schnittstelle gemeldet.
 es=Utilización del motor de procesamiento de video de la GPU según lo informado a través de la interfaz Direct 3D.
 pt-BR=Utilização do mecanismo de GPU de processamento de vídeo conforme relatado por meio da interface Direct 3D.
 it=Utilizzo del motore GPU di elaborazione video come riportato tramite interfaccia Direct 3D.
@@ -9530,7 +9530,7 @@ he=מגבלת GPU Core TDC
 {{Sensors}}
 en=GPU Core domain Thermal Design Current percentage of limit (sustained current deliverable by voltage regulator in thermally-constrained scenarios).
 fr=GPU Core domain Thermal Design Pourcentage actuel de la limite (courant soutenu livrable par le régulateur de tension dans les scénarios thermiquement contraints).
-de=GPU-Kerndomäne Thermal Design Aktueller Prozentsatz des Grenzwerts (Dauerstrom, der vom Spannungsregler in thermisch eingeschränkten Szenarien geliefert werden kann).
+de=GPU-Kern-Domain Thermal-Design aktueller Prozentsatz des Grenzwerts (Dauerstrom, der vom Spannungsregler in thermisch eingeschränkten Szenarien geliefert werden kann).
 es=Diseño térmico del dominio del núcleo de la GPU Porcentaje actual del límite (corriente sostenida que puede entregar el regulador de voltaje en escenarios con restricciones térmicas).
 pt-BR=Domínio do núcleo da GPU Projeto térmico Porcentagem atual do limite (corrente sustentada fornecida pelo regulador de tensão em cenários com restrição térmica).
 it=GPU Core domain Thermal Design Percentuale corrente del limite (corrente continua fornita dal regolatore di tensione in scenari con vincoli termici).
@@ -9584,7 +9584,7 @@ he=מגבלת GPU SOC TDC
 {{Sensors}}
 en=GPU SOC domain Design Current percentage of limit (sustained current deliverable by voltage regulator in thermally-constrained scenarios).
 fr=Conception du domaine GPU SOC Pourcentage actuel de la limite (courant soutenu livrable par le régulateur de tension dans les scénarios thermiquement contraints).
-de=GPU-SOC-Domäne Design Aktueller Prozentsatz des Grenzwerts (Dauerstrom, der vom Spannungsregler in thermisch eingeschränkten Szenarien geliefert werden kann).
+de=GPU-SOC-Domain-Design aktueller Prozentsatz des Grenzwerts (Dauerstrom, der vom Spannungsregler in thermisch eingeschränkten Szenarien geliefert werden kann).
 es=Diseño de dominio de GPU SOC Porcentaje de límite de corriente (corriente sostenida que puede entregar el regulador de voltaje en escenarios con restricción térmica).
 pt-BR=Projeto do domínio SOC da GPU A porcentagem atual do limite (entrega de corrente sustentada pelo regulador de tensão em cenários com restrição térmica).
 it=Dominio SOC GPU Design Percentuale corrente del limite (corrente continua fornita dal regolatore di tensione in scenari con vincoli termici).
@@ -9665,7 +9665,7 @@ he=מגבלה תרמית Edge GPU
 {{Sensors}}
 en=GPU Edge temperature percentage of limit.
 fr=Pourcentage de la limite de température GPU Edge.
-de=Prozentsatz der GPU-Edgetemperatur des Grenzwerts.
+de=Prozentsatz der GPU-Edge-Temperatur des Grenzwerts.
 es=Porcentaje de límite de temperatura de borde de GPU.
 pt-BR=Limite de porcentagem da temperatura de borda da GPU.
 it=Percentuale limite temperatura GPU Edge.
@@ -9719,7 +9719,7 @@ he=מגבלה תרמית של GPU Hotspot
 {{Sensors}}
 en=GPU Hotspot temperature percentage of limit.
 fr=Pourcentage de température du point d'accès GPU de la limite.
-de=GPU-Hotspot-Temperaturprozentsatz des Grenzwerts.
+de=GPU-Hotspot-Temperatur-Prozentsatz des Grenzwerts.
 es=Porcentaje de límite de temperatura del punto de acceso de la GPU.
 pt-BR=Porcentagem de limite de temperatura do ponto de acesso GPU.
 it=Percentuale del limite di temperatura dell'hotspot GPU.
@@ -9773,7 +9773,7 @@ he=מגבלה תרמית של זיכרון GPU
 {{Sensors}}
 en=GPU Memory temperature percentage of limit.
 fr=Pourcentage de température de la mémoire GPU de la limite.
-de=Prozentsatz der GPU-Speichertemperatur des Limits.
+de=Prozentsatz der GPU-Speicher-Temperatur des Limits.
 es=Porcentaje de límite de temperatura de memoria de GPU.
 pt-BR=Porcentagem de limite de temperatura da memória GPU.
 it=Percentuale del limite di temperatura della memoria GPU.
@@ -9827,7 +9827,7 @@ he=GPU VR GFX מגבלה תרמית
 {{Sensors}}
 en=GPU Core Voltage Regulator temperature percentage of limit.
 fr=Pourcentage de température du régulateur de tension du cœur du GPU de la limite.
-de=Temperaturprozentsatz des GPU-Kernspannungsreglers vom Grenzwert.
+de=Temperatur-Prozentsatz des GPU-Kern-Spannungsreglers vom Grenzwert.
 es=Porcentaje de límite de temperatura del regulador de voltaje del núcleo de la GPU.
 pt-BR=Limite de porcentagem da temperatura do regulador de tensão do núcleo da GPU.
 it=Percentuale del limite di temperatura del regolatore di tensione del core GPU.
@@ -9881,7 +9881,7 @@ he=מגבלה תרמית של GPU VR SOC
 {{Sensors}}
 en=GPU SoC Voltage Regulator temperature percentage of limit.
 fr=Pourcentage de température du régulateur de tension GPU SoC de la limite.
-de=Temperaturprozentsatz des GPU-SoC-Spannungsreglers vom Grenzwert.
+de=Temperatur-Prozentsatz des GPU-SoC-Spannungsreglers vom Grenzwert.
 es=Porcentaje de límite de temperatura del regulador de voltaje de GPU SoC.
 pt-BR=Limite de porcentagem da temperatura do regulador de tensão da GPU SoC.
 it=Percentuale del limite di temperatura del regolatore di tensione GPU SoC.
@@ -9935,7 +9935,7 @@ he=GPU VR MEM מגבלה תרמית
 {{Sensors}}
 en=GPU Memory Voltage Regulator temperature percentage of limit.
 fr=Pourcentage de température du régulateur de tension de mémoire GPU de la limite.
-de=Temperaturprozentsatz des GPU-Speicherspannungsreglers vom Grenzwert.
+de=Temperatur-Prozentsatz des GPU-Speicher-Spannungsreglers vom Grenzwert.
 es=Porcentaje de límite de temperatura del regulador de voltaje de la memoria de la GPU.
 pt-BR=Limite de temperatura do regulador de tensão da memória GPU.
 it=Percentuale del limite di temperatura del regolatore di tensione della memoria GPU.
@@ -9962,7 +9962,7 @@ he=GPU זיכרון מתח וסת אחוז הטמפרטורה של הגבלה.
 {{Sensors}}
 en=GPU fan speed as PWM percentage of maximum.
 fr=Vitesse du ventilateur du GPU en pourcentage PWM du maximum.
-de=GPU-Lüftergeschwindigkeit als PWM-Prozentsatz des Maximums.
+de=GPU-Lüfter-Geschwindigkeit als PWM-Prozentsatz des Maximums.
 es=Velocidad del ventilador de la GPU como porcentaje de PWM del máximo.
 pt-BR=Velocidade do ventilador da GPU como porcentagem PWM do máximo.
 it=Velocità della ventola della GPU come percentuale PWM del massimo.
@@ -10151,7 +10151,7 @@ he=מהירות קישור PCIe
 {{Sensors}}
 en=Current PCI Express link speed. Reflects also if the port speed is limited.
 fr=Vitesse de liaison PCI Express actuelle. Reflète également si la vitesse du port est limitée.
-de=Aktuelle PCI-Express-Verbindungsgeschwindigkeit. Reflektiert auch, wenn die Portgeschwindigkeit begrenzt ist.
+de=Aktuelle PCI-Express-Verbindungs-Geschwindigkeit. Gibt auch wieder, ob die Portgeschwindigkeit begrenzt ist.
 es=Velocidad actual del enlace PCI Express. Refleja también si la velocidad del puerto es limitada.
 pt-BR=Velocidade atual do link PCI Express. Reflete também se a velocidade da porta é limitada.
 it=Velocità di collegamento PCI Express attuale. Riflette anche se la velocità della porta è limitata.
@@ -10178,7 +10178,7 @@ he=מהירות קישור PCI Express נוכחית. משקף גם אם מהיר
 {{Sensors}}
 en=GPU Memory Usage
 fr=Utilisation de la mémoire GPU
-de=GPU-Speichernutzung
+de=GPU-Speicher-Nutzung
 es=Uso de memoria de GPU
 pt-BR=Uso de memória GPU
 it=Utilizzo della memoria GPU
@@ -10232,7 +10232,7 @@ he=זיכרון GPU כולל בשימוש.
 {{Sensors}}
 en=GPU Memory Errors
 fr=Erreurs de mémoire GPU
-de=GPU-Speicherfehler
+de=GPU-Speicher-Fehler
 es=Errores de memoria de la GPU
 pt-BR=Erros de memória GPU
 it=Errori di memoria GPU
@@ -10259,7 +10259,7 @@ he=שגיאות זיכרון GPU
 {{Sensors}}
 en=Total number of detected GPU memory errors accumulated during runtime.
 fr=Nombre total d'erreurs de mémoire GPU détectées accumulées pendant l'exécution.
-de=Gesamtzahl der erkannten GPU-Speicherfehler, die sich während der Laufzeit angesammelt haben.
+de=Gesamtzahl der erkannten GPU-Speicher-Fehler, die sich während der Laufzeit angesammelt haben.
 es=Número total de errores de memoria de GPU detectados acumulados durante el tiempo de ejecución.
 pt-BR=Número total de erros de memória GPU detectados acumulados durante o tempo de execução.
 it=Numero totale di errori di memoria GPU rilevati accumulati durante il runtime.
@@ -10286,7 +10286,7 @@ he=המספר הכולל של שגיאות זיכרון GPU שזוהו שהצט�
 {{SUBST}}
 en=Throttle Reason
 fr=Raison de l'étranglement
-de=Drosselungsgrund
+de=Drosselungs-Grund
 es=Razón de estrangulamiento
 pt-BR=Motivo de estrangulamento
 it=Motivo della limitazione
@@ -10313,7 +10313,7 @@ he=סיבת מצערת
 {{Sensors}}
 en=Throttle Reason - Thermal
 fr=Raison de la limitation - Thermique
-de=Drosselungsgrund - Thermal
+de=Drosselungs-Grund - Thermal
 es=Razón de estrangulamiento - Térmica
 pt-BR=Motivo de estrangulamento - térmico
 it=Motivo della limitazione - Termico
@@ -10340,7 +10340,7 @@ he=סיבת מצערת - תרמית
 {{Sensors}}
 en=Throttle Reason - Current
 fr=Raison de la limitation - Courant
-de=Drosselungsgrund - Strom
+de=Drosselungs-Grund - Strom
 es=Razón de estrangulamiento - Corriente
 pt-BR=Motivo de estrangulamento - Corrente
 it=Motivo della limitazione - Corrente
@@ -10907,7 +10907,7 @@ he=חיישן זה מדווח על ערך GPU HV1 שנמדד בצד הקלט ש�
 {{SUBST}}
 en=GPU Total Board Input
 fr=GPU Total Board Input
-de=GPU-Gesamtplatineneingang
+de=GPU-Gesamt-Platinen-Eingang
 es=Entrada de la placa total de la GPU
 pt-BR=GPU Total Board Input
 it=Ingresso scheda totale GPU
@@ -11420,7 +11420,7 @@ he=חיישן זה מדווח על ערך הקלט של מקור הכוח של G
 {{SUBST}}
 en=GPU +3.3V Main Input
 fr=Entrée principale GPU +3,3 V
-de=GPU +3,3 V Haupteingang
+de=GPU +3,3V Haupt-Eingang
 es=Entrada principal GPU + 3.3V
 pt-BR=GPU + entrada principal de 3,3 V
 it=Ingresso principale GPU + 3,3 V
@@ -11690,7 +11690,7 @@ he=חיישן זה מדווח על ערך הקלט של PCIe +12V שנמדד.
 {{Sensors}}
 en=Average GPU chip temperature.
 fr=Température moyenne de la puce GPU.
-de=Durchschnittliche GPU-Chiptemperatur.
+de=Durchschnittliche GPU-Chip-Temperatur.
 es=Temperatura promedio del chip de la GPU.
 pt-BR=Temperatura média do chip GPU.
 it=Temperatura media del chip GPU.
@@ -11744,7 +11744,7 @@ he=לוח GPU/טמפרטורת סביבה.
 {{Sensors}}
 en=Maximum Junction temperature among all GPU memory chips.\nThis is the internal junction temperature measured inside the silicon, not the external (case) temperature, so higher values (than usual Tcase) are expected here.\nThermal throttling starts around 110 C.
 fr=Température de jonction maximale entre toutes les puces de mémoire GPU.\nIl s'agit de la température de jonction interne mesurée à l'intérieur du silicium, et non de la température externe (du boîtier).
-de=Maximale Sperrschichttemperatur aller GPU-Speicherchips.\nDies ist die interne Sperrschichttemperatur, die innerhalb des Siliziums gemessen wird, nicht die externe (Gehäuse-)Temperatur, daher werden hier höhere Werte (als übliches Tcase) erwartet.\nThermische Drosselung beginnt bei etwa 110 °C.
+de=Maximale Sperrschicht-Temperatur aller GPU-Speicherchips.\nDies ist die interne Sperrschicht-Temperatur, die innerhalb des Siliziums gemessen wird, nicht die externe (Gehäuse-)Temperatur, daher werden hier höhere Werte (als übliches Tcase) erwartet.\nThermische Drosselung beginnt bei etwa 110 °C.
 es=Temperatura máxima de unión entre todos los chips de memoria GPU.\nEsta es la temperatura de unión interna medida dentro del silicio, no la temperatura externa (carcasa), por lo que se esperan valores más altos (que la Tcase habitual) aquí.\nLa aceleración térmica comienza alrededor de 110 C.
 pt-BR=Temperatura máxima de junção entre todos os chips de memória GPU.\nEsta é a temperatura de junção interna medida dentro do silício, não a temperatura externa (caixa), portanto, valores mais altos (do que o Tcase normal) são esperados aqui.\nA estrangulamento térmico começa em torno de 110 C.
 it=Temperatura di giunzione massima tra tutti i chip di memoria GPU.\nQuesta è la temperatura di giunzione interna misurata all'interno del silicio, non la temperatura esterna (case), quindi qui sono previsti valori più alti (rispetto al normale Tcase).\nIl throttling termico inizia intorno ai 110 C.
@@ -11906,7 +11906,7 @@ he=מתח GPU נמדד על ידי חיישן עזר.
 {{SUBST}}
 en=VRM Voltage Out
 fr=Sortie de tension VRM
-de=VRM-Spannungsausgang
+de=VRM-Spannung-Ausgang
 es=Salida de voltaje VRM
 pt-BR=Saída de tensão VRM
 it=Uscita in tensione VRM
@@ -11933,7 +11933,7 @@ he=פלט מתח VRM
 {{SUBST}}
 en=VRM Voltage In
 fr=Entrée de tension VRM
-de=VRM-Spannungseingang
+de=VRM-Spannung-Eingang
 es=Entrada de voltaje VRM
 pt-BR=Entrada de tensão VRM
 it=Ingresso tensione VRM
@@ -11960,7 +11960,7 @@ he=כניסת מתח VRM
 {{SUBST}}
 en=VRM Power Out
 fr=Puissance de sortie VRM
-de=VRM-Ausgangsleistung
+de=VRM-Leistung-Ausgang
 es=Salida de potencia VRM
 pt-BR=Saída de potência VRM
 it=Potenza in uscita VRM
@@ -11987,7 +11987,7 @@ he=פלט כוח VRM
 {{SUBST}}
 en=VRM Power In
 fr=Entrée d'alimentation VRM
-de=VRM-Stromeingang
+de=VRM-Strom-Eingang
 es=Entrada de energía VRM
 pt-BR=VRM Power Input
 it=Ingresso alimentazione VRM
@@ -12014,7 +12014,7 @@ he=קלט כוח VRM
 {{Sensors}}
 en=GPU core voltage as provided by GPU driver.
 fr=Tension du cœur du GPU telle que fournie par le pilote du GPU.
-de=GPU-Kernspannung, wie vom GPU-Treiber bereitgestellt.
+de=GPU-Kern-Spannung, wie vom GPU-Treiber bereitgestellt.
 es=Voltaje del núcleo de la GPU proporcionado por el controlador de la GPU.
 pt-BR=Tensão do núcleo da GPU fornecida pelo driver da GPU.
 it=Tensione del core della GPU fornita dal driver della GPU.
@@ -12041,7 +12041,7 @@ he=מתח ליבת GPU כפי שסופק על ידי מנהל התקן GPU.
 {{Sensors}}
 en=GPU Rail Voltages
 fr=Tensions des lignes GPU
-de=GPU-Leitungsspannungen
+de=GPU-Schienen-Spannungen
 es=Voltajes de líneas de GPU
 pt-BR=Tensões de linhas GPU
 it=Tensioni delle linee GPU
@@ -12068,7 +12068,7 @@ he=מתחי קווי GPU
 {{Sensors}}
 en=Voltage monitored by auxiliary EVGA sensor.
 fr=Tension surveillée par capteur EVGA auxiliaire.
-de=Spannungsüberwachung durch zusätzlichen EVGA-Sensor.
+de=Spannungs-Überwachung durch zusätzlichen EVGA-Sensor.
 es=Voltaje monitoreado por sensor EVGA auxiliar.
 pt-BR=Tensão monitorada por sensor EVGA auxiliar.
 it=Tensione monitorata da sensore EVGA ausiliario.
@@ -12338,7 +12338,7 @@ he=מציין אם ביצועי ה-GPU מופחתים מהמקסימום עקב 
 {{Sensors}}
 en=Performance Limit - Reliability Voltage
 fr=Limite de performance - Tension de fiabilité
-de=Leistungsgrenze - Zuverlässigkeitsspannung
+de=Leistungsgrenze - Spannungs-Zuverlässigkeit
 es=Límite de rendimiento: voltaje de confiabilidad
 pt-BR=Limite de desempenho - tensão de confiabilidade
 it=Limite di prestazione - Tensione di affidabilità
@@ -12365,7 +12365,7 @@ he=מגבלת ביצועים - מתח אמינות
 {{Sensors}}
 en=Indicates whether GPU performance is reduced from maximum due to reaching the reliability voltage limit.
 fr=Indique si les performances du GPU sont réduites par rapport au maximum en raison de l'atteinte de la limite de tension de fiabilité.
-de=Zeigt an, ob die GPU-Leistung aufgrund des Erreichens der Zuverlässigkeitsspannungsgrenze vom Maximum reduziert wird.
+de=Zeigt an, ob die GPU-Leistung aufgrund des Erreichens der Spannungs-Zuverlässigkeits-Grenze vom Maximum reduziert wird.
 es=Indica si el rendimiento de la GPU se reduce del máximo debido a que se alcanza el límite de voltaje de confiabilidad.
 pt-BR=Indica se o desempenho da GPU é reduzido do máximo devido ao alcance do limite de voltagem de confiabilidade.
 it=Indica se le prestazioni della GPU vengono ridotte dal massimo a causa del raggiungimento del limite di tensione di affidabilità.
@@ -12554,7 +12554,7 @@ he=מציין אם ביצועי GPU מופחתים מהמקסימום עקב SLI
 {{Sensors}}
 en=GPU ECC Memory Errors (Corrected)
 fr=Erreurs de mémoire GPU ECC (corrigées)
-de=GPU-ECC-Speicherfehler (korrigiert)
+de=GPU-ECC-Speicher-Fehler (korrigiert)
 es=Errores de memoria ECC de GPU (corregidos)
 pt-BR=Erros de memória GPU ECC (corrigido)
 it=Errori di memoria ECC GPU (corretti)
@@ -12581,7 +12581,7 @@ he=שגיאות זיכרון GPU ECC (תוקנו)
 {{Sensors}}
 en=GPU ECC Memory Errors (Uncorrected)
 fr=Erreurs de mémoire GPU ECC (non corrigées)
-de=GPU-ECC-Speicherfehler (nicht korrigiert)
+de=GPU-ECC-Speicher-Fehler (nicht korrigiert)
 es=Errores de memoria ECC de GPU (sin corregir)
 pt-BR=Erros de memória GPU ECC (não corrigido)
 it=Errori di memoria ECC GPU (non corretti)
@@ -12824,7 +12824,7 @@ he=תדר ליבה יעיל של GPU נוכחי.
 {{Sensors}}
 en=GPU Core Load
 fr=Charge du cœur du GPU
-de=GPU-Kernlast
+de=GPU-Kern-Last
 es=Carga de núcleo de GPU
 pt-BR=Carga do núcleo da GPU
 it=Carico core GPU
@@ -13094,7 +13094,7 @@ he=ניצול מנוע ה-GPU VR כפי שדווח באמצעות ממשק תל�
 {{Sensors}}
 en=This sensor provides basic information about disk health retrieved via S.M.A.R.T. or ATA Statistics standards.\nPolling this sensor too frequently can cause performance degradation or clicking sounds on some drives.\nA less-frequent polling of this sensor is recommended (Sensor Settings - Polling Period - Disk S.M.A.R.T. every X cycles)
 fr=Ce capteur fournit des informations de base sur la santé du disque récupérées via les normes SMART ou ATA Statistics.\nL'interrogation trop fréquente de ce capteur peut entraîner une dégradation des performances ou des bruits de clic sur certains disques.\nUne interrogation moins fréquente de ce capteur est recommandée (Paramètres du capteur - Période d'interrogation - Disque SMART tous les X cycles)
-de=Dieser Sensor liefert grundlegende Informationen zum Festplattenzustand, die über SMART- oder ATA-Statistikstandards abgerufen werden.\nEine zu häufige Abfrage dieses Sensors kann zu Leistungseinbußen oder Klickgeräuschen bei einigen Laufwerken führen.\nEine weniger häufige Abfrage dieses Sensors wird empfohlen (Sensoreinstellungen – Abfragezeitraum - Disk SMART alle X Zyklen)
+de=Dieser Sensor liefert grundlegende Informationen zum Festplattenzustand, die über SMART- oder ATA-Statistik-Standards abgerufen werden.\nEine zu häufige Abfrage dieses Sensors kann zu Leistungseinbußen oder Klickgeräuschen bei einigen Laufwerken führen.\nEine weniger häufige Abfrage dieses Sensors wird empfohlen (Sensoreinstellungen – Abfragezeitraum - Disk SMART alle X Zyklen)
 es=Este sensor proporciona información básica sobre el estado del disco recuperada a través de los estándares de estadísticas SMART o ATA.\nSoltar este sensor con demasiada frecuencia puede provocar una degradación del rendimiento o sonidos de clic en algunas unidades.\nSe recomienda un sondeo menos frecuente de este sensor (Configuración del sensor - Período de sondeo - Disco SMART cada X ciclos)
 pt-BR=Este sensor fornece informações básicas sobre a integridade do disco recuperada por meio dos padrões SMART ou ATA Statistics.\nPolar este sensor com muita frequência pode causar degradação do desempenho ou sons de cliques em algumas unidades.\nUma pesquisa menos frequente deste sensor é recomendada (Configurações do sensor - Período de pesquisa - Disco SMART a cada X ciclos)
 it=Questo sensore fornisce informazioni di base sull'integrità del disco recuperate tramite gli standard SMART o ATA Statistics.\nIl polling di questo sensore troppo frequentemente può causare un degrado delle prestazioni o rumori di clic su alcune unità.\nSi consiglia un polling meno frequente di questo sensore (Impostazioni sensore - Periodo di polling - Disco SMART ogni X cicli)
@@ -13121,7 +13121,7 @@ he=חיישן זה מספק מידע בסיסי על תקינות הדיסק ש�
 {{Sensors}}
 en=Current disk drive temperature.
 fr=Température actuelle du lecteur de disque.
-de=Aktuelle Festplattentemperatur.
+de=Aktuelle Festplatten-Temperatur.
 es=Temperatura actual de la unidad de disco.
 pt-BR=Temperatura atual da unidade de disco.
 it=Temperatura attuale dell'unità disco.
@@ -13391,7 +13391,7 @@ he=אזהרת דיסק
 {{Sensors}}
 en=Total number of drive failures accumulated over its entire lifetime.\nEach drive defines a set of attributes, their actual values and thresholds. When an attribute falls below the defined threshold it's considered as a failure.\nFor NVMe drives the Device Reliablity Degraded or Media In Read-Only Mode states are considered as failure conditions.\nWhen a failure is detected, an additional sensor value will provide more precise details. Check the main HWiNFO screen for full details about each attribute.
 fr=Nombre total de pannes de disque accumulées sur toute sa durée de vie.\nChaque disque définit un ensemble d'attributs, leurs valeurs réelles et leurs seuils. Lorsqu'un attribut tombe en dessous du seuil défini, il est considéré comme une panne.\nPour les disques NVMe, les états Dégradation de la fiabilité du périphérique ou Média en lecture seule sont considérés comme des conditions de panne.\nLorsqu'une panne est détectée, une valeur de capteur supplémentaire fournira plus détails précis. Consultez l'écran principal HWiNFO pour plus de détails sur chaque attribut.
-de=Gesamtzahl der über die gesamte Lebensdauer kumulierten Laufwerksausfälle.\nJedes Laufwerk definiert eine Reihe von Attributen, ihre tatsächlichen Werte und Schwellenwerte. Wenn ein Attribut unter den definierten Schwellenwert fällt, wird es als Fehler betrachtet.\nBei NVMe-Laufwerken werden die Zustände Gerätezuverlässigkeit herabgesetzt oder Medien im schreibgeschützten Modus als Fehlerbedingungen betrachtet.\nWenn ein Fehler erkannt wird, liefert ein zusätzlicher Sensorwert mehr genaue Angaben. Auf dem HWiINFO-Hauptbildschirm finden Sie alle Details zu jedem Attribut.
+de=Gesamtzahl der über die gesamte Lebensdauer kumulierten Laufwerksausfälle.\nJedes Laufwerk definiert eine Reihe von Attributen, ihre tatsächlichen Werte und Schwellenwerte. Wenn ein Attribut unter den definierten Schwellenwert fällt, wird es als Fehler betrachtet.\nBei NVMe-Laufwerken werden die Zustände Gerätezuverlässigkeit herabgesetzt oder Medien im schreibgeschützten Modus als Fehlerbedingungen betrachtet.\nWenn ein Fehler erkannt wird, liefert ein zusätzlicher Sensorwert mehr genaue Angaben. Auf dem HWiNFO-Hauptbildschirm finden Sie alle Details zu jedem Attribut.
 es=Número total de fallos de la unidad acumulados durante toda su vida útil.\nCada unidad define un conjunto de atributos, sus valores reales y umbrales. Cuando un atributo cae por debajo del umbral definido, se considera una falla.\nPara las unidades NVMe, los estados de confiabilidad del dispositivo degradada o medios en modo de solo lectura se consideran condiciones de falla.\nCuando se detecta una falla, un valor de sensor adicional proporcionará más detalles precisos. Consulte la pantalla principal de HWiNFO para obtener detalles completos sobre cada atributo.
 pt-BR=Número total de falhas de unidade acumuladas durante toda a sua vida útil.\nCada unidade define um conjunto de atributos, seus valores reais e limites. Quando um atributo cai abaixo do limite definido, ele é considerado uma falha.\nPara o NVMe, os estados de Dispositivo Degradado ou Mídia em Modo Somente Leitura são considerados como condições de falha.\nQuando uma falha é detectada, um valor de sensor adicional fornecerá mais detalhes precisos. Verifique a tela principal do HWiNFO para detalhes completos sobre cada atributo.
 it=Numero totale di guasti dell'unità accumulati durante l'intero ciclo di vita.\nOgni unità definisce un insieme di attributi, i loro valori effettivi e le soglie. Quando un attributo scende al di sotto della soglia definita viene considerato un errore.\nPer le unità NVMe, gli stati di Degradazione dell'affidabilità del dispositivo o Media in modalità di sola lettura sono considerati condizioni di errore.\nQuando viene rilevato un errore, un valore del sensore aggiuntivo fornirà più dettagli precisi. Controlla la schermata principale di HWiNFO per tutti i dettagli su ciascun attributo.
@@ -13419,7 +13419,7 @@ he=המספר הכולל של כשלים בכונן שנצברו לאורך כל
 en=Total number of drive warnings accumulated over its entire lifetime.\nWhen the following ATA parameters exceed an amount of 2, they are treated as warnings:\n- Reallocated Sector Count, Current Pending Sector Count, Off-Line Uncorrectable Sector Count, Remaining Life < 10%\nThe following NVMe conditions are treated as warnings:\n- Available Space Below Threshold, Temperature Exceeded Critical Threshold, Volatile Memory Backup Device Failed\nWhen a warning is detected, an additional sensor value will provide more precise details. Check the main HWiNFO screen for full details about each attribute.
 fr=Nombre total d'avertissements de lecteur accumulés sur toute sa durée de vie.\nLorsque les paramètres ATA suivants dépassent un nombre de 2, ils sont traités comme des avertissements :\n- Nombre de secteurs réaffectés, nombre de secteurs en attente, nombre de secteurs non corrigibles hors ligne, durée de vie restante 
  10 %\nLes conditions NVMe suivantes sont traitées comme des avertissements :\n- Espace disponible sous le seuil, Seuil critique de température dépassée, Échec du périphérique de sauvegarde de la mémoire volatile\nLorsqu'un avertissement est détecté, une valeur de capteur supplémentaire fournira des détails plus précis. Consultez l'écran principal HWiNFO pour plus de détails sur chaque attribut.
-de=Gesamtzahl der während der gesamten Lebensdauer akkumulierten Laufwerkswarnungen.\nWenn die folgenden ATA-Parameter einen Wert von 2 überschreiten, werden sie als Warnungen behandelt:\n- Neu zugewiesene Sektorenzahl, Aktuell anstehende Sektorenzahl, Offline nicht korrigierbare Sektorenzahl, Restlebensdauer < 10%\nDie folgenden NVMe-Bedingungen werden als Warnungen behandelt:\n- Verfügbarer Speicherplatz unter Schwellenwert, Temperatur überstieg kritischen Schwellenwert, Sicherungsgerät für flüchtigen Speicher fehlgeschlagen\nWenn eine Warnung erkannt wird, liefert ein zusätzlicher Sensorwert genauere Details. Auf dem HWiINFO-Hauptbildschirm finden Sie alle Details zu jedem Attribut.
+de=Gesamtzahl der während der gesamten Lebensdauer akkumulierten Laufwerkswarnungen.\nWenn die folgenden ATA-Parameter einen Wert von 2 überschreiten, werden sie als Warnungen behandelt:\n- Neu zugewiesene Sektorenzahl, Aktuell anstehende Sektorenzahl, Offline nicht korrigierbare Sektorenzahl, Restlebensdauer < 10%\nDie folgenden NVMe-Bedingungen werden als Warnungen behandelt:\n- Verfügbarer Speicherplatz unter Schwellenwert, Temperatur überstieg kritischen Schwellenwert, Sicherungsgerät für flüchtigen Speicher fehlgeschlagen\nWenn eine Warnung erkannt wird, liefert ein zusätzlicher Sensorwert genauere Details. Auf dem HWiNFO-Hauptbildschirm finden Sie alle Details zu jedem Attribut.
 es=Número total de advertencias de disco acumuladas durante toda su vida útil.\nCuando los siguientes parámetros ATA superan una cantidad de 2, se tratan como advertencias:\n- Recuento de sectores reasignados, Recuento de sectores pendientes actuales, Recuento de sectores incorregibles fuera de línea, Vida restante <10 %\nLas siguientes condiciones de NVMe se tratan como advertencias:\n- Espacio disponible por debajo del umbral, Temperatura excedida el umbral crítico, Fallo del dispositivo de respaldo de memoria volátil\nCuando se detecta una advertencia, un valor de sensor adicional proporcionará detalles más precisos. Consulte la pantalla principal de HWiNFO para obtener detalles completos sobre cada atributo.
 pt-BR=Número total de avisos de unidade acumulados durante toda a sua vida útil.\nQuando os seguintes parâmetros ATA excederem 2, eles serão tratados como avisos:\n- Contagem de setores realocados, Contagem de setores pendentes atuais, Contagem de setores não corrigíveis off-line, Vida restante <10 %\nAs seguintes condições NVMe são tratadas como avisos:\n- Espaço disponível abaixo do limite, temperatura excedida limite crítico, falha no dispositivo de backup de memória volátil\nQuando um aviso é detectado, um valor de sensor adicional fornecerá detalhes mais precisos. Verifique a tela principal do HWiNFO para detalhes completos sobre cada atributo.
 it=Numero totale di avvisi dell'unità accumulati durante l'intera durata.\nQuando i seguenti parametri ATA superano un numero di 2, vengono trattati come avvisi:\n- Conteggio settore riallocato, Conteggio settore corrente in sospeso, Conteggio settore non correggibile offline, Vita rimanente < 10%\nLe seguenti condizioni NVMe sono trattate come avvertenze:\n- Spazio disponibile al di sotto della soglia, temperatura superata soglia critica, dispositivo di backup della memoria volatile non riuscito\nQuando viene rilevato un avviso, un valore del sensore aggiuntivo fornirà dettagli più precisi. Controlla la schermata principale di HWiNFO per tutti i dettagli su ciascun attributo.
@@ -13473,7 +13473,7 @@ he=סך המארח כותב
 {{Sensors}}
 en=Total data written to drive over its entire lifetime.
 fr=Total des données écrites sur le disque pendant toute sa durée de vie.
-de=Gesamtzahl der über die gesamte Lebensdauer auf die Festplatte geschriebenen Daten.
+de=Gesamtmenge der über die gesamte Lebensdauer auf die Festplatte geschriebenen Daten.
 es=Total de datos escritos en disco durante toda su vida útil.
 pt-BR=Total de dados gravados no disco durante toda a sua vida útil.
 it=Dati totali scritti su disco per tutta la sua durata.
@@ -13527,7 +13527,7 @@ he=סך כל כותבי NAND
 {{Sensors}}
 en=Total data written to drive's NAND flash over its entire lifetime.
 fr=Total des données écrites sur le disque flash NAND sur toute sa durée de vie.
-de=Gesamte Daten, die während seiner gesamten Lebensdauer auf den NAND-Flash der Festplatte geschrieben wurden.
+de=Gesamte Daten, die während der gesamten Lebensdauer auf den NAND-Flash der Festplatte geschrieben wurden.
 es=Los datos totales escritos en el disco NAND flash durante toda su vida útil.
 pt-BR=Total de dados gravados no disco NAND flash durante toda a sua vida útil.
 it=I dati totali scritti sul disco NAND flash per tutta la sua durata.
@@ -13581,7 +13581,7 @@ he=סך המארח קריאות
 {{Sensors}}
 en=Total data read from drive over its entire lifetime.
 fr=Données totales lues à partir du disque sur toute sa durée de vie.
-de=Gesamtzahl der vom Laufwerk gelesenen Daten während seiner gesamten Lebensdauer.
+de=Gesamtzahl der vom Laufwerk gelesenen Daten während der gesamten Lebensdauer.
 es=Total de datos leídos de la unidad durante toda su vida útil.
 pt-BR=Total de dados lidos da unidade durante toda a sua vida útil.
 it=Dati totali letti dall'unità durante l'intero ciclo di vita.
@@ -13716,7 +13716,7 @@ he=פרט אזהרת דיסק.
 {{Sensors}}
 en=Drive failure detail.
 fr=Détail de l'échec du disque.
-de=Details zu Festplattenfehlern.
+de=Details zu Festplatten-Fehlern.
 es=Detalle de falla de disco.
 pt-BR=Detalhe da falha do disco.
 it=Dettagli sull'errore del disco.
@@ -13743,7 +13743,7 @@ he=פירוט כשל בדיסק.
 {{Sensors}}
 en=Self-Test Failure
 fr=Échec de l'autotest
-de=Fehler beim Selbsttest
+de=Fehler beim Selbst-Test
 es=Fallo en la autocomprobación
 pt-BR=Falha no autoteste
 it=Fallimento dell'autotest
@@ -13770,7 +13770,7 @@ he=כישלון בבדיקה עצמית
 {{Sensors}}
 en=This sensor provides drive statistics retrieved from the operating system.
 fr=Ce capteur fournit des statistiques de disque récupérées du système d'exploitation.
-de=Dieser Sensor stellt vom Betriebssystem abgerufene Festplattenstatistiken bereit.
+de=Dieser Sensor stellt vom Betriebssystem abgerufene Festplatten-Statistiken bereit.
 es=Este sensor proporciona estadísticas de disco recuperadas del sistema operativo.
 pt-BR=Este sensor fornece estatísticas de disco recuperadas do sistema operacional.
 it=Questo sensore fornisce le statistiche del disco recuperate dal sistema operativo.
@@ -13851,7 +13851,7 @@ he=פעילות כתיבה
 {{Sensors}}
 en=Drive read activity percentage.
 fr=Pourcentage d'activité de lecture de disque.
-de=Prozentsatz der Festplatten-Leseaktivität.
+de=Prozentsatz der Festplatten-Lese-Aktivität.
 es=Porcentaje de actividad de lectura de disco.
 pt-BR=Porcentagem de atividade de leitura do disco.
 it=Percentuale di attività di lettura del disco.
@@ -13878,7 +13878,7 @@ he=אחוז פעילות קריאת הדיסק.
 {{Sensors}}
 en=Drive write activity percentage.
 fr=Pourcentage d'activité d'écriture sur le disque.
-de=Prozentsatz der Festplatten-Schreibaktivität.
+de=Prozentsatz der Festplatten-Schreib-Aktivität.
 es=Porcentaje de actividad de escritura en disco.
 pt-BR=Porcentagem de atividade de gravação de disco.
 it=Percentuale di attività di scrittura su disco.
@@ -13905,7 +13905,7 @@ he=אחוז פעילות כתיבה בדיסק.
 {{Sensors}}
 en=Drive total (read + write) activity percentage.
 fr=Pourcentage d'activité totale du disque (lecture + écriture).
-de=Prozentsatz der Gesamtaktivität der Festplatte (Lesen + Schreiben).
+de=Prozentsatz der Gesamt-Aktivität der Festplatte (Lesen + Schreiben).
 es=Porcentaje de actividad total (lectura + escritura) del disco.
 pt-BR=Porcentagem de atividade total do disco (leitura + gravação).
 it=Percentuale di attività totale del disco (lettura + scrittura).
@@ -14229,7 +14229,7 @@ he=ממוצע של 256 אלפיות השנייה של הטמפרטורה החמ�
 {{Sensors}}
 en=Core Max
 fr=Noyau Max
-de=Kernmaximum
+de=Kern-Maximum
 es=Máximo de Núcleo
 pt-BR=Núcleo Máximo
 it=Core Massimo
@@ -14310,7 +14310,7 @@ he=טמפרטורת הליבה הפנימית הנקראת על ידי החיי�
 {{Sensors}}
 en=Core Distance to TjMAX
 fr=Distance du cœur à TjMAX
-de=Kernentfernung zu TjMAX
+de=Kern-Distanz zu TjMAX
 es=Distancia del núcleo a TjMAX
 pt-BR=Distância do núcleo para TjMAX
 it=Distanza del nucleo da TjMAX
@@ -14337,7 +14337,7 @@ he=מרחק ליבה ל-TjMAX
 {{SUBST}}
 en=Distance to TjMAX
 fr=Distance à TjMAX
-de=Entfernung nach TjMAX
+de=Distanz zu TjMAX
 es=Distancia a TjMAX
 pt-BR=Distância para TjMAX
 it=Distanza da TjMAX
@@ -14391,7 +14391,7 @@ he=הפרש הטמפרטורה מטמפרטורת הצומת המקסימלית 
 {{Sensors}}
 en=Core Thermal Throttling
 fr=Limitation thermique du cœur
-de=Thermische Kerndrosselung
+de=Thermische Kern-Drosselung
 es=Aceleración térmica del núcleo
 pt-BR=Estrangulamento térmico do núcleo
 it=Limitazione termica del nucleo
@@ -14472,7 +14472,7 @@ he=מציין אם שעון הליבה מצר עקב הגעה לטמפרטורת
 {{Sensors}}
 en=Core Critical Temperature
 fr=Température critique du cœur
-de=Kritische Kerntemperatur
+de=Kritische Kern-Temperatur
 es=Temperatura crítica central
 pt-BR=Temperatura crítica do núcleo
 it=Temperatura critica centrale
@@ -14553,7 +14553,7 @@ he=מציין אם הליבה פועלת מעל המפרט התרמי שלה.
 {{Sensors}}
 en=Core Power Limit Exceeded
 fr=Limite de puissance de base dépassée
-de=Kernleistungsverbrauchlimit überschritten
+de=Kern-Leistungsverbrauchs-Limit überschritten
 es=Límite de potencia del núcleo excedido
 pt-BR=Limite de potência do núcleo excedido
 it=Limite di potenza del core superato
@@ -14634,7 +14634,7 @@ he=מציין אם מצב P-הליבה מוגבל על ידי הגבלת הספ�
 {{Sensors}}
 en=Package/Ring Thermal Throttling
 fr=Étranglement thermique de paquet/anneau
-de=Thermische Paket-/Ringdrosselung
+de=Thermische Paket-/Ring-Drosselung
 es=Paquete / Anillo de regulación térmica
 pt-BR=Regulagem térmica do pacote / anel
 it=Throttling termico pacchetto/anello
@@ -14742,7 +14742,7 @@ he=מציין אם חבילת ה-CPU פועלת מחוץ למפרט התרמי �
 {{Sensors}}
 en=Package/Ring Power Limit Exceeded
 fr=Limite de puissance de l'emballage/de la sonnerie dépassée
-de=Paket-/Ringleistungsgrenze überschritten
+de=Paket-/Ring-Leistungsgrenze überschritten
 es=Límite de potencia del paquete / anillo excedido
 pt-BR=Limite de energia do pacote / anel excedido
 it=Limite di potenza del pacchetto/anello superato
@@ -14823,7 +14823,7 @@ he=מגבלת PMAX/VCCIN תת מתח
 {{Sensors}}
 en=Indicates whether the PMAX detector circuit was asserted.
 fr=Indique si le circuit détecteur PMAX a été activé.
-de=Zeigt an, ob die PMAX-Detektorschaltung aktiviert wurde.
+de=Zeigt an, ob die PMAX-Detektor-Schaltung aktiviert wurde.
 es=Indica si se confirmó el circuito del detector PMAX.
 pt-BR=Indica se o circuito do detector PMAX foi confirmado.
 it=Indica se il circuito del rivelatore PMAX è stato asserito.
@@ -15039,7 +15039,7 @@ he=ערכת שבבים
 {{Sensors}}
 en=Internal chipset temperature.\nThis value is read directly from chipset, so it is higher than a temperature reported by mainboard sensors located in chipset vicinity.
 fr=Température interne du chipset.\nCette valeur est lue directement à partir du chipset, elle est donc supérieure à une température signalée par les capteurs de la carte mère situés à proximité du chipset.
-de=Interne Chipsatztemperatur.\nDieser Wert wird direkt vom Chipsatz gelesen, ist also höher als eine Temperatur, die von den Mainboard-Sensoren in der Nähe des Chipsatzes gemeldet wird.
+de=Interne Chipsatz-Temperatur.\nDieser Wert wird direkt vom Chipsatz gelesen, ist also höher als eine Temperatur, die von den Mainboard-Sensoren in der Nähe des Chipsatzes gemeldet wird.
 es=Temperatura interna del chipset.\nEste valor se lee directamente desde el chipset, por lo que es más alto que la temperatura informada por los sensores de la placa base ubicados en las proximidades del chipset.
 pt-BR=Temperatura interna do chipset.\nEste valor é lido diretamente do chipset, portanto, é mais alto do que a temperatura informada pelos sensores da placa-mãe localizados nas proximidades do chipset.
 it=Temperatura interna del chipset.\nQuesto valore viene letto direttamente dal chipset, quindi è superiore a una temperatura riportata dai sensori della scheda madre situati nelle vicinanze del chipset.
@@ -15066,7 +15066,7 @@ he=טמפרטורת ערכת השבבים הפנימית.\nערך זה נקרא 
 {{Sensors}}
 en=CPU Core power measured by chipset.
 fr=Puissance CPU Core mesurée par chipset.
-de=CPU-Kernleistung gemessen vom Chipsatz.
+de=CPU-Kern-Leistung gemessen vom Chipsatz.
 es=Potencia del núcleo de la CPU medida por chipset.
 pt-BR=Potência do CPU Core medida pelo chipset.
 it=Potenza del core della CPU misurata dal chipset.
@@ -15363,7 +15363,7 @@ he=הטמפרטורה של חלק יחידת המצלמה (ISP) של המעבד.
 {{SUBST}}
 en=Memory Channel
 fr=Canal mémoire
-de=Speicherkanal
+de=Speicher-Kanal
 es=Canal de memoria
 pt-BR=Canal de Memória
 it=Canale di memoria
@@ -15390,7 +15390,7 @@ he=ערוץ זיכרון
 {{Sensors}}
 en=Memory channel temperature value calculated byt the CPU. Mostly estimated per bandwidth.
 fr=Valeur de température du canal mémoire calculée par le CPU. Essentiellement estimé par bande passante.
-de=Von der CPU berechneter Temperaturwert des Speicherkanals. Meist pro Bandbreite geschätzt.
+de=Von der CPU berechneter Temperaturwert des Speicher-Kanals. Meist pro Bandbreite geschätzt.
 es=Valor de temperatura del canal de memoria calculado por la CPU. Principalmente estimado por ancho de banda.
 pt-BR=Valor da temperatura do canal de memória calculado pela CPU. Estimado principalmente por largura de banda.
 it=Valore della temperatura del canale di memoria calcolato dalla CPU. Per lo più stimato per larghezza di banda.
@@ -15660,7 +15660,7 @@ he=קיזוז מתח
 {{Sensors}}
 en=Voltage offset applied to a particular voltage rail.\nThis value is provided for reference only and does not update in real-time to prevent excessive traffic.\nIf changed during run time, will require restarting HWiNFO to reflect the actual value.
 fr=Décalage de tension appliqué à une ligne de tension particulière.\nCette valeur est fournie à titre indicatif uniquement et ne se met pas à jour en temps réel pour éviter un trafic excessif.\nSi elle est modifiée pendant l'exécution, il faudra redémarrer HWiNFO pour refléter la valeur réelle.
-de=Spannungsversatz, der auf eine bestimmte Spannungsleitung angewendet wird.\nDieser Wert dient nur als Referenz und wird nicht in Echtzeit aktualisiert, um übermäßigen Datenverkehr zu vermeiden.\nWenn er während der Laufzeit geändert wird, muss HWiINFO neu gestartet werden, um den tatsächlichen Wert widerzuspiegeln.
+de=Spannungsversatz, der auf eine bestimmte Spannungsleitung angewendet wird.\nDieser Wert dient nur als Referenz und wird nicht in Echtzeit aktualisiert, um übermäßigen Datenverkehr zu vermeiden.\nWenn er während der Laufzeit geändert wird, muss HWiNFO neu gestartet werden, um den tatsächlichen Wert widerzuspiegeln.
 es=Compensación de voltaje aplicada a una línea de voltaje en particular.\nEste valor se proporciona solo como referencia y no se actualiza en tiempo real para evitar tráfico excesivo.\nSi se cambia durante el tiempo de ejecución, será necesario reiniciar HWiNFO para reflejar el valor real.
 pt-BR=Deslocamento de tensão aplicado a uma linha de tensão específica.\nEste valor é fornecido apenas para referência e não é atualizado em tempo real para evitar tráfego excessivo.\nSe alterado durante o tempo de execução, será necessário reiniciar o HWiNFO para refletir o valor real.
 it=Offset di tensione applicato a una particolare linea di tensione.\nQuesto valore è fornito solo come riferimento e non si aggiorna in tempo reale per prevenire un traffico eccessivo.\nSe modificato durante il runtime, sarà necessario riavviare HWiNFO per riflettere il valore effettivo.
@@ -15741,7 +15741,7 @@ he=מתח זיכרון VDDQ TX.
 {{Sensors}}
 en=Total power consumed by the entire CPU Package including IA Cores, GT and Uncore.\nThis is a sum of power consumed by all CPU voltage rails featuring telemetry (SVID VR), remaining rails are estimated based on activity.\nPower monitoring requires SVID to be enabled in BIOS to work properly.
 fr=Puissance totale consommée par l'ensemble du processeur, y compris les cœurs IA, GT et Uncore.\nIl s'agit de la somme de la puissance consommée par toutes les lignes de tension du processeur dotées de la télémétrie (SVID VR), les lignes restantes sont estimées en fonction de l'activité.\nLa surveillance de l'alimentation nécessite SVID pour être activé dans le BIOS pour fonctionner correctement.
-de=Gesamtstromverbrauch des gesamten CPU-Pakets, einschließlich IA-Cores, GT und Uncore.\nDies ist die Summe des Stromverbrauchs aller CPU-Spannungsleitungen mit Telemetrie (SVID VR), verbleibende Leitungen werden basierend auf Aktivität geschätzt.\nLeistungsüberwachung erfordert SVID, um im BIOS aktiviert sein, damit es richtig funktioniert.
+de=Gesamt-Stromverbrauch des gesamten CPU-Pakets, einschließlich IA-Cores, GT und Uncore.\nDies ist die Summe des Stromverbrauchs aller CPU-Spannungsleitungen mit Telemetrie (SVID VR), verbleibende Leitungen werden basierend auf Aktivität geschätzt.\nLeistungsüberwachung erfordert SVID, um im BIOS aktiviert sein, damit es richtig funktioniert.
 es=Energía total consumida por todo el paquete de CPU, incluidos IA Cores, GT y Uncore.\nEsta es una suma de la energía consumida por todas las líneas de voltaje de la CPU con telemetría (SVID VR), las líneas restantes se estiman en función de la actividad.\nLa supervisión de energía requiere SVID para estar habilitado en BIOS para que funcione correctamente.
 pt-BR=Energia total consumida por todo o pacote de CPU, incluindo IA Cores, GT e Uncore.\nEsta é a soma da energia consumida por todas as linhas de tensão da CPU com telemetria (SVID VR), as linhas restantes são estimadas com base na atividade.\nO monitoramento de energia requer SVID para ser habilitado no BIOS para funcionar corretamente.
 it=Potenza totale consumata dall'intero pacchetto CPU, inclusi IA Core, GT e Uncore.\nQuesta è la somma della potenza consumata da tutte le linee di tensione della CPU dotate di telemetria (SVID VR), le linee rimanenti sono stimate in base all'attività.\nIl monitoraggio dell'alimentazione richiede che SVID essere abilitato nel BIOS per funzionare correttamente.
@@ -15930,7 +15930,7 @@ he=כוח משוער הנצרך על ידי DRAM.
 {{Sensors}}
 en=Total System Power
 fr=Puissance totale du système
-de=Gesamtsystemleistung
+de=Gesamt-System-Leistung
 es=Potencia total del sistema
 pt-BR=Potência total do sistema
 it=Potenza totale del sistema
@@ -15957,7 +15957,7 @@ he=כוח המערכת הכולל
 {{Sensors}}
 en=Total power consumed by all devices in the platform that receive power from integrated power delivery mechanism (CPU cores, SOC, memory, add-on or peripheral devices) that get powered directly from the platform power delivery means.\nRequires supported Psys-capable charging controller.
 fr=Puissance totale consommée par tous les appareils de la plate-forme qui sont alimentés par un mécanisme d'alimentation électrique intégré (cœurs de processeur, SOC, mémoire, modules complémentaires ou périphériques) qui sont alimentés directement par les moyens d'alimentation de la plate-forme.\nNécessite une charge compatible Psys prise en charge manette.
-de=Gesamtstromverbrauch aller Geräte in der Plattform, die Strom von einem integrierten Strombereitstellungsmechanismus (CPU-Kerne, SOC, Speicher, Zusatz- oder Peripheriegeräte) erhalten, die direkt von den Strombereitstellungsmitteln der Plattform mit Strom versorgt werden.\nErfordert unterstütztes Psys-fähiges Laden Regler.
+de=Gesamter Stromverbrauch aller Geräte in der Plattform, die Strom von einem integrierten Strombereitstellungsmechanismus (CPU-Kerne, SOC, Speicher, Zusatz- oder Peripheriegeräte) erhalten, die direkt von den Strombereitstellungsmitteln der Plattform mit Strom versorgt werden.\nErfordert unterstütztes Psys-fähiges Laden Regler.
 es=Energía total consumida por todos los dispositivos en la plataforma que reciben energía del mecanismo de suministro de energía integrado (núcleos de CPU, SOC, memoria, complementos o dispositivos periféricos) que se alimentan directamente de los medios de suministro de energía de la plataforma.\nRequiere carga compatible con Psys controlador.
 pt-BR=Energia total consumida por todos os dispositivos na plataforma que recebem energia do mecanismo de fornecimento de energia integrado (núcleos de CPU, SOC, memória, dispositivos complementares ou periféricos) que são alimentados diretamente dos meios de fornecimento de energia da plataforma.\nRequer carregamento compatível com Psys compatível controlador.
 it=Energia totale consumata da tutti i dispositivi nella piattaforma che ricevono alimentazione dal meccanismo di erogazione dell'alimentazione integrato (core della CPU, SOC, memoria, dispositivi aggiuntivi o periferici) che vengono alimentati direttamente dai mezzi di erogazione dell'alimentazione della piattaforma.\nRichiede una ricarica compatibile con Psys supportata controllore.
@@ -16470,7 +16470,7 @@ he=מגבלות מכפיל OC
 {{Sensors}}
 en=Overclocking ratio limit.\nThis value is provided for reference only and does not update in real-time to prevent excessive traffic.\nIf changed on the fly, will require restarting HWiNFO to reflect the actual value.
 fr=Limite du multiplicateur d'overclocking.\nCette valeur est fournie à titre indicatif et ne se met pas à jour en temps réel pour éviter un trafic excessif.\nSi elle est modifiée à la volée, il faudra redémarrer HWiNFO pour refléter la valeur réelle.
-de=Übertaktungsmultiplikatorlimit.\nDieser Wert dient nur als Referenz und wird nicht in Echtzeit aktualisiert, um übermäßigen Datenverkehr zu vermeiden.\nWenn er spontan geändert wird, muss HWiNFO neu gestartet werden, um den tatsächlichen Wert widerzuspiegeln.
+de=Übertaktungs-Multiplikator-Limit.\nDieser Wert dient nur als Referenz und wird nicht in Echtzeit aktualisiert, um übermäßigen Datenverkehr zu vermeiden.\nWenn er spontan geändert wird, muss HWiNFO neu gestartet werden, um den tatsächlichen Wert widerzuspiegeln.
 es=Límite del multiplicador de overclocking.\nEste valor se proporciona solo como referencia y no se actualiza en tiempo real para evitar un tráfico excesivo.\nSi se cambia sobre la marcha, será necesario reiniciar HWiNFO para reflejar el valor real.
 pt-BR=Limite do multiplicador de overclocking.\nEste valor é fornecido apenas para referência e não é atualizado em tempo real para evitar tráfego excessivo.\nSe for alterado em tempo real, será necessário reiniciar o HWiNFO para refletir o valor real.
 it=Limite del moltiplicatore di overclock.\nQuesto valore è fornito solo come riferimento e non si aggiorna in tempo reale per prevenire un traffico eccessivo.\nSe modificato al volo, sarà necessario riavviare HWiNFO per riflettere il valore effettivo.
@@ -17199,7 +17199,7 @@ he=טמפרטורה ממוצעת בין כל חיישני ה-IO Die (IOD).
 {{Sensors}}
 en=Core Voltage
 fr=Tension de base
-de=Kernspannung
+de=Kern-Spannung
 es=Voltaje del núcleo
 pt-BR=Tensão do núcleo
 it=Tensione del nucleo
@@ -17253,7 +17253,7 @@ he=המתח של תחום הליבה מסופק באמצעות טלמטריית 
 {{Sensors}}
 en=CPU Core Voltage (SVI2 TFN)
 fr=Tension du cœur du processeur (SVI2 TFN)
-de=CPU-Kernspannung (SVI2 TFN)
+de=CPU-Kern-Spannung (SVI2 TFN)
 es=Voltaje del núcleo de la CPU (SVI2 TFN)
 pt-BR=Tensão do núcleo da CPU (SVI2 TFN)
 it=Tensione del core della CPU (SVI2 TFN)
@@ -17415,7 +17415,7 @@ he=מתח של תחום SOC (VDDCR_SOC) מסופק באמצעות טלמטריי
 {{Sensors}}
 en=Effective voltage requested. This is the voltage chosen among all core VID voltages requested as the final request to the VR.
 fr=Tension effective demandée. Il s'agit de la tension choisie parmi toutes les tensions de noyau VID demandées comme demande finale au VR.
-de=Wirkspannung angefordert. Dies ist die Spannung, die aus allen VID-Kernspannungen ausgewählt wurde, die als letzte Anforderung an den VR angefordert wurden.
+de=Effektive Spannung angefordert. Dies ist die Spannung, die aus allen VID-Kern-Spannungen ausgewählt wurde, die als letzte Anforderung an den VR angefordert wurden.
 es=Voltaje efectivo solicitado. Este es el voltaje elegido entre todos los voltajes VID de núcleo solicitados como la solicitud final al VR.
 pt-BR=Tensão efetiva solicitada. Esta é a tensão escolhida entre todas as tensões VID centrais solicitadas como a solicitação final para o VR.
 it=Tensione effettiva richiesta. Questa è la tensione scelta tra tutte le tensioni del core VID richieste come richiesta finale al VR.
@@ -17496,7 +17496,7 @@ he=מתח של תחום MISC (VDD_MISC) מסופק באמצעות טלמטריי
 {{Sensors}}
 en=Core Current
 fr=Courant du cœur
-de=Kernstrom
+de=Kern-Strom
 es=Corriente del núcleo
 pt-BR=Corrente do núcleo
 it=Corrente di Core
@@ -17550,7 +17550,7 @@ he=זרם נמשך על ידי תחום הליבה המסופק באמצעות �
 {{Sensors}}
 en=CPU Core Current (SVI2 TFN)
 fr=Courant du cœur du processeur (SVI2 TFN)
-de=CPU-Kernstrom (SVI2 TFN)
+de=CPU-Kern-Strom (SVI2 TFN)
 es=Corriente del núcleo de la CPU (SVI2 TFN)
 pt-BR=Corrente do núcleo da CPU (SVI2 TFN)
 it=Corrente del core della CPU (SVI2 TFN)
@@ -17577,7 +17577,7 @@ he=זרם ליבת מעבד (SVI2 TFN)
 {{Sensors}}
 en=CPU Core Current
 fr=Courant du cœur du processeur
-de=CPU-Kernstrom
+de=CPU-Kern-Strom
 es=Corriente del núcleo de la CPU
 pt-BR=Corrente do núcleo da CPU
 it=Corrente del core della CPU
@@ -17766,7 +17766,7 @@ he=זרם עיצוב חשמלי של CPU (זרם ניתן על ידי ווסת �
 {{Sensors}}
 en=CPU Package Power
 fr=Consommation d'énergie totale du CPU
-de=CPU-Gesamtleistungsaufnahme
+de=CPU-Gesamt-Leistungsaufnahme
 es=Consumo total de energía de la CPU
 pt-BR=Consumo de energia total da CPU
 it=Consumo energetico totale della CPU
@@ -18549,7 +18549,7 @@ he=אחוז הזמן שה-CPU פועל מעל הגבול התרמי.
 {{Sensors}}
 en=Power Reporting Deviation (Accuracy)
 fr=Rapport de déviation de la consommation d'énergie (précision)
-de=Abweichung der Stromverbrauchsberichterstattung (Genauigkeit)
+de=Abweichung der Stromverbrauchs-Berichterstattung (Genauigkeit)
 es=Informes de desviación del consumo de energía (precisión)
 pt-BR=Relatório de Desvio de Consumo de Energia (precisão)
 it=Rapporto sulla deviazione del consumo energetico (accuratezza)
@@ -19089,7 +19089,7 @@ he=קצב שידור (העלאה) נתונים נוכחיים.
 {{Sensors}}
 en=\nHWiNFO doesn't have sufficient information about this (mainboard-specific) sensor value, so it's not guaranteed to be valid.
 fr=\nHWiNFO ne dispose pas d'informations suffisantes sur cette valeur de capteur (spécifique à la carte mère), il n'est donc pas garanti qu'elle soit valide.
-de=\nHWiINFO verfügt nicht über ausreichende Informationen zu diesem (Mainboard-spezifischen) Sensorwert, daher kann seine Gültigkeit nicht garantiert werden.
+de=\nHWiNFO verfügt nicht über ausreichende Informationen zu diesem (Mainboard-spezifischen) Sensorwert, daher kann seine Gültigkeit nicht garantiert werden.
 es=\nHWiNFO no tiene suficiente información sobre este valor de sensor (específico de la placa base), por lo que no se garantiza que sea válido.
 pt-BR=\nHWiNFO não tem informações suficientes sobre este valor do sensor (específico da placa-mãe), então não há garantia de que seja válido.
 it=\nHWiNFO non ha informazioni sufficienti su questo valore del sensore (specifico della scheda madre), quindi non è garantito che sia valido.
@@ -19170,7 +19170,7 @@ he=\n\nהניטור של חיישן זה מושבת. הקש על מקש Ins כד
 {{Sensors}}
 en=Battery Temperature
 fr=Température de la batterie
-de=Batterietemperatur
+de=Batterie-Temperatur
 es=Temperatura de la batería
 pt-BR=Temperatura da bateria
 it=Temperatura della batteria
@@ -19197,7 +19197,7 @@ he=טמפרטורת הסוללה
 {{Sensors}}
 en=Battery Voltage
 fr=Voltage de batterie
-de=Batteriespannung
+de=Batterie-Spannung
 es=Voltaje de la batería
 pt-BR=Voltagem da bateria
 it=Voltaggio batteria
@@ -19224,7 +19224,7 @@ he=מתח הסוללה
 {{Sensors}}
 en=Remaining Capacity
 fr=Capacité restante
-de=Restkapazität
+de=Rest-Kapazität
 es=Capacidad restante
 pt-BR=Capacidade Restante
 it=Capacità rimanente
@@ -19575,7 +19575,7 @@ he=זהה AC'97/HDA codec באמצעות גישה ברמה נמוכה.
 {{Settings}}
 en=Enumerate ACPI AML Namespace.
 fr=Énumérez l'espace de noms ACPI AML.
-de=Aufzählen des ACPI AML-Namespace.
+de=Enumerierung des ACPI AML-Namespace.
 es=Enumere el espacio de nombres ACPI AML.
 pt-BR=Enumere o namespace ACPI AML.
 it=Enumerare lo spazio dei nomi AML ACPI.
@@ -19629,7 +19629,7 @@ he=דלג על ספירת התקנים מסוימים הרגישים לגישה 
 {{Settings}}
 en=Enable Debug Mode for submitting details in case of problems.\nSee HWiNFO Forum for more details.
 fr=Activez le mode de débogage pour soumettre des détails en cas de problème.\nConsultez le forum HWiNFO pour plus de détails.
-de=Aktivieren des Debug-Modus, um bei Problemen Details zu übermitteln.\nWeitere Details finden Sie im HWiINFO-Forum.
+de=Aktivieren des Debug-Modus, um bei Problemen Details zu übermitteln.\nWeitere Details finden Sie im HWiNFO-Forum.
 es=Habilite el modo de depuración para enviar detalles en caso de problemas.\nConsulte el Foro de HWiNFO para obtener más detalles.
 pt-BR=Ative o modo de depuração para enviar detalhes em caso de problemas.\nConsulte o fórum HWiNFO para obter mais detalhes.
 it=Abilita la modalità debug per inviare i dettagli in caso di problemi.\nVedi il forum HWiNFO per maggiori dettagli.
@@ -19845,7 +19845,7 @@ he=גש לרגולטורי מתח Intel Serial VID (SVID) כדי לאחזר מי
 {{Settings}}
 en=On some systems the PCH Thermal Device is disabled by BIOS. Access to this device is required in order to report PCH temperature. Enabling this option will instruct HWiNFO to try to enable it and attempt to use it to report PCH temperature (if available).\nThis option is disabled by default, because there are few systems, where enabling this device can cause a system crash. This option doesn't affect systems, where the PCH Thermal Device is enabled by BIOS.\nNote, that even if the PCH Thermal Device is enabled, it doesn't guarantee that the PCH temperature can be read.
 fr=Sur certains systèmes, le périphérique thermique PCH est désactivé par le BIOS. L'accès à cet appareil est requis pour signaler la température du PCH. L'activation de cette option demandera à HWiNFO d'essayer de l'activer et de tenter de l'utiliser pour signaler la température du PCH (si disponible).\nCette option est désactivée par défaut, car il existe peu de systèmes où l'activation de ce périphérique peut provoquer un plantage du système. Cette option n'affecte pas les systèmes sur lesquels le périphérique thermique PCH est activé par le BIOS.\nNotez que même si le périphérique thermique PCH est activé, cela ne garantit pas que la température du PCH puisse être lue.
-de=Auf einigen Systemen wird das PCH Thermal Device vom BIOS deaktiviert. Der Zugriff auf dieses Gerät ist erforderlich, um die PCH-Temperatur zu melden. Die Aktivierung dieser Option weist HWiINFO an, sie zu aktivieren und zu verwenden, um die PCH-Temperatur zu melden (sofern verfügbar).\nDiese Option ist standardmäßig deaktiviert, da es nur wenige Systeme gibt, bei denen die Aktivierung dieses Geräts zu einem Systemabsturz führen kann. Diese Option wirkt sich nicht auf Systeme aus, auf denen das PCH Thermal Device vom BIOS aktiviert ist.\nBeachten Sie, dass selbst wenn das PCH Thermal Device aktiviert ist, es nicht garantiert, dass die PCH-Temperatur gelesen werden kann.
+de=Auf einigen Systemen wird das PCH Thermal Device vom BIOS deaktiviert. Der Zugriff auf dieses Gerät ist erforderlich, um die PCH-Temperatur zu melden. Die Aktivierung dieser Option weist HWiNFO an, sie zu aktivieren und zu verwenden, um die PCH-Temperatur zu melden (sofern verfügbar).\nDiese Option ist standardmäßig deaktiviert, da es nur wenige Systeme gibt, bei denen die Aktivierung dieses Geräts zu einem Systemabsturz führen kann. Diese Option wirkt sich nicht auf Systeme aus, auf denen das PCH Thermal Device vom BIOS aktiviert ist.\nBeachten Sie, dass selbst wenn das PCH Thermal Device aktiviert ist, es nicht garantiert, dass die PCH-Temperatur gelesen werden kann.
 es=En algunos sistemas, el BIOS desactiva el dispositivo térmico PCH. Se requiere acceso a este dispositivo para informar la temperatura PCH. Habilitar esta opción le indicará a HWiNFO que intente habilitarlo e intente usarlo para informar la temperatura PCH (si está disponible).\nEsta opción está deshabilitada de manera predeterminada, porque hay pocos sistemas, donde habilitar este dispositivo puede causar un bloqueo del sistema. Esta opción no afecta a los sistemas, donde el dispositivo térmico PCH está habilitado por BIOS.\nNota, que incluso si el dispositivo térmico PCH está habilitado, no garantiza que se pueda leer la temperatura PCH.
 pt-BR=Em alguns sistemas, o dispositivo térmico PCH é desativado pelo BIOS. O acesso a este dispositivo é necessário para relatar a temperatura do PCH. Habilitar esta opção instruirá o HWiNFO a tentar habilitá-la e tentar usá-la para relatar a temperatura do PCH (se disponível).\nEsta opção é desabilitada por padrão, porque existem poucos sistemas onde habilitar este dispositivo pode causar uma falha do sistema. Esta opção não afeta os sistemas em que o dispositivo térmico PCH é ativado pelo BIOS.\nObserve que, mesmo se o dispositivo térmico PCH estiver ativado, isso não garante que a temperatura do PCH possa ser lida.
 it=Su alcuni sistemi il dispositivo termico PCH è disabilitato dal BIOS. L'accesso a questo dispositivo è necessario per riportare la temperatura PCH. L'abilitazione di questa opzione indicherà a HWiNFO di provare ad abilitarla e di utilizzarla per riportare la temperatura PCH (se disponibile).\nQuesta opzione è disabilitata per impostazione predefinita, poiché ci sono pochi sistemi in cui l'abilitazione di questo dispositivo può causare un arresto anomalo del sistema. Questa opzione non ha effetto sui sistemi in cui il dispositivo termico PCH è abilitato dal BIOS.\nNota che anche se il dispositivo termico PCH è abilitato, non garantisce che la temperatura del PCH possa essere letta.
@@ -19899,7 +19899,7 @@ he=תמכו בממשק ניהול האחסון הנפוץ בתעשייה עבו�
 {{Settings}}
 en=NVML (NVIDIA Management Library) is used by HWiNFO to provide some additional information about NVIDIA GPUs.\nDue to a bug in NVIDIA R368 and some later drivers, some SLI-enabled systems with certain display configurations can hang when trying to access the NVML. In such case, disable this option.\nRecommended value in all other cases: ENABLED
 fr=NVML (NVIDIA Management Library) est utilisé par HWiNFO pour fournir des informations supplémentaires sur les GPU NVIDIA.\nEn raison d'un bogue dans NVIDIA R368 et certains pilotes ultérieurs, certains systèmes compatibles SLI avec certaines configurations d'affichage peuvent se bloquer lors de la tentative d'accès au NVML. Dans ce cas, désactivez cette option.\nValeur recommandée dans tous les autres cas : ENABLED
-de=NVML (NVIDIA Management Library) wird von HWiINFO verwendet, um einige zusätzliche Informationen über NVIDIA-GPUs bereitzustellen.\nAufgrund eines Fehlers in NVIDIA R368 und einigen neueren Treibern können einige SLI-fähige Systeme mit bestimmten Anzeigekonfigurationen beim Versuch, auf die NVML zuzugreifen, hängen bleiben. Deaktivieren Sie in diesem Fall diese Option.\nEmpfohlener Wert in allen anderen Fällen: AKTIVIERT
+de=NVML (NVIDIA Management Library) wird von HWiNFO verwendet, um einige zusätzliche Informationen über NVIDIA-GPUs bereitzustellen.\nAufgrund eines Fehlers in NVIDIA R368 und einigen neueren Treibern können einige SLI-fähige Systeme mit bestimmten Anzeigekonfigurationen beim Versuch, auf die NVML zuzugreifen, hängen bleiben. Deaktivieren Sie in diesem Fall diese Option.\nEmpfohlener Wert in allen anderen Fällen: AKTIVIERT
 es=HWiNFO utiliza NVML (Biblioteca de administración de NVIDIA) para proporcionar información adicional sobre las GPU de NVIDIA.\nDebido a un error en NVIDIA R368 y algunos controladores posteriores, algunos sistemas habilitados para SLI con ciertas configuraciones de pantalla pueden bloquearse al intentar acceder a NVML. En tal caso, desactive esta opción.\nValor recomendado en todos los demás casos: ENABLED
 pt-BR=NVML (NVIDIA Management Library) é usada pela HWiNFO para fornecer algumas informações adicionais sobre as GPUs NVIDIA.\nDevido a um bug no NVIDIA R368 e alguns drivers posteriores, alguns sistemas habilitados para SLI com certas configurações de vídeo podem travar ao tentar acessar o NVML. Nesse caso, desative esta opção.\nValor recomendado em todos os outros casos: ENABLED
 it=NVML (NVIDIA Management Library) viene utilizzato da HWiNFO per fornire alcune informazioni aggiuntive sulle GPU NVIDIA.\nA causa di un bug in NVIDIA R368 e in alcuni driver successivi, alcuni sistemi abilitati SLI con determinate configurazioni di visualizzazione possono bloccarsi quando si tenta di accedere a NVML. In tal caso, disabilitare questa opzione.\nValore consigliato in tutti gli altri casi: ABILITATO
@@ -19980,7 +19980,7 @@ he=סטטיסטיקת ATA Device מציעה מידע נוסף על מצב תקי
 {{Settings}}
 en=Accessing some Corsair devices can cause problems when the CorsairLink software is running.\nWhen this option is disabled, HWiNFO will not access any Corsair devices to avoid such conflict.\nThis option does also control access to some Asetek-based coolers, which when accessed might change their fan speed.
 fr=L'accès à certains appareils Corsair peut causer des problèmes lorsque le logiciel CorsairLink est en cours d'exécution.\nLorsque cette option est désactivée, HWiNFO n'accédera à aucun appareil Corsair pour éviter un tel conflit.\nCette option contrôle également l'accès à certains refroidisseurs basés sur Asetek, qui, lorsqu'ils sont accessibles. pourraient changer la vitesse de leur ventilateur.
-de=Der Zugriff auf einige Corsair-Geräte kann zu Problemen führen, wenn die CorsairLink-Software ausgeführt wird.\nWenn diese Option deaktiviert ist, greift HWiNFO nicht auf Corsair-Geräte zu, um solche Konflikte zu vermeiden.\nDiese Option steuert auch den Zugriff auf einige Asetek-basierte Kühler, die bei Zugriff könnten ihre Lüftergeschwindigkeit ändern.
+de=Der Zugriff auf einige Corsair-Geräte kann zu Problemen führen, wenn die CorsairLink-Software ausgeführt wird.\nWenn diese Option deaktiviert ist, greift HWiNFO nicht auf Corsair-Geräte zu, um solche Konflikte zu vermeiden.\nDiese Option steuert auch den Zugriff auf einige Asetek-basierte Kühler, die bei Zugriff könnten ihre Lüfter-Geschwindigkeit ändern.
 es=Acceder a algunos dispositivos Corsair puede causar problemas cuando se está ejecutando el software CorsairLink.\nCuando esta opción está desactivada, HWiNFO no accederá a ningún dispositivo Corsair para evitar tal conflicto.\nEsta opción también controla el acceso a algunos refrigeradores basados en Asetek, que cuando se accede podría cambiar la velocidad del ventilador.
 pt-BR=O acesso a alguns dispositivos Corsair pode causar problemas quando o software CorsairLink está em execução.\nQuando esta opção está desativada, o HWiNFO não acessará nenhum dispositivo Corsair para evitar tal conflito.\nEsta opção também controla o acesso a alguns coolers baseados em Asetek, que quando acessados pode alterar a velocidade do ventilador.
 it=L'accesso ad alcuni dispositivi Corsair può causare problemi quando il software CorsairLink è in esecuzione.\nQuando questa opzione è disabilitata, HWiNFO non accederà a nessun dispositivo Corsair per evitare tale conflitto.\nQuesta opzione controlla anche l'accesso ad alcuni dispositivi di raffreddamento basati su Asetek, a cui si accede potrebbe cambiare la velocità della ventola.
@@ -20088,7 +20088,7 @@ he=גישת IO ברמה נמוכה
 {{Settings}}
 en=Disable Drive Scan
 fr=Désactiver l'analyse du lecteur
-de=Laufwerkscan deaktivieren
+de=Laufwerks-Scan deaktivieren
 es=Deshabilitar Drive Scan
 pt-BR=Desativar varredura de unidade
 it=Disattiva scansione unità
@@ -20251,7 +20251,7 @@ he=סקרים תקופתיים
 {{Settings}}
 en=Use HPET
 fr=Utiliser HPET
-de=Verwenden Sie HPET
+de=Verwende HPET
 es=Utilice HPET
 pt-BR=Use HPET
 it=Usa HPET
@@ -20737,7 +20737,7 @@ he=סריקת כונן IDE/(S)ATA
 {{Settings}}
 en=CPU Clock Measurement
 fr=Mesure de l'horloge du processeur
-de=CPU-Taktmessung
+de=CPU-Takt-Messung
 es=Medición del reloj de la CPU
 pt-BR=Medição do relógio da CPU
 it=Misurazione dell'orologio della CPU
@@ -20764,7 +20764,7 @@ he=מדידת שעון CPU
 {{Settings}}
 en=Required for Memory Module information, Hardware Sensors and P.I.ROM detection.\nRecommended enabled.
 fr=Requis pour les informations sur le module de mémoire, les capteurs matériels et la détection PIROM.\nRecommandé activé.
-de=Erforderlich für Speichermodulinformationen, Hardwaresensoren und PIROM-Erkennung.\nEmpfohlen aktiviert.
+de=Erforderlich für Speichermodul-Informationen, Hardware-Sensoren und PIROM-Erkennung.\nEmpfohlen aktiviert.
 es=Obligatorio para la información del módulo de memoria, los sensores de hardware y la detección de PIROM.\nRecomendado habilitado.
 pt-BR=Requerido para informações do Módulo de Memória, Sensores de Hardware e detecção PIROM.\nRecomendado habilitado.
 it=Richiesto per informazioni sul modulo di memoria, sensori hardware e rilevamento PIROM.\nConsigliato abilitato.
@@ -20791,7 +20791,7 @@ he=נדרש עבור מידע על מודול זיכרון, חיישני חומ�
 {{Settings}}
 en=Scan GPU I2C bus for sensor devices.\nRequired for monitoring of GPU VRMs or additional sensors (if present).\nCan be disabled on notebooks to reduce sensor scan time.
 fr=Scannez le bus GPU I2C pour les périphériques de capteur.\nRequis pour la surveillance des VRM GPU ou des capteurs supplémentaires (le cas échéant).\nPeut être désactivé sur les ordinateurs portables pour réduire le temps d'analyse des capteurs.
-de=GPU I2C-Bus nach Sensorgeräten durchsuchen.\nErforderlich für die Überwachung von GPU-VRMs oder zusätzlichen Sensoren (sofern vorhanden).\nKann auf Notebooks deaktiviert werden, um die Sensorscanzeit zu verkürzen.
+de=GPU I2C-Bus nach Sensor-Geräten durchsuchen.\nErforderlich für die Überwachung von GPU-VRMs oder zusätzlichen Sensoren (sofern vorhanden).\nKann auf Notebooks deaktiviert werden, um die Sensor-Scanzeit zu verkürzen.
 es=Escanee el bus I2C de la GPU en busca de dispositivos sensores.\nRequiere para monitorear los VRM de la GPU o sensores adicionales (si están presentes).\nPuede desactivarse en computadoras portátiles para reducir el tiempo de escaneo del sensor.
 pt-BR=Faça a varredura do barramento I2C da GPU em busca de dispositivos de sensor.\nNecessário para monitoramento de VRMs da GPU ou sensores adicionais (se houver).\nPode ser desativado em notebooks para reduzir o tempo de varredura do sensor.
 it=Scansione bus I2C GPU per dispositivi sensore.\nNecessario per il monitoraggio di VRM GPU o sensori aggiuntivi (se presenti).\nPuò essere disabilitato sui notebook per ridurre il tempo di scansione del sensore.
@@ -20845,7 +20845,7 @@ he=אי הכללת אוטובוס GPU I2C
 {{Settings}}
 en=Some GPUs are known to have a high probability of causing serious problems (system crashes) when accessing their I2C devices (VRMs). If such GPUs are detected by HWiNFO, then for safety it automatically disables I2C access, regardless of the GPU I2C Support setting. Enabling this option will force HWiNFO to override this safety action, so on such GPUs I2C access will be performed. Currently this safety action is performed on these GPUs:\nAMD Radeon R9 Fury/Nano/Pro series, AMD Radeon Vega series\n\nEnable this option with CAUTION (i.e. if GPU VRM monitoring is required) because on the above GPUs it might cause a system crash !
 fr=Certains GPU sont connus pour avoir une forte probabilité de causer de graves problèmes (pannes système) lors de l'accès à leurs périphériques I2C (VRM). Si de tels GPU sont détectés par HWiNFO, pour des raisons de sécurité, il désactive automatiquement l'accès I2C, quel que soit le paramètre de prise en charge GPU I2C. L'activation de cette option forcera HWiNFO à outrepasser cette action de sécurité, donc sur ces GPU, l'accès I2C sera effectué. Actuellement, cette action de sécurité est effectuée sur ces GPU :\nAMD Radeon R9 Fury/Nano/Pro series, AMD Radeon Vega series\n\nActivez cette option avec ATTENTION (c'est-à-dire si la surveillance GPU VRM est requise) car sur les GPU ci-dessus, cela peut provoquer un plantage du système !
-de=Es ist bekannt, dass einige GPUs beim Zugriff auf ihre I2C-Geräte (VRMs) mit hoher Wahrscheinlichkeit schwerwiegende Probleme (Systemabstürze) verursachen. Wenn solche GPUs von HWiINFO erkannt werden, deaktiviert es aus Sicherheitsgründen automatisch den I2C-Zugriff, unabhängig von der Einstellung für die GPU-I2C-Unterstützung. Durch Aktivieren dieser Option wird HWiINFO gezwungen, diese Sicherheitsaktion zu überschreiben, sodass auf solchen GPUs der I2C-Zugriff ausgeführt wird. Derzeit wird diese Sicherheitsmaßnahme auf diesen GPUs durchgeführt:\nAMD Radeon R9 Fury/Nano/Pro-Serie, AMD Radeon Vega-Serie\n\nAktivieren Sie diese Option mit VORSICHT (dh wenn eine GPU-VRM-Überwachung erforderlich ist), da dies bei den oben genannten GPUs zu ein Systemabsturz!
+de=Es ist bekannt, dass einige GPUs beim Zugriff auf ihre I2C-Geräte (VRMs) mit hoher Wahrscheinlichkeit schwerwiegende Probleme (Systemabstürze) verursachen. Wenn solche GPUs von HWiNFO erkannt werden, deaktiviert es aus Sicherheitsgründen automatisch den I2C-Zugriff, unabhängig von der Einstellung für die GPU-I2C-Unterstützung. Durch Aktivieren dieser Option wird HWiNFO gezwungen, diese Sicherheitsaktion zu überschreiben, sodass auf solchen GPUs der I2C-Zugriff ausgeführt wird. Derzeit wird diese Sicherheitsmaßnahme auf diesen GPUs durchgeführt:\nAMD Radeon R9 Fury/Nano/Pro-Serie, AMD Radeon Vega-Serie\n\nAktivieren Sie diese Option mit VORSICHT (dh wenn eine GPU-VRM-Überwachung erforderlich ist), da dies bei den oben genannten GPUs zu ein Systemabsturz!
 es=Se sabe que algunas GPU tienen una alta probabilidad de causar problemas graves (fallas del sistema) al acceder a sus dispositivos I2C (VRM). Si HWiNFO detecta dichas GPU, entonces, por seguridad, deshabilita automáticamente el acceso I2C, independientemente de la configuración de compatibilidad con GPU I2C. Habilitar esta opción obligará a HWiNFO a anular esta acción de seguridad, por lo que en dichas GPU se realizará el acceso I2C. Actualmente, esta acción de seguridad se realiza en estas GPU:\nSerie AMD Radeon R9 Fury / Nano / Pro, serie AMD Radeon Vega\n\nHabilite esta opción con PRECAUCIÓN (es decir, si se requiere monitoreo de GPU VRM) porque en las GPU anteriores podría causar un fallo del sistema!
 pt-BR=Algumas GPUs são conhecidas por terem uma alta probabilidade de causar problemas sérios (travamentos do sistema) ao acessar seus dispositivos I2C (VRMs). Se essas GPUs forem detectadas pelo HWiNFO, por segurança, ele desabilita automaticamente o acesso I2C, independentemente da configuração de Suporte I2C da GPU. Ativar esta opção forçará o HWiNFO a substituir esta ação de segurança, portanto, em tais GPUs o acesso I2C será executado. Atualmente, esta ação de segurança é realizada nestas GPUs:\nAMD Radeon R9 Fury / Nano / Pro series, AMD Radeon Vega series\n\nAtive esta opção com CUIDADO (ou seja, se o monitoramento GPU VRM for necessário) porque nas GPUs acima isso pode causar uma falha do sistema!
 it=È noto che alcune GPU hanno un'alta probabilità di causare seri problemi (crash del sistema) quando accedono ai loro dispositivi I2C (VRM). Se tali GPU vengono rilevate da HWiNFO, per sicurezza disabilita automaticamente l'accesso I2C, indipendentemente dall'impostazione del supporto I2C GPU. L'abilitazione di questa opzione costringerà HWiNFO a sovrascrivere questa azione di sicurezza, quindi su tali GPU verrà eseguito l'accesso I2C. Attualmente questa azione di sicurezza viene eseguita su queste GPU:\nAMD Radeon R9 Fury/Nano/Pro series, AMD Radeon Vega series\n\nAbilita questa opzione con ATTENZIONE (ovvero se è richiesto il monitoraggio VRM GPU) perché sulle GPU di cui sopra potrebbe causare un crash di sistema!
@@ -20953,7 +20953,7 @@ he=אפשרות זו, כאשר היא מופעלת, יכולה לשפר את ז�
 {{Settings}}
 en=Clear the contents of GPU I2C cache. Might be useful when GPU I2C devices cannot be found.
 fr=Effacez le contenu du cache GPU I2C. Peut être utile lorsque les périphériques GPU I2C sont introuvables.
-de=Löschen den Inhalt des GPU-I2C-Cache. Kann nützlich sein, wenn GPU-I2C-Geräte nicht gefunden werden können.
+de=Löscht den Inhalt des GPU-I2C-Cache. Kann nützlich sein, wenn GPU-I2C-Geräte nicht gefunden werden können.
 es=Borre el contenido de la caché de GPU I2C. Puede ser útil cuando no se pueden encontrar dispositivos GPU I2C.
 pt-BR=Limpe o conteúdo do cache I2C da GPU. Pode ser útil quando os dispositivos GPU I2C não podem ser encontrados.
 it=Cancella il contenuto della cache I2C della GPU. Potrebbe essere utile quando non è possibile trovare dispositivi GPU I2C.
@@ -21250,7 +21250,7 @@ he=כוח תמיכה ב-GPU I2C
 {{Settings}}
 en=SMBus Device Exclusion
 fr=Exclusion de périphérique SMBus
-de=Ausschluss von SMBus-Geräten
+de=SMBus-Geräte ausschließen
 es=Exclusión de dispositivos SMBus
 pt-BR=Exclusão de dispositivo SMBus
 it=Esclusione dispositivo SMBus
@@ -21277,7 +21277,7 @@ he=אי הכללת מכשיר SMBus
 {{Settings}}
 en=GPU I2C Device Exclusion
 fr=Exclusion de périphérique GPU I2C
-de=Ausschluss von GPU I2C-Geräten
+de=GPU I2C-Geräte ausschließen
 es=Exclusión de dispositivos GPU I2C
 pt-BR=Exclusão de dispositivo GPU I2C
 it=Esclusione dispositivo GPU I2C
@@ -21466,7 +21466,7 @@ he=לא נחוץ
 {{Settings}}
 en=HWiNFO Driver installed successfully.
 fr=Pilote HWiNFO installé avec succès.
-de=HWiINFO-Treiber erfolgreich installiert.
+de=HWiNFO-Treiber erfolgreich installiert.
 es=El controlador HWiNFO se instaló correctamente.
 pt-BR=Driver HWiNFO instalado com sucesso.
 it=Driver HWiNFO installato con successo.
@@ -21493,7 +21493,7 @@ he=מנהל ההתקן של HWiNFO הותקן בהצלחה.
 {{Settings}}
 en=HWiNFO Driver was removed.
 fr=Le pilote HWiNFO a été supprimé.
-de=HWiINFO-Treiber wurde entfernt.
+de=HWiNFO-Treiber wurde entfernt.
 es=Se eliminó el controlador HWiNFO.
 pt-BR=O driver HWiNFO foi removido.
 it=Il driver HWiNFO è stato rimosso.
@@ -21682,7 +21682,7 @@ he=השפה השתנתה
 {{Settings}}
 en=Please restart HWiNFO to apply all changes.
 fr=Veuillez redémarrer HWiNFO pour appliquer toutes les modifications.
-de=Bitte starten Sie HWiINFO neu, um alle Änderungen zu übernehmen.
+de=Bitte starten Sie HWiNFO neu, um alle Änderungen zu übernehmen.
 es=Reinicie HWiNFO para aplicar todos los cambios.
 pt-BR=Reinicie o HWiNFO para aplicar todas as alterações.
 it=Riavvia HWiNFO per applicare tutte le modifiche.
@@ -21698,7 +21698,7 @@ ru=Пожалуйста, перезапустите HWiNFO, чтобы прим�
 cs=Pro použití všech změn prosím restartujte HWiNFO.
 sk=Ak chcete použiť všetky zmeny, reštartujte HWiNFO.
 hu=Kérjük, indítsa újra a HWiNFO-t az összes módosítás alkalmazásához.
-pl=Zrestartuj HWiINFO, aby zastosować wszystkie zmiany.
+pl=Zrestartuj HWiNFO, aby zastosować wszystkie zmiany.
 sv=Vänligen starta om HWiNFO för att tillämpa alla ändringar.
 fi=Ota kaikki muutokset käyttöön käynnistämällä HWiNFO uudelleen.
 no=Start HWiNFO på nytt for å bruke alle endringer.
@@ -21709,7 +21709,7 @@ he=אנא הפעל מחדש את HWiNFO כדי להחיל את כל השינוי
 {{Settings}}
 en=HWiNFO preferences have been cleared.
 fr=Les préférences HWiNFO ont été effacées.
-de=HWiINFO-Präferenzen wurden gelöscht.
+de=HWiNFO-Präferenzen wurden gelöscht.
 es=Se borraron las preferencias de HWiNFO.
 pt-BR=As preferências do HWiNFO foram apagadas.
 it=Le preferenze di HWiNFO sono state cancellate.
@@ -21817,7 +21817,7 @@ he=מְמוּצָע
 {{Settings}}
 en=Check online for HWiNFO Addons and Extensions
 fr=Vérifiez en ligne les modules complémentaires et extensions HWiNFO
-de=Suchen Sie online nach HWiINFO-Addons und -Erweiterungen
+de=Suchen Sie online nach HWiNFO-Addons und Erweiterungen
 es=Verifique en línea los complementos y extensiones de HWiNFO
 pt-BR=Verifique online os complementos e extensões do HWiNFO
 it=Controlla online per componenti aggiuntivi ed estensioni HWiNFO
@@ -21844,7 +21844,7 @@ he=בדוק באינטרנט עבור תוספות והרחבות של HWiNFO
 {{Settings}}
 en=Enable Toggling Hot Key
 fr=Activer le basculement du raccourci clavier
-de=Aktivieren von Hotkey zum Umschalten
+de=Aktivieren des Hotkey zum Umschalten
 es=Habilitar alternancia de teclas de acceso rápido
 pt-BR=Ativar tecla de atalho de alternância
 it=Abilita l'attivazione/disattivazione del tasto di scelta rapida
@@ -21925,7 +21925,7 @@ he=מזעור גרפים עם חלון חיישנים
 {{Settings}}
 en=Text Buttons
 fr=Boutons de texte
-de=Textschaltflächen
+de=Text-Schaltflächen
 es=Botones de texto
 pt-BR=Botões de Texto
 it=Pulsanti di testo
@@ -22006,7 +22006,7 @@ he=קבל טמפרטורות שליליות (לקירור מתחת לאפס)
 {{Settings}}
 en=Decimal Separator:
 fr=Séparateur décimal:
-de=Dezimaltrennzeichen:
+de=Dezimal-Trennzeichen:
 es=Separador decimal:
 pt-BR=Separador decimal:
 it=Separatore decimale:
@@ -22033,7 +22033,7 @@ he=מפריד עשרוני:
 {{Settings}}
 en=Thousands Separator:
 fr=Séparateur de milliers:
-de=Tausendertrennzeichen:
+de=Tausender-Trennzeichen:
 es=Separador de miles:
 pt-BR=Separador de milhares:
 it=Separatore delle migliaia:
@@ -22141,7 +22141,7 @@ he=שנה גופן
 {{Settings}}
 en=CSV Item Separator:
 fr=Séparateur d'articles CSV:
-de=CSV-Elementtrennzeichen:
+de=CSV-Element-Trennzeichen:
 es=Separador de elementos CSV:
 pt-BR=Separador de item CSV:
 it=Separatore articolo CSV:
@@ -22195,7 +22195,7 @@ he=גלוֹבָּלִי:
 {{Settings}}
 en=Disk S.M.A.R.T. every
 fr=Disque SMART tous les
-de=Disk SMART jede
+de=Disk S.M.A.R.T. alle
 es=Disco SMART cada
 pt-BR=Disco SMART a cada
 it=Disco SMART ogni
@@ -22303,7 +22303,7 @@ he=הצללת שורות
 {{Settings}}
 en=Profiling Time
 fr=Temps de profilage
-de=Profilierungszeit
+de=Profilierungs-Zeit
 es=Tiempo de perfilado
 pt-BR=Tempo de criação de perfil
 it=Tempo di profilazione
@@ -22330,7 +22330,7 @@ he=זמן יצירת פרופילים
 {{Settings}}
 en=Always On Top
 fr=Toujours au top
-de=Immer oben
+de=Immer obenauf
 es=Siempre en la cima
 pt-BR=Sempre no topo
 it=Sempre in cima
@@ -22384,7 +22384,7 @@ he=הצג את כל המעריצים (כולל עצורים או לא קיימי
 {{Settings}}
 en=Show ToolTips
 fr=Afficher les infobulles
-de=QuickInfos anzeigen
+de=ToolTips anzeigen
 es=Mostrar información sobre herramientas
 pt-BR=Mostrar dicas de ferramentas
 it=Mostra suggerimenti
@@ -22411,7 +22411,7 @@ he=הצג תיאורי כלים
 {{Settings}}
 en=Date/Time Format
 fr=Format date/heure
-de=Datums-/Uhrzeitformat
+de=Datums-/Uhrzeit-Format
 es=Formato de fecha / hora
 pt-BR=Formato de data / hora
 it=Formato data/ora
@@ -22492,7 +22492,7 @@ he=כתיבה ישירה לדיסק\n(ללא חציצה)
 {{Settings}}
 en=Polling Period
 fr=Période de vote
-de=Abfragezeitraum
+de=Abfrage-Zeitraum
 es=Período de votación
 pt-BR=Período de votação
 it=Periodo di votazione
@@ -22546,7 +22546,7 @@ he=הצג עמודות
 {{Settings}}
 en=Temperature units
 fr=Unités de température
-de=Temperatureinheiten
+de=Temperatur-Einheiten
 es=Unidades de temperatura
 pt-BR=Unidades de temperatura
 it=Unità di temperatura
@@ -22573,7 +22573,7 @@ he=יחידות טמפרטורה
 {{Settings}}
 en=Sensor Logging
 fr=Enregistrement du capteur
-de=Sensorprotokollierung
+de=Sensor-Protokollierung
 es=Registro de sensores
 pt-BR=Registro de sensor
 it=Registrazione del sensore
@@ -22627,7 +22627,7 @@ he=הצג ערכים
 {{Settings}}
 en=Averaging Interval
 fr=Intervalle de moyennage
-de=Mittelungsintervall
+de=Mittelungs-Intervall
 es=Intervalo de promediado
 pt-BR=Intervalo Médio
 it=Intervallo medio
@@ -22654,7 +22654,7 @@ he=מרווח ממוצע
 {{Settings}}
 en=0 = Whole runtime until user reset (default)
 fr=0 = tout le temps d'exécution jusqu'à la réinitialisation de l'utilisateur (par défaut)
-de=0 = Gesamte Laufzeit bis Benutzerreset (Standard)
+de=0 = Gesamte Laufzeit bis Benutzer-Reset (Standard)
 es=0 = Tiempo de ejecución completo hasta el reinicio del usuario (predeterminado)
 pt-BR=0 = todo o tempo de execução até a reinicialização do usuário (padrão)
 it=0 = Intero runtime fino al ripristino dell'utente (predefinito)
@@ -22898,7 +22898,7 @@ he=שנה שם
 {{Settings}}
 en=Bold
 fr=Audacieux
-de=Fettgedruckt
+de=Fett
 es=Audaz
 pt-BR=Negrito
 it=Grassetto
@@ -22979,7 +22979,7 @@ he=הוסף (+)
 {{Settings}}
 en=Decimal Digits:
 fr=Chiffres décimaux:
-de=Dezimalziffern:
+de=Dezimal-Ziffern:
 es=Dígitos decimales:
 pt-BR=Dígitos decimais:
 it=Cifre decimali:
@@ -23087,7 +23087,7 @@ he=יחידה
 {{Settings}}
 en=Logged
 fr=Connecté
-de=Geloggt
+de=Protokolliert
 es=Registrado
 pt-BR=Registrado
 it=Registrato
@@ -23195,7 +23195,7 @@ he=התאמה אישית של ערכים
 {{Settings}}
 en=Label
 fr=Étiqueter
-de=Etikett
+de=Label
 es=Etiqueta
 pt-BR=Etiqueta
 it=Etichetta
@@ -23330,7 +23330,7 @@ he=מַקסִימוּם
 {{Settings}}
 en=Add All Items To Tray
 fr=Ajouter tous les éléments à la zone de notification
-de=Alle Elemente zum Benachrichtigungsbereich hinzufügen
+de=Alle Elemente zum Tray-Bereich hinzufügen
 es=Agregar todos los elementos al área de notificación
 pt-BR=Adicionar todos os itens à área de notificação
 it=Aggiungi tutti gli elementi all'area di notifica
@@ -23357,7 +23357,7 @@ he=הוסף את כל הפריטים לאזור ההודעות
 {{Settings}}
 en=Remove All Items From Tray
 fr=Supprimer tous les éléments de la zone de notification
-de=Alle Elemente aus dem Benachrichtigungsbereich entfernen
+de=Alle Elemente aus Tray-Bereich entfernen
 es=Eliminar todos los elementos del área de notificación
 pt-BR=Remover todos os itens da área de notificação
 it=Rimuovi tutti gli elementi dall'area di notifica
@@ -23384,7 +23384,7 @@ he=הסר את כל הפריטים מאזור ההודעות
 {{Settings}}
 en=Show in Tray
 fr=Afficher dans la zone de notification
-de=Im Benachrichtigungsbereich anzeigen
+de=Im Tray-Bereich anzeigen
 es=Mostrar en el área de notificación
 pt-BR=Mostrar na área de notificação
 it=Mostra nell'area di notifica
@@ -23465,7 +23465,7 @@ he=תלוי בסף ההתראה
 {{Settings}}
 en=Font Auto-Scale
 fr=Mise à l'échelle automatique des polices
-de=Automatische Schriftskalierung
+de=Automatische Schrift-Skalierung
 es=Escala automática de fuentes
 pt-BR=Escala automática da fonte
 it=Ridimensionamento automatico dei caratteri
@@ -23546,7 +23546,7 @@ he=מחלקים את הערך לפי:
 {{Settings}}
 en=Truncate to:
 fr=Tronquer à:
-de=Kürzen auf:
+de=Abschneiden auf:
 es=Truncar a:
 pt-BR=Truncar para:
 it=Tronca a:
@@ -23573,7 +23573,7 @@ he=חתוך ל:
 {{Settings}}
 en=Show value type:
 fr=Afficher le type de valeur:
-de=Werttyp anzeigen:
+de=Wert-Typ anzeigen:
 es=Mostrar tipo de valor:
 pt-BR=Mostrar tipo de valor:
 it=Mostra tipo di valore:
@@ -24518,7 +24518,7 @@ he=שנה את צבע הפריט
 {{Settings}}
 en=Notification distance:
 fr=Distance de notification:
-de=Benachrichtigungsentfernung:
+de=Benachrichtigung entfernen:
 es=Distancia de notificación:
 pt-BR=Distância de notificação:
 it=Distanza di notifica:
@@ -24545,7 +24545,7 @@ he=מרחק הודעות:
 {{Settings}}
 en=Log alerts into:
 fr=Enregistrez les alertes dans:
-de=Warnungen Protokolieren ins:
+de=Warnungen protokolieren nach:
 es=Registre alertas en:
 pt-BR=Registre alertas em:
 it=Accedi agli avvisi in:
@@ -24572,7 +24572,7 @@ he=התחבר התראות אל:
 {{Settings}}
 en=Number of samples to trigger alarm:
 fr=Nombre d'échantillons pour déclencher l'alarme:
-de=Anzahl der Proben zum Auslösen des Alarms:
+de=Anzahl Samples zum Auslösen des Alarms:
 es=Número de muestras para activar la alarma:
 pt-BR=Número de amostras para acionar o alarme:
 it=Numero di campioni per attivare l'allarme:
@@ -24896,7 +24896,7 @@ he=לא זוהה
 {{Settings}}
 en=Enable reporting to Gadget
 fr=Activer la création de rapports vers Gadget
-de=Aktivieren von Berichterstellung ins Gadget
+de=Aktivieren der Berichterstellung im Gadget
 es=Habilitar informes en Gadget
 pt-BR=Habilitar relatórios para o Gadget
 it=Abilita la segnalazione a Gadget
@@ -24923,7 +24923,7 @@ he=אפשר דיווח לגאדג'ט
 {{Settings}}
 en=Report value in Gadget
 fr=Valeur du rapport dans Gadget
-de=Wert ins Gadget melden
+de=Wert zum Gadget melden
 es=Informe de valor en gadget
 pt-BR=Valor do relatório no gadget
 it=Segnala il valore in Gadget
@@ -25598,7 +25598,7 @@ he=טמפרטורה נמדדת באזור חריץ DIMM.2.
 {{Sensors}}
 en=Liquid coolant temperature at cooler input.
 fr=Température du liquide de refroidissement à l'entrée du refroidisseur.
-de=Kühlmitteltemperatur am Kühlereingang.
+de=Kühlmittel-Temperatur am Kühlereingang.
 es=Temperatura del líquido refrigerante en la entrada del enfriador.
 pt-BR=Temperatura do líquido refrigerante na entrada do refrigerador.
 it=Temperatura del liquido di raffreddamento all'ingresso del dispositivo di raffreddamento.
@@ -25625,7 +25625,7 @@ he=טמפרטורת נוזל קירור נוזלי בכניסה לקירור.
 {{Sensors}}
 en=Liquid coolant temperature at cooler output.
 fr=Température du liquide de refroidissement à la sortie du refroidisseur.
-de=Kühlmitteltemperatur am Kühlerausgang.
+de=Kühlmittel-Temperatur am Kühlerausgang.
 es=Temperatura del líquido refrigerante a la salida del enfriador.
 pt-BR=Temperatura do líquido refrigerante na saída do refrigerador.
 it=Temperatura del liquido di raffreddamento all'uscita più fredda.
@@ -25733,7 +25733,7 @@ he=מתח של CPU Uncore (חלק לא ליבה של CPU).
 {{Sensors}}
 en=Chipset voltage.
 fr=Tension du chipset.
-de=Chipsatzspannung.
+de=Chipsatz-Spannung.
 es=Voltaje del chipset.
 pt-BR=Tensão do chipset.
 it=Tensione del chipset.
@@ -25760,7 +25760,7 @@ he=מתח ערכת שבבים.
 {{Sensors}}
 en=Chipset North Bridge voltage.
 fr=Tension du pont nord du chipset.
-de=Spannung der Chipsatz-Nordbrücke.
+de=Spannung der Chipsatz-North-Bridge.
 es=Voltaje del puente norte del chipset.
 pt-BR=Tensão da ponte norte do chipset.
 it=Tensione del chipset North Bridge.
@@ -25787,7 +25787,7 @@ he=מתח ערכת שבבים גשר צפון.
 {{Sensors}}
 en=Chipset South Bridge voltage.
 fr=Tension du pont sud du chipset.
-de=Chipsatz South Bridge Spannung.
+de=Spannung der Chipsatz-South-Bridge.
 es=Voltaje del puente sur del chipset.
 pt-BR=Tensão do chipset South Bridge.
 it=Tensione del ponte sud del chipset.
@@ -25868,7 +25868,7 @@ he=מתח PCH של ערכת שבבים.
 {{Sensors}}
 en=CPU Core voltage measured by external sensor.
 fr=Tension du cœur du processeur mesurée par un capteur externe.
-de=CPU-Kernspannung gemessen von externem Sensor.
+de=CPU-Kern-Spannung gemessen von externem Sensor.
 es=Voltaje del núcleo de la CPU medido por un sensor externo.
 pt-BR=Tensão do núcleo da CPU medida por sensor externo.
 it=Tensione del core della CPU misurata dal sensore esterno.
@@ -26003,7 +26003,7 @@ he=נקודת הפעלה
 {{}}
 en=Single-Channel
 fr=Monocanal
-de=Ein-Kanal
+de=Single-Channel
 es=Un canal solo
 pt-BR=Canal único
 it=Canale singolo
@@ -26030,7 +26030,7 @@ he=ערוץ יחיד
 {{}}
 en=Dual-Channel
 fr=Double canal
-de=Doppelkanal
+de=Dual-Channel
 es=Doble canal
 pt-BR=Dual-Channel
 it=Doppio canale
@@ -26057,7 +26057,7 @@ he=דו ערוצי
 {{}}
 en=Dual-Channel Asymmetric
 fr=Asymétrique à deux canaux
-de=Zweikanal-Asymmetrisch
+de=Dual-Channel-Asymmetrisch
 es=Asimétrico de doble canal
 pt-BR=Assimétrico de canal duplo
 it=Doppio canale asimmetrico
@@ -26111,7 +26111,7 @@ he=משולבת כפולת ערוצים
 {{}}
 en=Triple-Channel
 fr=Triple-Canal
-de=Dreikanal
+de=Triple-Channel
 es=Triple canal
 pt-BR=Canal Triplo
 it=Triplo canale
@@ -26138,7 +26138,7 @@ he=ערוץ משולש
 {{}}
 en=Quad-Channel
 fr=Quad-Channel
-de=Quad-Kanal
+de=Quad-Channel
 es=Cuatro canales
 pt-BR=Quad-Channel
 it=Quad-Canale
@@ -26166,7 +26166,7 @@ he=ארבע ערוצים
 en=-Channel
 fr=-Canaliser
 de=-Kanal
-es=-Canal
+es=-Channel
 pt-BR=-Canal
 it=-Canale
 nl=-Kanaal
@@ -26273,7 +26273,7 @@ he=מאפיינים
 {{}}
 en=Production Unit
 fr=Unité de production
-de=Produktionseinheit
+de=Produktions-Einheit
 es=Unidad de producción
 pt-BR=Unidade de produção
 it=Unità produttiva
@@ -26300,7 +26300,7 @@ he=יחידת הפקה
 {{}}
 en=Prod. Unit
 fr=Unité de Prod.
-de=Produktionseinh.
+de=Prod. Einheit
 es=Unidad de Prod.
 pt-BR=Unidade de Prod.
 it=Unità Prod.
@@ -26354,7 +26354,7 @@ he=מדגם הנדסי
 {{}}
 en=Eng. Sample
 fr=Éch. d'ingénierie
-de=Eng.-Probe
+de=Eng.-Muster
 es=Muestra de Ing.
 pt-BR=Amostra de Eng.
 it=Campione di Ing.
@@ -26381,7 +26381,7 @@ he=מדגם הנדסי
 {{}}
 en=Minimum Clock
 fr=Horloge minimale
-de=Mindesttakt
+de=Mindest-Takt
 es=Reloj mínimo
 pt-BR=Mínimo Clock
 it=Orologio minimo
@@ -26408,7 +26408,7 @@ he=מינימום שעון
 {{}}
 en=Base Clock
 fr=Horloge de base
-de=Basistakt
+de=Basis-Takt
 es=Reloj base
 pt-BR=Base Clock
 it=Orologio di base
@@ -26435,7 +26435,7 @@ he=שעון בסיס
 {{}}
 en=Base Clock (HFM)
 fr=Horloge de base (HFM)
-de=Basistakt (HFM)
+de=Basis-Takt (HFM)
 es=Frecuencia de reloj base (HFM)
 pt-BR=Base Clock (HFM)
 it=Frequenza di base (HFM)
@@ -27002,7 +27002,7 @@ he=אינטל: CPU SSPEC (ייצור) / QDF (דוגמה)\nAMD: OPN
 {{Main}}
 en=Production Unit / Engineering Sample
 fr=Unité de production / Échantillon d'ingénierie
-de=Produktionseinheit / Konstruktionsmuster
+de=Produktions-Einheit / Engineering-Sample
 es=Unidad de producción / muestra de ingeniería
 pt-BR=Unidade de Produção / Amostra de Engenharia
 it=Unità di produzione/campione tecnico
@@ -27029,7 +27029,7 @@ he=יחידת ייצור / מדגם הנדסי
 {{Main}}
 en=CPU Thermal Design Power
 fr=Puissance de conception thermique du processeur
-de=Thermische Designleistung der CPU
+de=Thermal-Design-Power der CPU
 es=Potencia de diseño térmico de CPU
 pt-BR=Potência do design térmico da CPU
 it=Potenza di progettazione termica della CPU
@@ -27056,7 +27056,7 @@ he=כוח עיצוב תרמי של מעבד
 {{Main}}
 en=CPU Thermal Monitor 1
 fr=Moniteur thermique du processeur 1
-de=CPU-Wärmeüberwachung 1
+de=CPU-Wärme-Überwachung 1
 es=Monitor térmico de CPU 1
 pt-BR=CPU Thermal Monitor 1
 it=Monitor termico CPU 1
@@ -27083,7 +27083,7 @@ he=צג תרמי של מעבד 1
 {{Main}}
 en=CPU Thermal Monitor 2
 fr=Moniteur thermique du processeur 2
-de=CPU-Wärmeüberwachung 2
+de=CPU-Wärme-Überwachung 2
 es=Monitor térmico de CPU 2
 pt-BR=CPU Thermal Monitor 2
 it=Monitor termico CPU 2
@@ -27326,7 +27326,7 @@ he=שם קוד של ערכת שבבים גרפית:
 {{Main}}
 en=Video Bus
 fr=Bus de carte graphique
-de=Grafikkartenbus
+de=Grafikkarten-Bus
 es=Bus de tarjeta gráfica
 pt-BR=Barramento de placa gráfica
 it=Bus della scheda grafica
@@ -27380,7 +27380,7 @@ he=אפיק כרטיס גרפי (נתמך / פעיל).\n[מושבת] = GPU מש�
 {{Main}}
 en=Graphics Memory Size
 fr=Taille de la mémoire graphique
-de=Grafikspeichergröße
+de=Grafik-Speicher-Größe
 es=Tamaño de la memoria gráfica
 pt-BR=Tamanho da memória gráfica
 it=Dimensione della memoria grafica
@@ -27407,7 +27407,7 @@ he=גודל זיכרון גרפי
 {{Main}}
 en=Graphics Memory Type
 fr=Type de mémoire graphique
-de=Grafikspeichertyp
+de=Grafik-Speicher-Typ
 es=Tipo de memoria gráfica
 pt-BR=Tipo de memória gráfica
 it=Tipo di memoria grafica
@@ -27434,7 +27434,7 @@ he=סוג זיכרון גרפי
 {{Main}}
 en=Graphics Memory Width
 fr=Largeur de la mémoire graphique
-de=Breite des Grafikspeichers
+de=Grafik-Speicher-Breite
 es=Ancho de la memoria gráfica
 pt-BR=Largura da memória gráfica
 it=Larghezza memoria grafica
@@ -27596,7 +27596,7 @@ he=GPU Shader / שעון וידאו
 {{Main}}
 en=GPU Memory Clock
 fr=Horloge mémoire GPU
-de=GPU-Speichertakt
+de=GPU-Speicher-Takt
 es=Reloj de memoria GPU
 pt-BR=GPU Memory Clock
 it=Orologio memoria GPU
@@ -27650,7 +27650,7 @@ he=גודל זיכרון המערכת הכולל
 {{Main}}
 en=Current System Memory Clock
 fr=Horloge actuelle de la mémoire système
-de=Aktuelle Systemspeicheruhr
+de=Aktueller System-Speicher-Takt
 es=Reloj de memoria del sistema actual
 pt-BR=Relógio de memória do sistema atual
 it=Orologio della memoria di sistema corrente
@@ -27677,7 +27677,7 @@ he=שעון זיכרון מערכת נוכחי
 {{Main}}
 en=Current System Memory Clock Ratio
 fr=Taux d'horloge de la mémoire système actuelle
-de=Aktuelles Taktverhältnis des Systemspeichers
+de=Aktuelles Takt-Verhältnis des System-Speichers
 es=Relación de reloj de memoria del sistema actual
 pt-BR=Relação do relógio da memória do sistema atual
 it=Rapporto di clock della memoria di sistema attuale
@@ -27704,7 +27704,7 @@ he=יחס השעון הנוכחי של זיכרון המערכת
 {{Main}}
 en=Current System Memory Reference Clock
 fr=Horloge de référence de la mémoire système actuelle
-de=Aktueller Systemspeicher-Referentakt
+de=Aktueller System-Speicher-Referenz-Takt
 es=Reloj de referencia de memoria del sistema actual
 pt-BR=Relógio de referência de memória do sistema atual
 it=Orologio di riferimento della memoria di sistema corrente
@@ -27731,7 +27731,7 @@ he=שעון עזר נוכחי של זיכרון המערכת
 {{Main}}
 en=Current Memory Operating Mode
 fr=Mode de fonctionnement actuel de la mémoire
-de=Aktueller Speicherbetriebsmodus
+de=Aktueller Speicher-Betriebs-Modus
 es=Modo de funcionamiento de la memoria actual
 pt-BR=Modo de operação da memória atual
 it=Modalità di funzionamento della memoria corrente
@@ -27758,7 +27758,7 @@ he=מצב הפעלה נוכחי של הזיכרון
 {{Main}}
 en=System Memory Type
 fr=Type de mémoire système
-de=Systemspeichertyp
+de=System-Speicher-Typ
 es=Tipo de memoria del sistema
 pt-BR=Tipo de memória do sistema
 it=Tipo di memoria di sistema
@@ -28379,7 +28379,7 @@ he=מודולי זיכרון
 {{}}
 en=Current Clocks (MHz)
 fr=Horloges actuelles (MHz)
-de=Aktuelle Takte (MHz)
+de=Aktuelle Takt-Raten (MHz)
 es=Relojes actuales (MHz)
 pt-BR=Relógios atuais (MHz)
 it=Orologi correnti (MHz)
@@ -30271,7 +30271,7 @@ he=יעילות PSU
 {{Sensors}}
 en=This value is the ratio between total Output and Input power [%].
 fr=Cette valeur est le rapport entre la puissance totale de sortie et d'entrée [%].
-de=Dieser Wert ist das Verhältnis zwischen Gesamtausgangs- und Eingangsleistung [%].
+de=Dieser Wert ist das Verhältnis zwischen Gesamt-Ausgangs- und Eingangs-Leistung [%].
 es=Este valor es la relación entre la potencia total de salida y de entrada [%].
 pt-BR=Este valor é a razão entre a potência total de saída e entrada [%].
 it=Questo valore è il rapporto tra Uscita totale e Potenza in ingresso [%].
@@ -30298,7 +30298,7 @@ he=ערך זה הוא היחס בין הספק הכולל של המוצא והה
 {{Sensors}}
 en=HWiNFO has found an Embedded Controller (EC) sensor from which it can report data. Reading data from this sensor can cause a higher system load or latency, which can result in occasional performace drops. On some systems, this can also have an impact on system stability. These effects are system-specific and not likely to occur on most systems. It is also not recommended to use other applications able to read data from this sensor along with HWiNFO, as this can cause a conflict. 
 fr=HWiNFO a trouvé un capteur de contrôleur intégré (EC) à partir duquel il peut rapporter des données. La lecture des données de ce capteur peut entraîner une charge système ou une latence plus élevée, ce qui peut entraîner des baisses de performances occasionnelles. Sur certains systèmes, cela peut également avoir un impact sur la stabilité du système. Ces effets sont spécifiques au système et ne sont pas susceptibles de se produire sur la plupart des systèmes. Il est également déconseillé d'utiliser d'autres applications capables de lire les données de ce capteur avec HWiNFO, car cela peut provoquer un conflit.
-de=HWiINFO hat einen Embedded Controller (EC) Sensor gefunden, von dem es Daten melden kann. Das Auslesen von Daten von diesem Sensor kann eine höhere Systemlast oder Latenz verursachen, was zu gelegentlichen Leistungseinbrüchen führen kann. Bei einigen Systemen kann dies auch Auswirkungen auf die Systemstabilität haben. Diese Effekte sind systemspezifisch und treten bei den meisten Systemen wahrscheinlich nicht auf. Es wird auch nicht empfohlen, zusammen mit HWiINFO andere Anwendungen zu verwenden, die Daten von diesem Sensor lesen können, da dies zu Konflikten führen kann.
+de=HWiNFO hat einen Embedded Controller (EC) Sensor gefunden, von dem es Daten melden kann. Das Auslesen von Daten von diesem Sensor kann eine höhere Systemlast oder Latenz verursachen, was zu gelegentlichen Leistungseinbrüchen führen kann. Bei einigen Systemen kann dies auch Auswirkungen auf die Systemstabilität haben. Diese Effekte sind systemspezifisch und treten bei den meisten Systemen wahrscheinlich nicht auf. Es wird auch nicht empfohlen, zusammen mit HWiNFO andere Anwendungen zu verwenden, die Daten von diesem Sensor lesen können, da dies zu Konflikten führen kann.
 es=HWiNFO ha encontrado un sensor de controlador integrado (EC) desde el que puede informar datos. La lectura de datos de este sensor puede causar una mayor carga o latencia del sistema, lo que puede resultar en caídas ocasionales del rendimiento. En algunos sistemas, esto también puede tener un impacto en la estabilidad del sistema. Estos efectos son específicos del sistema y no es probable que ocurran en la mayoría de los sistemas. Tampoco se recomienda utilizar otras aplicaciones capaces de leer datos de este sensor junto con HWiNFO, ya que esto puede causar un conflicto.
 pt-BR=HWiNFO encontrou um sensor Embedded Controller (EC) a partir do qual pode relatar dados. Ler dados desse sensor pode causar uma carga ou latência mais alta do sistema, o que pode resultar em quedas ocasionais de desempenho. Em alguns sistemas, isso também pode ter um impacto na estabilidade do sistema. Esses efeitos são específicos do sistema e provavelmente não ocorrem na maioria dos sistemas. Também não é recomendado o uso de outros aplicativos capazes de ler dados deste sensor junto com o HWiNFO, pois isso pode causar um conflito.
 it=HWiNFO ha trovato un sensore Embedded Controller (EC) da cui può riportare i dati. La lettura dei dati da questo sensore può causare un carico di sistema o una latenza più elevati, che possono causare occasionali cali di prestazioni. Su alcuni sistemi, ciò può anche avere un impatto sulla stabilità del sistema. Questi effetti sono specifici del sistema e non è probabile che si verifichino sulla maggior parte dei sistemi. Inoltre, non è consigliabile utilizzare altre applicazioni in grado di leggere i dati da questo sensore insieme a HWiNFO, poiché ciò può causare un conflitto.
@@ -30730,7 +30730,7 @@ he=מאוורר הרחבה
 {{Sensors}}
 en=CPU Core Power
 fr=Puissance du cœur du processeur
-de=CPU-Kernleistung
+de=CPU-Kern-Leistung
 es=Potencia del núcleo de la CPU
 pt-BR=CPU Core Power
 it=Potenza del core della CPU
@@ -30838,7 +30838,7 @@ he=האם ברצונך גם לאפס את ערכי VCore Latch Min/Max?
 {{Sensors}}
 en=This mainboard sensor provides data measured using various probes located across the mainboard.\nThe location and meaning of these sensor values is mainboard-specific and not possible to determine universally. Providing proper information from this sensor requires dedicated support of each mainboard model and its custom sensor layout.\nWhile HWiNFO features an immense database of such mainboard-specific configurations, there can be some models not well or not properly supported yet. Additionally, some items are not guaranteed to provide valid data if their sense inputs are not used on a particular system.
 fr=Ce capteur de carte mère fournit des données mesurées à l'aide de diverses sondes situées sur la carte mère.\nL'emplacement et la signification de ces valeurs de capteur sont spécifiques à la carte mère et ne peuvent pas être déterminés de manière universelle. Fournir des informations appropriées à partir de ce capteur nécessite une prise en charge dédiée de chaque modèle de carte mère et de sa disposition de capteur personnalisée.\nBien que HWiNFO dispose d'une immense base de données de ces configurations spécifiques à la carte mère, certains modèles peuvent ne pas être bien ou pas encore correctement pris en charge. De plus, il n'est pas garanti que certains éléments fournissent des données valides si leurs entrées de détection ne sont pas utilisées sur un système particulier.
-de=Dieser Mainboard-Sensor liefert Daten, die mit verschiedenen auf dem Mainboard verteilten Sonden gemessen wurden.\nDie Lage und Bedeutung dieser Sensorwerte ist Mainboard-spezifisch und nicht universell zu bestimmen. Die Bereitstellung korrekter Informationen von diesem Sensor erfordert eine dedizierte Unterstützung jedes Mainboard-Modells und seines benutzerdefinierten Sensor-Layouts.\nWährend HWiINFO eine riesige Datenbank solcher Mainboard-spezifischer Konfigurationen bietet, kann es sein, dass einige Modelle noch nicht gut oder nicht richtig unterstützt werden. Außerdem kann nicht garantiert werden, dass einige Elemente gültige Daten liefern, wenn ihre Erfassungseingänge nicht auf einem bestimmten System verwendet werden.
+de=Dieser Mainboard-Sensor liefert Daten, die mit verschiedenen auf dem Mainboard verteilten Sonden gemessen wurden.\nDie Lage und Bedeutung dieser Sensorwerte ist Mainboard-spezifisch und nicht universell zu bestimmen. Die Bereitstellung korrekter Informationen von diesem Sensor erfordert eine dedizierte Unterstützung jedes Mainboard-Modells und seines benutzerdefinierten Sensor-Layouts.\nWährend HWiNFO eine riesige Datenbank solcher Mainboard-spezifischer Konfigurationen bietet, kann es sein, dass einige Modelle noch nicht gut oder nicht richtig unterstützt werden. Außerdem kann nicht garantiert werden, dass einige Elemente gültige Daten liefern, wenn ihre Erfassungseingänge nicht auf einem bestimmten System verwendet werden.
 es=Este sensor de la placa base proporciona datos medidos utilizando varias sondas ubicadas en la placa base.\nLa ubicación y el significado de estos valores de sensor son específicos de la placa base y no es posible determinarlos universalmente. Proporcionar la información adecuada de este sensor requiere un soporte dedicado de cada modelo de placa base y su diseño de sensor personalizado.\nSi bien HWiNFO presenta una inmensa base de datos de tales configuraciones específicas de la placa base, puede haber algunos modelos que no estén bien o que aún no sean compatibles correctamente. Además, no se garantiza que algunos elementos proporcionen datos válidos si sus entradas de detección no se utilizan en un sistema en particular.
 pt-BR=Este sensor da placa-mãe fornece dados medidos usando várias sondas localizadas na placa-mãe.\nA localização e o significado desses valores do sensor são específicos da placa-mãe e não podem ser determinados universalmente. Fornecer informações adequadas a partir deste sensor requer suporte dedicado de cada modelo de placa-mãe e seu layout de sensor personalizado.\nEmbora o HWiNFO tenha um imenso banco de dados de configurações específicas da placa-mãe, pode haver alguns modelos que não estão bem ou ainda não têm suporte adequado. Além disso, alguns itens não têm garantia de fornecer dados válidos se suas entradas de detecção não forem usadas em um sistema específico.
 it=Questo sensore della scheda madre fornisce dati misurati utilizzando varie sonde situate sulla scheda madre.\nLa posizione e il significato di questi valori del sensore sono specifici della scheda madre e non possono essere determinati universalmente. Fornire informazioni corrette da questo sensore richiede il supporto dedicato di ciascun modello di scheda madre e il suo layout del sensore personalizzato.\nAnche se HWiNFO dispone di un immenso database di tali configurazioni specifiche della scheda madre, potrebbero esserci alcuni modelli non supportati o non ancora adeguatamente supportati. Inoltre, non è garantito che alcuni elementi forniscano dati validi se i relativi input di rilevamento non vengono utilizzati su un particolare sistema.
@@ -31594,7 +31594,7 @@ he=סיבות למצערת זיכרון
 {{Sensors}}
 en=Indicates why GPU core performance is reduced from maximum.
 fr=Indique pourquoi les performances du cœur du GPU sont réduites par rapport au maximum.
-de=Gibt an, warum die GPU-Kernleistung vom Maximum reduziert wird.
+de=Gibt an, warum die GPU-Kern-Leistung vom Maximum reduziert wird.
 es=Indica por qué el rendimiento del núcleo de la GPU se reduce del máximo.
 pt-BR=Indica porque o desempenho do núcleo da GPU foi reduzido do máximo.
 it=Indica perché le prestazioni del core della GPU sono ridotte dal massimo.
@@ -31621,7 +31621,7 @@ he=מציין מדוע ביצועי ליבת GPU מופחתים מהמקסימו
 {{Sensors}}
 en=Indicates why GPU memory performance is reduced from maximum.
 fr=Indique pourquoi les performances de la mémoire GPU sont réduites par rapport au maximum.
-de=Gibt an, warum die GPU-Speicherleistung vom Maximum reduziert wird.
+de=Gibt an, warum die GPU-Speicher-Leistung vom Maximum reduziert wird.
 es=Indica por qué el rendimiento de la memoria de la GPU se reduce del máximo.
 pt-BR=Indica porque o desempenho da memória GPU foi reduzido do máximo.
 it=Indica il motivo per cui le prestazioni della memoria GPU sono ridotte dal massimo.
@@ -34402,7 +34402,7 @@ he=כוח PSU כולל מחושב על ידי PSU.
 {{Sensors}}
 en=This value is the ratio between Output power (sum of all voltage rail powers) and Input power calculated [%].
 fr=Cette valeur est le rapport entre la puissance de sortie (somme de toutes les puissances de ligne de tension) et la puissance d'entrée calculée [%].
-de=Dieser Wert ist das Verhältnis zwischen Ausgangsleistung (Summe aller Spannungsleitungsleistungen) und berechneter Eingangsleistung [%].
+de=Dieser Wert ist das Verhältnis zwischen Ausgangsleistung (Summe aller Spannungsleitungsleistungen) und berechneter Eingangs-Leistung [%].
 es=Este valor es la relación entre la potencia de salida (suma de todas las potencias de la línea de tensión) y la potencia de entrada calculada [%].
 pt-BR=Este valor é a relação entre a potência de saída (soma de todas as potências da linha de tensão) e a potência de entrada calculada [%].
 it=Questo valore è il rapporto tra Potenza in uscita (somma di tutte le potenze della linea di tensione) e Potenza in ingresso calcolata [%].
@@ -35293,7 +35293,7 @@ he=מוכן לסיים את העדכון...
 {{Settings}}
 en=HWiNFO will now restart to finalize the update
 fr=HWiNFO va maintenant redémarrer pour finaliser la mise à jour
-de=HWiINFO wird nun neu gestartet, um das Update abzuschließen
+de=HWiNFO wird nun neu gestartet, um das Update abzuschließen
 es=HWiNFO ahora se reiniciará para finalizar la actualización
 pt-BR=HWiNFO irá reiniciar para finalizar a atualização
 it=HWiNFO ora si riavvierà per finalizzare l'aggiornamento
@@ -36643,7 +36643,7 @@ he=שגיאות אוטובוס/חיבור מעבד
 {{Sensors}}
 en=Memory Errors
 fr=Erreurs de mémoire
-de=Speicherfehler
+de=Speicher-Fehler
 es=Errores de memoria
 pt-BR=Erros de memória
 it=Errori di memoria
@@ -38182,7 +38182,7 @@ he=רשימת ליבות מועדפות:
 {{Main}}
 en=Core Performance Order:
 fr=Ordre de performance de base:
-de=Kernleistungsreihenfolge:
+de=Kern-Leistungsreihenfolge:
 es=Orden de rendimiento principal:
 pt-BR=Ordem de desempenho principal:
 it=Ordine delle prestazioni principali:
@@ -38209,7 +38209,7 @@ he=סדר ביצועי ליבה:
 {{Main}}
 en=Core Performance Order (CPPC):
 fr=Ordre de performance de base (CPPC):
-de=Kernleistungsreihenfolge (CPPC):
+de=Kern-Leistungsreihenfolge (CPPC):
 es=Orden de rendimiento principal (CPPC):
 pt-BR=Ordem de desempenho principal (CPPC):
 it=Ordine di prestazione principale (CPPC):
@@ -38750,7 +38750,7 @@ he=LLC/טבעת נוכחית:
 {{Main}}
 en=Northbridge Current:
 fr=Northbridge actuel:
-de=Aktuell Nordbrücke:
+de=Aktuell North-Bridge:
 es=Northbridge actual:
 pt-BR=Northbridge atual:
 it=Attuale Northbridge:
@@ -48284,7 +48284,7 @@ he=סוג זיכרון נתמך:
 {{Main}}
 en=Supported Memory Voltage:
 fr=Tension de mémoire prise en charge:
-de=Unterstützte Speicherspannung:
+de=Unterstützte Speicher-Spannung:
 es=Voltaje de memoria admitido:
 pt-BR=Tensão de memória suportada:
 it=Tensione di memoria supportata:
@@ -64540,7 +64540,7 @@ he=אימות עמדות חלון
 {{Settings}}
 en=When this option is enabled, HWiNFO will check if the last saved positions of its windows fall inside an active monitor area and if not, it will automatically move them to the default monitor. This can prevent displaying windows in invisible areas, but some users with multiple monitors might need to disable this option in case windows are not restored at their expected positions.
 fr=Lorsque cette option est activée, HWiNFO vérifiera si les dernières positions enregistrées de ses fenêtres se trouvent dans une zone de moniteur actif et si ce n'est pas le cas, il les déplacera automatiquement vers le moniteur par défaut. Cela peut empêcher l'affichage des fenêtres dans des zones invisibles, mais certains utilisateurs disposant de plusieurs moniteurs peuvent avoir besoin de désactiver cette option au cas où les fenêtres ne seraient pas restaurées à leurs positions attendues.
-de=Wenn diese Option aktiviert ist prüft HWiINFO, ob die zuletzt gespeicherten Positionen seiner Fenster in einen aktiven Monitorbereich fallen. Falls nicht werden die Fenster auf den Standardmonitor verschoben. Dies kann die Anzeige von Fenstern in unsichtbaren Bereichen verhindern, aber einige Benutzer mit mehreren Monitoren müssen diese Option möglicherweise deaktivieren, falls Fenster nicht an ihren erwarteten Positionen wiederhergestellt werden.
+de=Wenn diese Option aktiviert ist prüft HWiNFO, ob die zuletzt gespeicherten Positionen seiner Fenster in einen aktiven Monitorbereich fallen. Falls nicht werden die Fenster auf den Standardmonitor verschoben. Dies kann die Anzeige von Fenstern in unsichtbaren Bereichen verhindern, aber einige Benutzer mit mehreren Monitoren müssen diese Option möglicherweise deaktivieren, falls Fenster nicht an ihren erwarteten Positionen wiederhergestellt werden.
 es=Cuando esta opción está habilitada, HWiNFO verificará si las últimas posiciones guardadas de sus ventanas se encuentran dentro de un área activa del monitor y, de no ser así, las moverá automáticamente al monitor predeterminado. Esto puede evitar que se muestren ventanas en áreas invisibles, pero es posible que algunos usuarios con varios monitores deban desactivar esta opción en caso de que las ventanas no se restablezcan en las posiciones esperadas.
 pt=Quando esta opção estiver habilitada, o HWiNFO verificará se as últimas posições salvas de suas janelas estão dentro de uma área de monitor ativa e, caso não, as moverá automaticamente para o monitor padrão. Isso pode impedir a exibição de janelas em áreas invisíveis, mas alguns usuários com vários monitores podem precisar desabilitar essa opção caso as janelas não sejam restauradas em suas posições esperadas.
 it=Quando questa opzione è abilitata, HWiNFO verificherà se le ultime posizioni salvate delle sue finestre ricade all'interno di un'area monitor attiva e, in caso contrario, le sposterà automaticamente sul monitor di default. Ciò può impedire la visualizzazione di finestre in aree invisibili, ma alcuni utenti con più monitor potrebbero dover disabilitare questa opzione nel caso in cui le finestre non vengano ripristinate nelle posizioni previste.
@@ -64621,7 +64621,7 @@ he=פג תוקף תקופת התחזוקה של הרישיון שלך וגרסה
 {{}}
 en=HWiNFO Shared Memory Time Limit Exceeded
 fr=Limite de temps de mémoire partagée HWiNFO dépassée
-de=HWiINFO Shared-Memory-Zeitlimit überschritten
+de=HWiNFO Shared-Memory-Zeitlimit überschritten
 es=Límite de tiempo de memoria compartida de HWiNFO excedido
 pt=Limite de tempo de memória compartilhada HWiNFO excedido
 it=Limite di tempo della memoria condivisa HWiNFO superato
