@@ -46637,7 +46637,7 @@ he=תדר זיכרון גרפי (3D):
 {{Main}}
 en=Effective
 fr=Efficace
-de=Wirksam
+de=Effektiv
 es=Eficaz
 pt-BR=Eficaz
 it=Efficace
