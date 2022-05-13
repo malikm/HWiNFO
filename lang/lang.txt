@@ -10904,33 +10904,6 @@ el=Αυτός ο αισθητήρας αναφέρει την τιμή GPU HV1 �
 tr=Bu sensör, voltaj regülatörünün giriş tarafında ölçülen GPU HV1 değerini bildirir.
 he=חיישן זה מדווח על ערך GPU HV1 שנמדד בצד הקלט של ווסת המתח.
 
-{{SUBST}}
-en=GPU Total Board Input
-fr=GPU Total Board Input
-de=GPU-Gesamt-Platinen-Eingang
-es=Entrada de la placa total de la GPU
-pt-BR=GPU Total Board Input
-it=Ingresso scheda totale GPU
-nl=GPU totale kaartinvoer
-da=GPU Total Board Input
-zh-CN=GPU 总显卡板输入
-zh-TW=GPU 總板輸入
-ja=GPUトータルボード入力
-ko=GPU 총 보드 입력
-vi=Đầu vào tổng bảng GPU
-ar=إجمالي إدخال لوحة GPU
-ru=Общий вход платы GPU
-cs=Celkový vstup desky GPU
-sk=Celkový vstup dosky GPU
-hu=GPU Total Board bemenet
-pl=Całkowite wejście karty GPU
-sv=GPU Total Board Input
-fi=GPU Total Board Input
-no=GPU totalt bordinngang
-el=Συνολική είσοδος πλακέτας GPU
-tr=GPU Toplam Kart Girişi
-he=קלט כולל לוח של GPU
-
 {{Sensors}}
 en=This sensor reports the total GPU value measured at the input side of voltage regulator.
 fr=Ce capteur rapporte la valeur totale du GPU mesurée du côté entrée du régulateur de tension.
