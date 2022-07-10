@@ -3736,7 +3736,7 @@ sv=Temperaturer
 fi=Lämpötilat
 no=Temperaturer
 el=Θερμοκρασίες
-tr=sıcaklıklar
+tr=Sıcaklıklar
 he=טמפרטורות
 
 {{SUBST}}
@@ -3817,7 +3817,7 @@ sv=Spänningar
 fi=Jännitteet
 no=Spenninger
 el=Τάσεις
-tr=voltajlar
+tr=Voltajlar
 he=מתחים
 
 {{SUBST}}
@@ -5093,7 +5093,7 @@ sv=Användande
 fi=Käyttö
 no=Bruk
 el=Χρήση
-tr=kullanım
+tr=Kullanım
 he=נוֹהָג
 
 {{SUBST}}
@@ -15005,7 +15005,7 @@ sv=Chipset
 fi=Piirisarja
 no=Brikkesett
 el=Chipset
-tr=yonga seti
+tr=Yonga seti
 he=ערכת שבבים
 
 {{Sensors}}
@@ -22161,7 +22161,7 @@ sv=Global:
 fi=Maailmanlaajuinen:
 no=Global:
 el=Παγκόσμια:
-tr=küresel:
+tr=Küresel:
 he=גלוֹבָּלִי:
 
 {{Settings}}
@@ -22269,7 +22269,7 @@ sv=Radskuggning
 fi=Rivin varjostus
 no=Radskyggelegging
 el=Σκίαση σειρών
-tr=satır gölgeleme
+tr=Satır gölgeleme
 he=הצללת שורות
 
 {{Settings}}
@@ -24349,7 +24349,7 @@ sv=Om värde <
 fi=Jos arvo <
 no=Hvis verdi <
 el=Αν τιμή <
-tr=eğer değer <
+tr=Eğer değer <
 he=אם הערך <
 
 {{Settings}}
@@ -24700,7 +24700,7 @@ sv=Varningar
 fi=Hälytykset
 no=Varsler
 el=Ειδοποιήσεις
-tr=uyarılar
+tr=Uyarılar
 he=התראות
 
 {{Settings}}
@@ -28590,7 +28590,7 @@ sv=Läge
 fi=tila
 no=Modus
 el=Τρόπος
-tr=mod
+tr=Mod
 he=מצב
 
 {{}}
@@ -28671,7 +28671,7 @@ sv=Plattform
 fi=Alusta
 no=Plattform
 el=Πλατφόρμα
-tr=platformu
+tr=Platformu
 he=פּלַטפוֹרמָה
 
 {{}}
@@ -28698,7 +28698,7 @@ sv=Version
 fi=Versio
 no=Versjon
 el=Εκδοχή
-tr=sürüm
+tr=Sürüm
 he=גִרְסָה
 
 {{Main}}
@@ -29157,7 +29157,7 @@ sv=Färdiga
 fi=Valmis
 no=Ferdig
 el=Πεπερασμένος
-tr=bitmiş
+tr=Bitti
 he=גָמוּר
 
 {{SUBST}}
@@ -45874,7 +45874,7 @@ sv=Övervaka
 fi=Monitori
 no=Observere
 el=Οθόνη
-tr=monitör
+tr=Monitör
 he=צג
 
 {{Main}}
@@ -46198,7 +46198,7 @@ sv=Batteri
 fi=Akku
 no=Batteri
 el=Μπαταρία
-tr=pil
+tr=Pil
 he=סוֹלְלָה
 
 {{Main}}
