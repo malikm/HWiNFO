@@ -23279,7 +23279,7 @@ de=Maximal
 es=Máximo
 pt-BR=Máximo
 it=Massimo
-nl=maximaal
+nl=Maximaal
 da=Maksimum
 zh-CN=最大值
 zh-TW=最大值
@@ -46416,6 +46416,33 @@ no=Grafikkprosessorfrekvens (3D):
 el=Συχνότητα επεξεργαστή γραφικών (3D):
 tr=Grafik İşlemci Frekansı (3D):
 he=תדר מעבד גרפי (3D):
+
+{{Main}}
+en=Graphics Processor Clock (Maximum):
+fr=Fréquence du processeur graphique (Maximum):
+de=Grafik-Prozessor-Frequenz (Maximal):
+es=Frecuencia del procesador de gráficos (Máximo):
+pt-BR=Frequência do processador gráfico (Máximo):
+it=Frequenza del processore grafico (Massimo):
+nl=Frequentie grafische processor (Maximaal):
+da=Grafikprocessorfrekvens (Maksimum):
+zh-CN=图形处理器频率 (最大值)：
+zh-TW=圖形處理器時脈（最大值）：
+ja=グラフィックプロセッサのクロック（最大）：
+ko=그래픽 프로세서 주파수(최대):
+vi=Tần số bộ xử lý đồ họa (Tối đa):
+ar=تردد معالج الرسومات (أقصى):
+ru=Частота GPU (Максимум):
+cs=Frekvence grafického procesoru (Maximum):
+sk=Frekvencia grafického procesora (Maximum):
+hu=Grafikus processzor frekvenciája (Maximális):
+pl=Częstotliwość procesora graficznego (Maximum):
+sv=Grafikprocessorfrekvens (Maximal):
+fi=Grafiikkaprosessorin taajuus (Enimmäismäärä):
+no=Grafikkprosessorfrekvens (Maksimum):
+el=Συχνότητα επεξεργαστή γραφικών (Το πολύ):
+tr=Grafik İşlemci Frekansı (Maksimum):
+he=תדר מעבד גרפי (מַקסִימוּם):
 
 {{Main}}
 en=Geometry Unit Clock:
