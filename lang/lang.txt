@@ -17547,6 +17547,33 @@ tr=CPU Çekirdek Akımı (SVI2 TFN)
 he=זרם ליבת מעבד (SVI2 TFN)
 
 {{Sensors}}
+en=CPU Core Current (SVI3 TFN)
+fr=Courant du cœur du processeur (SVI3 TFN)
+de=CPU-Kern-Strom (SVI3 TFN)
+es=Corriente del núcleo de la CPU (SVI3 TFN)
+pt-BR=Corrente do núcleo da CPU (SVI3 TFN)
+it=Corrente del core della CPU (SVI3 TFN)
+nl=CPU-kernstroom (SVI3 TFN)
+da=CPU Kernestrøm (SVI3 TFN)
+zh-CN=CPU 核心电流 (SVI3 TFN)
+zh-TW=CPU核心電流（SVI3 TFN）
+ja=CPUコア電流（SVI3 TFN）
+ko=CPU 코어 전류(SVI3 TFN)
+vi=Dòng lõi CPU (SVI3 TFN)
+ar=تيار نواة وحدة المعالجة المركزية (SVI3 TFN)
+ru=Ток ядра ЦП (SVI3 TFN)
+cs=Proud jádra CPU (SVI3 TFN)
+sk=Prúd jadra CPU (SVI3 TFN)
+hu=CPU magáram (SVI3 TFN)
+pl=Prąd rdzenia procesora (SVI3 TFN)
+sv=CPU Kärnström (SVI3 TFN)
+fi=CPU:n ydinvirta (SVI3 TFN)
+no=CPU Kjernestrøm (SVI3 TFN)
+el=Ρεύμα πυρήνα CPU (SVI3 TFN)
+tr=CPU Çekirdek Akımı (SVI3 TFN)
+he=זרם ליבת מעבד (SVI3 TFN)
+
+{{Sensors}}
 en=CPU Core Current
 fr=Courant du cœur du processeur
 de=CPU-Kern-Strom
@@ -17599,6 +17626,33 @@ no=Strøm trukket av kjernedomenet (VDDCR_CPU) levert via spenningsregulatortele
 el=Ρεύμα που αντλείται από τον κεντρικό τομέα (VDDCR_CPU) που παρέχεται μέσω της τηλεμετρίας του ρυθμιστή τάσης (SVI2 TFN).
 tr=Voltaj Regülatörü telemetrisi (SVI2 TFN) aracılığıyla sağlanan çekirdek etki alanı (VDDCR_CPU) tarafından çekilen akım.
 he=זרם נמשך על ידי תחום הליבה (VDDCR_CPU) המסופק באמצעות טלמטריית ווסת מתח (SVI2 TFN).
+
+{{Sensors}}
+en=Current drawn by the core domain (VDDCR_VDD) provided via Voltage Regulator telemetry (SVI3 TFN).
+fr=Courant tiré par le domaine central (VDDCR_VDD) fourni via la télémétrie du régulateur de tension (SVI3 TFN).
+de=Von der Kerndomäne (VDDCR_VDD) entnommener Strom, der über die Spannungsregler-Telemetrie (SVI3 TFN) bereitgestellt wird.
+es=Corriente consumida por el dominio central (VDDCR_VDD) proporcionada a través de la telemetría del regulador de voltaje (SVI3 TFN).
+pt-BR=Corrente consumida pelo domínio principal (VDDCR_VDD) fornecida por meio da telemetria do regulador de tensão (SVI3 TFN).
+it=Corrente assorbita dal dominio principale (VDDCR_VDD) fornita tramite telemetria del regolatore di tensione (SVI3 TFN).
+nl=Stroom getrokken door het kerndomein (VDDCR_VDD) geleverd via spanningsregelaar-telemetrie (SVI3 TFN).
+da=Strøm trukket af kernedomænet (VDDCR_VDD) leveret via Voltage Regulator telemetri (SVI3 TFN).
+zh-CN=核心域 (VDDCR_VDD) 通过电压调节器遥测 (SVI3 TFN) 提供的电流。
+zh-TW=核心域（VDDCR_VDD）通過電壓調節器遙測（SVI3 TFN）提供的電流。
+ja=電圧レギュレータテレメトリ（SVI3 TFN）を介して提供されるコアドメイン（VDDCR_VDD）によって引き出される電流。
+ko=전압 조정기 원격 측정(SVI3 TFN)을 통해 제공되는 코어 도메인(VDDCR_VDD)에서 끌어온 전류.
+vi=Dòng điện do miền lõi (VDDCR_VDD) cung cấp thông qua đo từ xa Bộ điều chỉnh điện áp (SVI3 TFN).
+ar=يتم رسم التيار بواسطة المجال الأساسي (VDDCR_VDD) المقدم عبر القياس عن بُعد لمنظم الجهد (SVI3 TFN).
+ru=Ток, потребляемый основным доменом (VDDCR_VDD), предоставляется через телеметрию регулятора напряжения (SVI3 TFN).
+cs=Proud odebraný doménou jadra (VDDCR_VDD) poskytovaný prostřednictvím telemetrie regulátoru napětí (SVI3 TFN).
+sk=Prúd odoberaný doménou jadra (VDDCR_VDD) poskytovaný prostredníctvom telemetrie regulátora napätia (SVI3 TFN).
+hu=Az áramot a központi tartomány (VDDCR_VDD) veszi fel, amely a feszültségszabályozó telemetriáján (SVI3 TFN) keresztül biztosított.
+pl=Prąd pobierany przez domenę rdzenia (VDDCR_VDD) dostarczany przez telemetrię regulatora napięcia (SVI3 TFN).
+sv=Ström dras av kärndomänen (VDDCR_VDD) tillhandahållen via spänningsregulatortelemetri (SVI3 TFN).
+fi=Virran ottaa ydinverkkoalue (VDDCR_VDD), joka toimitetaan Voltage Regulator -telemetrian (SVI3 TFN) kautta.
+no=Strøm trukket av kjernedomenet (VDDCR_VDD) levert via spenningsregulatortelemetri (SVI3 TFN).
+el=Ρεύμα που αντλείται από τον κεντρικό τομέα (VDDCR_VDD) που παρέχεται μέσω της τηλεμετρίας του ρυθμιστή τάσης (SVI3 TFN).
+tr=Voltaj Regülatörü telemetrisi (SVI3 TFN) aracılığıyla sağlanan çekirdek etki alanı (VDDCR_VDD) tarafından çekilen akım.
+he=זרם נמשך על ידי תחום הליבה (VDDCR_VDD) המסופק באמצעות טלמטריית ווסת מתח (SVI3 TFN).
 
 {{Sensors}}
 en=Current drawn by the North Bridge provided via Voltage Regulator telemetry (SVI2 TFN).
@@ -17655,6 +17709,33 @@ tr=SoC Akımı (SVI2 TFN)
 he=SoC זרם חשמלי (SVI2 TFN)
 
 {{Sensors}}
+en=SoC Current (SVI3 TFN)
+fr=Courant du SoC (SVI3 TFN)
+de=SoC-Strom (SVI3 TFN)
+es=Corriente del SoC (SVI3 TFN)
+pt-BR=Corrente do SoC (SVI3 TFN)
+it=Corrente del SoC (SVI3 TFN)
+nl=SoC-Stroom (SVI3 TFN)
+da=SoC Strøm (SVI3 TFN)
+zh-CN=SoC 电流 (SVI3 TFN)
+zh-TW=SoC 電流（SVI3 TFN）
+ja=SoC 電流（SVI3 TFN）
+ko=SoC 전류 (SVI3 TFN)
+vi=Dòng điện SoC (SVI3 TFN)
+ar=SoC التيار الكهربائي (SVI3 TFN)
+ru=Ток SoC (SVI3 TFN)
+cs=Proud SoC (SVI3 TFN)
+sk=Prúd SoC (SVI3 TFN)
+hu=SoC áram (SVI3 TFN)
+pl=Prąd SoC (SVI3 TFN)
+sv=SoC Ström (SVI3 TFN)
+fi=SoC:n sähkövirta (SVI3 TFN)
+no=SoC Strøm (SVI3 TFN)
+el=Ρεύμα SoC (SVI3 TFN)
+tr=SoC Akımı (SVI3 TFN)
+he=SoC זרם חשמלי (SVI3 TFN)
+
+{{Sensors}}
 en=Current drawn by the SoC domain (VDDCR_SOC) provided via Voltage Regulator telemetry (SVI2 TFN).
 fr=Courant consommé par le domaine SoC (VDDCR_SOC) fourni via la télémétrie du régulateur de tension (SVI2 TFN).
 de=Von der SoC-Domäne (VDDCR_SOC) entnommener Strom, der über die Telemetrie des Spannungsreglers (SVI2 TFN) bereitgestellt wird.
@@ -17680,6 +17761,195 @@ no=Strøm trukket av SoC-domenet (VDDCR_SOC) levert via spenningsregulatorteleme
 el=Το ρεύμα που αντλείται από τον τομέα SoC (VDDCR_SOC) παρέχεται μέσω της τηλεμετρίας του ρυθμιστή τάσης (SVI2 TFN).
 tr=Voltaj Regülatörü telemetrisi (SVI2 TFN) aracılığıyla sağlanan SoC etki alanı (VDDCR_SOC) tarafından çekilen akım.
 he=זרם נמשך על ידי תחום ה-SoC (VDDCR_SOC) המסופק באמצעות טלמטריית ווסת מתח (SVI2 TFN).
+
+{{Sensors}}
+en=Current drawn by the SoC domain (VDDCR_SOC) provided via Voltage Regulator telemetry (SVI3 TFN).
+fr=Courant consommé par le domaine SoC (VDDCR_SOC) fourni via la télémétrie du régulateur de tension (SVI3 TFN).
+de=Von der SoC-Domäne (VDDCR_SOC) entnommener Strom, der über die Telemetrie des Spannungsreglers (SVI3 TFN) bereitgestellt wird.
+es=Corriente consumida por el dominio SoC (VDDCR_SOC) proporcionada a través de la telemetría del regulador de voltaje (SVI3 TFN).
+pt-BR=Corrente desenhada pelo domínio SoC (VDDCR_SOC) fornecida via telemetria do regulador de tensão (SVI3 TFN).
+it=Corrente assorbita dal dominio SoC (VDDCR_SOC) fornita tramite telemetria del regolatore di tensione (SVI3 TFN).
+nl=Stroom getrokken door het SoC-domein (VDDCR_SOC) geleverd via spanningsregelaar-telemetrie (SVI3 TFN).
+da=Strøm trukket af SoC-domænet (VDDCR_SOC) leveret via Voltage Regulator-telemetri (SVI3 TFN).
+zh-CN=SoC 域 (VDDCR_SOC) 通过电压调节器遥测 (SVI3 TFN) 提供的电流。
+zh-TW=SoC域（VDDCR_SOC）通過電壓調節器遙測（SVI3 TFN）提供的電流。
+ja=電圧レギュレータテレメトリ（SVI3 TFN）を介して提供されるSoCドメイン（VDDCR_SOC）によって引き出される電流。
+ko=전압 조정기 원격 측정(SVI3 TFN)을 통해 제공되는 SoC 도메인(VDDCR_SOC)에서 끌어온 전류입니다.
+vi=Dòng điện do miền SoC (VDDCR_SOC) cung cấp thông qua đo từ xa Bộ điều chỉnh điện áp (SVI3 TFN).
+ar=يتم رسم التيار بواسطة مجال SoC (VDDCR_SOC) المقدم عبر القياس عن بُعد لمنظم الجهد (SVI3 TFN).
+ru=Ток, потребляемый доменом SoC (VDDCR_SOC), предоставляемый через телеметрию регулятора напряжения (SVI3 TFN).
+cs=Proud odebraný doménou SoC (VDDCR_SOC) poskytovaný prostřednictvím telemetrie regulátoru napětí (SVI3 TFN).
+sk=Prúd odoberaný doménou SoC (VDDCR_SOC) poskytovaný prostredníctvom telemetrie regulátora napätia (SVI3 TFN).
+hu=Az áramfelvételt a feszültségszabályozó telemetriáján (SVI3 TFN) keresztül biztosított SoC tartomány (VDDCR_SOC).
+pl=Prąd pobierany przez domenę SoC (VDDCR_SOC) dostarczany przez telemetrię regulatora napięcia (SVI3 TFN).
+sv=Ström dras av SoC-domänen (VDDCR_SOC) tillhandahållen via Voltage Regulator-telemetri (SVI3 TFN).
+fi=Virran ottaa SoC-verkkoalue (VDDCR_SOC), joka toimitetaan Voltage Regulator -telemetrian (SVI3 TFN) kautta.
+no=Strøm trukket av SoC-domenet (VDDCR_SOC) levert via spenningsregulatortelemetri (SVI3 TFN).
+el=Το ρεύμα που αντλείται από τον τομέα SoC (VDDCR_SOC) παρέχεται μέσω της τηλεμετρίας του ρυθμιστή τάσης (SVI3 TFN).
+tr=Voltaj Regülatörü telemetrisi (SVI3 TFN) aracılığıyla sağlanan SoC etki alanı (VDDCR_SOC) tarafından çekilen akım.
+he=זרם נמשך על ידי תחום ה-SoC (VDDCR_SOC) המסופק באמצעות טלמטריית ווסת מתח (SVI3 TFN).
+
+{{Sensors}}
+en=SR Current (SVI3 TFN)
+fr=Courant du SR (SVI3 TFN)
+de=SR-Strom (SVI3 TFN)
+es=Corriente del SR (SVI3 TFN)
+pt-BR=Corrente do SR (SVI3 TFN)
+it=Corrente del SR (SVI3 TFN)
+nl=SR-Stroom (SVI3 TFN)
+da=SR Strøm (SVI3 TFN)
+zh-CN=SR 电流 (SVI3 TFN)
+zh-TW=SR 電流（SVI3 TFN）
+ja=SR 電流（SVI3 TFN）
+ko=SR 전류 (SVI3 TFN)
+vi=Dòng điện SR (SVI3 TFN)
+ar=SR التيار الكهربائي (SVI3 TFN)
+ru=Ток SR (SVI3 TFN)
+cs=Proud SR (SVI3 TFN)
+sk=Prúd SR (SVI3 TFN)
+hu=SR áram (SVI3 TFN)
+pl=Prąd SR (SVI3 TFN)
+sv=SR Ström (SVI3 TFN)
+fi=SR:n sähkövirta (SVI3 TFN)
+no=SR Strøm (SVI3 TFN)
+el=Ρεύμα SR (SVI3 TFN)
+tr=SR Akımı (SVI3 TFN)
+he=SR זרם חשמלי (SVI3 TFN)
+
+{{Sensors}}
+en=Current drawn by the SoC domain (VDDCR_SR) provided via Voltage Regulator telemetry (SVI3 TFN).
+fr=Courant consommé par le domaine SoC (VDDCR_SR) fourni via la télémétrie du régulateur de tension (SVI3 TFN).
+de=Von der SoC-Domäne (VDDCR_SR) entnommener Strom, der über die Telemetrie des Spannungsreglers (SVI3 TFN) bereitgestellt wird.
+es=Corriente consumida por el dominio SoC (VDDCR_SR) proporcionada a través de la telemetría del regulador de voltaje (SVI3 TFN).
+pt-BR=Corrente desenhada pelo domínio SoC (VDDCR_SR) fornecida via telemetria do regulador de tensão (SVI3 TFN).
+it=Corrente assorbita dal dominio SoC (VDDCR_SR) fornita tramite telemetria del regolatore di tensione (SVI3 TFN).
+nl=Stroom getrokken door het SoC-domein (VDDCR_SR) geleverd via spanningsregelaar-telemetrie (SVI3 TFN).
+da=Strøm trukket af SoC-domænet (VDDCR_SR) leveret via Voltage Regulator-telemetri (SVI3 TFN).
+zh-CN=SoC 域 (VDDCR_SR) 通过电压调节器遥测 (SVI3 TFN) 提供的电流。
+zh-TW=SoC域（VDDCR_SR）通過電壓調節器遙測（SVI3 TFN）提供的電流。
+ja=電圧レギュレータテレメトリ（SVI3 TFN）を介して提供されるSoCドメイン（VDDCR_SR）によって引き出される電流。
+ko=전압 조정기 원격 측정(SVI3 TFN)을 통해 제공되는 SoC 도메인(VDDCR_SR)에서 끌어온 전류입니다.
+vi=Dòng điện do miền SoC (VDDCR_SR) cung cấp thông qua đo từ xa Bộ điều chỉnh điện áp (SVI3 TFN).
+ar=يتم رسم التيار بواسطة مجال SoC (VDDCR_SR) المقدم عبر القياس عن بُعد لمنظم الجهد (SVI3 TFN).
+ru=Ток, потребляемый доменом SoC (VDDCR_SR), предоставляемый через телеметрию регулятора напряжения (SVI3 TFN).
+cs=Proud odebraný doménou SoC (VDDCR_SR) poskytovaný prostřednictvím telemetrie regulátoru napětí (SVI3 TFN).
+sk=Prúd odoberaný doménou SoC (VDDCR_SR) poskytovaný prostredníctvom telemetrie regulátora napätia (SVI3 TFN).
+hu=Az áramfelvételt a feszültségszabályozó telemetriáján (SVI3 TFN) keresztül biztosított SoC tartomány (VDDCR_SR).
+pl=Prąd pobierany przez domenę SoC (VDDCR_SR) dostarczany przez telemetrię regulatora napięcia (SVI3 TFN).
+sv=Ström dras av SoC-domänen (VDDCR_SR) tillhandahållen via Voltage Regulator-telemetri (SVI3 TFN).
+fi=Virran ottaa SoC-verkkoalue (VDDCR_SR), joka toimitetaan Voltage Regulator -telemetrian (SVI3 TFN) kautta.
+no=Strøm trukket av SoC-domenet (VDDCR_SR) levert via spenningsregulatortelemetri (SVI3 TFN).
+el=Το ρεύμα που αντλείται από τον τομέα SoC (VDDCR_SR) παρέχεται μέσω της τηλεμετρίας του ρυθμιστή τάσης (SVI3 TFN).
+tr=Voltaj Regülatörü telemetrisi (SVI3 TFN) aracılığıyla sağlanan SoC etki alanı (VDDCR_SR) tarafından çekilen akım.
+he=זרם נמשך על ידי תחום ה-SoC (VDDCR_SR) המסופק באמצעות טלמטריית ווסת מתח (SVI3 TFN).
+
+{{Sensors}}
+en=MISC Current (SVI3 TFN)
+fr=Courant du MISC (SVI3 TFN)
+de=MISC-Strom (SVI3 TFN)
+es=Corriente del MISC (SVI3 TFN)
+pt-BR=Corrente do MISC (SVI3 TFN)
+it=Corrente del MISC (SVI3 TFN)
+nl=MISC-Stroom (SVI3 TFN)
+da=MISC Strøm (SVI3 TFN)
+zh-CN=MISC 电流 (SVI3 TFN)
+zh-TW=MISC 電流（SVI3 TFN）
+ja=MISC 電流（SVI3 TFN）
+ko=MISC 전류 (SVI3 TFN)
+vi=Dòng điện MISC (SVI3 TFN)
+ar=MISC التيار الكهربائي (SVI3 TFN)
+ru=Ток MISC (SVI3 TFN)
+cs=Proud MISC (SVI3 TFN)
+sk=Prúd MISC (SVI3 TFN)
+hu=MISC áram (SVI3 TFN)
+pl=Prąd MISC (SVI3 TFN)
+sv=MISC Ström (SVI3 TFN)
+fi=MISC:n sähkövirta (SVI3 TFN)
+no=MISC Strøm (SVI3 TFN)
+el=Ρεύμα MISC (SVI3 TFN)
+tr=MISC Akımı (SVI3 TFN)
+he=MISC זרם חשמלי (SVI3 TFN)
+
+{{Sensors}}
+en=Current drawn by the MISC domain (VDD_MISC) provided via Voltage Regulator telemetry (SVI3 TFN).
+fr=Courant consommé par le domaine MISC (VDD_MISC) fourni via la télémétrie du régulateur de tension (SVI3 TFN).
+de=Von der MISC-Domäne (VDD_MISC) entnommener Strom, der über die Telemetrie des Spannungsreglers (SVI3 TFN) bereitgestellt wird.
+es=Corriente consumida por el dominio MISC (VDD_MISC) proporcionada a través de la telemetría del regulador de voltaje (SVI3 TFN).
+pt-BR=Corrente desenhada pelo domínio MISC (VDD_MISC) fornecida via telemetria do regulador de tensão (SVI3 TFN).
+it=Corrente assorbita dal dominio MISC (VDD_MISC) fornita tramite telemetria del regolatore di tensione (SVI3 TFN).
+nl=Stroom getrokken door het MISC-domein (VDD_MISC) geleverd via spanningsregelaar-telemetrie (SVI3 TFN).
+da=Strøm trukket af MISC-domænet (VDD_MISC) leveret via Voltage Regulator-telemetri (SVI3 TFN).
+zh-CN=MISC 域 (VDD_MISC) 通过电压调节器遥测 (SVI3 TFN) 提供的电流。
+zh-TW=MISC域（VDD_MISC）通過電壓調節器遙測（SVI3 TFN）提供的電流。
+ja=電圧レギュレータテレメトリ（SVI3 TFN）を介して提供されるMISCドメイン（VDD_MISC）によって引き出される電流。
+ko=전압 조정기 원격 측정(SVI3 TFN)을 통해 제공되는 MISC 도메인(VDD_MISC)에서 끌어온 전류입니다.
+vi=Dòng điện do miền MISC (VDD_MISC) cung cấp thông qua đo từ xa Bộ điều chỉnh điện áp (SVI3 TFN).
+ar=يتم رسم التيار بواسطة مجال MISC (VDD_MISC) المقدم عبر القياس عن بُعد لمنظم الجهد (SVI3 TFN).
+ru=Ток, потребляемый доменом MISC (VDD_MISC), предоставляемый через телеметрию регулятора напряжения (SVI3 TFN).
+cs=Proud odebraný doménou MISC (VDD_MISC) poskytovaný prostřednictvím telemetrie regulátoru napětí (SVI3 TFN).
+sk=Prúd odoberaný doménou MISC (VDD_MISC) poskytovaný prostredníctvom telemetrie regulátora napätia (SVI3 TFN).
+hu=Az áramfelvételt a feszültségszabályozó telemetriáján (SVI3 TFN) keresztül biztosított MISC tartomány (VDD_MISC).
+pl=Prąd pobierany przez domenę MISC (VDD_MISC) dostarczany przez telemetrię regulatora napięcia (SVI3 TFN).
+sv=Ström dras av MISC-domänen (VDD_MISC) tillhandahållen via Voltage Regulator-telemetri (SVI3 TFN).
+fi=Virran ottaa MISC-verkkoalue (VDD_MISC), joka toimitetaan Voltage Regulator -telemetrian (SVI3 TFN) kautta.
+no=Strøm trukket av MISC-domenet (VDD_MISC) levert via spenningsregulatortelemetri (SVI3 TFN).
+el=Το ρεύμα που αντλείται από τον τομέα MISC (VDD_MISC) παρέχεται μέσω της τηλεμετρίας του ρυθμιστή τάσης (SVI3 TFN).
+tr=Voltaj Regülatörü telemetrisi (SVI3 TFN) aracılığıyla sağlanan MISC etki alanı (VDD_MISC) tarafından çekilen akım.
+he=זרם נמשך על ידי תחום ה-MISC (VDD_MISC) המסופק באמצעות טלמטריית ווסת מתח (SVI3 TFN).
+
+{{Sensors}}
+en=IO Current (SVI3 TFN)
+fr=Courant du IO (SVI3 TFN)
+de=IO-Strom (SVI3 TFN)
+es=Corriente del IO (SVI3 TFN)
+pt-BR=Corrente do IO (SVI3 TFN)
+it=Corrente del IO (SVI3 TFN)
+nl=IO-Stroom (SVI3 TFN)
+da=IO Strøm (SVI3 TFN)
+zh-CN=IO 电流 (SVI3 TFN)
+zh-TW=IO 電流（SVI3 TFN）
+ja=IO 電流（SVI3 TFN）
+ko=IO 전류 (SVI3 TFN)
+vi=Dòng điện IO (SVI3 TFN)
+ar=IO التيار الكهربائي (SVI3 TFN)
+ru=Ток IO (SVI3 TFN)
+cs=Proud IO (SVI3 TFN)
+sk=Prúd IO (SVI3 TFN)
+hu=IO áram (SVI3 TFN)
+pl=Prąd IO (SVI3 TFN)
+sv=IO Ström (SVI3 TFN)
+fi=IO:n sähkövirta (SVI3 TFN)
+no=IO Strøm (SVI3 TFN)
+el=Ρεύμα IO (SVI3 TFN)
+tr=IO Akımı (SVI3 TFN)
+he=IO זרם חשמלי (SVI3 TFN)
+
+{{Sensors}}
+en=Current drawn by the IO domain (VDDIO) provided via Voltage Regulator telemetry (SVI3 TFN).
+fr=Courant consommé par le domaine IO (VDDIO) fourni via la télémétrie du régulateur de tension (SVI3 TFN).
+de=Von der IO-Domäne (VDDIO) entnommener Strom, der über die Telemetrie des Spannungsreglers (SVI3 TFN) bereitgestellt wird.
+es=Corriente consumida por el dominio IO (VDDIO) proporcionada a través de la telemetría del regulador de voltaje (SVI3 TFN).
+pt-BR=Corrente desenhada pelo domínio IO (VDDIO) fornecida via telemetria do regulador de tensão (SVI3 TFN).
+it=Corrente assorbita dal dominio IO (VDDIO) fornita tramite telemetria del regolatore di tensione (SVI3 TFN).
+nl=Stroom getrokken door het IO-domein (VDDIO) geleverd via spanningsregelaar-telemetrie (SVI3 TFN).
+da=Strøm trukket af IO-domænet (VDDIO) leveret via Voltage Regulator-telemetri (SVI3 TFN).
+zh-CN=IO 域 (VDDIO) 通过电压调节器遥测 (SVI3 TFN) 提供的电流。
+zh-TW=IO域（VDDIO）通過電壓調節器遙測（SVI3 TFN）提供的電流。
+ja=電圧レギュレータテレメトリ（SVI3 TFN）を介して提供されるIOドメイン（VDDIO）によって引き出される電流。
+ko=전압 조정기 원격 측정(SVI3 TFN)을 통해 제공되는 IO 도메인(VDDIO)에서 끌어온 전류입니다.
+vi=Dòng điện do miền IO (VDDIO) cung cấp thông qua đo từ xa Bộ điều chỉnh điện áp (SVI3 TFN).
+ar=يتم رسم التيار بواسطة مجال IO (VDDIO) المقدم عبر القياس عن بُعد لمنظم الجهد (SVI3 TFN).
+ru=Ток, потребляемый доменом IO (VDDIO), предоставляемый через телеметрию регулятора напряжения (SVI3 TFN).
+cs=Proud odebraný doménou IO (VDDIO) poskytovaný prostřednictvím telemetrie regulátoru napětí (SVI3 TFN).
+sk=Prúd odoberaný doménou IO (VDDIO) poskytovaný prostredníctvom telemetrie regulátora napätia (SVI3 TFN).
+hu=Az áramfelvételt a feszültségszabályozó telemetriáján (SVI3 TFN) keresztül biztosított IO tartomány (VDDIO).
+pl=Prąd pobierany przez domenę IO (VDDIO) dostarczany przez telemetrię regulatora napięcia (SVI3 TFN).
+sv=Ström dras av IO-domänen (VDDIO) tillhandahållen via Voltage Regulator-telemetri (SVI3 TFN).
+fi=Virran ottaa IO-verkkoalue (VDDIO), joka toimitetaan Voltage Regulator -telemetrian (SVI3 TFN) kautta.
+no=Strøm trukket av IO-domenet (VDDIO) levert via spenningsregulatortelemetri (SVI3 TFN).
+el=Το ρεύμα που αντλείται από τον τομέα IO (VDDIO) παρέχεται μέσω της τηλεμετρίας του ρυθμιστή τάσης (SVI3 TFN).
+tr=Voltaj Regülatörü telemetrisi (SVI3 TFN) aracılığıyla sağlanan IO etki alanı (VDDIO) tarafından çekilen akım.
+he=זרם נמשך על ידי תחום ה-IO (VDDIO) המסופק באמצעות טלמטריית ווסת מתח (SVI3 TFN).
 
 {{Sensors}}
 en=CPU Thermal Design Current (sustained current deliverable by voltage regulator in thermally-constrained scenarios).
@@ -17844,6 +18114,33 @@ tr=Voltaj Regülatörü telemetrisi (SVI2 TFN) aracılığıyla sağlanan tüm �
 he=הספק הנצרך על ידי כל תחום הליבה (VDDCR_CPU) המסופק באמצעות טלמטריית ווסת מתח (SVI2 TFN).
 
 {{Sensors}}
+en=Power consumed by the entire core domain (VDDCR_CPU) provided via Voltage Regulator telemetry (SVI3 TFN).
+fr=Puissance consommée par l'ensemble du domaine central (VDDCR_CPU) fournie via la télémétrie du régulateur de tension (SVI3 TFN).
+de=Von der gesamten Kerndomäne (VDDCR_CPU) verbrauchter Strom, der über die Spannungsregler-Telemetrie (SVI3 TFN) bereitgestellt wird.
+es=Energía consumida por todo el dominio central (VDDCR_CPU) proporcionada a través de la telemetría del regulador de voltaje (SVI3 TFN).
+pt-BR=Energia consumida por todo o domínio central (VDDCR_CPU) fornecida por meio da telemetria do regulador de tensão (SVI3 TFN).
+it=Potenza consumata dall'intero dominio principale (VDDCR_CPU) fornita tramite la telemetria del regolatore di tensione (SVI3 TFN).
+nl=Stroomverbruik door het gehele kerndomein (VDDCR_CPU) geleverd via spanningsregelaar-telemetrie (SVI3 TFN).
+da=Strøm forbrugt af hele kernedomænet (VDDCR_CPU) leveret via Voltage Regulator telemetri (SVI3 TFN).
+zh-CN=由电压调节器遥测 (SVI3 TFN) 提供的整个核心区域 (VDDCR_CPU) 的功耗。
+zh-TW=通過電壓調節器遙測（SVI3 TFN）提供的整個核心域（VDDCR_CPU）消耗的功率。
+ja=電圧レギュレータテレメトリ（SVI3 TFN）を介して提供されるコアドメイン全体（VDDCR_CPU）によって消費される電力。
+ko=전압 조정기 원격 측정(SVI3 TFN)을 통해 제공되는 전체 코어 도메인(VDDCR_CPU)에서 소비하는 전력입니다.
+vi=Điện năng được tiêu thụ bởi toàn bộ miền lõi (VDDCR_CPU) được cung cấp thông qua đo từ xa của Bộ điều chỉnh điện áp (SVI3 TFN).
+ar=الطاقة المستهلكة من قبل المجال الأساسي بأكمله (VDDCR_CPU) المقدمة عبر القياس عن بعد لمنظم الجهد (SVI3 TFN).
+ru=Мощность, потребляемая всем основным доменом (VDDCR_CPU), предоставляемая через телеметрию регулятора напряжения (SVI3 TFN).
+cs=Energie spotřebovaná celou doménou jádra (VDDCR_CPU) poskytovaná prostřednictvím telemetrie regulátoru napětí (SVI3 TFN).
+sk=Energia spotrebovaná celou doménou jadra (VDDCR_CPU) poskytovaná prostredníctvom telemetrie regulátora napätia (SVI3 TFN).
+hu=A feszültségszabályozó telemetriáján (SVI3 TFN) keresztül biztosított teljes magtartomány (VDDCR_CPU) által fogyasztott energia.
+pl=Moc pobierana przez całą domenę rdzenia (VDDCR_CPU) dostarczana przez telemetrię regulatora napięcia (SVI3 TFN).
+sv=Ström som förbrukas av hela kärndomänen (VDDCR_CPU) tillhandahålls via spänningsregulatortelemetri (SVI3 TFN).
+fi=Koko ydinverkkotunnuksen (VDDCR_CPU) käyttämä teho jännitteensäätimen telemetrian (SVI3 TFN) kautta.
+no=Strøm forbrukes av hele kjernedomenet (VDDCR_CPU) levert via spenningsregulatortelemetri (SVI3 TFN).
+el=Ισχύς που καταναλώνεται από ολόκληρο τον τομέα πυρήνα (VDDCR_CPU) που παρέχεται μέσω τηλεμετρίας ρυθμιστή τάσης (SVI3 TFN).
+tr=Voltaj Regülatörü telemetrisi (SVI3 TFN) aracılığıyla sağlanan tüm çekirdek etki alanı (VDDCR_CPU) tarafından tüketilen güç.
+he=הספק הנצרך על ידי כל תחום הליבה (VDDCR_CPU) המסופק באמצעות טלמטריית ווסת מתח (SVI3 TFN).
+
+{{Sensors}}
 en=Power consumed by the SOC domain (VDDCR_SOC) provided via Voltage Regulator telemetry (SVI2 TFN).
 fr=Puissance consommée par le domaine SOC (VDDCR_SOC) fournie via la télémétrie du régulateur de tension (SVI2 TFN).
 de=Von der SOC-Domäne (VDDCR_SOC) verbrauchter Strom, der über die Telemetrie des Spannungsreglers (SVI2 TFN) bereitgestellt wird.
@@ -17869,6 +18166,33 @@ no=Strøm forbrukes av SOC-domenet (VDDCR_SOC) levert via spenningsregulatortele
 el=Ισχύς που καταναλώνεται από τον τομέα SOC (VDDCR_SOC) που παρέχεται μέσω τηλεμετρίας ρυθμιστή τάσης (SVI2 TFN).
 tr=Voltaj Regülatörü telemetrisi (SVI2 TFN) aracılığıyla sağlanan SOC etki alanı (VDDCR_SOC) tarafından tüketilen güç.
 he=הספק הנצרך על ידי תחום ה-SOC (VDDCR_SOC) המסופק באמצעות טלמטריית ווסת מתח (SVI2 TFN).
+
+{{Sensors}}
+en=Power consumed by the SOC domain (VDDCR_SOC) provided via Voltage Regulator telemetry (SVI3 TFN).
+fr=Puissance consommée par le domaine SOC (VDDCR_SOC) fournie via la télémétrie du régulateur de tension (SVI3 TFN).
+de=Von der SOC-Domäne (VDDCR_SOC) verbrauchter Strom, der über die Telemetrie des Spannungsreglers (SVI3 TFN) bereitgestellt wird.
+es=Energía consumida por el dominio SOC (VDDCR_SOC) proporcionada a través de la telemetría del regulador de voltaje (SVI3 TFN).
+pt-BR=Energia consumida pelo domínio SOC (VDDCR_SOC) fornecida via telemetria do regulador de tensão (SVI3 TFN).
+it=Potenza consumata dal dominio SOC (VDDCR_SOC) fornita tramite la telemetria del regolatore di tensione (SVI3 TFN).
+nl=Stroomverbruik door het SOC-domein (VDDCR_SOC) geleverd via spanningsregelaar-telemetrie (SVI3 TFN).
+da=Strøm forbrugt af SOC-domænet (VDDCR_SOC) leveret via Voltage Regulator-telemetri (SVI3 TFN).
+zh-CN=由电压调节器遥测 (SVI3 TFN) 提供的 SOC 区域 (VDDCR_SOC) 的功耗。
+zh-TW=通過電壓調節器遙測 (SVI3 TFN) 提供的SOC域（VDDCR_SOC）消耗的功率。
+ja=電圧レギュレータテレメトリ（SVI3 TFN）を介して提供されるSOCドメイン（VDDCR_SOC）によって消費される電力。
+ko=전압 조정기 원격 측정(SVI3 TFN)을 통해 제공되는 SOC 도메인(VDDCR_SOC)에서 소비하는 전력.
+vi=Công suất được tiêu thụ bởi miền SOC (VDDCR_SOC) được cung cấp thông qua đo từ xa của Bộ điều chỉnh điện áp (SVI3 TFN).
+ar=الطاقة التي يستهلكها مجال SOC (VDDCR_SOC) المقدمة عبر القياس عن بُعد لمنظم الجهد (SVI3 TFN).
+ru=Мощность, потребляемая доменом SOC (VDDCR_SOC), предоставляемая через телеметрию регулятора напряжения (SVI3 TFN).
+cs=Energie spotřebovaná doménou SOC (VDDCR_SOC) poskytovaná prostřednictvím telemetrie regulátoru napětí (SVI3 TFN).
+sk=Energia spotrebovaná doménou SOC (VDDCR_SOC) poskytovaná prostredníctvom telemetrie regulátora napätia (SVI3 TFN).
+hu=Az SOC tartomány (VDDCR_SOC) által fogyasztott energia a feszültségszabályozó telemetriáján (SVI3 TFN) keresztül.
+pl=Moc pobierana przez domenę SOC (VDDCR_SOC) dostarczana przez telemetrię regulatora napięcia (SVI3 TFN).
+sv=Ström som förbrukas av SOC-domänen (VDDCR_SOC) som tillhandahålls via spänningsregulatortelemetri (SVI3 TFN).
+fi=SOC-verkkotunnuksen (VDDCR_SOC) käyttämä teho, joka toimitetaan Voltage Regulator -telemetrian (SVI3 TFN) kautta.
+no=Strøm forbrukes av SOC-domenet (VDDCR_SOC) levert via spenningsregulatortelemetri (SVI3 TFN).
+el=Ισχύς που καταναλώνεται από τον τομέα SOC (VDDCR_SOC) που παρέχεται μέσω τηλεμετρίας ρυθμιστή τάσης (SVI3 TFN).
+tr=Voltaj Regülatörü telemetrisi (SVI3 TFN) aracılığıyla sağlanan SOC etki alanı (VDDCR_SOC) tarafından tüketilen güç.
+he=הספק הנצרך על ידי תחום ה-SOC (VDDCR_SOC) המסופק באמצעות טלמטריית ווסת מתח (SVI3 TFN).
 
 {{Sensors}}
 en=Sum of Powers consumed by Core and SOC domain (VDDCR_CPU+VDDCR_SOC) provided via Voltage Regulator telemetry (SVI2 TFN).
