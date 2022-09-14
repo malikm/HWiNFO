@@ -37800,7 +37800,7 @@ el=Πωλητής CPU:
 tr=CPU Satıcısı:
 he=ספק מעבד:
 
-{{Main}}
+{{}}
 en=Stepping
 fr=Pas à pas
 de=Schritt
