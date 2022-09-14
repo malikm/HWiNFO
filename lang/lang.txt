@@ -29160,7 +29160,7 @@ el=Εκδοχή
 tr=Sürüm
 he=גִרְסָה
 
-{{Main}}
+{{}}
 en=BIOS Date
 fr=Date du BIOS
 de=BIOS-Datum
@@ -46363,7 +46363,7 @@ el=Οθόνη
 tr=Monitör
 he=צג
 
-{{Main}}
+{{}}
 en=Drives
 fr=Disques durs
 de=Laufwerke
