@@ -38991,11 +38991,11 @@ he=בסיס מעבד:
 {{}}
 en=Turbo Max
 fr=Turbo Max
-de=Turbomax
+de=Turbo Max
 es=Turbo Max
 pt-BR=Turbo Max
 it=Turbo Max
-nl=Turbomax
+nl=Turbo Max
 da=Turbo Max
 zh-CN=最大睿频
 zh-TW=最大渦輪加速
@@ -39007,12 +39007,39 @@ ru=Turbo Max
 cs=Turbo Max
 sk=Turbo Max
 hu=Turbo Max
-pl=Maks. turbodoładowanie
+pl=Turbo Max
 sv=Turbo Max
 fi=Turbo Max
 no=Turbo Max
 el=Turbo Max
 tr=Turbo Max
+he=מעבד טורבו מקסימום
+
+{{}}
+en=Boost Max
+fr=Boost Max
+de=Boost Max
+es=Boost Max
+pt-BR=Boost Max
+it=Boost Max
+nl=Boost Max
+da=Boost Max
+zh-CN=最大睿频
+zh-TW=最大渦輪加速
+ja=最大ブースト
+ko=부스트 최대
+vi=Boost tối đa
+ar=Boost Max
+ru=Boost Max
+cs=Boost Max
+sk=Boost Max
+hu=Boost Max
+pl=Boost Max
+sv=Boost Max
+fi=Boost Max
+no=Boost Max
+el=Boost Max
+tr=Boost Max
 he=מעבד טורבו מקסימום
 
 {{Main}}
