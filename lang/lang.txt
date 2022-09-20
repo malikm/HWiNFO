@@ -39069,6 +39069,33 @@ el=Boost Max
 tr=Boost Max
 he=מעבד טורבו מקסימום
 
+{{}}
+en=IDA Clock
+fr=Horloge IDA
+de=IDA-Takt
+es=Reloj IDA
+pt-BR=IDA Clock
+it=IDA Clock
+nl=IDA-klok
+da=IDA-ur
+zh-CN=IDA 频率
+zh-TW=IDA時脈
+ja=IDAクロック
+ko=IDA 클럭
+vi=Đồng hồ IDA
+ar=ساعة IDA
+ru=Часы IDA
+cs=Takt IDA
+sk=Takt IDA
+hu=IDA órajel
+pl=Zegar IDA
+sv=IDA-klocka
+fi=IDA-kello
+no=IDA-klokke
+el=Ρολόι IDA
+tr=IDA Saati
+he=שעון IDA
+
 {{Main}}
 en=CPU Turbo Max:
 fr=Processeur Turbo Max:
