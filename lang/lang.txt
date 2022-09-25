@@ -56812,6 +56812,33 @@ tr=En kötüsü
 he=הכי גרוע
 
 {{Units}}
+en=minutes
+fr=minutes
+de=Protokoll
+es=minutos
+pt=minutos
+it=minuti
+nl=minuten
+da=minutter
+zh-CN=分钟
+zh-TW=分鐘
+ja=分
+ko=분
+vi=phút
+ar=الدقائق
+ru=минуты
+cs=minut
+sk=minút
+hu=percek
+pl=minuty
+sv=minuter
+fi=pöytäkirja
+no=minutter
+el=λεπτά
+tr=dakika
+he=דקות
+
+{{Units}}
 en=hours
 fr=les heures
 de=Std
