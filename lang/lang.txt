@@ -25459,6 +25459,33 @@ tr=Düzen
 he=מַעֲרָך
 
 {{Settings}}
+en=Tray Icon
+fr=Icône de notification
+de=Benachrichtigungssymbol
+es=Icono de notificación
+pt=Ícone de notificação
+it=Icona di notifica
+nl=Meldingspictogram
+da=Meddelelsesikon
+zh-CN=托盘图标
+zh-TW=通知區域圖示
+ja=通知領域のアイコン
+ko=알림 아이콘
+vi=Biểu tượng thông báo
+ar=رمز الإخطار
+ru=Значок уведомления
+cs=Ikona oznámení
+sk=Ikona upozornenia
+hu=Értesítési ikon
+pl=Ikona powiadomienia
+sv=Aviseringsikon
+fi=Ilmoituskuvake
+no=Varslingsikon
+el=Εικονίδιο ειδοποίησης
+tr=Bildirim Simgesi
+he=סמל הודעה
+
+{{Settings}}
 en=General / User Interface
 fr=Général / Interface utilisateur
 de=Allgemeines / Benutzeroberfläche
@@ -26699,6 +26726,60 @@ no=Funksjoner
 el=Χαρακτηριστικά
 tr=Özellikleri
 he=מאפיינים
+
+{{}}
+en=Feature
+fr=Caractéristique
+de=Merkmal
+es=Rasgo
+pt=Característica
+it=Caratteristica
+nl=Voorzien zijn van
+da=Feature
+zh-CN=特性
+zh-TW=特性
+ja=機能
+ko=특징
+vi=Tính năng
+ar=ميزة
+ru=Особенность
+cs=Vlastnost
+sk=Vlastnosť
+hu=Funkció
+pl=Funkcja
+sv=Funktion
+fi=Ominaisuus
+no=Trekk
+el=χαρακτηριστικό
+tr=Özellik
+he=תכונה
+
+{{}}
+en=Description
+fr=La description
+de=Beschreibung
+es=Descripción
+pt=Descrição
+it=Descrizione
+nl=Beschrijving
+da=Beskrivelse
+zh-CN=描述
+zh-TW=描述
+ja=説明
+ko=설명하다
+vi=Sự mô tả
+ar=وصف
+ru=Описание
+cs=Popis
+sk=Popis
+hu=Leírás
+pl=Opis
+sv=Beskrivning
+fi=Kuvaus
+no=Beskrivelse
+el=Περιγραφή
+tr=Tanım
+he=תיאור
 
 {{}}
 en=Production Unit
@@ -65209,6 +65290,33 @@ el=Ενημερώσεις προγραμμάτων οδήγησης
 tr=Sürücü Güncellemeleri
 he=עדכוני מנהלי התקנים
 
+{{Main}}
+en=Driver Update
+fr=Mise à jour du pilote
+de=Treiber-Update
+es=Actualización del controlador
+pt=Atualização do driver
+it=Aggiornamento driver
+nl=Stuurprogramma-update
+da=Driver opdatering
+zh-CN=驱动程序更新
+zh-TW=驅動程式更新
+ja=ドライバーの更新
+ko=드라이버 업데이트
+vi=Cập nhật trình điều khiển
+ar=تحديث برنامج التشغيل
+ru=Обновление драйвера
+cs=Aktualizace ovladače
+sk=Aktualizácia ovládača
+hu=Illesztőprogram frissítése
+pl=Aktualizacja sterownika
+sv=Uppdatering av drivrutinen
+fi=Ohjaimen päivitys
+no=Driveroppdatering
+el=Ενημέρωση προγράμματος οδήγησης
+tr=Sürücü güncellemesi
+he=עדכון דרייבר
+
 {{Settings}}
 en=Copy Line
 fr=Copier la ligne
@@ -65505,3 +65613,30 @@ no=Fest vinduskanter
 el=Κλείσιμο άκρων παραθύρου
 tr=Pencere Kenarlarını Yasla
 he=הצמד קצוות של חלון
+
+{{}}
+en=Create Logfile
+fr=Créer un fichier journal
+de=Logdatei erstellen
+es=Crear archivo de registro
+pt=Criar arquivo de registro
+it=Crea file di registro
+nl=Logbestand maken
+da=Opret logfil
+zh-CN=创建日志文件
+zh-TW=創建紀錄檔
+ja=ログファイルの作成
+ko=로그 파일 생성
+vi=Tạo tệp nhật ký
+ar=إنشاء ملف السجل
+ru=Создать файл журнала
+cs=Vytvořte soubor protokolu
+sk=Vytvoriť Logfile
+hu=Naplófájl létrehozása
+pl=Utwórz plik dziennika
+sv=Skapa loggfil
+fi=Luo lokitiedosto
+no=Opprett loggfil
+el=Δημιουργία αρχείου καταγραφής
+tr=Günlük Dosyası Oluştur
+he=צור קובץ יומן
