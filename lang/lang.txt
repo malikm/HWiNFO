@@ -18447,7 +18447,7 @@ nl=APU-stroomverbruik gefilterd met de STAPM (Skin Temperature Aware Power Manag
 da=APU-strømforbrug filtreret med STAPM-tidskonstanten (Skin Temperature Aware Power Management).
 zh-CN=使用 STAPM（皮肤温度感知电源管理）时间常数过滤的 APU 功率。
 zh-TW=使用STAPM（皮膚溫度感知電源管理）時間常數過濾的APU功率。
-ja=STAPM（Skin Temperature Aware Power Management）時定数でフィルタリングされたAPU電力。
+ja=STAPM（皮膚温度認識電力管理）時定数でフィルタリングされたAPU電力。
 ko=STAPM(Skin Temperature Aware Power Management) 시간 상수로 필터링된 APU 전력 소비.
 vi=Mức tiêu thụ điện năng của APU được lọc với hằng số thời gian STAPM (Quản lý năng lượng nhận biết nhiệt độ da).
 ar=يتم ترشيح استهلاك طاقة APU باستخدام ثابت الوقت STAPM (إدارة الطاقة مع مراعاة درجة حرارة الجلد).
@@ -26709,7 +26709,7 @@ pt-BR=Recursos
 it=Caratteristiche
 nl=Functies
 da=Funktioner
-zh-CN=特点
+zh-CN=特性
 zh-TW=特性
 ja=機能
 ko=기능
@@ -27655,7 +27655,7 @@ it=Intel Virtual Machine Extensions (VMX/VT-x)/AMD Secure Virtual Machine (SVM/A
 nl=Intel Virtual Machine Extensions (VMX/VT-x) / AMD Secure Virtual Machine (SVM/AMD-V)\nGrijs = Niet ondersteund\nRood = Ondersteund, maar uitgeschakeld\nGroen = Ondersteund en ingeschakeld
 da=Intel Virtual Machine Extensions (VMX/VT-x) / AMD Secure Virtual Machine (SVM/AMD-V)\nGrå = Ikke understøttet\nRød = Understøttet, men deaktiveret\nGrøn = Understøttet og aktiveret
 zh-CN=Intel 虚拟机扩展 (VMX/VT-x)/AMD 安全虚拟机 (SVM/AMD-V)\n灰色 = 不支持\n红色 = 支持，但已禁用\n绿色 = 支持并启用
-zh-TW=Intel虛擬機擴充（VMX / VT-x） / AMD安全虛擬機（SVM / AMD-V）\n灰色 = 不支援\n紅色 = 支援，但已禁用\n綠色 = 支援並啟用
+zh-TW=Intel虛擬機器擴充（VMX / VT-x） / AMD安全虛擬機器（SVM / AMD-V）\n灰色 = 不支援\n紅色 = 支援，但已禁用\n綠色 = 支援並啟用
 ja=Intel仮想マシン拡張機能（VMX / VT-x） / AMDセキュア仮想マシン（SVM / AMD-V）\nグレー = サポートされていません\nレッド = サポートされていますが、無効になっています\nグリイン = サポートされて有効になっています
 ko=Intel 가상 머신 확장(VMX/VT-x)/AMD 보안 가상 머신(SVM/AMD-V)\n회색 = 지원되지 않음\n빨간색 = 지원되지만 비활성화됨\n녹색 = 지원 및 활성화됨
 vi=Tiện ích mở rộng Máy ảo Intel (VMX / VT-x) / Máy ảo bảo mật AMD (SVM / AMD-V)\nGrey = Không được hỗ trợ\nRed = Được hỗ trợ, nhưng đã bị vô hiệu hóa\nGreen = Được hỗ trợ và bật
@@ -28951,7 +28951,7 @@ it=Impostazione dell'integrità del codice protetto dall'hypervisor (HVCI).\nGri
 nl=Hypervisor-beveiligde Code Integrity (HVCI)-instelling.\nGrijs = Uitgeschakeld\nGroen = Ingeschakeld
 da=Indstilling for Hypervisor-beskyttet kodeintegritet (HVCI).\nGrå = Deaktiveret\nGrøn = Aktiveret
 zh-CN=虚拟机管理程序保护的代码完整性 (HVCI) 设置。\n灰色 = 禁用\n绿色 = 启用
-zh-TW=虛擬機管理程式保護的程式碼完整性（HVCI）設定。\n灰色 = 已禁用\n綠色 = 已啟用
+zh-TW=虛擬機器管理程式保護的程式碼完整性（HVCI）設定。\n灰色 = 已禁用\n綠色 = 已啟用
 ja=ハイパーバイザーで保護されたコード整合性（HVCI）設定。\nグレー = 無効\nグリイン = 有効
 ko=하이퍼바이저 보호 코드 무결성(HVCI) 설정.\n회색 = 비활성화됨\n녹색 = 활성화
 vi=Cài đặt tính toàn vẹn của mã được bảo vệ bởi Hypervisor (HVCI).\nGrey = Disabled\nGreen = Đã bật
@@ -41752,7 +41752,7 @@ it=Integrità del codice protetto da hypervisor (HVCI):
 nl=Door hypervisor beschermde code-integriteit (HVCI):
 da=Hypervisor-beskyttet kodeintegritet (HVCI):
 zh-CN=虚拟机管理程序保护的代码完整性 (HVCI)：
-zh-TW=虛擬機管理程式保護的程式碼完整性（HVCI）：
+zh-TW=虛擬機器管理程式保護的程式碼完整性（HVCI）：
 ja=ハイパーバイザーで保護されたコード整合性（HVCI）：
 ko=하이퍼바이저 보호 코드 무결성(HVCI):
 vi=Tính toàn vẹn của mã được bảo vệ bởi Hypervisor (HVCI):
@@ -41806,7 +41806,7 @@ it=Avviso macchina virtuale:
 nl=Waarschuwing voor virtuele machines:
 da=Virtuel maskine advarsel:
 zh-CN=虚拟机警告：
-zh-TW=虛擬機警告：
+zh-TW=虛擬機器警告：
 ja=仮想マシンの警告：
 ko=가상 머신 경고:
 vi=Cảnh báo Máy ảo:
@@ -41833,7 +41833,7 @@ it=Il sistema è in esecuzione in VirtualBox Virtual Machine.
 nl=Systeem draait onder VirtualBox Virtual Machine.
 da=Systemet kører under VirtualBox Virtual Machine.
 zh-CN=系统在 VirtualBox 虚拟机下运行。
-zh-TW=系統在VirtualBox虛擬機下運行。
+zh-TW=系統在VirtualBox虛擬機器下運行。
 ja=システムはVirtualBox仮想マシンで実行されています。
 ko=시스템이 VirtualBox 가상 머신에서 실행 중입니다.
 vi=Hệ thống đang chạy trong Máy ảo VirtualBox.
@@ -41860,7 +41860,7 @@ it=Il sistema è in esecuzione su VMware Virtual Machine.
 nl=Systeem draait onder VMware Virtual Machine.
 da=Systemet kører under VMware Virtual Machine.
 zh-CN=系统在 VMware 虚拟机下运行。
-zh-TW=系統在VMware虛擬機下運行。
+zh-TW=系統在VMware虛擬機器下運行。
 ja=システムはVMware仮想マシンで実行されています。
 ko=시스템이 VMware 가상 머신에서 실행 중입니다.
 vi=Hệ thống đang chạy trong Máy ảo VMware.
@@ -41941,7 +41941,7 @@ it=Il sistema è in esecuzione su Xen Virtual Machine.
 nl=Systeem draait onder Xen Virtual Machine.
 da=Systemet kører under Xen Virtual Machine.
 zh-CN=系统在 Xen 虚拟机下运行。
-zh-TW=系統在Xen虛擬機下運行。
+zh-TW=系統在Xen虛擬機器下運行。
 ja=システムはXen仮想マシンで実行されています。
 ko=시스템이 Xen 가상 머신에서 실행 중입니다.
 vi=Hệ thống đang chạy trong Máy ảo Xen.
@@ -52688,7 +52688,7 @@ pt-BR=Características adicionais
 it=Caratteristiche aggiuntive
 nl=Extra functies
 da=Yderligere funktioner
-zh-CN=附加功能
+zh-CN=附加特性
 zh-TW=附加特性
 ja=追加機能
 ko=추가 기능
@@ -52715,7 +52715,7 @@ pt-BR=Outras características
 it=Altre caratteristiche
 nl=Andere mogelijkheden
 da=Andre funktioner
-zh-CN=其它功能
+zh-CN=其它特性
 zh-TW=其他特性
 ja=その他の機能
 ko=다른 특징들
@@ -52796,7 +52796,7 @@ pt-BR=Controlador de unidade:
 it=Controller dell'unità:
 nl=Schijfstationcontroller:
 da=Diskdrev-controller:
-zh-CN=磁盘驱动器控制器：
+zh-CN=驱动器控制器：
 zh-TW=磁碟機控制器：
 ja=ドライブコントローラー：
 ko=디스크 드라이브 컨트롤러:
@@ -52823,7 +52823,7 @@ pt-BR=Controlador de host:
 it=Controller host dell'unità:
 nl=Hostcontroller:
 da=Host Controller:
-zh-CN=驱动主机控制器：
+zh-CN=主机控制器：
 zh-TW=主機控制器：
 ja=ホストコントローラー：
 ko=드라이브 호스트 컨트롤러:
@@ -54659,11 +54659,11 @@ pt-BR=IORDY Desativar:
 it=IORDY Disabilita:
 nl=IORDY Uitschakelen:
 da=IORDY deaktiveret:
-zh-CN=IORDY 禁用：
-zh-TW=IORDY禁用：
-ja=IORDY無効：
+zh-CN=IORDY 可禁用：
+zh-TW=IORDY可禁用：
+ja=IORDY無効化可能：
 ko=IORDY 비활성화:
-vi=IORDY Disable:
+vi=IORDY Disableable:
 ar=معطل IORDY:
 ru=IORDY Отключено:
 cs=IORDY Zakázatelné:
@@ -54730,6 +54730,33 @@ no=Inaktiv
 el=Αδρανής
 tr=etkin değil
 he=לֹא פָּעִיל
+
+{{Main}}
+en=Device Status
+fr=Statut du périphérique
+de=Gerätestatus
+es=Estado del dispositivo
+pt-BR=Status do dispositivo
+it=Stato del dispositivo
+nl=Apparaatstatus
+da=Enhedsstatus
+zh-CN=设备状态
+zh-TW=裝置狀態
+ja=デバイスステータス
+ko=장치 상태
+vi=Tình trạng thiết bị
+ar=حالة الجهاز
+ru=Состояние устройства
+cs=Stav zařízení
+sk=Stav zariadenia
+hu=Eszköz állapota
+pl=Status urządzenia
+sv=Enhets status
+fi=Laitteen tila
+no=Enhetsstatus
+el=Κατάσταση συσκευής
+tr=Cihaz durumu
+he=מצב מכשיר
 
 {{Main}}
 en=Write Cache:
@@ -54850,7 +54877,7 @@ nl=Energiebeheer:
 da=Strømstyring:
 zh-CN=电源管理：
 zh-TW=電源管理：
-ja=パワー管理：
+ja=電力管理：
 ko=전원 관리:
 vi=Quản lý năng lượng:
 ar=إدارة الطاقة:
@@ -65640,3 +65667,30 @@ no=Opprett loggfil
 el=Δημιουργία αρχείου καταγραφής
 tr=Günlük Dosyası Oluştur
 he=צור קובץ יומן
+
+{{}}
+en=Battery
+fr=Batterie
+de=Batterie
+es=Batería
+pt-BR=Bateria
+it=Batteria
+nl=Batterij
+da=Batteri
+zh-CN=电池
+zh-TW=電池
+ja=バッテリー
+ko=배터리
+vi=Pin
+ar=بطارية
+ru=Аккумулятор
+cs=Baterie
+sk=Batéria
+hu=Akkumulátor
+pl=Bateria
+sv=Batteri
+fi=Akku
+no=Batteri
+el=Μπαταρία
+tr=Pil
+he=סוֹלְלָה
