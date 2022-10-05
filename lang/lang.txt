@@ -2126,8 +2126,8 @@ pt-BR=Minimizar a Janela Principal na Inicialização
 it=Riduci a icona la finestra principale all'avvio
 nl=Minimaliseer het hoofdvenster bij het opstarten
 da=Minimer hovedvinduet ved opstart
-zh-CN=启动时最小化主窗口
-zh-TW=啟動時最小化主視窗
+zh-CN=在启动时最小化主窗口
+zh-TW=在啟動時最小化主視窗
 ja=起動時にメインウィンドウを最小化する
 ko=시작 시 기본 창 최소화
 vi=Thu nhỏ cửa sổ chính khi khởi động
@@ -2153,8 +2153,8 @@ pt-BR=Minimizar Sensores na Inicialização
 it=Riduci al minimo i sensori all'avvio
 nl=Minimaliseer sensoren bij opstarten
 da=Minimer sensorer ved opstart
-zh-CN=启动时最小化传感器窗口
-zh-TW=啟動時最小化傳感器視窗
+zh-CN=在启动时最小化传感器窗口
+zh-TW=在啟動時最小化傳感器視窗
 ja=起動時のセンサーウィンドウを最小化する
 ko=시작 시 센서 최소화
 vi=Giảm thiểu cảm biến khi khởi động
@@ -2909,8 +2909,8 @@ pt-BR=Quando ativado, minimiza a janela de sensores ao invés de fechá-la.\nO a
 it=Quando abilitato, questo ridurrà a icona la finestra dei sensori invece di chiuderla.\nL'applicazione può essere chiusa dal vassoio.
 nl=Indien ingeschakeld, zal dit het sensorenvenster minimaliseren in plaats van het te sluiten.\nDe applicatie kan worden beëindigd via de taakbalk.
 da=Når det er aktiveret, vil dette minimere sensorvinduet i stedet for at lukke det.\nApplikationen kan afsluttes fra bakken.
-zh-CN=启用后，将最小化而不关闭传感器窗口。\n应用程序可以从托盘退出。
-zh-TW=啟用後，這將最小化傳感器視窗而不是關閉它。\n應用程式可以從通知區域退出。
+zh-CN=启用后，将最小化而不关闭传感器窗口。\n可以从托盘退出应用程序。
+zh-TW=啟用後，這將最小化傳感器視窗而不是關閉它。\n可以從通知區域退出應用程式。
 ja=有効にすると、センサーウィンドウを閉じるのではなく、最小化します。\nアプリケーションを通知領域から終了できます。
 ko=활성화하면 센서 창이 닫히지 않고 최소화됩니다.\n트레이에서 응용 프로그램을 종료할 수 있습니다.
 vi=Khi được bật, điều này sẽ thu nhỏ cửa sổ cảm biến thay vì đóng nó.\n Có thể thoát ứng dụng khỏi khay.
@@ -24513,7 +24513,34 @@ el=Θέση
 tr=Konum
 he=עמדה
 
-{{Settings}}
+{{}}
+en=None
+fr=Rien
+de=Keine
+es=Ninguna
+pt-BR=Nenhum
+it=Nessuno
+nl=Geen
+da=Ingen
+zh-CN=无
+zh-TW=無
+ja=なし
+ko=없음
+vi=Không có
+ar=لا أحد
+ru=Никто
+cs=Žádný
+sk=Žiadne
+hu=Egyik sem
+pl=Nic
+sv=Ingen
+fi=Ei mitään
+no=Ingen
+el=Κανένας
+tr=Hiçbiri
+he=אף אחד
+
+{{Main}}
 en=None
 fr=Rien
 de=Keine
@@ -54429,8 +54456,8 @@ pt-BR=Com suporte (leitura determinística após TRIM, palavras = 0)
 it=Supportato (lettura deterministica dopo TRIM, parole = 0)
 nl=Ondersteund (deterministisch lezen na TRIM, woorden = 0)
 da=Understøttet (deterministisk læst efter TRIM, ord = 0)
-zh-CN=支持（TRIM 后的确定性读取，字数 = 0）
-zh-TW=支援（TRIM後的確定性讀取，Words = 0）
+zh-CN=支持（TRIM 后的确定性读取，字节 = 0）
+zh-TW=支援（TRIM後的確定性讀取，位元組 = 0）
 ja=サポートされています（TRIM後の確定的読み取り、ワードズ = 0）
 ko=지원됨(TRIM 후 결정적 읽기, 단어 = 0)
 vi=Được hỗ trợ (Đọc xác định sau TRIM, Từ = 0)
@@ -65474,8 +65501,8 @@ pt=Quando esta opção estiver habilitada, o HWiNFO verificará se as últimas p
 it=Quando questa opzione è abilitata, HWiNFO verificherà se le ultime posizioni salvate delle sue finestre ricade all'interno di un'area monitor attiva e, in caso contrario, le sposterà automaticamente sul monitor di default. Ciò può impedire la visualizzazione di finestre in aree invisibili, ma alcuni utenti con più monitor potrebbero dover disabilitare questa opzione nel caso in cui le finestre non vengano ripristinate nelle posizioni previste.
 nl=Als deze optie is ingeschakeld, zal HWiNFO controleren of de laatst opgeslagen posities van zijn vensters binnen een actief monitorgebied vallen en zo niet, dan worden ze automatisch naar de standaardmonitor verplaatst. Dit kan voorkomen dat vensters in onzichtbare gebieden worden weergegeven, maar sommige gebruikers met meerdere monitoren moeten deze optie mogelijk uitschakelen als vensters niet op hun verwachte posities worden hersteld.
 da=Når denne mulighed er aktiveret, vil HWiNFO kontrollere, om de sidst gemte positioner af dets vinduer falder inden for et aktivt skærmområde, og hvis ikke, vil det automatisk flytte dem til standardskærmen. Dette kan forhindre visning af vinduer i usynlige områder, men nogle brugere med flere skærme skal muligvis deaktivere denne mulighed, hvis vinduer ikke gendannes på deres forventede positioner.
-zh-CN=启用此选项后，HWiNFO 将检查其窗口的最后保存位置是否位于活动监视器区域内，如果没有，它将自动将它们移动到默认监视器。这可以防止在不可见区域显示窗口，但某些具有多个监视器的用户可能需要禁用此选项，以防窗口未恢复到预期位置。
-zh-TW=啟用此選項後，HWiNFO將檢查其視窗的最後保存位置是否位於活動監視器區域內，如果沒有，它將自動將它們移動到預設監視器。這可以防止在不可見區域顯示視窗，但某些具有多個監視器的使用者可能需要禁用此選項，以防視窗未恢復到預期位置。
+zh-CN=启用此选项后，HWiNFO 将检查其窗口的最后保存位置是否位于活动显示器区域内，如果没有，它将自动将它们移动到默认显示器。这可以防止在不可见区域显示窗口，但某些具有多个显示器的用户可能需要禁用此选项，以防窗口未恢复到预期位置。
+zh-TW=啟用此選項後，HWiNFO將檢查其視窗的最後保存位置是否位於活動顯示器區域內，如果沒有，它將自動將它們移動到預設顯示器。這可以防止在不可見區域顯示視窗，但某些具有多個顯示器的使用者可能需要禁用此選項，以防視窗未恢復到預期位置。
 ja=このオプションを有効にすると、HWiNFOは、ウィンドウの最後に保存された位置がアクティブなモニター領域内にあるかどうかを確認し、そうでない場合は、自動的にデフォルトのモニターに移動します。これにより、ウィンドウが非表示領域に表示されないようにすることができますが、ウィンドウが期待される位置に復元されない場合に備えて、複数のモニターを使用している一部のユーザーはこのオプションを無効にする必要があります。
 ko=이 옵션이 활성화되면 HWiNFO는 창의 마지막 저장 위치가 활성 모니터 영역에 속하는지 확인하고 그렇지 않은 경우 자동으로 기본 모니터로 이동합니다. 이렇게 하면 보이지 않는 영역에 창이 표시되지 않을 수 있지만 여러 모니터를 사용하는 일부 사용자는 창이 예상 위치에 복원되지 않는 경우 이 옵션을 비활성화해야 할 수 있습니다.
 vi=Khi tùy chọn này được bật, HWiNFO sẽ kiểm tra xem các vị trí được lưu cuối cùng của cửa sổ có nằm trong vùng giám sát đang hoạt động hay không và nếu không, nó sẽ tự động di chuyển chúng sang màn hình mặc định. Điều này có thể ngăn việc hiển thị các cửa sổ ở những khu vực không nhìn thấy được, nhưng một số người dùng có nhiều màn hình có thể cần phải tắt tùy chọn này trong trường hợp các cửa sổ không được khôi phục ở vị trí mong đợi của họ.
