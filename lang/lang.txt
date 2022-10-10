@@ -53151,8 +53151,7 @@ el=Χωρητικότητα κίνησης:
 tr=Sürücü Kapasitesi:
 he=קיבולת כונן:
 
-; "Drive" as optical drive
-{{Main}}
+{{MainOpto}}
 en=Drive Model:
 fr=Modèle de lecteur optique:
 de=Modell des optischen Laufwerks:
@@ -53179,8 +53178,7 @@ el=Μοντέλο μονάδας:
 tr=Sürücü Modeli:
 he=דגם כונן:
 
-; "Drive" as optical drive
-{{Main}}
+{{MainOpto}}
 en=Drive Serial Number:
 fr=Numéro de série du lecteur optique:
 de=Seriennummer des optischen Laufwerks:
@@ -53207,8 +53205,7 @@ el=Σειριακός αριθμός μονάδας δίσκου:
 tr=Sürücü Seri Numarası:
 he=מספר סידורי כונן:
 
-; "Drive" as optical drive
-{{Main}}
+{{MainOpto}}
 en=Drive Firmware Revision:
 fr=Révision du micrologiciel du lecteur optique:
 de=Firmware-Revision des optischen Laufwerks:
@@ -53235,8 +53232,7 @@ el=Αναθεώρηση υλικολογισμικού Drive:
 tr=Sürücü Ürün Yazılımı Revizyonu:
 he=עדכון קושחת הכונן:
 
-; "Drive" as optical drive
-{{Main}}
+{{MainOpto}}
 en=Drive Type:
 fr=Type de lecteur optique:
 de=Typ des optischen Laufwerks:
@@ -53263,8 +53259,7 @@ el=Τύπος μονάδας δίσκου:
 tr=Sürücü Türü:
 he=סוג כונן:
 
-; "Drive" as optical drive
-{{Main}}
+{{MainOpto}}
 en=Drive Controller:
 fr=Contrôleur de lecteur optique:
 de=Controller für optisches Laufwerk:
@@ -54830,8 +54825,7 @@ el=Απενεργοποίηση IORDY:
 tr=IORDY Devre Dışı Bırak:
 he=IORDY השבתה:
 
-; "Drive" as optical drive
-{{Main}}
+{{MainOpto}}
 en=Fixed Drive:
 fr=Lecteur optique fixe:
 de=Festes optisches Laufwerk:
@@ -54858,8 +54852,7 @@ el=Διορθώθηκε η μονάδα δίσκου:
 tr=Sabit Sürücü:
 he=כונן קבוע:
 
-; "Drive" as optical drive
-{{Main}}
+{{MainOpto}}
 en=Removable Drive:
 fr=Lecteur optique amovible:
 de=Herausnehmbares optisches Laufwerk:
