@@ -64600,6 +64600,60 @@ tr=Saklamak
 he=להתחבא
 
 {{Settings}}
+en=Enable Logging
+fr=Activer la journalisation
+de=Protokollierung aktivieren
+es=Habilitar registro
+pt=Ativar registro
+it=Abilita registrazione
+nl=Logboekregistratie inschakelen
+da=Aktiver logning
+zh-CN=启用日志记录
+zh-TW=啟用日誌記錄
+ja=ロギングを有効にします
+ko=로깅을 사용하도록 설정
+vi=Bật ghi nhật ký
+ar=تمكين التسجيل
+ru=Включить ведение журнала
+cs=Povolit protokolování
+sk=Povoliť protokolovanie
+hu=Naplózás engedélyezése
+pl=Włącz logowanie
+sv=Aktivera loggning
+fi=Ota kirjaus käyttöön
+no=Aktiver logging
+el=Επιτρέπω την σύνδεση
+tr=Günlük kaydı etkinleştir
+he=אפשר רישום
+
+{{Settings}}
+en=Disable Logging
+fr=Désactiver la journalisation
+de=Protokollierung deaktivieren
+es=Deshabilitar registro
+pt=Desativar registro
+it=Disabilita la registrazione
+nl=Logboekregistratie uitschakelen
+da=Deaktiver logning
+zh-CN=禁用日志记录
+zh-TW=禁用日誌記錄
+ja=ロギングを無効にする
+ko=로깅 비활성화
+vi=Tắt ghi nhật ký
+ar=تعطيل التسجيل
+ru=Отключить ведение журнала
+cs=Zakázat protokolování
+sk=Zakázať protokolovanie
+hu=Naplózás letiltása
+pl=Wyłącz rejestrowanie
+sv=Inaktivera loggning
+fi=Poista kirjaus käytöstä
+no=Deaktiver logging
+el=Απενεργοποίηση καταγραφής
+tr=Günlüğe Kaydetmeyi Devre Dışı Bırak
+he=השבת רישום
+
+{{Settings}}
 en=Layout settings...
 fr=Paramètres de mise en page...
 de=Layouteinstellungen...
