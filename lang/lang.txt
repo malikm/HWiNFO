@@ -46045,7 +46045,7 @@ it=Opzioni di configurazione del sistema
 nl=Opties voor systeemconfiguratie
 da=Systemkonfigurationsmuligheder
 zh-CN=系统配置选项
-zh-TW=系統配置選項
+zh-TW=系統組態選項
 ja=システム構成オプション
 ko=시스템 구성 옵션
 vi=Tùy chọn cấu hình hệ thống
@@ -46115,6 +46115,22 @@ no=Strømforsyninger for systemet
 el=Τροφοδοτικά συστήματος
 tr=Sistem güç kaynakları
 he=ספקי כוח של המערכת
+
+{{Main}}
+en=System Power Controls
+fr=Contrôle de l'alimentation du système
+de=Steuerung der Systemleistung
+es=Control de alimentación del sistema
+pt-BR=Controle de energia do sistema
+it=Controllo dell'alimentazione del sistema
+zh-CN=系统电源控制
+zh-TW=系統電源控制
+ja=システム電源制御
+ko=시스템 전원 제어
+ru=Управление питанием системы
+cs=Ovládaní napájení systému
+sk=Ovládanie napájania systému
+pl=Kontrola zasilania systemu
 
 {{Main}}
 en=Physical Memory Array
