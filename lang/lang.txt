@@ -788,7 +788,7 @@ sv=Licensierad till
 fi=Lisenssi
 no=Lisensiert til
 el=Άδεια για
-tr=lisanslı
+tr=Lisanslı
 he=מורשה ל
 
 {{}}
@@ -1019,7 +1019,7 @@ da=1 bruger
 zh-CN=1位用户
 zh-TW=1位使用者
 ja=1ユーザー
-ko=사용자 1명
+ko=1명 사용자
 vi=1 người dùng
 ar=مستخدم واحد
 ru=1 пользователь
@@ -1100,7 +1100,7 @@ da=1 computer
 zh-CN=1台计算机
 zh-TW=1台電腦
 ja=1台のコンピューター
-ko=컴퓨터 1대
+ko=1대 컴퓨터
 vi=1 máy tính
 ar=1 كمبيوتر
 ru=1 компьютер
@@ -1127,7 +1127,7 @@ da= computere
 zh-CN=台计算机
 zh-TW=台電腦
 ja=台のコンピューター
-ko=컴퓨터 대
+ko=대 컴퓨터
 vi= máy tính
 ar=عدد  جهاز كمبيوتر
 ru= компьютера
@@ -4088,7 +4088,7 @@ sv=CPU SoC Strömförbrukning
 fi=CPU SoC Virrankulutus
 no=CPU SoC Strømforbruk
 el=CPU SoC Κατανάλωση ενέργειας
-tr=CPU SoC Güç tüketimi
+tr=CPU SoC Güç Tüketimi
 he=CPU SoC צריכת חשמל
 
 ; Power as energy consuption
@@ -4143,7 +4143,7 @@ sv=Energiförbrukning
 fi=Tehon kulutus
 no=Strømforbruk
 el=Κατανάλωση ενέργειας
-tr=Güç tüketimi
+tr=Güç Tüketimi
 he=צריכת חשמל
 
 {{Main}}
@@ -10520,7 +10520,7 @@ sv=Framerate
 fi=Ruudunpäivitysnopeus
 no=Framerate
 el=Framerate
-tr=Kare hızı
+tr=Kare Hızı
 he=מסגרות
 
 {{Sensors}}
@@ -13478,7 +13478,7 @@ da=Samlet antal drevfejl akkumuleret over hele dets levetid.\nHvert drev definer
 zh-CN=在其整个生命周期中累积的驱动器故障总数。\n每个驱动器定义一组属性、它们的实际值和阈值。当属性低于定义的阈值时，它被视为故障。\n对于 NVMe 驱动器，设备可靠性降低或介质处于只读模式状态被视为故障条件。\n当检测到故障时，附加的传感器值将提供更精确的详细信息。检查 HWiNFO 主屏幕以获取有关每个属性的完整详细信息。
 zh-TW=在其整個生命週期中累積的磁碟機故障總數。\n每個磁碟機定義一組屬性、它們的實際值和閾值。當屬性低於定義的閾值時，它被視為故障。\n對於NVMe磁碟機，裝置可靠性降低或介質處於唯讀模式狀態被視為故障條件。\n當偵測到故障時，附加的感應器值將提供更精確的詳細資訊。檢查HWiNFO主螢幕以獲取有關每個屬性的完整詳細資訊。
 ja=存続期間全体にわたって累積されたドライブ障害の総数。\n各ドライブは、一連の属性、それらの実際の値、およびしきい値を定義します。属性が定義されたしきい値を下回ると、障害と見なされます。\nNVMeドライブの場合、デバイスの信頼性が低下しましたか、読み取り専用モードのメディア状態が障害状態と見なされます。\n障害が検出されると、追加のセンサー値がより正確な詳細を提供します。各属性の詳細については、HWiNFOのメイン画面を確認してください。
-ko=전체 수명 동안 누적된 총 드라이브 오류 수입니다.\n각 드라이브는 속성 집합, 실제 값 및 임계값을 정의합니다. 속성이 정의된 임계값 아래로 떨어지면 오류로 간주됩니다.\nNVMe 드라이브의 경우 장치 안정성이 저하됨 또는 읽기 전용 모드의 미디어 상태가 오류 조건으로 간주됩니다.\n오류가 감지되면 추가 센서 값이 더 많은 정보를 제공합니다. 정확한 세부 사항. 각 속성에 대한 자세한 내용은 메인 HWiNFO 화면을 확인하세요.
+ko=전체 수명 동안 누적된 총 드라이브 오류 수입니다.\n각 드라이브는 속성 집합, 실제 값 및 임계값을 정의합니다. 속성이 정의된 임계값 아래로 떨어지면 오류로 간주됩니다.\nNVMe 드라이브의 경우 장치 신뢰성 저하 또는 읽기 전용 모드의 미디어 상태가오류 조건으로 간주됩니다.\n오류가 감지되면 추가 센서 값이 더 많은 정보를 제공합니다. 정확한 세부 사항. 각 속성에 대한 자세한 내용은 메인 HWiNFO 화면을 확인하세요.
 vi=Tổng số lỗi ổ đĩa được tích lũy trong toàn bộ vòng đời của nó.\nMỗi ổ đĩa xác định một tập hợp các thuộc tính, các giá trị và ngưỡng thực tế của chúng. Khi một thuộc tính giảm xuống dưới ngưỡng đã xác định, nó được coi là lỗi.\nĐối với NVMe thúc đẩy các trạng thái Độ tin cậy của thiết bị bị phân cấp hoặc Phương tiện ở Chế độ chỉ đọc được coi là điều kiện lỗi.\nKhi phát hiện lỗi, một giá trị cảm biến bổ sung sẽ cung cấp thêm chi tiết chính xác. Kiểm tra màn hình HWiNFO chính để biết chi tiết đầy đủ về từng thuộc tính.
 ar=العدد الإجمالي لحالات فشل محرك الأقراص المتراكمة على مدار حياته بالكامل. \n يقوم كل محرك أقراص بتعريف مجموعة من السمات وقيمها وحدودها الفعلية. عندما تقل السمة عن الحد المحدد فإنها تعتبر فاشلة. \n بالنسبة لمحركات أقراص NVMe ، تعتبر حالات انخفاض موثوقية الجهاز أو الوسائط في وضع القراءة فقط حالات فشل. \n عند اكتشاف فشل ، ستوفر قيمة إضافية لجهاز الاستشعار المزيد تفاصيل دقيقة. تحقق من شاشة HWiNFO الرئيسية للحصول على تفاصيل كاملة حول كل سمة.
 ru=Общее количество отказов дисков, накопленных за весь срок службы.\nКаждый диск определяет набор атрибутов, их фактические значения и пороговые значения. Когда атрибут опускается ниже определенного порога, это считается отказом.\nДля дисков NVMe Снижение надежности устройства или Носитель в режиме только для чтения рассматривается как состояние сбоя.\nПри обнаружении сбоя дополнительное значение датчика предоставит больше точные детали. Проверьте главный экран HWiNFO для получения полной информации о каждом атрибуте.
@@ -13490,7 +13490,7 @@ sv=Totalt antal enhetsfel ackumulerat under hela dess livslängd.\nVarje enhet d
 fi=Aseman koko käyttöiän aikana kertynyt kokonaismäärä.\nJokainen asema määrittelee joukon attribuutteja, niiden todelliset arvot ja kynnykset. Kun attribuutti laskee määritellyn kynnyksen alapuolelle, se katsotaan epäonnistuneeksi.\nNVMe-asemien Device Reliablity Degraded- tai Media In Read-Only Mode -tilat katsotaan vikatilanteiksi.\nKun vika havaitaan, anturin lisäarvo antaa enemmän tarkat yksityiskohdat. Tarkista HWiNFO-päänäytöstä täydelliset tiedot kustakin määritteestä.
 no=Totalt antall stasjonsfeil akkumulert over hele levetiden.\nHver stasjon definerer et sett med attributter, deres faktiske verdier og terskler. Når et attributt faller under den definerte terskelen betraktes det som en feil.\nFor NVMe-stasjoner blir tilstandene Enhetspålitelighet forringet eller media i skrivebeskyttet modus ansett som feiltilstander.\nNår en feil oppdages, vil en ekstra sensorverdi gi mer presise detaljer. Sjekk hovedskjermen for HWiNFO for fullstendige detaljer om hvert attributt.
 el=Συνολικός αριθμός αποτυχιών μονάδας δίσκου που συσσωρεύτηκε σε όλη τη διάρκεια ζωής της.\nΚάθε μονάδα δίσκου ορίζει ένα σύνολο χαρακτηριστικών, τις πραγματικές τιμές και τα κατώφλια τους. Όταν ένα χαρακτηριστικό πέσει κάτω από το καθορισμένο όριο, θεωρείται ως αποτυχία.\nΓια μονάδες NVMe, οι καταστάσεις υποβάθμισης της αξιοπιστίας συσκευής ή των μέσων σε λειτουργία μόνο για ανάγνωση θεωρούνται συνθήκες αποτυχίας.\nΌταν εντοπιστεί μια αποτυχία, μια πρόσθετη τιμή αισθητήρα θα παρέχει περισσότερα ακριβείς λεπτομέρειες. Ελέγξτε την κύρια οθόνη HWiNFO για πλήρεις λεπτομέρειες σχετικά με κάθε χαρακτηριστικό.
-tr=Tüm kullanım ömrü boyunca biriken toplam sürücü arızası sayısı.\nHer sürücü bir dizi özniteliği, bunların gerçek değerlerini ve eşiklerini tanımlar. Bir öznitelik, tanımlanan eşiğin altına düştüğünde, bir arıza olarak kabul edilir.\nNVMe sürücüleri için, Cihaz Güvenilirliği Bozulmuş veya Salt Okunur Modundaki Medya durumları arıza koşulları olarak kabul edilir.\nBir arıza tespit edildiğinde, ek bir sensör değeri daha fazlasını sağlar. kesin detaylar. Her bir öznitelik hakkında tüm ayrıntılar için ana HWiNFO ekranını kontrol edin.
+tr=Tüm kullanım ömrü boyunca biriken toplam sürücü arızası sayısı.\nHer sürücü bir dizi özniteliği, bunların gerçek değerlerini ve eşiklerini tanımlar. Bir öznitelik, tanımlanan eşiğin altına düştüğünde, bir arıza olarak kabul edilir.\nNVMe sürücüleri için, Cihaz Güvenilirliği Düştü veya Medya Salt Okunur Modunda durumları arıza koşulları olarak kabul edilir.\nBir arıza tespit edildiğinde, ek bir sensör değeri daha fazlasını sağlar. kesin detaylar. Her bir öznitelik hakkında tüm ayrıntılar için ana HWiNFO ekranını kontrol edin.
 he=המספר הכולל של כשלים בכונן שנצברו לאורך כל חייו.\nכל כונן מגדיר קבוצה של תכונות, הערכים והסף בפועל שלהם. כאשר תכונה יורדת מתחת לסף שהוגדר היא נחשבת ככשל.\nעבור כונני NVMe, מצבי אמינות ההתקן פגועה או מדיה במצב קריאה בלבד נחשבים כמצבי כשל.\nכאשר מתגלה כשל, ערך חיישן נוסף יספק יותר פרטים מדויקים. בדוק את מסך HWiNFO הראשי לפרטים מלאים על כל תכונה.
 
 {{Sensors}}
@@ -13505,7 +13505,7 @@ da=Samlet antal drevadvarsler akkumuleret over hele dets levetid.\nNår følgend
 zh-CN=在其整个生命周期中累积的驱动器警告总数。\n当以下 ATA 参数超过 2 个时，它们将被视为警告：\n- 重新分配的扇区数、当前挂起的扇区数、离线不可纠正的扇区数、剩余寿命<10%\n以下 NVMe 条件被视为警告：\n- 可用空间低于阈值、温度超过临界阈值、易失性内存备份设备故障\n当检测到警告时，附加的传感器值将提供更精确的详细信息。检查 HWiNFO 主屏幕以获取有关每个属性的完整详细信息。
 zh-TW=在其整個生命週期中累積的磁碟機警告總數。\n當以下ATA參數超過2個時，它們將被視為警告：\n- 重新分配的磁區計數、當前掛起的磁區計數、離線不可糾正的磁區計數、剩餘壽命<10%\n以下NVMe條件被視為警告：\n- 可用空間低於閾值、溫度超過臨界閾值、揮發性記憶體備份裝置故障\n當偵測到警告時，附加的感應器值將提供更精確的詳細資訊。檢查HWiNFO主螢幕以獲取有關每個屬性的完整詳細資訊。
 ja=存続期間全体にわたって累積されたドライブ警告の総数。\n次のATAパラメータが2個を超えると、警告として扱われます。\n- 再割り当てされたセクター数、現在保留中のセクター数、オフラインで修正不可能なセクター数、残りの寿命<10%\n次のNVMe条件は警告として扱われます：\n- しきい値を下回る使用可能なスペース、温度が臨界しきい値を超えました、揮発性メモリのバックアップデバイスに障害が発生しました\n警告が検出されると、追加のセンサー値がより正確な詳細を提供します。各属性の詳細については、HWiNFOのメイン画面を確認してください。
-ko=전체 수명 동안 누적된 총 드라이브 경고 수입니다.\n다음 ATA 매개변수가 2를 초과하면 경고로 처리됩니다.\n- 재할당된 섹터 수, 현재 보류 중인 섹터 수, 오프라인 수정 불가능한 섹터 수, 남은 수명 < 10%\n다음 NVMe 조건은 경고로 처리됩니다.\n- 사용 가능한 공간이 임계값 미만, 온도가 임계 임계값을 초과함, 휘발성 메모리 백업 장치가 실패했습니다.\n경고가 감지되면 추가 센서 값이 더 정확한 세부 정보를 제공합니다. 각 속성에 대한 자세한 내용은 메인 HWiNFO 화면을 확인하세요.
+ko=전체 수명 동안 누적된 총 드라이브 경고 수입니다.\n다음 ATA 매개변수가 2를 초과하면 경고로 처리됩니다.\n- 재 할당 섹터 수, 현재 보류 중인 섹터 수, 오프라인 수정 불가 섹터 수, 남은 수명 < 10%\n다음 NVMe 조건은 경고로 처리됩니다.\n- 임계값 미만의 사용 가능한 공간, 온도가 임계 임계값을 초과함, 휘발성 메모리 백업 장치 실패.\n경고가 감지되면 추가 센서 값이 더 정확한 세부 정보를 제공합니다. 각 속성에 대한 자세한 내용은 메인 HWiNFO 화면을 확인하세요.
 vi=Tổng số cảnh báo ổ đĩa được tích lũy trong toàn bộ thời gian tồn tại của nó.\nKhi các thông số ATA sau vượt quá 2, chúng được coi là cảnh báo:\n- Số lượng vùng được phân bổ lại, Số vùng đang chờ xử lý hiện tại, Số vùng không thể sửa được ngoài tuyến, Vòng đời còn lại <10 %\nCác điều kiện NVMe sau được coi là cảnh báo:\n- Dung lượng trống dưới ngưỡng, Nhiệt độ vượt ngưỡng tới hạn, Thiết bị sao lưu bộ nhớ dễ bay hơi không thành công\nKhi phát hiện cảnh báo, giá trị cảm biến bổ sung sẽ cung cấp thông tin chi tiết chính xác hơn. Kiểm tra màn hình HWiNFO chính để biết chi tiết đầy đủ về từng thuộc tính.
 ar=العدد الإجمالي لتحذيرات محرك الأقراص المتراكمة على مدار حياته بالكامل. \n عندما تتجاوز معلمات ATA التالية مبلغ 2 ، يتم التعامل معها كتحذيرات: \n- عدد القطاعات المعاد تخصيصها ، عدد القطاعات المعلقة حاليًا ، عدد القطاعات غير المتصل بالإنترنت غير القابل للتصحيح ، الحياة المتبقية <10 ٪٪ \n يتم التعامل مع شروط NVMe التالية على أنها تحذيرات: \n- المساحة المتوفرة أقل من الحد الأدنى ، تجاوزت درجة الحرارة الحد الحرج ، فشل جهاز النسخ الاحتياطي للذاكرة المتطايرة \n عند اكتشاف تحذير ، ستوفر قيمة مستشعر إضافية تفاصيل أكثر دقة. تحقق من شاشة HWiNFO الرئيسية للحصول على تفاصيل كاملة حول كل سمة.
 ru=Общее количество предупреждений накопителя за весь срок его службы.\nКогда следующие параметры ATA превышают 2, они рассматриваются как предупреждения:\n- Количество перераспределенных секторов, Текущее количество ожидающих секторов, Счетчик неисправляемых секторов в автономном режиме, Оставшийся срок службы <10 %\nСледующие состояния NVMe обрабатываются как предупреждения:\n- Доступное пространство ниже порога, Температура превысила критический порог, Сбой устройства резервного копирования энергозависимой памяти\nПри обнаружении предупреждения дополнительное значение датчика предоставит более точные сведения. Проверьте главный экран HWiNFO для получения полной информации о каждом атрибуте.
@@ -15110,7 +15110,7 @@ sv=Chipset
 fi=Piirisarja
 no=Brikkesett
 el=Chipset
-tr=Yonga seti
+tr=Yonga Seti
 he=ערכת שבבים
 
 {{Sensors}}
@@ -15866,7 +15866,7 @@ sv=IA-kärnor Strömförbrukning
 fi=IA-ytimet Virrankulutus
 no=IA Cores Strømforbruk
 el=Πυρήνες IA Κατανάλωση ισχύος
-tr=IA Çekirdekleri Güç tüketimi
+tr=IA Çekirdekleri Güç Tüketimi
 he=IA Cores צריכת חשמל
 
 {{Sensors}}
@@ -15920,7 +15920,7 @@ sv=GT-kärnor Strömförbrukning
 fi=GT-ytimet Virrankulutus
 no=GT Cores Strømforbruk
 el=Πυρήνες GT Κατανάλωση ισχύος
-tr=GT Çekirdekleri Güç tüketimi
+tr=GT Çekirdekleri Güç Tüketimi
 he=GT Cores צריכת חשמל
 
 {{Sensors}}
@@ -16082,7 +16082,7 @@ sv=System Agent Strömförbrukning
 fi=Järjestelmäagentti Virrankulutus
 no=System Agent Strømforbruk
 el=System Agent Κατανάλωση ενέργειας
-tr=System Agent Güç tüketimi
+tr=System Agent Güç Tüketimi
 he=סוכן מערכת צריכת חשמל
 
 {{Sensors}}
@@ -16136,7 +16136,7 @@ sv=Rest-of-chip Strömförbrukning
 fi=Lopun sirun virrankulutus
 no=Resten av brikken Strømforbruk
 el=Υπόλοιπο τσιπ Κατανάλωση ενέργειας
-tr=Geri Kalan Güç tüketimi
+tr=Geri Kalan Güç Tüketimi
 he=צריכת חשמל בשארית השבב
 
 {{Sensors}}
@@ -21765,7 +21765,7 @@ pt-BR=Persistent Driver
 it=Driver persistente
 nl=Persistent stuurprogramma
 da=Vedvarende driver
-zh-CN=驱动常驻
+zh-CN=常驻驱动程序
 zh-TW=常駐驅動程式
 ja=永続的なドライバー
 ko=영구 드라이버
@@ -21873,7 +21873,7 @@ pt-BR=Driver HWiNFO instalado com sucesso.
 it=Driver HWiNFO installato con successo.
 nl=HWiNFO-stuurprogramma is geïnstalleerd.
 da=HWiNFO-driveren blev installeret.
-zh-CN=HWiNFO 驱动安装成功。
+zh-CN=HWiNFO 驱动程序安装成功。
 zh-TW=HWiNFO驅動程式安裝成功。
 ja=HWiNFOドライバーが正常にインストールされました。
 ko=HWiNFO 드라이버가 성공적으로 설치되었습니다.
@@ -23672,7 +23672,7 @@ sv=Sensor
 fi=Sensori
 no=Sensor
 el=Αισθητήρας
-tr=sensör
+tr=Sensör
 he=חיישן
 
 {{Settings}}
@@ -27695,7 +27695,7 @@ sv=Grafikkort
 fi=Näytönohjain
 no=Grafikkort
 el=Κάρτα γραφικών
-tr=Grafik kartı
+tr=Grafik Kartı
 he=כרטיס מסך
 
 {{Main}}
@@ -27722,7 +27722,7 @@ sv=Grafikkort
 fi=Näytönohjain
 no=Grafikkort
 el=Κάρτα γραφικών
-tr=Grafik kartı
+tr=Grafik Kartı
 he=כרטיס מסך
 
 {{Main}}
@@ -28841,6 +28841,7 @@ it=Versione AMD AGESA:
 zh-CN=AMD AGESA 版本：
 zh-TW=AMD AGESA版本：
 ja=AMD AGESAバージョン：
+ko=AMD AGESA 버전:
 ru=Версия AMD AGESA:
 cs=Verze AMD AGESA:
 sk=Verzia AMD AGESA:
@@ -28870,7 +28871,7 @@ sv=Operativ system
 fi=Käyttöjärjestelmä
 no=Operativsystem
 el=Λειτουργικό σύστημα
-tr=İşletim sistemi
+tr=İşletim Sistemi
 he=מערכת הפעלה
 
 {{Main}}
@@ -29331,7 +29332,7 @@ sv=Kodnamn
 fi=Koodinimi
 no=Kodenavn
 el=Κωδικό όνομα
-tr=Kod adı
+tr=Kod Adı
 he=שם קוד
 
 {{}}
@@ -29466,7 +29467,7 @@ sv=Analys
 fi=Analyysi
 no=Analyse
 el=Ανάλυση
-tr=analiz
+tr=Analiz
 he=אָנָלִיזָה
 
 {{SUBST}}
@@ -37755,7 +37756,7 @@ sv=Inte närvarande
 fi=Ei läsnä
 no=Ikke tilstede
 el=Απών
-tr=Mevcut değil
+tr=Mevcut Değil
 he=לא נוכח
 
 {{}}
@@ -37890,7 +37891,7 @@ sv=Allmän information
 fi=Yleistä tietoa
 no=Generell informasjon
 el=Γενικές πληροφορίες
-tr=Genel bilgi
+tr=Genel Bilgi
 he=מידע כללי
 
 {{Main}}
@@ -41617,7 +41618,7 @@ sv=Datornamn:
 fi=Tietokoneen nimi:
 no=Datamaskinnavn:
 el=Όνομα υπολογιστή:
-tr=Bilgisayar adı:
+tr=Bilgisayar Adı:
 he=שם המחשב:
 
 {{Main}}
@@ -42211,7 +42212,7 @@ sv=Enhetsnamn:
 fi=Laitteen nimi:
 no=Enhetsnavn:
 el=Ονομα της συσκευής:
-tr=Cihaz adı:
+tr=Cihaz Adı:
 he=שם התקן:
 
 {{Main}}
@@ -42280,6 +42281,7 @@ ja=I/Oポート:
 ko=I/O 포트:
 ru=Порт I/O:
 pl=Port We/Wy:
+tr=G/Ç Bağlantı Noktası:
 
 {{Main}}
 en=Original Device Name:
@@ -42556,14 +42558,14 @@ en=PCI Express Endpoint
 fr=Point de terminaison PCI Express
 de=PCI Express-Endpunkt
 es=Punto final PCI Express
-pt-BR=Terminal PCI Express
+pt-BR=Ponto final do PCI Express
 it=Endpoint PCI Express
 nl=PCI Express-eindpunt
 da=PCI Express-endepunkt
 zh-CN=PCI Express 端点
 zh-TW=PCI Express端點
 ja=PCI Expressエンドポイント
-ko=PCI 익스프레스 엔드포인트
+ko=PCI Express 엔드포인트
 vi=Điểm cuối PCI Express
 ar=نقطة نهاية PCI Express
 ru=Конечная точка PCI Express
@@ -42583,14 +42585,14 @@ en=Legacy PCI Express Endpoint
 fr=Point de terminaison PCI Express hérité
 de=Legacy-PCI-Express-Endpunkt
 es=Punto final PCI Express heredado
-pt-BR=Endpoint PCI Express legado
+pt-BR=Ponto final do PCI Express legado
 it=Endpoint PCI Express legacy
 nl=Verouderd PCI Express-eindpunt
 da=Ældre PCI Express-endepunkt
 zh-CN=传统 PCI Express 端点
 zh-TW=傳統PCI Express端點
 ja=レガシーPCI Expressエンドポイント
-ko=레거시 PCI 익스프레스 엔드포인트
+ko=레거시 PCI Express 엔드포인트
 vi=Điểm cuối PCI Express kế thừa
 ar=نقطة نهاية PCI Express القديمة
 ru=Устаревшая конечная точка PCI Express
@@ -42610,7 +42612,7 @@ en=Root Port of PCI Express Root Complex
 fr=Port racine du complexe racine PCI Express
 de=Root-Port des PCI-Express-Root-Komplexes
 es=Puerto raíz del complejo raíz PCI Express
-pt-BR=Porta raiz do complexo PCI Express Root
+pt-BR=Porta raiz do complexo raiz PCI Express
 it=Porta radice del complesso radice PCI Express
 nl=Rootpoort van PCI Express Root Complex
 da=Root Port af PCI Express Root Complex
@@ -42718,7 +42720,7 @@ en=PCI/PCI-X to PCI Express Bridge
 fr=Pont PCI/PCI-X vers PCI Express
 de=PCI/PCI-X zu PCI Express Brücke
 es=Puente PCI / PCI-X a PCI Express
-pt-BR=PCI / PCI-X para PCI Express Bridge
+pt-BR=Ponte PCI / PCI-X para PCI Express
 it=PCI/PCI-X a PCI Express Bridge
 nl=PCI/PCI-X naar PCI Express Bridge
 da=PCI/PCI-X til PCI Express Bridge
@@ -42772,7 +42774,7 @@ en=Root Complex Event Collector
 fr=Collecteur d‘événements complexes racine
 de=Root Complex Event Collector
 es=Recopilador de eventos complejo raíz
-pt-BR=Root Complex Event Collector
+pt-BR=Colecionador de eventos do complexo raiz
 it=Raccoglitore di eventi complessi root
 nl=Root Complex Event Collector
 da=Root Complex Event Collector
@@ -43358,7 +43360,7 @@ sv=Enhetstyp:
 fi=Laitetyyppi:
 no=Enhetstype:
 el=Τύπος συσκευής:
-tr=Cihaz tipi:
+tr=Cihaz Tipi:
 he=סוג מכשיר:
 
 {{Main}}
@@ -46113,7 +46115,7 @@ sv=Sistemski napajalniki
 fi=Järjestelmän virtalähteet
 no=Strømforsyninger for systemet
 el=Τροφοδοτικά συστήματος
-tr=Sistem güç kaynakları
+tr=Sistem Güç Kaynakları
 he=ספקי כוח של המערכת
 
 {{Main}}
@@ -46778,7 +46780,7 @@ sv=Hårddiskar
 fi=Levyasemat
 no=Harddisker
 el=Οδηγοί δίσκων
-tr=Disk sürücüleri
+tr=Disk Sürücüleri
 he=כונני דיסקים
 
 {{Main}}
@@ -46994,7 +46996,7 @@ sv=Seriella portar
 fi=Sarjaportit
 no=Serieporter
 el=Σειριακές θύρες
-tr=Seri bağlantı girişleri
+tr=Seri Bağlantı Noktası
 he=יציאות טוריות
 
 {{Main}}
@@ -48182,7 +48184,7 @@ sv=Produktnamn:
 fi=Tuotteen nimi:
 no=Produktnavn:
 el=Ονομασία προϊόντος:
-tr=Ürün adı:
+tr=Ürün Adı:
 he=שם מוצר:
 
 {{Main}}
@@ -48236,7 +48238,7 @@ sv=Produktens serienummer:
 fi=Tuotteen sarjanumero:
 no=Produktets serienummer:
 el=Σειριακός αριθμός προϊόντος:
-tr=Ürün seri numarası:
+tr=Ürün Seri Numarası:
 he=מספר סידורי מוצר:
 
 {{Main}}
@@ -48371,7 +48373,7 @@ sv=Plats i-chassi:
 fi=Sijainti kotelossa:
 no=Plassering i chassis:
 el=Θέση στο πλαίσιο του υπολογιστή:
-tr=kasasındaki konum:
+tr=Kasasındaki Konum:
 he=מיקום במארז המחשב:
 
 {{Main}}
@@ -48425,7 +48427,7 @@ sv=Serienummer:
 fi=Sarjanumero:
 no=Serienummer:
 el=Σειριακός αριθμός:
-tr=Seri numarası:
+tr=Seri Numarası:
 he=מספר סידורי:
 
 {{Main}}
@@ -49748,7 +49750,7 @@ sv=Extern referens:
 fi=Ulkoinen viite:
 no=Ekstern referanse:
 el=Εξωτερική αναφορά:
-tr=Dış referans:
+tr=Dış Referans:
 he=התייחסות חיצונית:
 
 {{Main}}
@@ -50072,7 +50074,7 @@ sv=Enhets status:
 fi=Laitteen tila:
 no=Enhetsstatus:
 el=Κατάσταση συσκευής:
-tr=Cihaz durumu:
+tr=Cihaz Durumu:
 he=מצב מכשיר:
 
 {{Main}}
@@ -50153,7 +50155,7 @@ sv=Minneskapacitet:
 fi=Muistikapasiteetti:
 no=Minnekapasitet:
 el=ΧΩΡΗΤΙΚΟΤΗΤΑ ΜΝΗΜΗΣ:
-tr=Hafıza kapasitesi:
+tr=Hafıza Kapasitesi:
 he=קיבולת זיכרון:
 
 {{Main}}
@@ -50180,7 +50182,7 @@ sv=Total bredd:
 fi=Kokonaisleveys:
 no=Total bredde:
 el=Συνολικό πλάτος:
-tr=Toplam genişlik:
+tr=Toplam Genişlik:
 he=רוחב כולל:
 
 {{Main}}
@@ -50342,7 +50344,7 @@ sv=Tillverkare:
 fi=Valmistaja:
 no=Produsent:
 el=Κατασκευαστής:
-tr=Üretici firma:
+tr=Üretici Firma:
 he=יַצרָן:
 
 {{Main}}
@@ -50531,7 +50533,7 @@ sv=Tillverkningsdatum:
 fi=Valmistuspäivämäärä:
 no=Produksjonsdato:
 el=Ημερομηνία παραγωγής:
-tr=Üretim tarihi:
+tr=Üretim Tarihi:
 he=תאריך ייצור:
 
 {{Main}}
@@ -51098,7 +51100,7 @@ sv=Tillverkningsdatum:
 fi=Valmistuspäivämäärä:
 no=Produksjonsdato:
 el=Ημερομηνία παραγωγής:
-tr=Üretim tarihi:
+tr=Üretim Tarihi:
 he=תאריך ייצור:
 
 {{Main}}
@@ -51260,7 +51262,7 @@ sv=Avancerade parametrar
 fi=Lisäparametrit
 no=Avanserte parametere
 el=Προηγμένες παράμετροι
-tr=Gelişmiş parametreler
+tr=Gelişmiş Parametreler
 he=פרמטרים מתקדמים
 
 {{Main}}
@@ -51287,7 +51289,7 @@ sv=Ingångssignal:
 fi=Tulosignaali:
 no=Inngangssignal:
 el=Σήμα εισόδου:
-tr=Giriş sinyali:
+tr=Giriş Sinyali:
 he=אות כניסה:
 
 {{Main}}
@@ -51368,7 +51370,7 @@ sv=Bildskärmstyp:
 fi=Näytön tyyppi:
 no=Visningstype:
 el=Τύπος εμφάνισης:
-tr=Ekran tipi:
+tr=Ekran Tipi:
 he=סוג תצוגה:
 
 {{Main}}
@@ -51692,7 +51694,7 @@ sv=Nätverkskort:
 fi=Verkkokortti:
 no=Nettverkskort:
 el=Κάρτα δικτύου:
-tr=Ağ kartı:
+tr=Ağ Kartı:
 he=כרטיס רשת:
 
 {{Main}}
@@ -51773,7 +51775,7 @@ sv=Förmågor
 fi=Ominaisuudet
 no=Evner
 el=Δυνατότητες
-tr=yetenekler
+tr=Yetenekler
 he=יכולות
 
 {{Main}}
@@ -51935,7 +51937,7 @@ sv=Enhetsinformation
 fi=Laitteen informaatio
 no=Enhetsinformasjon
 el=Πληροφορίες συσκευής
-tr=Cihaz bilgisi
+tr=Cihaz Bilgisi
 he=מידע על המכשיר
 
 {{Main}}
@@ -51962,7 +51964,7 @@ sv=Enhetstillverkare:
 fi=Laitteen valmistaja:
 no=Enhetsprodusent:
 el=Κατασκευαστής συσκευής:
-tr=Cihaz üreticisi:
+tr=Cihaz Üreticisi:
 he=יצרן המכשיר:
 
 {{Main}}
@@ -54122,7 +54124,7 @@ sv=Antal cylindrar:
 fi=Sylinterien lukumäärä:
 no=Antall sylindre:
 el=Αριθμός κυλίνδρων:
-tr=Silindir sayısı:
+tr=Silindir Sayısı:
 he=מספר צילינדרים:
 
 {{Main}}
@@ -54662,7 +54664,7 @@ sv=TRIM-kommando:
 fi=TRIM-komento:
 no=TRIM-kommando:
 el=Εντολή TRIM:
-tr=KIRMIZI Komutu:
+tr=TRIM Komutu:
 he=פקודת TRIM:
 
 {{Main}}
@@ -54689,7 +54691,7 @@ sv=Enhetsflaggor
 fi=Laitteen liput
 no=Enhetsflagg
 el=Σημαίες συσκευής
-tr=Cihaz bayrakları
+tr=Cihaz Bayrakları
 he=דגלי מכשיר
 
 {{Main}}
@@ -54743,7 +54745,7 @@ sv=Flyttbar enhet:
 fi=Irrotettava asema:
 no=Flyttbar stasjon:
 el=Αφαιρούμενη μονάδα δίσκου:
-tr=Çıkarılabilir sürücü:
+tr=Çıkarılabilir Sürücü:
 he=כונן נשלף:
 
 {{Main}}
@@ -55121,7 +55123,7 @@ sv=Energihantering:
 fi=Virranhallinta:
 no=Strømstyring:
 el=Διαχείριση ενέργειας:
-tr=Güç yönetimi:
+tr=Güç Yönetimi:
 he=ניהול צריכת חשמל:
 
 {{Main}}
@@ -56445,7 +56447,7 @@ sv=Aktuell temperatur:
 fi=Nykyinen lämpötila:
 no=Nåværende temperatur:
 el=Τρέχουσα θερμοκρασία:
-tr=Şuanki sıcaklık:
+tr=Şuanki Sıcaklık:
 he=טמפרטורה נוכחית:
 
 {{Main}}
@@ -57012,7 +57014,7 @@ sv=Drive kan läsa:
 fi=Drive osaa lukea:
 no=Drive kan lese:
 el=Το Drive μπορεί να διαβάσει:
-tr=Sürücü şunları okuyabilir:
+tr=Sürücü Şunları Okuyabilir:
 he=Drive יכול לקרוא:
 
 {{Main}}
@@ -60467,7 +60469,7 @@ sv=Temperatur:
 fi=Lämpötila:
 no=Temperatur:
 el=Θερμοκρασία:
-tr=Hava sıcaklığı:
+tr=Hava Sıcaklığı:
 he=טֶמפֶּרָטוּרָה:
 
 {{SMART}}
@@ -63950,7 +63952,7 @@ sv=Systemsammanfattning
 fi=Järjestelmän yhteenveto
 no=Systemsammendrag
 el=Περίληψη συστήματος
-tr=Sistem özeti
+tr=Sistem Özeti
 he=סיכום מערכת
 
 {{}}
@@ -66111,7 +66113,7 @@ sv=&Systemsammanfattning
 fi=&Järjestelmän yhteenveto
 no=&Systemsammendrag
 el=Περίληψη συστήματος
-tr=&Sistem özeti
+tr=&Sistem Özeti
 he=סיכום מערכת
 
 {{Main}}
