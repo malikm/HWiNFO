@@ -30012,7 +30012,7 @@ he=לִשְׁאוֹב
 {{SUBST}}
 en=Flow
 fr=Couler
-de=Fließen
+de=Durchfluß
 es=Fluir
 pt-BR=Fluxo
 it=Flusso
