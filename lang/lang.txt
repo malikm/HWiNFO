@@ -20987,7 +20987,7 @@ ja=SW SMI
 ko=SW SMI
 vi=SW SMI
 ar=SW SMI
-ru=Поддержка ПО SMI
+ru=ПО SMI
 cs=SW SMI
 sk=SW SMI
 hu=SW SMI
@@ -20996,7 +20996,7 @@ sv=SW SMI
 fi=SW SMI
 no=SW SMI
 el=ΝΔ ΣΜΥ
-tr=GB SMI
+tr=SW SMI
 he=SW SMI
 
 {{Settings}}
@@ -64048,11 +64048,11 @@ nl=Losgekoppeld
 da=Frakoblet
 zh-CN=拔除
 zh-TW=拔除
-ja=抜き取り済み
+ja=アンプラグ
 ko=연결되지 않음
 vi=Đã rút phích cắm
 ar=غير موصول
-ru=отсоединен
+ru=Отсоединен
 cs=Odpojen
 sk=Odpojený
 hu=Kihúzva
@@ -64061,7 +64061,7 @@ sv=Urkopplad
 fi=Irrotettu
 no=Koblet fra
 el=Αποσυνδεδεμένο
-tr=fişsiz
+tr=Fişsiz
 he=מנותק מהחשמל
 
 {{Settings}}
