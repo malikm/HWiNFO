@@ -65578,6 +65578,33 @@ tr=Hepsini Göster
 he=תראה הכול
 
 {{Settings}}
+en=Refresh
+fr=Rafraîchir
+de=Auffrischen
+es=Actualizar
+pt-BR=Atualização
+it=Aggiornare
+nl=Vernieuwen
+da=Opdater
+zh-CN=刷新
+zh-TW=重新整理
+ja=リフレッシュ
+ko=리프레시
+vi=Làm tươi
+ar=تحديث
+ru=Обновить
+cs=Obnovit
+sk=Obnoviť
+hu=Frissítés
+pl=Odśwież
+sv=Osvežitev
+fi=Päivitä
+no=Forfriske
+el=Ανανέωση
+tr=Yenile
+he=לרענן
+
+{{Settings}}
 en=Main Window
 fr=Fenêtre principale
 de=Hauptfenster
