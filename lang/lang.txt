@@ -29689,8 +29689,8 @@ vi=MBytes of
 ar=MBytes of
 ru=МБайт из
 uk=МБайт з
-cs=MB z
-sk=MB z
+cs=MB
+sk=MB
 hu=MByte a
 pl=MB z
 sv=MBytes of
@@ -29699,6 +29699,34 @@ no=MBytes of
 el=MBytes of
 tr=MBytes of
 he=MBytes of
+
+{{SUBST}}
+en=KBytes of
+fr=Kilooctets de
+de=KByte von
+es=KBytes de
+pt-BR=KBytes de
+it=KByte di
+nl=KBytes van
+da=KBytes på
+zh-CN=KBytes 的
+zh-TW=KBytes 的
+ja=キロバイト
+ko=KB 의
+vi=KBytes of
+ar=KBytes of
+ru=KБайт из
+uk=KБайт з
+cs=KB
+sk=KB
+hu=KByte a
+pl=KB z
+sv=KBytes of
+fi=KBytes of
+no=KBytes of
+el=KBytes of
+tr=KBytes of
+he=KBytes of
 
 {{Main}}
 en=Number of GPU ROPs (Pixel Pipelines)/TMUs
