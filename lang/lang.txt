@@ -11415,7 +11415,7 @@ tr=GPU Çekirdeği (NVVDD) Çıkışı
 he=פלט ליבת GPU (NVVDD)
 
 {{Sensors}}
-en=This sensor reports the GPU core NVVDD value measured at the output side of voltage regulator.
+en=This sensor reports the GPU Core NVVDD value measured at the output side of voltage regulator.
 fr=Ce capteur rapporte la valeur NVVDD du noyau GPU mesurée du côté sortie du régulateur de tension.
 de=Dieser Sensor meldet den NVVDD-Wert des GPU-Kerns, der an der Ausgangsseite des Spannungsreglers gemessen wird.
 es=Este sensor informa el valor NVVDD del núcleo de la GPU medido en el lado de salida del regulador de voltaje.
@@ -12031,7 +12031,7 @@ tr=Bu sensör, voltaj regülatörünün giriş tarafında ölçülen GPU NVDDD1 
 he=חיישן זה מדווח על ערך GPU NVVDD2 שנמדד בצד הקלט של ווסת המתח.
 
 {{Sensors}}
-en=This sensor reports the GPU core NVVDD value measured at the input side of voltage regulator.
+en=This sensor reports the GPU Core NVVDD value measured at the input side of voltage regulator.
 fr=Ce capteur rapporte la valeur GPU NVVDD mesurée à l'entrée du régulateur de tension.
 de=Dieser Sensor meldet den an der Eingangsseite des Spannungsreglers gemessenen GPU-NVVDD-Wert.
 es=Este sensor informa el valor de GPU NVVDD medido en el lado de entrada del regulador de voltaje.
@@ -33778,7 +33778,7 @@ ar=الساعة الأساسية لوحدة معالجة الرسومات (GPU) 
 ru=Текущая частота ядра GPU.
 uk=Поточна частота ядра GPU.
 cs=Aktuální takt jádra GPU.
-sk=Aktuálne takt jadra GPU.
+sk=Aktuálny takt jadra GPU.
 hu=Jelenlegi GPU órajel.
 pl=Aktualny zegar rdzenia GPU.
 sv=Aktuell GPU-kärnklocka.
