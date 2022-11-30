@@ -41796,6 +41796,34 @@ el=Ring/LLC Max
 tr=Ring/LLC Max
 he=Ring/LLC Max
 
+{{}}
+en=PBO Max
+fr=PBO Max
+de=PBO Max
+es=PBO Max
+pt-BR=PBO Max
+it=PBO Max
+nl=PBO Max
+da=PBO Max
+zh-CN=最大 PBO
+zh-TW=最大PBO
+ja=最大PBO
+ko=PBO 최대
+vi=PBO Max
+ar=PBO Max
+ru=PBO Max
+uk=PBO Max
+cs=PBO Max
+sk=PBO Max
+hu=PBO Max
+pl=PBO Max
+sv=PBO Max
+fi=PBO Max
+no=PBO Max
+el=PBO Max
+tr=PBO Max
+he=PBO Max
+
 {{Main}}
 en=CPU Turbo Max:
 fr=Processeur Turbo Max:
@@ -46483,7 +46511,7 @@ pt-BR=AMD Software Driver Version:
 it=AMD Software Driver Version:
 nl=AMD Software Driver Version:
 da=AMD Software Driver Version:
-zh-CN=AMD软件驱动程序版本：
+zh-CN=AMD 软件驱动程序版本：
 zh-TW=AMD軟體驅動程式版本：
 ja=AMDソフトウェアドライバーバージョン：
 ko=AMD 소프트웨어 드라이버 버전:
@@ -54820,6 +54848,34 @@ tr=Analog
 he=אנלוגי
 
 {{Main}}
+en=Color Bit Depth:
+fr=Color Bit Depth:
+de=Color Bit Depth:
+es=Color Bit Depth:
+pt-BR=Color Bit Depth:
+it=Color Bit Depth:
+nl=Color Bit Depth:
+da=Color Bit Depth:
+zh-CN=颜色位深度：
+zh-TW=顏色位元深度：
+ja=カラービット深度：
+ko=컬러 비트 심도:
+vi=Color Bit Depth:
+ar=Color Bit Depth:
+ru=Color Bit Depth:
+uk=Color Bit Depth:
+cs=Color Bit Depth:
+sk=Color Bit Depth:
+hu=Color Bit Depth:
+pl=Color Bit Depth:
+sv=Color Bit Depth:
+fi=Color Bit Depth:
+no=Color Bit Depth:
+el=Color Bit Depth:
+tr=Color Bit Depth:
+he=Color Bit Depth:
+
+{{Main}}
 en=Digital Video Interface Standard Supported:
 fr=Digital Video Interface Standard Supported:
 de=Digital Video Interface Standard Unterstützt:
@@ -54830,7 +54886,7 @@ nl=Digital Video Interface Standard Supported:
 da=Digital Video Interface Standard Supported:
 zh-CN=支持的数字视频接口标准：
 zh-TW=支援的數位視訊介面標準：
-ja=Digital Video Interface Standard Supported:
+ja=サポートされているデジタルビデオインタフェース規格：
 ko=Digital Video Interface Standard Supported:
 vi=Digital Video Interface Standard Supported:
 ar=Digital Video Interface Standard Supported:
