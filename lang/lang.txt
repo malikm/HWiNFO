@@ -31691,7 +31691,7 @@ he=Network Cards
 {{}}
 en=Please wait..
 fr=S'il vous plaît, attendez..
-de=Warten Sie mal..
+de=Bitte warten..
 es=Espere por favor..
 pt-BR=Por favor, aguarde..
 it=Attendere prego..
