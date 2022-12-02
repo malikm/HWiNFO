@@ -46614,6 +46614,34 @@ el=Location Paths
 tr=Location Paths
 he=Location Paths
 
+{{}}
+en=N/A
+fr=N/A
+de=N/A
+es=N/A
+pt-BR=N/A
+it=N/A
+nl=N/A
+da=N/A
+zh-CN=不适用
+zh-TW=不適用
+ja=該当なし
+ko=해당 없음
+vi=N/A
+ar=N/A
+ru=N/A
+uk=N/A
+cs=N/A
+sk=N/A
+hu=N/A
+pl=N/A
+sv=N/A
+fi=N/A
+no=N/A
+el=N/A
+tr=N/A
+he=N/A
+
 {{Main}}
 en=General Module Information
 fr=Informations générales sur les modules
@@ -70208,7 +70236,7 @@ ko=보고서(&R)
 vi=&Báo cáo
 ar=تقرير
 ru=&Сообщать
-uk=&Повідомляти
+uk=П&овідомляти
 cs=&Zpráva
 sk=&Správa
 hu=&Jelentés
