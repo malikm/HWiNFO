@@ -32125,8 +32125,8 @@ vi=Giới hạn tỷ lệ trên mỗi lõi tối đa (Hợp nhất):
 ar=حدود النسبة القصوى لكل نواة (مدمجة):
 ru=Пределы максимального соотношения на ядро (объединенные):
 uk=Максимальні обмеження співвідношення на ядро (злиті):
-cs=Maximální limity násobičů na jádro (Zajištěné):
-sk=Maximálne limity násobičov na jadro (Zaistené):
+cs=Maximální limity násobičů jádra (Zajištěné):
+sk=Maximálne limity násobičov jadra (Zaistené):
 hu=Maximális magonkénti arány korlátok (egyesített):
 pl=Maksymalne limity współczynnika na rdzeń (połączony):
 sv=Maximala gränser för förhållande per kärna (sammansmält):
@@ -32135,6 +32135,34 @@ no=Maksimal per-kjerne forholdsgrenser (sammensmeltet):
 el=Μέγιστα όρια αναλογίας ανά πυρήνα (Συντηγμένο):
 tr=Maksimum Çekirdek Başına Oran Limitleri (Fused):
 he=מגבלות יחס מקסימלי לכל ליבה (התמזגות):
+
+{{Main}}
+en=Maximum Per-core Ratio Limits (Current):
+fr=Limites maximales du ratio par cœur (Actuel):
+de=Maximale Ratio-Limits pro Kern (Aktuell):
+es=Límites máximos de relación por núcleo (actual):
+pt-BR=Limites máximos de razão por núcleo (atual):
+it=Limiti massimi del rapporto per core (corrente):
+nl=Maximale verhoudingslimieten per kern (huidig):
+da=Maksimale forholdsgrænser pr. kerne (aktuel):
+zh-CN=最大每核心倍频限制（当前）：
+zh-TW=最大每核心比率限制（當前）：
+ja=コアあたりの最大倍率制限 (現在):
+ko=최대 코어당 비율 제한(현재):
+vi=Giới hạn tỷ lệ trên mỗi lõi tối đa (Hiện tại):
+ar=حدود النسبة القصوى لكل مركز (الحالي):
+ru=Пределы максимального соотношения на ядро (текущие):
+uk=Максимальні обмеження співвідношення на ядро (поточні):
+cs=Maximální limity násobičů jádra (aktuální):
+sk=Maximálne limity násobičov jadra (aktuálne):
+hu=Maximális magonkénti arány korlátok (jelenleg):
+pl=Maksymalne limity współczynnika na rdzeń (bieżące):
+sv=Maximala gränser för förhållande per kärna (ström):
+fi=Ydinkohtaisen suhteen enimmäisrajat (nykyinen):
+no=Maksimal per-kjerne forholdsgrenser (gjeldende):
+el=Μέγιστα όρια αναλογίας ανά πυρήνα (Τρέχον):
+tr=Maksimum Çekirdek Başına Oran Limitleri (Akım):
+he=מגבלות יחס מקסימלי לכל ליבה (נוכחי):
 
 {{SUBST}}
 en=Instructions
