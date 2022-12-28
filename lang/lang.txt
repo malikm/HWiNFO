@@ -9315,7 +9315,7 @@ el=Ρεύμα πυρήνα GPU
 tr=GPU Çekirdek Akımı
 he=זרם ליבת GPU
 
-{{Sensors}}
+{{SUBST}}
 en=GPU Memory Current
 fr=Courant de mémoire GPU
 de=GPU-Speicherstrom
@@ -14640,9 +14640,9 @@ fr=Limite de performance
 de=Leistungsgrenze
 es=Límite de rendimiento
 pt-BR=Limite de desempenho
-it=Limite prestazioni
+it=Limite di prestazione
 nl=Prestatielimiet
-da=Ydeevnegrænse
+da=Ydelsesgrænse
 zh-CN=性能受限
 zh-TW=效能限制
 ja=パフォーマンス制限
