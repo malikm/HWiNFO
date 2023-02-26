@@ -2841,7 +2841,7 @@ he=מצב צבע
 {{Settings}}
 en=Default (Grey)
 fr=Par défaut (Gris)
-de=Standard (Grau)
+de=Voreingestellt (Grau)
 es=Predeterminado (gris)
 pt-BR=Padrão (Cinza)
 it=Predefinito (grigio)
@@ -2869,7 +2869,7 @@ he=ברירת מחדל (אפור)
 {{Settings}}
 en=Default (Black)
 fr=Par défaut (noir)
-de=Standard (Schwarz)
+de=Voreingestellt (Schwarz)
 es=Predeterminado (negro)
 pt-BR=Padrão (Preto)
 it=Predefinito (nero)
@@ -2921,6 +2921,34 @@ no=Deaktivert (lys)
 el=Απενεργοποιημένο (Φως)
 tr=Devre Dışı (Hafif)
 he=מושבת (קל)
+
+{{Settings}}
+en=Default
+fr=Par défaut
+de=Voreingestellt
+es=Predeterminado
+pt-BR=Padrão
+it=Predefinito
+nl=Standaard
+da=Standard
+zh-CN=默认
+zh-TW=預設
+ja=デフォルト
+ko=기본값
+vi=Mặc định
+ar=افتراضي
+ru=По умолчанию
+uk=За замовчуванням
+cs=Výchozí
+sk=Predvolený
+hu=Alapértelmezett
+pl=Domyślny
+sv=Standard
+fi=Oletus
+no=Standard
+el=Προεπιλογή
+tr=Varsayılan
+he=ברירת מחדל
 
 {{Settings}}
 en=Keep Theme
