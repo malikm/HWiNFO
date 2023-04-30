@@ -30,7 +30,7 @@ sk=Slovak / Slovensky
 hu=Hungarian / Magyar
 pl=Polish / Polski
 sv=Swedish / Svensk
-fi=Finnish / Suomen
+fi=Finnish / Suomi
 no=Norwegian / Norsk
 el=Greek / Ελληνικά
 tr=Turkish / Türkçe
@@ -114,7 +114,7 @@ sk=Zrušiť
 hu=Mégse
 pl=Anuluj
 sv=Annullera
-fi=Peruuttaa
+fi=Peruuta
 no=Avbryt
 el=Ματαίωση
 tr=İptal
@@ -142,7 +142,7 @@ sk=Ukončiť
 hu=Kilépés
 pl=Zamknij
 sv=Sluta med
-fi=Lopettaa
+fi=Lopeta
 no=Slutte
 el=Εγκαταλείπω
 tr=Çıkış
@@ -676,7 +676,7 @@ sk=bity
 hu=bit
 pl=bity
 sv=bits
-fi=bits
+fi=bittiä
 no=bits
 el=bits
 tr=bits
@@ -704,7 +704,7 @@ sk=Bajtov
 hu=bájt
 pl=Bajtów
 sv=Bytes
-fi=Bytes
+fi=Tavua
 no=Bytes
 el=Bytes
 tr=Bytes
@@ -732,7 +732,7 @@ sk=bajtov
 hu=bájt
 pl=bajtów
 sv=bytes
-fi=bytes
+fi=tavua
 no=bytes
 el=bytes
 tr=bytes
@@ -1292,7 +1292,7 @@ sk= používatelia
 hu= felhasználó
 pl= użytkowników
 sv= användare
-fi= käyttäjää
+fi= käyttäjät
 no= brukere
 el= χρήστες
 tr= Kullanıcı
@@ -1461,7 +1461,7 @@ sk=Iba Senzory
 hu=Csak érzékelők
 pl=Tylko czujniki
 sv=Endast Sensorer
-fi=Vain Anturit
+fi=Vain anturit
 no=Kun Sensorer
 el=Μόνο αισθητήρες
 tr=Yalnızca Sensörler
@@ -1489,7 +1489,7 @@ sk=Iba Súhrn
 hu=Csak összefoglaló
 pl=Tylko podsumowanie
 sv=Endast Översikt
-fi=Vain Yhteenveto
+fi=Vain yhteenveto
 no=Kun Sammendrag
 el=Μόνο περίληψη
 tr=Yalnızca Özet
@@ -2498,7 +2498,7 @@ sk=Zobraziť uvítaciu obrazovku a priebeh
 hu=Az üdvözlőképernyő és a folyamat megjelenítése
 pl=Pokaż ekran powitalny i postęp
 sv=Visa välkomstskärm och framsteg
-fi=Näytä tervetulonäyttö ja edistyminen
+fi=Näytä Tervetuloa ikkuna ja edistyminen
 no=Vis velkomstskjerm og fremgang
 el=Εμφάνιση οθόνης καλωσορίσματος και προόδου
 tr=Karşılama Ekranını ve İlerlemeyi Göster
@@ -3143,7 +3143,7 @@ sk=Po spustení HWiNFO automaticky otvoriť obrazovku Súhrn systému.
 hu=A rendszerösszesítő képernyő automatikus megnyitása a HWiNFO indításakor.
 pl=Automatycznie otwórz ekran podsumowania systemu po uruchomieniu HWiNFO.
 sv=Öppna skärmen Systemsammanfattning automatiskt när HWiNFO startar.
-fi=Avaa Järjestelmän yhteenveto -näyttö automaattisesti, kun HWiNFO käynnistyy.
+fi=Avaa Järjestelmän yhteenveto -ikkuna automaattisesti, kun HWiNFO käynnistyy.
 no=Åpne Systemsammendrag-skjermbildet automatisk når HWiNFO starter.
 el=Ανοίξτε αυτόματα την οθόνη Σύνοψη συστήματος όταν ξεκινά το HWiNFO.
 tr=HWiNFO başladığında Sistem Özeti ekranını otomatik olarak açın.
@@ -3171,7 +3171,7 @@ sk=Automaticky otvoriť obrazovku Senzory pri spustení HWiNFO.
 hu=Az érzékelők-képernyő automatikus megnyitása a HWiNFO indításakor.
 pl=Automatycznie otwórz ekran czujników po uruchomieniu HWiNFO.
 sv=Öppna sensorskärmen automatiskt när HWiNFO startar.
-fi=Avaa Anturit-näyttö automaattisesti, kun HWiNFO käynnistyy.
+fi=Avaa Anturit-ikkuna automaattisesti, kun HWiNFO käynnistyy.
 no=Åpne sensorskjermen automatisk når HWiNFO starter.
 el=Ανοίξτε αυτόματα την οθόνη Αισθητήρες όταν ξεκινά το HWiNFO.
 tr=HWiNFO başladığında Sensörler ekranını otomatik olarak açın.
@@ -3963,7 +3963,7 @@ he=המתח המבוקש על ידי סוכן המערכת המשולב ב-CPU, 
 
 {{Sensors}}
 en=Current (instant) clock determined as ratio * bus clock at the polling edge during active state.\nThis value doesn't respect core sleeping states and hence is not a good representation of highly dynamic behavior of later CPUs.\n"(perf # n/n)" if present determines the preferred core order number. First value specifies the Collaborative Processor Performance Control (CPPC) order, the second value the hardware-fused preferred core order number. If only one number is present then it's the hardware-fused order number
-fr=Horloge actuelle (instantanée) déterminée comme ratio * horloge du bus au niveau du front d'interrogation pendant l'état actif.\nCette valeur ne respecte pas les états de veille du cœur et n'est donc pas une bonne représentation du comportement hautement dynamique des processeurs ultérieurs.\n"(perf # n/n)" s'il est présent, détermine le numéro de commande de cœur préféré. La première valeur spécifie la commande CPPC (Collaborative Processor Performance Control), la deuxième valeur le numéro de commande de cœur préféré fusionné par le matériel. Si un seul numéro est présent, il s'agit du numéro de commande fusionné avec le matériel
+fr=Horloge actuelle (instantanée) déterminée comme ratio * horloge du bus au niveau du front d'interrogation pendant l'état actif.\nCette valeur ne respecte pas les états de veille du cœur et n'est donc pas une bonne représentation du comportement hautement dynamique des processeurs ultérieurs.\n"(perf # n/n)" s'il est présent, détermine le numéro de commande de cœur préféré. La première valeur spécifie la commande CPPC (Collaborative Processor Performance Control), la deuxième valeur le numéro de commande de cœur préféré fusionné par le matériel. Si un seul numéro est présent, il s'agit du numéro de commande fusionné avec le matériel
 de=Aktueller (momentaner) Takt, bestimmt als Verhältnis * Bustakt an der Polling-Flanke im aktiven Zustand.\nDieser Wert berücksichtigt nicht den Ruhezustand des Kerns und ist daher keine gute Darstellung des hochdynamischen Verhaltens späterer CPUs.\n"(perf # n/n)" falls vorhanden bestimmt die bevorzugte Kernbestellnummer. Der erste Wert gibt die Collaborative Processor Performance Control (CPPC)-Reihenfolge an, der zweite Wert die Hardware-Fused-Preferred-Core-Reihenfolge. Wenn nur eine Nummer vorhanden ist, handelt es sich um die hardwarebasierte Reihenfolgenummer
 es=Reloj actual (instantáneo) determinado como relación * reloj de bus en el borde de sondeo durante el estado activo.\nEste valor no respeta los estados de reposo del núcleo y, por lo tanto, no es una buena representación del comportamiento altamente dinámico de las CPU posteriores. \n "(perf # n / n)" si está presente, determina el número de orden de núcleo preferido. El primer valor especifica el orden de Control de rendimiento del procesador colaborativo (CPPC), el segundo valor el número de orden de núcleo preferido fusionado por hardware. Si solo hay un número, entonces es el número de pedido fusionado por hardware
 pt-BR=Relógio atual (instantâneo) determinado como relação * relógio de barramento na borda de sondagem durante o estado ativo.\nEste valor não respeita os estados de hibernação do núcleo e, portanto, não é uma boa representação do comportamento altamente dinâmico de CPUs posteriores. \n "(perf # n / n)" se presente, determina o número do pedido do núcleo preferido. O primeiro valor especifica o pedido de Controle de Desempenho do Processador Colaborativo (CPPC), o segundo valor o número do pedido do núcleo preferencial fundido com hardware. Se apenas um número estiver presente, então é o número do pedido com fusível de hardware
@@ -4039,7 +4039,7 @@ sk=Teploty jadier
 hu=Maghőmérsékletek
 pl=Temperatury rdzenia
 sv=Kärntemperaturer
-fi=Ydinlämpötilat
+fi=Ydinten lämpötilat
 no=Kjernetemperaturer
 el=Θερμοκρασίες πυρήνα
 tr=Çekirdek Sıcaklıklar
@@ -4882,7 +4882,7 @@ sk=Spotreba energie jadier
 hu=Magok energiafogyasztása
 pl=Pobór mocy rdzeni
 sv=Kärnor Strömförbrukning
-fi=Iytimien virrankulutus
+fi=Ytimien virrankulutus
 no=Kjerner Strømforbruk
 el=Κατανάλωση ενέργειας πυρήνων
 tr=Çekirdekleri Güç Tüketimi
@@ -5418,7 +5418,7 @@ sk=Aktívny takt
 hu=Aktív órajel
 pl=Aktywny zegar
 sv=Aktiv klocka
-fi=Aktiivinen kello
+fi=Aktiivinen kellotaajuus
 no=Aktiv klokke
 el=Ενεργό ρολόι
 tr=Aktif Saat
@@ -5502,7 +5502,7 @@ sk=Pamäťový kanál
 hu=Memória csatorna
 pl=Kanał pamięci
 sv=Minneskanal
-fi=Muisti kanava
+fi=Muistikanava
 no=Minnekanal
 el=Κανάλι μνήμης
 tr=Bellek Kanalı
@@ -5530,7 +5530,7 @@ sk=Pamäte GPU
 hu=GPU memória
 pl=Pamięci GPU
 sv=GPU Minnes
-fi=GPU-Muistin
+fi=GPU-Muisti
 no=GPU Minne
 el=Μνήμη GPU
 tr=GPU Bellek
@@ -5783,7 +5783,7 @@ sk=Šasi
 hu=Ház
 pl=Obudowa
 sv=Chassi
-fi=Alusta
+fi=Kotelo
 no=Chassis
 el=Πλαίσιο
 tr=Şasi
@@ -5812,7 +5812,7 @@ sk=CPU Celok
 hu=CPU teljes
 pl=Cały procesor
 sv=CPU hel
-fi=CPU kokonainen
+fi=CPU paketti
 no=CPU hele
 el=Ολόκληρη η CPU
 tr=CPU Tümü
@@ -6886,8 +6886,8 @@ he=שימוש
 
 {{Sensors}}
 en=Current core/thread utility.\nThis is the CPU Utilization reported by Task Manager. It can go above 100%, but might be capped in Task Manager to 100%.
-fr=Utilisation actuelle du cœur/du thread.\nIl s'agit de l'utilisation du processeur signalée par le gestionnaire de tâches. Il peut dépasser 100 %, mais peut être plafonné à 100 % dans le Gestionnaire des tâches.
-de=Aktuelle Kern-/Thread-Auslastung.\nDies ist die vom Task-Manager gemeldete CPU-Auslastung. Sie kann über 100 % steigen, ist jedoch im Task-Manager möglicherweise auf 100 % begrenzt.
+fr=Utilisation actuelle du cœur/du thread.\nIl s'agit de l'utilisation du processeur signalée par le gestionnaire de tâches. Il peut dépasser 100 %, mais peut être plafonné à 100 % dans le Gestionnaire des tâches.
+de=Aktuelle Kern-/Thread-Auslastung.\nDies ist die vom Task-Manager gemeldete CPU-Auslastung. Sie kann über 100 % steigen, ist jedoch im Task-Manager möglicherweise auf 100 % begrenzt.
 es=Utilización actual de núcleos / subprocesos.\nEsta es la utilización de CPU informada por el Administrador de tareas. Puede superar el 100%, pero puede estar limitado en el Administrador de tareas al 100%.
 pt-BR=Utilização atual do núcleo / thread.\nEsta é a utilização da CPU relatada pelo Gerenciador de Tarefas. Pode ir acima de 100%, mas pode ser limitado no Gerenciador de Tarefas a 100%.
 it=Utilizzo corrente di core/thread.\nQuesto è l'utilizzo della CPU riportato da Task Manager. Può superare il 100%, ma potrebbe essere limitato in Task Manager al 100%.
@@ -6942,8 +6942,8 @@ he=ניצול מעבד כולל
 
 {{Sensors}}
 en=Average utility of the entire CPU package.\nThis is the CPU Utilization reported by Task Manager. It can go above 100%, but might be capped in Task Manager to 100%.
-fr=Utilisation moyenne de l'ensemble du package CPU.\nIl s'agit de l'utilisation du CPU signalée par le Gestionnaire des tâches. Il peut dépasser 100 %, mais peut être plafonné à 100 % dans le Gestionnaire des tâches.
-de=Durchschnittliche Auslastung des gesamten CPU-Pakets.\nDies ist die vom Task-Manager gemeldete CPU-Auslastung. Sie kann über 100 % steigen, ist jedoch im Task-Manager möglicherweise auf 100 % begrenzt.
+fr=Utilisation moyenne de l'ensemble du package CPU.\nIl s'agit de l'utilisation du CPU signalée par le Gestionnaire des tâches. Il peut dépasser 100 %, mais peut être plafonné à 100 % dans le Gestionnaire des tâches.
+de=Durchschnittliche Auslastung des gesamten CPU-Pakets.\nDies ist die vom Task-Manager gemeldete CPU-Auslastung. Sie kann über 100 % steigen, ist jedoch im Task-Manager möglicherweise auf 100 % begrenzt.
 es=Uso promedio de todo el paquete de CPU.\nEste es el uso de CPU informado por el Administrador de tareas. Puede superar el 100%, pero puede estar limitado en el Administrador de tareas al 100%.
 pt-BR=Utilização média de todo o pacote da CPU.\nEsta é a utilização da CPU relatada pelo Gerenciador de tarefas. Pode ir acima de 100%, mas pode ser limitado no Gerenciador de Tarefas a 100%.
 it=Utilizzo medio dell'intero pacchetto CPU.\nQuesto è l'utilizzo della CPU riportato da Task Manager. Può superare il 100%, ma potrebbe essere limitato in Task Manager al 100%.
@@ -7671,7 +7671,7 @@ he=אחוז הזמן שכל המעבד בילה במצב C9.\nבמצב זה כל
 
 {{Sensors}}
 en=Percentage of time the entire CPU package spent in C10 state.\nIn this state all IA execution cores are powered off (C7), LLC, Uncore, IA, GT, SA are powered off, all VRs at PS4, 24 MHz clock off.
-fr=Pourcentage de temps que l'ensemble du processeur a passé dans l'état C10.\nDans cet état, tous les cœurs d'exécution IA sont éteints (C7), LLC, Uncore, IA, GT, SA sont éteints, tous les VR sur PS4, horloge 24 MHz désactivée.
+fr=Pourcentage de temps que l'ensemble du processeur a passé dans l'état C10.\nDans cet état, tous les cœurs d'exécution IA sont éteints (C7), LLC, Uncore, IA, GT, SA sont éteints, tous les VR sur PS4, horloge 24 MHz désactivée.
 de=Prozentsatz der Zeit, die die gesamte CPU im C10-Zustand verbracht hat.\nIn diesem Zustand sind alle IA-Ausführungskerne ausgeschaltet (C7), LLC, Uncore, IA, GT, SA sind ausgeschaltet, alle VRs auf PS4, 24 MHz-Takt ausgeschaltet.
 es=Porcentaje de tiempo que toda la CPU pasó en el estado C10. \nEn este estado, todos los núcleos de ejecución de IA están apagados (C7), LLC, Uncore, IA, GT, SA están apagados, todos los VR en PS4, reloj de 24 MHz apagado.
 pt-BR=Porcentagem de tempo que toda a CPU gasta no estado C10. \nNeste estado, todos os núcleos de execução IA são desligados (C7), LLC, Uncore, IA, GT, SA são desligados, todos os VRs em PS4, relógio de 24 MHz desligado.
@@ -8083,7 +8083,7 @@ sk=, Device
 hu=, Device
 pl=, Device
 sv=, Device
-fi=, Device
+fi=, Laite
 no=, Device
 el=, Device
 tr=, Device
@@ -8111,7 +8111,7 @@ sk=, Function
 hu=, Function
 pl=, Function
 sv=, Function
-fi=, Function
+fi=, Toiminto
 no=, Function
 el=, Function
 tr=, Function
@@ -8315,7 +8315,7 @@ he=טמפרטורת צומת זיכרון GPU
 
 {{Sensors}}
 en=Average Junction temperature of GPU memory.\nThis is the internal junction temperature measured inside the silicon, not the external (case) temperature, so higher values (than usual Tcase) are expected here.\nTemperature limit here is about 105 C.
-fr=Température de jonction moyenne de la mémoire GPU.\nIl s'agit de la température de jonction interne mesurée à l'intérieur du silicium, et non de la température externe (boîtier), donc des valeurs plus élevées (que la Tcase habituelle) sont attendues ici.\nLa limite de température ici est d'environ 105 C.
+fr=Température de jonction moyenne de la mémoire GPU.\nIl s'agit de la température de jonction interne mesurée à l'intérieur du silicium, et non de la température externe (boîtier), donc des valeurs plus élevées (que la Tcase habituelle) sont attendues ici.\nLa limite de température ici est d'environ 105 C.
 de=Durchschnittliche Sperrschicht-Temperatur des GPU-Speichers.\nDies ist die interne Sperrschicht-Temperatur, die innerhalb des Siliziums gemessen wird, nicht die externe (Gehäuse-)Temperatur, daher werden hier höhere Werte (als übliches Tcase) erwartet.\nDie Temperaturgrenze liegt hier bei etwa 105 °C.
 es=Temperatura de unión promedio de la memoria GPU.\nEsta es la temperatura de unión interna medida dentro del silicio, no la temperatura externa (carcasa), por lo que se esperan valores más altos (que la Tcase habitual) aquí.\nEl límite de temperatura aquí es de aproximadamente 105 C.
 pt-BR=Temperatura média de junção da memória da GPU.\nEsta é a temperatura de junção interna medida dentro do silício, não a temperatura externa (caixa), portanto, valores mais altos (do que o caso T normal) são esperados aqui.\nO limite de temperatura aqui é cerca de 105 C.
@@ -9735,7 +9735,7 @@ sk=Limit GPU Core TDC
 hu=GPU Core TDC korlát
 pl=Limit TDC rdzenia GPU
 sv=GPU Core TDC-gräns
-fi=GPU Core TDC Limit
+fi=GPU Core TDC rajoitus
 no=GPU Core TDC Limit
 el=Όριο GPU Core TDC
 tr=GPU Çekirdeği TDC Sınırı
@@ -9847,7 +9847,7 @@ sk=Limit GPU USR TDC
 hu=GPU USR TDC korlát
 pl=Limit GPU USR TDC
 sv=GPU USR TDC-gräns
-fi=GPU USR TDC Limit
+fi=GPU USR TDC rajoitus
 no=GPU USR TDC-grense
 el=Όριο GPU USR TDC
 tr=GPU USR TDC Sınırı
@@ -10995,7 +10995,7 @@ sk=GPU Front End Takt
 hu=GPU Front End Clock
 pl=GPU Front End Clock
 sv=GPU Front End Clock
-fi=GPU Front End Clock
+fi=GPU Front End Kello
 no=GPU Front End Clock
 el=GPU Front End Clock
 tr=GPU Front End Clock
@@ -11191,7 +11191,7 @@ sk=Current GPU Geometry engine frequency.
 hu=Current GPU Geometry engine frequency.
 pl=Current GPU Geometry engine frequency.
 sv=Current GPU Geometry engine frequency.
-fi=Current GPU Geometry engine frequency.
+fi=Nykyinen GPU Geometriamoottorin taajuus.
 no=Current GPU Geometry engine frequency.
 el=Current GPU Geometry engine frequency.
 tr=Current GPU Geometry engine frequency.
@@ -16154,7 +16154,7 @@ he=המספר הכולל של כשלים בכונן שנצברו לאורך כל
 
 {{Sensors}}
 en=Total number of drive warnings accumulated over its entire lifetime.\nWhen the following ATA parameters exceed an amount of 2, they are treated as warnings:\n- Reallocated Sector Count, Current Pending Sector Count, Off-Line Uncorrectable Sector Count, Remaining Life < 10%\nThe following NVMe conditions are treated as warnings:\n- Available Space Below Threshold, Temperature Exceeded Critical Threshold, Volatile Memory Backup Device Failed\nWhen a warning is detected, an additional sensor value will provide more precise details. Check the main HWiNFO screen for full details about each attribute.
-fr=Nombre total d'avertissements de lecteur accumulés sur toute sa durée de vie.\nLorsque les paramètres ATA suivants dépassent un nombre de 2, ils sont traités comme des avertissements :\n- Nombre de secteurs réaffectés, nombre de secteurs en attente, nombre de secteurs non corrigibles hors ligne, durée de vie restante 10 %\nLes conditions NVMe suivantes sont traitées comme des avertissements :\n- Espace disponible sous le seuil, Seuil critique de température dépassée, Échec du périphérique de sauvegarde de la mémoire volatile\nLorsqu'un avertissement est détecté, une valeur de capteur supplémentaire fournira des détails plus précis. Consultez l'écran principal HWiNFO pour plus de détails sur chaque attribut.
+fr=Nombre total d'avertissements de lecteur accumulés sur toute sa durée de vie.\nLorsque les paramètres ATA suivants dépassent un nombre de 2, ils sont traités comme des avertissements :\n- Nombre de secteurs réaffectés, nombre de secteurs en attente, nombre de secteurs non corrigibles hors ligne, durée de vie restante 10 %\nLes conditions NVMe suivantes sont traitées comme des avertissements :\n- Espace disponible sous le seuil, Seuil critique de température dépassée, Échec du périphérique de sauvegarde de la mémoire volatile\nLorsqu'un avertissement est détecté, une valeur de capteur supplémentaire fournira des détails plus précis. Consultez l'écran principal HWiNFO pour plus de détails sur chaque attribut.
 de=Gesamtzahl der während der gesamten Lebensdauer akkumulierten Laufwerkswarnungen.\nWenn die folgenden ATA-Parameter einen Wert von 2 überschreiten, werden sie als Warnungen behandelt:\n- Neu zugewiesene Sektorenzahl, Aktuell anstehende Sektorenzahl, Offline nicht korrigierbare Sektorenzahl, Restlebensdauer < 10%\nDie folgenden NVMe-Bedingungen werden als Warnungen behandelt:\n- Verfügbarer Reserveplatz unterhalb des Schwellenwerts, Temperatur überstieg kritischen Schwellenwert, Sicherungsgerät für flüchtigen Speicher fehlgeschlagen\nWenn eine Warnung erkannt wird, liefert ein zusätzlicher Sensorwert genauere Details. Auf dem HWiNFO-Hauptbildschirm finden Sie alle Details zu jedem Attribut.
 es=Número total de advertencias de disco acumuladas durante toda su vida útil.\nCuando los siguientes parámetros ATA superan una cantidad de 2, se tratan como advertencias:\n- Reasignado el conteo del sector, Recuento actual de sectores pendientes, Recuento de sectores incorregibles fuera de línea, Vida restante <10 %\nLas siguientes condiciones de NVMe se tratan como advertencias:\n- Espacio disponible por debajo del umbral, La temperatura superó el umbral crítico, El dispositivo de respaldo de memoria volátil falló\nCuando se detecta una advertencia, un valor de sensor adicional proporcionará detalles más precisos. Consulte la pantalla principal de HWiNFO para obtener detalles completos sobre cada atributo.
 pt-BR=Número total de avisos de unidade acumulados durante toda a sua vida útil.\nQuando os seguintes parâmetros ATA excederem 2, eles serão tratados como avisos:\n- Contagem de setores realocados, Contagem atual sector pendente, Contagem de setores não corrigíveis off-line, Vida restante <10 %\nAs seguintes condições NVMe são tratadas como avisos:\n- Espaço disponível abaixo do limite, Temperatura excedida limite crítico, Falha no dispositivo de backup de memória volátil\nQuando um aviso é detectado, um valor de sensor adicional fornecerá detalhes mais precisos. Verifique a tela principal do HWiNFO para detalhes completos sobre cada atributo.
@@ -16966,7 +16966,7 @@ he=חיישן זה מספק מידע מהחיישן התרמי הדיגיטלי 
 
 {{Sensors}}
 en=256 ms average of the hottest temperature of all Digital Thermal Sensors within the package calculated by the CPU.\nThis is the recommended CPU temperature to watch.
-fr=Moyenne de 256 ms de la température la plus élevée de tous les capteurs thermiques numériques (DTS) du package, calculée par le processeur.\nIl s'agit de la température recommandée du processeur à surveiller.
+fr=Moyenne de 256 ms de la température la plus élevée de tous les capteurs thermiques numériques (DTS) du package, calculée par le processeur.\nIl s'agit de la température recommandée du processeur à surveiller.
 de=256 ms Durchschnitt der heißesten Temperatur aller digitalen Temperatursensoren (DTS) im Paket, berechnet von der CPU.\nDies ist die empfohlene CPU-Temperatur, die Sie beobachten sollten.
 es=256 ms de promedio de la temperatura más alta de todos los sensores térmicos digitales (DTS) dentro del paquete calculado por la CPU.\nEsta es la temperatura recomendada de la CPU para observar.
 pt-BR=Média de 256 ms da temperatura mais quente de todos os sensores térmicos digitais (DTS) dentro do pacote calculado pela CPU.\nEsta é a temperatura recomendada da CPU a ser observada.
@@ -18282,7 +18282,7 @@ he=טמפרטורת הסביבה של זיכרון
 
 {{Sensors}}
 en=Per-channel DIMM temperature, depends on thermal throttling mode used in BIOS:\nIn Open Loop Thermal Throttling (OLTT) mode estimated per bandwidth.\nIn Closed Loop Thermal Throttling (CLTT) mode measured by Thermal Sensor on DIMM (TSOD).
-fr=La température DIMM par canal dépend du mode de limitation thermique utilisé dans le BIOS :\nEn mode de limitation thermique en boucle ouverte (OLTT) estimé par bande passante.\nEn mode de limitation thermique en boucle fermée (CLTT) mesuré par le capteur thermique sur DIMM (TSOD).
+fr=La température DIMM par canal dépend du mode de limitation thermique utilisé dans le BIOS :\nEn mode de limitation thermique en boucle ouverte (OLTT) estimé par bande passante.\nEn mode de limitation thermique en boucle fermée (CLTT) mesuré par le capteur thermique sur DIMM (TSOD).
 de=DIMM-Temperatur pro Kanal, hängt vom im BIOS verwendeten Thermal Throttling-Modus ab:\nIm Open Loop Thermal Throttling (OLTT)-Modus geschätzt pro Bandbreite.\nIm Closed Loop Thermal Throttling (CLTT)-Modus, gemessen vom Thermal Sensor auf DIMM (TSOD).
 es=La temperatura del DIMM por canal depende del modo de regulación térmica utilizado en el BIOS:\nEn el modo de regulación térmica de bucle abierto (OLTT) estimado por ancho de banda.\nEn el modo de regulación térmica de bucle cerrado (CLTT) medido por el sensor térmico en DIMM (TSOD).
 pt-BR=A temperatura DIMM por canal depende do modo de estrangulamento térmico usado no BIOS:\nNo modo Open Loop Thermal Throttling (OLTT) estimado por largura de banda.\nNo modo Closed Loop Thermal Throttling (CLTT) medido pelo Sensor térmico em DIMM (TSOD).
@@ -21838,8 +21838,8 @@ he=סטייה של דיווח על צריכת חשמל (דיוק)
 
 {{Sensors}}
 en=This value shows how accurately some of the power values (Core, SoC) are reported.\nThe BIOS plays an important role in ensuring how this mechanism works and if not properly configured it can result in large deviation from real power consumed.\n 100% means the power is accurately reported\n<100% means the BIOS uses settings that result in under-reporting of power, so the CPU thinks it runs at lower power than it actually is\n>100% means the BIOS uses settings that result in over-reporting of power, so the CPU thinks it runs at higher power than it actually is\n\nIMPORTANT NOTE: This value has a meaning under FULL CPU load only at default settings (no overclocking, offsets applied, etc.), in other conditions this value should not be taken into account.\nSmall differences from 100% are normal, but if the result is <90% or >110% it should be of concern\nIt is highly recommended to visit the HWiNFO Forum for further details.
-fr=Cette valeur indique la précision avec laquelle certaines valeurs de puissance (Core, SoC) sont rapportées.\nLe BIOS joue un rôle important pour garantir le fonctionnement de ce mécanisme et s'il n'est pas correctement configuré, il peut entraîner un écart important par rapport à la puissance réelle consommée.\n 100 % signifie que la puissance est rapportée avec précision\n<100 % signifie que le BIOS utilise des paramètres qui entraînent une sous-estimation de la puissance, de sorte que le processeur pense qu'il fonctionne à une puissance inférieure à ce qu'il est réellement\n>100 % signifie que le BIOS utilise des paramètres qui entraîner une sur-déclaration de la puissance, de sorte que le processeur pense qu'il fonctionne à une puissance plus élevée qu'il ne l'est réellement\n\nREMARQUE IMPORTANTE : cette valeur a une signification sous la pleine charge du processeur uniquement avec les paramètres par défaut (pas d'overclocking, décalages appliqués, etc.) , dans d'autres conditions, cette valeur ne doit pas être prise en compte.\nDe petites différences par rapport à 100 % sont normales, mais si le résultat est < 90 % ou > 110 %, cela devrait être préoccupant.\nIl est fortement recommandé de visiter le forum HWiNFO pour plus de détails.
-de=Dieser Wert zeigt an, wie genau einige der Leistungswerte (Core, SoC) gemeldet werden.\nDas BIOS spielt eine wichtige Rolle bei der Sicherstellung der Funktionsweise dieses Mechanismus und kann, wenn er nicht richtig konfiguriert ist, zu großen Abweichungen vom tatsächlichen Stromverbrauch führen.\n 100 % bedeutet, dass die Leistung genau gemeldet wird\n<100 % bedeutet, dass das BIOS Einstellungen verwendet, die zu einer unzureichenden Leistungsmeldung führen, sodass die CPU denkt, dass sie mit geringerer Leistung läuft, als sie tatsächlich ist\n>100 % bedeutet, dass das BIOS Einstellungen verwendet, die führt dazu, dass die Leistung zu hoch gemeldet wird, sodass die CPU denkt, dass sie mit höherer Leistung läuft, als sie tatsächlich ist\n\nWICHTIGER HINWEIS: Dieser Wert hat unter VOLLE CPU-Last nur bei den Standardeinstellungen (keine Übertaktung, angewendete Offsets usw.) eine Bedeutung. , unter anderen Bedingungen sollte dieser Wert nicht berücksichtigt werden.\nKleine Abweichungen von 100% sind normal, aber wenn das Ergebnis <90% oder >110% ist, sollte es besorgniserregend sein\nEs wird dringend empfohlen, das HWiNFO-Forum für weitere Details.
+fr=Cette valeur indique la précision avec laquelle certaines valeurs de puissance (Core, SoC) sont rapportées.\nLe BIOS joue un rôle important pour garantir le fonctionnement de ce mécanisme et s'il n'est pas correctement configuré, il peut entraîner un écart important par rapport à la puissance réelle consommée.\n 100 % signifie que la puissance est rapportée avec précision\n<100 % signifie que le BIOS utilise des paramètres qui entraînent une sous-estimation de la puissance, de sorte que le processeur pense qu'il fonctionne à une puissance inférieure à ce qu'il est réellement\n>100 % signifie que le BIOS utilise des paramètres qui entraîner une sur-déclaration de la puissance, de sorte que le processeur pense qu'il fonctionne à une puissance plus élevée qu'il ne l'est réellement\n\nREMARQUE IMPORTANTE : cette valeur a une signification sous la pleine charge du processeur uniquement avec les paramètres par défaut (pas d'overclocking, décalages appliqués, etc.) , dans d'autres conditions, cette valeur ne doit pas être prise en compte.\nDe petites différences par rapport à 100 % sont normales, mais si le résultat est < 90 % ou > 110 %, cela devrait être préoccupant.\nIl est fortement recommandé de visiter le forum HWiNFO pour plus de détails.
+de=Dieser Wert zeigt an, wie genau einige der Leistungswerte (Core, SoC) gemeldet werden.\nDas BIOS spielt eine wichtige Rolle bei der Sicherstellung der Funktionsweise dieses Mechanismus und kann, wenn er nicht richtig konfiguriert ist, zu großen Abweichungen vom tatsächlichen Stromverbrauch führen.\n 100 % bedeutet, dass die Leistung genau gemeldet wird\n<100 % bedeutet, dass das BIOS Einstellungen verwendet, die zu einer unzureichenden Leistungsmeldung führen, sodass die CPU denkt, dass sie mit geringerer Leistung läuft, als sie tatsächlich ist\n>100 % bedeutet, dass das BIOS Einstellungen verwendet, die führt dazu, dass die Leistung zu hoch gemeldet wird, sodass die CPU denkt, dass sie mit höherer Leistung läuft, als sie tatsächlich ist\n\nWICHTIGER HINWEIS: Dieser Wert hat unter VOLLE CPU-Last nur bei den Standardeinstellungen (keine Übertaktung, angewendete Offsets usw.) eine Bedeutung. , unter anderen Bedingungen sollte dieser Wert nicht berücksichtigt werden.\nKleine Abweichungen von 100% sind normal, aber wenn das Ergebnis <90% oder >110% ist, sollte es besorgniserregend sein\nEs wird dringend empfohlen, das HWiNFO-Forum für weitere Details.
 es=Este valor muestra la precisión con la que se informan algunos de los valores de energía (Core, SoC).\nEl BIOS desempeña un papel importante para garantizar el funcionamiento de este mecanismo y, si no se configura correctamente, puede provocar una gran desviación de la energía real consumida.\n 100 % significa que la energía se informa con precisión\n <100% significa que el BIOS usa configuraciones que dan como resultado un informe de energía insuficiente, por lo que la CPU cree que funciona con una energía menor de la que realmente es\n> 100% significa que la BIOS usa configuraciones que dan como resultado un informe excesivo de energía, por lo que la CPU cree que funciona a una potencia más alta de la que realmente es\n\nNOTA IMPORTANTE: Este valor tiene un significado bajo carga COMPLETA de la CPU solo en la configuración predeterminada (sin overclocking, compensaciones aplicadas, etc.) , en otras condiciones, este valor no debe tenerse en cuenta.\nLas pequeñas diferencias con respecto al 100% son normales, pero si el resultado es <90% o> 110%, debería ser motivo de preocupación.\nSe recomienda encarecidamente visitar el Foro de HWiNFO para más detalles.
 pt-BR=Este valor mostra a precisão com que alguns dos valores de energia (Core, SoC) são relatados.\nO BIOS desempenha um papel importante em garantir o funcionamento desse mecanismo e, se não for configurado corretamente, pode resultar em um grande desvio da energia real consumida.\n 100 % significa que a energia é relatada com precisão\n <100% significa que o BIOS usa configurações que resultam em sub-relatório de energia, então a CPU pensa que funciona com menos energia do que realmente é\n> 100% significa que o BIOS usa configurações que resulta em super-relato de energia, então a CPU pensa que funciona com uma potência maior do que realmente é\n\n NOTA IMPORTANTE: Este valor tem um significado sob carga COMPLETA da CPU apenas nas configurações padrão (sem overclock, compensações aplicadas, etc.) , em outras condições este valor não deve ser levado em consideração.\nPequenas diferenças de 100% são normais, mas se o resultado for <90% ou> 110%, deve ser motivo de preocupação\nÉ altamente recomendado visitar o Fórum HWiNFO para detalhes adicionais.
 it=Questo valore mostra la precisione con cui vengono riportati alcuni dei valori di potenza (Core, SoC).\nIl BIOS svolge un ruolo importante nel garantire il funzionamento di questo meccanismo e, se non configurato correttamente, può causare una grande deviazione dalla potenza reale consumata.\n 100 % significa che la potenza è riportata in modo accurato\n<100% significa che il BIOS utilizza impostazioni che risultano in una sottostima della potenza, quindi la CPU pensa di funzionare a una potenza inferiore a quella in realtà\n>100% significa che il BIOS utilizza impostazioni che comportare una segnalazione eccessiva della potenza, quindi la CPU pensa di funzionare a una potenza maggiore di quella in realtà\n\nNOTA IMPORTANTE: questo valore ha un significato sotto carico CPU COMPLETO solo con le impostazioni predefinite (nessun overclocking, offset applicati, ecc.) , in altre condizioni questo valore non dovrebbe essere preso in considerazione.\nPiccole differenze dal 100% sono normali, ma se il risultato è <90% o >110% dovrebbe essere preoccupante\nSi consiglia vivamente di visitare il Forum HWiNFO per maggiori dettagli.
@@ -22398,7 +22398,7 @@ he=\nHWiNFO אין מספיק מידע על ערך החיישן הזה (הספצ
 
 {{Sensors}}
 en=\n\nThis sensor represents a group of aggregated values and the meaning of its values is different:\nCurrent: Actual average value of all aggregated current values (not all-time average)\nMinimum/Maximum: Run-time minimum/maximum value of all aggregated values\nAverage: Run-time average of aggregated current values
-fr=\n\nCe capteur représente un groupe de valeurs agrégées et la signification de ses valeurs est différente :\nCourant : valeur moyenne réelle de toutes les valeurs actuelles agrégées (pas la moyenne de tous les temps)\nMinimum/Maximum : valeur minimale/maximale d'exécution de toutes les valeurs agrégées\nMoyenne : moyenne d'exécution des valeurs actuelles agrégées
+fr=\n\nCe capteur représente un groupe de valeurs agrégées et la signification de ses valeurs est différente :\nCourant : valeur moyenne réelle de toutes les valeurs actuelles agrégées (pas la moyenne de tous les temps)\nMinimum/Maximum : valeur minimale/maximale d'exécution de toutes les valeurs agrégées\nMoyenne : moyenne d'exécution des valeurs actuelles agrégées
 de=\n\nDieser Sensor stellt eine Gruppe von aggregierten Werten dar, deren Werte eine andere Bedeutung haben:\nCurrent: Aktueller Durchschnittswert aller aggregierten aktuellen Werte (kein All-Time- Average)\nMinimum/Maximum: Laufzeit-Minimal-/Maximalwert aller aggregierten Werte\nAverage: Laufzeitdurchschnitt der aggregierten aktuellen Werte
 es=\n\nEste sensor representa un grupo de valores agregados y el significado de sus valores es diferente: \nActual: valor promedio real de todos los valores actuales agregados (no promedio de todos los tiempos) \nMínimo / Máximo: valor mínimo / máximo en tiempo de ejecución de todos los valores agregados \nPromedio: promedio en tiempo de ejecución de los valores actuales agregados
 pt-BR=\n\nEste sensor representa um grupo de valores agregados e o significado de seus valores é diferente: \nCorrente: valor médio real de todos os valores atuais agregados (não a média de todos os tempos) \nMínimo / máximo: valor mínimo / máximo em tempo de execução de todos os valores agregados\nMédia: média de tempo de execução dos valores agregados atuais
@@ -23044,7 +23044,7 @@ he=דווח על מידע חיישן שאוחזר מאובייקטי ACPI.
 
 {{Settings}}
 en=When ENABLED, the CPU Clock is derived from Bus Clock measurement and current ratio.\nThis method can provide a more realistic clock speed under specific situations, but doesn't capture clock throttling.\nThis method is used on Intel Nehalem or AMD 10h and later CPUs, on other CPUs it's not used (defaults to disabled state).\n\nWhen DISABLED, the CPU Clock and ratio is measured first, then Bus Clock is derived from it.\nThis method can capture clock throttling, but may not be 100% accurate on CPUs with sensitive Turbo Mode.
-fr=Lorsqu'elle est ACTIVÉE, l'horloge du processeur est dérivée de la mesure de l'horloge du bus et du rapport de courant.\nCette méthode peut fournir une vitesse d'horloge plus réaliste dans des situations spécifiques, mais ne capture pas la limitation de l'horloge.\nCette méthode est utilisée sur Intel Nehalem ou AMD 10h et processeurs ultérieurs, sur les autres processeurs, il n'est pas utilisé (par défaut à l'état désactivé).\n\nLorsque DÉSACTIVÉ, l'horloge et le rapport du processeur sont mesurés en premier, puis l'horloge du bus en est dérivée.\nCette méthode peut capturer la limitation de l'horloge, mais peut ne pas l'être être précis à 100 % sur les processeurs dotés du mode Turbo sensible.
+fr=Lorsqu'elle est ACTIVÉE, l'horloge du processeur est dérivée de la mesure de l'horloge du bus et du rapport de courant.\nCette méthode peut fournir une vitesse d'horloge plus réaliste dans des situations spécifiques, mais ne capture pas la limitation de l'horloge.\nCette méthode est utilisée sur Intel Nehalem ou AMD 10h et processeurs ultérieurs, sur les autres processeurs, il n'est pas utilisé (par défaut à l'état désactivé).\n\nLorsque DÉSACTIVÉ, l'horloge et le rapport du processeur sont mesurés en premier, puis l'horloge du bus en est dérivée.\nCette méthode peut capturer la limitation de l'horloge, mais peut ne pas l'être être précis à 100 % sur les processeurs dotés du mode Turbo sensible.
 de=Wenn AKTIVIERT, wird der CPU-Takt aus der Bustaktmessung und dem Stromverhältnis abgeleitet.\nDiese Methode kann in bestimmten Situationen eine realistischere Taktgeschwindigkeit liefern, erfasst jedoch keine Taktdrosselung.\nDiese Methode wird bei Intel Nehalem oder AMD 10h und . verwendet neuere CPUs, auf anderen CPUs wird sie nicht verwendet (standardmäßig deaktiviert).\n\nWenn DISABLED, werden der CPU-Takt und das Verhältnis zuerst gemessen, dann wird der Bustakt daraus abgeleitet.\nDiese Methode kann die Taktdrosselung erfassen, aber möglicherweise nicht auf CPUs mit empfindlichem Turbo-Modus 100% genau sein.
 es=Cuando está HABILITADO, el reloj de la CPU se deriva de la medición del reloj del bus y la relación de corriente.\nEste método puede proporcionar una velocidad de reloj más realista en situaciones específicas, pero no captura la aceleración del reloj.\nEste método se usa en Intel Nehalem o AMD 10h y CPU posteriores, en otras CPU no se usa (el estado predeterminado es deshabilitado).\n\nCuando está DESACTIVADO, el reloj de la CPU y la relación se miden primero, luego el reloj del bus se deriva de él.\nEste método puede capturar la aceleración del reloj, pero es posible que no Sea 100% preciso en CPU con modo Turbo sensible.
 pt-BR=Quando HABILITADO, o clock da CPU é derivado da medição do clock do barramento e da proporção da corrente.\nEste método pode fornecer uma velocidade de clock mais realista em situações específicas, mas não captura a aceleração do clock.\nEste método é usado no Intel Nehalem ou AMD 10h e CPUs posteriores, em outras CPUs ele não é usado (o padrão é o estado desabilitado).\n\nQuando DESATIVADO, o Clock da CPU e a relação são medidos primeiro, então o Bus Clock é derivado dele.\nEste método pode capturar a aceleração do clock, mas pode não ser 100% preciso em CPUs com Modo Turbo sensível.
@@ -23184,7 +23184,7 @@ he=במערכות מסוימות ה-PCH Thermal Device מושבת על ידי ה
 
 {{Settings}}
 en=Support the industry-wide Common Storage Management Interface for SAS/SATA to detect and monitor SATA/SAS drives.\nSome drivers can have a broken support support of CSMI SAS, disable this option in such case.\nRecommended default value: ENABLED
-fr=Prend en charge l'Common Storage Management Interface (CSMI) pour SAS/SATA à l'échelle de l'industrie pour détecter et surveiller les disques SATA/SAS.\nCertains pilotes peuvent avoir une prise en charge interrompue de CSMI SAS, désactivez cette option dans ce cas.\nValeur par défaut recommandée : ACTIVÉ
+fr=Prend en charge l'Common Storage Management Interface (CSMI) pour SAS/SATA à l'échelle de l'industrie pour détecter et surveiller les disques SATA/SAS.\nCertains pilotes peuvent avoir une prise en charge interrompue de CSMI SAS, désactivez cette option dans ce cas.\nValeur par défaut recommandée : ACTIVÉ
 de=Unterstützen das branchenweite Common Storage Management Interface (CSMI) für SAS/SATA, um SATA/SAS-Laufwerke zu erkennen und zu überwachen.\nEinige Treiber können CSMI SAS nicht korrekt unterstützen, deaktivieren Sie diese Option in einem solchen Fall.\nEmpfohlener Standardwert: AKTIVIERT
 es=Admite la Common Storage Management Interface (CSMI) para SAS / SATA en toda la industria para detectar y monitorear unidades SATA / SAS.\nAlgunos controladores pueden tener un soporte roto de CSMI SAS, deshabilite esta opción en tal caso.\nValor predeterminado recomendado: HABILITADO
 pt-BR=Suporte a Common Storage Management Interface (CSMI) para SAS / SATA para detectar e monitorar unidades SATA / SAS.\nAlguns drivers podem ter um suporte interrompido de CSMI SAS, desative esta opção neste caso.\nValor padrão recomendado: ENABLED
@@ -23212,7 +23212,7 @@ he=תמכו בממשק ניהול האחסון הנפוץ בתעשייה עבו�
 
 {{Settings}}
 en=NVML (NVIDIA Management Library) is used by HWiNFO to provide some additional information about NVIDIA GPUs.\nDue to a bug in NVIDIA R368 and some later drivers, some SLI-enabled systems with certain display configurations can hang when trying to access the NVML. In such case, disable this option.\nRecommended value in all other cases: ENABLED
-fr=NVML (NVIDIA Management Library) est utilisé par HWiNFO pour fournir des informations supplémentaires sur les GPU NVIDIA.\nEn raison d'un bogue dans NVIDIA R368 et certains pilotes ultérieurs, certains systèmes compatibles SLI avec certaines configurations d'affichage peuvent se bloquer lors de la tentative d'accès au NVML. Dans ce cas, désactivez cette option.\nValeur recommandée dans tous les autres cas : ENABLED
+fr=NVML (NVIDIA Management Library) est utilisé par HWiNFO pour fournir des informations supplémentaires sur les GPU NVIDIA.\nEn raison d'un bogue dans NVIDIA R368 et certains pilotes ultérieurs, certains systèmes compatibles SLI avec certaines configurations d'affichage peuvent se bloquer lors de la tentative d'accès au NVML. Dans ce cas, désactivez cette option.\nValeur recommandée dans tous les autres cas : ENABLED
 de=NVML (NVIDIA Management Library) wird von HWiNFO verwendet, um einige zusätzliche Informationen über NVIDIA-GPUs bereitzustellen.\nAufgrund eines Fehlers in NVIDIA R368 und einigen neueren Treibern können einige SLI-fähige Systeme mit bestimmten Anzeigekonfigurationen beim Versuch, auf die NVML zuzugreifen, hängen bleiben. Deaktivieren Sie in diesem Fall diese Option.\nEmpfohlener Wert in allen anderen Fällen: AKTIVIERT
 es=HWiNFO utiliza NVML (Biblioteca de administración de NVIDIA) para proporcionar información adicional sobre las GPU de NVIDIA.\nDebido a un error en NVIDIA R368 y algunos controladores posteriores, algunos sistemas habilitados para SLI con ciertas configuraciones de pantalla pueden bloquearse al intentar acceder a NVML. En tal caso, desactive esta opción.\nValor recomendado en todos los demás casos: ENABLED
 pt-BR=NVML (NVIDIA Management Library) é usada pela HWiNFO para fornecer algumas informações adicionais sobre as GPUs NVIDIA.\nDevido a um bug no NVIDIA R368 e alguns drivers posteriores, alguns sistemas habilitados para SLI com certas configurações de vídeo podem travar ao tentar acessar o NVML. Nesse caso, desative esta opção.\nValor recomendado em todos os outros casos: ENABLED
@@ -24194,7 +24194,7 @@ he=אי הכללת אוטובוס GPU I2C
 
 {{Settings}}
 en=Some GPUs are known to have a high probability of causing serious problems (system crashes) when accessing their I2C devices (VRMs). If such GPUs are detected by HWiNFO, then for safety it automatically disables I2C access, regardless of the GPU I2C Support setting. Enabling this option will force HWiNFO to override this safety action, so on such GPUs I2C access will be performed. Currently this safety action is performed on these GPUs:\nAMD Radeon R9 Fury/Nano/Pro series, AMD Radeon Vega series\n\nEnable this option with CAUTION (i.e. if GPU VRM monitoring is required) because on the above GPUs it might cause a system crash !
-fr=Certains GPU sont connus pour avoir une forte probabilité de causer de graves problèmes (pannes système) lors de l'accès à leurs périphériques I2C (VRM). Si de tels GPU sont détectés par HWiNFO, pour des raisons de sécurité, il désactive automatiquement l'accès I2C, quel que soit le paramètre de prise en charge GPU I2C. L'activation de cette option forcera HWiNFO à outrepasser cette action de sécurité, donc sur ces GPU, l'accès I2C sera effectué. Actuellement, cette action de sécurité est effectuée sur ces GPU :\nAMD Radeon R9 Fury/Nano/Pro series, AMD Radeon Vega series\n\nActivez cette option avec ATTENTION (c'est-à-dire si la surveillance GPU VRM est requise) car sur les GPU ci-dessus, cela peut provoquer un plantage du système !
+fr=Certains GPU sont connus pour avoir une forte probabilité de causer de graves problèmes (pannes système) lors de l'accès à leurs périphériques I2C (VRM). Si de tels GPU sont détectés par HWiNFO, pour des raisons de sécurité, il désactive automatiquement l'accès I2C, quel que soit le paramètre de prise en charge GPU I2C. L'activation de cette option forcera HWiNFO à outrepasser cette action de sécurité, donc sur ces GPU, l'accès I2C sera effectué. Actuellement, cette action de sécurité est effectuée sur ces GPU :\nAMD Radeon R9 Fury/Nano/Pro series, AMD Radeon Vega series\n\nActivez cette option avec ATTENTION (c'est-à-dire si la surveillance GPU VRM est requise) car sur les GPU ci-dessus, cela peut provoquer un plantage du système !
 de=Es ist bekannt, dass einige GPUs beim Zugriff auf ihre I2C-Geräte (VRMs) mit hoher Wahrscheinlichkeit schwerwiegende Probleme (Systemabstürze) verursachen. Wenn solche GPUs von HWiNFO erkannt werden, deaktiviert es aus Sicherheitsgründen automatisch den I2C-Zugriff, unabhängig von der Einstellung für die GPU-I2C-Unterstützung. Durch Aktivieren dieser Option wird HWiNFO gezwungen, diese Sicherheitsaktion zu überschreiben, sodass auf solchen GPUs der I2C-Zugriff ausgeführt wird. Derzeit wird diese Sicherheitsmaßnahme auf diesen GPUs durchgeführt:\nAMD Radeon R9 Fury/Nano/Pro-Serie, AMD Radeon Vega-Serie\n\nAktivieren Sie diese Option mit VORSICHT (dh wenn eine GPU-VRM-Überwachung erforderlich ist), da dies bei den oben genannten GPUs zu ein Systemabsturz!
 es=Se sabe que algunas GPU tienen una alta probabilidad de causar problemas graves (fallas del sistema) al acceder a sus dispositivos I2C (VRM). Si HWiNFO detecta dichas GPU, entonces, por seguridad, deshabilita automáticamente el acceso I2C, independientemente de la configuración de compatibilidad con GPU I2C. Habilitar esta opción obligará a HWiNFO a anular esta acción de seguridad, por lo que en dichas GPU se realizará el acceso I2C. Actualmente, esta acción de seguridad se realiza en estas GPU:\nSerie AMD Radeon R9 Fury / Nano / Pro, serie AMD Radeon Vega\n\nHabilite esta opción con PRECAUCIÓN (es decir, si se requiere monitoreo de GPU VRM) porque en las GPU anteriores podría causar un fallo del sistema!
 pt-BR=Algumas GPUs são conhecidas por terem uma alta probabilidade de causar problemas sérios (travamentos do sistema) ao acessar seus dispositivos I2C (VRMs). Se essas GPUs forem detectadas pelo HWiNFO, por segurança, ele desabilita automaticamente o acesso I2C, independentemente da configuração de Suporte I2C da GPU. Ativar esta opção forçará o HWiNFO a substituir esta ação de segurança, portanto, em tais GPUs o acesso I2C será executado. Atualmente, esta ação de segurança é realizada nestas GPUs:\nAMD Radeon R9 Fury / Nano / Pro series, AMD Radeon Vega series\n\nAtive esta opção com CUIDADO (ou seja, se o monitoramento GPU VRM for necessário) porque nas GPUs acima isso pode causar uma falha do sistema!
@@ -24222,7 +24222,7 @@ he=ידוע כי לחלק מהמעבדים הגרפיים יש סבירות גב
 
 {{Settings}}
 en=Prefer NVAPI for GPU I2C access on nVidia cards (instead of direct low-level IO).\nRecommended: ENABLED
-fr=Préférez NVAPI pour l'accès GPU I2C sur les cartes nVidia (au lieu des E/S directes de bas niveau).\nRecommandé : ACTIVÉ
+fr=Préférez NVAPI pour l'accès GPU I2C sur les cartes nVidia (au lieu des E/S directes de bas niveau).\nRecommandé : ACTIVÉ
 de=NVAPI bevorzugen für den GPU-I2C-Zugriff auf nVidia-Karten (anstelle von direkter Low-Level-E/A).\nEmpfohlen: AKTIVIERT
 es=Prefiere NVAPI para el acceso GPU I2C en tarjetas nVidia (en lugar de IO directo de bajo nivel).\nRecomendado: HABILITADO
 pt-BR=Prefira NVAPI para acesso GPU I2C em placas nVidia (em vez de E / S de baixo nível direto).\nRecomendado: HABILITADO
@@ -24250,7 +24250,7 @@ he=העדיפו NVAPI עבור גישה ל-GPU I2C בכרטיסי nVidia (במק
 
 {{Settings}}
 en=Prefer ADL for GPU I2C access on AMD/ATI cards (instead of direct low-level IO).\nDefault and recommended value: Disabled (ADL is not reliable enough)
-fr=Préférez l'ADL pour l'accès GPU I2C sur les cartes AMD/ATI (au lieu des E/S directes de bas niveau).\nValeur par défaut et recommandée : Disabled (ADL n'est pas assez fiable)
+fr=Préférez l'ADL pour l'accès GPU I2C sur les cartes AMD/ATI (au lieu des E/S directes de bas niveau).\nValeur par défaut et recommandée : Disabled (ADL n'est pas assez fiable)
 de=Bevorzugen von ADL für den GPU-I2C-Zugriff auf AMD/ATI-Karten (statt direkter Low-Level-E/A).\nStandard- und empfohlener Wert: Deaktiviert (ADL ist nicht zuverlässig genug)
 es=Prefiere ADL para el acceso GPU I2C en tarjetas AMD / ATI (en lugar de IO directo de bajo nivel).\nValor predeterminado y recomendado: deshabilitado (ADL no es lo suficientemente confiable)
 pt-BR=Prefira ADL para acesso GPU I2C em placas AMD / ATI (em vez de E / S de baixo nível direto).\nValor padrão e recomendado: desativado (ADL não é confiável o suficiente)
@@ -24334,7 +24334,7 @@ he=נקה את התוכן של מטמון GPU I2C. עשוי להיות שימו�
 
 {{Settings}}
 en=Select SMBus device address which should not be accessed.\nSome mainboards may cause issues when certain SMBus devices are accessed (even a read request).\n\nThis box disables/enables 7-bit SMBus Device Address:
-fr=Sélectionnez l'adresse du périphérique SMBus qui ne doit pas être accessible.\nCertaines cartes mères peuvent causer des problèmes lors de l'accès à certains périphériques SMBus (même une demande de lecture).\n\nCette case désactive/active l'adresse du périphérique SMBus 7 bits :
+fr=Sélectionnez l'adresse du périphérique SMBus qui ne doit pas être accessible.\nCertaines cartes mères peuvent causer des problèmes lors de l'accès à certains périphériques SMBus (même une demande de lecture).\n\nCette case désactive/active l'adresse du périphérique SMBus 7 bits :
 de=Wählen Sie die SMBus-Geräteadresse aus, auf die nicht zugegriffen werden soll.\nEinige Mainboards können Probleme verursachen, wenn auf bestimmte SMBus-Geräte zugegriffen wird (sogar eine Leseanforderung).\n\nDieses Feld deaktiviert/aktiviert die 7-Bit-SMBus-Geräteadresse:
 es=Seleccione la dirección del dispositivo SMBus a la que no se debe acceder.\nAlgunas placas base pueden causar problemas cuando se accede a ciertos dispositivos SMBus (incluso una solicitud de lectura).\n\nEsta casilla deshabilita / habilita la dirección del dispositivo SMBus de 7 bits:
 pt-BR=Selecione o endereço do dispositivo SMBus que não deve ser acessado.\nAlgumas placas-mãe podem causar problemas quando certos dispositivos SMBus são acessados (até mesmo uma solicitação de leitura).\n\nEsta caixa desativa / ativa o endereço do dispositivo SMBus de 7 bits:
@@ -25118,7 +25118,7 @@ he=העדפות HWiNFO נוקו.
 
 {{Settings}}
 en=Shared Memory Support\n[12-HOUR LIMIT]
-fr=Prise en charge de la mémoire partagée\n[12 HOUR LIMIT]
+fr=Prise en charge de la mémoire partagée\n[12 HOUR LIMIT]
 de=Shared Memory-Unterstützung\n[12-STUNDEN-LIMIT]
 es=Compatibilidad con memoria compartida\n[LÍMITE DE 12 HORAS]
 pt-BR=Suporte de memória compartilhada\n[LIMITE DE 12 HORAS]
@@ -27669,7 +27669,7 @@ he=יחידות בכתב עילי
 
 {{Settings}}
 en=OSD Status: Not Running
-fr=État de l'OSD : ne fonctionne pas
+fr=État de l'OSD : ne fonctionne pas
 de=OSD-Status: Läuft nicht
 es=Estado de OSD: No se está ejecutando
 pt-BR=Status OSD: Não Executando
@@ -27697,7 +27697,7 @@ he=מצב OSD: לא פועל
 
 {{Settings}}
 en=OSD Status: Running
-fr=État de l'OSD : en cours d'exécution
+fr=État de l'OSD : en cours d'exécution
 de=OSD-Status: Läuft
 es=Estado de OSD: en ejecución
 pt-BR=Status OSD: Em execução
@@ -28202,7 +28202,7 @@ he=הפעל רק פעם אחת
 
 {{Settings}}
 en=Note:\n%v program argument = actual sensor value\n%s program argument = actual sensor name
-fr=Remarque :\n%v argument du programme = valeur réelle du capteur\n%s argument du programme = nom réel du capteur
+fr=Remarque :\n%v argument du programme = valeur réelle du capteur\n%s argument du programme = nom réel du capteur
 de=Hinweis:\n%v Programmargument = aktueller Sensorwert\n%s Programmargument = aktueller Sensorname
 es=Nota:\n%v argumento del programa = valor real del sensor\n%s argumento del programa = nombre real del sensor
 pt-BR=Nota:\n%v argumento do programa = valor real do sensor\n%s argumento do programa = nome real do sensor
@@ -29846,7 +29846,7 @@ sk=Rozhranie
 hu=Felület
 pl=Interfejs
 sv=Gränssnitt
-fi=Käyttöliittymä
+fi=Liitäntä
 no=Grensesnitt
 el=Διεπαφή
 tr=Arayüz
@@ -30219,7 +30219,7 @@ he=שעון אפקטיבי ממוצע מגה-הרץ
 
 {{Main}}
 en=List of Drives\nInterface capability and current rate\nSMART status:\n Green = OK\n Yellow = Warning\n Red = Failure
-fr=Liste des lecteurs\nCapacité de l'interface et débit actuel\nÉtat SMART :\n Vert = OK\n Jaune = Avertissement\n Rouge = Échec
+fr=Liste des lecteurs\nCapacité de l'interface et débit actuel\nÉtat SMART :\n Vert = OK\n Jaune = Avertissement\n Rouge = Échec
 de=Liste der Laufwerke\nSchnittstellenfähigkeit und aktuelle Rate\nSMART-Status:\n Grün = OK\n Gelb = Warnung\n Rot = Fehler
 es=Lista de unidades\nCapacidad de interfaz y velocidad actual\nEstado SMART:\nVerde = OK\nAmarillo = Advertencia\nRojo = Fallo
 pt-BR=Lista de unidades\nCapacidade da interface e taxa atual\nEstado do SMART:\nVerde = OK\nAmarelo = Aviso\nVermelho = Falha
@@ -35064,7 +35064,7 @@ he=קצב זרימת בלוק מים
 
 {{Sensors}}
 en=Do you want to also reset the VCore Latch Min/Max values?
-fr=Voulez-vous également réinitialiser les valeurs VCore Latch Min/Max ?
+fr=Voulez-vous également réinitialiser les valeurs VCore Latch Min/Max ?
 de=Möchten Sie auch die VCore Latch Min/Max-Werte zurücksetzen?
 es=¿Desea restablecer también los valores mín. / Máx. De VCore Latch?
 pt-BR=Você deseja redefinir também os valores VCore Latch Min / Max?
@@ -38062,7 +38062,7 @@ he=תדר חיבור צלצול נקטע עקב מגבלה תרמית ממוצע
 
 {{Sensors}}
 en=RING: VR Thermal Alert
-fr=RING: Alerte thermique VR
+fr=RING: Alerte thermique VR
 de=RING: VR-Thermoalarm
 es=RING: Alerta térmica VR
 pt-BR=RING: Alerta térmico VR
@@ -39098,7 +39098,7 @@ he=CPU (ערך משוקלל)
 
 {{Settings}}
 en=ERROR: Internet connection failed.
-fr=ERREUR : la connexion Internet a échoué.
+fr=ERREUR : la connexion Internet a échoué.
 de=FEHLER: Internetverbindung fehlgeschlagen.
 es=ERROR: Falló la conexión a Internet.
 pt-BR=ERRO: Falha na conexão com a Internet.
@@ -39126,7 +39126,7 @@ he=שגיאה: חיבור לאינטרנט נכשל.
 
 {{Settings}}
 en=ERROR: Failed to get version information
-fr=ERREUR : Échec de l'obtention des informations sur la version
+fr=ERREUR : Échec de l'obtention des informations sur la version
 de=FEHLER: Versions-Informationen konnten nicht abgerufen werden
 es=ERROR: no se pudo obtener la información de la versión
 pt-BR=ERROR: Falha ao obter informações sobre a versão
@@ -39182,7 +39182,7 @@ he=אחזור מידע גרסה
 
 {{Settings}}
 en=ERROR: Failed to get package information
-fr=ERREUR : Échec de l'obtention des informations sur le package
+fr=ERREUR : Échec de l'obtention des informations sur le package
 de=FEHLER: Paketinformationen konnten nicht abgerufen werden
 es=ERROR: no se pudo obtener la información del paquete
 pt-BR=ERROR: Falha ao obter informações do pacote
@@ -39210,7 +39210,7 @@ he=שגיאה: קבלת מידע על החבילה נכשלה
 
 {{Settings}}
 en=ERROR: Invalid version info
-fr=ERREUR : informations de version non valides
+fr=ERREUR : informations de version non valides
 de=FEHLER: Ungültige Versions-Info
 es=ERROR: información de versión no válida
 pt-BR=ERROR: informação de versão inválida
@@ -39238,7 +39238,7 @@ he=שגיאה: פרטי גרסה לא חוקיים
 
 {{Settings}}
 en=ERROR: Cannot read version info
-fr=ERREUR : Impossible de lire les informations sur la version
+fr=ERREUR : Impossible de lire les informations sur la version
 de=FEHLER: Versions-Info kann nicht gelesen werden
 es=ERROR: no se puede leer la información de la versión
 pt-BR=ERROR: Não é possível ler as informações da versão
@@ -39266,7 +39266,7 @@ he=שגיאה: לא ניתן לקרוא את פרטי הגרסה
 
 {{Settings}}
 en=ERROR: Cannot retrieve version link
-fr=ERREUR : impossible de récupérer le lien de version
+fr=ERREUR : impossible de récupérer le lien de version
 de=FEHLER: Versions-Link kann nicht abgerufen werden
 es=ERROR: No se puede recuperar el enlace de la versión
 pt-BR=ERROR: Não é possível recuperar o link da versão
@@ -39294,7 +39294,7 @@ he=שגיאה: לא ניתן לאחזר קישור לגרסה
 
 {{Settings}}
 en=ERROR: Invalid version link
-fr=ERREUR : lien de version non valide
+fr=ERREUR : lien de version non valide
 de=FEHLER: Ungültiger Versions-Link
 es=ERROR: enlace de versión no válido
 pt-BR=ERROR: link de versão inválido
@@ -39322,7 +39322,7 @@ he=שגיאה: קישור גרסה לא חוקי
 
 {{Settings}}
 en=ERROR: Error creating temporary folder.
-fr=ERREUR : Erreur lors de la création du dossier temporaire.
+fr=ERREUR : Erreur lors de la création du dossier temporaire.
 de=FEHLER: Fehler beim Erstellen des temporären Ordners.
 es=ERROR: Error al crear la carpeta temporal.
 pt-BR=ERROR: Erro ao criar pasta temporária.
@@ -39378,7 +39378,7 @@ he=מאחזר חבילת עדכון..
 
 {{Settings}}
 en=ERROR: Failed to get package
-fr=ERREUR : Échec de l'obtention du package
+fr=ERREUR : Échec de l'obtention du package
 de=FEHLER: Paket konnte nicht abgerufen werden
 es=ERROR: no se pudo obtener el paquete
 pt-BR=ERRO: Falha ao obter o pacote
@@ -39406,7 +39406,7 @@ he=שגיאה: קבלת החבילה נכשלה
 
 {{Settings}}
 en=ERROR: Failed to get package information
-fr=ERREUR : Échec de l'obtention des informations sur le package
+fr=ERREUR : Échec de l'obtention des informations sur le package
 de=FEHLER: Paket-Informationen konnten nicht abgerufen werden
 es=ERROR: no se pudo obtener la información del paquete
 pt-BR=ERROR: Falha ao obter informações do pacote
@@ -39434,7 +39434,7 @@ he=שגיאה: קבלת מידע על החבילה נכשלה
 
 {{Settings}}
 en=ERROR: Invalid package
-fr=ERREUR : package non valide
+fr=ERREUR : package non valide
 de=FEHLER: Ungültiges Paket
 es=ERROR: paquete inválido
 pt-BR=ERROR: pacote inválido
@@ -39462,7 +39462,7 @@ he=שגיאה: חבילה לא חוקית
 
 {{Settings}}
 en=ERROR: Not enough memory
-fr=ERREUR : mémoire insuffisante
+fr=ERREUR : mémoire insuffisante
 de=FEHLER: Nicht genügend Speicher
 es=ERROR: No hay suficiente memoria
 pt-BR=ERROR: Memória insuficiente
@@ -39490,7 +39490,7 @@ he=שגיאה: אין מספיק זיכרון
 
 {{Settings}}
 en=ERROR: Error creating package file.
-fr=ERREUR : Erreur lors de la création du fichier de package.
+fr=ERREUR : Erreur lors de la création du fichier de package.
 de=FEHLER: Fehler beim Erstellen der Paket-Datei.
 es=ERROR: Error al crear el archivo de paquete.
 pt-BR=ERRO: Erro ao criar arquivo de pacote.
@@ -39602,7 +39602,7 @@ he=שגיאה בכתיבת חבילה לדיסק
 
 {{Settings}}
 en=ERROR: Download failed.
-fr=ERREUR : le téléchargement a échoué.
+fr=ERREUR : le téléchargement a échoué.
 de=FEHLER: Download fehlgeschlagen.
 es=ERROR: Falló la descarga.
 pt-BR=ERROR: Download falhou.
@@ -39658,7 +39658,7 @@ he=מפרק...
 
 {{Settings}}
 en=ERROR: Failed to unpack update package
-fr=ERREUR : Échec du déballage du package de mise à jour
+fr=ERREUR : Échec du déballage du package de mise à jour
 de=FEHLER: Update-Paket konnte nicht entpackt werden
 es=ERROR: no se pudo descomprimir el paquete de actualización
 pt-BR=ERRO: Falha ao descompactar pacote de atualização
@@ -40330,7 +40330,7 @@ he=בחר עדכון גרסת
 
 {{Settings}}
 en=Are you sure you want to restore the original item order ?
-fr=Êtes-vous sûr de vouloir restaurer la commande d'articles d'origine ?
+fr=Êtes-vous sûr de vouloir restaurer la commande d'articles d'origine ?
 de=Möchten Sie die ursprüngliche Artikelreihenfolge wirklich wiederherstellen?
 es=¿Está seguro de que desea restaurar el orden del artículo original?
 pt-BR=Tem certeza de que deseja restaurar o pedido original do item?
@@ -40386,7 +40386,7 @@ he=לְאַשֵׁר
 
 {{Settings}}
 en=Disabling fixed item order will give full control over sensor item placement.\nIf disabled, HWiNFO will no longer automatically maintain order of sensor items, thus sensor values can also be placed under a different sensor heading.\nIf a new sensor/value appears during runtime, it will be placed at the end of the list instead of the respective sensor.\n\nDo you want to disable fixed item order?
-fr=La désactivation de l'ordre des éléments fixes donnera un contrôle total sur le placement des éléments du capteur.\nSi désactivé, HWiNFO ne maintiendra plus automatiquement l'ordre des éléments du capteur, ainsi les valeurs du capteur peuvent également être placées sous un en-tête de capteur différent.\nSi un nouveau capteur/valeur apparaît pendant runtime, il sera placé à la fin de la liste au lieu du capteur respectif.\n\nVoulez-vous désactiver l'ordre des éléments fixes ?
+fr=La désactivation de l'ordre des éléments fixes donnera un contrôle total sur le placement des éléments du capteur.\nSi désactivé, HWiNFO ne maintiendra plus automatiquement l'ordre des éléments du capteur, ainsi les valeurs du capteur peuvent également être placées sous un en-tête de capteur différent.\nSi un nouveau capteur/valeur apparaît pendant runtime, il sera placé à la fin de la liste au lieu du capteur respectif.\n\nVoulez-vous désactiver l'ordre des éléments fixes ?
 de=Das Deaktivieren der festen Artikelreihenfolge gibt die volle Kontrolle über die Platzierung der Sensorelemente.\nWenn es deaktiviert ist, behält HWiNFO die Reihenfolge der Sensorelemente nicht mehr automatisch bei, daher können Sensorwerte auch unter einer anderen Sensorüberschrift platziert werden.\nWenn ein neuer Sensor/Wert erscheint während Laufzeit, wird er am Ende der Liste anstelle des jeweiligen Sensors platziert.\n\nMöchten Sie die feste Artikelreihenfolge deaktivieren?
 es=Deshabilitar el orden de los elementos fijos dará un control total sobre la ubicación de los elementos del sensor.\nSi está deshabilitado, HWiNFO ya no mantendrá automáticamente el orden de los elementos del sensor, por lo que los valores del sensor también se pueden colocar bajo un encabezado de sensor diferente.\nSi aparece un nuevo sensor / valor durante tiempo de ejecución, se colocará al final de la lista en lugar del sensor respectivo.\n\n¿Desea deshabilitar el orden de los artículos fijos?
 pt-BR=Desativar o pedido de item fixo proporcionará controle total sobre a colocação do item do sensor.\nSe desativado, o HWiNFO não manterá mais automaticamente o pedido dos itens do sensor, portanto, os valores do sensor também podem ser colocados sob um cabeçalho de sensor diferente.\nSe um novo sensor / valor aparecer durante tempo de execução, ele será colocado no final da lista em vez do respectivo sensor.\n\nVocê deseja desativar o pedido de item fixo?
@@ -40414,7 +40414,7 @@ he=השבתת הזמנה קבועה של פריט תעניק שליטה מלאה
 
 {{Settings}}
 en=Item order is currently fixed. In order to move items it needs to be unlocked.\nDisabling fixed item order will give full control over sensor item placement.\nIf disabled, HWiNFO will no longer automatically maintain order of sensor items, thus sensor values can also be placed under a different sensor heading.\nIf a new sensor/value appears during runtime, it will be placed at the end of the list instead of the respective sensor.\n\nDo you want to disable fixed item order and move items?
-fr=L'ordre des articles est actuellement fixe. Pour déplacer des éléments, il doit être déverrouillé.\nLa désactivation de l'ordre des éléments fixes donnera un contrôle total sur le placement des éléments du capteur.\nSi désactivé, HWiNFO ne maintiendra plus automatiquement l'ordre des éléments du capteur, donc les valeurs du capteur peuvent également être placées sous un autre cap du capteur.\nSi un nouveau capteur/valeur apparaît pendant l'exécution, il sera placé à la fin de la liste au lieu du capteur respectif.\n\nVoulez-vous désactiver l'ordre fixe des éléments et déplacer les éléments ?
+fr=L'ordre des articles est actuellement fixe. Pour déplacer des éléments, il doit être déverrouillé.\nLa désactivation de l'ordre des éléments fixes donnera un contrôle total sur le placement des éléments du capteur.\nSi désactivé, HWiNFO ne maintiendra plus automatiquement l'ordre des éléments du capteur, donc les valeurs du capteur peuvent également être placées sous un autre cap du capteur.\nSi un nouveau capteur/valeur apparaît pendant l'exécution, il sera placé à la fin de la liste au lieu du capteur respectif.\n\nVoulez-vous désactiver l'ordre fixe des éléments et déplacer les éléments ?
 de=Artikelreihenfolge ist derzeit festgelegt. Um Gegenstände zu verschieben, muss es entsperrt werden.\nDas Deaktivieren der festen Gegenstandsreihenfolge gibt die volle Kontrolle über die Platzierung der Sensorgegenstände.\nWenn es deaktiviert ist, behält HWiNFO die Reihenfolge der Sensorgegenstände nicht mehr automatisch bei, daher können Sensorwerte auch unter einer anderen platziert werden Sensorüberschrift.\nWenn während der Laufzeit ein neuer Sensor/Wert erscheint, wird dieser anstelle des entsprechenden Sensors am Ende der Liste platziert.\n\nMöchten Sie die feste Artikelreihenfolge deaktivieren und Artikel verschieben?
 es=El orden de los artículos está actualmente fijo. Para mover elementos, es necesario desbloquearlo.\nDesactivar el orden de los elementos fijos le dará un control total sobre la ubicación del elemento del sensor.\nSi está deshabilitado, HWiNFO ya no mantendrá automáticamente el orden de los elementos del sensor, por lo que los valores del sensor también se pueden colocar en un encabezado del sensor.\nSi aparece un nuevo sensor / valor durante el tiempo de ejecución, se colocará al final de la lista en lugar del sensor respectivo.\n\n¿Desea deshabilitar el orden de elementos fijos y mover elementos?
 pt-BR=O pedido do item está corrigido no momento. Para mover itens, ele precisa ser desbloqueado.\nDesativar o pedido de item fixo dará controle total sobre a colocação do item do sensor.\nSe desativado, o HWiNFO não manterá mais automaticamente a ordem dos itens do sensor, portanto, os valores do sensor também podem ser colocados em um diferente cabeçalho do sensor.\nSe um novo sensor / valor aparecer durante o tempo de execução, ele será colocado no final da lista em vez do respectivo sensor.\n\nVocê deseja desativar a ordem de item fixo e mover itens?
@@ -40470,7 +40470,7 @@ he=ערך החיישן הגיע לסף
 
 {{Settings}}
 en=This will remove all graphs and reset their positions.\nAre you sure?
-fr=Cela supprimera tous les graphiques et réinitialisera leurs positions.\nÊtes-vous sûr ?
+fr=Cela supprimera tous les graphiques et réinitialisera leurs positions.\nÊtes-vous sûr ?
 de=Dadurch werden alle Grafiken entfernt und ihre Positionen zurückgesetzt.\nSind Sie sicher?
 es=Esto eliminará todos los gráficos y restablecerá sus posiciones.\n¿Estás seguro?
 pt-BR=Isso removerá todos os gráficos e redefinirá suas posições.\nTem certeza?
@@ -40498,7 +40498,7 @@ he=פעולה זו תסיר את כל הגרפים ויאפס את מיקומם.
 
 {{Settings}}
 en=Settings have been saved into file:
-fr=Les paramètres ont été enregistrés dans le fichier :
+fr=Les paramètres ont été enregistrés dans le fichier :
 de=Einstellungen wurden in Datei gespeichert:
 es=La configuración se ha guardado en un archivo:
 pt-BR=As configurações foram salvas no arquivo:
@@ -54506,7 +54506,7 @@ he=שדרוג מעבד:
 
 {{Main}}
 en=Socket Designation:
-fr=Désignation de la prise 
+fr=Désignation de la prise 
 de=Sockel-Bezeichnung:
 es=Designación de enchufe:
 pt-BR=Designação de soquete:
@@ -63769,7 +63769,7 @@ sk=Report
 hu=Jelentés
 pl=Raport
 sv=Rapport
-fi=Raportoi
+fi=Tallenna
 no=Rapport
 el=Έκθεση
 tr=Rapor
@@ -66073,7 +66073,7 @@ he=ספירת חסימות שמורות בשימוש (סה"כ):
 
 {{SMART}}
 en=Unused Reserved Block Count (Total):
-fr=Nombre de blocs réservés inutilisés (total) 
+fr=Nombre de blocs réservés inutilisés (total) 
 de=Anzahl ungenutzter reservierter Blöcke (Gesamt):
 es=Recuento de bloques reservados no utilizados (total):
 pt-BR=Contagem de blocos reservados não utilizados (total):
@@ -72688,7 +72688,7 @@ he=חריגה ממגבלת הזמן של זיכרון משותף של HWiNFO
 
 {{}}
 en=HWiNFO64 Shared Memory limit of 12 hours has been exceeded and will be deactivated.\nUpgrade to HWiNFO64 Pro to remove this limit or enable Shared Memory Support again.
-fr=La limite de mémoire partagée HWiNFO64 de 12 heures a été dépassée et sera désactivée.\nMettre à niveau vers HWiNFO64 Pro pour supprimer cette limite ou réactiver la prise en charge de la mémoire partagée.
+fr=La limite de mémoire partagée HWiNFO64 de 12 heures a été dépassée et sera désactivée.\nMettre à niveau vers HWiNFO64 Pro pour supprimer cette limite ou réactiver la prise en charge de la mémoire partagée.
 de=Das HWiNFO64 Shared-Memory-Limit von 12 Stunden wurde überschritten und wird deaktiviert.\nFühren Sie ein Upgrade auf HWiNFO64 Pro durch um dieses Limit zu entfernen, oder aktivieren Sie die Shared-Memory-Unterstützung erneut.
 es=Se superó el límite de 12 horas de memoria compartida de HWiNFO64 y se desactivará.\nActualice a HWiNFO64 Pro para eliminar este límite o habilitar de nuevo la compatibilidad con memoria compartida.
 pt-BR=O limite de memória compartilhada do HWiNFO64 de 12 horas foi excedido e será desativado.\nAtualize para o HWiNFO64 Pro para remover esse limite ou ative o suporte à memória compartilhada novamente.
