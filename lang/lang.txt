@@ -1831,6 +1831,34 @@ el=Χρονισμοί μνήμης
 tr=Bellek Zamanlamaları
 he=תזמוני זיכרון
 
+{{Main}}
+en=Memory Timings
+fr=Temps de mémoire
+de=Speicher-Timings
+es=Tiempos de memoria
+pt-BR=Tempos da memória
+it=Timing memoria
+nl=Geheugentijden
+da=Hukommelsestider
+zh-CN=内存时序
+zh-TW=記憶體時序
+ja=メモリタイミング
+ko=메모리 타이밍
+vi=Thời gian bộ nhớ
+ar=توقيت الذاكرة
+ru=Тайминги памяти
+uk=Таймінги пам'яті
+cs=Časování pamětí
+sk=Časovanie pamätí
+hu=Memória időzítések
+pl=Taktowanie pamięci
+sv=Minnestider
+fi=Muistin ajoitukset
+no=Minnetider
+el=Χρονισμοί μνήμης
+tr=Bellek Zamanlamaları
+he=תזמוני זיכרון
+
 {{Sensors}}
 en=This sensor provides general and operating system related information.
 fr=Ce capteur fournit des informations générales et relatives au système d'exploitation.
