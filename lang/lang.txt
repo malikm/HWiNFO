@@ -5704,8 +5704,9 @@ el=Ελεγκτής μνήμης
 tr=Bellek Denetleyicisi
 he=בקר זיכרון
 
-{{SUBST}}
-en=Memory
+; "Memory" in System Summary - GPU - Clocks - Memory; special case translation
+{{}}
+en=GPUMemory
 fr=Mémoire
 de=Speicher
 es=Memoria
@@ -5713,7 +5714,7 @@ pt-BR=Memória
 it=Memoria
 nl=Geheugen
 da=Hukommelse
-zh-CN=内存
+zh-CN=显存
 zh-TW=記憶體
 ja=メモリ
 ko=메모리
@@ -5732,36 +5733,7 @@ el=Μνήμη
 tr=Hafıza
 he=זיכרון
 
-{{VideoMemory}}
-en=Video Memory
-fr=Mémoire graphique
-de=Grafikspeicher
-es=Memoria gráfica
-pt-BR=Memória gráfica
-it=Memoria grafica
-nl=Grafisch geheugen
-da=Grafisk hukommelse
-zh-CN=显存
-zh-TW=圖形記憶體
-ja=グラフィックス メモリ
-ko=그래픽 메모리
-vi=Bộ nhớ đồ họa
-ar=ذاكرة الرسومات
-ru=Графическая память
-uk=Графічна пам'ять
-cs=Grafická paměť
-sk=Grafická pamäť
-hu=Grafikus memória
-pl=Pamięć graficzna
-sv=Grafikminne
-fi=Grafiikka muisti
-no=Grafikk minne
-el=Μνήμη γραφικών
-tr=Grafik Belleği
-he=זיכרון גרפי
-
-; "Memory" in System Summary - GPU - Clocks - Memory
-{{VideoMemory}}
+{{SUBST}}
 en=Memory
 fr=Mémoire
 de=Speicher
@@ -5770,7 +5742,7 @@ pt-BR=Memória
 it=Memoria
 nl=Geheugen
 da=Hukommelse
-zh-CN=显存
+zh-CN=内存
 zh-TW=記憶體
 ja=メモリ
 ko=메모리
