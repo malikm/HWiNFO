@@ -8202,6 +8202,35 @@ el=Αυτός είναι ένας βοηθητικός αισθητήρας GPU.
 tr=Bu yardımcı bir GPU sensörüdür.
 he=זהו חיישן GPU עזר.
 
+; %d means variable and %d is hardcoded.
+{{SUBST}}
+en=[PCI Bus %d, Device %d, Function %d]
+fr=[PCI Bus %d, Device %d, Function %d]
+de=[PCI Bus %d, Device %d, Function %d]
+es=[PCI Bus %d, Device %d, Function %d]
+pt-BR=[Barramento PCI %d, dispositivo %d, função %d]
+it=[Bus PCI %d, dispositivo %d, funzione %d]
+es=[PCI Bus %d, Device %d, Function %d]
+es=[PCI Bus %d, Device %d, Function %d]
+zh-CN=[PCI总线%d，设备%d，功能%d]
+zh-TW=[PCI匯流排%d，裝置%d，功能%d]
+ja=[PCIバス%d、デバイス%d、機能%d]
+ko=[PCI 버스 %d, 장치 %d, 기능 %d]
+vi=[PCI Bus %d, Device %d, Function %d]
+ar=[PCI Bus %d, Device %d, Function %d]
+ru=[PCI Bus %d, Device %d, Function %d]
+uk=[PCI Bus %d, Device %d, Function %d]
+cs=[PCI Bus %d, Device %d, Function %d]
+sk=[PCI Bus %d, Device %d, Function %d]
+hu=[PCI Bus %d, Device %d, Function %d]
+pl=[PCI Bus %d, Device %d, Function %d]
+sv=[PCI Bus %d, Device %d, Function %d]
+fi=[PCI Bus %d, Device %d, Function %d]
+no=[PCI Bus %d, Device %d, Function %d]
+el=[PCI Bus %d, Device %d, Function %d]
+tr=[PCI Bus %d, Device %d, Function %d]
+he=[PCI Bus %d, Device %d, Function %d]
+
 {{SUBST}}
 en=[PCI Bus
 fr=[PCI Bus
@@ -8214,7 +8243,7 @@ da=[PCI Bus
 zh-CN=[PCI总线
 zh-TW=[PCI匯流排
 ja=[PCIバス
-ko=[PCI Bus
+ko=[PCI 버스
 vi=[PCI Bus
 ar=[PCI Bus
 ru=[PCI Bus
@@ -8242,7 +8271,7 @@ da=, Device
 zh-CN=，设备
 zh-TW=，裝置
 ja=、デバイス
-ko=, Device
+ko=, 장치
 vi=, Device
 ar=, Device
 ru=, Device
@@ -8270,7 +8299,7 @@ da=, Function
 zh-CN=，功能
 zh-TW=，功能
 ja=、機能
-ko=, Function
+ko=, 기능
 vi=, Function
 ar=, Function
 ru=, Function
@@ -16042,6 +16071,7 @@ el=Χρήση του κινητήρα GPU Graphics όπως αναφέρεται
 tr=Direct 3D arabirimi aracılığıyla bildirildiği şekliyle GPU Graphics motorunun kullanımı.
 he=ניצול מנוע ה-GPU Graphics כפי שדווח באמצעות ממשק תלת מימד ישיר.
 
+; %s means variable and %s is hardcoded.
 {{Sensors}}
 en=Utilization of the %s engine as reported via Direct 3D interface.
 fr=Utilisation du moteur %s tel que rapporté via l'interface Direct 3D.
@@ -28493,10 +28523,10 @@ nl=Opmerking:\n%v programma-argument = actuele sensorwaarde\n%s programma-argume
 da=Bemærk:\n%v programargument = faktisk sensorværdi\n%s programargument = faktisk sensornavn
 zh-CN=注意：\n%v 程序参数 = 实际传感器值\n%s 程序参数 = 实际传感器名称
 zh-TW=注意：\n%v 程式參數 = 實際感測器值\n%s 程式參數 = 實際感測器名稱
-ja=注：\n％vプログラム引数 = 実際のセンサー値\n％sプログラム引数 = 実際のセンサー名
+ja=注：\n%vプログラム引数 = 実際のセンサー値\n%sプログラム引数 = 実際のセンサー名
 ko=메모:\n%v 프로그램 인수 = 실제 센서 값\n%s 프로그램 인수 = 실제 센서 이름
 vi=Lưu ý:\n%v đối số chương trình = giá trị cảm biến thực tế\n%s đối số chương trình = tên cảm biến thực tế
-ar=ملاحظة:\n٪v وسيطة البرنامج = القيمة الفعلية للحساس\n٪s وسيطة البرنامج = اسم المستشعر الفعلي
+ar=ملاحظة:\n%v وسيطة البرنامج = القيمة الفعلية للحساس\n%s وسيطة البرنامج = اسم المستشعر الفعلي
 ru=Примечание:\nаргумент программы %v = фактическое значение датчика\nаргумент программы %s = фактическое имя датчика
 uk=Примітка:\nаргумент програми %v = фактичне значення датчика\nаргумент програми %s = фактичне ім'я датчика
 cs=Poznámka:\n%v argument programu = aktuální hodnota senzoru\n%s argument programu = aktuální název senzoru
@@ -67118,8 +67148,8 @@ pt-BR=Desgaste de mídia de carga de trabalho cronometrado:
 it=Usura dei supporti per carichi di lavoro a tempo:
 nl=Mediaslijtage met getimede werkbelasting:
 da=Timed Workload Media Wear:
-zh-CN=一定时间内的工作负载的介质损耗：
-zh-TW=一定時間內的工作負載的介質損耗：
+zh-CN=一定时间内工作负载的介质损耗：
+zh-TW=一定時間內工作負載的介質損耗：
 ja=一定時間ワークロードのメディア消耗：
 ko=시간 초과 작업 미디어 마모:
 vi=Thời gian Khối lượng công việc Mang theo Phương tiện:
@@ -67146,8 +67176,8 @@ pt-BR=Proporção de leitura/gravação do host de carga de trabalho cronometrad
 it=Rapporto di lettura/scrittura dell'host del carico di lavoro a tempo:
 nl=Lees-/schrijfratio van host voor getimede werkbelasting:
 da=Tidsbestemt arbejdsbelastning Værts læse-/skriveforhold:
-zh-CN=一定时间内的工作负载的主机读/写量之比：
-zh-TW=一定時間內的工作負載的主機讀/寫量之比率：
+zh-CN=一定时间内工作负载的主机读/写量之比：
+zh-TW=一定時間內工作負載的主機讀/寫量之比率：
 ja=一定時間ワークロードのホスト読み取り/書き込み比率：
 ko=시간이 지정된 워크로드 호스트 읽기/쓰기 비율:
 vi=Tỷ lệ đọc / ghi trên máy chủ lưu trữ khối lượng công việc được định thời:
@@ -67174,8 +67204,8 @@ pt-BR=Temporizador de carga de trabalho cronometrado:
 it=Temporizzatore del carico di lavoro:
 nl=Timer voor getimede werkbelasting:
 da=Tidsindstillet arbejdsbelastningstimer:
-zh-CN=一定时间内的工作负载的计时器：
-zh-TW=一定時間內的工作負載的計時器：
+zh-CN=一定时间内工作负载的计时器：
+zh-TW=一定時間內工作負載的計時器：
 ja=一定時間ワークロードのタイマー：
 ko=시간 초과 작업 부하 타이머:
 vi=Bộ đếm thời gian khối lượng công việc được định thời:
