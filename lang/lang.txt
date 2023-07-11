@@ -8269,9 +8269,9 @@ pt-BR=[Barramento PCI %d, dispositivo %d, função %d]
 it=[Bus PCI %d, dispositivo %d, funzione %d]
 es=[PCI Bus %d, Device %d, Function %d]
 es=[PCI Bus %d, Device %d, Function %d]
-zh-CN=[PCI总线%d，设备%d，功能%d]
-zh-TW=[PCI匯流排%d，裝置%d，功能%d]
-ja=[PCIバス%d、デバイス%d、機能%d]
+zh-CN=[PCI总线 %d，设备 %d，功能 %d]
+zh-TW=[PCI匯流排 %d，裝置 %d，功能 %d]
+ja=[PCIバス %d、デバイス %d、機能 %d]
 ko=[PCI 버스 %d, 장치 %d, 기능 %d]
 vi=[PCI Bus %d, Device %d, Function %d]
 ar=[PCI Bus %d, Device %d, Function %d]
@@ -26251,8 +26251,8 @@ pt-BR=Gravar direto no disco\n(sem buffer)
 it=Scrivi direttamente su disco\n(nessun buffering)
 nl=Schrijf direct naar schijf\n(geen buffering)
 da=Skriv direkte til disk\n(ingen buffering)
-zh-CN=直接写入磁盘\n（无缓存）
-zh-TW=直接寫入磁碟\n（無快取）
+zh-CN=直接写入磁盘\n（不使用缓冲区）
+zh-TW=直接寫入磁碟\n（不使用緩衝區）
 ja=ディスクへのダイレクト書き込み\n（バッファなし）
 ko=디스크에 직접 쓰기\n(버퍼링 없음)
 vi=Ghi trực tiếp vào đĩa\n(Không có bộ đệm)
@@ -32779,8 +32779,8 @@ pt-BR=Determina se o sistema operacional foi inicializado no modo UEFI
 it=Determina se il sistema operativo è stato avviato in modalità UEFI
 nl=Bepaalt of het besturingssysteem is opgestart in de UEFI-modus
 da=Bestemmer, om operativsystemet er startet i UEFI-tilstand
-zh-CN=确定操作系统是否已在UEFI模式下启动
-zh-TW=確定作業系統是否已在UEFI模式下啟動
+zh-CN=确定操作系统是否在UEFI模式下启动
+zh-TW=確定作業系統是否在UEFI模式下啟動
 ja=オペレーティング システムがUEFIモードで起動したかどうかを判断します
 ko=운영 체제가 UEFI 모드로 부팅되었는지 확인합니다
 vi=Xác định xem Hệ điều hành đã khởi động ở chế độ UEFI hay chưa
@@ -32807,8 +32807,8 @@ pt-BR=Determina a capacidade de inicialização segura e o modo atual.\nGrey = N
 it=Determina la capacità di avvio protetto e la modalità attuale.\nGrigio = Non supportato dal BIOS\nRosso = Supportato dal BIOS, ma non abilitato\nVerde = Supportato e attivo (il sistema operativo viene avviato in modalità Avvio protetto)
 nl=Bepaalt de mogelijkheid voor veilig opstarten en de huidige modus.\nGrijs = Niet ondersteund door BIOS\nRood = Ondersteund door BIOS, maar niet ingeschakeld\nGroen = Ondersteund en actief (besturingssysteem wordt opgestart in de modus Veilig opstarten)
 da=Bestemmer Secure Boot-kapacitet og aktuel tilstand.\nGrå = Ikke understøttet af BIOS\nRød = Understøttet af BIOS, men ikke aktiveret\nGrøn = Understøttet og aktiv (OS startes i sikker opstartstilstand)
-zh-CN=确定安全启动功能和当前模式。\n灰色 = BIOS不支持\n红色 = BIOS支持，但未启用\n绿色 = 支持并处于启用状态（操作系统在安全启动模式下启动）
-zh-TW=確定安全開機功能和當前模式。\n灰色 = BIOS不支援\n紅色 = BIOS支援，但未啟用\n綠色 = 支援並處於啟用狀態（作業系統在安全開機模式下啟動）
+zh-CN=确定安全启动功能和当前模式。\n灰色 = BIOS不支持\n红色 = BIOS支持，但未启用\n绿色 = 支持并启用（操作系统在安全启动模式下启动）
+zh-TW=確定安全開機功能和當前模式。\n灰色 = BIOS不支援\n紅色 = BIOS支援，但未啟用\n綠色 = 支援並啟用（作業系統在安全開機模式下啟動）
 ja=セキュア ブート機能と現在のモードを決定します。\nグレー = BIOSではサポートされていません\nレッド = BIOSでサポートされていますが、有効ではありません\nグリーン = サポートされてアクティブです（OSはセキュア ブート モードで起動されます）
 ko=보안 부팅 기능 및 현재 모드를 결정합니다.\n회색 = BIOS에서 지원되지 않음\n빨간색 = BIOS에서 지원되지만 활성화되지 않음\n녹색 = 지원 및 활성(OS가 보안 부팅 모드에서 부팅됨)
 vi=Xác định khả năng Khởi động An toàn và chế độ hiện tại.\nGrey = Không được BIOS hỗ trợ\nRed = Được BIOS hỗ trợ nhưng không được bật\nGreen = Được hỗ trợ và đang hoạt động (Hệ điều hành được khởi động ở chế độ Khởi động An toàn)
@@ -32828,30 +32828,30 @@ he=קובע את יכולת האתחול המאובטח והמצב הנוכחי.
 
 {{Main}}
 en=Determines whether the Operating System detected presence of a Trusted Platform Module.\nGrey = TPM is disabled in BIOS or not present
-fr=Détermine si le système d'exploitation a détecté la présence d'un module de plate-forme sécurisée.\nGris = TPM est désactivé dans le BIOS ou n'est pas présent
-de=Bestimmt, ob das Betriebssystem das Vorhandensein eines Trusted Platform Module erkannt hat.\nGrau = TPM ist im BIOS deaktiviert oder nicht vorhanden
-es=Determina si el sistema operativo detectó la presencia de un módulo de plataforma segura.\nGrey = TPM está deshabilitado en BIOS o no está presente
-pt-BR=Determina se o sistema operacional detectou a presença de um Módulo de plataforma confiável.\nGrey = TPM está desabilitado no BIOS ou não está presente
-it=Determina se il sistema operativo ha rilevato la presenza di un Trusted Platform Module.\nGrigio = TPM è disabilitato nel BIOS o non è presente
-nl=Bepaalt of het besturingssysteem de aanwezigheid van een Trusted Platform Module heeft gedetecteerd.\nGrijs = TPM is uitgeschakeld in BIOS of niet aanwezig
-da=Bestemmer, om operativsystemet har registreret tilstedeværelsen af et Trusted Platform Module.\nGrå = TPM er deaktiveret i BIOS eller ikke til stede
-zh-CN=确定操作系统是否检测到可信平台模块的存在。\n灰色 = TPM在BIOS中被禁用或不存在
-zh-TW=確定作業系統是否偵測到信賴平台模組的存在。\n灰色 = TPM在BIOS中被禁用或不存在
+fr=Détermine si le système d'exploitation a détecté la présence d'un module de plate-forme sécurisée.\nGris = TPM est désactivé dans le BIOS, ou n'est pas présent
+de=Bestimmt, ob das Betriebssystem das Vorhandensein eines Trusted Platform Module erkannt hat.\nGrau = TPM ist im BIOS deaktiviert, oder nicht vorhanden
+es=Determina si el sistema operativo detectó la presencia de un módulo de plataforma segura.\nGrey = TPM está deshabilitado en BIOS, o no está presente
+pt-BR=Determina se o sistema operacional detectou a presença de um Módulo de plataforma confiável.\nGrey = TPM está desabilitado no BIOS, ou não está presente
+it=Determina se il sistema operativo ha rilevato la presenza di un Trusted Platform Module.\nGrigio = TPM è disabilitato nel BIOS, o non è presente
+nl=Bepaalt of het besturingssysteem de aanwezigheid van een Trusted Platform Module heeft gedetecteerd.\nGrijs = TPM is uitgeschakeld in BIOS, of niet aanwezig
+da=Bestemmer, om operativsystemet har registreret tilstedeværelsen af et Trusted Platform Module.\nGrå = TPM er deaktiveret i BIOS, eller ikke til stede
+zh-CN=确定操作系统是否检测到可信平台模块的存在。\n灰色 = TPM在BIOS中被禁用，或不存在
+zh-TW=確定作業系統是否偵測到信賴平台模組的存在。\n灰色 = TPM在BIOS中被禁用，或不存在
 ja=オペレーティング システムがトラステッド プラットフォーム モジュールの存在を検出したかどうかを判断します。\nグレー = TPMがBIOSで無効になっているか、存在しないか
-ko=운영 체제가 신뢰할 수 있는 플랫폼 모듈의 존재를 감지했는지 확인합니다.\n회색 = BIOS에서 TPM이 비활성화되어 있거나 존재하지 않습니다
+ko=운영 체제가 신뢰할 수 있는 플랫폼 모듈의 존재를 감지했는지 확인합니다.\n회색 = BIOS에서 TPM이 비활성화되어, 있거나 존재하지 않습니다
 vi=Xác định xem Hệ điều hành có phát hiện thấy sự hiện diện của Mô-đun nền tảng đáng tin cậy hay không.\nGrey = TPM bị tắt trong BIOS hay không có
 ar=تحديد ما إذا كان نظام التشغيل قد اكتشف وجود وحدة النظام الأساسي الموثوق به.\nرمادي = تم تعطيل TPM في BIOS أو عدم وجوده
-ru=Определяет, обнаружила ли операционная система наличие доверенного платформенного модуля.\nСерый = TPM отключен в BIOS или отсутствует
-uk=Визначає, чи виявила операційна система наявність довіреного платформного модуля.\nСірий = TPM відключений у BIOS або відсутній.
-cs=Určuje, zda operační systém detekoval přítomnost modulu Trusted Platform Module.\nŠedá = TPM je v systému BIOS zakázán nebo není přítomen
-sk=Určuje, či operačný systém zistil prítomnosť modulu Trusted Platform Module.\nSivá = TPM je v systéme BIOS zakázaný alebo nie je prítomný
+ru=Определяет, обнаружила ли операционная система наличие доверенного платформенного модуля.\nСерый = TPM отключен в BIOS, или отсутствует
+uk=Визначає, чи виявила операційна система наявність довіреного платформного модуля.\nСірий = TPM відключений у BIOS, або відсутній
+cs=Určuje, zda operační systém detekoval přítomnost modulu Trusted Platform Module.\nŠedá = TPM je v systému BIOS zakázán, nebo není přítomen
+sk=Určuje, či operačný systém zistil prítomnosť modulu Trusted Platform Module.\nSivá = TPM je v systéme BIOS zakázaný, alebo nie je prítomný
 hu=Meghatározza, hogy az operációs rendszer észlelte-e a Trusted Platform Module jelenlétét.\nSzürke = A TPM le van tiltva a BIOS-ban, vagy nincs jelen
-pl=Określa, czy system operacyjny wykrył obecność modułu Trusted Platform Module.\nSzary = TPM jest wyłączony w systemie BIOS lub nie jest obecny
-sv=Avgör om operativsystemet har upptäckt närvaron av en Trusted Platform Module.\nGrå = TPM är inaktiverat i BIOS eller inte närvarande
-fi=Määrittää, havaitsiko käyttöjärjestelmä Trusted Platform Module -moduulin olemassaolon.\nHarmaa = TPM on poistettu käytöstä BIOSissa tai sitä ei ole
-no=Bestemmer om operativsystemet oppdaget tilstedeværelse av en Trusted Platform Module.\nGrå = TPM er deaktivert i BIOS eller ikke til stede
+pl=Określa, czy system operacyjny wykrył obecność modułu Trusted Platform Module.\nSzary = TPM jest wyłączony w systemie BIOS, lub nie jest obecny
+sv=Avgör om operativsystemet har upptäckt närvaron av en Trusted Platform Module.\nGrå = TPM är inaktiverat i BIOS, eller inte närvarande
+fi=Määrittää, havaitsiko käyttöjärjestelmä Trusted Platform Module -moduulin olemassaolon.\nHarmaa = TPM on poistettu käytöstä BIOSissa, tai sitä ei ole
+no=Bestemmer om operativsystemet oppdaget tilstedeværelse av en Trusted Platform Module.\nGrå = TPM er deaktivert i BIOS, eller ikke til stede
 el=Καθορίζει εάν το λειτουργικό σύστημα εντόπισε την παρουσία μιας μονάδας αξιόπιστης πλατφόρμας.\nΓκρι = TPM είναι απενεργοποιημένο στο BIOS ή δεν υπάρχει
-tr=İşletim Sisteminin Güvenilir Platform Modülünün varlığını algılayıp algılamadığını belirler.\nGri = TPM, BIOS'ta devre dışı bırakıldı veya mevcut değil
+tr=İşletim Sisteminin Güvenilir Platform Modülünün varlığını algılayıp algılamadığını belirler.\nGri = TPM, BIOS'ta devre dışı bırakıldı, veya mevcut değil
 he=קובע אם מערכת ההפעלה זיהתה נוכחות של מודול פלטפורמה מהימנה.\nאפור = TPM מושבת ב-BIOS או אינו קיים
 
 {{Main}}
@@ -35161,8 +35161,8 @@ pt-BR=\n\nClique em {Desativar este sensor} para desativar a leitura deste senso
 it=\n\nFai clic su {Disabilita questo sensore} per disabilitare la lettura da questo sensore (sicuro), {Continua} se vuoi mantenerlo abilitato e leggere i dati da questo sensore.
 nl=\n\nKlik op {Deze sensor uitschakelen} om het lezen van deze sensor uit te schakelen (veilig), {Doorgaan} als u het ingeschakeld wilt houden en gegevens van deze sensor wilt lezen.
 da=\n\nKlik på {Deaktiver denne sensor} for at deaktivere læsning fra denne sensor (sikker), {Fortsæt}, hvis du vil beholde den aktiveret og læse data fra denne sensor.
-zh-CN=\n\n单击{禁用该传感器}以禁用从该传感器读取数据（安全），如果你想保持启用状态并从该传感器读取数据，请单击{继续}。
-zh-TW=\n\n點擊{禁用該感測器}以禁用從該感測器讀取資料（安全），如果你想保持啟用狀態並從該感測器讀取資料，請點擊{繼續}。
+zh-CN=\n\n单击{禁用该传感器}以禁用从该传感器读取数据（安全），如果你想保持启用并从该传感器读取数据，请单击{继续}。
+zh-TW=\n\n點擊{禁用該感測器}以禁用從該感測器讀取資料（安全），如果你想保持啟用並從該感測器讀取資料，請點擊{繼續}。
 ja=\n\nこのセンサーからの読み取りを無効にするには{このセンサーを無効にする}をクリックし（安全）、有効のままにしてこのセンサーからデータを読み取る場合は{続行}をクリックします。
 ko=\n\n이 센서에서 데이터를 읽지 않으려면 {센서 비활성화}를 클릭하고(안전), 이 센서에서 데이터를 읽으려면 {계속}을 클릭하십시오.
 vi=\n\nNhấp vào {Tắt cảm biến này} để tắt tính năng đọc từ cảm biến này (an toàn), {Tiếp tục} nếu bạn muốn bật và đọc dữ liệu từ cảm biến này.
@@ -46785,8 +46785,8 @@ pt-BR=O Microsoft Hyper-V está ativo.
 it=Microsoft Hyper-V è attivo.
 nl=Microsoft Hyper-V is actief.
 da=Microsoft Hyper-V er aktiv.
-zh-CN=Microsoft Hyper-V处于启用状态。
-zh-TW=Microsoft Hyper-V處於啟用狀態。
+zh-CN=Microsoft Hyper-V已启用。
+zh-TW=Microsoft Hyper-V已啟用。
 ja=Microsoft Hyper-Vがアクティブです。
 ko=Microsoft Hyper-V가 활성 상태입니다.
 vi=Microsoft Hyper-V đang hoạt động.
@@ -48803,10 +48803,10 @@ pt-BR=AMD Software Driver Version:
 it=AMD Software Driver Version:
 nl=AMD Software Driver Version:
 da=AMD Software Driver Version:
-zh-CN=AMD软件驱动程序版本：
-zh-TW=AMD軟體驅動程式版本：
-ja=AMDソフトウェア ドライバー バージョン：
-ko=AMD 소프트웨어 드라이버 버전:
+zh-CN=AMD Software驱动程序版本：
+zh-TW=AMD Software驅動程式版本：
+ja=AMD Softwareドライバー バージョン：
+ko=AMD Software 드라이버 버전:
 vi=AMD Software Driver Version:
 ar=AMD Software Driver Version:
 ru=AMD Software Driver Version:
@@ -48859,10 +48859,10 @@ pt-BR=Versão do driver AMD Catalyst:
 it=Versione driver AMD Catalyst:
 nl=AMD Catalyst-stuurprogrammaversie:
 da=AMD Catalyst driverversion:
-zh-CN=AMD催化剂驱动程序版本：
-zh-TW=AMD催化劑驅動程式版本：
-ja=AMDカタリスト ドライバー バージョン：
-ko=AMD 카탈리스트 드라이버 버전:
+zh-CN=AMD Catalyst驱动程序版本：
+zh-TW=AMD Catalyst驅動程式版本：
+ja=AMD Catalystドライバー バージョン：
+ko=AMD Catalyst 드라이버 버전:
 vi=Phiên bản trình điều khiển AMD Catalyst:
 ar=إصدار برنامج تشغيل AMD Catalyst:
 ru=Версия драйвера AMD Catalyst:
@@ -58360,9 +58360,9 @@ pt-BR=Codec de áudio de alta definição:
 it=Codec audio ad alta definizione:
 nl=High-definition audiocodec:
 da=High Definition Audio Codec:
-zh-CN=高清音频编解码器：
+zh-CN=高清晰音频编解码器：
 zh-TW=高保真音訊編解碼器：
-ja=HDオーディオ コーデック：
+ja=ハイ ディフィニション オーディオ コーデック：
 ko=고선명 오디오 코덱:
 vi=Codec âm thanh độ nét cao:
 ar=برنامج ترميز الصوت عالي الدقة:
@@ -61293,30 +61293,30 @@ he=גודל מגזר לוגי:
 
 {{Main}}
 en=Cache Buffer Size:
-fr=Taille du tampon de cache:
-de=Cache-Puffergröße:
-es=Tamaño del búfer de caché:
-pt-BR=Tamanho do buffer de cache:
-it=Dim. buffer cache:
-nl=Grootte cachebuffer:
-da=Cachebufferstørrelse:
-zh-CN=缓存缓冲区大小：
-zh-TW=快取緩衝區大小：
-ja=キャッシュ バッファ サイズ：
-ko=캐시 버퍼 크기:
+fr=Taille du tampon/cache:
+de=Cache/Puffergröße:
+es=Tamaño del búfer/caché:
+pt-BR=Tamanho do buffer/cache:
+it=Dim. buffer/cache:
+nl=Grootte cache/buffer:
+da=Cache/bufferstørrelse:
+zh-CN=缓存/缓冲区大小：
+zh-TW=快取/緩衝區大小：
+ja=キャッシュ/バッファ サイズ：
+ko=캐시/버퍼 크기:
 vi=Kích thước bộ đệm Cache:
 ar=حجم ذاكرة التخزين المؤقت:
-ru=Размер кэш-буфера:
-uk=Розмір кеш-буфера:
+ru=Размер кэш/буфера:
+uk=Розмір кеш/буфера:
 cs=Velikost mezipaměti:
 sk=Veľkosť vyrovnávacej pamäte:
-hu=Gyorsítótár puffer mérete:
-pl=Rozmiar bufora pamięci podręcznej:
-sv=Cachebuffertstorlek:
+hu=Gyorsítótár/puffer mérete:
+pl=Rozmiar bufora/pamięci podręcznej:
+sv=Cache/buffertstorlek:
 fi=Välimuistin puskurin koko:
-no=Bufferbufferstørrelse:
+no=Cache/bufferstørrelse:
 el=Μέγεθος προσωρινής μνήμης προσωρινής αποθήκευσης:
-tr=Önbellek Arabelleği Boyutu:
+tr=Önbellek/Arabelleği Boyutu:
 he=גודל מאגר מטמון:
 
 {{Main}}
