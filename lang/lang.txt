@@ -40392,7 +40392,7 @@ tr=Sunucuya Bağlanıyor...
 he=יוצר קשר עם השרת...
 
 {{Settings}}
-en=Failed to retrive version information from Internet.\nPlease check your network connection.
+en=Failed to retrieve version information from Internet.\nPlease check your network connection.
 fr=Échec de la récupération des informations de version sur Internet.\nVeuillez vérifier votre connexion réseau.
 de=Versions-Informationen konnten nicht aus dem Internet abgerufen werden.\nBitte überprüfen Sie Ihre Netzwerkverbindung.
 es=No se pudo recuperar la información de la versión de Internet.\nCompruebe su conexión de red.
