@@ -53028,33 +53028,33 @@ el=Not negotiated
 tr=Müzakere edilmedi
 he=Not negotiated
 
-; Original English name "Video Adapter" was not well chosen, but it's kept for backwards compatibility. It's better translated as "Graphics Adapter"
+; Original English name "Video Adapter" was not well chosen, but it's kept for backwards compatibility. It's better translated as "Graphics Card"
 {{Main}}
 en=Video Adapter
-fr=Adaptateur graphique
-de=Grafikadapter
-es=Adaptador gráfico
-pt-BR=Adaptador gráfico
+fr=Carte graphique
+de=Grafikkarte
+es=Tarjeta gráfica
+pt-BR=Placa gráfica
 it=Scheda grafica (GPU)
-nl=Grafische adapter
-da=Grafikadapter
+nl=Grafische kaart
+da=Grafikkort
 zh-CN=显卡（GPU）
 zh-TW=顯示卡（GPU）
-ja=グラフィックス アダプター（GPU）
-ko=그래픽 어댑터 (GPU)
+ja=グラフィックス カード（GPU）
+ko=그래픽 카드 (GPU)
 vi=Bộ điều hợp đồ họa
 ar=محول الرسومات
-ru=Графический адаптер
-uk=Графічний адаптер
-cs=Grafický adaptér
-sk=Grafický adaptér
-hu=Grafikus adapter
-pl=Adapter graficzna
-sv=Grafikadapter
-fi=Grafiikkasovitin
-no=Grafikkadapter
+ru=Графическая карта
+uk=Графічна карта
+cs=Grafická karta
+sk=Grafická karta
+hu=Grafikus kártya
+pl=Karta graficzna
+sv=Grafikkort
+fi=Näytönohjain
+no=Grafikkort
 el=Προσαρμογέας γραφικών
-tr=Grafik Adaptörü
+tr=Grafik Kartı
 he=מתאם גרפי
 
 {{Main}}
@@ -58717,30 +58717,30 @@ he=שעון פיקסל
 
 {{Main}}
 en=Audio Adapter:
-fr=Adaptateur audio:
-de=Audioadapter:
-es=Adaptador de sonido:
-pt-BR=Adaptador de áudio:
+fr=Carte son:
+de=Audiokarte:
+es=Tarjeta de sonido:
+pt-BR=Placa de som:
 it=Scheda audio:
-nl=Audio-adapter:
-da=Lydadapter:
-zh-CN=音频控制器：
-zh-TW=音訊控制器：
-ja=オーディオ アダプター：
-ko=오디오 어댑터:
+nl=Audiokaart:
+da=Lydkort:
+zh-CN=声卡：
+zh-TW=音效卡：
+ja=オーディオ カード：
+ko=오디오 카드:
 vi=Bộ điều hợp âm thanh:
 ar=محول الصوت:
-ru=Аудиоадаптер:
-uk=Аудіоадаптер:
-cs=Audio adaptér:
-sk=Audio adaptér:
-hu=Audio adapter:
-pl=Adapter audio:
-sv=Ljudadapter:
-fi=Audiosovitin:
-no=Lydadapter:
+ru=Аудиокарта:
+uk=Аудіокарта:
+cs=Audio karta:
+sk=Audio karta:
+hu=Audio kártya:
+pl=Karta audio:
+sv=Ljudkort:
+fi=Äänikortti:
+no=Lydkort:
 el=Προσαρμογέας ήχου:
-tr=Ses Adaptörü:
+tr=Ses Kartı:
 he=מתאם שמע:
 
 {{Main}}
