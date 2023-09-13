@@ -42240,7 +42240,7 @@ he=מספר שגיאות PCIe שנצברו.
 {{Sensors}}
 en=Frame Time
 fr=Temps de trame
-de=Rahmenzeit
+de=Framezeit
 es=Pedazo de tiempo
 pt-BR=Tempo de quadro
 it=Tempo fotogramma
@@ -74209,7 +74209,7 @@ he=&About HWiNFO...
 {{Main}}
 en=&Create
 fr=&Créer
-de=&Erschaffen
+de=&Erstellen
 es=&Create
 pt-BR=&Criar
 it=&Crea rapporto
