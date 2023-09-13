@@ -42240,7 +42240,7 @@ he=מספר שגיאות PCIe שנצברו.
 {{Sensors}}
 en=Frame Time
 fr=Temps de trame
-de=Framezeit
+de=Frame Time
 es=Pedazo de tiempo
 pt-BR=Tempo de quadro
 it=Tempo fotogramma
