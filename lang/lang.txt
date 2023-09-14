@@ -13356,7 +13356,7 @@ el=Καθορίζει τον λόγο για τον οποίο η απόδοση
 tr=GPU sürücüsü tarafından bildirilen performansın neden düştüğünü belirler.
 he=קובע את הסיבה לכך שהביצועים מופחתים כפי שדווח על ידי מנהל התקן GPU.
 
-{{Sensors}}
+{{SUBST}}
 en=Framerate
 fr=Fréquence d'images
 de=Bildrate
