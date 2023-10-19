@@ -8567,7 +8567,7 @@ el=Θερμική δίοδος GPU
 tr=GPU Termal Diyot
 he=דיודה תרמית של GPU
 
-{{SUBST}}
+{{Sensors}}
 en=GPU Thermal Sensor
 fr=Capteur thermique GPU
 de=GPU-Wärmesensor
