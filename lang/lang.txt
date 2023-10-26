@@ -1716,7 +1716,7 @@ sv=Fysiskt minne tillgängligt
 fi=Fyysistä muistia käytettävissä
 no=Fysisk minne tilgjengelig
 el=Διαθέσιμη φυσική μνήμη
-tr=Mevcut Fiziksel Bellek
+tr=Kullanılabilir Fiziksel Bellek
 he=זיכרון פיזי זמין
 
 {{Sensors}}
@@ -1940,7 +1940,7 @@ sv=Aktuell huvudminneskommando klockfrekvens. DDR-minnen rapporterar vanligtvis 
 fi=Nykyinen päämuistin komentokellotaajuus. DDR-muistit raportoivat yleensä tehokkaan datanopeuden, joka on kaksinkertainen komentokelloon verrattuna.
 no=Gjeldende hovedminnekommando klokkefrekvens. DDR-minner rapporterer vanligvis den effektive datahastigheten, som er det dobbelte av kommandoklokken.
 el=Τρέχουσα συχνότητα ρολογιού εντολών κύριας μνήμης. Οι μνήμες DDR συνήθως αναφέρουν τον πραγματικό ρυθμό δεδομένων, ο οποίος είναι διπλάσιος από το ρολόι εντολών.
-tr=Geçerli ana bellek komut saat frekansı. DDR bellekler genellikle komut saatinin iki katı olan etkin veri hızını bildirir.
+tr=Mevcut ana bellek komut saat frekansı. DDR bellekler genellikle komut saatinin iki katı olan etkin veri hızını bildirir.
 he=תדר שעון פקודת הזיכרון הראשי הנוכחי. זיכרונות DDR בדרך כלל מדווחים על קצב הנתונים האפקטיבי, שהוא כפול משעון הפקודה.
 
 {{Sensors}}
@@ -2332,7 +2332,7 @@ sv=Aktuellt huvudminne Uppdatera Återställningstid.
 fi=Nykyinen päämuisti Päivitä palautusaika.
 no=Gjeldende hovedminne Oppdater gjenopprettingstid.
 el=Τρέχουσα κύρια μνήμη Χρόνος ανάκτησης ανανέωσης.
-tr=Geçerli ana bellek Yenileme Kurtarma Süresi.
+tr=Mevcut ana bellek Yenileme Kurtarma Süresi.
 he=זיכרון ראשי נוכחי רענון זמן שחזור.
 
 {{Sensors}}
@@ -4042,7 +4042,7 @@ sv=Aktuell (omedelbar) klocka bestäms som förhållande * bussklocka vid avfrå
 fi=Nykyinen (välitön) kello määritellään suhteena * väyläkello kyselyreunassa aktiivisen tilan aikana.\nTämä arvo ei huomioi ydinten lepotilaa, joten se ei ole hyvä esitys myöhempien prosessorien erittäin dynaamisesta käyttäytymisestä.\n"(perf # n/n)" jos olemassa, määrittää ensisijaisen ydintilausnumeron. Ensimmäinen arvo määrittää Collaborative Processor Performance Control (CPPC) -järjestyksen, toinen arvo laitteiston kanssa sulautetun ensisijaisen ytimen tilausnumeron. Jos vain yksi numero on läsnä, se on laitteistoon sulautettu tilausnumero
 no=Gjeldende (øyeblikkelig) klokke bestemt som forhold * bussklokke ved polling-kanten under aktiv tilstand.\nDenne verdien respekterer ikke kjerne-hviletilstander og er derfor ikke en god representasjon av svært dynamisk oppførsel til senere CPUer.\n"(perf # n/n)" hvis tilstede bestemmer det foretrukne kjerneordrenummeret. Den første verdien spesifiserer ordren for Collaborative Processor Performance Control (CPPC), den andre verdien det maskinvaresammenslåtte foretrukne kjerneordrenummeret. Hvis bare ett nummer er til stede, er det det maskinvaresammenslåtte ordrenummeret
 el=Το τρέχον (στιγμιαίο) ρολόι προσδιορίζεται ως αναλογία * ρολόι διαύλου στην άκρη ψηφοφορίας κατά την ενεργή κατάσταση.\nΑυτή η τιμή δεν σέβεται τις βασικές καταστάσεις ύπνου και, ως εκ τούτου, δεν αποτελεί καλή αναπαράσταση της εξαιρετικά δυναμικής συμπεριφοράς μεταγενέστερων CPU.\n"(perf # n/n)" εάν υπάρχει καθορίζει τον προτιμώμενο αριθμό σειράς πυρήνα. Η πρώτη τιμή καθορίζει τη σειρά Συνεργατικού Ελέγχου Απόδοσης Επεξεργαστή (CPPC) και η δεύτερη τιμή τον προτιμώμενο αριθμό σειράς πυρήνα που έχει συγχωνευτεί με υλικό. Εάν υπάρχει μόνο ένας αριθμός, τότε αυτός είναι ο αριθμός παραγγελίας που έχει συγχωνευθεί με υλικό
-tr=Geçerli (anlık) saat, oran * olarak aktif durum sırasında yoklama kenarında veri yolu saati olarak belirlenir.\nBu değer, çekirdek uyku durumlarına uymaz ve bu nedenle sonraki CPU'ların son derece dinamik davranışının iyi bir temsili değildir.\n"(perf # n/n)" varsa, tercih edilen çekirdek sipariş numarasını belirler. İlk değer İşbirlikçi İşlemci Performans Denetimi (CPPC) sırasını belirtir, ikinci değer donanımla kaynaşmış tercih edilen çekirdek sipariş numarasını belirtir. Yalnızca bir numara varsa, bu donanımla birleştirilmiş sipariş numarasıdır.
+tr=Mevcut (anlık) saat, oran * olarak aktif durum sırasında yoklama kenarında veri yolu saati olarak belirlenir.\nBu değer, çekirdek uyku durumlarına uymaz ve bu nedenle sonraki CPU'ların son derece dinamik davranışının iyi bir temsili değildir.\n"(perf # n/n)" varsa, tercih edilen çekirdek sipariş numarasını belirler. İlk değer İşbirlikçi İşlemci Performans Denetimi (CPPC) sırasını belirtir, ikinci değer donanımla kaynaşmış tercih edilen çekirdek sipariş numarasını belirtir. Yalnızca bir numara varsa, bu donanımla birleştirilmiş sipariş numarasıdır.
 he=שעון נוכחי (מיידי) נקבע כיחס * שעון אפיק בקצה הסקר במהלך מצב פעיל.\nערך זה אינו מכבד מצבי שינה הליבה ולכן אינו ייצוג טוב של התנהגות דינמית מאוד של מעבדים מאוחרים יותר.\n"(perf # n/n)" אם קיים קובע את מספר הזמנת הליבה המועדף. הערך הראשון מציין את סדר בקרת ביצועי המעבד השיתופי (CPPC), הערך השני מספר הזמנת הליבה המועדפת בשילוב חומרה. אם קיים רק מספר אחד אז זה מספר ההזמנה הממוזג
 
 {{Sensors}}
@@ -6434,7 +6434,7 @@ sv=Aktuell klocka för Mesh/Last-Level Cache-delen av CPU:n.
 fi=Prosessorin Mesh/Last-Level Cache -osan nykyinen kello.
 no=Gjeldende klokke for Mesh/Last-Level Cache-delen av CPU.
 el=Τρέχον ρολόι του τμήματος Mesh/Last-Level Cache της CPU.
-tr=CPU'nun Mesh/Son Seviye Önbellek bölümünün geçerli saati.
+tr=CPU'nun Mesh/Son Seviye Önbellek bölümünün mevcut saati.
 he=שעון נוכחי של חלק ה-Mesh/Last-Level Cache של המעבד.
 
 {{Sensors}}
@@ -6462,7 +6462,7 @@ sv=Aktuell klocka för icke-kärndelen av CPU:n.
 fi=Prosessorin ei-ytimen osan nykyinen kello.
 no=Gjeldende klokke for ikke-kjernedelen av CPU.
 el=Τρέχον ρολόι του μη πυρήνα τμήματος της CPU.
-tr=CPU'nun çekirdek olmayan bölümünün geçerli saati.
+tr=CPU'nun çekirdek olmayan bölümünün mevcut saati.
 he=שעון נוכחי של החלק שאינו הליבה של המעבד.
 
 {{Sensors}}
@@ -6490,7 +6490,7 @@ sv=Aktuell klocka för North Bridge-delen av processorn.
 fi=CPU:n North Bridge -osan nykyinen kello.
 no=Nåværende klokke til North Bridge-delen av CPU.
 el=Τρέχον ρολόι του τμήματος North Bridge της CPU.
-tr=CPU'nun Kuzey Köprüsü bölümünün geçerli saati.
+tr=CPU'nun Kuzey Köprüsü bölümünün mevcut saati.
 he=השעון הנוכחי של החלק הצפוני של הגשר של המעבד.
 
 {{Sensors}}
@@ -6602,7 +6602,7 @@ sv=Aktuell inbyggd DRAM-klocka (EDRAM).
 fi=Nykyinen Embedded DRAM (EDRAM) -kello.
 no=Gjeldende Embedded DRAM (EDRAM)-klokke.
 el=Τρέχον ρολόι ενσωματωμένης DRAM (EDRAM).
-tr=Geçerli Gömülü DRAM (EDRAM) saati.
+tr=Mevcut Gömülü DRAM (EDRAM) saati.
 he=שעון DRAM משובץ נוכחי (EDRAM).
 
 {{Sensors}}
@@ -6714,7 +6714,7 @@ sv=Aktuell klocka för System Agent delen av CPU:n.
 fi=CPU:n System Agent osan nykyinen kello.
 no=Gjeldende klokke for System Agent delen av CPU.
 el=Τρέχον ρολόι του τμήματος System Agent της CPU.
-tr=CPU'nun System Agent bölümünün geçerli saati.
+tr=CPU'nun System Agent bölümünün mevcut saati.
 he=השעון הנוכחי של סוכן המערכת של המעבד.
 
 {{Sensors}}
@@ -7415,7 +7415,7 @@ sv=Nuvarande North Bridge klocka till buss-förhållande.
 fi=Nykyinen North Bridgen kellon ja linja-auton suhde.
 no=Gjeldende North Bridge klokke-til-buss-forhold.
 el=Τρέχουσα αναλογία ρολογιού προς λεωφορείο της Βόρειας Γέφυρας.
-tr=Geçerli Kuzey Köprüsü saatinin otobüse oranı.
+tr=Mevcut Kuzey Köprüsü saatinin otobüse oranı.
 he=יחס שעון נוכחי של גשר צפון לאוטובוס.
 
 {{Sensors}}
@@ -8365,95 +8365,11 @@ sk=[PCI Bus %d, Device %d, Function %d]
 hu=[PCI Bus %d, Device %d, Function %d]
 pl=[PCI Bus %d, Device %d, Function %d]
 sv=[PCI Bus %d, Device %d, Function %d]
-fi=[PCI Bus %d, Device %d, Function %d]
+fi=[PCI Bus %d, Laite %d, Toiminto %d]
 no=[PCI Bus %d, Device %d, Function %d]
 el=[PCI Bus %d, Device %d, Function %d]
 tr=[PCI Bus %d, Device %d, Function %d]
 he=[PCI Bus %d, Device %d, Function %d]
-
-{{SUBST}}
-en=[PCI Bus
-fr=[PCI Bus
-de=[PCI Bus
-es=[PCI Bus
-pt-BR=[Barramento PCI
-it=[Bus PCI
-nl=[PCI Bus
-da=[PCI Bus
-zh-CN=[PCI总线
-zh-TW=[PCI匯流排
-ja=[PCIバス
-ko=[PCI 버스
-vi=[PCI Bus
-ar=[PCI Bus
-ru=[PCI Bus
-uk=[PCI Bus
-cs=[PCI Bus
-sk=[PCI Bus
-hu=[PCI Bus
-pl=[PCI Bus
-sv=[PCI Bus
-fi=[PCI Bus
-no=[PCI Bus
-el=[PCI Bus
-tr=[PCI Bus
-he=[PCI Bus
-
-{{SUBST}}
-en=, Device
-fr=, Device
-de=, Device
-es=, Device
-pt-BR=, dispositivo
-it=, dispositivo
-nl=, Device
-da=, Device
-zh-CN=，设备
-zh-TW=，裝置
-ja=、デバイス
-ko=, 장치
-vi=, Device
-ar=, Device
-ru=, Device
-uk=, Device
-cs=, Device
-sk=, Device
-hu=, Device
-pl=, Device
-sv=, Device
-fi=, Laite
-no=, Device
-el=, Device
-tr=, Device
-he=, Device
-
-{{SUBST}}
-en=, Function
-fr=, Function
-de=, Function
-es=, Function
-pt-BR=, função
-it=, funzione
-nl=, Function
-da=, Function
-zh-CN=，功能
-zh-TW=，功能
-ja=、機能
-ko=, 기능
-vi=, Function
-ar=, Function
-ru=, Function
-uk=, Function
-cs=, Function
-sk=, Function
-hu=, Function
-pl=, Function
-sv=, Function
-fi=, Toiminto
-no=, Function
-el=, Function
-tr=, Function
-he=, Function
 
 {{Sensors}}
 en=This sensor provides information from on-board GPU Voltage Regulator.
@@ -11112,7 +11028,7 @@ sv=GPU Package Power Tracking aktuellt värde uppmätt under en längre period.
 fi=GPU Package Power Tracking virta-arvo mitattuna pitkällä aikavälillä.
 no=GPU Package Power Tracking gjeldende verdi målt over vedvarende periode.
 el=Η τρέχουσα τιμή παρακολούθησης ισχύος πακέτου GPU που μετράται σε παρατεταμένη περίοδο.
-tr=GPU Paketi Güç İzleme (PPT) geçerli değeri, sürdürülen süre boyunca ölçülür.
+tr=GPU Paketi Güç İzleme (PPT) mevcut değeri, sürdürülen süre boyunca ölçülür.
 he=GPU Package Power Tracking ערך נוכחי נמדד לאורך תקופה מתמשכת.
 
 {{Sensors}}
@@ -11420,7 +11336,7 @@ sv=Aktuell GPU Front End effektiv frekvens.
 fi=Nykyinen GPU:n käyttöliittymän tehollinen taajuus.
 no=Gjeldende GPU Front End effektiv frekvens.
 el=Τρέχουσα ενεργή συχνότητα Front End GPU.
-tr=Geçerli GPU Ön Uç etkin frekansı.
+tr=Mevcut GPU Ön Uç etkin frekansı.
 he=תדר אפקטיבי של GPU Front End הנוכחי.
 
 {{Sensors}}
@@ -11616,7 +11532,7 @@ sv=Aktuell GPU-kärna (GFXCLK) effektiv frekvens.
 fi=Nykyinen GPU-ytimen (GFXCLK) tehollinen taajuus.
 no=Gjeldende GPU-kjerne (GFXCLK) effektiv frekvens.
 el=Τρέχουσα ενεργή συχνότητα πυρήνα GPU (GFXCLK).
-tr=Geçerli GPU çekirdeği (GFXCLK) etkin frekansı.
+tr=Mevcut GPU çekirdeği (GFXCLK) etkin frekansı.
 he=תדר יעיל של ליבת GPU נוכחית (GFXCLK).
 
 {{Sensors}}
@@ -11644,7 +11560,7 @@ sv=Aktuell GPU-geometrienhetsfrekvens.
 fi=Nykyinen GPU-geometriayksikön taajuus.
 no=Gjeldende GPU-geometrienhetsfrekvens.
 el=Τρέχουσα συχνότητα μονάδας γεωμετρίας GPU.
-tr=Geçerli GPU geometrisi birim frekansı.
+tr=Mevcut GPU geometrisi birim frekansı.
 he=תדר יחידת גיאומטריית GPU נוכחית.
 
 {{Sensors}}
@@ -11784,7 +11700,7 @@ sv=Aktuell GPU-minneskommando klockfrekvens (inte den effektiva DDR/GDDR-datahas
 fi=Nykyinen GPU-muistin komentokellotaajuus (ei tehollinen DDR/GDDR-tiedonsiirtonopeus).\nTehollinen tiedonsiirtonopeus kerrotaan kahdella tai neljällä muistityypistä riippuen.
 no=Gjeldende GPU-minnekommando klokkefrekvens (ikke den effektive DDR/GDDR-datahastigheten).\nEffektiv datahastighet multipliseres med 2 eller 4 avhengig av minnetype.
 el=Τρέχουσα συχνότητα ρολογιού εντολών μνήμης GPU (όχι ο πραγματικός ρυθμός δεδομένων DDR/GDDR).\nΟ πραγματικός ρυθμός δεδομένων πολλαπλασιάζεται επί 2 ή 4 ανάλογα με τον τύπο της μνήμης.
-tr=Geçerli GPU bellek komut saat frekansı (etkin DDR/GDDR veri hızı değil).\nEtkili veri hızı, bellek türüne bağlı olarak 2 veya 4 ile çarpılır.
+tr=Mevcut GPU bellek komut saat frekansı (etkin DDR/GDDR veri hızı değil).\nEtkili veri hızı, bellek türüne bağlı olarak 2 veya 4 ile çarpılır.
 he=תדר השעון הנוכחי של פקודת זיכרון GPU (לא קצב הנתונים האפקטיבי של DDR/GDDR).\nקצב הנתונים האפקטיבי מוכפל ב-2 או 4 בהתאם לסוג הזיכרון.
 
 {{Sensors}}
@@ -11840,7 +11756,7 @@ sv=Aktuell GPU Universal Video Decoder 1 frekvens.
 fi=Nykyinen GPU Universal Video Decoder 1 -taajuus.
 no=Gjeldende GPU Universal Video Decoder 1 frekvens.
 el=Τρέχουσα συχνότητα GPU Universal Video Decoder 1.
-tr=Geçerli GPU Universal Video Decoder 1 frekansı.
+tr=Mevcut GPU Universal Video Decoder 1 frekansı.
 he=מפענח וידאו אוניברסלי GPU נוכחי 1 תדר.
 
 {{Sensors}}
@@ -11868,7 +11784,7 @@ sv=Aktuell GPU Universal Video Decoder 2 frekvens.
 fi=Nykyinen GPU Universal Video Decoder 2 -taajuus.
 no=Gjeldende GPU Universal Video Decoder 2 frekvens.
 el=Τρέχουσα συχνότητα GPU Universal Video Decoder 1.
-tr=Geçerli GPU Universal Video Decoder 2 frekansı.
+tr=Mevcut GPU Universal Video Decoder 2 frekansı.
 he=מפענח וידאו אוניברסלי GPU נוכחי 2 תדר.
 
 {{Sensors}}
@@ -11896,7 +11812,7 @@ sv=Aktuell GPU Video Decoder (VCLK) frekvens.
 fi=Nykyinen GPU-videodekooderin (VCLK) taajuus.
 no=Gjeldende GPU Video Decoder (VCLK) frekvens.
 el=Τρέχουσα συχνότητα αποκωδικοποιητή βίντεο GPU (VCLK).
-tr=Geçerli GPU Video Kod Çözücü (VCLK) frekansı.
+tr=Mevcut GPU Video Kod Çözücü (VCLK) frekansı.
 he=תדר נוכחי של מפענח וידאו של GPU (VCLK).
 
 {{Sensors}}
@@ -11924,7 +11840,7 @@ sv=Aktuell GPU Video Encoder (DCLK) frekvens.
 fi=Nykyinen GPU Video Encoder (DCLK) -taajuus.
 no=Gjeldende GPU Video Encoder (DCLK) frekvens.
 el=Τρέχουσα συχνότητα GPU Video Encoder (DCLK).
-tr=Geçerli GPU Video Kodlayıcı (DCLK) frekansı.
+tr=Mevcut GPU Video Kodlayıcı (DCLK) frekansı.
 he=תדר הנוכחי של GPU Video Encoder (DCLK).
 
 {{Sensors}}
@@ -11980,7 +11896,7 @@ sv=Aktuell GPU Video Core Next motorfrekvens.
 fi=Nykyinen GPU Video Core Next engine -taajuus.
 no=Gjeldende GPU Video Core Next motorfrekvens.
 el=Τρέχων GPU Video Core Επόμενη συχνότητα κινητήρα.
-tr=Geçerli GPU Video Core Next motor frekansı.
+tr=Mevcut GPU Video Core Next motor frekansı.
 he=GPU נוכחי Video Core תדר המנוע הבא.
 
 {{Sensors}}
@@ -12008,7 +11924,7 @@ sv=Nuvarande GPU Video Core Next 1 motor 1 frekvens.
 fi=Nykyinen GPU Video Core Next 1 -moottori 1 -taajuus.
 no=Gjeldende GPU Video Core Next 1 motor 1 frekvens.
 el=Τρέχων GPU Video Core Επόμενος 1 κινητήρας 1 συχνότητα.
-tr=Geçerli GPU Video Core Next 1 motor 1 frekansı.
+tr=Mevcut GPU Video Core Next 1 motor 1 frekansı.
 he=GPU נוכחי Video Core Next 1 מנוע 1 תדר.
 
 {{Sensors}}
@@ -12036,7 +11952,7 @@ sv=Nuvarande GPU Video Core Next 1 motor 2 frekvens.
 fi=Nykyinen GPU Video Core Next 1 -moottori 2 -taajuus.
 no=Gjeldende GPU Video Core Next 1 motor 2 frekvens.
 el=Τρέχων GPU Video Core Επόμενος 1 κινητήρας 2 συχνότητα.
-tr=Geçerli GPU Video Core Next 1 motor 2 frekansı.
+tr=Mevcut GPU Video Core Next 1 motor 2 frekansı.
 he=GPU נוכחי Video Core Next 1 מנוע 2 תדר.
 
 {{Sensors}}
@@ -13437,7 +13353,7 @@ sv=Aktuell bildhastighet i bildrutor per sekund mätt internt av GPU:n.\nKräver
 fi=Nykyinen kuvanopeus kuvaa sekunnissa GPU:n sisäisesti mittaamana.\nEdellyttää, että 3D- tai koko näytön grafiikka on käynnissä arvojen tuottamiseksi.
 no=Gjeldende bildefrekvens i bilder per sekund målt internt av GPU-en.\nKrever en 3D- eller fullskjermsgrafikk som kjører for å gi verdier.
 el=Τρέχων ρυθμός καρέ σε καρέ ανά δευτερόλεπτο όπως μετράται εσωτερικά από τη GPU.\nΑπαιτείται η εκτέλεση γραφικών 3D ή πλήρους οθόνης για την παροχή τιμών.
-tr=GPU tarafından dahili olarak ölçüldüğü üzere Saniye Başına Kare cinsinden geçerli kare hızı.\nDeğer sağlamak için bir 3D veya tam ekran grafiklerin çalışmasını gerektirir.
+tr=GPU tarafından dahili olarak ölçüldüğü üzere Saniye Başına Kare cinsinden mevcut kare hızı.\nDeğer sağlamak için bir 3D veya tam ekran grafiklerin çalışmasını gerektirir.
 he=קצב פריימים נוכחי במסגרות לשנייה כפי שנמדד באופן פנימי על ידי ה-GPU.\nדרוש גרפיקה תלת-ממדית או מסך מלא לפעול כדי לספק ערכים.
 
 {{Sensors}}
@@ -16270,16 +16186,16 @@ he=ניצול מנוע ה-%s כפי שדווח באמצעות ממשק תלת מ
 {{Sensors}}
 en=This sensor provides basic information about disk health retrieved via S.M.A.R.T. or ATA Statistics standards.\nPolling this sensor too frequently can cause performance degradation or clicking sounds on some drives.\nA less-frequent polling of this sensor is recommended (Sensor Settings - Polling Period - Disk S.M.A.R.T. every X cycles)
 fr=Ce capteur fournit des informations de base sur la santé du disque récupérées via les normes SMART ou ATA Statistics.\nL'interrogation trop fréquente de ce capteur peut entraîner une dégradation des performances ou des bruits de clic sur certains disques.\nUne interrogation moins fréquente de ce capteur est recommandée (Paramètres du capteur - Période d'interrogation - Disque SMART tous les X cycles)
-de=Dieser Sensor liefert grundlegende Informationen zum Festplattenzustand, die über SMART- oder ATA-Statistik-Standards abgerufen werden.\nEine zu häufige Abfrage dieses Sensors kann zu Leistungseinbußen oder Klickgeräuschen bei einigen Laufwerken führen.\nEine weniger häufige Abfrage dieses Sensors wird empfohlen (Sensoreinstellungen - Abfragezeitraum - Disk SMART alle X Zyklen)
-es=Este sensor proporciona información básica sobre el estado del disco recuperada a través de los SMART o estándares de estadísticas ATA.\nSoltar este sensor con demasiada frecuencia puede provocar una degradación del rendimiento o sonidos de clic en algunas unidades.\nSe recomienda un sondeo menos frecuente de este sensor (Configuración del sensor - Período de sondeo - Disco SMART cada X ciclos)
-pt-BR=Este sensor fornece informações básicas sobre a integridade do disco recuperada por meio dos padrões SMART ou ATA Statistics.\nPolar este sensor com muita frequência pode causar degradação do desempenho ou sons de cliques em algumas unidades.\nUma pesquisa menos frequente deste sensor é recomendada (Configurações do sensor - Período de pesquisa - Disco SMART a cada X ciclos)
-it=Questo sensore fornisce informazioni di base sull'integrità del disco recuperate tramite gli standard SMART o ATA Statistics.\nIl polling di questo sensore troppo frequentemente può causare un degrado delle prestazioni o rumori di clic su alcune unità.\nSi consiglia un polling meno frequente di questo sensore (Impostazioni sensore - Periodo di polling - Disco SMART ogni X cicli)
+de=Dieser Sensor liefert grundlegende Informationen zum Festplattenzustand, die über SMART- oder ATA-Statistik-Standards abgerufen werden.\nEine zu häufige Abfrage dieses Sensors kann zu Leistungseinbußen oder Klickgeräuschen bei einigen Festplatten führen.\nEine weniger häufige Abfrage dieses Sensors wird empfohlen (Sensoreinstellungen - Abfragezeitraum - Disk SMART alle X Zyklen)
+es=Este sensor proporciona información básica sobre el estado del disco recuperada a través de los SMART o estándares de estadísticas ATA.\nSoltar este sensor con demasiada frecuencia puede provocar una degradación del rendimiento o sonidos de clic en algunas discos.\nSe recomienda un sondeo menos frecuente de este sensor (Configuración del sensor - Período de sondeo - Disco SMART cada X ciclos)
+pt-BR=Este sensor fornece informações básicas sobre a integridade do disco recuperada por meio dos padrões SMART ou ATA Statistics.\nPolar este sensor com muita frequência pode causar degradação do desempenho ou sons de cliques em algumas discos.\nUma pesquisa menos frequente deste sensor é recomendada (Configurações do sensor - Período de pesquisa - Disco SMART a cada X ciclos)
+it=Questo sensore fornisce informazioni di base sull'integrità del disco recuperate tramite gli standard SMART o ATA Statistics.\nIl polling di questo sensore troppo frequentemente può causare un degrado delle prestazioni o rumori di clic su alcune discos.\nSi consiglia un polling meno frequente di questo sensore (Impostazioni sensore - Periodo polling - Disco SMART ogni X cicli)
 nl=Deze sensor biedt basisinformatie over de conditie van de schijf die is opgehaald via SMART- of ATA-statistiekenstandaarden.\nTe vaak pollen van deze sensor kan leiden tot verslechtering van de prestaties of klikgeluiden op sommige schijven.\nEen minder frequente polling van deze sensor wordt aanbevolen (Sensorinstellingen - Pollingperiode - Schijf SMART elke X cycli)
 da=Denne sensor giver grundlæggende oplysninger om disktilstand hentet via SMART- eller ATA-statistikstandarder.\nFor hyppig polling af denne sensor kan forårsage ydeevneforringelse eller kliklyde på nogle drev.\nEn mindre hyppig polling af denne sensor anbefales (Sensorindstillinger - Pollingperiode - Disk SMART hver X cyklus)
-zh-CN=此传感器提供通过SMART或ATA统计标准检索到的磁盘健康基本信息。\n轮询此传感器过于频繁会导致性能下降或在一些驱动器上发出咔咔声。\n建议降低此传感器的轮询频率（传感器设置 - 轮询周期 - 磁盘SMART每X周期）
-zh-TW=此感測器提供通過SMART或ATA統計標準檢索到的磁碟健康基本資訊。\n輪詢此感測器過於頻繁會導致效能下降或在一些磁碟機上發出咔嗒聲。\n建議降低此感測器的輪詢頻率（感測器設定 - 輪詢週期 - 磁碟SMART每X週期）
-ja=このセンサーは、SMARTまたはATAスタティスティックス標準を介して取得されたディスク ヘルスの基本情報を提供します。\nこのセンサーを頻繁にポーリングすると、パフォーマンスが低下したり、一部のドライブでクリック音が発生したりする可能性があります。\nこのセンサーのポーリングの頻度を減らすことをお勧めします（センサー設定 - ポーリング ピリオド - XサイクルごとにディスクSMART）
-ko=이 센서는 SMART 또는 ATA 통계 표준을 통해 검색된 디스크 상태에 대한 기본 정보를 제공합니다.\n이 센서를 너무 자주 폴링하면 성능이 저하되거나 일부 드라이브에서 소리가 날 수 있습니다.\n이 센서의 폴링 빈도를 줄이는 것이 좋습니다(센서 설정 - 폴링 기간 - X 주기마다 디스크 SMART)
+zh-CN=此传感器提供通过SMART或ATA统计标准检索到的磁盘健康基本信息。\n轮询此传感器过于频繁会导致性能下降或在一些磁盘上发出咔咔声。\n建议降低此传感器的轮询频率（传感器设置 - 轮询周期 - 磁盘SMART每X周期）
+zh-TW=此感測器提供通過SMART或ATA統計標準檢索到的磁碟健康基本資訊。\n輪詢此感測器過於頻繁會導致效能下降或在一些磁碟上發出咔咔聲。\n建議降低此感測器的輪詢頻率（感測器設定 - 輪詢週期 - 磁碟SMART每X週期）
+ja=このセンサーは、SMARTまたはATAスタティスティックス標準を介して取得されたディスク ヘルスの基本情報を提供します。\nこのセンサーを頻繁にポーリングすると、パフォーマンスが低下したり、一部のディスクでクリック音が発生したりする可能性があります。\nこのセンサーのポーリングの頻度を減らすことをお勧めします（センサー設定 - ポーリング ピリオド - XサイクルごとにディスクSMART）
+ko=이 센서는 SMART 또는 ATA 통계 표준을 통해 검색된 디스크 상태에 대한 기본 정보를 제공합니다.\n이 센서를 너무 자주 폴링하면 성능이 저하되거나 일부 디스크에서 소리가 날 수 있습니다.\n이 센서의 폴링 빈도를 줄이는 것이 좋습니다(센서 설정 - 폴링 기간 - X 주기마다 디스크 SMART)
 vi=Cảm biến này cung cấp thông tin cơ bản về tình trạng ổ đĩa được truy xuất thông qua tiêu chuẩn Thống kê SMART hoặc ATA.\n Đặt cảm biến này quá thường xuyên có thể làm giảm hiệu suất hoặc phát ra âm thanh nhấp chuột trên một số ổ đĩa.\n Khuyến nghị kiểm tra cảm biến này ít thường xuyên hơn (Cài đặt cảm biến - Thời gian thăm dò - Đĩa SMART mỗi X chu kỳ)
 ar=يوفر هذا المستشعر معلومات أساسية حول صحة القرص التي يتم استردادها عبر معايير SMART أو ATA Statistics. \n يمكن أن يتسبب التزاوج بشكل متكرر على هذا المستشعر في تدهور الأداء أو النقر فوق الأصوات على بعض محركات الأقراص.\n يوصى باستقصاء أقل تكرارًا لهذا المستشعر (إعدادات المستشعر - فترة الاستقصاء - Disk SMART كل X دورات)
 ru=Этот датчик предоставляет основную информацию о состоянии диска, полученную через стандарты SMART или ATA Statistics.\nСлишком частый опрос этого датчика может вызвать снижение производительности или щелчки на некоторых дисках.\nРекомендуется реже опрашивать этот датчик (Настройки датчика - Период опроса - Диск SMART каждые X циклов)
@@ -16292,7 +16208,7 @@ sv=Den här sensorn tillhandahåller grundläggande information om disktillstån
 fi=Tämä anturi tarjoaa SMART- tai ATA Statistics -standardien kautta haetut perustiedot levyn kunnosta.\nTämän anturin liian usein kysyminen voi aiheuttaa suorituskyvyn heikkenemistä tai napsautusääniä joissakin asemissa.\nTämän anturin kyselyä suositellaan harvemmin (anturin asetukset - kyselyjakso - Disk SMART joka X sykli)
 no=Denne sensoren gir grunnleggende informasjon om diskhelse hentet via SMART- eller ATA-statistikkstandarder.\nFor hyppig polling av denne sensoren kan forårsake ytelsesforringelse eller klikkelyder på enkelte stasjoner.\nEn mindre hyppig polling av denne sensoren anbefales (Sensorinnstillinger - Pollingperiode - Disk SMART hver X syklus)
 el=Αυτός ο αισθητήρας παρέχει βασικές πληροφορίες σχετικά με την υγεία του δίσκου που ανακτώνται μέσω των προτύπων SMART ή ATA Statistics.\nΗ πολύ συχνή ψηφοφορία αυτού του αισθητήρα μπορεί να προκαλέσει υποβάθμιση της απόδοσης ή ήχους κλικ σε ορισμένες μονάδες δίσκου.\nΣυνιστάται μια λιγότερο συχνή μέτρηση αυτού του αισθητήρα (Ρυθμίσεις αισθητήρα - Περίοδος ψηφοφορίας - Disk SMART κάθε X κύκλους)
-tr=Bu sensör, SMART veya ATA İstatistik standartları aracılığıyla alınan disk sağlığı hakkında temel bilgiler sağlar.\nBu sensörün çok sık yoklanması, performansın düşmesine veya bazı sürücülerde tıklama seslerine neden olabilir.\nBu sensörün daha az sıklıkta yoklanması önerilir (Sensör Ayarları - Yoklama Süresi - Disk SMART her X döngüsünde)
+tr=Bu sensör, SMART veya ATA İstatistik standartları aracılığıyla alınan disk sağlığı hakkında temel bilgiler sağlar.\nBu sensörün çok sık yoklanması, performansın düşmesine veya bazı disklerde tıklama seslerine neden olabilir.\nBu sensörün daha az sıklıkta yoklanması önerilir (Sensör Ayarları - Yoklama Süresi - Disk SMART her X döngüsünde)
 he=חיישן זה מספק מידע בסיסי על תקינות הדיסק שאוחזר באמצעות תקני סטטיסטיקה SMART או ATA.\nסקרי חיישן זה לעתים קרובות מדי עלול לגרום לפגיעה בביצועים או לקולות קליקים בכוננים מסוימים.\nמומלץ לבצע סקר בתדירות נמוכה יותר של חיישן זה (הגדרות חיישן - תקופת סקר - דיסק SMART כל מחזור X)
 
 {{Sensors}}
@@ -16304,9 +16220,9 @@ pt-BR=Temperatura atual da unidade de disco.
 it=Temperatura attuale dell'unità disco.
 nl=Huidige schijftemperatuur.
 da=Aktuel temperatur på diskdrevet.
-zh-CN=当前的磁盘驱动器的温度。
-zh-TW=目前的磁碟機的溫度。
-ja=現在のディスク ドライブの温度。
+zh-CN=当前的磁盘驱动器温度。
+zh-TW=目前的磁碟機溫度。
+ja=現在のディスク ドライブ温度。
 ko=현재 디스크 드라이브 온도입니다.
 vi=Nhiệt độ ổ đĩa hiện tại.
 ar=درجة حرارة محرك الأقراص الحالية.
@@ -16320,13 +16236,13 @@ sv=Aktuell diskenhetstemperatur.
 fi=Nykyinen levyaseman lämpötila.
 no=Gjeldende diskstasjonstemperatur.
 el=Τρέχουσα θερμοκρασία μονάδας δίσκου.
-tr=Geçerli disk sürücüsü sıcaklığı.
+tr=Mevcut disk sürücüsü sıcaklığı.
 he=טמפרטורת כונן הדיסק הנוכחית.
 
 {{Sensors}}
 en=Drive Airflow Temperature
 fr=Température du flux d'air du disque
-de=Laufwerks-Luftstrom-Temperatur
+de=Festplatten-Luftstrom-Temperatur
 es=Temperatura del flujo de aire del disco
 pt-BR=Temperatura do fluxo de ar do disco
 it=Temperatura flusso aria disco
@@ -17244,7 +17160,7 @@ sv=Diskens nuvarande läshastighet.
 fi=Levyn nykyinen lukunopeus.
 no=Disk gjeldende lesehastighet.
 el=Τρέχουσα ταχύτητα ανάγνωσης δίσκου
-tr=Disk geçerli okuma hızı.
+tr=Disk mevcut okuma hızı.
 he=קצב הקריאה הנוכחי של הדיסק
 
 {{Sensors}}
@@ -17272,7 +17188,7 @@ sv=Diskens nuvarande skrivhastighet.
 fi=Levyn nykyinen kirjoitusnopeus.
 no=Disk gjeldende skrivehastighet.
 el=Τρέχουσα ταχύτητα εγγραφής στο δίσκο
-tr=Disk geçerli yazma hızı.
+tr=Disk mevcut yazma hızı.
 he=קצב הכתיבה הנוכחי של הדיסק
 
 {{Sensors}}
@@ -17424,8 +17340,8 @@ pt-BR=Média de 256 ms da temperatura mais quente de todos os sensores térmicos
 it=Media di 256 ms della temperatura più alta di tutti i sensori termici digitali (DTS) all'interno del pacchetto calcolata dalla CPU.\nQuesta è la temperatura della CPU consigliata da osservare.
 nl=256 ms gemiddelde van de hoogste temperatuur van alle digitale thermische sensoren (DTS) binnen het pakket, berekend door de CPU.\nDit is de aanbevolen CPU-temperatuur om te bekijken.
 da=256 ms gennemsnit af den varmeste temperatur for alle digitale termiske sensorer (DTS) i pakken beregnet af CPU'en.\nDette er den anbefalede CPU-temperatur at se.
-zh-CN=由CPU计算出的封装内所有数字温度传感器（DTS）的温度最高值的256毫秒内的平均值。\n这是观察CPU温度的推荐值。
-zh-TW=由CPU計算出的封裝內所有數位溫度感測器（DTS）的溫度最高值的256毫秒內的平均值。\n這是觀察CPU溫度的推薦值。
+zh-CN=CPU计算出的封装内所有数字温度传感器（DTS）的温度最高值的256毫秒内的平均值。\n这是观察CPU温度的推荐值。
+zh-TW=CPU計算出的封裝內所有數位溫度感測器（DTS）的溫度最高值的256毫秒內的平均值。\n這是觀察CPU溫度的推薦值。
 ja=CPUによって計算されたパッケージ内のすべてのデジタル サーマル センサー（DTS）の最も高温の平均256ミリ秒。\nこれは、監視する推奨CPU温度です。
 ko=CPU에서 계산한 패키지 내 모든 디지털 열 센서 (DTS)의 가장 뜨거운 온도의 평균 256ms입니다.\n이것은 관찰할 권장 CPU 온도입니다.
 vi=256 ms trung bình của nhiệt độ nóng nhất của tất cả các Cảm biến nhiệt kỹ thuật số trong gói do CPU tính toán.\nĐây là nhiệt độ CPU khuyến nghị nên theo dõi.
@@ -18564,7 +18480,7 @@ tr=CPU'nun Kamera Birimi (ISS) bölümünün sıcaklığı.
 he=הטמפרטורה של חלק יחידת המצלמה (ISP) של המעבד.
 
 {{Sensors}}
-en=Memory channel temperature value calculated byt the CPU. Mostly estimated per bandwidth.
+en=Memory channel temperature value calculated by the CPU. Mostly estimated per bandwidth.
 fr=Valeur de température du canal mémoire calculée par le CPU. Essentiellement estimé par bande passante.
 de=Von der CPU berechneter Temperaturwert des Speicher-Kanals. Meist pro Bandbreite geschätzt.
 es=Valor de temperatura del canal de memoria calculado por la CPU. Principalmente estimado por ancho de banda.
@@ -18628,8 +18544,8 @@ pt-BR=Temperatura DIMM por canal, estimada principalmente de acordo com a largur
 it=Temperatura DIMM per canale, stimata principalmente in base alla larghezza di banda.
 nl=DIMM-temperatuur per kanaal, meestal geschat op basis van bandbreedte.
 da=DIMM-temperatur pr. kanal, for det meste estimeret i henhold til båndbredde.
-zh-CN=每通道DIMM的温度，主要根据带宽估计。
-zh-TW=每通道DIMM的溫度，主要根據頻寬估計。
+zh-CN=每通道的DIMM温度，主要根据带宽估计。
+zh-TW=每通道的DIMM溫度，主要根據頻寬估計。
 ja=チャンネルごとのDIMM温度。ほとんどの場合、帯域幅に基づいて推定されます。
 ko=채널당 DIMM 온도는 대부분 대역폭에 따라 추정됩니다.
 vi=Nhiệt độ DIMM trên mỗi kênh, hầu hết được ước tính theo băng thông.
@@ -18740,8 +18656,8 @@ pt-BR=A temperatura DIMM por canal depende do modo de estrangulamento térmico u
 it=La temperatura DIMM per canale, dipende dalla modalità di limitazione termica utilizzata nel BIOS:\nIn modalità di limitazione termica ad anello aperto (OLTT) stimata per larghezza di banda.\nIn modalità di limitazione termica a ciclo chiuso (CLTT) misurata dal sensore termico su DIMM (TSOD).
 nl=De DIMM-temperatuur per kanaal is afhankelijk van de thermische beperkingsmodus die in het BIOS wordt gebruikt:\nIn de Open Loop Thermal Throttling-modus (OLTT) geschat per bandbreedte.\nIn de Closed Loop Thermal Throttling-modus (CLTT) gemeten door de thermische sensor op de DIMM (TSOD).
 da=DIMM-temperatur pr. kanal, afhænger af termisk reguleringstilstand, der bruges i BIOS:\nI tilstanden Open Loop Thermal Throttling (OLTT) estimeret pr. båndbredde.\nI tilstanden Closed Loop Thermal Throttling (CLTT) målt af Thermal Sensor på DIMM (TSOD).
-zh-CN=每通道DIMM的温度，取决于BIOS中所使用的过热降频模式：\n在开环过热降频（OLTT）模式下，根据带宽估计。\n在闭环过热降频（CLTT）模式下，由DIMM上的温度传感器（TSOD）测量。
-zh-TW=每通道DIMM的溫度，取決於BIOS中所使用的過熱降頻模式：\n在開環過熱降頻（OLTT）模式下按頻寬估計。\n在閉環過熱降頻（CLTT）模式下，由DIMM上的溫度感測器（TSOD）測量。
+zh-CN=每通道的DIMM温度，取决于BIOS中所使用的过热降频模式：\n在开环过热降频（OLTT）模式下，根据带宽估计。\n在闭环过热降频（CLTT）模式下，由DIMM上的温度传感器（TSOD）测量。
+zh-TW=每通道的DIMM溫度，取決於BIOS中所使用的過熱降頻模式：\n在開環過熱降頻（OLTT）模式下按頻寬估計。\n在閉環過熱降頻（CLTT）模式下，由DIMM上的溫度感測器（TSOD）測量。
 ja=チャンネルごとのDIMM温度は、BIOSで使用されるサーマル スロットリング モードによって異なります：\n帯域幅ごとに推定されるオープン ループ サーマル スロットリング（OLTT）モード。\nDIMM上のサーマル センサー（TSOD）によって測定されるクローズ ループ サーマル スロットリング（CLTT）モード。
 ko=채널당 DIMM 온도는 BIOS에서 사용되는 열 조절 모드에 따라 다릅니다:\n개방 루프 열 조절(OLTT) 모드에서 대역폭별로 추정됩니다.\n닫힌 루프 열 조절(CLTT) 모드에서 DIMM(TSOD)의 열 센서로 측정합니다.
 vi=Nhiệt độ DIMM trên mỗi kênh, phụ thuộc vào chế độ điều chỉnh nhiệt được sử dụng trong BIOS:\nỞ chế độ Điều chỉnh nhiệt theo vòng mở (OLTT) được ước tính trên băng thông.\nỞ chế độ Điều chỉnh nhiệt theo vòng kín (CLTT) được đo bằng Cảm biến nhiệt trên DIMM (TSOD).
@@ -18768,8 +18684,8 @@ pt-BR=Temperatura do DIMM por canal.
 it=Temperatura DIMM per canale.
 nl=DIMM-temperatuur per kanaal.
 da=DIMM-temperatur pr. kanal.
-zh-CN=每通道DIMM的温度。
-zh-TW=每通道DIMM的溫度。
+zh-CN=每通道的DIMM温度。
+zh-TW=每通道的DIMM溫度。
 ja=チャンネルごとのDIMM温度。
 ko=채널당 DIMM 온도.
 vi=Nhiệt độ DIMM trên mỗi kênh.
@@ -19708,7 +19624,7 @@ sv=Aktuell konfigurerbar TDP-nivå.\n0 = Nominell\n1,2=Äldre nivå 1,2\n3+=Utö
 fi=Nykyinen määritettävä TDP-taso.\n0 = Nimellinen\n1,2=Vanha taso 1,2\n3+=Laajennettu taso 1+
 no=Gjeldende konfigurerbart TDP-nivå.\n0 = Nominelt\n1,2=Eldre nivå 1,2\n3+=Utvidet nivå 1+
 el=Τρέχον ρυθμιζόμενο επίπεδο TDP.\n0 = Ονομαστικό\n1,2=Επίπεδο παλαιού τύπου 1,2\n3+=Εκτεταμένο επίπεδο 1+
-tr=Geçerli Yapılandırılabilir TDP Düzeyi.\n0 = Nominal\n1,2=Eski Düzey 1,2\n3+=Genişletilmiş Düzey 1+
+tr=Mevcut Yapılandırılabilir TDP Düzeyi.\n0 = Nominal\n1,2=Eski Düzey 1,2\n3+=Genişletilmiş Düzey 1+
 he=רמת TDP נוכחית הניתנת להגדרה.\n0 = נומינלית\n1,2=רמה מדור קודם 1,2\n3+=רמה מורחבת 1+
 
 {{Sensors}}
@@ -21920,7 +21836,7 @@ sv=Current Memory Controller målfrekvens (UCLK).
 fi=Nykyinen muistiohjaimen tavoitetaajuus (UCLK).
 no=Nåværende minnekontrollermålfrekvens (UCLK).
 el=Τρέχουσα συχνότητα στόχου ελεγκτή μνήμης (UCLK).
-tr=Geçerli Bellek Denetleyicisi hedef frekansı (UCLK).
+tr=Mevcut Bellek Denetleyicisi hedef frekansı (UCLK).
 he=תדר יעד נוכחי של בקר הזיכרון (UCLK).
 
 {{Sensors}}
@@ -26382,30 +26298,30 @@ he=כתיבה ישירה לדיסק\n(ללא חציצה)
 
 {{Settings}}
 en=Polling Period
-fr=Période de vote
-de=Abfrage-Zeitraum
-es=Período de votación
-pt-BR=Período de votação
-it=Periodo valutazione
+fr=Période d'interrogation
+de=Abfragezeitraum
+es=Período de sondeo
+pt-BR=Período de pesquisa
+it=Periodo polling
 nl=Polling periode
 da=Afstemningsperiode
 zh-CN=轮询周期
 zh-TW=輪詢週期
 ja=ポーリング ピリオド
-ko=투표 기간
+ko=폴링 기간
 vi=Thời gian bỏ phiếu
 ar=فترة الاقتراع
 ru=Период опроса
 uk=Період опитування
 cs=Perióda dotazování
 sk=Perióda dopytovania
-hu=Mintavétel gyakorisága
+hu=Lekérdezési periódus
 pl=Okres odpytywania
 sv=Omröstningsperiod
 fi=Äänestysaika
 no=Avstemningsperiode
 el=Περίοδος ψηφοφορίας
-tr=Oylama Dönemi
+tr=Yoklama Süresi
 he=תקופת הקלפיות
 
 {{Settings}}
@@ -29336,7 +29252,7 @@ nl=Moederbord temperatuur.
 da=Bundkort temperatur.
 zh-CN=主板温度。
 zh-TW=主機板溫度。
-ja=メインボードの温度。
+ja=メインボード温度。
 ko=메인보드 온도.
 vi=Nhiệt độ bo mạch chủ.
 ar=درجة حرارة اللوحة الأم.
@@ -29364,7 +29280,7 @@ nl=Systeem/moederbord temperatuur.
 da=System/Mainboard temperatur.
 zh-CN=系统/主板温度。
 zh-TW=系統/主機板溫度。
-ja=システム/メインボードの温度。
+ja=システム/メインボード温度。
 ko=시스템/메인보드 온도.
 vi=Nhiệt độ hệ thống / Mainboard.
 ar=درجة حرارة النظام / اللوحة الرئيسية.
@@ -29392,7 +29308,7 @@ nl=Chipsettemperatuur.\nIn de meeste gevallen wordt de buitentemperatuur afgelez
 da=Chipsættemperatur.\nI de fleste tilfælde aflæses den eksterne temperatur fra en diode i chipsets nærhed.
 zh-CN=芯片组温度。\n在大多数情况下，是从芯片组附近的二极管读取的外部温度。
 zh-TW=晶片組溫度。\n在大多數情況下，是從晶片組附近的二極體讀取的外部溫度。
-ja=チップセットの温度。\nほとんどの場合、チップセットの近くにあるダイオードから読み取られた外部温度。
+ja=チップセット温度。\nほとんどの場合、チップセットの近くにあるダイオードから読み取られた外部温度。
 ko=칩셋 온도.\n대부분의 경우 칩셋 주변의 다이오드에서 읽은 외부 온도입니다.
 vi=Nhiệt độ chipset.\nTrong hầu hết các trường hợp, nhiệt độ bên ngoài được đọc từ một diode trong vùng lân cận chipset.
 ar=درجة حرارة مجموعة الشرائح.\nفي معظم الحالات تتم قراءة درجة الحرارة الخارجية من الصمام الثنائي الموجود بالقرب من مجموعة الشرائح.
@@ -29420,7 +29336,7 @@ nl=Chipset North Bridge-temperatuur.\nIn de meeste gevallen wordt de buitentempe
 da=Chipset North Bridge temperatur.\nI de fleste tilfælde aflæses den eksterne temperatur fra en diode i chipsets nærhed.
 zh-CN=芯片组北桥温度。\n在大多数情况下，是从芯片组附近的二极管读取的外部温度。
 zh-TW=晶片組北橋溫度。\n在大多數情況下，是從晶片組附近的二極體讀取的外部溫度。
-ja=チップセット ノース ブリッジの温度。\nほとんどの場合、外部温度はチップセット付近のダイオードから読み取られます。
+ja=チップセット ノース ブリッジ温度。\nほとんどの場合、外部温度はチップセット付近のダイオードから読み取られます。
 ko=칩셋 노스 브리지 온도.\n대부분의 경우 칩셋 주변의 다이오드에서 읽은 외부 온도입니다.
 vi=Nhiệt độ cầu bắc của chipset.\nTrong hầu hết các trường hợp, nhiệt độ bên ngoài được đọc từ một diode trong vùng lân cận chipset.
 ar=درجة حرارة Chipset North Bridge.\nفي معظم الحالات تتم قراءة درجة الحرارة الخارجية من الصمام الثنائي الموجود بالقرب من مجموعة الشرائح.
@@ -29448,7 +29364,7 @@ nl=Chipset South Bridge-temperatuur.\nIn de meeste gevallen wordt de buitentempe
 da=Chipset South Bridge-temperatur.\nI de fleste tilfælde aflæses den eksterne temperatur fra en diode i chipset-nærheden.
 zh-CN=芯片组南桥温度。\n在大多数情况下，是从芯片组附近的二极管读取的外部温度。
 zh-TW=晶片組南橋溫度。\n在大多數情況下，是從晶片組附近的二極體讀取的外部溫度。
-ja=チップセット サウス ブリッジの温度。\nほとんどの場合、外部温度はチップセット付近のダイオードから読み取られます。
+ja=チップセット サウス ブリッジ温度。\nほとんどの場合、外部温度はチップセット付近のダイオードから読み取られます。
 ko=칩셋 사우스 브리지 온도.\n대부분의 경우 칩셋 주변의 다이오드에서 읽은 외부 온도입니다.
 vi=Nhiệt độ cầu Nam của chipset.\nTrong hầu hết các trường hợp, nhiệt độ bên ngoài được đọc từ một diode trong vùng lân cận chipset.
 ar=درجة حرارة الجسر الجنوبي لمجموعة الشرائح.\nفي معظم الحالات ، تتم قراءة درجة الحرارة الخارجية من الصمام الثنائي الموجود بالقرب من مجموعة الشرائح.
@@ -29504,7 +29420,7 @@ nl=Chipset PCH-temperatuur.\nIn de meeste gevallen wordt de buitentemperatuur af
 da=Chipset PCH-temperatur.\nI de fleste tilfælde aflæses den eksterne temperatur fra en diode i chipset-nærheden.
 zh-CN=芯片组PCH温度。\n在大多数情况下，是从芯片组附近的二极管读取的外部温度。
 zh-TW=晶片組PCH溫度。\n在大多數情況下，是從晶片組附近的二極體讀取的外部溫度。
-ja=チップセットPCHの温度。\nほとんどの場合、外部温度はチップセット付近のダイオードから読み取られます。
+ja=チップセットPCH温度。\nほとんどの場合、外部温度はチップセット付近のダイオードから読み取られます。
 ko=칩셋 PCH 온도.\n대부분의 경우 칩셋 주변의 다이오드에서 읽은 외부 온도입니다.
 vi=Nhiệt độ PCH của chipset.\nTrong hầu hết các trường hợp, nhiệt độ bên ngoài được đọc từ một diode trong vùng lân cận chipset.
 ar=درجة حرارة مجموعة الشرائح PCH.\nفي معظم الحالات ، تتم قراءة درجة الحرارة الخارجية من الصمام الثنائي الموجود بالقرب من مجموعة الشرائح.
@@ -29530,8 +29446,8 @@ pt-BR=Temperatura do regulador de tensão.
 it=Regolatore di tensione temperatura.
 nl=Temperatuur van de spanningsregelaar.
 da=Spændingsregulatorens temperatur.
-zh-CN=电压调节器温度。
-zh-TW=電壓調節器溫度。
+zh-CN=电压调节器的温度。
+zh-TW=電壓調節器的溫度。
 ja=電圧レギュレーターの温度。
 ko=전압 조정기 온도.
 vi=Nhiệt độ bộ điều chỉnh điện áp.
@@ -29558,8 +29474,8 @@ pt-BR=Temperatura do regulador de tensão. \nNa maioria dos casos (exceto ASUS) 
 it=Temperatura regolatore di tensione.\nNella maggior parte dei casi (eccetto ASUS) la temperatura esterna viene letta da un diodo nell'area VRM.
 nl=Temperatuur van de spanningsregelaar.\nIn de meeste gevallen (behalve ASUS) wordt de externe temperatuur afgelezen van een diode in het VRM-gebied.
 da=Spændingsregulatorens temperatur.\nI de fleste tilfælde (undtagen ASUS) aflæses den eksterne temperatur fra en diode i VRM-området.
-zh-CN=电压调节器温度。\n在大多数情况下（华硕除外），是从VRM区域的二极管读取的外部温度。
-zh-TW=電壓調節器溫度。\n在大多數情況下（華碩除外），是從VRM區域的二極體讀取的外部溫度。
+zh-CN=电压调节器的温度。\n在大多数情况下（华硕除外），是从VRM区域的二极管读取的外部温度。
+zh-TW=電壓調節器的溫度。\n在大多數情況下（華碩除外），是從VRM區域的二極體讀取的外部溫度。
 ja=電圧レギュレーターの温度。\nほとんどの場合（ASUSを除く）、VRM領域のダイオードから読み取られた外部温度。
 ko=전압 조정기 온도.\n대부분의 경우(ASUS 제외) 외부 온도는 VRM 영역의 다이오드에서 읽습니다.
 vi=Nhiệt độ của bộ điều chỉnh điện áp. \nTrong hầu hết các trường hợp (trừ ASUS), nhiệt độ bên ngoài được đọc từ một diode trong khu vực VRM.
@@ -29586,8 +29502,8 @@ pt-BR=Temperatura do regulador de tensão MOSFET.
 it=Regolatore di tensione MOSFET temperatura.
 nl=Spanningsregelaar MOSFET temperatuur.
 da=Spændingsregulator MOSFET temperatur.
-zh-CN=电压调节器MOSFET温度。
-zh-TW=電壓調節器MOSFET溫度。
+zh-CN=电压调节器MOSFET的温度。
+zh-TW=電壓調節器MOSFET的溫度。
 ja=電圧レギュレーターMOSFETの温度。
 ko=전압 조정기 MOSFET 온도.
 vi=Nhiệt độ MOSFET của bộ điều chỉnh điện áp.
@@ -32291,7 +32207,7 @@ sv=Aktuell systemminnesklocka
 fi=Nykyinen järjestelmän muistikello
 no=Gjeldende systemminneklokke
 el=Τρέχον ρολόι μνήμης συστήματος
-tr=Geçerli Sistem Belleği Saati
+tr=Mevcut Sistem Belleği Saati
 he=שעון זיכרון מערכת נוכחי
 
 {{Main}}
@@ -32347,7 +32263,7 @@ sv=Aktuell systemminnesreferensklocka
 fi=Nykyinen järjestelmämuistin viitekello
 no=Gjeldende systemminnereferanseklokke
 el=Τρέχον Ρολόι Αναφοράς Μνήμης Συστήματος
-tr=Geçerli Sistem Belleği Referans Saati
+tr=Mevcut Sistem Belleği Referans Saati
 he=שעון עזר נוכחי של זיכרון המערכת
 
 {{Main}}
@@ -32571,7 +32487,7 @@ sv=Aktuell minnesuppdatering Återställningsfördröjningstid (tRFC)
 fi=Nykyinen muistin päivityksen palautusviive (tRFC)
 no=Nåværende minneoppdateringsgjenopprettingsforsinkelse (tRFC)
 el=Χρόνος καθυστέρησης ανάκτησης τρέχουσας ανανέωσης μνήμης (tRFC)
-tr=Geçerli Bellek Yenileme Kurtarma Gecikme Süresi (tRFC)
+tr=Mevcut Bellek Yenileme Kurtarma Gecikme Süresi (tRFC)
 he=זמן השחזור נוכחי של רענון זיכרון (tRFC)
 
 {{Main}}
@@ -33017,7 +32933,7 @@ sv=Bestämmer säker start och aktuellt läge.\nGrå = Stöds inte av BIOS\nRöd
 fi=Määrittää suojatun käynnistyksen ominaisuuden ja nykyisen tilan.\nHarmaa = BIOS ei tue\nPunainen = BIOS tukee, mutta ei käytössä\nVihreä = Tuettu ja aktiivinen (käyttöjärjestelmä käynnistetään suojatussa käynnistystilassa)
 no=Bestemmer Secure Boot-kapasitet og gjeldende modus.\nGrå = Ikke støttet av BIOS\nRød = Støttes av BIOS, men ikke aktivert\nGrønn = Støttes og aktiv (OS startes i sikker oppstartmodus)
 el=Καθορίζει τη δυνατότητα Ασφαλούς εκκίνησης και την τρέχουσα λειτουργία.\nΓκρι = Δεν υποστηρίζεται από το BIOS\nΚόκκινο = Υποστηρίζεται από το BIOS, αλλά δεν είναι ενεργοποιημένο\nΠράσινο = Υποστηρίζεται και ενεργό (το λειτουργικό σύστημα εκκινείται σε λειτουργία ασφαλούς εκκίνησης)
-tr=Güvenli Önyükleme kapasitesini ve geçerli modu belirler.\nGrey = BIOS tarafından desteklenmiyor\nKırmızı = BIOS tarafından destekleniyor, ancak etkinleştirilmedi\nYeşil = Destekleniyor ve etkin (İşletim Sistemi Güvenli Önyükleme modunda başlatılır)
+tr=Güvenli Önyükleme kapasitesini ve mevcut modu belirler.\nGrey = BIOS tarafından desteklenmiyor\nKırmızı = BIOS tarafından destekleniyor, ancak etkinleştirilmedi\nYeşil = Destekleniyor ve etkin (İşletim Sistemi Güvenli Önyükleme modunda başlatılır)
 he=קובע את יכולת האתחול המאובטח והמצב הנוכחי.\nאפור = לא נתמך ב-BIOS\nאדום = נתמך ב-BIOS, אבל לא מופעל\nירוק = נתמך ופעיל (מערכת ההפעלה מופעלת במצב אתחול מאובטח)
 
 {{Main}}
@@ -36189,13 +36105,13 @@ he=הטמפרטורה המקסימלית הנוכחית בין כל חיישני
 
 {{Sensors}}
 en=Current GPU core frequency.
-fr=Horloge actuelle du cœur du GPU.
-de=Aktueller GPU-Kerntakt.
-es=Reloj del núcleo de la GPU actual.
-pt-BR=Clock atual do núcleo da GPU.
-it=Clock attuale core GPU.
-nl=Huidige GPU-kernklok.
-da=Nuværende GPU-kerneur.
+fr=Fréquence actuelle du cœur du GPU.
+de=Aktueller GPU-Kernfrequenz.
+es=Frecuencia del núcleo de la GPU actual.
+pt-BR=Frequência atual do núcleo da GPU.
+it=Frequenza attuale core GPU.
+nl=Huidige GPU-kernfrequentie.
+da=Nuværende GPU-kernefrekvens.
 zh-CN=当前的GPU核心频率。
 zh-TW=目前的GPU核心頻率。
 ja=現在のGPUコア周波数。
@@ -36204,15 +36120,15 @@ vi=Xung nhịp lõi GPU hiện tại.
 ar=الساعة الأساسية لوحدة معالجة الرسومات (GPU) الحالية.
 ru=Текущая частота ядра GPU.
 uk=Поточна частота ядра GPU.
-cs=Aktuální takt jádra GPU.
-sk=Aktuálny takt jadra GPU.
-hu=Jelenlegi GPU órajel.
-pl=Aktualny zegar rdzenia GPU.
-sv=Aktuell GPU-kärnklocka.
+cs=Aktuální frekvence jádra GPU.
+sk=Aktuálny frekvencia jadra GPU.
+hu=Jelenlegi GPU frekvencia.
+pl=Aktualny częstotliwość rdzenia GPU.
+sv=Aktuell GPU-kärnfrekvens.
 fi=Nykyinen GPU-ydinkello.
-no=Gjeldende GPU-kjerneklokke.
+no=Gjeldende GPU-kjernefrekvens.
 el=Τρέχον ρολόι πυρήνα GPU.
-tr=Mevcut GPU çekirdek saati.
+tr=Mevcut GPU çekirdek frekansı.
 he=שעון ליבת GPU נוכחי.
 
 {{Sensors}}
@@ -36268,7 +36184,7 @@ sv=Aktuell GPU-minnesklocka.
 fi=Nykyinen GPU-muistin kello.
 no=Gjeldende GPU-minneklokke.
 el=Τρέχον ρολόι μνήμης GPU.
-tr=Geçerli GPU bellek saati.
+tr=Mevcut GPU bellek saati.
 he=שעון זיכרון GPU נוכחי.
 
 {{Sensors}}
@@ -51621,7 +51537,7 @@ sv=Aktuell tidpunkt
 fi=Nykyinen ajoitus
 no=Gjeldende timing
 el=Τρέχον Χρόνος
-tr=Geçerli Zamanlama
+tr=Mevcut Zamanlama
 he=תזמון נוכחי
 
 {{Main}}
@@ -60891,7 +60807,7 @@ sv=Tillgänglig reservkapacitet:
 fi=Varakapasiteettia saatavilla:
 no=Tilgjengelig ledig kapasitet:
 el=Διαθέσιμη εφεδρική χωρητικότητα:
-tr=Mevcut Yedek Kapasite:
+tr=Kullanılabilir Yedek Kapasite:
 he=קיבולת פנויה זמינה:
 
 {{Main}}
@@ -66857,7 +66773,7 @@ sv=Reservblock tillgängliga:
 fi=Varalohkoja saatavilla:
 no=Tilgjengelige reserveblokker:
 el=Διαθέσιμα ανταλλακτικά μπλοκ:
-tr=Mevcut Yedek Bloklar:
+tr=Kullanılabilir Yedek Bloklar:
 he=בלוקים רזרביים זמינים:
 
 {{SMART}}
@@ -68705,7 +68621,7 @@ sv=Antal tillgängliga överprovisionerade blockeringar:
 fi=Saatavilla ylivarattujen lohkojen määrä:
 no=Tilgjengelig overprovisionert blokkantall:
 el=Διαθέσιμος αριθμός μπλοκ Υπερπροβλέψεων:
-tr=Mevcut Aşırı Tedarik Edilen Blok Sayısı:
+tr=Kullanılabilir Aşırı Tedarik Edilen Blok Sayısı:
 he=ספירת חסימות זמינה בהקצאת יתר:
 
 {{SMART}}
@@ -68733,7 +68649,7 @@ sv=Tillgängligt reserverat utrymme/återstående liv:
 fi=Varattu tila / jäljellä oleva käyttöikä:
 no=Tilgjengelig reservert plass/gjenværende levetid:
 el=Διαθέσιμος δεσμευμένος χώρος/Υπόλοιπη ζωή:
-tr=Mevcut Ayrılmış Alan/Kalan Ömür:
+tr=Kullanılabilir Ayrılmış Alan/Kalan Ömür:
 he=מקום זמין זמין/משך חיים:
 
 {{SMART}}
@@ -72233,7 +72149,7 @@ sv=Nuvarande namn:
 fi=Nykyinen nimi:
 no=Nåværende navn:
 el=Τρέχον όνομα:
-tr=Geçerli isim:
+tr=Mevcut isim:
 he=שם נוכחי:
 
 {{Settings}}
@@ -73332,7 +73248,7 @@ sv=Expandera aktuell nod
 fi=Laajenna Nykyinen solmu
 no=Utvid gjeldende node
 el=Αναπτύξτε το Current Node
-tr=Geçerli Düğümü Genişlet
+tr=Mevcut Düğümü Genişlet
 he=הרחב את הצומת הנוכחי
 
 {{Settings}}
