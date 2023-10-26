@@ -36106,7 +36106,7 @@ he=הטמפרטורה המקסימלית הנוכחית בין כל חיישני
 {{Sensors}}
 en=Current GPU core frequency.
 fr=Fréquence actuelle du cœur du GPU.
-de=Aktueller GPU-Kernfrequenz.
+de=Aktuelle GPU-Kernfrequenz.
 es=Frecuencia del núcleo de la GPU actual.
 pt-BR=Frequência atual do núcleo da GPU.
 it=Frequenza attuale core GPU.
@@ -36121,7 +36121,7 @@ ar=الساعة الأساسية لوحدة معالجة الرسومات (GPU) 
 ru=Текущая частота ядра GPU.
 uk=Поточна частота ядра GPU.
 cs=Aktuální frekvence jádra GPU.
-sk=Aktuálny frekvencia jadra GPU.
+sk=Aktuálna frekvencia jadra GPU.
 hu=Jelenlegi GPU frekvencia.
 pl=Aktualny częstotliwość rdzenia GPU.
 sv=Aktuell GPU-kärnfrekvens.
