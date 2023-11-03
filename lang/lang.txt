@@ -61,7 +61,7 @@ sv=Nej
 fi=Ei
 no=Nei
 el=Οχι
-tr=Numara
+tr=Yok
 he=לא
 
 {{}}
@@ -1379,7 +1379,7 @@ sv=1 dator
 fi=1 tietokone
 no=1 datamaskin
 el=1 υπολογιστής
-tr=1 Bilgisayar
+tr=1 bilgisayar
 he=1 מחשב
 
 {{}}
@@ -2838,7 +2838,7 @@ sv=Snapshot CPU Polling
 fi=Snapshot CPU Polling
 no=Øyeblikksbilde CPU Polling
 el=Στιγμιότυπο CPU Polling
-tr=Anlık Görüntü CPU Anketi
+tr=Snapshot CPU Yoklama
 he=Snapshot CPU Polling
 
 {{Settings}}
@@ -2978,7 +2978,7 @@ sv=Inaktiverad (ljus)
 fi=Ei käytössä (kevyt)
 no=Deaktivert (lys)
 el=Απενεργοποιημένο (Φως)
-tr=Devre Dışı (Hafif)
+tr=Devre Dışı (Aydınlık)
 he=מושבת (קל)
 
 {{Settings}}
@@ -20492,7 +20492,7 @@ sv=Kärnspänning
 fi=Ydinjännite
 no=Kjernespenning
 el=Τάση πυρήνα
-tr=çekirdek gerilimi
+tr=Çekirdek Voltajı
 he=מתח ליבה
 
 {{Sensors}}
@@ -25089,7 +25089,7 @@ sv=Installera
 fi=Asentaa
 no=Installere
 el=Εγκαθιστώ
-tr=Düzenlemek
+tr=Yükle
 he=להתקין
 
 {{Settings}}
@@ -25117,7 +25117,7 @@ sv=Avlägsna
 fi=Poista
 no=Fjerne
 el=Αφαιρώ
-tr=Kaldırmak
+tr=Kaldır
 he=לְהַסִיר
 
 {{Settings}}
@@ -29154,7 +29154,7 @@ sv=Säkerhet
 fi=Turvallisuus
 no=Sikkerhet
 el=Ασφάλεια
-tr=Emniyet
+tr=Güvenlik
 he=בְּטִיחוּת
 
 {{Settings}}
@@ -29182,7 +29182,7 @@ sv=Anpassa
 fi=Mukauta
 no=Tilpass
 el=Προσαρμογή
-tr=Özelleştirmek
+tr=Özelleştir
 he=התאמה אישית
 
 {{Sensors}}
@@ -29294,7 +29294,7 @@ sv=System/moderkort temperatur.
 fi=Järjestelmän/emolevyn lämpötila.
 no=System/hovedkort temperatur.
 el=Θερμοκρασία συστήματος/κεντρικής πλακέτας.
-tr=Sistem/Ana kart sıcaklığı.
+tr=Sistem/Anakart sıcaklığı.
 he=טמפרטורת מערכת/לוח.
 
 {{Sensors}}
@@ -32627,7 +32627,7 @@ sv=Minnesmodulfelkontroll/korrigering
 fi=Muistimoduulin virheen tarkistus/korjaus
 no=Minnemodulfeilkontroll/korreksjon
 el=Έλεγχος/Διόρθωση σφάλματος μονάδας μνήμης
-tr=Bellek Modülü Hata Kontrolü/Düzeltilmesi
+tr=Bellek Modülü Hata Kontrol/Düzeltme
 he=בדיקת/תיקון שגיאות של מודול זיכרון
 
 {{Main}}
@@ -32766,7 +32766,7 @@ pl=Wersja oprogramowania sprzętowego Embedded Controller
 fi=Embedded Controller laiteohjelmiston versio
 no=Embedded Controller Firmware Version
 el=Embedded Controller Firmware Version
-tr=Embedded Controller Bellenim Sürümü
+tr=Gömülü Denetleyici Ürün Yazılımı Sürümü
 he=Embedded Controller Firmware Version
 
 {{Main}}
@@ -33017,7 +33017,7 @@ sv=Memory Module
 fi=Memory Module
 no=Memory Module
 el=Memory Module
-tr=Memory Module
+tr=Bellek Modülü
 he=Memory Module
 
 {{}}
@@ -33130,7 +33130,7 @@ sv=Säkerställt
 fi=Varmistettu
 no=Forsikret
 el=Εξασφαλισμένο
-tr=Garantili
+tr=Sigortalı
 he=מובטח
 
 ; Resolved (resulting) Ratio Limits
@@ -33159,7 +33159,7 @@ sv=Resulterande
 fi=Tuloksena
 no=Resulterende
 el=Με αποτέλεσμα
-tr=Sonuç
+tr=Çözümlendi
 he=כתוצאה מכך
 
 {{Main}}
@@ -33467,7 +33467,7 @@ sv=Plattform
 fi=Alusta
 no=Plattform
 el=Πλατφόρμα
-tr=Platformu
+tr=Platform
 he=פּלַטפוֹרמָה
 
 {{Main}}
@@ -33495,7 +33495,7 @@ sv=Plattform
 fi=Alusta
 no=Plattform
 el=Πλατφόρμα
-tr=Platformu
+tr=Platform
 he=פּלַטפוֹרמָה
 
 {{}}
@@ -33663,7 +33663,7 @@ sv=Analys
 fi=Analyysi
 no=Analyse
 el=Ανάλυση
-tr=Analiz
+tr=Analiz ediliyor
 he=אָנָלִיזָה
 
 {{SUBST}}
@@ -33691,7 +33691,7 @@ sv=Upptäckt
 fi=Havaitseminen
 no=Gjenkjenning
 el=Ανίχνευση
-tr=Tespit etme
+tr=Tespit ediliyor
 he=איתור
 
 {{SUBST}}
@@ -33747,7 +33747,7 @@ sv=Network Cards
 fi=Network Cards
 no=Network Cards
 el=Network Cards
-tr=Network Cards
+tr=Ağ Kartları
 he=Network Cards
 
 {{}}
@@ -33775,7 +33775,7 @@ sv=Vänta..
 fi=Odota..
 no=Vennligst vent..
 el=Παρακαλώ περιμένετε..
-tr=Lütfen bekle..
+tr=Lütfen bekleyin..
 he=המתן בבקשה..
 
 {{}}
@@ -33803,7 +33803,7 @@ sv=Checking for updates
 fi=Checking for updates
 no=Checking for updates
 el=Checking for updates
-tr=Checking for updates
+tr=Güncellemeler kontrol ediliyor
 he=Checking for updates
 
 {{}}
@@ -33831,7 +33831,7 @@ sv=Systemkonfigurationsundersökning...
 fi=Järjestelmän kokoonpanon tarkastus...
 no=Systemkonfigurasjonsundersøkelse...
 el=Εξέταση διαμόρφωσης συστήματος...
-tr=Sistem Yapılandırma İncelemesi...
+tr=Sistem yapılandırması inceleniyor...
 he=בדיקת תצורת מערכת...
 
 {{}}
@@ -41842,7 +41842,7 @@ sv=CPU-minneskontrollerfel
 fi=CPU-muistiohjaimen virheet
 no=CPU-minnekontrollerfeil
 el=Σφάλματα ελεγκτή μνήμης CPU
-tr=CPU Bellek Denetleyicisi Hataları
+tr=CPU Bellek Kontrolcüsü Hataları
 he=שגיאות בקר זיכרון מעבד
 
 {{Sensors}}
@@ -42402,7 +42402,7 @@ sv=Inaktiverad
 fi=Ei käytössä
 no=Funksjonshemmet
 el=Απενεργοποιημένο
-tr=Engelli
+tr=Devre dışı
 he=נָכֶה
 
 {{}}
@@ -42458,7 +42458,7 @@ sv=Stöds
 fi=Tuettu
 no=Støttes
 el=Υποστηρίζεται
-tr=Desteklenen
+tr=Destekleniyor
 he=נתמך
 
 {{Main}}
@@ -45315,7 +45315,7 @@ sv=L1-cache
 fi=Cache L1
 no=L1 Cache
 el=L1 Cache
-tr=Cache L1
+tr=L1 Önbellek
 he=מטמון L1
 
 {{Main}}
@@ -45343,7 +45343,7 @@ sv=L1-cache
 fi=Cache L1
 no=L1 Cache
 el=L1 Cache
-tr=Cache L1
+tr=L1 Önbellek
 he=מטמון L1
 
 {{}}
@@ -73079,7 +73079,7 @@ sv=Språk:
 fi=Kieli:
 no=Språk:
 el=Γλώσσα:
-tr=Dilim:
+tr=Dil:
 he=שפה:
 
 {{Main}}
@@ -73107,7 +73107,7 @@ sv=OK
 fi=OK
 no=OK
 el=Εντάξει
-tr=Iyi
+tr=Tamam
 he=בסדר
 
 ; OK as Normal in SMART
@@ -74060,7 +74060,7 @@ sv=Sö&k...
 fi=Ha&e...
 no=Sø&k...
 el=Αναζήτηση...
-tr=Ara&mak...
+tr=Ara&...
 he=לחפש...
 
 {{Main}}
@@ -74172,7 +74172,7 @@ sv=&About HWiNFO...
 fi=&About HWiNFO...
 no=&About HWiNFO...
 el=&About HWiNFO...
-tr=HWiNFO H&akkında...
+tr=&HWiNFO Hakkında...
 he=&About HWiNFO...
 
 {{Main}}
@@ -74200,7 +74200,7 @@ sv=&Create
 fi=&Create
 no=&Create
 el=&Create
-tr=&Yaratmak
+tr=&Oluştur
 he=&Create
 
 {{Main}}
@@ -74312,7 +74312,7 @@ sv=Native Command Queuing:
 fi=Native Command Queuing:
 no=Native Command Queuing:
 el=Native Command Queuing:
-tr=Native Command Queuing:
+tr=Yerel Komut Kuyruğu:
 he=Native Command Queuing:
 
 {{Main}}
@@ -74424,7 +74424,7 @@ sv=Antal EU:s (exekveringsenheter)
 fi=EU:n määrä (suoritusyksiköt)
 no=Antall EU-er (utførelsesenheter)
 el=Αριθμός ΕΕ (Μονάδες Εκτέλεσης)
-tr=AB Sayısı (Yürütme Birimleri)
+tr=EU'ların Sayısı (Yürütme Birimleri)
 he=מספר האיחוד האירופי (יחידות ביצוע)
 
 {{Main}}
@@ -74536,7 +74536,7 @@ sv=Total Graphics Power (TGP)
 fi=Total Graphics Power (TGP)
 no=Total Graphics Power (TGP)
 el=Total Graphics Power (TGP)
-tr=Total Graphics Power (TGP)
+tr=Toplam Grafik Gücü (TGP)
 he=Total Graphics Power (TGP)
 
 {{Sensors}}
@@ -74564,7 +74564,7 @@ sv=Total Board Power (TBP)
 fi=Total Board Power (TBP)
 no=Total Board Power (TBP)
 el=Total Board Power (TBP)
-tr=Total Board Power (TBP)
+tr=Toplam Kart Gücü(TBP)
 he=Total Board Power (TBP)
 
 {{Main}}
@@ -74620,7 +74620,7 @@ sv=Self-Monitoring, Analysis and Reporting Technology (S.M.A.R.T.)
 fi=Self-Monitoring, Analysis and Reporting Technology (S.M.A.R.T.)
 no=Self-Monitoring, Analysis and Reporting Technology (S.M.A.R.T.)
 el=Self-Monitoring, Analysis and Reporting Technology (S.M.A.R.T.)
-tr=Self-Monitoring, Analysis and Reporting Technology (S.M.A.R.T.)
+tr=Kendi Kendini İzleme, Analiz ve Raporlama Teknolojisi (S.M.A.R.T.)
 he=Self-Monitoring, Analysis and Reporting Technology (S.M.A.R.T.)
 
 {{Settings}}
@@ -75403,7 +75403,7 @@ sv=dagar kvar
 fi=päiviä jäljellä
 no=dager igjen
 el=μέρες που απομένουν
-tr=Kalan günler
+tr=kalan günler
 he=ימים שנותרו
 
 {{}}
@@ -75487,7 +75487,7 @@ sv=Sök...
 fi=Hae...
 no=Søk...
 el=Αναζήτηση...
-tr=Aramak...
+tr=Ara...
 he=לחפש...
 
 {{Settings}}
@@ -75571,7 +75571,7 @@ sv=Theme:
 fi=Theme:
 no=Theme:
 el=Theme:
-tr=Theme:
+tr=Tema:
 he=Theme:
 
 {{}}
@@ -75599,7 +75599,7 @@ sv=Automatic
 fi=Automatic
 no=Automatic
 el=Automatic
-tr=Automatic
+tr=Otomatik
 he=Automatic
 
 {{Sensors}}
