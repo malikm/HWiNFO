@@ -5813,7 +5813,7 @@ sv=Minneskontroller
 fi=Muistin Ohjain
 no=Minnekontroller
 el=Ελεγκτής μνήμης
-tr=Bellek Denetleyicisi
+tr=Bellek Kontrolcüsü
 he=בקר זיכרון
 
 ; "Memory" in System Summary - GPU - Clocks - Memory; special case translation
@@ -12092,7 +12092,7 @@ sv=Användning av GPU-minneskontroller
 fi=GPU-muistiohjaimen käyttö
 no=Utnyttelse av GPU-minnekontroller
 el=Χρήση ελεγκτή μνήμης GPU
-tr=GPU Bellek Denetleyicisi Kullanımı
+tr=GPU Bellek Kontrolcüsü Kullanımı
 he=שימוש בבקר זיכרון GPU
 
 {{Sensors}}
@@ -12120,7 +12120,7 @@ sv=Genomsnittlig användning av GPU Memory Controller.
 fi=GPU-muistiohjaimen keskimääräinen käyttöaste.
 no=Gjennomsnittlig bruk av GPU-minnekontrolleren.
 el=Μέση χρήση του ελεγκτή μνήμης GPU.
-tr=GPU Bellek Denetleyicisinin ortalama kullanımı.
+tr=GPU Bellek Kontrolcüsünin ortalama kullanımı.
 he=ניצול ממוצע של בקר הזיכרון של GPU
 
 {{Sensors}}
@@ -16320,7 +16320,7 @@ sv=För NVMe-enheter är detta vanligtvis temperaturen på ASIC-styrenheten.
 fi=NVMe-asemissa tämä on yleensä ASIC-ohjaimen lämpötila.
 no=For NVMe-stasjoner er dette vanligvis temperaturen til ASIC-kontrolleren.
 el=Για μονάδες NVMe αυτή είναι συνήθως η θερμοκρασία του ελεγκτή ASIC.
-tr=NVMe diskler için bu genellikle ASIC denetleyicisinin sıcaklığıdır.
+tr=NVMe diskler için bu genellikle ASIC kontrolcüsü sıcaklığıdır.
 he=עבור כונני NVMe זוהי בדרך כלל הטמפרטורה של בקר ASIC.
 
 {{Sensors}}
@@ -16432,7 +16432,7 @@ sv=Diskens återstående tillstånd uppskattas av dess firmware.
 fi=Levyn jäljellä oleva kunto on arvioitu sen laiteohjelmiston mukaan.
 no=Diskens gjenværende helse estimert av fastvaren.
 el=Η υπολειπόμενη κατάσταση του δίσκου εκτιμάται από το υλικολογισμικό του.
-tr=Bellenimi tarafından tahmin edilen kalan disk sağlığı.
+tr=Ürün yazılımı tarafından tahmin edilen kalan disk sağlığı.
 he=תקינות הדיסק שנותרה מוערכת לפי הקושחה שלו.
 
 {{Sensors}}
@@ -18728,7 +18728,7 @@ sv=Spänning begärd av Integrated Graphics Controller (IGPU). Kanske inte är d
 fi=Integrated Graphics Controllerin (IGPU) pyytämä jännite. Ei ehkä ole Voltage Regulatorin syöttämä jännite.
 no=Spenning forespurt av Integrated Graphics-kontrolleren (IGPU). Kan ikke være spenningen levert av spenningsregulatoren.
 el=Τάση που ζητείται από τον ελεγκτή ολοκληρωμένων γραφικών (IGPU). Μπορεί να μην είναι η τάση που παρέχεται από τον ρυθμιστή τάσης.
-tr=Entegre Grafik denetleyicisi (IGPU) tarafından talep edilen voltaj. Voltaj Regülatörü tarafından sağlanan voltaj olmayabilir.
+tr=Entegre Grafik Kontrolcüsü (IGPU) tarafından talep edilen voltaj. Voltaj Regülatörü tarafından sağlanan voltaj olmayabilir.
 he=מתח מבוקש על ידי הבקר המשולב גרפי (IGPU). יכול להיות שזה לא המתח שסופק על ידי ווסת מתח.
 
 {{Sensors}}
@@ -21836,7 +21836,7 @@ sv=Current Memory Controller målfrekvens (UCLK).
 fi=Nykyinen muistiohjaimen tavoitetaajuus (UCLK).
 no=Nåværende minnekontrollermålfrekvens (UCLK).
 el=Τρέχουσα συχνότητα στόχου ελεγκτή μνήμης (UCLK).
-tr=Mevcut Bellek Denetleyicisi hedef frekansı (UCLK).
+tr=Mevcut Bellek Kontrolcüsü hedef frekansı (UCLK).
 he=תדר יעד נוכחי של בקר הזיכרון (UCLK).
 
 {{Sensors}}
@@ -22396,7 +22396,7 @@ sv=Aktuell DDR-läsbandbredd uppmätt av den integrerade minnesstyrenheten.
 fi=Nykyinen DDR-lukukaistanleveys integroidun muistiohjaimen mittaamana.
 no=Gjeldende DDR-lesebåndbredde målt av den integrerte minnekontrolleren.
 el=Το τρέχον εύρος ζώνης ανάγνωσης DDR μετράται από τον ελεγκτή ενσωματωμένης μνήμης.
-tr=Entegre Bellek Denetleyicisi tarafından ölçülen mevcut DDR Okuma Bant Genişliği.
+tr=Entegre Bellek Kontrolcüsü tarafından ölçülen mevcut DDR Okuma Bant Genişliği.
 he=רוחב פס קריאת DDR נוכחי נמדד על ידי בקר הזיכרון המשולב.
 
 {{Sensors}}
@@ -22452,7 +22452,7 @@ sv=Aktuell DDR-skrivbandbredd mätt av den integrerade minneskontrollern.
 fi=Nykyinen DDR-kirjoituskaistanleveys integroidun muistiohjaimen mittaamana.
 no=Gjeldende DDR-skrivebåndbredde målt av den integrerte minnekontrolleren.
 el=Τρέχον εύρος ζώνης εγγραφής DDR που μετράται από τον ελεγκτή ενσωματωμένης μνήμης.
-tr=Entegre Bellek Denetleyicisi tarafından ölçülen mevcut DDR Yazma Bant Genişliği.
+tr=Entegre Bellek Kontrolcüsü tarafından ölçülen mevcut DDR Yazma Bant Genişliği.
 he=רוחב פס כתיבה נוכחי של DDR נמדד על ידי בקר הזיכרון המשולב.
 
 {{Sensors}}
@@ -35876,7 +35876,7 @@ sv=Denna moderkortssensor tillhandahåller data som mäts med hjälp av olika so
 fi=Tämä emolevyn anturi tarjoaa tietoja, jotka on mitattu emolevyn poikki sijaitsevilla eri antureilla.\nNäiden anturiarvojen sijainti ja merkitys ovat emolevykohtaisia, eikä niitä voida määrittää yleisesti. Oikeiden tietojen antaminen tältä anturilta vaatii erityistä tukea jokaiselle emolevymallille ja sen mukautetun anturiasettelulle.\nVaikka HWiNFO:ssa on valtava tietokanta tällaisista emolevykohtaisista kokoonpanoista, jotkin mallit eivät ehkä ole vielä hyvin tai niitä ei tueta kunnolla. Lisäksi jotkin kohteet eivät takaa kelvollisia tietoja, jos niiden tunnistustuloja ei käytetä tietyssä järjestelmässä.
 no=Denne hovedkortsensoren gir data målt ved hjelp av forskjellige prober plassert over hovedkortet.\nPlasseringen og betydningen av disse sensorverdiene er hovedkortspesifikke og ikke mulig å bestemme universelt. Å gi riktig informasjon fra denne sensoren krever dedikert støtte for hver hovedkortmodell og dens tilpassede sensorlayout.\nMens HWiNFO har en enorm database med slike hovedkortspesifikke konfigurasjoner, kan det være noen modeller som ikke støttes godt eller ikke støttes riktig ennå. I tillegg er det ikke garantert at enkelte elementer gir gyldige data hvis sensorinngangene deres ikke brukes på et bestemt system.
 el=Αυτός ο αισθητήρας κύριας πλακέτας παρέχει δεδομένα που μετρήθηκαν χρησιμοποιώντας διάφορους ανιχνευτές που βρίσκονται σε όλη την κύρια πλακέτα.\nΗ θέση και η σημασία αυτών των τιμών του αισθητήρα είναι συγκεκριμένη για την κύρια πλακέτα και δεν είναι δυνατός ο καθολικός προσδιορισμός. Η παροχή κατάλληλων πληροφοριών από αυτόν τον αισθητήρα απαιτεί αποκλειστική υποστήριξη κάθε μοντέλου mainboard και της προσαρμοσμένης διάταξης αισθητήρα του.\nΕνώ το HWiNFO διαθέτει μια τεράστια βάση δεδομένων τέτοιων διαμορφώσεων ειδικά για την κύρια πλακέτα, μπορεί να υπάρχουν ορισμένα μοντέλα που δεν υποστηρίζονται καλά ή δεν υποστηρίζονται ακόμη σωστά. Επιπλέον, ορισμένα στοιχεία δεν είναι εγγυημένα ότι παρέχουν έγκυρα δεδομένα, εάν τα αισθητήρια δεδομένα τους δεν χρησιμοποιούνται σε ένα συγκεκριμένο σύστημα.
-tr=Bu anakart sensörü, anakart üzerinde bulunan çeşitli problar kullanılarak ölçülen verileri sağlar.\nBu sensör değerlerinin yeri ve anlamı anakarta özeldir ve evrensel olarak belirlenmesi mümkün değildir. Bu sensörden uygun bilgilerin sağlanması, her bir anakart modelinin ve özel sensör düzeninin özel olarak desteklenmesini gerektirir.\nHWiNFO, bu tür ana karta özel konfigürasyonlardan oluşan çok büyük bir veritabanına sahip olsa da, bazı modeller henüz iyi şekilde desteklenmeyebilir veya düzgün şekilde desteklenmeyebilir. Ek olarak, bazı öğelerin, duyu girdileri belirli bir sistemde kullanılmadığı takdirde geçerli veri sağlamaları garanti edilmez.
+tr=Bu anakart sensörü, anakart üzerinde bulunan çeşitli problar kullanılarak ölçülen verileri sağlar.\nBu sensör değerlerinin yeri ve anlamı anakarta özeldir ve evrensel olarak belirlenmesi mümkün değildir. Bu sensörden uygun bilgilerin sağlanması, her bir anakart modelinin ve özel sensör düzeninin özel olarak desteklenmesini gerektirir.\nHWiNFO, bu tür anakarta özel konfigürasyonlardan oluşan çok büyük bir veritabanına sahip olsa da, bazı modeller henüz iyi şekilde desteklenmeyebilir veya düzgün şekilde desteklenmeyebilir. Ek olarak, bazı öğelerin, duyu girdileri belirli bir sistemde kullanılmadığı takdirde geçerli veri sağlamaları garanti edilmez.
 he=חיישן לוח מרכזי זה מספק נתונים הנמדדים באמצעות בדיקות שונות הממוקמות על פני הלוח הראשי.\nהמיקום והמשמעות של ערכי החיישן הללו הם ספציפיים ללוח הראשי ולא ניתן לקבוע באופן אוניברסלי. אספקת מידע מתאים מהחיישן הזה דורשת תמיכה ייעודית של כל דגם של לוח ראשי ושל פריסת החיישנים המותאמת אישית שלו.\nבעוד ש-HWiNFO כולל מסד נתונים עצום של תצורות ספציפיות ללוח הראשי, יכולים להיות דגמים מסוימים שאינם נתמכים היטב או עדיין לא נתמכים כראוי. בנוסף, חלק מהפריטים אינם מובטחים לספק נתונים תקפים אם לא נעשה שימוש בקלט החישה שלהם במערכת מסוימת.
 
 {{Sensors}}
@@ -43522,7 +43522,7 @@ sv=SMU Firmware Revision:
 fi=SMU:n laiteohjelmistoversio:
 no=SMU Firmware Revisjon:
 el=Αναθεώρηση υλικολογισμικού SMU:
-tr=SMU Bellenim Revizyonu:
+tr=SMU Ürün Yazılımı Revizyonu:
 he=עדכון קושחה של SMU:
 
 {{Main}}
@@ -48396,7 +48396,7 @@ sv=SATA Host Controller
 fi=SATA isäntäohjain
 no=SATA vertskontroller
 el=Ελεγκτής κεντρικού υπολογιστή SATA
-tr=SATA Ana Bilgisayar Denetleyicisi
+tr=SATA Ana Bilgisayar Kontrolcüsü
 he=בקר מארח SATA
 
 {{Main}}
@@ -52741,7 +52741,7 @@ sv=Firmware-versionsinformation
 fi=Laiteohjelmiston versiotiedot
 no=Informasjon om fastvareversjon
 el=Πληροφορίες έκδοσης υλικολογισμικού
-tr=Bellenim Sürüm Bilgileri
+tr=Ürün Yazılımı Sürüm Bilgileri
 he=מידע על גרסת קושחה
 
 {{Main}}
@@ -54226,7 +54226,7 @@ sv=SMU Firmware-version:
 fi=SMU-laiteohjelmiston versio:
 no=SMU-fastvareversjon:
 el=Έκδοση υλικολογισμικού SMU:
-tr=SMU Bellenim Sürümü:
+tr=SMU Ürün Yazılımı Sürümü:
 he=גרסת קושחת SMU:
 
 {{Main}}
@@ -57699,7 +57699,7 @@ sv=Firmware-komponentnamn:
 fi=Laiteohjelmiston osan nimi:
 no=Fastvarekomponentnavn:
 el=Όνομα στοιχείου υλικολογισμικού:
-tr=Bellenim Bileşen Adı:
+tr=Ürün Yazılımı Bileşen Adı:
 he=שם רכיב הקושחה:
 
 {{Main}}
@@ -57727,7 +57727,7 @@ sv=Firmwareversion:
 fi=Laiteversio:
 no=Fastvareversjon:
 el=Έκδοση υλικολογισμικού:
-tr=Bellenim Sürümü:
+tr=Ürün Yazılımı Sürümü:
 he=גרסת קושחה:
 
 {{Main}}
@@ -57755,7 +57755,7 @@ sv=Firmware Releasedatum:
 fi=Laiteohjelmiston julkaisupäivä:
 no=Fastvareutgivelsesdato:
 el=Ημερομηνία κυκλοφορίας υλικολογισμικού:
-tr=Bellenim Yayın Tarihi:
+tr=Ürün Yazılımı Yayın Tarihi:
 he=תאריך שחרור הקושחה:
 
 {{Main}}
@@ -58623,7 +58623,7 @@ sv=Hårdvaru-ID för ljudkontroller:
 fi=Ääniohjaimen laitteistotunnus:
 no=Lydkontroller maskinvare-ID:
 el=Αναγνωριστικό υλικού ελεγκτή ήχου:
-tr=Ses Denetleyicisi Donanım Kimliği:
+tr=Ses Kontrolcüsü Donanım Kimliği:
 he=מזהה חומרה של בקר השמע:
 
 {{Main}}
@@ -59967,7 +59967,7 @@ sv=Diskkontroller
 fi=Levyn ohjain
 no=Diskkontroller
 el=Ελεγκτής μονάδας δίσκου
-tr=Disk Denetleyicisi
+tr=Disk Kontrolcüsü
 he=בקר כונן דיסק
 
 {{Main}}
@@ -59995,7 +59995,7 @@ sv=Host Controller:
 fi=Aseman isäntäohjain:
 no=Vertskontroller:
 el=Ελεγκτής κεντρικού υπολογιστή Drive:
-tr=Ana Bilgisayar Denetleyicisi:
+tr=Ana Bilgisayar Kontrolcüsü:
 he=בקר מארח כונן:
 
 {{Main}}
@@ -60247,7 +60247,7 @@ sv=Drive Firmware Revision:
 fi=Aseman laiteohjelmistoversio:
 no=Stasjon firmwarerevisjon:
 el=Αναθεώρηση υλικολογισμικού Drive:
-tr=Sürücü Bellenim Revizyonu:
+tr=Sürücü Ürün Yazılımı Revizyonu:
 he=עדכון קושחת הכונן:
 
 {{Main}}
@@ -60415,7 +60415,7 @@ sv=Drive Firmware Revision:
 fi=Aseman laiteohjelmistoversio:
 no=Stasjon firmwarerevisjon:
 el=Αναθεώρηση υλικολογισμικού Drive:
-tr=Optik Sürücü Bellenim Revizyonu:
+tr=Optik Sürücü Ürün Yazılımı Revizyonu:
 he=עדכון קושחת הכונן:
 
 {{MainOpto}}
@@ -60471,7 +60471,7 @@ sv=Enhetskontroller:
 fi=Asemaohjain:
 no=Stasjonskontroller:
 el=Ελεγκτής μονάδας δίσκου:
-tr=Optik Sürücü Denetleyicisi:
+tr=Optik Sürücü Kontrolcüsü:
 he=בקר כונן דיסק:
 
 {{Main}}
@@ -74060,7 +74060,7 @@ sv=Sö&k...
 fi=Ha&e...
 no=Sø&k...
 el=Αναζήτηση...
-tr=Ara&...
+tr=A&ra...
 he=לחפש...
 
 {{Main}}
@@ -74144,7 +74144,7 @@ sv=On-line &Help (forum)
 fi=On-line &Help (forum)
 no=On-line &Help (forum)
 el=On-line &Help (forum)
-tr=On-line &Help (forum)
+tr=Çevrimiçi &Yardım (forum)
 he=On-line &Help (forum)
 
 {{Main}}
@@ -74564,7 +74564,7 @@ sv=Total Board Power (TBP)
 fi=Total Board Power (TBP)
 no=Total Board Power (TBP)
 el=Total Board Power (TBP)
-tr=Toplam Kart Gücü(TBP)
+tr=Toplam Kart Gücü (TBP)
 he=Total Board Power (TBP)
 
 {{Main}}
@@ -75382,7 +75382,7 @@ he=ודא שהרישיון הושג כחוק ושלא בוצע שיבוש בתו
 en=days left
 fr=Jours restants
 de=Tage übrig
-es=Días restantes
+es=días restantes
 pt-BR=dias restantes
 it=giorni rimasti
 nl=dagen over
@@ -75394,11 +75394,11 @@ ko=남은 일
 vi=ngày còn lại
 ar=ايام متبقية
 ru=дней осталось
-uk=Днів залишилось
+uk=днів залишилось
 cs=dní zbývá
 sk=dní zostáva
 hu=nap van hátra
-pl=Pozostałe dni
+pl=pozostałe dni
 sv=dagar kvar
 fi=päiviä jäljellä
 no=dager igjen
