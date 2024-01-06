@@ -33697,7 +33697,7 @@ he=איתור
 {{SUBST}}
 en=ATA/SCSI Drives
 fr=ATA/SCSI Drives
-de=ATA/SCSI Laufwärke
+de=ATA/SCSI Laufwerke
 es=ATA/SCSI Drives
 pt-BR=ATA/SCSI Drives
 it=Unità ATA/SCSI
