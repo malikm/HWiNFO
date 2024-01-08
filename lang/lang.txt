@@ -71959,7 +71959,7 @@ he=חרג מהמספר המרבי של חיבורים מותרים/מורשיי�
 {{Settings}}
 en=Connected
 fr=Lié
-de=In Verbindung gebracht
+de=Verbunden
 es=Conectado
 pt-BR=Conectado
 it=Collegato
