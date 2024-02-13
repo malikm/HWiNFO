@@ -76527,6 +76527,62 @@ tr=Bağımsız Pencere
 he=חלון עצמאי
 
 {{Settings}}
+en=Text
+fr=Text
+de=Text
+es=Text
+pt-BR=Text
+it=Testo
+nl=Text
+da=Text
+zh-CN=文本
+zh-TW=文字
+ja=テキスト
+ko=텍스트
+vi=Text
+ar=Text
+ru=Text
+uk=Text
+cs=Text
+sk=Text
+hu=Szöveg
+pl=Text
+sv=Text
+fi=Text
+no=Text
+el=Text
+tr=Text
+he=Text
+
+{{Settings}}
+en=Graph
+fr=Graphique
+de=Graph
+es=Grafico
+pt-BR=Gráfico
+it=Grafico
+nl=Grafiek
+da=Kurve
+zh-CN=图形
+zh-TW=圖形
+ja=グラフ
+ko=그래프
+vi=đồ thị
+ar=رسم بياني
+ru=График
+uk=Графік
+cs=Graf
+sk=Graf
+hu=Grafikon
+pl=Wykres
+sv=Graf
+fi=Kaavio
+no=Kurve
+el=Γραφική παράσταση
+tr=Grafik
+he=גרָף
+
+{{Settings}}
 en=HWiNFO needs to be started from a secure folder (e.g. C:\Program Files\) to properly show the OSD. This is automatically performed by the HWiNFO Installer.
 fr=HWiNFO doit être démarré à partir d'un dossier sécurisé (par exemple C:\Program Files\) pour afficher correctement l'OSD. Ceci est automatiquement effectué par le programme d'installation de HWiNFO.
 de=HWiNFO muss aus einem sicheren Ordner (z. B. C:\Programme\) gestartet werden, um das OSD ordnungsgemäß anzuzeigen. Dies wird automatisch vom HWiNFO-Installer durchgeführt.
