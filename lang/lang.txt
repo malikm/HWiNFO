@@ -76639,6 +76639,34 @@ tr=Opaklık:
 he=אֲטִימוּת:
 
 {{Settings}}
+en=Background opacity:
+fr=Opacité de l'arrière-plan:
+de=Hintergrundopazität:
+es=Opacidad del fondo:
+pt-BR=Opacidade do fundo:
+it=Opacità dello sfondo:
+nl=Achtergronddekking:
+da=Baggrundsgennemsigtighed:
+zh-CN=背景不透明度：
+zh-TW=背景不透明度：
+ja=背景の不透明度:
+ko=배경 불투명도:
+vi=Độ mờ nền:
+ar=عتامة الخلفية:
+ru=Непрозрачность фона:
+uk=Непрозорість фону:
+cs=Neprůhlednost pozadí:
+sk=Nepriehľadnosť pozadia:
+hu=Háttér átlátszatlansága:
+pl=Nieprzezroczystość tła:
+sv=Bakgrundsopacitet:
+fi=Taustan peittävyys:
+no=Bakgrunnsopasitet:
+el=Αδιαφάνεια φόντου:
+tr=Arka plan opaklığı:
+he=אטימות רקע:
+
+{{Settings}}
 en=Freeware version limited to 3 items.\nMore available in HWiNFO64 Pro.
 fr=Version gratuite limitée à 3 éléments.\nPlus disponible dans HWiNFO64 Pro.
 de=Freeware-Version auf 3 Elemente beschränkt.\nMehr verfügbar in HWiNFO64 Pro.
