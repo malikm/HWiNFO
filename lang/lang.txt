@@ -76499,6 +76499,34 @@ tr=Şeffaflık:
 he=שְׁקִיפוּת:
 
 {{Settings}}
+en=Overlay
+fr=Recouvrir
+de=Überlagerung
+es=Cubrir
+pt-BR=Sobreposição
+it=Sovrapposizione
+nl=Overlay
+da=Overlejring
+zh-CN=覆盖
+zh-TW=覆蓋
+ja=かぶせる
+ko=씌우다
+vi=Lớp phủ
+ar=تراكب
+ru=Наложение
+uk=Накладання
+cs=Překrytí
+sk=Prekrytie
+hu=Fedvény
+pl=Narzuta
+sv=Täcka över
+fi=Peittokuva
+no=Overlegg
+el=Επικάλυμμα
+tr=Kaplama
+he=כיסוי
+
+{{Settings}}
 en=Independent Window
 fr=Fenêtre indépendante
 de=Unabhängiges Fenster
