@@ -76165,7 +76165,7 @@ he=אפשר מפתח חם לאיפוס ערכים
 {{Settings}}
 en=Enable OSD
 fr=Activer l'OSD
-de=OSD Aktivieren
+de=OSD aktivieren
 es=Habilitar OSD
 pt-BR=Habilitar OSD
 it=Abilita OSD
@@ -76389,7 +76389,7 @@ he=העלאת קנה מידה:
 {{Settings}}
 en=Automatic targeting
 fr=Ciblage automatique
-de=Automatisches Targeting
+de=Automatische Zielansteuerung
 es=Orientación automática
 pt-BR=Segmentação automática
 it=Obiettivo automatico
@@ -76613,7 +76613,7 @@ he=גרָף
 {{Settings}}
 en=HWiNFO needs to be started from a secure folder (e.g. C:\Program Files\) to properly show the OSD. This is automatically performed by the HWiNFO Installer.
 fr=HWiNFO doit être démarré à partir d'un dossier sécurisé (par exemple C:\Program Files\) pour afficher correctement l'OSD. Ceci est automatiquement effectué par le programme d'installation de HWiNFO.
-de=HWiNFO muss aus einem sicheren Ordner (z. B. C:\Programme\) gestartet werden, um das OSD ordnungsgemäß anzuzeigen. Dies wird automatisch vom HWiNFO-Installer durchgeführt.
+de=HWiNFO muss aus einem sicheren Ordner (z.B. C:\Programme\) gestartet werden, um das OSD ordnungsgemäß anzuzeigen. Dies wird automatisch vom HWiNFO-Installationsprogramm durchgeführt.
 es=HWiNFO debe iniciarse desde una carpeta segura (por ejemplo, C:\Program Files\) para mostrar correctamente el OSD. Esto lo realiza automáticamente el instalador de HWiNFO.
 pt-BR=O HWiNFO precisa ser iniciado a partir de uma pasta segura (por exemplo, C:\Program Files\) para mostrar corretamente o OSD. Isso é executado automaticamente pelo instalador HWiNFO.
 it=Per visualizzare correttamente l'OSD HWiNFO deve essere avviato da una cartella sicura (ad esempio C:\Programmi). Questa operazione viene eseguita automaticamente dal programma di installazione di HWiNFO.
