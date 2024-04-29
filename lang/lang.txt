@@ -5393,7 +5393,7 @@ el=Υπέρβαση ορίου ισχύος
 tr=Güç Sınırı Aşıldı
 he=חריגה ממגבלת הכוח
 
-; Power as energy consuption
+; Powers as power consuption or energy consumption
 {{SUBST}}
 en=Powers
 fr=Consommations d'énergie
@@ -5422,6 +5422,7 @@ el=Καταναλώσεις ρεύματος
 tr=Güç Tüketimleri
 he=צריכת חשמל
 
+; Power as power consuption or energy consumption
 {{SUBST}}
 en=Power
 fr=Consommation d'énergie
@@ -17676,9 +17677,9 @@ pt-BR=Limite de potência do núcleo excedido
 it=Limite di potenza del core superato
 nl=Kernvermogenslimiet overschreden
 da=Kerneeffektgrænsen er overskredet
-zh-CN=超出核心功耗限制
-zh-TW=超出核心功耗限制
-ja=コア消費電力制限を超えました
+zh-CN=超出核心功率限制
+zh-TW=超出核心功率限制
+ja=コア電力制限を超えました
 ko=코어 전력 제한 초과
 vi=Đã vượt quá giới hạn năng lượng lõi
 ar=تم تجاوز حد الطاقة الأساسية
@@ -17704,9 +17705,9 @@ pt-BR=Indica se o P-State do núcleo é limitado pela limitação de energia.
 it=Indica se il core P-State è limitato dalla limitazione della potenza.
 nl=Geeft aan of de kern P-State wordt beperkt door vermogensbeperking.
 da=Angiver, om kerne-P-tilstanden er begrænset af effektbegrænsning.
-zh-CN=指示核心P-State是否受到功耗限制。
-zh-TW=指示核心P-State是否受到功耗限制。
-ja=コアP-Stateが消費電力制限によって制限されているかどうかを示します。
+zh-CN=指示核心P-State是否受到功率限制。
+zh-TW=指示核心P-State是否受到功率限制。
+ja=コアP-Stateが電力制限によって制限されているかどうかを示します。
 ko=코어 P-State가 전력 제한에 의해 제한되는지 여부를 나타냅니다.
 vi=Cho biết liệu P-State lõi có bị giới hạn bởi giới hạn công suất hay không.
 ar=يشير إلى ما إذا كانت P-State الأساسية محدودة بسبب قيود الطاقة.
@@ -17872,9 +17873,9 @@ pt-BR=Indica se o domínio núcleo IA é limitado pela limitação de energia.
 it=Indica se il dominio del core IA è limitato dalla limitazione della potenza.
 nl=Geeft aan of het IA-kerndomein wordt beperkt door vermogensbeperking.
 da=Angiver, om IA-kernedomænet er begrænset af strømbegrænsning.
-zh-CN=指示IA核心区域是否受到功耗限制。
-zh-TW=指示IA核心區域是否受到功耗限制。
-ja=IAコア・ドメインが消費電力制限によって制限されているかどうかを示します。
+zh-CN=指示IA核心区域是否受到功率限制。
+zh-TW=指示IA核心區域是否受到功率限制。
+ja=IAコア・ドメインが電力制限によって制限されているかどうかを示します。
 ko=IA 코어 도메인이 전력 제한에 의해 제한되는지 여부를 나타냅니다.
 vi=Cho biết miền lõi IA có bị giới hạn bởi giới hạn công suất hay không.
 ar=يشير إلى ما إذا كان المجال الأساسي IA مقيدًا بقيود الطاقة.
@@ -37234,7 +37235,7 @@ pt-BR=Freqüência de núcleos IA cortada devido ao limite de potência média e
 it=Frequenza dei core IA tagliata a causa del DDR Running Average Power Limit (RAPL).
 nl=IA Cores Frequentie afgekapt vanwege DDR Running Average Power Limit (RAPL).
 da=IA Cores Frequency klippet på grund af DDR Running Average Power Limit (RAPL).
-zh-CN=IA核心频率因DDR运行平均功耗限制（RAPL）而下降。
+zh-CN=IA核心频率因DDR运行平均功率限制（RAPL）而下降。
 zh-TW=IA核心頻率因DDR執行平均功率限制（RAPL）而下降。
 ja=DDR実行中平均電力制限（RAPL）が原因で、IAコアの周波数がクリップされました。
 ko=IA 코어 주파수는 DDR RAPL(Running Average Power Limit)로 인해 잘렸습니다.
