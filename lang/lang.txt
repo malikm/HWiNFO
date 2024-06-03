@@ -1918,7 +1918,7 @@ he=חיישן זה מספק מידע כללי ומידע הקשור למערכת
 {{Sensors}}
 en=Current main memory command clock frequency. DDR memories usually report the effective data rate, which is double of the command clock.
 fr=Fréquence actuelle de l'horloge de commande de la mémoire principale. Les mémoires DDR rapportent généralement le débit de données effectif, qui est le double de l'horloge de commande.
-de=Aktuelle Taktfrequenz des Hauptspeicherbefehls. DDR-Speicher melden normalerweise die effektive Datenrate, die dem Doppelten des Befehlstakts entspricht.
+de=Aktuelle Befehls-Taktfrequenz des Hauptspeichers. DDR-Speicher melden normalerweise die effektive Datenrate, die dem Doppelten des Befehlstakts entspricht.
 es=Frecuencia actual del reloj de comando de la memoria principal. Las memorias DDR generalmente informan la tasa de datos efectiva, que es el doble del reloj de comando.
 pt-BR=Comando atual da frequência de relógio da memória principal. As memórias DDR geralmente relatam a taxa de dados efetiva, que é o dobro do clock do comando.
 it=Frequenza attaule clock comando memoria principale. Le memorie DDR di solito riportano la velocità dati effettiva, che è il doppio del clock comando.
@@ -1946,7 +1946,7 @@ he=תדר שעון פקודת הזיכרון הראשי הנוכחי. זיכרו
 {{Sensors}}
 en=Total amount of virtual memory (physical+page file) committed in operating system.
 fr=Quantité totale de mémoire virtuelle (fichier physique + page) engagée dans le système d'exploitation.
-de=Gesamtmenge des virtuellen Speichers (physkalisch + Auslagerungsdatei) die im Betriebssystem gebunden ist.
+de=Gesamtmenge des virtuellen Speichers (physikalisch + Auslagerungsdatei) der im Betriebssystem gebunden ist.
 es=Cantidad total de memoria virtual (física + archivo de página) comprometida en el sistema operativo .
 pt-BR=Quantidade total de memória virtual (física + arquivo de paginação) comprometida no sistema operacional.
 it=Quantità totale di memoria virtuale (fisica+file di paging) impegnata nel sistema operativo.
@@ -23301,7 +23301,7 @@ he=מנה מרחב השמות של ACPI AML.
 {{Settings}}
 en=Skip enumerating of some devices sensitive to PCI configuration space access (e.g. Token-Ring cards).
 fr=Ignorer l'énumération de certains périphériques sensibles à l'accès à l'espace de configuration PCI (par exemple les cartes Token-Ring).
-de=Überspringen die Aufzählung einiger Geräte, die für den Zugriff auf den PCI-Konfigurationsraum empfindlich sind (z.B. Token-Ring-Karten).
+de=Überspringe die Ermittlung einiger Geräte, die für den Zugriff auf den PCI-Konfigurationsbereich empfindlich sind (z.B. Token-Ring-Karten).
 es=Omita la enumeración de algunos dispositivos sensibles al acceso al espacio de configuración PCI (por ejemplo, tarjetas Token-Ring).
 pt-BR=Ignore a enumeração de alguns dispositivos sensíveis ao acesso ao espaço de configuração PCI (por exemplo, placas Token-Ring).
 it=Salta l'enumerazione di alcuni dispositivi sensibili all'accesso allo spazio di configurazione PCI (es. schede Token-Ring).
@@ -34062,7 +34062,7 @@ he=השלמת מודולי זיכרון...
 {{}}
 en=Enumerating ACPI Devices...
 fr=Énumération des périphériques ACPI...
-de=Aufzählung von ACPI-Geräten...
+de=Ermittlung von ACPI-Geräten...
 es=Enumeración de dispositivos ACPI...
 pt-BR=Enumerando dispositivos ACPI...
 it=Enumerazione dispositivi ACPI...
@@ -34090,7 +34090,7 @@ he=מונה התקני ACPI...
 {{}}
 en=Enumerating Buses...
 fr=Énumération des Bus...
-de=Aufzählen von Bussen...
+de=Ermittlung von Bussen...
 es=Enumeración de Buses...
 pt-BR=Enumerando barramentos...
 it=Enumerazione bus...
@@ -34118,7 +34118,7 @@ he=מונה אוטובוסים...
 {{}}
 en=Enumerating USB Devices...
 fr=Énumération des périphériques USB...
-de=Aufzählen von USB-Geräten...
+de=Ermittlung von USB-Geräten...
 es=Enumeración de dispositivos USB...
 pt-BR=Enumerando dispositivos USB...
 it=Enumerazione dispositivi USB...
@@ -49188,7 +49188,7 @@ he=DeviceInstanceId
 {{Main}}
 en=Location Paths
 fr=Location Paths
-de=Standort-Pfade
+de=Pfad zum Speicherort
 es=Location Paths
 pt-BR=Caminhos de localização
 it=Location Paths
@@ -59106,7 +59106,7 @@ he=כִּימִיָה:
 {{Main}}
 en=Designed Capacity:
 fr=Capacité conçue:
-de=Ausgelegte Kapazität:
+de=Nennkapazität:
 es=Capacidad diseñada:
 pt-BR=Capacidade projetada:
 it=Capacità progettata:
@@ -59414,7 +59414,7 @@ he=קריטי
 {{Main}}
 en=On AC Power
 fr=Sur l'alimentation secteur
-de=Bei Wechselstrom
+de=An Netz-Spannungsversorgung
 es=En alimentación de CA
 pt-BR=Na alimentação CA
 it=Su alimentazione CA
