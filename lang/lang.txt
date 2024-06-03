@@ -3096,7 +3096,7 @@ he=אפס העדפות
 {{Settings}}
 en=Backup User Settings
 fr=Sauvegarder les paramètres utilisateur
-de=Benutzereinstellungen sichern
+de=Benutzer-Einstellungen sichern
 es=Configuración de usuario de respaldo
 pt-BR=Backup das Configurações do Usuário
 it=Backup impostazioni utente
@@ -26636,7 +26636,7 @@ he=פריטים מוסתרים:
 {{Settings}}
 en=Restore Original Order
 fr=Restaurer l'ordre d'origine
-de=Wiederherstellen der ursprünglichen Reihenfolge
+de=Wiederherstellen der originalen Reihenfolge
 es=Restaurar el orden de original
 pt-BR=Restaurar a ordem original
 it=Ripristina ordine originale
@@ -33698,7 +33698,7 @@ he=איתור
 {{SUBST}}
 en=ATA/SCSI Drives
 fr=ATA/SCSI Drives
-de=ATA/SCSI-Laufwärke
+de=ATA/SCSI-Laufwerke
 es=ATA/SCSI Drives
 pt-BR=ATA/SCSI Drives
 it=Unità ATA/SCSI
@@ -41093,7 +41093,7 @@ he=בחר עדכון גרסת
 {{Settings}}
 en=Are you sure you want to restore the original item order ?
 fr=Êtes-vous sûr de vouloir restaurer la commande d'articles d'origine ?
-de=Möchten Sie die ursprüngliche Elementreihenfolge wirklich wiederherstellen?
+de=Möchten Sie die originale Elementreihenfolge wirklich wiederherstellen?
 es=¿Está seguro de que desea restaurar el orden del artículo original?
 pt-BR=Tem certeza de que deseja restaurar o pedido original do item?
 it=Sei sicuro di voler ripristinare l'ordine dell'articolo originale?
@@ -42521,7 +42521,7 @@ he=שם המעבד
 {{Main}}
 en=Original Processor Frequency:
 fr=Fréquence du processeur d'origine:
-de=Ursprüngliche Prozessorfrequenz:
+de=Originale Prozessorfrequenz:
 es=Frecuencia del procesador original:
 pt-BR=Freqüência do processador original:
 it=Frequenza del processore originale:
@@ -47142,7 +47142,7 @@ he=התוצאות אינן משקפות חומרה אמיתית!
 {{Main}}
 en=Some results may not reflect real hardware !
 fr=Certains résultats peuvent ne pas refléter le vrai matériel !
-de=Einige Ergebnisse reflektieren möglicherweise nicht die reale Hardware !
+de=Einige Ergebnisse reflektieren möglicherweise nicht die reale Hardware!
 es=¡Es posible que algunos resultados no reflejen el hardware real!
 pt-BR=Alguns resultados podem não refletir o hardware real!
 it=Alcuni risultati potrebbero non riflettere l'hardware reale!
@@ -47451,7 +47451,7 @@ he=I/O Port:
 {{Main}}
 en=Original Device Name:
 fr=Nom de l'appareil d'origine:
-de=Ursprünglicher Gerätename:
+de=Originaler Gerätename:
 es=Nombre del dispositivo original:
 pt-BR=Nome do dispositivo original:
 it=Nome dispositivo originale:
