@@ -16215,7 +16215,7 @@ he=חיישן זה מספק מידע בסיסי על תקינות הדיסק ש�
 {{Sensors}}
 en=Current disk drive temperature.
 fr=Température actuelle du lecteur de disque.
-de=Aktuelle Festplattentemperatur.
+de=Aktuelle Laufwerkstemperatur.
 es=Temperatura actual de la unidad de disco.
 pt-BR=Temperatura atual da unidade de disco.
 it=Temperatura attuale dell'unità disco.
@@ -16355,7 +16355,7 @@ he=טמפרטורה לא מוגדרת.
 {{Sensors}}
 en=Drive Remaining Life
 fr=Durée de vie restante du disque
-de=Verbleibende Lebensdauer der Festplatte
+de=Verbleibende Lebensdauer der Laufwerks
 es=Vida restante del disco
 pt-BR=Vida restante do disco
 it=Durata residua unità
@@ -16383,7 +16383,7 @@ he=חיי הדיסק שנותרו
 {{}}
 en=Drive Remaining Life
 fr=Durée de vie restante du disque
-de=Verbleibende Lebensdauer der Festplatte
+de=Verbleibende Lebensdauer der Laufwerks
 es=Vida restante del disco
 pt-BR=Vida restante do disco
 it=Durata residua unità
@@ -16411,7 +16411,7 @@ he=חיי הדיסק שנותרו
 {{Sensors}}
 en=Drive remaining health estimated by its firmware.
 fr=Santé restante du disque estimée par son micrologiciel.
-de=Verbleibende Lebensdauer der Festplatte von deren Firmware geschätzt.
+de=Verbleibende Lebensdauer der Laufwerks von deren Firmware geschätzt.
 es=Estado restante del disco estimado por su firmware.
 pt-BR=Integridade restante do disco estimada por seu firmware.
 it=Stato di salute rimanente del disco stimato dal firmware.
