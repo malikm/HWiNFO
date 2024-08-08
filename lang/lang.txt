@@ -45666,7 +45666,7 @@ nl=Enhanced Features
 da=Enhanced Features
 zh-CN=增强功能
 zh-TW=增強功能
-ja=強化された機能
+ja=Enhanced Features
 ko=Enhanced Features
 vi=Enhanced Features
 ar=Enhanced Features
@@ -63164,7 +63164,6 @@ el=Trusted Computing:
 tr=Trusted Computing:
 he=Trusted Computing:
 
-; ATA Security Erase
 {{Main}}
 en=Enhanced Security Erase:
 fr=Effacement de sécurité amélioré:
@@ -63176,7 +63175,7 @@ nl=Verbeterde beveiliging wissen:
 da=Forbedret sikkerhedssletning:
 zh-CN=增强的安全擦除：
 zh-TW=增強的安全抹除：
-ja=強化されたセキュリティ・イレース：
+ja=Enhanced Security Erase:
 ko=강화된 보안 지우기:
 vi=Xóa bảo mật nâng cao:
 ar=محو الأمان المحسن:
