@@ -73728,6 +73728,34 @@ tr=Lisansınızın bakım süresi sona ermiştir ve bu sürüm artık lisans kap
 he=פג תוקף תקופת התחזוקה של הרישיון שלך וגרסה זו אינה מכוסה עוד על ידה.\nחדש את הרישיון או חזור לגרסה ישנה יותר של HWiNFO64 המכוסה ברישיון שלך.\nהודעות דואר אלקטרוני על חידוש נשלחות אוטומטית לפני תום התוקף, אם אתה לא קיבלת את האימייל הזה, אנא בדוק את חשבון 2Checkout שלך או צור קשר עם התמיכה.
 
 {{}}
+en=A non-commercial (personal) license cannot be used on computers that are members of a domain.\nThis is considered commercial use.
+fr=Une licence non commerciale (personnelle) ne peut pas être utilisée sur des ordinateurs membres d&#39;un domaine.\nCeci est considéré comme une utilisation commerciale.
+de=Eine nichtkommerzielle (persönliche) Lizenz kann nicht auf Computern verwendet werden, die Mitglieder einer Domäne sind.\nDies wird als kommerzielle Nutzung angesehen.
+es=Una licencia no comercial (personal) no se puede utilizar en computadoras que sean miembros de un dominio. Esto se considera uso comercial.
+pt-BR=Uma licença não comercial (pessoal) não pode ser usada em computadores que sejam membros de um domínio.\nIsso é considerado uso comercial.
+it=Una licenza non commerciale (personale) non può essere utilizzata su computer appartenenti a un dominio. Questo è considerato un uso commerciale.
+nl=Een niet-commerciële (persoonlijke) licentie kan niet worden gebruikt op computers die lid zijn van een domein. Dit wordt beschouwd als commercieel gebruik.
+da=En ikke-kommerciel (personlig) licens kan ikke bruges på computere, der er medlemmer af et domæne.\nDette betragtes som kommerciel brug.
+zh-CN=非商业（个人）许可证不能在域成员计算机上使用。\n这被视为商业用途。
+zh-TW=非商業（個人）許可證不能在屬於域成員的電腦上使用。
+ja=非商用 (個人) ライセンスは、ドメインのメンバーであるコンピューターでは使用できません。\nこれは商用使用とみなされます。
+ko=비상업적(개인) 라이센스는 도메인의 구성원인 컴퓨터에서 사용할 수 없습니다. 이는 상업적 사용으로 간주됩니다.
+vi=Giấy phép phi thương mại (cá nhân) không thể được sử dụng trên các máy tính là thành viên của một miền.\nĐây được coi là mục đích sử dụng thương mại.
+ar=لا يمكن استخدام الترخيص غير التجاري (الشخصي) على أجهزة الكمبيوتر الأعضاء في المجال.\nويعتبر هذا استخدامًا تجاريًا.
+ru=Некоммерческая (персональная) лицензия не может использоваться на компьютерах, являющихся членами домена.\nЭто считается коммерческим использованием.
+uk=Некомерційну (персональну) ліцензію не можна використовувати на комп’ютерах, які є членами домену.\nЦе вважається комерційним використанням.
+cs=Nekomerční (osobní) licenci nelze použít na počítačích, které jsou členy domény.\nToto je považováno za komerční použití.
+sk=Nekomerčnú (osobnú) licenciu nie je možné použiť na počítačoch, ktoré sú členmi domény.\nPovažuje sa to za komerčné použitie.
+hu=A nem kereskedelmi (személyes) licenc nem használható olyan számítógépeken, amelyek egy tartomány tagjai.\nEz kereskedelmi felhasználásnak minősül.
+pl=Licencji niekomercyjnej (osobistej) nie można używać na komputerach, które są członkami domeny.\nJest to uważane za użycie komercyjne.
+sv=En icke-kommersiell (personlig) licens kan inte användas på datorer som är medlemmar i en domän.\nDetta anses vara kommersiellt bruk.
+fi=Ei-kaupallista (henkilökohtaista) lisenssiä ei voi käyttää tietokoneissa, jotka ovat verkkotunnuksen jäseniä.\nTätä pidetään kaupallisena käytönä.
+no=En ikke-kommersiell (personlig) lisens kan ikke brukes på datamaskiner som er medlemmer av et domene.\nDette regnes som kommersiell bruk.
+el=Μια μη εμπορική (προσωπική) άδεια δεν μπορεί να χρησιμοποιηθεί σε υπολογιστές που είναι μέλη ενός τομέα.\nΑυτό θεωρείται εμπορική χρήση.
+tr=Ticari olmayan (kişisel) bir lisans, bir etki alanının üyesi olan bilgisayarlarda kullanılamaz.\nBu, ticari kullanım olarak kabul edilir.
+he=לא ניתן להשתמש ברישיון לא מסחרי (אישי) במחשבים שהם חברים בדומיין.\nזה נחשב לשימוש מסחרי.
+
+{{}}
 en=HWiNFO Shared Memory Time Limit Exceeded
 fr=Limite de temps de mémoire partagée HWiNFO dépassée
 de=HWiNFO Shared-Memory-Zeitlimit überschritten
