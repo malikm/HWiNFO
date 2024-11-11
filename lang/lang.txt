@@ -73729,8 +73729,8 @@ he=פג תוקף תקופת התחזוקה של הרישיון שלך וגרסה
 
 {{}}
 en=A non-commercial (personal) license cannot be used on computers that are members of a domain.\nThis is considered commercial use.
-fr=Une licence non commerciale (personnelle) ne peut pas être utilisée sur des ordinateurs membres d&#39;un domaine.\nCeci est considéré comme une utilisation commerciale.
-de=Eine nichtkommerzielle (persönliche) Lizenz kann nicht auf Computern verwendet werden, die Mitglieder einer Domäne sind.\nDies wird als kommerzielle Nutzung angesehen.
+fr=Une licence non commerciale (personnelle) ne peut pas être utilisée sur des ordinateurs membres d'un domaine.\nCeci est considéré comme une utilisation commerciale.
+de=Eine nichtkommerzielle (persönliche) Lizenz kann nicht auf Computern verwendet werden, die Mitglieder einer Domäne sind.\nDies wird als kommerzielle Nutzung betrachtet.
 es=Una licencia no comercial (personal) no se puede utilizar en computadoras que sean miembros de un dominio. Esto se considera uso comercial.
 pt-BR=Uma licença não comercial (pessoal) não pode ser usada em computadores que sejam membros de um domínio.\nIsso é considerado uso comercial.
 it=Una licenza non commerciale (personale) non può essere utilizzata su computer appartenenti a un dominio. Questo è considerato un uso commerciale.
