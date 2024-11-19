@@ -76415,6 +76415,34 @@ tr=Birimi OSD'de göster
 he=הצג יחידה ב-OSD
 
 {{Settings}}
+en=Include sensor name
+fr=Inclure le nom du capteur
+de=Sensornamen einschließen
+es=Incluir el nombre del sensor
+pt-BR=Incluir nome do sensor
+it=Includi il nome del sensore
+nl=Sensornaam opnemen
+da=Inkluder sensornavn
+zh-CN=包括传感器名称
+zh-TW=包括感測器名稱
+ja=センサー名を含める
+ko=센서 이름 포함
+vi=Bao gồm tên cảm biến
+ar=تضمين اسم المستشعر
+ru=Включить имя датчика
+uk=Включіть назву датчика
+cs=Zahrnout název senzoru
+sk=Zahrnúť názov senzora
+hu=Adja meg az érzékelő nevét
+pl=Dołącz nazwę czujnika
+sv=Inkludera sensornamn
+fi=Sisällytä anturin nimi
+no=Ta med sensornavn
+el=Συμπεριλάβετε το όνομα του αισθητήρα
+tr=Sensör adını ekle
+he=כלול את שם החיישן
+
+{{Settings}}
 en=Upscale:
 fr=Montée en puissance:
 de=Hochskalierung:
