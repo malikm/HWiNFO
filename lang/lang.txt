@@ -9027,8 +9027,8 @@ pt-BR=Temperatura do interruptor PLX na GPU.
 it=Temperatura dell'interruttore PLX sulla GPU.
 nl=Temperatuur van PLX-schakelaar op GPU.
 da=Temperatur på PLX-kontakt på GPU.
-zh-CN=GPU 上的 PLX 交换开关的温度。
-zh-TW=GPU 上的 PLX 交換開關的溫度。
+zh-CN=GPU 上的 PLX switch 的温度。
+zh-TW=GPU 上的 PLX switch 的溫度。
 ja=GPU の PLX スイッチの温度。
 ko=GPU의 PLX 스위치 온도.
 vi=Nhiệt độ của công tắc PLX trên GPU.
@@ -16857,9 +16857,9 @@ pt-BR=Temperatura atual da mídia flash NAND (ou temperatura geral composta para
 it=Temperatura attuale del supporto flash NAND (o temperatura composita complessiva per alcune disco).
 nl=Huidige temperatuur van de NAND-flashmedia (of algemene samengestelde temperatuur voor sommige schijven).
 da=Den aktuelle temperatur på NAND-flashmediet (eller den samlede sammensatte temperatur for nogle disk).
-zh-CN=NAND 闪存介质的当前温度 (或一些磁盘的整体复合温度)。
-zh-TW=NAND 快閃記憶體介質的目前溫度 (或一些磁碟的整體複合溫度)。
-ja=NAND フラッシュ メディアの現在の温度 (または一部のディスクの場合は全体的な複合温度)。
+zh-CN=NAND 闪存介质的当前温度 (或一些磁盘的复合温度)。
+zh-TW=NAND 快閃記憶體介質的目前溫度 (或一些磁碟的複合溫度)。
+ja=NAND フラッシュ メディアの現在の温度 (または一部のディスクの場合は複合温度)。
 ko=NAND 플래시 미디어의 현재 온도(또는 일부 디스크의 경우 전체 복합 온도).
 vi=Nhiệt độ hiện tại của phương tiện flash NAND (hoặc nhiệt độ tổng hợp tổng thể đối với một số ổ đĩa).
 ar=درجة الحرارة الحالية لوسائط فلاش NAND (أو درجة الحرارة الإجمالية المركبة لبعض محركات الأقراص).
@@ -33936,7 +33936,7 @@ fi=Embedded Controller laiteohjelmiston versio
 no=Embedded Controller Firmware Version
 el=Embedded Controller Firmware Version
 tr=Gömülü Denetleyici Ürün Yazılımı Sürümü
-lv=Iebūvētā kontroliera programmatūras versija
+lv=Iebūvētā kontroliera programmaparatūra versija
 he=Embedded Controller Firmware Version
 
 {{Main}}
@@ -42389,8 +42389,8 @@ pt-BR=Não notifique sobre versões beta
 it=Non notificare le versioni Beta
 nl=Niet informeren over bètaversies
 da=Giv ikke besked om betaversioner
-zh-CN=不通知Beta版本
-zh-TW=不通知Beta版本
+zh-CN=不通知 Beta 版本
+zh-TW=不通知 Beta 版本
 ja=ベータ版について通知しないでください
 ko=베타 버전에 대해 알리지 않음
 vi=Không thông báo về các phiên bản Beta
@@ -45074,7 +45074,7 @@ fi=SMU:n laiteohjelmistoversio:
 no=SMU Firmware Revisjon:
 el=Αναθεώρηση υλικολογισμικού SMU:
 tr=SMU Ürün Yazılımı Revizyonu:
-lv=SMU programmatūras revīzija:
+lv=SMU programmaparatūra revīzija:
 he=עדכון קושחה של SMU:
 
 {{Main}}
@@ -49019,7 +49019,7 @@ fi=Loogisten prosessorien määrä:
 no=Antall logiske prosessorer:
 el=Αριθμός Λογικών Επεξεργαστών:
 tr=Mantıksal İşlemci Sayısı:
-lv=Procesora kodolu skaits:
+lv=Procesora pavedienu skaits:
 he=מספר מעבדים לוגיים:
 
 {{Main}}
@@ -49890,7 +49890,7 @@ fi=Active State Power Management (ASPM) Status:
 no=Active State Power Management (ASPM) Status:
 el=Active State Power Management (ASPM) Status:
 tr=Active State Power Management (ASPM) Status:
-lv=Aktīvā stāvoklī pārvaldības (ASPM) statuss:
+lv=Aktīvā stāvoklī enerģijas pārvaldības (ASPM) statuss:
 he=Active State Power Management (ASPM) Status:
 
 {{Main}}
@@ -50006,7 +50006,7 @@ fi=I/O-perusosoite
 no=I/O-baseadresse
 el=Διεύθυνση βάσης I/O
 tr=G/Ç Temel Adresi
-lv=I/O pamata adrese
+lv=I/O bāzes adrese
 he=כתובת בסיס I/O
 
 {{Main}}
@@ -54622,7 +54622,7 @@ fi=Laiteohjelmiston versiotiedot
 no=Informasjon om fastvareversjon
 el=Πληροφορίες έκδοσης υλικολογισμικού
 tr=Ürün Yazılımı Sürüm Bilgileri
-lv=Firmvirknes versijas informācija
+lv=Programmaparatūra versijas informācija
 he=מידע על גרסת קושחה
 
 {{Main}}
@@ -56160,7 +56160,7 @@ fi=SMU-laiteohjelmiston versio:
 no=SMU-fastvareversjon:
 el=Έκδοση υλικολογισμικού SMU:
 tr=SMU Ürün Yazılımı Sürümü:
-lv=SMU programmatūras versija:
+lv=SMU programmaparatūra versija:
 he=גרסת קושחת SMU:
 
 {{Main}}
@@ -59757,7 +59757,7 @@ fi=Laiteohjelmiston osan nimi:
 no=Fastvarekomponentnavn:
 el=Όνομα στοιχείου υλικολογισμικού:
 tr=Ürün Yazılımı Bileşen Adı:
-lv=Firmvera komponenta nosaukums:
+lv=Programmaparatūra komponenta nosaukums:
 he=שם רכיב הקושחה:
 
 {{Main}}
@@ -59786,7 +59786,7 @@ fi=Laiteversio:
 no=Fastvareversjon:
 el=Έκδοση υλικολογισμικού:
 tr=Ürün Yazılımı Sürümü:
-lv=Firmveras versija:
+lv=Programmaparatūra versija:
 he=גרסת קושחה:
 
 {{Main}}
@@ -59815,7 +59815,7 @@ fi=Laiteohjelmiston julkaisupäivä:
 no=Fastvareutgivelsesdato:
 el=Ημερομηνία κυκλοφορίας υλικολογισμικού:
 tr=Ürün Yazılımı Yayın Tarihi:
-lv=Firmveras izlaides datums:
+lv=Programmaparatūra izlaides datums:
 he=תאריך שחרור הקושחה:
 
 {{Main}}
@@ -62396,7 +62396,7 @@ fi=Aseman laiteohjelmistoversio:
 no=Stasjon firmwarerevisjon:
 el=Αναθεώρηση υλικολογισμικού Drive:
 tr=Sürücü Ürün Yazılımı Revizyonu:
-lv=Diska aparatūras programmatūras pārskatīšana:
+lv=Diska programmaparatūra revīzija:
 he=עדכון קושחת הכונן:
 
 {{Main}}
@@ -62541,7 +62541,7 @@ fi=Aseman laiteohjelmistoversio:
 no=Stasjon firmwarerevisjon:
 el=Αναθεώρηση υλικολογισμικού Drive:
 tr=Optik Sürücü Ürün Yazılımı Revizyonu:
-lv=Diska aparatūras programmatūras pārskatīšana:
+lv=Diska programmaparatūra revīzija:
 he=עדכון קושחת הכונן:
 
 {{MainOpto}}
