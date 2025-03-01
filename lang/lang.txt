@@ -1520,6 +1520,34 @@ lv=Nav (mūžam)
 he=אין (כל החיים)
 
 {{}}
+en=Full mode
+fr=Mode complet
+de=Vollmodus
+es=Modo completo
+pt-BR=Modo completo
+it=Modalità completa
+nl=Volledige modus
+da=Fuld tilstand
+zh-CN=完整模式
+zh-TW=完整模式
+ja=フルモード
+ko=전체 모드
+vi=Chế độ đầy đủ
+ar=الوضع الكامل
+ru=Полный режим
+uk=Повний режим
+cs=Plný režim
+sk=Plný režim
+hu=Teljes mód
+pl=Pełny tryb
+sv=Fullt läge
+fi=Täysi tila
+no=Full modus
+el=Πλήρης λειτουργία
+tr=Tam mod
+he=מצב מלא
+
+{{}}
 en=Sensors-only
 fr=Capteurs uniquement
 de=Nur Sensoren
@@ -1576,6 +1604,34 @@ el=Μόνο περίληψη
 tr=Yalnızca Özet
 lv=Tikai kopsavilkums
 he=סיכום בלבד
+
+{{}}
+en=Memory-only
+fr=Mémoire uniquement
+de=Nur Speicher
+es=Sólo memoria
+pt-BR=Somente memória
+it=Solo memoria
+nl=Alleen geheugen
+da=Kun hukommelse
+zh-CN=仅限内存
+zh-TW=僅限記憶體
+ja=メモリのみ
+ko=메모리 전용
+vi=Chỉ bộ nhớ
+ar=الذاكرة فقط
+ru=Только память
+uk=Лише пам&#39;ять
+cs=Pouze paměť
+sk=Iba pamäť
+hu=Csak memória
+pl=Tylko pamięć
+sv=Endast minne
+fi=Vain muisti
+no=Kun minne
+el=Μόνο για μνήμη
+tr=Sadece hafıza
+he=זיכרון בלבד
 
 {{}}
 en=NON-COMMERCIAL USE ONLY
