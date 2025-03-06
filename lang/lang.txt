@@ -1530,7 +1530,7 @@ nl=Volledige modus
 da=Fuld tilstand
 zh-CN=完整模式
 zh-TW=完整模式
-ja=フルモード
+ja=フル モード
 ko=전체 모드
 vi=Chế độ đầy đủ
 ar=الوضع الكامل
@@ -1545,6 +1545,7 @@ fi=Täysi tila
 no=Full modus
 el=Πλήρης λειτουργία
 tr=Tam mod
+lv=Full mode
 he=מצב מלא
 
 {{}}
@@ -1614,14 +1615,14 @@ pt-BR=Somente memória
 it=Solo memoria
 nl=Alleen geheugen
 da=Kun hukommelse
-zh-CN=仅限内存
-zh-TW=僅限記憶體
+zh-CN=仅显示内存
+zh-TW=僅顯示記憶體
 ja=メモリのみ
 ko=메모리 전용
 vi=Chỉ bộ nhớ
 ar=الذاكرة فقط
 ru=Только память
-uk=Лише пам&#39;ять
+uk=Лише пам'ять
 cs=Pouze paměť
 sk=Iba pamäť
 hu=Csak memória
@@ -1631,6 +1632,7 @@ fi=Vain muisti
 no=Kun minne
 el=Μόνο για μνήμη
 tr=Sadece hafıza
+lv=Memory-only
 he=זיכרון בלבד
 
 {{}}
