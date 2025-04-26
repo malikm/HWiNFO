@@ -20648,7 +20648,7 @@ lv=This sensor provides additional information specific to AMD processors.
 he=חיישן זה מספק מידע נוסף ספציפי למעבדי AMD.
 
 {{Sensors}}
-en=T-control temperature on an arbitrary scale.\nThis value might not be the actual temperature (in degress of Celsius) as these CPUs are usually not able to provide meaningful temperature values.
+en=T-control temperature on an arbitrary scale.\nThis value might not be the actual temperature (in degrees of Celsius) as these CPUs are usually not able to provide meaningful temperature values.
 fr=Contrôlez la température sur une échelle arbitraire.\nCette valeur peut ne pas être la température réelle (en degrés Celsius), car ces processeurs ne sont généralement pas en mesure de fournir des valeurs de température significatives.
 de=T-Kontrolltemperatur auf einer willkürlichen Skala.\nDieser Wert ist möglicherweise nicht die tatsächliche Temperatur (in Grad Celsius), da diese CPUs normalerweise keine aussagekräftigen Temperaturwerte liefern können.
 es=T-control de temperatura en una escala arbitraria.\nEste valor podría no ser la temperatura real (en grados Celsius) ya que estas CPU generalmente no pueden proporcionar valores de temperatura significativos.
@@ -20673,7 +20673,7 @@ fi=T-säätölämpötila mielivaltaisella asteikolla.\nTämä arvo ei välttäm�
 no=T-kontroll temperatur på en vilkårlig skala.\nDenne verdien er kanskje ikke den faktiske temperaturen (i grader Celsius) siden disse CPU-ene vanligvis ikke er i stand til å gi meningsfulle temperaturverdier.
 el=T-έλεγχος θερμοκρασίας σε αυθαίρετη κλίμακα.\nΑυτή η τιμή μπορεί να μην είναι η πραγματική θερμοκρασία (σε βαθμό Κελσίου), καθώς αυτές οι CPU συνήθως δεν είναι σε θέση να παρέχουν σημαντικές τιμές θερμοκρασίας.
 tr=İsteğe bağlı bir ölçekte T-kontrol sıcaklığı.\nBu CPU'lar genellikle anlamlı sıcaklık değerleri sağlayamadığından, bu değer gerçek sıcaklık (Santigrat derece cinsinden) olmayabilir.
-lv=T-control temperature on an arbitrary scale.\nThis value might not be the actual temperature (in degress of Celsius) as these CPUs are usually not able to provide meaningful temperature values.
+lv=T-control temperature on an arbitrary scale.\nThis value might not be the actual temperature (in degrees of Celsius) as these CPUs are usually not able to provide meaningful temperature values.
 he=טמפרטורת בקרת T בקנה מידה שרירותי.\nייתכן שערך זה אינו הטמפרטורה בפועל (בדרגה של צלזיוס) מכיוון שמעבדים אלה בדרך כלל אינם מסוגלים לספק ערכי טמפרטורה משמעותיים.
 
 {{Sensors}}
