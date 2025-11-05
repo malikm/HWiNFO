@@ -78966,6 +78966,35 @@ lv=Ieslēgt karsto taustiņu, lai atiestatītu vērtības
 he=אפשר מפתח חם לאיפוס ערכים
 
 {{Settings}}
+en=Enable Hot Key to Pause Monitoring
+fr=Activer le raccourci clavier pour mettre en pause la surveillance
+de=Tastenkombination zum Anhalten der Überwachung aktivieren
+es=Habilitar tecla de acceso rápido para pausar la monitorización
+pt-BR=Ative a tecla de atalho para pausar o monitoramento.
+it=Abilita il tasto di scelta rapida per mettere in pausa il monitoraggio
+nl=Schakel sneltoets in om bewaking te pauzeren
+da=Aktivér genvejstast for at sætte overvågning på pause
+zh-CN=启用热键暂停监控
+zh-TW=啟用熱鍵暫停監控
+ja=監視を一時停止するホットキーを有効にする
+ko=모니터링 일시 중지를 위한 단축키 활성화
+vi=Bật phím nóng để tạm dừng giám sát
+ar=تمكين مفتاح التشغيل السريع لإيقاف المراقبة مؤقتًا
+ru=Включить горячую клавишу для приостановки мониторинга
+uk=Увімкнути гарячу клавішу для призупинення моніторингу
+cs=Povolit klávesovou zkratku pro pozastavení monitorování
+sk=Povoliť klávesovú skratku na pozastavenie monitorovania
+hu=Gyorsbillentyű engedélyezése a monitorozás szüneteltetéséhez
+pl=Włącz klawisz skrótu, aby wstrzymać monitorowanie
+sv=Aktivera snabbtangent för att pausa övervakning
+fi=Ota käyttöön pikanäppäin monitoroinnin keskeyttämiseksi
+no=Aktiver hurtigtast for å sette overvåkingen på pause
+el=Ενεργοποίηση πλήκτρου συντόμευσης για παύση της παρακολούθησης
+tr=İzlemeyi Duraklatmak için Kısayol Tuşunu Etkinleştir
+lv=Iespējot karsto taustiņu, lai apturētu uzraudzību
+he=הפעל מקש קיצור כדי להשהות ניטור
+
+{{Settings}}
 en=Enable OSD
 fr=Activer l'OSD
 de=OSD aktivieren
