@@ -37391,6 +37391,35 @@ lv=This sensor provides information about the Intel Discrete GPU.
 he=חיישן זה מספק מידע על Intel Discrete GPU.
 
 {{Sensors}}
+en=This sensor provides information about the Intel GPU.
+fr=Ce capteur fournit des informations sur le processeur graphique Intel.
+de=Dieser Sensor liefert Informationen über die Intel GPU.
+es=Este sensor proporciona información sobre la GPU Intel.
+pt-BR=Este sensor fornece informações sobre a GPU Intel.
+it=Questo sensore fornisce informazioni sulla GPU Intel.
+nl=Deze sensor geeft informatie over de Intel GPU.
+da=Denne sensor giver information om Intel GPU.
+zh-CN=该传感器提供英特尔 GPU 的信息。
+zh-TW=該感測器提供英特爾 GPU 的資訊。
+ja=このセンサーは、インテル GPU の情報を提供します。
+ko=This sensor provides information about the Intel GPU.
+vi=This sensor provides information about the Intel GPU.
+ar=This sensor provides information about the Intel GPU.
+ru=This sensor provides information about the Intel GPU.
+uk=This sensor provides information about the Intel GPU.
+cs=Tento senzor poskytuje informace o Intel GPU.
+sk=Tento senzor poskytuje informácie o Intel GPU.
+hu=Ez az érzékelő információkat szolgáltat az Intel GPU-ról.
+pl=Ten czujnik dostarcza informacji o procesorze Intel GPU.
+sv=Denna sensor ger information om Intel GPU.
+fi=Tämä anturi antaa tietoja Intel GPU:sta.
+no=Denne sensoren gir informasjon om Intel GPU.
+el=This sensor provides information about the Intel GPU.
+tr=This sensor provides information about the Intel GPU.
+lv=This sensor provides information about the Intel GPU.
+he=חיישן זה מספק מידע על Intel GPU.
+
+{{Sensors}}
 en=GPU Global Temperature
 fr=Température globale du GPU
 de=Globale GPU-Temperatur
