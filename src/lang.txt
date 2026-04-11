@@ -1,0 +1,8627 @@
+; HWiNFO Language File
+;
+; !!! This file is encoded in UTF-8 format and should be opened/modified only in programs supporting this encoding !!!
+;
+; Modify only the respective language phrase. Do not modify the "en" value as this needs to match the original phrase in HWiNFO.
+; {{..}} is a special tag used as a hint telling HWiNFO how/where to translate the item. Do not modify the tag name.
+; ";" is used for comments
+; "\n" is used as New Line
+; {{LangName}} lists languages currently supported, adding a new language might require an update in HWiNFO, contact the author.
+{{LangName}}
+en=English
+
+{{}}
+en=No
+
+{{}}
+en=Yes
+
+{{}}
+en=Cancel
+
+{{}}
+en=Quit
+
+{{}}
+en=Exit
+
+{{}}
+en=Save Settings and Close
+
+; Sensors logging
+{{}}
+en=Logging Start
+
+; Sensors logging
+{{}}
+en=Logging Stop
+
+{{}}
+en=Reset Min/Max/Average Values and Timer
+
+{{}}
+en=Configure Sensors
+
+{{}}
+en=Run time
+
+{{}}
+en=Expand window by adding a new table
+
+{{}}
+en=Shrink window by removing rightmost table
+
+{{}}
+en=Manage Network Connections for Remote Monitoring
+
+{{}}
+en=Scan, Update and Repair Drivers
+
+{{Units}}
+en=°C
+
+{{Units}}
+en=°F
+
+{{Units}}
+en=V
+
+{{Units}}
+en=MHz
+
+{{Units}}
+en=GHz
+
+{{Units}}
+en=-bit
+
+{{Units}}
+en=bit
+
+{{Units}}
+en=bits
+
+{{Units}}
+en=Bytes
+
+{{Units}}
+en=bytes
+
+{{Units}}
+en=KBytes
+
+{{Units}}
+en=MBytes
+
+{{Units}}
+en=MB
+
+{{Units}}
+en=GBytes
+
+{{Units}}
+en=GB
+
+{{Units}}
+en=TBytes
+
+{{Units}}
+en=TB
+
+{{}}
+en=Start
+
+{{}}
+en=Settings
+
+{{}}
+en=Licensed to
+
+{{}}
+en=Student License
+
+{{}}
+en=Personal License
+
+{{}}
+en=Enterprise License
+
+{{}}
+en=Unlimited seats
+
+{{}}
+en=Engineer License
+
+{{}}
+en=Corporate License
+
+{{}}
+en=Educational (Engineer) License
+
+{{}}
+en=Educational (Corporate) License
+
+{{}}
+en=Unlimited users
+
+{{}}
+en=1 user
+
+{{}}
+en= users
+
+{{}}
+en=Unlimited computers
+
+{{}}
+en=1 computer
+
+{{}}
+en= computers
+
+; Expiration of the Maintenace Period defined in license
+{{}}
+en=Maintenance Expiry
+
+{{}}
+en=None (Lifetime)
+
+{{}}
+en=Full mode
+
+{{}}
+en=Sensors-only
+
+{{}}
+en=Summary-only
+
+{{}}
+en=Memory-only
+
+{{}}
+en=NON-COMMERCIAL USE ONLY
+
+{{}}
+en=Check license terms and upgrade options
+
+{{Sensors}}
+en=Virtual Memory Committed
+
+{{Sensors}}
+en=Virtual Memory Available
+
+{{Sensors}}
+en=Virtual Memory Load
+
+{{Sensors}}
+en=Physical Memory Used
+
+{{Sensors}}
+en=Physical Memory Available
+
+{{Sensors}}
+en=Physical Memory Load
+
+{{Sensors}}
+en=Page File Usage
+
+{{Sensors}}
+en=Memory Clock Ratio
+
+{{Sensors}}
+en=Memory Clock
+
+{{Sensors}}
+en=Memory Timings
+
+{{Main}}
+en=Memory Timings
+
+{{Sensors}}
+en=This sensor provides general and operating system related information.
+
+{{Sensors}}
+en=Current main memory command clock frequency. DDR memories usually report the effective data rate, which is double of the command clock.
+
+{{Sensors}}
+en=Total amount of virtual memory (physical+page file) committed in operating system.
+
+{{Sensors}}
+en=Total amount of virtual memory (physical+page file) free in operating system.
+
+{{Sensors}}
+en=Virtual memory (physical+page file) usage in operating system.
+
+{{Sensors}}
+en=Total amount of physical memory used in operating system.
+
+{{Sensors}}
+en=Total amount of physical memory free in operating system.
+
+{{Sensors}}
+en=Physical memory usage in operating system.
+
+{{Sensors}}
+en=Page File (or swap file) usage in operating system.
+
+{{Sensors}}
+en=Current main memory command clock ratio to bus ratio.
+
+{{Sensors}}
+en=Current main memory CAS Latency.
+
+{{Sensors}}
+en=Current main memory RAS-to-CAS Delay.
+
+{{Sensors}}
+en=Current main memory Row Precharge Time.
+
+{{Sensors}}
+en=Current main memory Active to Precharge Time.
+
+{{Sensors}}
+en=Current main memory Active to Active/Refresh Time.
+
+{{Sensors}}
+en=Current main memory Refresh Recovery Time.
+
+{{Sensors}}
+en=Current main memory Command Rate.
+
+{{Sensors}}
+en=Current Memory Controller Gear Mode (ratio of DRAM speed to Memory Controller Clock).
+
+{{Settings}}
+en=Show System Summary on Startup
+
+{{Settings}}
+en=Show Sensors on Startup
+
+{{Settings}}
+en=Minimize Main Window on Startup
+
+{{Settings}}
+en=Minimize Sensors on Startup
+
+{{Settings}}
+en=Minimize Sensors instead of closing
+
+{{Settings}}
+en=Show Welcome Screen and Progress
+
+; This option only wakeup dGPU once on HWiNFO app starts. 
+{{Settings}}
+en=Wake disabled GPUs
+
+{{Settings}}
+en=Wake disabled GPUs (Extended)
+
+{{Settings}}
+en=Poll Sleeping GPUs
+
+{{Settings}}
+en=Reorder GPUs
+
+{{Settings}}
+en=Prefer AMD ADL
+
+{{Settings}}
+en=PresentMon Support
+
+{{Settings}}
+en=Remember Preferences
+
+{{Settings}}
+en=Shared Memory Support
+
+{{Settings}}
+en=Auto Start
+
+{{Settings}}
+en=Automatic Update
+
+{{Settings}}
+en=Snapshot CPU Polling
+
+{{Settings}}
+en=Flush Buffers on Start
+
+{{Settings}}
+en=Color Mode
+
+{{Settings}}
+en=Default (Grey)
+
+{{Settings}}
+en=Default (Black)
+
+{{Settings}}
+en=Disabled (Light)
+
+{{Settings}}
+en=Default
+
+{{Settings}}
+en=Keep Theme
+
+{{Settings}}
+en=Change Language
+
+{{Settings}}
+en=Reset Preferences
+
+{{Settings}}
+en=Backup User Settings
+
+{{Settings}}
+en=Check for Updates
+
+{{Settings}}
+en=Remember preferences on this machine: window positions, size and sensor settings.
+
+{{Settings}}
+en=Automatically open the System Summary screen when HWiNFO starts.
+
+{{Settings}}
+en=Automatically open the Sensors screen when HWiNFO starts.
+
+{{Settings}}
+en=Automatically minimize the main window after start and do not display the welcome dialog.\nUseful in conjuction with automatically opening sensors screen.
+
+{{Settings}}
+en=Automatically minimize sensors window.\nUseful in conjuction with automatically opening sensors screen.
+
+{{Settings}}
+en=When enabled, this will minimize the sensors window instead of closing it.\nThe application can be quit from the tray.
+
+{{Settings}}
+en=Clear previously stored HWiNFO application preferences.
+
+{{Settings}}
+en=Automatically start HWiNFO when Windows starts.\nStartup is implemented via Windows Task Scheduler, check there if further adjustments to startup options are required.
+
+{{Settings}}
+en=Automatically check for new versions [non-Pro/Pro] and offer automatic updates [Pro].
+
+{{Settings}}
+en=Enable sharing of sensor data with other applications.\nWARNING: In HWiNFO64 (non-Pro) the Shared Memory Support is limited to 12 hours. After this period it will be automatically deactivated and must be manually re-activated again.\nUpgrade to HWiNFO64 Pro to lift this limit.
+
+{{Settings}}
+en=Enable sharing of sensor data with other applications.\nShared Memory Support is unlimited in this HWiNFO64 Pro copy.
+
+{{Settings}}
+en=If there's a Discrete GPU (dGPU) disabled when not used (by nVidia Optimus or AMD PowerXpress/Enduro technology), wake it up during HWiNFO startup.\nOtherwise HWiNFO won't be able to recognize/monitor this GPU.
+
+{{Settings}}
+en=Use this option to perform an extended method of waking up the dGPU if disabled. This might be useful for dGPUs which cannot be woken up by the default method.\nNote, that this method can cause some other dGPUs to stay active during the entire HWiNFO runtime, which is probably a GPU driver issue.\nUse in conjuction with the "Wake disabled GPUs" option.
+
+{{Settings}}
+en=This option has a meaning for Multi-GPU systems.\nWhen enabled, HWiNFO will try to reorder GPUs so, that the first GPU will be the primary one.\nHowever, in some cases this might not result in the correct order.\nIf disabled, HWiNFO displays the GPUs in order as located in the system PCI hierarchy.
+
+{{Settings}}
+en=Flush file buffers (disk write cache) before starting the scan.\nThis is a safety precaution option, which can avoid data loss in case of a system crash.\nDisabling this option can improve startup time.
+
+{{Settings}}
+en=Show the welcome screen and detection progress bar.\nThis is automatically disabled when Auto Start is used.
+
+{{Settings}}
+en=This will backup application (e.g. window positions) and all sensor-specific settings which are stored in the registry.\nIt will save the settings into a .REG file, which when launched will load these settings back into registry.
+
+{{Settings}}
+en=This option when enabled will cause HWiNFO to poll also sleeping GPUs (disabled by NVIDIA Optimus technology), which are otherwise polled only when awaken by user/system.\nThis can cause the dGPU to be constantly woken up.
+
+{{Settings}}
+en=This option when enabled will instruct HWiNFO to report certain AMD GPU parameters like clocks and utilization retrieved from AMD GPU driver (ADL) instead of HWiNFO's direct-GPU access methods.\nGPU parameters based on ADL usually provide averaged values, which might better capture situations during frequent fluctuations, however the data reported might not precisely match the actual levels.\nValues reported using own direct-GPU access methods are not averaged and thus during frequent state transitions might miss some fluctuations, but these always provide actual instantaneous levels.
+
+{{Settings}}
+en=This option works on AMD Zen-based CPUs only.\nWhen enabled, a snapshot of the entire CPU package and state of all its cores is read at once.\nThis is different from the traditional approach when each core/thread determines its individual state (clock, voltage, etc.), which might cause it to interfere with the actual state.\nHence, this polling mode does most accurately reflect the actual CPU state by eliminating the "Observer Effect" to a minimum.\nNote, that in this mode some (i.e. per-thread) values might not be available
+
+{{Settings}}
+en=Dark Mode - Default / Grey
+
+{{Settings}}
+en=In this mode HWiNFO will automatically use Dark Mode Grey skin if Color mode for apps in Windows is set to Dark during startup of HWiNFO. Switching between Dark/Light mode during runtime is not supported.\nNote that swiching the mode will require restarting HWiNFO.
+
+{{Settings}}
+en=Dark Mode - Default / Black
+
+{{Settings}}
+en=In this mode HWiNFO will automatically use Dark Mode Black skin if Color mode for apps in Windows is set to Dark during startup of HWiNFO. Switching between Dark/Light mode during runtime is not supported.\nNote that swiching the mode will require restarting HWiNFO.
+
+{{Settings}}
+en=Dark Mode - Disabled
+
+{{Settings}}
+en=In this mode HWiNFO will always use the standard Light Mode, regardless of the Dark Mode setting in Windows.\nNote, that swiching the mode will require restarting HWiNFO.
+
+{{Sensors}}
+en=This sensor provides information common to all processors.
+
+{{Sensors}}
+en=Voltage requested by particular core, not the voltage really supplied by voltage regulator.
+
+{{Sensors}}
+en=Voltage requested by the non-core part of the CPU, not the voltage really supplied by voltage regulator.
+
+{{Sensors}}
+en=Voltage requested by the North Bridge integrated in CPU, not the voltage really supplied by voltage regulator.
+
+{{Sensors}}
+en=Voltage requested by the System Agent integrated in CPU, not the voltage really supplied by voltage regulator.
+
+{{Sensors}}
+en=Current (instant) clock determined as ratio * bus clock at the polling edge during active state.\nThis value doesn't respect core sleeping states and hence is not a good representation of highly dynamic behavior of later CPUs.\n"(perf # n/n)" if present determines the preferred core order number. First value specifies the Collaborative Processor Performance Control (CPPC) order, the second value the hardware-fused preferred core order number. If only one number is present then it's the hardware-fused order number
+
+{{Sensors}}
+en=Core Clocks
+
+{{Sensors}}
+en=Core Temperatures
+
+{{SUBST}}
+en=Drive Temperature
+
+{{SUBST}}
+en=Temperature Sensors
+
+{{SUBST}}
+en=Temperature Sensor
+
+{{SUBST}}
+en=Critical Temperature
+
+{{Sensors}}
+en=Water Temperature
+
+{{SUBST}}
+en=GPU Temperature
+
+{{Sensors}}
+en=GPU Ambient Temperature
+
+{{SUBST}}
+en=GPU Memory Temperature
+
+{{SUBST}}
+en=GPU Memory Current
+
+{{SUBST}}
+en=Temperatures
+
+{{SUBST}}
+en=Temperature
+
+{{SUBST}}
+en=GPU Memory Voltage
+
+{{SUBST}}
+en=VRM Voltage Out
+
+{{SUBST}}
+en=VRM Voltage In
+
+{{SUBST}}
+en=Input Voltage
+
+{{SUBST}}
+en=Output Voltage
+
+{{SUBST}}
+en=Voltage Offset
+
+{{SUBST}}
+en=Voltages
+
+{{SUBST}}
+en=Voltage
+
+{{SUBST}}
+en=Fan air vent
+
+{{SUBST}}
+en=Right Fan
+
+{{SUBST}}
+en=Fans
+
+{{SUBST}}
+en=Fan
+
+; Actual
+{{Settings}}
+en=Current
+
+{{Sensors}}
+en=Current frequency limit applied by PROCHOT.
+
+{{Sensors}}
+en=Current frequency limit applied by STAPM.
+
+{{Sensors}}
+en=Current frequency limit applied by TDC.
+
+; Electrical currents
+{{SUBST}}
+en=Currents
+
+{{SUBST}}
+en=Accumulated
+
+{{Sensors}}
+en=Accumulated CPU Energy
+
+{{Sensors}}
+en=CPU Uptime
+
+; Electrical current
+{{SUBST}}
+en= Current
+
+{{Sensors}}
+en=Core Powers
+
+{{SUBST}}
+en=Core Power
+
+{{SUBST}}
+en=CPU SoC Power
+
+{{SUBST}}
+en=Total GPU Power (normalized)
+
+{{SUBST}}
+en=Total GPU Power
+
+{{SUBST}}
+en=[% of TDP]
+
+{{SUBST}}
+en=(average)
+
+{{SUBST}}
+en=(sum)
+
+; estimated
+{{SUBST}}
+en=(est)
+
+{{SUBST}}
+en=VRM Power In
+
+{{SUBST}}
+en=VRM Power Out
+
+{{SUBST}}
+en=Input Power
+
+{{SUBST}}
+en=Output Power
+
+{{SUBST}}
+en=Power Limit Exceeded
+
+; Powers as power consuption or energy consumption
+{{SUBST}}
+en=Powers
+
+; Power as power consuption or energy consumption
+{{SUBST}}
+en=Power
+
+{{Main}}
+en=Power
+
+{{}}
+en=Cores
+
+; Per Intel guidelines "P-core"/"E-core" terms must not be translated
+; Translating only "Core" would result in inconsistency
+;{{SUBST}}
+;en=Core
+;fr=Coeur
+;de=Kern
+;es=Centro
+;pt-BR=Núcleo
+;it=Nucleo
+;nl=Kern
+;da=Kerne
+;zh-CN=核心
+;zh-TW=核心
+;ja=コア
+;ko=코어
+;vi=Cốt lõi
+;ar=النواة
+;ru=Ядро
+;uk=Ядро
+;cs=Jádro
+;sk=Jadro
+;hu=Mag
+;pl=Rdzeń
+;sv=Kärna
+;fi=Ydin
+;no=Kjerne
+;el=Πυρήνας
+;tr=Çekirdek
+;lv=Core
+;he=הליבה
+{{SUBST}}
+en=Effective Clock
+
+{{Sensors}}
+en=GPU Effective Clock
+
+{{}}
+en=Active Clock
+
+{{}}
+en=RefClk
+
+{{}}
+en=EffClock
+
+{{SUBST}}
+en=Clocks
+
+{{SUBST}}
+en=Clock
+
+{{SUBST}}
+en=Memory Channel
+
+{{SUBST}}
+en=GPU Memory
+
+{{SUBST}}
+en=Memory Controller
+
+; "Memory" in System Summary - GPU - Clocks - Memory; special case translation
+{{}}
+en=GPUMemory
+
+{{SUBST}}
+en=Memory
+
+; Motherboard Ambient Temperature
+{{SUBST}}
+en=Motherboard Ambient
+
+{{SUBST}}
+en=Motherboard
+
+{{}}
+en=Motherboard
+
+{{SUBST}}
+en=Mainboard
+
+{{SUBST}}
+en=System Agent
+
+{{SUBST}}
+en=System
+
+{{SUBST}}
+en=Chassis
+
+; Package means here the entire CPU
+{{SUBST}}
+en=CPU Package
+
+; Prevent conflicts with ASUS EC and ASRock EC.
+{{SUBST}}
+en=_CPU
+
+; Prevent conflicts with ASUS EC and ASRock EC.
+{{SUBST}}
+en=CPU_
+
+{{SUBST}}
+en=CPU
+
+{{SUBST}}
+en=GPU Total Board Input
+
+{{SUBST}}
+en=GPU Total Output
+
+{{SUBST}}
+en=GPU +3.3V Main Input
+
+{{SUBST}}
+en=GPU Input PP Source
+
+{{SUBST}}
+en=Output
+
+{{SUBST}}
+en=Input
+
+{{Sensors}}
+en=Bus Clock
+
+{{Sensors}}
+en=Current Bus Clock (BCLK or FSB for older CPUs).\nMost Intel Skylake and later CPUs provide accurate means for reporting the actual BCLK. Other CPUs require various methods to measure this value and hence it might not always be accurate (e.g. under a very high system load).
+
+{{Sensors}}
+en=Current clock of the Mesh/Last-Level Cache part of the CPU.
+
+{{Sensors}}
+en=Current clock of the non-core part of the CPU.
+
+{{Sensors}}
+en=Current clock of the North Bridge part of the CPU.
+
+{{Sensors}}
+en=Current Hyper-Transport bus clock.
+
+{{Sensors}}
+en=Current QuickPath Interconnect (QPI/CSI) bus clock.
+
+{{Sensors}}
+en=Current Ultra Path Interconnect (UPI/Keizer Technology) bus clock.
+
+{{Sensors}}
+en=Current Embedded DRAM (EDRAM) clock.
+
+{{Sensors}}
+en=Current PCI Express bus clock.
+
+{{}}
+en=System Agent Clock
+
+{{Sensors}}
+en=System Agent Clock
+
+{{Sensors}}
+en=Current clock of the System Agent part of the CPU.
+
+{{Sensors}}
+en=Core Effective Clocks
+
+{{Sensors}}
+en=Average clock calculated across the current polling interval with respect to sleeping states.\nThis value much better reflects the dynamic state of the core/thread. Very low values are normal when the core is idling.\nSee the HWiNFO Forum for more details.
+
+{{Sensors}}
+en=Average Effective Clock
+
+{{Sensors}}
+en=Average value of all cores Effective Clock.
+
+{{Sensors}}
+en=Core Usage
+
+{{SUBST}}
+en=Usages
+
+{{SUBST}}
+en=Usage
+
+{{Sensors}}
+en=Current core/thread utilization as reported by operating system counters.\nNote that Task Manager in Windows 8 and later reports Processor Utility% instead of time-based busy utilization.
+
+{{Sensors}}
+en=Max CPU/Thread Usage
+
+{{Sensors}}
+en=Maximum value of all current core/thread utilizations.\nNote that Task Manager in Windows 8 and later reports Processor Utility% instead of time-based busy utilization.
+
+{{Sensors}}
+en=Total CPU Usage
+
+{{Sensors}}
+en=Average utilization of the entire CPU package (sum of all core/thread utilizations divided by number of cores/threads).\nNote that Task Manager in Windows 8 and later systems reports Processor Utility% instead of time-based busy utilization.
+
+{{Sensors}}
+en=On-Demand Clock Modulation
+
+{{Sensors}}
+en=Clock Modulation can be used to insert idle clocks to reduce performance. 100% means the clocks are not reduced.
+
+{{Sensors}}
+en=Core Utility
+
+; Utility as Effectiveness
+{{SUBST}}
+en=Utility
+
+{{SUBST}}
+en=Utilization
+
+{{Sensors}}
+en=Current core/thread utility.\nThis is the CPU Utilization reported by Task Manager. It can go above 100%, but might be capped in Task Manager to 100%.
+
+{{Sensors}}
+en=Total CPU Utility
+
+{{Sensors}}
+en=Average utility of the entire CPU package.\nThis is the CPU Utilization reported by Task Manager. It can go above 100%, but might be capped in Task Manager to 100%.
+
+{{Sensors}}
+en=Core Ratios
+
+{{SUBST}}
+en=Ratio
+
+{{Sensors}}
+en=Current core clock to bus ratio. This value is determined during active state only, so it will not reflect sleeping states.
+
+{{Sensors}}
+en=Current non-core clock to bus ratio.
+
+{{Sensors}}
+en=Current North Bridge clock to bus ratio.
+
+{{Sensors}}
+en=Current Hyper-Transport clock ratio.
+
+{{Sensors}}
+en=Current QuickPath Interconnect (QPI/CSI) clock ratio.
+
+{{Sensors}}
+en=Current Ultra Path Interconnect (UPI/Keizer Technology) clock ratio.
+
+{{Sensors}}
+en=RING: Residency State Regulation
+
+{{Sensors}}
+en=IA: Residency State Regulation
+
+{{Sensors}}
+en=GT: Residency State Regulation
+
+{{Sensors}}
+en=RING: Max VR Voltage, ICCmax, PL4
+
+{{Sensors}}
+en=IA: Max VR Voltage, ICCmax, PL4
+
+{{Sensors}}
+en=GT: Max VR Voltage, ICCmax, PL4
+
+; Residency as percentage of occupation in a certain state (e.g. low-power/C-state)
+{{SUBST}}
+en=Residency
+
+{{Sensors}}
+en=This sensor shows how much time the CPU spends in low-power C-States.
+
+{{Sensors}}
+en=Percentage of time the entire CPU package spent in C0 state (Full on)
+
+{{Sensors}}
+en=Percentage of time the entire CPU package spent in C1 state (AutoHALT)
+
+{{Sensors}}
+en=Percentage of time the entire CPU package spent in C2 state (Stop Grant)
+
+{{Sensors}}
+en=Percentage of time the entire CPU package spent in C3 state (Sleep).\nIn this state IA execution cores are in C3 or deeper, their clocks are off and L1/L2 caches flushed.
+
+{{Sensors}}
+en=Percentage of time the entire CPU package spent in C4 state (Deeper Sleep).
+
+{{Sensors}}
+en=Percentage of time the entire CPU package spent in C6 state (Deep Power Down).\nIn this state IA execution cores state is saved and they are powered off.
+
+{{Sensors}}
+en=Percentage of time the entire CPU package spent in C7 state (All core C6+LLC off).\nIn this state all IA execution cores are powered off (C7) and if LLC is flushed it's powered off.
+
+{{Sensors}}
+en=Percentage of time the entire CPU package spent in C8 state (C7+LLC off).\nIn this state all IA execution cores are powered off (C7), LLC is flushed and powered off.
+
+{{Sensors}}
+en=Percentage of time the entire CPU package spent in C9 state.\nIn this state all IA execution cores are powered off (C7), LLC, Uncore, IA, GT, SA are powered off.
+
+{{Sensors}}
+en=Percentage of time the entire CPU package spent in C10 state.\nIn this state all IA execution cores are powered off (C7), LLC, Uncore, IA, GT, SA are powered off, all VRs at PS4, 24 MHz clock off.
+
+{{Sensors}}
+en=Percentage of time the CPU core spent in C0 state (Full on).
+
+{{Sensors}}
+en=Percentage of time the CPU core spent in C1 state (AutoHALT).
+
+{{Sensors}}
+en=Percentage of time the CPU core spent in C2 state (Stop Grant).
+
+{{Sensors}}
+en=Percentage of time the CPU core spent in C3 state (Sleep)\nCore clocks off, L1/L2 caches flushed.
+
+{{Sensors}}
+en=Percentage of time the CPU core spent in C4 state (Deeper Sleep).
+
+{{Sensors}}
+en=Percentage of time the CPU core spent in C6 state (Deep Power Down).\nCore is powered off.
+
+{{Sensors}}
+en=Percentage of time the CPU core spent in C7 state (Deep Power Down).\nCore is powered off (C6) + expect package C7.
+
+{{SUBST}}
+en=This sensor provides information about AMD GPU
+
+{{SUBST}}
+en=This sensor provides information about NVIDIA GPU
+
+{{SUBST}}
+en=If all values under this sensor are grey or 0, it can mean the discrete GPU is disabled to preserve power. In such case the sensors will provide values as soon as the GPU wakes up.
+
+{{SUBST}}
+en=If all values under this sensor are grey or 0, it can mean the discrete GPU is disabled to preserve power (i.e. by NVIDIA Optimus). In such case the sensors will provide values as soon as the GPU wakes up.
+
+{{Sensors}}
+en=This is an auxiliary GPU sensor.
+
+{{SUBST}}
+en=[PCI Bus %d, Device %d, Function %d]
+
+{{Sensors}}
+en=This sensor provides information from on-board GPU Voltage Regulator.
+
+{{Sensors}}
+en=Temperature provided from auxiliary board sensor.
+
+{{Sensors}}
+en=Average (edge) GPU chip temperature.
+
+{{Sensors}}
+en=GPU Thermal Diode
+
+{{Sensors}}
+en=GPU Thermal Sensor
+
+{{Sensors}}
+en=Average temperature of GPU HBM memory.
+
+{{Sensors}}
+en=GPU Memory Junction Temperature
+
+{{Sensors}}
+en=Average Junction temperature of GPU memory.\nThis is the internal junction temperature measured inside the silicon, not the external (case) temperature, so higher values (than usual Tcase) are expected here.\nTemperature limit here is about 105 C.
+
+{{Sensors}}
+en=Average temperature of GPU memory.
+
+{{Sensors}}
+en=Temperature of GPU Voltage Regulator for the core (VDDCR_GFX) rail.
+
+{{Sensors}}
+en=Temperature of GPU Voltage Regulator for the memory (VDD_MEM) rail.
+
+{{Sensors}}
+en=Temperature of GPU cooling liquid.
+
+{{Sensors}}
+en=Temperature of PLX switch on GPU.
+
+{{Sensors}}
+en=GPU Hot Spot Temperature
+
+{{Sensors}}
+en=Average temperature of the hottest sensor in GPU.
+
+{{Sensors}}
+en=GPU GCD Hotspot
+
+{{Sensors}}
+en=Average temperature of GPU GCD (Graphics Complex Die) Hotspot.
+
+{{Sensors}}
+en=Average temperature of GPU MCD (Memory Complex Die) Hotspot.
+
+{{Sensors}}
+en=Temperature of GPU Voltage Regulator for the SoC (VDDCR_SOC) rail.
+
+{{Sensors}}
+en=Temperature of GPU Voltage Regulator for the VDDIO (VDD_MEM0) rail.
+
+{{Sensors}}
+en=Temperature of GPU Voltage Regulator for the VDDCI (VDD_MEM1) rail.
+
+{{Sensors}}
+en=GPU Voltage Regulator temperature.
+
+{{Sensors}}
+en=GPU memory voltage measured by auxiliary sensor.
+
+{{Sensors}}
+en=GPU voltage supplied from voltage regulator.
+
+{{Sensors}}
+en=GPU voltage requested from voltage regulator.
+
+{{Sensors}}
+en=GPU +12V input voltage supplied to voltage regulator.
+
+{{Sensors}}
+en=GPU voltage of the core (VDDCR_GFX) rail.
+
+{{Sensors}}
+en=GPU voltage of the core (VDDC) rail.
+
+{{Sensors}}
+en=GPU Core Voltage (VDDCR_GFX)
+
+{{Sensors}}
+en=GPU Core Voltage (VDDC)
+
+{{Sensors}}
+en=GPU Core Voltage
+
+{{Sensors}}
+en=GPU Memory Voltage
+
+{{Sensors}}
+en=GPU voltage of the memory (VDDIO) rail.
+
+{{Sensors}}
+en=GPU voltage of the memory (MVDDC) rail.
+
+{{Sensors}}
+en=GPU voltage of the auxiliary (VDDCI) rail.
+
+{{Sensors}}
+en=GPU voltage of the SoC (VDDCR_SOC) rail.
+
+{{Sensors}}
+en=GPU voltage of the memory (VDDCI_MEM) rail.
+
+{{Sensors}}
+en=+12V Input Voltage
+
+{{Sensors}}
+en=GPU +12V voltage supplied.
+
+{{Sensors}}
+en=Current GPU fan speed.
+
+{{Sensors}}
+en=Current drawn from GPU voltage regulator.
+
+{{Sensors}}
+en=Current drawn by the GPU voltage regulator (VR input side).
+
+{{Sensors}}
+en=Current drawn by the GPU from voltage regulator (VR output side).
+
+{{Sensors}}
+en=Current drawn by the GPU core (VDDCR_GFX) rail.
+
+{{Sensors}}
+en=Current drawn by the GPU memory (VDDIO) rail.
+
+{{Sensors}}
+en=Current drawn by the GPU auxiliary rail.
+
+{{Sensors}}
+en=Current drawn by the GPU SoC (VDDCR_SOC) rail.
+
+{{Sensors}}
+en=Current drawn by the GPU memory (VDDCI_MEM) rail.
+
+{{Sensors}}
+en=Current drawn by the GPU +12V input rail.
+
+{{Sensors}}
+en=+12V Input Current
+
+{{Sensors}}
+en=+12V Bus Input Current
+
+{{Sensors}}
+en=Current drawn by the GPU +12V Bus input rail.
+
+{{SUBST}}
+en=GPU Core Current
+
+{{Sensors}}
+en=PSU 5VSB Current
+
+{{Sensors}}
+en=PSU +3.3V Current
+
+{{Sensors}}
+en=PSU +12V Current
+
+{{Sensors}}
+en=PSU +5V Current
+
+{{Sensors}}
+en=GPU Core TDC Limit
+
+{{Sensors}}
+en=GPU core Thermal Design Current (sustained current deliverable by voltage regulator in thermally-constrained scenarios).
+
+{{Sensors}}
+en=GPU SOC TDC Limit
+
+{{Sensors}}
+en=GPU SoC Thermal Design Current (sustained current deliverable by voltage regulator in thermally-constrained scenarios).
+
+{{Sensors}}
+en=GPU USR TDC Limit
+
+{{Sensors}}
+en=GPU USR domain Thermal Design Current.
+
+{{Sensors}}
+en=GPU VRM Power Out (POUT)
+
+{{Sensors}}
+en=Power consumed by the GPU measured at output side of the voltage regulator.
+
+{{Sensors}}
+en=GPU VRM Power In (PIN)
+
+{{Sensors}}
+en=Power consumed by the GPU voltage regulator measured its input side.
+
+{{Sensors}}
+en=Power consumed by the integrated GPU.
+
+{{Sensors}}
+en=Power consumed by the GPU core.
+
+{{Sensors}}
+en=Power consumed by the GPU core (VDDCR_GFX) rail.
+
+{{Sensors}}
+en=GPU Memory Power
+
+{{Sensors}}
+en=Power consumed by the GPU memory rail.
+
+{{Sensors}}
+en=GPU Memory Power (VDDIO)
+
+{{Sensors}}
+en=Power consumed by the GPU memory (VDDIO) rail.
+
+{{Sensors}}
+en=Power consumed by the GPU auxiliary rail.
+
+{{Sensors}}
+en=Power consumed by the GPU SoC (VDDCR_SOC) rail.
+
+{{Sensors}}
+en=GPU Chip Power
+
+{{Sensors}}
+en=Power consumed by the GPU.
+
+{{Sensors}}
+en=GPU Memory Power (VDDCI_MEM)
+
+{{Sensors}}
+en=Power consumed by the GPU memory (VDDCI_MEM) rail.
+
+{{Sensors}}
+en=GPU USR Power (VDDCR_USR)
+
+{{Sensors}}
+en=Power consumed by the GPU USR (VDDCR_USR) domain.
+
+{{Sensors}}
+en=Power delivered to the GPU Memory (VDDIO_MEM) VR input.
+
+{{Sensors}}
+en=Total GPU Power consumed as a sum of all measured rails + estimated rest of chip rails. This value is reported by the graphics driver.
+
+{{Sensors}}
+en=Total GPU Power consumed as a sum of all measured rails + estimated rest of chip rails.
+
+{{Sensors}}
+en=Total estimated GPU power as sum of power consumed by all components on the GPU board.
+
+{{Sensors}}
+en=GPU Package Power Tracking current value.
+
+{{Sensors}}
+en=+12V Input Power
+
+{{Sensors}}
+en=Power consumed as measured at the +12V input rail.
+
+{{Sensors}}
+en=+12V Bus Input Power
+
+{{Sensors}}
+en=Power consumed as measured at the +12V Bus input rail.
+
+{{Sensors}}
+en=GPU PPT Limit
+
+{{Sensors}}
+en=GPU Package Power Tracking limit.
+
+{{Sensors}}
+en=GPU PPT (Sustained)
+
+{{Sensors}}
+en=GPU Package Power Tracking current value measured over sustained period.
+
+{{Sensors}}
+en=GPU PPT Limit (Sustained)
+
+{{Sensors}}
+en=GPU Package Power Tracking limit measured over sustained period.
+
+{{Sensors}}
+en=GPU PPT Limit (Short)
+
+{{Sensors}}
+en=GPU Package Power Tracking limit measured over short period.
+
+{{Sensors}}
+en=GPU Power Maximum
+
+{{Sensors}}
+en=Maximum observed GPU power peak.
+
+{{Sensors}}
+en=Current GPU core (GFXCLK) frequency.
+
+{{Sensors}}
+en=GPU Front End Clock
+
+{{Sensors}}
+en=Current GPU core (Front End) frequency.
+
+{{Sensors}}
+en=GPU Front End Clock (Effective)
+
+{{Sensors}}
+en=Current GPU Front End effective frequency.
+
+{{Sensors}}
+en=GPU Shader Clocks
+
+{{Sensors}}
+en=GPU Shader Clocks (Effective)
+
+{{Sensors}}
+en=Current GPU shader engine frequency.
+
+{{Sensors}}
+en=Current GPU Geometry engine frequency.
+
+{{Sensors}}
+en=GPU Clock (Effective)
+
+{{Sensors}}
+en=GPU Clock
+
+{{Sensors}}
+en=Current GPU core (GFXCLK) effective frequency.
+
+{{Sensors}}
+en=Current GPU geometry unit frequency.
+
+{{Sensors}}
+en=Current GPU ROP frequency.
+
+{{Sensors}}
+en=GPU Geometry Clock
+
+{{Sensors}}
+en=GPU Shader Clock
+
+{{Sensors}}
+en=GPU Memory Clock
+
+{{Sensors}}
+en=Current GPU memory command clock frequency (not the effective DDR/GDDR data rate).\nEffective data rate is multiplied by 2 or 4 depending on memory type.
+
+{{Sensors}}
+en=Current GPU SoC domain frequency.
+
+{{Sensors}}
+en=Current GPU Universal Video Decoder 1 frequency.
+
+{{Sensors}}
+en=Current GPU Universal Video Decoder 2 frequency.
+
+{{Sensors}}
+en=Current GPU Video Decoder (VCLK) frequency.
+
+{{Sensors}}
+en=Current GPU Video Encoder (DCLK) frequency.
+
+{{Sensors}}
+en=Current GPU Video Coding Engine frequency.
+
+{{Sensors}}
+en=Current GPU Video Core Next engine frequency.
+
+{{Sensors}}
+en=Current GPU Video Core Next 1 engine 1 frequency.
+
+{{Sensors}}
+en=Current GPU Video Core Next 1 engine 2 frequency.
+
+{{Sensors}}
+en=Average utilization of the GPU core as reported by the GPU hardware.
+
+{{Sensors}}
+en=GPU Utilization
+
+{{Sensors}}
+en=GPU D3D Usage
+
+{{Sensors}}
+en=Average utilization of the GPU as reported via Direct 3D interface.
+
+{{Sensors}}
+en=GPU Memory Controller Utilization
+
+{{Sensors}}
+en=Average utilization of the GPU Memory Controller.
+
+{{Sensors}}
+en=Average utilization of the GPU I/O.
+
+{{Sensors}}
+en=GPU I/O Utilization
+
+{{Sensors}}
+en=GPU D3D Utilizations
+
+{{Sensors}}
+en=Utilization of the Video Decoder GPU engine as reported via Direct 3D interface.
+
+{{Sensors}}
+en=Utilization of the Video Encoder GPU engine as reported via Direct 3D interface.
+
+{{Sensors}}
+en=Utilization of the GPU Computing engine as reported via Direct 3D interface.
+
+{{Sensors}}
+en=Utilization of the Video Processing GPU engine as reported via Direct 3D interface.
+
+{{Sensors}}
+en=GPU Package Power Tracking percentage of limit.
+
+{{Sensors}}
+en=GPU Package Power Tracking 1 percentage of limit.
+
+{{Sensors}}
+en=GPU Package Power Tracking 2 percentage of limit.
+
+{{Sensors}}
+en=GPU Package Power Tracking 3 percentage of limit.
+
+{{Sensors}}
+en=GPU Core domain Thermal Design Current percentage of limit (sustained current deliverable by voltage regulator in thermally-constrained scenarios).
+
+{{Sensors}}
+en=GPU SOC domain Design Current percentage of limit (sustained current deliverable by voltage regulator in thermally-constrained scenarios).
+
+{{Sensors}}
+en=GPU Thermal Limits
+
+{{Sensors}}
+en=GPU Edge Thermal Limit
+
+{{Sensors}}
+en=GPU Edge temperature percentage of limit.
+
+{{Sensors}}
+en=GPU Hotspot Thermal Limit
+
+{{Sensors}}
+en=GPU Hotspot temperature percentage of limit.
+
+{{Sensors}}
+en=GPU Memory Thermal Limit
+
+{{Sensors}}
+en=GPU Memory temperature percentage of limit.
+
+{{Sensors}}
+en=GPU VR GFX Thermal Limit
+
+{{Sensors}}
+en=GPU Core Voltage Regulator temperature percentage of limit.
+
+{{Sensors}}
+en=GPU VR SOC Thermal Limit
+
+{{Sensors}}
+en=GPU SoC Voltage Regulator temperature percentage of limit.
+
+{{Sensors}}
+en=GPU VR MEM Thermal Limit
+
+{{Sensors}}
+en=GPU Memory Voltage Regulator temperature percentage of limit.
+
+{{Sensors}}
+en=GPU fan speed as PWM percentage of maximum.
+
+{{Sensors}}
+en=GPU Fan Duty
+
+{{Sensors}}
+en=GPU D3D Memory Dedicated
+
+{{Sensors}}
+en=Amount of GPU Direct-3D dedicated memory.
+
+{{Sensors}}
+en=GPU D3D Memory Dynamic
+
+{{Sensors}}
+en=Amount of GPU Direct-3D dynamic memory.
+
+{{Sensors}}
+en=PCIe Link Speed
+
+{{Sensors}}
+en=Current PCI Express link speed. Reflects also if the port speed is limited.
+
+; On some graphics devices (such as some AMD Ryzen IGD), the unit of "GPU Memory Usage" is "MB" not "%".
+{{Sensors}}
+en=GPU Memory Usage
+
+{{Sensors}}
+en=Total GPU Memory in use.
+
+{{Sensors}}
+en=GPU Memory Errors
+
+{{Sensors}}
+en=Total number of detected GPU memory errors accumulated during runtime.
+
+{{SUBST}}
+en=Throttle Reason
+
+{{Sensors}}
+en=Throttle Reason - Thermal
+
+{{Sensors}}
+en=Throttle Reason - Current
+
+{{Sensors}}
+en=Determines the reason why performance is reduced as reported by GPU driver.
+
+{{SUBST}}
+en=Framerate Presented
+
+{{SUBST}}
+en=Framerate Displayed
+
+{{SUBST}}
+en=Framerate
+
+{{Sensors}}
+en=Current frame rate in Frames Per Second as measured internally by the GPU.\nRequires a 3D or full-screen graphics to be running to provide values.
+
+{{Sensors}}
+en=This is an auxiliary EVGA-specific GPU sensor.
+
+{{SUBST}}
+en=GPU Core (NVVDD) Input
+
+{{SUBST}}
+en=GPU Unknown Rail
+
+{{SUBST}}
+en=GPU Core (NVVDD) Output
+
+{{Sensors}}
+en=This sensor reports the GPU Core NVVDD value measured at the output side of voltage regulator.
+
+{{Sensors}}
+en=This sensor reports the GPU FBVDD value measured at the output side of voltage regulator.
+
+{{Sensors}}
+en=This sensor reports the GPU FBVDDQ value measured at the output side of voltage regulator.
+
+{{Sensors}}
+en=This sensor reports the GPU FBVDD_Q value measured at the output side of voltage regulator.
+
+{{Sensors}}
+en=This sensor reports the GPU PCIe VDD value measured at the output side of voltage regulator.
+
+{{SUBST}}
+en=1.0V
+
+{{SUBST}}
+en=1.8V
+
+{{SUBST}}
+en=3.3V
+
+{{SUBST}}
+en=+12V
+
+{{SUBST}}
+en=+5V
+
+{{Sensors}}
+en=This sensor reports the GPU +3.3V value measured at the output side of voltage regulator.
+
+{{Sensors}}
+en=This sensor reports the GPU +3.3V NV value measured at the output side of voltage regulator.
+
+{{Sensors}}
+en=This sensor reports the GPU FBVDDQ_GPU value measured at the output side of voltage regulator.
+
+{{Sensors}}
+en=This sensor reports the GPU FBVDDQ_MEM value measured at the output side of voltage regulator.
+
+{{Sensors}}
+en=This sensor reports the GPU SRAM value measured at the output side of voltage regulator.
+
+{{Sensors}}
+en=This sensor reports the total GPU value measured at the output side of voltage regulator.
+
+{{Sensors}}
+en=This sensor reports the GPU +12V1 value measured at the input side of voltage regulator.
+
+{{Sensors}}
+en=This sensor reports the GPU HV0 value measured at the input side of voltage regulator.
+
+{{Sensors}}
+en=This sensor reports the GPU HV1 value measured at the input side of voltage regulator.
+
+{{Sensors}}
+en=This sensor reports the total GPU value measured at the input side of voltage regulator.
+
+{{Sensors}}
+en=This sensor reports the GPU NVVDD1 value measured at the input side of voltage regulator.
+
+{{Sensors}}
+en=This sensor reports the GPU NVVDD2 value measured at the input side of voltage regulator.
+
+{{Sensors}}
+en=This sensor reports the GPU Core NVVDD value measured at the input side of voltage regulator.
+
+{{Sensors}}
+en=This sensor reports the GPU 8-pin connector value measured.
+
+{{Sensors}}
+en=This sensor reports the GPU 6-pin connector value measured.
+
+{{Sensors}}
+en=This sensor reports the GPU Misc0 value measured at the input side of voltage regulator.
+
+{{Sensors}}
+en=This sensor reports the GPU Misc1 value measured at the input side of voltage regulator.
+
+{{Sensors}}
+en=This sensor reports the GPU Misc2 value measured at the input side of voltage regulator.
+
+{{Sensors}}
+en=This sensor reports the GPU Misc3 value measured at the input side of voltage regulator.
+
+{{Sensors}}
+en=This sensor reports the GPU USB-C 0 connector input value measured.
+
+{{Sensors}}
+en=This sensor reports the GPU USB-C 1 connector input value measured.
+
+{{Sensors}}
+en=This sensor reports the GPU Fan1 value measured at the input side of voltage regulator.
+
+{{Sensors}}
+en=This sensor reports the GPU Fan2 value measured at the input side of voltage regulator.
+
+{{Sensors}}
+en=This sensor reports the GPU SRAM value measured at the input side of voltage regulator.
+
+{{Sensors}}
+en=This sensor reports the GPU +3.3V value measured at the input side of voltage regulator.
+
+{{Sensors}}
+en=This sensor reports the GPU Power Source PP input value measured.
+
+{{Sensors}}
+en=This sensor reports the GPU +3.3V Main value measured at the input side of voltage regulator.
+
+{{Sensors}}
+en=This sensor reports the GPU +3.3V Always-On value measured at the input side of voltage regulator.
+
+{{Sensors}}
+en=This sensor reports the GPU Total Board value measured at the input side of voltage regulator.
+
+{{Sensors}}
+en=This sensor reports the GPU FBVDD value measured at the input side of voltage regulator.
+
+{{Sensors}}
+en=This sensor reports the GPU FBVDDQ value measured at the input side of voltage regulator.
+
+{{Sensors}}
+en=This sensor reports the GPU FBVDD_Q value measured at the input side of voltage regulator.
+
+{{Sensors}}
+en=This sensor reports the PCIe +3.3V input value measured.
+
+{{Sensors}}
+en=This sensor reports the PCIe +12V input value measured.
+
+{{Sensors}}
+en=Average GPU chip temperature.
+
+{{Sensors}}
+en=GPU board/ambient temperature.
+
+{{Sensors}}
+en=Maximum Junction temperature among all GPU memory chips.\nThis is the internal junction temperature measured inside the silicon, not the external (case) temperature, so higher values (than usual Tcase) are expected here.\nThermal throttling starts around 110 C.
+
+{{Sensors}}
+en=This temperature is unconfirmed, but assumed to be the value from hottest thermal sensor.
+
+{{Sensors}}
+en=GPU temperature read directly from hardware.
+
+{{Sensors}}
+en=Temperature read from various sensors located across the GPU board.
+
+{{Sensors}}
+en=Temperature read from various sensors located across the GPU board.\nNote that the memory temperatures (MEMx) are measured by sensors external to memory chips, so this is different from the Memory Junction temperature.
+
+{{Sensors}}
+en=GPU voltage measured by auxiliary sensor.
+
+{{Sensors}}
+en=GPU core voltage as provided by GPU driver.
+
+{{Sensors}}
+en=GPU Rail Voltages
+
+{{Sensors}}
+en=Voltage monitored by auxiliary EVGA sensor.
+
+{{Sensors}}
+en=Current drawn monitored by auxiliary EVGA sensor.
+
+{{Sensors}}
+en=Total GPU power consumed as measured and estimated by GPU.
+
+{{Sensors}}
+en=GPU Rail Powers
+
+{{Sensors}}
+en=Power consumed as monitored by auxiliary EVGA sensor.
+
+{{SUBST}}
+en=Performance Limit Reasons
+
+{{SUBST}}
+en=Performance Limiters
+
+{{SUBST}}
+en=Performance Limit
+
+{{Sensors}}
+en=Indicates whether GPU performance is reduced from maximum due to reaching the power limit.
+
+{{Sensors}}
+en=Performance Limit - Thermal
+
+{{Sensors}}
+en=Indicates whether GPU performance is reduced from maximum due to reaching the thermal limit.
+
+{{Sensors}}
+en=Performance Limit - Reliability Voltage
+
+{{Sensors}}
+en=Indicates whether GPU performance is reduced from maximum due to reaching the reliability voltage limit.
+
+{{Sensors}}
+en=Performance Limit - Max Operating Voltage
+
+{{Sensors}}
+en=Indicates whether GPU performance is reduced from maximum due to reaching the maximum operating voltage limit.
+
+{{Sensors}}
+en=Performance Limit - Utilization
+
+{{Sensors}}
+en=Indicates whether GPU performance is reduced from maximum due to insufficient utilization (i.e. GPU clocks are reduced because GPU is idle).
+
+{{Sensors}}
+en=Performance Limit - SLI GPUBoost Sync
+
+{{Sensors}}
+en=Indicates whether GPU performance is reduced from maximum due to SLI GPUBoost Sync.
+
+{{Sensors}}
+en=GPU ECC Memory Errors (Corrected)
+
+{{Sensors}}
+en=GPU ECC Memory Errors (Uncorrected)
+
+{{Sensors}}
+en=Total GPU Power
+
+{{Sensors}}
+en=Total GPU Power (normalized)
+
+{{Sensors}}
+en=Total GPU Power reported as percentage of TDP limit.
+
+{{Sensors}}
+en=Total GPU Power reported as normalized percentage of default TDP limit.
+
+{{Sensors}}
+en=GPU Memory Allocated
+
+{{Sensors}}
+en=Total amount of allocated GPU memory.
+
+{{Sensors}}
+en=GPU Memory Available
+
+{{Sensors}}
+en=GPU Video Clock
+
+{{Sensors}}
+en=Current GPU Video Engine frequency.
+
+{{Sensors}}
+en=Current GPU effective core frequency.
+
+{{Sensors}}
+en=GPU Core Load
+
+{{Sensors}}
+en=GPU Memory Controller Load
+
+{{Sensors}}
+en=GPU Video Engine Load
+
+{{Sensors}}
+en=Average utilization of the GPU Video Engine.
+
+{{Sensors}}
+en=GPU Bus Load
+
+{{Sensors}}
+en=Average utilization of the GPU Bus.
+
+{{Sensors}}
+en=GPU memory utilization (percentage of memory used).
+
+{{Sensors}}
+en=GPU Memory Load
+
+{{Sensors}}
+en=Average utilization of the GPU memory.
+
+{{Sensors}}
+en=Utilization of the GPU VR engine as reported via Direct 3D interface.
+
+{{Sensors}}
+en=Utilization of the GPU Graphics engine as reported via Direct 3D interface.
+
+{{Sensors}}
+en=Utilization of the %s engine as reported via Direct 3D interface.
+
+{{Sensors}}
+en=This sensor provides basic information about disk health retrieved via S.M.A.R.T. or ATA Statistics standards.\nPolling this sensor too frequently can cause performance degradation or clicking sounds on some drives.\nA less-frequent polling of this sensor is recommended (Sensor Settings - Polling Period - Disk S.M.A.R.T. every X cycles)
+
+{{Sensors}}
+en=Current disk drive temperature.
+
+{{Sensors}}
+en=Drive Airflow Temperature
+
+{{Sensors}}
+en=Current temperature of the NAND flash media (or overall composite temperature for some drives).
+
+{{Sensors}}
+en=For NVMe drives this is usually the temperature of ASIC controller.
+
+{{Sensors}}
+en=Undefined temperature.
+
+{{Sensors}}
+en=Drive Remaining Life
+
+{{}}
+en=Drive Remaining Life
+
+{{Sensors}}
+en=Drive remaining health estimated by its firmware.
+
+{{Sensors}}
+en=Drive Failure
+
+{{Sensors}}
+en=Drive Warning
+
+{{Sensors}}
+en=Total number of drive failures accumulated over its entire lifetime.\nEach drive defines a set of attributes, their actual values and thresholds. When an attribute falls below the defined threshold it's considered as a failure.\nFor NVMe drives the Device Reliablity Degraded or Media In Read-Only Mode states are considered as failure conditions.\nWhen a failure is detected, an additional sensor value will provide more precise details. Check the main HWiNFO screen for full details about each attribute.
+
+{{Sensors}}
+en=Total number of drive warnings accumulated over its entire lifetime.\nWhen the following ATA parameters exceed an amount of 2, they are treated as warnings:\n- Reallocated Sector Count, Current Pending Sector Count, Off-Line Uncorrectable Sector Count, Remaining Life < 10%\nThe following NVMe conditions are treated as warnings:\n- Available Space Below Threshold, Temperature Exceeded Critical Threshold, Volatile Memory Backup Device Failed\nWhen a warning is detected, an additional sensor value will provide more precise details. Check the main HWiNFO screen for full details about each attribute.
+
+{{Sensors}}
+en=Total Host Writes
+
+{{Sensors}}
+en=Total data written to drive over its entire lifetime.
+
+{{Sensors}}
+en=Total NAND Writes
+
+{{Sensors}}
+en=Total data written to drive's NAND flash over its entire lifetime.
+
+{{Sensors}}
+en=Total Host Reads
+
+{{Sensors}}
+en=Total data read from drive over its entire lifetime.
+
+{{SUBST}}
+en=Warning:
+
+{{Main}}
+en=Warning
+
+{{SUBST}}
+en=Failure:
+
+{{Sensors}}
+en=Drive warning detail.
+
+{{Sensors}}
+en=Drive failure detail.
+
+{{Sensors}}
+en=Self-Test Failure
+
+{{Sensors}}
+en=This sensor provides drive statistics retrieved from the operating system.
+
+{{Sensors}}
+en=Read Activity
+
+{{Sensors}}
+en=Write Activity
+
+{{Sensors}}
+en=Drive read activity percentage.
+
+{{Sensors}}
+en=Drive write activity percentage.
+
+{{Sensors}}
+en=Drive total (read + write) activity percentage.
+
+{{Sensors}}
+en=Total Activity
+
+{{Sensors}}
+en=Read Rate
+
+{{Sensors}}
+en=Write Rate
+
+{{Sensors}}
+en=Drive current read rate.
+
+{{Sensors}}
+en=Drive current write rate.
+
+{{Sensors}}
+en=Read Total
+
+{{Sensors}}
+en=Total data read from drive since system start.
+
+{{Sensors}}
+en=Write Total
+
+{{Sensors}}
+en=Total data written to drive since system start.
+
+{{Sensors}}
+en=This sensor provides information from the Intel Digital Thermal Sensor (DTS) embedded in CPU.
+
+{{Sensors}}
+en=256 ms average of the hottest temperature of all Digital Thermal Sensors within the package calculated by the CPU.\nThis is the recommended CPU temperature to watch.
+
+{{Sensors}}
+en=Core Max
+
+{{Sensors}}
+en=Maximum value of all Digital Thermal Sensors.
+
+{{Sensors}}
+en=Internal core temperature read by the Digital Thermal Sensor.
+
+{{Sensors}}
+en=Core Distance to TjMAX
+
+{{SUBST}}
+en=Distance to TjMAX
+
+{{Sensors}}
+en=Temperature difference from Maximum Junction Temperature (Tj,max).\nThe Digital Thermal Sensor (DTS) returns temperature offset from Tj,max. So this value is actually the raw value read from DTS, which might be useful to determine how much thermal headroom is left (0 here means the core has reached the maximum temperature and throttling starts).
+
+{{Sensors}}
+en=Core Thermal Throttling
+
+{{SUBST}}
+en=Thermal Throttling
+
+{{Sensors}}
+en=Indicates whether the core clock is being throttled due to reaching the maximum junction temperature (Tj,max).
+
+{{Sensors}}
+en=Core Critical Temperature
+
+{{Sensors}}
+en=Indicates whether the core is operating above its thermal specification.
+
+{{Sensors}}
+en=Core Power Limit Exceeded
+
+{{Sensors}}
+en=Indicates whether the core P-State is limited by power limitation.
+
+{{Sensors}}
+en=Package/Ring Thermal Throttling
+
+{{Sensors}}
+en=Indicates whether any of the CPU package thermal monitors have tripped and the package is thermally throttling.
+
+{{Sensors}}
+en=Package/Ring Critical Temperature
+
+{{Sensors}}
+en=Indicates whether the CPU package is operating out of its thermal specification.
+
+{{Sensors}}
+en=Package/Ring Power Limit Exceeded
+
+{{Sensors}}
+en=Indicates whether the IA core domain is limited by power limitation.
+
+{{Sensors}}
+en=PMAX Limit/VCCIN Under-Voltage
+
+{{Sensors}}
+en=Indicates whether the PMAX detector circuit was asserted.
+
+{{Sensors}}
+en=This sensor provides data read directly from the chipset.
+
+{{Sensors}}
+en=Internal NVIDIA MCP chipset temperature.
+
+{{Sensors}}
+en=Internal NVIDIA SPP chipset temperature.
+
+{{Sensors}}
+en=Internal PCH chipset temperature.
+
+{{Sensors}}
+en=Internal GMCH chipset temperature.
+
+{{Sensors}}
+en=Internal IO-Hub chipset temperature.
+
+{{SUBST}}
+en=Chipset
+
+{{Sensors}}
+en=Internal chipset temperature.\nThis value is read directly from chipset, so it is higher than a temperature reported by mainboard sensors located in chipset vicinity.
+
+{{Sensors}}
+en=CPU Core power measured by chipset.
+
+{{Sensors}}
+en=This sensor provides additional information specific to Intel processors.
+
+{{Sensors}}
+en=SVID-compliant Voltage Regulator (VR) temperature per rail.\nMeasured by VR and reported to CPU.\nVCCIN - Fully Integrated VR (FIVR) Input\nVCCSA - System Agent
+
+{{Sensors}}
+en=CPU IA Cores
+
+{{Sensors}}
+en=Temperature of the IA (x86 execution cores) part of the CPU.
+
+{{Sensors}}
+en=CPU Graphics
+
+{{Sensors}}
+en=Temperature of the Integrated Graphics (IGPU) part of the CPU.
+
+{{Sensors}}
+en=CPU System Agent
+
+{{Sensors}}
+en=Temperature of the System Agent part of CPU.
+
+{{Sensors}}
+en=CPU Camera Unit (ISP)
+
+{{Sensors}}
+en=Temperature of the Camera Unit (ISP) part of CPU.
+
+{{Sensors}}
+en=Memory channel temperature value calculated by the CPU. Mostly estimated per bandwidth.
+
+{{Sensors}}
+en=CPU GT Cores (Graphics)
+
+{{Sensors}}
+en=Per-channel DIMM temperature, mostly estimated according to bandwidth.
+
+{{Sensors}}
+en=Embedded DRAM (EDRAM) temperature.
+
+{{Sensors}}
+en=Temperature of the non-core (Uncore) part of the CPU.
+
+{{Sensors}}
+en=Memory Ambient
+
+{{Sensors}}
+en=Per-channel DIMM temperature, depends on thermal throttling mode used in BIOS:\nIn Open Loop Thermal Throttling (OLTT) mode estimated per bandwidth.\nIn Closed Loop Thermal Throttling (CLTT) mode measured by Thermal Sensor on DIMM (TSOD).
+
+{{Sensors}}
+en=Per-channel DIMM temperature.
+
+{{Sensors}}
+en=Voltage requested by the Integrated Graphics controller (IGPU). May not be the voltage supplied by Voltage Regulator.
+
+{{Sensors}}
+en=Voltage Offsets
+
+{{Sensors}}
+en=Voltage offset applied to a particular voltage rail.\nThis value is provided for reference only and does not update in real-time to prevent excessive traffic.\nIf changed during run time, will require restarting HWiNFO to reflect the actual value.
+
+{{Sensors}}
+en=Integrated Memory Controller voltage.
+
+{{Sensors}}
+en=Memory VDDQ TX voltage.
+
+{{Sensors}}
+en=Total power consumed by the entire CPU Package including IA Cores, GT and Uncore.\nThis is a sum of power consumed by all CPU voltage rails featuring telemetry (SVID VR), remaining rails are estimated based on activity.\nPower monitoring requires SVID to be enabled in BIOS to work properly.
+
+{{Sensors}}
+en=IA Cores Power
+
+{{Sensors}}
+en=Power consumed by the IA (x86 execution cores) part of the CPU.\nThis is mostly a value measured via SVID VR telemetry.
+
+{{Sensors}}
+en=GT Cores Power
+
+{{Sensors}}
+en=Power consumed by the Integrated Graphics (IGPU) part of the CPU.\nThis is measured if the GT rail is provided by SVID VR, otherwise estimated based on activity.
+
+{{Sensors}}
+en=Total DRAM Power
+
+{{Sensors}}
+en=Estimated power consumed by DRAM.
+
+{{Sensors}}
+en=Total System Power
+
+{{Sensors}}
+en=Total power consumed by all devices in the platform that receive power from integrated power delivery mechanism (CPU cores, SOC, memory, add-on or peripheral devices) that get powered directly from the platform power delivery means.\nRequires supported Psys-capable charging controller.
+
+{{Sensors}}
+en=System Agent Power
+
+{{Sensors}}
+en=Power consumed by the System Agent (SA) part of the CPU.\nThis is measured if the VCCSA rail is provided by SVID VR, otherwise estimated based on activity.
+
+{{Sensors}}
+en=Rest-of-Chip Power
+
+{{Sensors}}
+en=Estimated power consumed by remaining parts of the CPU (excluding IA, GT, SA).
+
+{{Sensors}}
+en=Estimated power consumed by Embedded DRAM.
+
+{{Sensors}}
+en=Estimated power consumed by chipset (PCH).
+
+{{Sensors}}
+en=PL1 Power Limit
+
+{{Sensors}}
+en=PL1 Power Limit (Static)
+
+{{Sensors}}
+en=PL1 Power Limit (Dynamic)
+
+{{Sensors}}
+en=Long Duration Power Limit determining cooling limits, later called Processor Base Power (PBP).\nCan change on the fly based on various factors and system policies.
+
+{{Sensors}}
+en=PL2 Power Limit
+
+{{Sensors}}
+en=PL2 Power Limit (Static)
+
+{{Sensors}}
+en=PL2 Power Limit (Dynamic)
+
+{{Sensors}}
+en=Short Duration Power Limit determining power-delivery limits, later called Maximum Turbo Power (MTP).\nCan change on the fly based on various factors and system policies.
+
+{{Sensors}}
+en=Integrated Graphics (IGPU) Clock (GT Slices frequency).
+
+{{Sensors}}
+en=Integrated Clock Control (ICC) clock for particular clock domain.\nMany platforms might not use the ICC, but dedicated clock generating solutions instead.
+
+{{Sensors}}
+en=Imaging Unit (IMGU) part of IGPU Clock
+
+{{Sensors}}
+en=Current cTDP Level
+
+{{Sensors}}
+en=Current Configurable TDP Level.\n0 = Nominal\n1,2=Legacy Level 1,2\n3+=Extended Level 1+
+
+{{Sensors}}
+en=OPI Link Speed
+
+{{Sensors}}
+en=Current On Package Interface (OPI) speed.
+
+{{Sensors}}
+en=OC Ratio Limits
+
+{{SUBST}}
+en=OC Ratio Limit
+
+{{Sensors}}
+en=Overclocking ratio limit.\nThis value is provided for reference only and does not update in real-time to prevent excessive traffic.\nIf changed on the fly, will require restarting HWiNFO to reflect the actual value.
+
+{{Sensors}}
+en=Overall utilization of the Integrated GPU as reported via Direct 3D interface.
+
+{{Sensors}}
+en=Utilization of GT Slice part of the Integrated GPU as reported directly by the IGPU.
+
+{{Sensors}}
+en=Utilization of Media Engine part of the Integrated GPU as reported directly by the IGPU.
+
+{{Sensors}}
+en=This sensor provides additional information specific to AMD processors.
+
+{{Sensors}}
+en=T-control temperature on an arbitrary scale.\nThis value might not be the actual temperature (in degrees of Celsius) as these CPUs are usually not able to provide meaningful temperature values.
+
+{{Sensors}}
+en=Actual highest temperature among CPU sensors in the die.
+
+{{Sensors}}
+en=T-control temperature of the CPU, which uses a Tctl_offset.\nThis is not the true die temperature (Tdie), but Tdie + Tctl_offset.
+
+{{Sensors}}
+en=Actual highest temperature among CPU sensors in the die (Tctl - Tctl_offset).
+
+{{Sensors}}
+en=CPU temperature as reported by SB-TSI interface. Might not represent the true temperature in degrees of Celsius.
+
+{{Sensors}}
+en=CPU Die (average)
+
+{{Sensors}}
+en=Average temperature of all sensors in the CPU die (filtered with the thermal time constant).
+
+{{Sensors}}
+en=Maximum temperature of CPU core domain.
+
+{{Sensors}}
+en=CPU Core
+
+{{Sensors}}
+en=PCH Core
+
+{{Sensors}}
+en=Maximum temperature of CPU SOC domain.
+
+{{Sensors}}
+en=Maximum temperature of CPU integrated graphics domain.
+
+{{Sensors}}
+en=APU skin/surface temperature measured by mainboard temperature sensors.
+
+{{Sensors}}
+en=Temperature of particular Core Complex Die (CCD) of the CPU package.
+
+{{Sensors}}
+en=Per-core temperature measured by dedicated sensor in core.
+
+{{Sensors}}
+en=L3 Temperatures
+
+{{Sensors}}
+en=L3 Cache temperatures per CCX/CCD.
+
+{{Sensors}}
+en=L3 Cache temperatures per CCD.
+
+{{Sensors}}
+en=Highest temperature among all IO Die (IOD) sensors.
+
+{{Sensors}}
+en=CPU IOD Average
+
+{{Sensors}}
+en=Average temperature among all IO Die (IOD) sensors.
+
+{{Sensors}}
+en=Core Voltage
+
+{{Sensors}}
+en=Voltage of the core domain provided via Voltage Regulator telemetry (SVI2 TFN).
+
+{{Sensors}}
+en=CPU Core Voltage (SVI2 TFN)
+
+{{Sensors}}
+en=Voltage of the core domain (VDDCR_CPU) provided via Voltage Regulator telemetry (SVI2 TFN).
+
+{{Sensors}}
+en=Voltage of the core domain (VDDCR_VDD) provided via Voltage Regulator telemetry (SVI3 TFN).
+
+{{Sensors}}
+en=Voltage of the North Bridge domain provided via Voltage Regulator telemetry.
+
+{{Sensors}}
+en=Voltage of the SOC domain (VDDCR_SOC) provided via Voltage Regulator telemetry (SVI2 TFN).
+
+{{Sensors}}
+en=Voltage of the SOC domain (VDDCR_SOC) provided via Voltage Regulator telemetry (SVI3 TFN).
+
+{{Sensors}}
+en=Effective voltage requested. This is the voltage chosen among all core VID voltages requested as the final request to the VR.
+
+{{Sensors}}
+en=Voltage of the SR domain (VDDCR_SR) provided via Voltage Regulator telemetry (SVI3 TFN).
+
+{{Sensors}}
+en=Voltage of the MISC domain (VDD_MISC) provided via Voltage Regulator telemetry (SVI3 TFN).
+
+{{Sensors}}
+en=Core Current
+
+{{Sensors}}
+en=Current drawn by the core domain provided via Voltage Regulator telemetry (SVI2 TFN).
+
+{{Sensors}}
+en=CPU Core Current (SVI2 TFN)
+
+{{Sensors}}
+en=CPU Core Current (SVI3 TFN)
+
+{{Sensors}}
+en=CPU Core Current
+
+{{Sensors}}
+en=Current drawn by the core domain (VDDCR_CPU) provided via Voltage Regulator telemetry (SVI2 TFN).
+
+{{Sensors}}
+en=Current drawn by the core domain (VDDCR_VDD) provided via Voltage Regulator telemetry (SVI3 TFN).
+
+{{Sensors}}
+en=Current drawn by the North Bridge provided via Voltage Regulator telemetry (SVI2 TFN).
+
+{{Sensors}}
+en=SoC Current (SVI2 TFN)
+
+{{Sensors}}
+en=SoC Current (SVI3 TFN)
+
+{{Sensors}}
+en=Current drawn by the SoC domain (VDDCR_SOC) provided via Voltage Regulator telemetry (SVI2 TFN).
+
+{{Sensors}}
+en=Current drawn by the SoC domain (VDDCR_SOC) provided via Voltage Regulator telemetry (SVI3 TFN).
+
+{{Sensors}}
+en=SR Current (SVI3 TFN)
+
+{{Sensors}}
+en=Current drawn by the SoC domain (VDDCR_SR) provided via Voltage Regulator telemetry (SVI3 TFN).
+
+{{Sensors}}
+en=MISC Current (SVI3 TFN)
+
+{{Sensors}}
+en=Current drawn by the MISC domain (VDD_MISC) provided via Voltage Regulator telemetry (SVI3 TFN).
+
+{{Sensors}}
+en=IO Current (SVI3 TFN)
+
+{{Sensors}}
+en=Current drawn by the IO domain (VDDIO) provided via Voltage Regulator telemetry (SVI3 TFN).
+
+{{Sensors}}
+en=CPU Thermal Design Current (sustained current deliverable by voltage regulator in thermally-constrained scenarios).
+
+{{Sensors}}
+en=CPU Electric Design Current (current deliverable by voltage regulator in a peak/spike condition).
+
+{{Sensors}}
+en=CPU Package Power
+
+{{Sensors}}
+en=Power consumed by the entire CPU package.\nA sum of powers consumed by all rails measured via telemetry (i.e. VDDCR_CPU, VDDCR_SOC, VDDIO_MEM) plus other rails estimated (i.e. Rest-Of-Chip).
+
+{{Sensors}}
+en=Power consumed by individual core.
+
+{{Sensors}}
+en=Power consumed by the entire core domain (VDDCR_CPU) provided via Voltage Regulator telemetry (SVI2 TFN).
+
+{{Sensors}}
+en=Power consumed by the entire core domain (VDDCR_CPU) provided via Voltage Regulator telemetry (SVI3 TFN).
+
+{{Sensors}}
+en=Power consumed by the SOC domain (VDDCR_SOC) provided via Voltage Regulator telemetry (SVI2 TFN).
+
+{{Sensors}}
+en=Power consumed by the SOC domain (VDDCR_SOC) provided via Voltage Regulator telemetry (SVI3 TFN).
+
+{{Sensors}}
+en=Sum of Powers consumed by Core and SOC domain (VDDCR_CPU+VDDCR_SOC) provided via Voltage Regulator telemetry (SVI2 TFN).
+
+{{Sensors}}
+en=Sum of Powers consumed by Core, SOC and SR domain (VDDCR_CPU+VDDCR_SOC+VDDCR_SR) provided via Voltage Regulator telemetry (SVI3 TFN).
+
+{{Sensors}}
+en=Sum of Powers consumed by Core, SOC and MISC domain (VDDCR_CPU+VDDCR_SOC+VDDCR_MISC) provided via Voltage Regulator telemetry (SVI3 TFN).
+
+{{Sensors}}
+en=Current CPU Package Power Tracking value.
+
+{{Sensors}}
+en=Socket power filtered with the STAPM (Skin Temperature Aware Power Management) time constant.
+
+{{Sensors}}
+en=Estimated power consumed by CPU.
+
+{{Sensors}}
+en=Estimated power consumed by CPU core.
+
+{{Sensors}}
+en=Estimated power consumed by North Bridge.
+
+{{Sensors}}
+en=Current Infinity Fabric target frequency (FCLK).
+
+{{Sensors}}
+en=Memory Controller Clock (UCLK)
+
+{{Sensors}}
+en=Current Memory Controller target frequency (UCLK).
+
+{{Sensors}}
+en=Current L3 Cache CCLK frequency.
+
+{{Sensors}}
+en=Current L3 Cache frequency (L3CLK).
+
+{{Sensors}}
+en=Frequency Limit - Global
+
+{{Sensors}}
+en=Current frequency limit as result applied by the most restrictive infrastructure limit.
+
+{{Sensors}}
+en=CPU Package Power Tracking percentage of limit.
+
+{{Sensors}}
+en=CPU TDC Limit
+
+{{Sensors}}
+en=CPU Thermal Design Current percentage of limit (sustained current deliverable by voltage regulator in thermally-constrained scenarios).
+
+{{Sensors}}
+en=CPU EDC Limit
+
+{{Sensors}}
+en=CPU Electric Design Current percentage of limit (current deliverable by voltage regulator in a peak/spike condition).
+
+{{Sensors}}
+en=CPU Package Power Tracking FAST percentage of limit.
+
+{{Sensors}}
+en=CPU Package Power Tracking SLOW percentage of limit.
+
+{{Sensors}}
+en=APU STAPM (Skin Temperature Aware Power Management) percentage of limit.
+
+{{Sensors}}
+en=Percentage of time the CPU is runing above thermal limit.
+
+{{Sensors}}
+en=Power Reporting Deviation (Accuracy)
+
+{{Sensors}}
+en=This value shows how accurately some of the power values (Core, SoC) are reported.\nThe BIOS plays an important role in ensuring how this mechanism works and if not properly configured it can result in large deviation from real power consumed.\n 100% means the power is accurately reported\n<100% means the BIOS uses settings that result in under-reporting of power, so the CPU thinks it runs at lower power than it actually is\n>100% means the BIOS uses settings that result in over-reporting of power, so the CPU thinks it runs at higher power than it actually is\n\nIMPORTANT NOTE: This value has a meaning under FULL CPU load only at default settings (no overclocking, offsets applied, etc.), in other conditions this value should not be taken into account.\nSmall differences from 100% are normal, but if the result is <90% or >110% it should be of concern\nIt is highly recommended to visit the HWiNFO Forum for further details.
+
+{{Sensors}}
+en=Indicates whether Thermal Throttling is occurring due to Hardware Thermal Control (HTC).
+
+{{Sensors}}
+en=Indicates whether Thermal Throttling is occurring due to PROCHOT asserting.
+
+{{Sensors}}
+en=Indicates whether Thermal Throttling is occurring due to PROCHOT EXT asserting.\nThis can be asserted by external components on mainboard, not due to CPU overheating.
+
+{{Sensors}}
+en=DRAM Read Bandwidth
+
+{{Sensors}}
+en=Current DDR Read Bandwidth measured by the Intergrated Memory Controller.
+
+{{Sensors}}
+en=DRAM Write Bandwidth
+
+{{Sensors}}
+en=Current DDR Write Bandwidth measured by the Intergrated Memory Controller.
+
+{{Sensors}}
+en=Average Active Core Count
+
+{{Sensors}}
+en=Average number of active cores (in C0 State).
+
+{{Sensors}}
+en=This sensor provides basic statistics about network interface.
+
+{{Sensors}}
+en=Total DL
+
+{{Sensors}}
+en=Total UP
+
+{{Sensors}}
+en=Total amount of data received (downloaded) since the network interface was enabled or system started.
+
+{{Sensors}}
+en=Total amount of data transmitted (uploaded) since the network interface was enabled or system started.
+
+{{Sensors}}
+en=Current DL rate
+
+{{Sensors}}
+en=Current UP rate
+
+{{Sensors}}
+en=Current data receive (download) rate.
+
+{{Sensors}}
+en=Current data transmit (upload) rate.
+
+{{Sensors}}
+en=\nHWiNFO doesn't have sufficient information about this (mainboard-specific) sensor value, so it's not guaranteed to be valid.
+
+{{Sensors}}
+en=\n\nThis sensor represents a group of aggregated values and the meaning of its values is different:\nCurrent: Actual average value of all aggregated current values (not all-time average)\nMinimum/Maximum: Run-time minimum/maximum value of all aggregated values\nAverage: Run-time average of aggregated current values
+
+{{Sensors}}
+en=\n\nMonitoring of this sensor is disabled. Press the Ins key to enable it.
+
+{{Sensors}}
+en=Battery Temperature
+
+{{Sensors}}
+en=Battery Voltage
+
+{{Sensors}}
+en=Remaining Capacity
+
+; Battery Level
+{{Sensors}}
+en=Charge Level
+
+{{Sensors}}
+en=Charge Rate
+
+{{Sensors}}
+en=Wear Level
+
+{{Sensors}}
+en=Estimated Remaining Time
+
+{{Settings}}
+en=Query (S)ATA/ATAPI drives via drivers only. Don't perform any direct I/O requests.\nRecommended mode.
+
+{{Settings}}
+en=Query (S)ATA/ATAPI drives directly via I/O. May cause problems.
+
+{{Settings}}
+en=Skip the whole (S)ATA/ATAPI drive detection.\nUse in case the Safe Mode causes issues.
+
+{{Settings}}
+en=Bypass HAL and query PCI devices directly via I/O.\nRequired for some NVIDIA chipsets.
+
+{{Settings}}
+en=Perform Software-triggered SMI requests when needed (DELL, Gigabyte DES).
+
+; Disable this option will also disable IPMI and Apple sensor support.
+{{Settings}}
+en=Access Embedded Controllers when supported.\nThis option can cause stability or performace problems on some machines when enabled.\nThis option will also disable IPMI and Apple sensor support.
+
+{{Settings}}
+en=Detect Trusted Platform Modules using low-level access.\nMay cause problem on some systems.
+
+{{Settings}}
+en=Detect AC'97/HDA codecs using low-level access.
+
+{{Settings}}
+en=Enumerate ACPI AML Namespace.
+
+{{Settings}}
+en=Skip enumerating of some devices sensitive to PCI configuration space access (e.g. Token-Ring cards).
+
+{{Settings}}
+en=Enable Debug Mode for submitting details in case of problems.\nSee HWiNFO Forum for more details.
+
+{{Settings}}
+en=When enabled, this option causes the Debug Data to be written directly to disk.\nIf there's a system crash or BSOD happening, this option will ensure that latest debug data are written to disk. This can cause the Debug Mode to run significantly slower especially when running from an SSD, USB key, or some RAID systems.\nThis option can be disabled to speed-up the scan when submitting Debug Data for analysis in case there's no system crash or BSOD happening.
+
+{{Settings}}
+en=Use High Precision Event Timers (HPET) for CPU clock calculation\nTry to disable in case detection hangs during CPU scan.
+
+{{Settings}}
+en=Report sensor information retrieved from ACPI objects.
+
+{{Settings}}
+en=When ENABLED, the CPU Clock is derived from Bus Clock measurement and current ratio.\nThis method can provide a more realistic clock speed under specific situations, but doesn't capture clock throttling.\nThis method is used on Intel Nehalem or AMD 10h and later CPUs, on other CPUs it's not used (defaults to disabled state).\n\nWhen DISABLED, the CPU Clock and ratio is measured first, then Bus Clock is derived from it.\nThis method can capture clock throttling, but may not be 100% accurate on CPUs with sensitive Turbo Mode.
+
+{{Settings}}
+en=This option has meaning only if the above Bus Clock-based option is enabled.\nWhen ENABLED, the CPU Bus Clock is measured every few cycles to capture the actual value. This is useful if there's a need to measure the actual value, especially when the bus clock is likely to change on the fly (i.e. overclocking).\n\nWhen DISABLED, the CPU Bus Clock is measured only once during HWiNFO startup and considered as a fixed value.\nOn Windows 10 RS4 (1803) systems the periodic polling using APIC timer will be disabled by default to avoid conflicts with the operating system.\nOther values like CPU clock (ratio x Bus clock) are still measured according to the actual ratio, however based on the fixed bus clock.\n\nDisabling this option has the advantage of slightly improved system load when monitoring is active, but it won't capture a change in the bus clock.
+
+{{Settings}}
+en=Support Intel Management Engine (ME Status/Features, ICC information).\nDisable this option if HWiNFO has problems during iME scan.
+
+{{Settings}}
+en=Access Intel Serial VID (SVID) Voltage Regulators to retrieve basic information and VR temperature.
+
+{{Settings}}
+en=On some systems the PCH Thermal Device is disabled by BIOS. Access to this device is required in order to report PCH temperature. Enabling this option will instruct HWiNFO to try to enable it and attempt to use it to report PCH temperature (if available).\nThis option is disabled by default, because there are few systems, where enabling this device can cause a system crash. This option doesn't affect systems, where the PCH Thermal Device is enabled by BIOS.\nNote, that even if the PCH Thermal Device is enabled, it doesn't guarantee that the PCH temperature can be read.
+
+{{Settings}}
+en=Support the industry-wide Common Storage Management Interface for SAS/SATA to detect and monitor SATA/SAS drives.\nSome drivers can have a broken support support of CSMI SAS, disable this option in such case.\nRecommended default value: ENABLED
+
+{{Settings}}
+en=NVML (NVIDIA Management Library) is used by HWiNFO to provide some additional information about NVIDIA GPUs.\nDue to a bug in NVIDIA R368 and some later drivers, some SLI-enabled systems with certain display configurations can hang when trying to access the NVML. In such case, disable this option.\nRecommended value in all other cases: ENABLED
+
+{{Settings}}
+en=S.M.A.R.T. provides information about drive health status.\nPolling this information can take more time on some systems depeding on controller and driver support.
+
+{{Settings}}
+en=ATA Device Statistics offers additional information about drive health status when supported.\nPolling this information can take more time on some systems depeding on controller and driver support.
+
+{{Settings}}
+en=Accessing some Corsair devices can cause problems when the CorsairLink software is running.\nWhen this option is disabled, HWiNFO will not access any Corsair devices to avoid such conflict.\nThis option does also control access to some Asetek-based coolers, which when accessed might change their fan speed.
+
+{{Settings}}
+en=Enable utilizing of oneAPI interface to gather information from Intel GPUs.\nEarly Intel drivers with oneAPI support might be buggy and crashing, disable this feature in such case.
+
+{{Settings}}
+en=Safe Mode
+
+{{Settings}}
+en=Low-level IO Access
+
+{{Settings}}
+en=Disable Drive Scan
+
+{{Settings}}
+en=CSMI SAS Support
+
+{{Settings}}
+en=S.M.A.R.T. Support
+
+{{Settings}}
+en=ATA Statistics Support
+
+{{Settings}}
+en=Bus Clock-based
+
+{{Settings}}
+en=Periodic polling
+
+{{Settings}}
+en=Use HPET
+
+{{Settings}}
+en=Low-level PCI Access
+
+{{Settings}}
+en=TPM Check
+
+{{Settings}}
+en=EC Support
+
+{{Settings}}
+en=Evaluate ACPI Methods
+
+{{Settings}}
+en=Enable PCH Thermal Device
+
+{{Settings}}
+en=Safe scan of potentially problematic PCI devices
+
+{{Settings}}
+en=Enable NVML
+
+{{Settings}}
+en=CorsairLink and Asetek Support
+
+{{Settings}}
+en=oneAPI Support
+
+{{Settings}}
+en=SW SMI
+
+{{Settings}}
+en=Audio Codec Check
+
+{{Settings}}
+en=ACPI AML Enumeration
+
+{{Settings}}
+en=Intel ME Support
+
+{{Settings}}
+en=Intel SVID Support
+
+{{Settings}}
+en=Debug Mode
+
+{{Settings}}
+en=Debug Write Direct
+
+{{Settings}}
+en=IDE/(S)ATA Drive Scan
+
+{{Settings}}
+en=CPU Clock Measurement
+
+{{Settings}}
+en=Required for Memory Module information, Hardware Sensors and P.I.ROM detection.\nRecommended enabled.
+
+{{Settings}}
+en=Scan GPU I2C bus for sensor devices.\nRequired for monitoring of GPU VRMs or additional sensors (if present).\nCan be disabled on notebooks to reduce sensor scan time.
+
+{{Settings}}
+en=GPU I2C Bus Exclusion
+
+{{Settings}}
+en=Some GPUs are known to have a high probability of causing serious problems (system crashes) when accessing their I2C devices (VRMs). If such GPUs are detected by HWiNFO, then for safety it automatically disables I2C access, regardless of the GPU I2C Support setting. Enabling this option will force HWiNFO to override this safety action, so on such GPUs I2C access will be performed. Currently this safety action is performed on these GPUs:\nAMD Radeon R9 Fury/Nano/Pro series, AMD Radeon Vega series\n\nEnable this option with CAUTION (i.e. if GPU VRM monitoring is required) because on the above GPUs it might cause a system crash !
+
+{{Settings}}
+en=Prefer NVAPI for GPU I2C access on nVidia cards (instead of direct low-level IO).\nRecommended: ENABLED
+
+{{Settings}}
+en=Prefer ADL for GPU I2C access on AMD/ATI cards (instead of direct low-level IO).\nDefault and recommended value: Disabled (ADL is not reliable enough)
+
+{{Settings}}
+en=This option, when enabled, can improve scan time by remembering which GPU I2C devices (i.e. GPU VRMs or additional sensors) were found on the machine and check only those during subsequent HWiNFO starts.\nIn case of problems recognizing such devices, this option might be disabled and re-enabled after one start.\nDisabling this option will cause HWiNFO to scan for all GPU I2C devices during each start.
+
+{{Settings}}
+en=Clear the contents of GPU I2C cache. Might be useful when GPU I2C devices cannot be found.
+
+{{Settings}}
+en=Select SMBus device address which should not be accessed.\nSome mainboards may cause issues when certain SMBus devices are accessed (even a read request).\n\nThis box disables/enables 7-bit SMBus Device Address:
+
+{{Settings}}
+en=Select GPU I2C bus address which should not be accessed.\nSome GPUs may cause issues when certain I2C devices are accessed (even a read request).\n\nThis box disables/enables the entire GPU I2C Bus #
+
+{{}}
+en=GPU I2C Cache has been reset.
+
+{{Settings}}
+en=SMBus Support
+
+{{Settings}}
+en=GPU I2C Support
+
+; Access GPU I2C via NVAPI
+{{Settings}}
+en=GPU I2C via NVAPI
+
+; Access GPU I2C via ADL
+{{Settings}}
+en=GPU I2C via ADL
+
+{{Settings}}
+en=GPU I2C Caching
+
+{{Settings}}
+en=Reset GPU I2C Cache
+
+{{Settings}}
+en=Force GPU I2C Support
+
+{{Settings}}
+en=SMBus Device Exclusion
+
+{{Settings}}
+en=GPU I2C Device Exclusion
+
+{{Settings}}
+en=Install
+
+{{Settings}}
+en=Remove
+
+{{Settings}}
+en=Persistent Driver
+
+{{Settings}}
+en=Installed
+
+{{Settings}}
+en=Not Installed
+
+{{Settings}}
+en=Not Needed
+
+{{Settings}}
+en=HWiNFO Driver installed successfully.
+
+{{Settings}}
+en=HWiNFO Driver was removed.
+
+{{Settings}}
+en=Selects whether the HWiNFO driver remains installed in system after first run (persistent).\nHWiNFO Portable Edition has this option disabled by default, so the driver doesn't remain installed in system after closing it.
+
+{{Settings}}
+en=Shows the current status of the HWiNFO driver.\nHWiNFO installs and removes the driver automatically according to preferences.
+
+{{Settings}}
+en=Allows to install the HWiNFO driver manually.\nThis is not required since HWiNFO manages the driver automatically.
+
+{{Settings}}
+en=Allows to remove the HWiNFO driver manually.\nThis will also remove all older HWiNFO drivers from system.
+
+{{Settings}}
+en=Current Status:
+
+{{Settings}}
+en=Language changed
+
+{{Settings}}
+en=Please restart HWiNFO to apply all changes.
+
+{{Settings}}
+en=HWiNFO preferences have been cleared.
+
+{{Settings}}
+en=Shared Memory Support\n[12-HOUR LIMIT]
+
+{{Settings}}
+en=Log all values for Report (consumes memory)
+
+{{Settings}}
+en=Average
+
+{{Settings}}
+en=Check online for HWiNFO Addons and Extensions
+
+{{Settings}}
+en=Enable Toggling Hot Key
+
+{{Settings}}
+en=Hot Key
+
+{{Settings}}
+en=Minimize Graphs with Sensors Window
+
+{{Settings}}
+en=Text Buttons
+
+{{Settings}}
+en=Others
+
+{{Settings}}
+en=Accept negative temperatures (for sub-zero cooling)
+
+{{Settings}}
+en=Decimal Separator:
+
+{{Settings}}
+en=Thousands Separator:
+
+{{Settings}}
+en=samples
+
+{{Settings}}
+en=Average last
+
+{{Settings}}
+en=Change Font
+
+{{Settings}}
+en=CSV Item Separator:
+
+{{Settings}}
+en=Global:
+
+{{Settings}}
+en=Disk S.M.A.R.T. every
+
+{{Settings}}
+en=cycles
+
+{{Settings}}
+en=Emb. Controller every
+
+{{Settings}}
+en=Row Shading
+
+{{Settings}}
+en=Profiling Time
+
+{{Settings}}
+en=Always On Top
+
+{{Settings}}
+en=Show all fans (including stopped or not present)
+
+{{Settings}}
+en=Show ToolTips
+
+{{Settings}}
+en=Date/Time Format
+
+{{Settings}}
+en=Reset Graphs
+
+{{Settings}}
+en=Write Direct To Disk (No Buffering)
+
+{{Settings}}
+en=Polling Period
+
+{{Settings}}
+en=Show columns
+
+{{Settings}}
+en=Graph Shading
+
+{{Settings}}
+en=Temperature units
+
+{{Settings}}
+en=Sensor Logging
+
+{{Settings}}
+en=Show values
+
+{{Settings}}
+en=Averaging Interval
+
+{{Settings}}
+en=0 = Whole runtime until user reset (default)
+
+{{Settings}}
+en=Monitoring
+
+{{Settings}}
+en=Show
+
+{{Settings}}
+en=Fixed order
+
+{{Settings}}
+en=Order
+
+{{Settings}}
+en=Hidden items:
+
+{{Settings}}
+en=Restore Original Order
+
+{{Settings}}
+en=Original
+
+{{Settings}}
+en=Rename
+
+{{Settings}}
+en=Font
+
+; Bold font type
+{{Settings}}
+en=Bold
+
+; Italic font type
+{{Settings}}
+en=Italic
+
+{{Settings}}
+en=Multiply
+
+{{Settings}}
+en=Add (+)
+
+; Decimal point digits
+{{Settings}}
+en=Decimal Digits:
+
+{{Settings}}
+en=value <
+
+{{Settings}}
+en=value >
+
+{{Settings}}
+en=Unit
+
+; Logged into sensors logging file
+{{Settings}}
+en=Logged
+
+{{Settings}}
+en=Red color (critical) if:
+
+{{Settings}}
+en=Invalid if:
+
+{{Settings}}
+en=Customize values
+
+{{Settings}}
+en=Label
+
+{{Settings}}
+en=Entry
+
+{{Settings}}
+en=Sensor
+
+{{Settings}}
+en=Minimum
+
+{{Settings}}
+en=Maximum
+
+{{Settings}}
+en=Add All Items To Tray
+
+{{Settings}}
+en=Remove All Items From Tray
+
+{{Settings}}
+en=Show in Tray
+
+{{Settings}}
+en=Transparent
+
+{{Settings}}
+en=Depends on alert threshold
+
+{{Settings}}
+en=Font Auto-Scale
+
+{{Settings}}
+en=Background:
+
+{{Settings}}
+en=Text:
+
+{{Settings}}
+en=Divide value by:
+
+{{Settings}}
+en=Truncate to:
+
+{{Settings}}
+en=Show value type:
+
+{{Settings}}
+en=digits
+
+{{Settings}}
+en=Color
+
+{{Settings}}
+en=Show value in OSD
+
+{{Settings}}
+en=Show label in OSD
+
+{{Settings}}
+en=Show raw value only (no units)
+
+{{Settings}}
+en=Align digits:
+
+{{Settings}}
+en=Toggle OSD output
+
+{{Settings}}
+en=Enable hotkey for toggling
+
+{{Settings}}
+en=Row:
+
+{{Settings}}
+en=Line:
+
+{{Settings}}
+en=Column:
+
+{{Settings}}
+en=Use color:
+
+{{Settings}}
+en=Color:
+
+{{Settings}}
+en=OSD Graph
+
+{{Settings}}
+en=Show graph
+
+{{Settings}}
+en=Width:
+
+{{Settings}}
+en=Height:
+
+{{Settings}}
+en=Margin:
+
+{{Settings}}
+en=Position
+
+{{}}
+en=None
+
+{{Main}}
+en=None
+
+{{Settings}}
+en=Units in superscript
+
+{{Settings}}
+en=OSD Status: Not Running
+
+{{Settings}}
+en=OSD Status: Running
+
+{{Settings}}
+en=graphs supported
+
+{{Settings}}
+en=graphs not supported
+
+{{SUBST}}
+en=Frequency Limit
+
+{{}}
+en=No limit
+
+{{}}
+en=Limit
+
+{{Settings}}
+en=Enable Alerting
+
+{{Settings}}
+en=If value  <
+
+{{Settings}}
+en=If value >=
+
+{{Settings}}
+en=Display Warning Window
+
+{{Settings}}
+en=Play Sound
+
+{{Settings}}
+en=Run a Program
+
+{{Settings}}
+en=Change Item Color
+
+; Notification interval
+{{Settings}}
+en=Notification distance:
+
+{{Settings}}
+en=Log alerts into:
+
+{{Settings}}
+en=Number of samples to trigger alarm:
+
+{{Settings}}
+en=Arguments:
+
+{{Settings}}
+en=Trigger only once
+
+{{Settings}}
+en=Note:\n%v program argument = actual sensor value\n%s program argument = actual sensor name
+
+{{Settings}}
+en=seconds
+
+{{Settings}}
+en=Alerts
+
+{{Settings}}
+en=Alert
+
+{{Settings}}
+en=Screen:
+
+{{Settings}}
+en=Show value on LCD
+
+{{Settings}}
+en=LG LCD Status:
+
+{{Settings}}
+en=Present
+
+{{Settings}}
+en=Not detected
+
+{{Settings}}
+en=Enable reporting to Gadget
+
+{{Settings}}
+en=Report value in Gadget
+
+{{Settings}}
+en=Set
+
+{{Settings}}
+en=General
+
+{{Settings}}
+en=Layout
+
+{{Settings}}
+en=Tray Icon
+
+{{Settings}}
+en=General / User Interface
+
+{{Settings}}
+en=Safety
+
+{{Settings}}
+en=Customize
+
+{{Sensors}}
+en=CPU temperature.\nThis can be the internal (core) or external (case) temperature measured by a diode in socket.\nIt is not possible to reliably determine if this value is sourced from the CPU (internal) or a diode (external).
+
+{{Sensors}}
+en=CPU (case) temperature read inside the CPU socket.
+
+{{Sensors}}
+en=Mainboard temperature.
+
+{{Sensors}}
+en=System/Mainboard temperature.
+
+{{Sensors}}
+en=Chipset temperature.\nIn most cases the external temperature read from a diode in chipset vicinity.
+
+{{Sensors}}
+en=Chipset North Bridge temperature.\nIn most cases the external temperature read from a diode in chipset vicinity.
+
+{{Sensors}}
+en=Chipset South Bridge temperature.\nIn most cases the external temperature read from a diode in chipset vicinity.
+
+{{Sensors}}
+en=Chipset IO Hub temperature.\nIn most cases the external temperature read from a diode in chipset vicinity.
+
+{{Sensors}}
+en=Chipset PCH temperature.\nIn most cases the external temperature read from a diode in chipset vicinity.
+
+{{Sensors}}
+en=Voltage Regulator temperature.
+
+{{Sensors}}
+en=Voltage Regulator temperature.\nIn most cases (except ASUS) the external temperature read from a diode in VRM area.
+
+{{Sensors}}
+en=Voltage Regulator MOSFET temperature.
+
+{{Sensors}}
+en=Temperature measured in vicinity of PCI Express slot.
+
+{{Sensors}}
+en=Temperature measured in vicinity of Memory slot.
+
+{{Sensors}}
+en=Temperature measured in chassis front area.
+
+{{Sensors}}
+en=Temperature measured in chassis rear area.
+
+{{Sensors}}
+en=Temperature measured in M.2 slot area.
+
+{{Sensors}}
+en=Temperature measured in DIMM.2 slot area.
+
+{{Sensors}}
+en=Liquid coolant temperature at cooler input.
+
+{{Sensors}}
+en=Liquid coolant temperature at cooler output.
+
+{{Sensors}}
+en=Liquid coolant temperature at waterblock input.
+
+{{Sensors}}
+en=Liquid coolant temperature at waterblock output.
+
+{{Sensors}}
+en=CPU Uncore (non-core part of CPU) voltage.
+
+{{Sensors}}
+en=Chipset voltage.
+
+{{Sensors}}
+en=Chipset North Bridge voltage.
+
+{{Sensors}}
+en=Chipset South Bridge voltage.
+
+{{Sensors}}
+en=Chipset IO Hub voltage.
+
+{{Sensors}}
+en=Chipset PCH voltage.
+
+{{Sensors}}
+en=CPU System Agent voltage.
+
+{{Sensors}}
+en=Memory voltage.
+
+{{Sensors}}
+en=CPU Core voltage measured by external sensor.
+
+{{Sensors}}
+en=CPU main voltage (VCCIN) supplied to its Fully-Integrated Voltage Regulator (FIVR) measured by external sensor.
+
+{{Sensors}}
+en=Integrated GPU voltage.
+
+{{SUBST}}
+en=Water Pump
+
+{{}}
+en=Operating Point
+
+{{}}
+en=Single-Channel
+
+{{}}
+en=Dual-Channel
+
+{{}}
+en=Dual-Channel Asymmetric
+
+{{}}
+en=Dual-Channel Interleaved
+
+{{}}
+en=Triple-Channel
+
+{{}}
+en=Quad-Channel
+
+{{}}
+en=-Channel
+
+{{}}
+en=Interface
+
+{{}}
+en=Model [Capacity]
+
+{{}}
+en=Features
+
+; "Feature" & "Description" in Main Window
+{{}}
+en=Feature
+
+{{}}
+en=Description
+
+{{}}
+en=Production Unit
+
+{{}}
+en=Prod. Unit
+
+{{}}
+en=Engineering Sample
+
+{{}}
+en=Eng. Sample
+
+{{}}
+en=Minimum Clock
+
+{{}}
+en=Base Clock
+
+{{}}
+en=Base Clock (HFM)
+
+{{}}
+en=Avg. Active Clock
+
+{{}}
+en=Avg. Effective Clock
+
+{{Main}}
+en=List of Drives\nInterface capability and current rate\nSMART status:\n Green = OK\n Yellow = Warning\n Red = Failure
+
+{{Main}}
+en=Memory Module parameters
+
+{{Main}}
+en=Select Memory Module
+
+{{Main}}
+en=Select Physical CPU (package)
+
+{{Main}}
+en=Select GPU
+
+{{Main}}
+en=Supported CPU Operating Points\nCurrent (status) shows the average value among all cores in CPU package
+
+{{Main}}
+en=CPU Platform (socket)
+
+{{Main}}
+en=CPU Stepping
+
+{{Main}}
+en=Current loaded CPU Microcode Update revision
+
+{{Main}}
+en=CPU Cache Level 1 (Instruction + Data) size [KBytes]\nFor Hybrid CPUs this relates to Performance-cores
+
+{{Main}}
+en=CPU Cache Level 1 (Instruction + Data) size [KBytes] for Efficient-cores in Hybrid CPUs
+
+{{Main}}
+en=CPU Cache Level 2 size [KBytes]\nFor Hybrid CPUs this relates to Performance-cores
+
+{{Main}}
+en=CPU Cache Level 2 size [KBytes] for Efficient-cores in Hybrid CPUs
+
+{{Main}}
+en=CPU Cache Level 3 / Level 4 / EDRAM size
+
+{{Main}}
+en=Number of CPU cores / threads\nFor Hybrid CPUs the Number of Performance-cores / -threads
+
+{{Main}}
+en=Number of Efficient-cores / -threads for Hybrid CPUs
+
+{{}}
+en=CPU Codename
+
+{{Main}}
+en=Intel: CPU SSPEC (Production) / QDF (Sample)\nAMD: OPN
+
+{{Main}}
+en=Production Unit / Engineering Sample
+
+{{Main}}
+en=CPU Thermal Design Power (TDP):
+
+{{Main}}
+en=CPU Thermal Design Power
+
+{{Main}}
+en=CPU Thermal Monitor 1
+
+{{Main}}
+en=CPU Thermal Monitor 2
+
+{{Main}}
+en=CPU Multi-Threading Capability
+
+{{Main}}
+en=Intel Virtual Machine Extensions (VMX/VT-x) / AMD Secure Virtual Machine (SVM/AMD-V)\nGrey = Not Supported\nRed = Supported, but Disabled\nGreen = Supported and Enabled
+
+{{Main}}
+en=Graphics Card
+
+{{Main}}
+en=Video Card
+
+{{Main}}
+en=Graphics Chipset
+
+{{Main}}
+en=Video Chipset
+
+{{Main}}
+en=GPU Codename
+
+{{Main}}
+en=Video Chipset Codename:
+
+{{Main}}
+en=Video Bus
+
+{{SUBST}}
+en=[DISABLED]
+
+{{Main}}
+en=Graphics Card Bus (supported / active).\n[DISABLED] = Integrated GPU not using physical PCIe bus or currently disabled because other GPU is enabled.
+
+{{Main}}
+en=Graphics Memory Size
+
+{{Main}}
+en=Graphics Memory Type
+
+{{Main}}
+en=Graphics Memory Width
+
+{{Main}}
+en=Video Memory
+
+{{SUBST}}
+en=MBytes of
+
+{{SUBST}}
+en=KBytes of
+
+{{Main}}
+en=Number of GPU ROPs (Pixel Pipelines)/TMUs
+
+{{Main}}
+en=Number of GPU ROPs (Pixel Pipelines)
+
+{{Main}}
+en=Number of GPU TMUs
+
+{{Main}}
+en=Shader
+
+{{Main}}
+en=Video
+
+{{Main}}
+en=Shaders
+
+{{Main}}
+en=Number of GPU Shaders
+
+{{Main}}
+en=Number of GPU Shaders / Ray Tracing Cores (RT) / Tensor Cores (TC)
+
+{{Main}}
+en=GPU Memory Clock
+
+{{Main}}
+en=Geom.
+
+{{Main}}
+en=Total System Memory Size
+
+{{Main}}
+en=Current System Memory Clock
+
+{{Main}}
+en=Current System Memory Clock Ratio
+
+{{Main}}
+en=Current System Memory Reference Clock
+
+{{Main}}
+en=Current Memory Operating Mode
+
+{{Main}}
+en=System Memory Type
+
+{{Main}}
+en=Current Memory CAS Latency (tCL)
+
+{{Main}}
+en=Current Memory RAS-to-CAS Delay (tRCD)
+
+{{Main}}
+en=Current Memory Row Precharge Delay (tRP)
+
+{{Main}}
+en=Current Memory Active to Precharge Delay (tRAS)
+
+{{Main}}
+en=Current Memory Row Cycle Time (tRC)
+
+{{Main}}
+en=Current Memory Refresh Recovery Delay Time (tRFC)
+
+{{Main}}
+en=Current Memory Command Rate
+
+{{Main}}
+en=Memory Module Capacity
+
+{{Main}}
+en=Memory Module Type
+
+{{Main}}
+en=Memory Module Maximum Clock
+
+{{Main}}
+en=Memory Module Error Check/Correction
+
+{{Main}}
+en=Motherboard Model
+
+{{Main}}
+en=Motherboard Chipset
+
+{{Main}}
+en=System BIOS Date
+
+{{Main}}
+en=System BIOS Version
+
+{{Main}}
+en=Embedded Controller Firmware Version
+
+{{Main}}
+en=AMD AGESA Version:
+
+{{}}
+en=Operating System
+
+{{Main}}
+en=Operating System
+
+{{Main}}
+en=Determines if the BIOS is UEFI capable
+
+{{Main}}
+en=Determines if the Operating System has booted in UEFI mode
+
+{{Main}}
+en=Determines Secure Boot capability and current mode.\nGrey = Not supported by BIOS\nRed = Supported by BIOS, but not enabled\nGreen = Supported and active (OS is booted in Secure Boot mode)
+
+{{Main}}
+en=Determines whether the Operating System detected presence of a Trusted Platform Module.\nGrey = TPM is disabled in BIOS or not present
+
+{{Main}}
+en=Hypervisor-protected Code Integrity (HVCI) setting.\nGrey = Disabled\nGreen = Enabled
+
+{{Main}}
+en=Memory Module
+
+{{}}
+en=Memory Modules
+
+{{}}
+en=Current Clocks (MHz)
+
+{{Main}}
+en=Turbo Ratio Limits
+
+; Fused data - hard-coded in hardware via fuses
+{{}}
+en=Fused
+
+; Resolved (resulting) Ratio Limits
+{{}}
+en=Resolved
+
+{{Main}}
+en=Maximum Per-core Ratio Limits (Fused):
+
+{{Main}}
+en=Maximum Per-core Ratio Limits (Current):
+
+{{SUBST}}
+en=Instructions
+
+{{}}
+en=Support
+
+{{}}
+en=Timing
+
+{{}}
+en=Size
+
+{{}}
+en=Mode
+
+{{}}
+en=Type
+
+{{}}
+en=Codename
+
+{{Main}}
+en=Codename
+
+{{}}
+en=Platform
+
+{{Main}}
+en=Platform
+
+{{}}
+en=Version
+
+{{Main}}
+en=Version
+
+{{}}
+en=BIOS Date
+
+{{Main}}
+en=BIOS Date
+
+{{}}
+en=Analyzing Devices...
+
+{{SUBST}}
+en=Analyzing
+
+{{SUBST}}
+en=Detecting
+
+{{SUBST}}
+en=ATA/SCSI Drives
+
+{{SUBST}}
+en=Network Cards
+
+{{}}
+en=Please wait..
+
+{{}}
+en=Checking for updates
+
+{{}}
+en=Examining system configuration...
+
+{{}}
+en=Examining system [DEBUG MODE]...
+
+{{}}
+en=Detecting Sensors...
+
+{{}}
+en=Detecting Sensors [DEBUG MODE]...
+
+{{}}
+en=Detecting Motherboard Components...
+
+{{}}
+en=Analyzing Memory Configuration...
+
+{{}}
+en=Completing CPU information...
+
+{{}}
+en=Completing Mainboard Devices...
+
+{{}}
+en=Completing Memory Modules...
+
+{{}}
+en=Enumerating ACPI Devices...
+
+{{}}
+en=Enumerating Buses...
+
+{{}}
+en=Enumerating USB Devices...
+
+{{}}
+en=Finished
+
+{{SUBST}}
+en=Internal
+
+{{SUBST}}
+en=External
+
+{{SUBST}}
+en=Fill Level
+
+{{SUBST}}
+en=Water Quality
+
+{{SUBST}}
+en=Pump
+
+{{SUBST}}
+en=Flow
+
+{{Sensors}}
+en=Water Flow
+
+{{SUBST}}
+en=Pressure
+
+{{Sensors}}
+en=Conductivity
+
+{{Sensors}}
+en=Air Volume
+
+{{Sensors}}
+en=Water Volume
+
+{{Sensors}}
+en=Total Volume
+
+{{Sensors}}
+en=Pressure Leak Rate
+
+{{Sensors}}
+en=Pressure Leak Rate State
+
+{{Sensors}}
+en=Volume Change
+
+{{Sensors}}
+en=Leakage Indicator
+
+{{Sensors}}
+en=Liquid Temperature
+
+{{Sensors}}
+en=CPU Cooler Coolant Temperature
+
+{{Sensors}}
+en=GPU Cooler Coolant Temperature
+
+{{Sensors}}
+en=Voltage at the +12V rail.
+
+{{Sensors}}
+en=Voltage at the -12V rail.
+
+{{Sensors}}
+en=Voltage at the +5V rail.
+
+{{Sensors}}
+en=Voltage at the +3.3V rail.
+
+{{Sensors}}
+en=Voltage at the +5V Standby rail.
+
+{{Sensors}}
+en=PSU Input voltage (AC).
+
+{{Sensors}}
+en=Current drawn by the +12V rail.
+
+{{Sensors}}
+en=Current drawn by the -12V rail.
+
+{{Sensors}}
+en=Current drawn by the +5V rail.
+
+{{Sensors}}
+en=Current drawn by the +3.3V rail.
+
+{{Sensors}}
+en=Current drawn by the PSU input.
+
+{{Sensors}}
+en=Current drawn by the +5V Standby rail.
+
+{{Sensors}}
+en=Total power consumed by the PSU (measured at Input side).
+
+{{Sensors}}
+en=Power consumed by the +12V rail.
+
+{{Sensors}}
+en=Power consumed by the -12V rail.
+
+{{Sensors}}
+en=Power consumed by the +5V rail.
+
+{{Sensors}}
+en=Power consumed by the +3.3V rail.
+
+{{Sensors}}
+en=Power consumed by the +5V Standby rail.
+
+{{Sensors}}
+en=Total power provided by the PSU (measured at Output side).
+
+{{Sensors}}
+en=Total power consumed by the PSU at Input side (estimated/calculated).
+
+{{Sensors}}
+en=PSU Efficiency
+
+{{Sensors}}
+en=This value is the ratio between total Output and Input power [%].
+
+{{Sensors}}
+en=HWiNFO has found an Embedded Controller (EC) sensor from which it can report data. Reading data from this sensor can cause a higher system load or latency, which can result in occasional performace drops. On some systems, this can also have an impact on system stability. These effects are system-specific and not likely to occur on most systems. It is also not recommended to use other applications able to read data from this sensor along with HWiNFO, as this can cause a conflict. 
+
+{{Sensors}}
+en=This sensor provides data from the Embedded Controller.\nThe interface used by this sensor is legacy (or rather archaic) and wasn't designed to meet requirements for modern systems including synchronization with multiple clients.\nHence, accessing data from this sensor can result in a higher latency or concurrency issues on some systems. In some rare cases this can also lead to stability issues.
+
+{{Sensors}}
+en=\n\nClick {Disable this sensor} to disable reading from this sensor (safe), {Continue} if you want to keep it enabled and read data from this sensor.
+
+{{Settings}}
+en=Do not monitor this sensor
+
+{{Settings}}
+en=Continue
+
+{{Settings}}
+en=Don't show this warning again
+
+{{Sensors}}
+en=This sensor provides data from the Embedded Controller.
+
+{{Sensors}}
+en=This sensor provides data from the Embedded Controller via SMI interface.\nAccessing data from this sensor can result in a higher latency on some systems.
+
+; Internal Ambient Temperature
+{{Sensors}}
+en=Internal Ambient
+
+{{Sensors}}
+en=Liquid Cooler Pump
+
+{{Sensors}}
+en=Thermal Solution Fan
+
+{{Sensors}}
+en=AC Adapter Rating
+
+{{Sensors}}
+en=This sensor provides the min/max Vcore value captured using the latch mechanism.\nPress the {Reset Min/Max} button to reset the values and start a new latch monitoring session.
+
+{{Sensors}}
+en=This sensor provides the max-min delta of Vcore value captured using the latch mechanism.\nPress the {Reset Min/Max} button to reset the values and start a new latch monitoring session.
+
+{{SUBST}}
+en=Extension fan
+
+{{Sensors}}
+en=CPU Core Power
+
+{{Sensors}}
+en=Flow Rate
+
+{{Sensors}}
+en=WB Flow Rate
+
+{{Sensors}}
+en=Do you want to also reset the VCore Latch Min/Max values?
+
+{{Sensors}}
+en=This mainboard sensor provides data measured using various probes located across the mainboard.\nThe location and meaning of these sensor values is mainboard-specific and not possible to determine universally. Providing proper information from this sensor requires dedicated support of each mainboard model and its custom sensor layout.\nWhile HWiNFO features an immense database of such mainboard-specific configurations, there can be some models not well or not properly supported yet. Additionally, some items are not guaranteed to provide valid data if their sense inputs are not used on a particular system.
+
+{{Sensors}}
+en=Auxiliary
+
+{{Sensors}}
+en=Chassis Intrusion
+
+{{Sensors}}
+en=Frames per Second
+
+{{Sensors}}
+en=This sensor provides information about the Intel Discrete GPU.
+
+{{Sensors}}
+en=This sensor provides information about the Intel GPU.
+
+{{Sensors}}
+en=GPU Global Temperature
+
+{{Sensors}}
+en=The current maximum temperature among all device sensors.
+
+{{Sensors}}
+en=The current maximum temperature among all device sensors in the GPU.
+
+{{Sensors}}
+en=The current maximum temperature among all device sensors in the GPU memory.
+
+{{Sensors}}
+en=Current GPU core frequency.
+
+{{Sensors}}
+en=Current GPU core clock.
+
+{{Sensors}}
+en=Current GPU memory clock.
+
+{{Sensors}}
+en=GPU Total Usage
+
+{{Sensors}}
+en=Average utilization of all GPU engines.
+
+{{Sensors}}
+en=GPU Computing Usage
+
+{{Sensors}}
+en=Utilization of the GPU computing engine.
+
+{{Sensors}}
+en=GPU Media Engine Usage
+
+{{Sensors}}
+en=Utilization of the GPU media engine.
+
+{{Sensors}}
+en=GPU Copy Engine Usage
+
+{{Sensors}}
+en=Utilization of the GPU copy engine.
+
+{{Sensors}}
+en=GPU Render Engine Usage
+
+{{Sensors}}
+en=Utilization of the GPU render engine.
+
+{{Sensors}}
+en=GPU Media Decoder Usage
+
+{{Sensors}}
+en=Utilization of the GPU media decoder engine.
+
+{{Sensors}}
+en=GPU Media Encoder Usage
+
+{{Sensors}}
+en=Utilization of the GPU media encoder engine.
+
+{{Sensors}}
+en=Total GPU Memory Utilization.
+
+{{Sensors}}
+en=GPU Throttle Reasons
+
+; GPU Memory Throttle Reasons
+{{Sensors}}
+en=Memory Throttle Reasons
+
+{{Sensors}}
+en=Indicates why GPU core performance is reduced from maximum.
+
+{{Sensors}}
+en=Indicates why GPU memory performance is reduced from maximum.
+
+{{Sensors}}
+en=Avg. Power (PL1)
+
+{{Sensors}}
+en=Burst Power (PL2)
+
+; GPU Throttle Reasons - Thermal
+{{Sensors}}
+en=Thermal
+
+{{Sensors}}
+en=Power Supply
+
+{{Sensors}}
+en=Software Limit
+
+{{Sensors}}
+en=Hardware Limit
+
+{{Sensors}}
+en=System Board
+
+{{Sensors}}
+en=Memory Module Board
+
+{{Sensors}}
+en=Add-in Card
+
+{{Sensors}}
+en=Front Panel Board
+
+{{Sensors}}
+en=Back Panel Board
+
+{{Sensors}}
+en=Power System Board
+
+{{Sensors}}
+en=Drive Backplane
+
+{{Sensors}}
+en=CPU Board
+
+{{Sensors}}
+en=This sensor provides information why CPU performance/frequency is limited to a value below the requested/expected value.
+
+{{Sensors}}
+en=IA Cores Frequency clipped due to external PROCHOT assertion.
+
+{{Sensors}}
+en=IA: Thermal Event
+
+{{Sensors}}
+en=IA Cores Frequency clipped due to thermal event.
+
+{{Sensors}}
+en=IA Cores Frequency clipped due to DDR Running Average Power Limit (RAPL).
+
+{{Sensors}}
+en=IA Cores Frequency clipped due to Platform Configuration Services limit.
+
+{{Sensors}}
+en=IA Cores Frequency clipped due to Processor Graphics driver override.
+
+{{Sensors}}
+en=IA: Autonomous Utilization-Based Frequency Control
+
+{{Sensors}}
+en=IA Cores Frequency clipped because the CPU utilization is low.
+
+{{Sensors}}
+en=IA: Running Average Thermal Limit
+
+{{Sensors}}
+en=IA Cores Frequency clipped due to Running Average Thermal Limit.
+
+{{Sensors}}
+en=IA: VR Thermal Alert
+
+{{Sensors}}
+en=IA Cores Frequency clipped due to a thermal alert from the Voltage Regulator.
+
+{{Sensors}}
+en=IA Cores Frequency clipped due to VR Thermal Design Current limit.
+
+{{Sensors}}
+en=IA: Electrical Design Point/Other (ICCmax,PL4,SVID,DDR RAPL)
+
+{{Sensors}}
+en=IA Cores Frequency clipped due to electrical design or other constraints (e.g., maximum electrical current consumption, SVID voltage limit or PL4).
+
+{{Sensors}}
+en=IA Cores Frequency clipped due to domain-level PL1 power limiting.
+
+{{Sensors}}
+en=IA Cores Frequency clipped due to package-level PL1 or PsysPL1 power limiting.
+
+{{Sensors}}
+en=IA Cores Frequency clipped due to package-level PL2, PsysPL2 or PL3 power limiting.
+
+{{Sensors}}
+en=IA Cores Frequency clipped due to multi-core turbo limits.
+
+{{Sensors}}
+en=IA: Inefficient Operation
+
+{{Sensors}}
+en=IA: Turbo Attenuation (MCT)
+
+{{Sensors}}
+en=IA Cores Frequency clipped due to turbo transition attenuation (multi-core turbo demotion). Prevents performance degradation due to frequent operating ratio changes.
+
+{{Sensors}}
+en=IA: Fuses limit
+
+{{Sensors}}
+en=IA Cores Frequency clipped due to fused limits.
+
+{{Sensors}}
+en=IA: AVX Turbo Limit
+
+{{Sensors}}
+en=IA Cores Frequency clipped due to AVX turbo limit.
+
+{{Sensors}}
+en=IA: Non-Turbo (P1)
+
+{{Sensors}}
+en=IA Cores Frequency clipped below P1.
+
+{{Sensors}}
+en=IA: Thermal Velocity Boost
+
+{{Sensors}}
+en=IA Cores Frequency clipped due to Thermal Velocity Boost.
+
+{{Sensors}}
+en=IA Cores Frequency clipped due to VmaxStress (effective maximum voltage on the silicon is too high).
+
+{{Sensors}}
+en=GT Cores (IGPU) Frequency clipped due to external PROCHOT assertion.
+
+{{Sensors}}
+en=GT: Thermal Event
+
+{{Sensors}}
+en=GT Cores (IGPU) Frequency clipped due to thermal event.
+
+{{Sensors}}
+en=GT Cores (IGPU) Frequency clipped due to DDR Running Average Power Limit (RAPL).
+
+{{Sensors}}
+en=GT Cores (IGPU) Frequency clipped due to Platform Configuration Services limit.
+
+{{Sensors}}
+en=GT: Graphics Driver
+
+{{Sensors}}
+en=GT Cores (IGPU) Frequency clipped due to Processor Graphics driver override.
+
+{{Sensors}}
+en=GT: Autonomous Utilization-Based Frequency Control
+
+{{Sensors}}
+en=GT Cores (IGPU) Frequency clipped because the CPU utilization is low.
+
+{{Sensors}}
+en=GT: Running Average Thermal Limit
+
+{{Sensors}}
+en=GT Cores (IGPU) Frequency clipped due to Running Average Thermal Limit.
+
+{{Sensors}}
+en=GT: VR Thermal Alert
+
+{{Sensors}}
+en=GT Cores (IGPU) Frequency clipped due to a thermal alert from the Voltage Regulator.
+
+{{Sensors}}
+en=GT Cores (IGPU) Frequency clipped due to VR Thermal Design Current limit.
+
+{{Sensors}}
+en=GT Cores (IGPU) Frequency clipped due to electrical design or other constraints (e.g., maximum electrical current consumption, SVID voltage limit or PL4).
+
+{{Sensors}}
+en=GT Cores (IGPU) Frequency clipped due to Graphics domain PLGT power limiting.
+
+{{Sensors}}
+en=GT Cores (IGPU) Frequency clipped due to package-level PL1 or PsysPL1 power limiting.
+
+{{Sensors}}
+en=GT Cores (IGPU) Frequency clipped due to package-level PL2, PsysPL2 or PL3 power limiting.
+
+{{Sensors}}
+en=GT: Turbo Attenuation (MCT)
+
+{{Sensors}}
+en=GT: Fuses limit
+
+{{Sensors}}
+en=GT Cores (IGPU) Frequency clipped due to fused limits.
+
+{{Sensors}}
+en=Ring Interconnect Frequency clipped due to external PROCHOT assertion.
+
+{{Sensors}}
+en=RING: Thermal Event
+
+{{Sensors}}
+en=Ring Interconnect Frequency clipped due to thermal event.
+
+{{Sensors}}
+en=Ring Interconnect Frequency clipped due to DDR Running Average Power Limit (RAPL).
+
+{{Sensors}}
+en=RING: Graphics Driver
+
+{{Sensors}}
+en=RING: Autonomous Utilization-Based Frequency Control
+
+{{Sensors}}
+en=RING: Running Average Thermal Limit
+
+{{Sensors}}
+en=Ring Interconnect Frequency clipped due to Running Average Thermal Limit.
+
+{{Sensors}}
+en=RING: VR Thermal Alert
+
+{{Sensors}}
+en=Ring Interconnect Frequency clipped due to a thermal alert from the Voltage Regulator.
+
+{{Sensors}}
+en=Ring Interconnect Frequency clipped due to VR Thermal Design Current limit.
+
+{{Sensors}}
+en=Ring Interconnect Frequency clipped due to electrical design or other constraints (e.g., maximum electrical current consumption, SVID voltage limit or PL4).
+
+{{Sensors}}
+en=Ring Interconnect Frequency clipped due to domain-level PL1 power limiting.
+
+{{Sensors}}
+en=Ring Interconnect Frequency clipped due to package-level PL1 or PsysPL1 power limiting.
+
+{{Sensors}}
+en=Ring Interconnect Frequency clipped due to package-level PL2, PsysPL2 or PL3 power limiting.
+
+{{Sensors}}
+en=RING: Max Turbo Limit
+
+{{Sensors}}
+en=RING: Inefficient Operation
+
+{{Sensors}}
+en=RING: Turbo Attenuation (MCT)
+
+{{Sensors}}
+en=RING: Fuses limit
+
+{{Sensors}}
+en=IA Cores Frequency clipped due to Residency State Regulation limit.
+
+{{Sensors}}
+en=GT Cores (IGPU) Frequency clipped due to Residency State Regulation limit.
+
+{{Sensors}}
+en=Ring Interconnect Frequency clipped due to Residency State Regulation limit.
+
+{{Sensors}}
+en=This sensor provides information read directly from a Voltage Regulator (VR)/Digital PWM which supports telemetry.\nUsually each VR/PWM contains 2 loops for different rails.
+
+{{SUBST}}
+en=VR Loop
+
+{{Sensors}}
+en=Temperature of current Loop.
+
+{{Sensors}}
+en=Usually mirrors temperature of the other loop.
+
+{{Sensors}}
+en=Voltage measured at the output side of the VR.\nThis is the voltage supplied by this VR to the respective component rail (i.e. Vcore, VDIMM, VCCSA, etc.).
+
+{{Sensors}}
+en=Voltage measured at the input side of the VR.\nThis is the voltage supplied to this VR.
+
+{{Sensors}}
+en=Current provided at the output side of the VR.\nThis is the current this VR delivers to the respective component rail (i.e. Vcore, VDIMM, VCCSA, etc.).
+
+{{Sensors}}
+en=Current measured at the input side of the VR.\nThis is the current drawn by this VR loop.
+
+{{Sensors}}
+en=Power output measured at the output side of the VR.\nThis is the power delivered by this VR to the respective component rail (i.e. Vcore, VDIMM, VCCSA, etc.).
+
+{{Sensors}}
+en=Power measured at the input side of the VR.
+
+{{Sensors}}
+en=Sum of all PSU rail powers (Output side).
+
+{{Sensors}}
+en=Total PSU Power calculated by the PSU.
+
+{{Sensors}}
+en=This value is the ratio between Output power (sum of all voltage rail powers) and Input power calculated [%].
+
+{{Sensors}}
+en=Noise sensor
+
+{{Sensors}}
+en=Input Voltage
+
+{{Sensors}}
+en=Output Voltage
+
+{{Sensors}}
+en=Output Current
+
+{{Sensors}}
+en=Estimated Runtime
+
+{{Sensors}}
+en=Charging
+
+{{Sensors}}
+en=Discharging
+
+{{Sensors}}
+en=Input Frequency
+
+{{Sensors}}
+en=Output Frequency
+
+{{Sensors}}
+en=CPU (Weighted Value)
+
+{{Settings}}
+en=ERROR: Internet connection failed.
+
+{{Settings}}
+en=ERROR: Failed to get version information
+
+{{Settings}}
+en=Retrieving version information
+
+{{Settings}}
+en=ERROR: Failed to get package information
+
+{{Settings}}
+en=ERROR: Invalid version info
+
+{{Settings}}
+en=ERROR: Cannot read version info
+
+{{Settings}}
+en=ERROR: Cannot retrieve version link
+
+{{Settings}}
+en=ERROR: Invalid version link
+
+{{Settings}}
+en=ERROR: Error creating temporary folder.
+
+{{Settings}}
+en=Retrieving update package..
+
+{{Settings}}
+en=ERROR: Failed to get package
+
+{{Settings}}
+en=ERROR: Failed to get package information
+
+{{Settings}}
+en=ERROR: Invalid package
+
+{{Settings}}
+en=ERROR: Not enough memory
+
+{{Settings}}
+en=ERROR: Error creating package file.
+
+{{SUBST}}
+en=Downloading update package
+
+{{Settings}}
+en=Download failed, retrying...
+
+{{Settings}}
+en=Error writing package to disk
+
+{{Settings}}
+en=ERROR: Download failed.
+
+{{Settings}}
+en=Unpacking...
+
+{{Settings}}
+en=ERROR: Failed to unpack update package
+
+{{Settings}}
+en=Ready to finalize update...
+
+{{Settings}}
+en=HWiNFO will now restart to finalize the update
+
+{{Settings}}
+en=Update finished
+
+{{Settings}}
+en=Contacting server...
+
+{{Settings}}
+en=Failed to retrieve version information from Internet.\nPlease check your network connection.
+
+{{Settings}}
+en=There is no newer version available.
+
+{{Settings}}
+en=Automatic update requires the Pro version
+
+{{Settings}}
+en=Ready...
+
+{{Settings}}
+en=Retry Update
+
+{{Settings}}
+en=A new version is available.\nAn update is recommended.
+
+{{Settings}}
+en=New Version:
+
+{{Settings}}
+en=Your Version:
+
+{{Settings}}
+en=What's New?
+
+{{Settings}}
+en=Go to download site
+
+{{Settings}}
+en=Start Update
+
+{{Settings}}
+en=Do not check for updates anymore
+
+{{Settings}}
+en=Do not notify about Beta versions
+
+{{Settings}}
+en=Close
+
+{{Settings}}
+en=Automatic Update [Pro only]
+
+{{Settings}}
+en=There is also a newer Beta version available than the last full version.\nPress {Yes} to update to the latest Beta version
+
+{{Settings}}
+en=or\n{No} to update to the latest full version
+
+{{Settings}}
+en=Choose update version
+
+{{Settings}}
+en=Are you sure you want to restore the original item order ?
+
+{{Settings}}
+en=Confirm
+
+{{Settings}}
+en=Disabling fixed item order will give full control over sensor item placement.\nIf disabled, HWiNFO will no longer automatically maintain order of sensor items, thus sensor values can also be placed under a different sensor heading.\nIf a new sensor/value appears during runtime, it will be placed at the end of the list instead of the respective sensor.\n\nDo you want to disable fixed item order?
+
+{{Settings}}
+en=Item order is currently fixed. In order to move items it needs to be unlocked.\nDisabling fixed item order will give full control over sensor item placement.\nIf disabled, HWiNFO will no longer automatically maintain order of sensor items, thus sensor values can also be placed under a different sensor heading.\nIf a new sensor/value appears during runtime, it will be placed at the end of the list instead of the respective sensor.\n\nDo you want to disable fixed item order and move items?
+
+{{SUBST}}
+en=sensor value reached threshold
+
+{{Settings}}
+en=This will remove all graphs and reset their positions.\nAre you sure?
+
+{{Settings}}
+en=Settings have been saved into file:
+
+{{Settings}}
+en=Changing the color mode will require closing HWiNFO to take all changes into effect.\n\nClick OK to change the mode and close HWiNFO.
+
+{{}}
+en=Maintenance Expiry
+
+{{Sensors}}
+en=Total Errors
+
+{{Sensors}}
+en=Generic Errors
+
+{{Sensors}}
+en=PCIe Errors
+
+{{Sensors}}
+en=Machine Check Errors
+
+{{Sensors}}
+en=Machine Check Errors (AMD64 NB)
+
+{{Sensors}}
+en=Platform Memory Errors
+
+{{Sensors}}
+en=PCI Bus Errors
+
+{{Sensors}}
+en=PCI Device Errors
+
+{{Sensors}}
+en=PCI Express Errors
+
+{{Sensors}}
+en=Platform Memory Errors (undetermined)
+
+{{Sensors}}
+en=CPU Internal Errors
+
+{{Sensors}}
+en=CPU Cache L0 Errors
+
+{{Sensors}}
+en=CPU Cache L1 Errors
+
+{{Sensors}}
+en=CPU Cache L2 Errors
+
+{{Sensors}}
+en=CPU Cache L3 Errors
+
+{{Sensors}}
+en=CPU Cache Errors
+
+{{Sensors}}
+en=CPU TLB Errors
+
+{{Sensors}}
+en=CPU Memory Controller Errors
+
+{{Sensors}}
+en=CPU Bus/Interconnect Errors
+
+{{Sensors}}
+en=Memory Errors
+
+{{Sensors}}
+en=PCI/PCIe Bus Errors
+
+{{Sensors}}
+en=PCI/PCIe Device Errors
+
+{{Sensors}}
+en=DMAr Errors
+
+{{Sensors}}
+en=This sensor provides information about hardware errors logged via the Windows Hardware Error Architecture (WHEA).
+
+{{Sensors}}
+en=Number of accumulated correctable errors during HWiNFO runtime.\nUncorrectable errors cause a system shutdown/reboot, so these cannot be monitored on the fly.\nIf an error is encountered, an additional sensor entry will be shown describing the basic error class.
+
+{{Sensors}}
+en=Number of accumulated generic/default errors.
+
+{{Sensors}}
+en=Number of accumulated errors reported on PCI Express devices.
+
+{{Sensors}}
+en=Number of accumulated Machine Check Errors (usually reported by CPU).
+
+{{Sensors}}
+en=Number of accumulated PCI/PCI-X Bus Errors.
+
+{{Sensors}}
+en=Number of accumulated PCI/PCI-X Device Errors.
+
+{{Sensors}}
+en=Number of accumulated PCIe Errors.
+
+{{Sensors}}
+en=Frame Time
+
+{{Sensors}}
+en=Framerate 1% Low
+
+{{Sensors}}
+en=Framerate 0.1% Low
+
+{{}}
+en=Present
+
+{{}}
+en=Not Present
+
+{{}}
+en=Enabled
+
+{{}}
+en=Disabled
+
+{{}}
+en=Not Supported
+
+{{}}
+en=Supported
+
+{{Main}}
+en=General Information
+
+{{Main}}
+en=Processor Name
+
+{{Main}}
+en=Original Processor Frequency:
+
+{{Main}}
+en=Current Processor Frequency:
+
+{{Main}}
+en=CPU Brand Name
+
+{{Main}}
+en=CPU Vendor:
+
+{{}}
+en=Stepping
+
+{{Main}}
+en=Stepping
+
+{{Main}}
+en=CPU Stepping:
+
+{{Main}}
+en=CPU Code Name:
+
+{{Main}}
+en=CPU Technology:
+
+{{Main}}
+en=CPU Power Limit 4 (PL4):
+
+{{Main}}
+en=CPU IA Cores Thermal Design Current (TDC):
+
+{{Main}}
+en=CPU GT Cores Thermal Design Current (TDC):
+
+{{}}
+en=Unlimited
+
+{{Main}}
+en=CPU Thermal Design Current (TDC):
+
+{{Main}}
+en=CPU Electrical Design Current (EDC):
+
+{{Main}}
+en=CPU Package Power Tracking (PPT):
+
+{{Main}}
+en=APU STAPM (Skin Temperature-Aware Power Management) Limit:
+
+{{Main}}
+en=CPU Power Limits (Max):
+
+{{Main}}
+en=CPU Power Limit 1 (Long Duration)/Processor Base Power (PBP):
+
+{{}}
+en=Unlocked
+
+{{}}
+en=Locked
+
+{{Main}}
+en=CPU Power Limit 2 (Short Duration)/Maximum Turbo Power (MTP):
+
+{{Main}}
+en=Configurable TDP Level 1 (Down):
+
+{{Main}}
+en=Configurable TDP Level 2 (Up):
+
+{{Main}}
+en=Current Configurable TDP Level:
+
+{{Main}}
+en=Nominal (Legacy)
+
+{{Main}}
+en=CPU Max. Case Temperature (Tcase_max):
+
+{{Main}}
+en=CPU Max. Junction Temperature (Tj,max):
+
+{{Main}}
+en=CPU PBO Scalar (Reliability Reduction):
+
+{{Main}}
+en=CPU Thermal Trip Limit:
+
+{{Main}}
+en=CPU HTC Temperature Limit:
+
+{{Main}}
+en=CPU Type
+
+{{Main}}
+en=CPU Platform:
+
+{{Main}}
+en=Processor Serial Number:
+
+{{Main}}
+en=Microcode Update Revision:
+
+{{Main}}
+en=SMU Firmware Revision:
+
+{{Main}}
+en=Favored Cores List:
+
+{{Main}}
+en=Core Performance Order:
+
+{{Main}}
+en=Core Performance Order (CPPC):
+
+{{Main}}
+en=Number of CPU Cores:
+
+{{Main}}
+en=Number of Logical CPUs:
+
+{{Main}}
+en=Operating Points
+
+{{Main}}
+en=CPU MFM (Low Power):
+
+{{Main}}
+en=CPU Minimum:
+
+{{Main}}
+en=CPU LFM (Minimum):
+
+{{Main}}
+en=CPU HFM (Base):
+
+{{Main}}
+en=CPU Base:
+
+{{}}
+en=Turbo Max
+
+{{}}
+en=Boost Max
+
+{{}}
+en=IDA Clock
+
+{{}}
+en=QPI Max
+
+{{}}
+en=UPI Max
+
+{{}}
+en=Ring/LLC Max
+
+{{}}
+en=PBO Max
+
+{{Main}}
+en=CPU Turbo Max:
+
+{{Main}}
+en=CPU Boost Max (Fmax):
+
+{{Main}}
+en=Precision Boost Clock Limit:
+
+{{Main}}
+en=CPU Current:
+
+{{Main}}
+en=CPU High Temperature Clock Limit:
+
+{{Main}}
+en=CPU Automatic Overclocking Offset:
+
+{{Main}}
+en=LLC/Ring Maximum:
+
+{{Main}}
+en=Uncore Maximum:
+
+{{Main}}
+en=Northbridge Maximum:
+
+; Actual clock values:
+{{Main}}
+en=Uncore Current:
+
+{{Main}}
+en=LLC/Ring Current:
+
+{{Main}}
+en=Northbridge Current:
+
+{{Main}}
+en=EDRAM Current:
+
+{{Main}}
+en=System Agent Current:
+
+{{Main}}
+en=CPU Bus Type:
+
+{{Main}}
+en=CPU Internal Bus Type:
+
+{{Main}}
+en=Maximum Supported Hyper-Transport Link Clock:
+
+{{Main}}
+en=Current Hyper-Transport Link Clock:
+
+{{Main}}
+en=Maximum Supported QPI Link Clock:
+
+{{Main}}
+en=Current QPI Link Clock:
+
+{{Main}}
+en=Number of QPI Links per CPU:
+
+{{Main}}
+en=Number of UPI Links per CPU:
+
+{{Main}}
+en=Maximum Supported UPI Link Clock:
+
+{{Main}}
+en=Current UPI Link Clock:
+
+{{Main}}
+en=Maximum DMI Link Speed:
+
+{{Main}}
+en=Current DMI Link Speed:
+
+{{Main}}
+en=CPU External Bus Type:
+
+{{Main}}
+en=PCI-Express Current Clock:
+
+{{Main}}
+en=Number of Overclocking Bins:
+
+{{Main}}
+en=Overclocking Extra Voltage:
+
+{{SUBST}}
+en=Overclocking
+
+{{Main}}
+en=Voltage Offset:
+
+{{Main}}
+en=Voltage Override:
+
+{{Main}}
+en=Ratio Overclocking:
+
+{{Main}}
+en=Fused Ratio Limit:
+
+{{Main}}
+en=OC Ratio Limit:
+
+{{Main}}
+en=Voltage Mode:
+
+{{Main}}
+en=Override
+
+{{Main}}
+en=Interpolative
+
+{{Main}}
+en=Adaptive
+
+{{Main}}
+en=Target Voltage:
+
+{{Main}}
+en=Voltage/Frequency Curve:
+
+{{Main}}
+en=Cache and TLB
+
+{{Main}}
+en=Unified:
+
+{{}}
+en=L1 Cache
+
+{{}}
+en=Cache L1
+
+{{Main}}
+en=Cache L1
+
+{{}}
+en=L2 Cache
+
+{{}}
+en=L3 Cache
+
+{{}}
+en=L4 Cache
+
+{{}}
+en=Instruction TLB
+
+{{}}
+en=Data TLB
+
+{{}}
+en=Unified TLB
+
+{{Main}}
+en=Standard Feature Flags
+
+{{Main}}
+en=Extended Feature Flags
+
+{{Main}}
+en=Secure Memory Encryption
+
+{{Main}}
+en=Secure Encrypted Virtualization
+
+{{Main}}
+en=Vulnerability Mitigation Mechanisms
+
+{{Main}}
+en=Enhanced Features
+
+{{Main}}
+en=CPU SKU Features
+
+{{Main}}
+en=Energy Filtering Control
+
+{{Main}}
+en=Energy Filtering Status
+
+{{SUBST}}
+en=Extensions
+
+{{Main}}
+en=DDR3 Frequency Support (133 MHz RefClk):
+
+{{Main}}
+en=DDR3 Frequency Support (100 MHz RefClk):
+
+{{Main}}
+en=DDR Frequency Support (133 MHz RefClk):
+
+{{Main}}
+en=DDR Frequency Support (100 MHz RefClk):
+
+{{Main}}
+en=Additive Graphics:
+
+{{Main}}
+en=Memory Frequency Support:
+
+{{Main}}
+en=DRAM Memory Frequency Support:
+
+{{Main}}
+en=EDC Memory Frequency Support:
+
+{{Main}}
+en=Physical Address Size Supported (Core):
+
+{{Main}}
+en=Maximum Supported UPI Link Speed:
+
+{{Main}}
+en=Maximum Supported QPI Ratio:
+
+{{Main}}
+en=Maximum Memory Size per Channel:
+
+{{Main}}
+en=Maximum Supported DDR4 Frequency:
+
+{{Main}}
+en=Maximum Supported LPDDR4 Frequency:
+
+{{Main}}
+en=Maximum Supported LPDDR3 Frequency:
+
+{{Main}}
+en=Maximum Supported DDR5 Frequency:
+
+{{Main}}
+en=Maximum Supported LPDDR5 Frequency:
+
+{{Main}}
+en=SVID Status:
+
+{{Main}}
+en=Voltage Regulator (SVID)
+
+{{Main}}
+en=Memory Ranges
+
+{{Main}}
+en=MTRRs
+
+{{Main}}
+en=Maximum Physical Address Size:
+
+{{Main}}
+en=Maximum Virtual Address Size:
+
+{{Main}}
+en=Computer
+
+{{Main}}
+en=Unknown or Noname
+
+{{Main}}
+en=Motherboard Slots
+
+{{Main}}
+en=PCI Express Version Supported:
+
+{{Main}}
+en=USB Version Supported:
+
+{{Main}}
+en=PCH Features
+
+{{Main}}
+en=BIOS Manufacturer
+
+{{Main}}
+en=BIOS Vendor:
+
+{{Main}}
+en=Super-IO/LPC Chip:
+
+{{Main}}
+en=Trusted Platform Module (TPM) Chip:
+
+{{Main}}
+en=Computer Name
+
+{{Main}}
+en=Computer Description:
+
+{{Main}}
+en=Computer Brand Name:
+
+{{Main}}
+en=Service Pack
+
+{{Main}}
+en=UEFI Boot:
+
+{{Main}}
+en=Secure Boot:
+
+{{Main}}
+en=Hypervisor-protected Code Integrity (HVCI):
+
+{{Main}}
+en=Current User Name
+
+{{Main}}
+en=Virtual Machine Warning:
+
+{{Main}}
+en=System is running under VirtualBox Virtual Machine.
+
+{{Main}}
+en=System is running under VMware Virtual Machine.
+
+{{Main}}
+en=System is running under Microsoft Hyper-V.
+
+{{Main}}
+en=Microsoft Hyper-V is active.
+
+{{Main}}
+en=System is running under Xen Virtual Machine.
+
+{{Main}}
+en=Results do not reflect real hardware !
+
+{{Main}}
+en=Some results may not reflect real hardware !
+
+{{}}
+en=Not Capable
+
+{{}}
+en=Capable
+
+{{Main}}
+en=CPU Unit Count
+
+{{Main}}
+en=Number Of Processor Packages (Physical):
+
+{{Main}}
+en=Number Of Processor Cores:
+
+{{Main}}
+en=Number Of Logical Processors:
+
+{{Main}}
+en=Device Name
+
+{{Main}}
+en=Assigned Resources
+
+; Memory Address
+{{Main}}
+en=Memory Location:
+
+{{Main}}
+en=I/O Port:
+
+{{Main}}
+en=Original Device Name:
+
+{{}}
+en=Unknown
+
+{{Main}}
+en=Unknown
+
+{{Main}}
+en=Device Class
+
+{{SUBST}}
+en=Embedded Controller
+
+{{Main}}
+en=PCI Address (Bus:Device:Function) Number:
+
+{{Main}}
+en=Maximum Link Width:
+
+{{Main}}
+en=Current Link Width:
+
+{{Main}}
+en=Maximum Link Speed:
+
+{{Main}}
+en=Current Link Speed:
+
+{{Main}}
+en=PCI Express Endpoint
+
+{{Main}}
+en=Legacy PCI Express Endpoint
+
+{{Main}}
+en=Root Port of PCI Express Root Complex
+
+{{Main}}
+en=Upstream Port of PCI Express Switch
+
+{{Main}}
+en=Downstream Port of PCI Express Switch
+
+{{Main}}
+en=PCI Express-to-PCI/PCI-X Bridge
+
+{{Main}}
+en=PCI/PCI-X to PCI Express Bridge
+
+{{Main}}
+en=Root Complex Integrated Endpoint
+
+{{Main}}
+en=Root Complex Event Collector
+
+{{Main}}
+en=Device/Port Type:
+
+{{Main}}
+en=Slot Implemented:
+
+{{Main}}
+en=Slot Power Limit:
+
+{{Main}}
+en=Hot-Plug:
+
+{{Main}}
+en=Hot-Plug Surprise:
+
+{{Main}}
+en=Active State Power Management (ASPM) Support:
+
+{{Main}}
+en=Active State Power Management (ASPM) Status:
+
+{{Main}}
+en=System Resources
+
+{{Main}}
+en=Interrupt Line:
+
+{{Main}}
+en=Interrupt Pin:
+
+{{Main}}
+en=I/O Base Address
+
+{{Main}}
+en=Memory Base Address
+
+{{}}
+en=Time
+
+{{}}
+en=Unlimited range
+
+{{Main}}
+en=SATA Host Controller
+
+{{Main}}
+en=Interface Speed Supported:
+
+{{Main}}
+en=Number Of Ports:
+
+{{Main}}
+en=External SATA Support:
+
+{{Main}}
+en=Aggressive Link Power Management:
+
+{{Main}}
+en=AHCI Status:
+
+{{Main}}
+en=AHCI Version:
+
+{{Main}}
+en=Ports Implemented:
+
+{{Main}}
+en=Port Status:
+
+{{Main}}
+en=Current Interface Speed:
+
+{{Main}}
+en=External SATA Port:
+
+{{Main}}
+en=Hot Plug:
+
+{{Main}}
+en=Device Type:
+
+{{Main}}
+en=No Device Present
+
+{{Main}}
+en=Device Present, Phy communication not established
+
+{{Main}}
+en=Device Present, Phy communication established
+
+{{Main}}
+en=Phy in offline mode
+
+{{Main}}
+en=Video Chip/Memory Clock
+
+{{Main}}
+en=Driver Information
+
+{{Main}}
+en=Driver Manufacturer:
+
+{{Main}}
+en=Driver Description:
+
+{{Main}}
+en=Driver Provider:
+
+{{Main}}
+en=Driver Version:
+
+{{Main}}
+en=Driver Date:
+
+{{Main}}
+en=DCH/UWD Driver:
+
+{{Main}}
+en=AMD Software Driver Version:
+
+{{Main}}
+en=AMD Driver Package Version:
+
+{{Main}}
+en=AMD Catalyst Driver Version:
+
+{{Main}}
+en=DeviceInstanceId
+
+{{Main}}
+en=Location Paths
+
+{{}}
+en=N/A
+
+{{Main}}
+en=General Module Information
+
+{{Main}}
+en=Module Number:
+
+{{Main}}
+en=Memory Row/Module
+
+{{Main}}
+en=Module Size
+
+{{Main}}
+en=Module Type
+
+{{Main}}
+en=Module Clock
+
+{{Main}}
+en=Memory Type:
+
+{{Main}}
+en=Memory Speed:
+
+{{Main}}
+en=Module Manufacturer:
+
+{{Main}}
+en=Module Part Number:
+
+{{Main}}
+en=Module Revision:
+
+{{Main}}
+en=Module Serial Number
+
+{{Main}}
+en=Module Manufacturing Date:
+
+{{Main}}
+en=Module Manufacturing Location:
+
+{{Main}}
+en=SDRAM Manufacturer:
+
+{{Main}}
+en=DRAM Steppping:
+
+{{Main}}
+en=Error Check/Correction:
+
+{{Main}}
+en=Module Characteristics
+
+{{Main}}
+en=Asymmetrical
+
+{{Main}}
+en=Symmetrical
+
+{{Main}}
+en=Row Address Bits:
+
+{{Main}}
+en=Column Address Bits:
+
+{{Main}}
+en=Module Density:
+
+{{Main}}
+en=Device Width:
+
+{{Main}}
+en=Bus Width:
+
+{{Main}}
+en=Module timing
+
+; Bank of the DRAM
+{{Main}}
+en=Bank Groups:
+
+{{Main}}
+en=Banks Per Group:
+
+; Rank of the DRAM
+{{Main}}
+en=Number Of Ranks:
+
+{{Main}}
+en=Module Device Width:
+
+{{Main}}
+en=Channels Per DIMM:
+
+{{Main}}
+en=Primary Bus Width:
+
+{{Main}}
+en=Bus Extension:
+
+{{Main}}
+en=Nominal
+
+{{Main}}
+en=Operable
+
+{{Main}}
+en=Endurant
+
+{{Main}}
+en=Module Voltage (VDD):
+
+{{Main}}
+en=Module Voltage (VDDQ):
+
+{{Main}}
+en=Module Voltage (VPP):
+
+{{Main}}
+en=Temperature Grade:
+
+{{Main}}
+en=Minimum SDRAM Cycle Time (tCKAVGmin):
+
+{{Main}}
+en=Maximum SDRAM Cycle Time (tCKAVGmax):
+
+{{Main}}
+en=CAS# Latencies Supported:
+
+{{Main}}
+en=Minimum CAS# Latency Time (tAAmin):
+
+{{Main}}
+en=Minimum RAS# to CAS# Delay (tRCDmin):
+
+{{Main}}
+en=Year
+
+{{Main}}
+en=Week
+
+; Bank of the DRAM
+{{Main}}
+en=Number Of Bank Groups:
+
+{{Main}}
+en=Supported Module Timing at
+
+{{Main}}
+en=Manufacturer
+
+{{Main}}
+en=Thermal Sensor
+
+{{Main}}
+en=Thermal Sensor Manufacturer:
+
+{{Main}}
+en=DRAM Temperature Grade:
+
+; DIMM Heat Spreader
+{{Main}}
+en=Heat Spreader:
+
+{{Main}}
+en=Module Nominal Height:
+
+{{Main}}
+en=Module Maximum Thickness (Front):
+
+{{Main}}
+en=Module Maximum Thickness (Back):
+
+{{Main}}
+en=PMIC voltage default step size:
+
+{{Main}}
+en=Profile Name:
+
+{{Main}}
+en=Recommended Channel Config:
+
+{{Main}}
+en=Memory Controller Voltage Level:
+
+{{Main}}
+en=System Command Rate Mode:
+
+{{Main}}
+en=Real-Time Memory Frequency Overclocking:
+
+{{Main}}
+en=Module VDD Voltage Level:
+
+{{Main}}
+en=Module VDDQ Voltage Level:
+
+{{Main}}
+en=Module VPP Voltage Level:
+
+{{Main}}
+en=Number of Channels per SDRAM Package:
+
+{{Main}}
+en=Number of Channels:
+
+{{Main}}
+en=Module Nominal Voltage (VDD):
+
+{{Main}}
+en=Module Temperature Sensor (TSOD):
+
+{{Main}}
+en=NVM Memory Subsystem Controller Manufacturer:
+
+{{Main}}
+en=Number of Memory Component Rows:
+
+{{Main}}
+en=Certified Profile
+
+{{Main}}
+en=Intel Extreme Memory Profile (XMP)
+
+{{Main}}
+en=AMD Memory Profile (AMP)
+
+{{Main}}
+en=AMD EXtended Profiles for Overclocking (EXPO)
+
+{{Main}}
+en=Extreme Profile
+
+{{Main}}
+en=Total Memory Size
+
+{{Main}}
+en=Current Performance Settings
+
+{{Main}}
+en=Maximum Supported Memory Clock:
+
+{{Main}}
+en=Current Memory Clock:
+
+{{Main}}
+en=Current Timing
+
+{{Main}}
+en=Memory Channels Supported:
+
+{{Main}}
+en=Memory Channels Active:
+
+{{Main}}
+en=Command Rate (CR):
+
+{{Main}}
+en=Central Processor(s)
+
+{{Main}}
+en=Plug-and-Play System Nodes
+
+{{Main}}
+en=PnP System Nodes
+
+{{Main}}
+en=Plug-and-Play Capable Devices
+
+{{Main}}
+en=ACPI Devices
+
+{{Main}}
+en=System Enclosure
+
+{{Main}}
+en=Processor
+
+{{Main}}
+en=Cache Information
+
+{{Main}}
+en=Port Connectors
+
+{{Main}}
+en=Port Connector
+
+{{Main}}
+en=On Board Device
+
+{{Main}}
+en=System Configuration Options
+
+{{Main}}
+en=BIOS Language
+
+{{Main}}
+en=System Power Supply
+
+{{Main}}
+en=System Power Controls
+
+{{Main}}
+en=System Event Log
+
+{{Main}}
+en=Physical Memory Array
+
+{{Main}}
+en=32-bit Memory Error Information
+
+{{Main}}
+en=64-bit Memory Error Information
+
+{{Main}}
+en=Memory Array Mapped Address
+
+{{Main}}
+en=Memory Device Mapped Address
+
+{{Main}}
+en=Memory Devices
+
+{{Main}}
+en=Memory Device
+
+{{Main}}
+en=Memory Array
+
+{{Main}}
+en=OEM Strings
+
+{{Main}}
+en=Built-in Pointing Device
+
+{{Main}}
+en=Portable Battery
+
+{{Main}}
+en=System Reset
+
+{{SUBST}}
+en=Hardware Security
+
+{{Main}}
+en=Voltage Probe
+
+{{Main}}
+en=Cooling Device
+
+{{Main}}
+en=Temperature Probe
+
+{{Main}}
+en=Electrical Current Probe
+
+{{Main}}
+en=Boot Integrity Services
+
+{{Main}}
+en=System Boot Information
+
+{{Main}}
+en=Management Device
+
+{{Main}}
+en=Management Device Component
+
+{{Main}}
+en=Memory Channel
+
+{{Main}}
+en=Processor Additional Information
+
+{{Main}}
+en=Firmware Version Information
+
+{{Main}}
+en=System Slot
+
+{{Main}}
+en=System Slots
+
+{{Main}}
+en=Bus
+
+{{Main}}
+en=Version:
+
+{{Main}}
+en=Not negotiated
+
+; Original English name "Video Adapter" was not well chosen, but it's kept for backwards compatibility. It's better translated as "Graphics Adapter"
+{{Main}}
+en=Video Adapter
+
+{{Main}}
+en=Monitor
+
+{{Main}}
+en=Drive(s)
+
+{{}}
+en=Drives
+
+{{Main}}
+en=Floppy Drives
+
+{{Main}}
+en=(S)ATA/ATAPI Drives
+
+{{Main}}
+en=NVMe Drives
+
+{{Main}}
+en=RAID Array
+
+{{Main}}
+en=SCSI Devices
+
+{{Main}}
+en=Audio
+
+{{Main}}
+en=Network
+
+{{Main}}
+en=Serial Ports
+
+{{Main}}
+en=Parallel Ports
+
+{{Main}}
+en=Ports
+
+{{Main}}
+en=Smart Battery
+
+; Video BIOS (VBIOS)
+{{Main}}
+en=Video BIOS Version
+
+{{Main}}
+en=Video RAMDAC
+
+{{Main}}
+en=GPU Type
+
+{{Main}}
+en=Integrated
+
+{{Main}}
+en=Discrete
+
+{{Main}}
+en=Video BIOS Message:
+
+{{Main}}
+en=Video Chipset Revision:
+
+{{Main}}
+en=Performance
+
+{{Main}}
+en=Graphics Processor Clock:
+
+{{Main}}
+en=Graphics Processor Clock (2D):
+
+{{Main}}
+en=Graphics Processor Clock (3D):
+
+{{Main}}
+en=Graphics Processor Clock (Maximum):
+
+{{Main}}
+en=Geometry Unit Clock:
+
+{{Main}}
+en=Shader Unit Clock:
+
+{{Main}}
+en=ROP Unit Clock:
+
+{{Main}}
+en=Video Unit Clock:
+
+{{Main}}
+en=Graphics Memory Clock:
+
+{{Main}}
+en=Graphics Memory Clock (2D):
+
+{{Main}}
+en=Graphics Memory Clock (3D):
+
+{{Main}}
+en=Effective
+
+{{Main}}
+en=Graphics Memory Bus Width:
+
+{{Main}}
+en=Number Of ROPs:
+
+{{Main}}
+en=Number Of Vertex Shaders:
+
+{{Main}}
+en=Number Of ALUs (cores):
+
+{{Main}}
+en=Number Of Unified Shaders:
+
+{{Main}}
+en=Number Of Ray Tracing Cores:
+
+{{Main}}
+en=Number Of Tensor Cores:
+
+{{Main}}
+en=Number Of EUs (Execution Units):
+
+{{Main}}
+en=Number Of TMUs (Texture Mapping Units):
+
+{{Main}}
+en=ASIC Manufacturer:
+
+{{Main}}
+en=ASIC Quality:
+
+{{Main}}
+en=ASIC Serial Number:
+
+{{Main}}
+en=SMU Firmware Version:
+
+{{Main}}
+en=NVIDIA SLI Status:
+
+{{Main}}
+en=NVIDIA SLI Group:
+
+{{Main}}
+en=Resizable BAR Support:
+
+{{Main}}
+en=Resizable BAR (ReBAR) Support:
+
+{{Main}}
+en=Resizable BAR (ReBAR) State:
+
+{{Main}}
+en=PCI Location (Bus:Dev:Fnc):
+
+{{Main}}
+en=BIOS Version:
+
+{{Main}}
+en=BIOS Release Date:
+
+{{Main}}
+en=BIOS Start Segment:
+
+{{Main}}
+en=BIOS Size:
+
+{{Main}}
+en=System Manufacturer:
+
+{{Main}}
+en=Product Name:
+
+{{Main}}
+en=Product Version:
+
+{{Main}}
+en=Product Serial Number:
+
+{{Main}}
+en=Mainboard Manufacturer:
+
+{{Main}}
+en=Mainboard Name:
+
+{{Main}}
+en=Mainboard Version:
+
+{{Main}}
+en=Mainboard Serial Number:
+
+{{Main}}
+en=Asset Tag:
+
+{{Main}}
+en=Asset Tag Number:
+
+{{Main}}
+en=Location in chassis:
+
+{{Main}}
+en=Case Type:
+
+{{Main}}
+en=Serial Number
+
+{{Main}}
+en=SBDS Serial Number
+
+{{Main}}
+en=Processor Manufacturer:
+
+{{Main}}
+en=Processor Version:
+
+{{Main}}
+en=External Clock:
+
+{{Main}}
+en=Maximum Clock Supported:
+
+{{Main}}
+en=Current Clock:
+
+{{Main}}
+en=CPU Socket:
+
+{{Main}}
+en=Disabled by User
+
+{{Main}}
+en=Disabled by BIOS
+
+{{Main}}
+en=Idle
+
+{{Main}}
+en=CPU Status:
+
+{{Main}}
+en=Populated
+
+{{Main}}
+en=Unpopulated
+
+{{Main}}
+en=Processor Type:
+
+{{Main}}
+en=Central Processor
+
+{{Main}}
+en=Math Coprocessor
+
+{{Main}}
+en=DSP Processor
+
+{{Main}}
+en=Video Processor
+
+{{Main}}
+en=Processor Voltage:
+
+{{Main}}
+en=Processor Status:
+
+{{Main}}
+en=Processor Upgrade:
+
+{{Main}}
+en=Socket Designation:
+
+{{Main}}
+en=Error Detecting Method:
+
+{{Main}}
+en=Error Correction:
+
+{{Main}}
+en=Supported Interleave:
+
+{{Main}}
+en=Current Interleave:
+
+{{Main}}
+en=Max. Memory Module Size:
+
+{{Main}}
+en=Supported Memory Speed:
+
+{{Main}}
+en=Supported Memory Type:
+
+{{Main}}
+en=Supported Memory Voltage:
+
+{{Main}}
+en=Associated Memory Slots:
+
+{{Main}}
+en=Installed size:
+
+{{Main}}
+en=Enabled size:
+
+{{SUBST}}
+en= - Cache
+
+{{SUBST}}
+en=-Cache
+
+{{Main}}
+en=L1 Cache
+
+{{Main}}
+en=L2 Cache
+
+{{Main}}
+en=L3 Cache
+
+{{Main}}
+en=L4 Cache
+
+{{Sensors}}
+en=L3 Cache temperature.
+
+{{SUBST}}
+en= Cache temperature.
+
+{{SUBST}}
+en= Cache
+
+{{Main}}
+en=Cache State:
+
+{{Main}}
+en=Cache Location:
+
+{{Main}}
+en=Cache Type:
+
+{{Main}}
+en=Cache Scheme:
+
+{{Main}}
+en=Supported SRAM Type:
+
+{{Main}}
+en=Current SRAM Type:
+
+{{Main}}
+en=Error Correction Type:
+
+{{Main}}
+en=Maximum Cache Size:
+
+{{Main}}
+en=Installed Cache Size:
+
+{{Main}}
+en=Cache Associativity:
+
+{{Main}}
+en=Not Determinable
+
+{{Main}}
+en=Installed, but not enabled
+
+{{Main}}
+en=Not Installed
+
+{{Main}}
+en=Cache Speed:
+
+{{Main}}
+en=Port Type:
+
+{{Main}}
+en=Internal Reference:
+
+{{Main}}
+en=Internal Connector Type:
+
+{{Main}}
+en=External Reference:
+
+{{Main}}
+en=External Connector Type:
+
+{{Main}}
+en=Slot Designation:
+
+{{Main}}
+en=Slot Type:
+
+{{Main}}
+en=Slot Usage:
+
+{{Main}}
+en=Empty
+
+{{Main}}
+en=In use
+
+{{Main}}
+en=Slot Data Bus Width:
+
+{{Main}}
+en=Slot Length:
+
+{{Main}}
+en=Short
+
+{{Main}}
+en=Long
+
+{{Main}}
+en=Device Description
+
+{{Main}}
+en=Device Status:
+
+{{Main}}
+en=Array Location:
+
+{{Main}}
+en=Array Use:
+
+{{Main}}
+en=Memory Capacity:
+
+{{Main}}
+en=Total Width:
+
+{{Main}}
+en=Data Width:
+
+{{Main}}
+en=Device Size:
+
+{{Main}}
+en=Device Form Factor:
+
+{{Main}}
+en=Device Locator:
+
+; Bank of the DRAM
+{{Main}}
+en=Bank Locator:
+
+{{Main}}
+en=Device Type Detail:
+
+{{Main}}
+en=Manufacturer:
+
+{{Main}}
+en=Part Number:
+
+{{Main}}
+en=Starting Address:
+
+{{Main}}
+en=Ending Address:
+
+{{Main}}
+en=Partition Width:
+
+{{Main}}
+en=Battery Location:
+
+{{Main}}
+en=Battery Manufacturer:
+
+{{Main}}
+en=Manufacture Date
+
+{{Main}}
+en=SBDS Manufacture Date
+
+{{Main}}
+en=Device Chemistry:
+
+{{Main}}
+en=SBDS Device Chemistry:
+
+{{Main}}
+en=Design Capacity:
+
+{{Main}}
+en=Design Voltage:
+
+{{Main}}
+en=DMI is based on BIOS information and may not be accurate.
+
+{{Main}}
+en=Note:
+
+{{Main}}
+en=TPM Specification Version:
+
+{{Main}}
+en=TPM Vendor:
+
+{{Main}}
+en=TPM Description:
+
+{{Main}}
+en=Firmware Component Name:
+
+{{Main}}
+en=Firmware Version:
+
+{{Main}}
+en=Firmware Release Date:
+
+{{Main}}
+en=Intel AMT Support:
+
+{{Main}}
+en=Intel AMT Status:
+
+{{Main}}
+en=IDE-R Status:
+
+{{Main}}
+en=SOL Status:
+
+{{Main}}
+en=Network Interface:
+
+{{Main}}
+en=Boot Status:
+
+{{Main}}
+en=No error occurred
+
+{{Main}}
+en=Monitor Name
+
+{{Main}}
+en=Monitor Name (Manuf):
+
+{{Main}}
+en=Date Of Manufacture
+
+{{Main}}
+en=Max. Vertical Size:
+
+{{Main}}
+en=Max. Horizontal Size:
+
+{{Main}}
+en=Horizontal Frequency:
+
+{{Main}}
+en=Vertical Frequency:
+
+{{Main}}
+en=Maximum Pixel Clock:
+
+{{Main}}
+en=Advanced parameters
+
+{{Main}}
+en=Input Signal
+
+{{Main}}
+en=Digital
+
+{{Main}}
+en=Analog
+
+{{Main}}
+en=Color Bit Depth:
+
+{{Main}}
+en=Digital Video Interface Standard Supported:
+
+{{Main}}
+en=Display Type
+
+{{Main}}
+en=Monochrome/grey scale
+
+{{Main}}
+en=RGB color
+
+{{Main}}
+en=Non-RGB multi-color
+
+{{Main}}
+en=DPMS Modes
+
+{{Main}}
+en=DPMS Input Signal
+
+{{Main}}
+en=Supported Video Modes
+
+{{Main}}
+en=Pixel Clock
+
+{{Main}}
+en=Audio Adapter:
+
+{{Main}}
+en=Audio Controller Hardware ID:
+
+{{Main}}
+en=High Definition Audio Codec:
+
+{{Main}}
+en=Audio Codec Hardware ID:
+
+{{Main}}
+en=Network Card:
+
+{{Main}}
+en=Vendor Description:
+
+{{Main}}
+en=MAC Address:
+
+{{Main}}
+en=Capabilities
+
+{{Main}}
+en=Physical Media:
+
+{{Main}}
+en=Supported Media:
+
+{{Main}}
+en=Currently Used Media:
+
+{{Main}}
+en=Transmit Buffer Size:
+
+{{Main}}
+en=Receive Buffer Size:
+
+{{Main}}
+en=Device Information
+
+{{Main}}
+en=Device Manufacturer:
+
+{{Main}}
+en=USB Device Speed:
+
+{{Main}}
+en=Manufacturer Name:
+
+{{Main}}
+en=Unique ID:
+
+{{Main}}
+en=Chemistry:
+
+{{Main}}
+en=Designed Capacity:
+
+{{Main}}
+en=Full Charged Capacity:
+
+{{Main}}
+en=Wear Level:
+
+{{Main}}
+en=Cycle Count:
+
+{{Main}}
+en=Current Power Status
+
+{{Main}}
+en=Power Status:
+
+{{Main}}
+en=Charge Rate:
+
+{{Main}}
+en=Discharge Rate:
+
+{{Main}}
+en=Current Capacity:
+
+{{Main}}
+en=Current Voltage:
+
+{{Main}}
+en=Critical
+
+{{Main}}
+en=On AC Power
+
+{{Settings}}
+en=Export Format
+
+{{Settings}}
+en=Encoding
+
+{{Settings}}
+en=Overwrite existing logfile with new report
+
+{{Settings}}
+en=Summary for Clipboard
+
+{{Settings}}
+en=Text Logfile
+
+{{Settings}}
+en=Comma Delimited File (CSV)
+
+{{Settings}}
+en=REPORT TYPE
+
+{{Settings}}
+en=Please select the type of report and target filename.
+
+{{Settings}}
+en=REPORT FILTER
+
+{{Settings}}
+en=Please select which components should be included in the report.
+
+{{Settings}}
+en=Browse...
+
+{{Main}}
+en=Max. Frequency
+
+{{Main}}
+en=CPU Features
+
+{{Main}}
+en=Memory Latencies
+
+{{Main}}
+en=Additional Features
+
+{{Main}}
+en=Other Features
+
+{{Main}}
+en=Device-specific Parameters
+
+{{Main}}
+en=USB Devices
+
+{{Main}}
+en=Drive Controller
+
+{{Main}}
+en=Host Controller:
+
+{{Main}}
+en=Drive Type:
+
+{{Main}}
+en=VROC RAID Member
+
+{{Main}}
+en=VROC Spare Disk
+
+{{Main}}
+en=VROC Passthrough Disk
+
+{{Main}}
+en=VROC Journaling Drive
+
+{{Main}}
+en=Drive Address:
+
+{{Main}}
+en=Drive Model
+
+{{Main}}
+en=Drive Serial Number
+
+{{Main}}
+en=Drive Firmware Revision:
+
+{{Main}}
+en=NVMe Version Supported:
+
+{{Main}}
+en=Drive Capacity
+
+{{MainOpto}}
+en=Drive Model:
+
+{{MainOpto}}
+en=Drive Serial Number:
+
+{{MainOpto}}
+en=Drive Firmware Revision:
+
+{{MainOpto}}
+en=Drive Type:
+
+{{MainOpto}}
+en=Drive Controller:
+
+{{Main}}
+en=SCSI Address:
+
+{{SMART}}
+en=Available Space Below Threshold:
+
+{{SMART}}
+en=Temperature Exceeded Critical Threshold:
+
+{{SMART}}
+en=Device Reliablity Degraded:
+
+{{SMART}}
+en=Media In Read Only Mode:
+
+{{SMART}}
+en=Volatile Memory Backup Device Failed:
+
+{{Main}}
+en=Drive Temperature:
+
+{{Main}}
+en=Warning Temperature Threshold:
+
+{{Main}}
+en=Critical Temperature Threshold:
+
+{{Main}}
+en=Time Above Warning Temperature Threshold:
+
+{{Main}}
+en=Time Above Critical Temperature Threshold:
+
+{{Main}}
+en=Spare Capacity Available:
+
+{{Main}}
+en=Device Health:
+
+{{Main}}
+en=Power Cycles:
+
+{{Main}}
+en=Power On Hours:
+
+{{Main}}
+en=Power-on Hours:
+
+{{Main}}
+en=Unsafe Shutdowns:
+
+{{Main}}
+en=Media Errors:
+
+{{Main}}
+en=Total Host Writes
+
+{{Main}}
+en=Total Host Reads
+
+{{Main}}
+en=Drive Channel
+
+{{Main}}
+en=World Wide Name:
+
+{{Main}}
+en=Media Rotation Rate:
+
+{{Main}}
+en=SSD Drive (Non-rotating)
+
+{{Main}}
+en=Nominal Form Factor:
+
+{{Main}}
+en=ATA Major Version Supported:
+
+{{Main}}
+en=ATA Minor Version Supported:
+
+{{Main}}
+en=ATA Transport Version Supported:
+
+{{Main}}
+en=Drive Geometry
+
+{{Main}}
+en=Drive Cache
+
+{{Main}}
+en=Number of Cylinders:
+
+{{Main}}
+en=Number of Heads:
+
+{{Main}}
+en=Bytes Per Sector:
+
+{{Main}}
+en=Bytes Per Track:
+
+{{Main}}
+en=Number Of ECC Bytes:
+
+{{Main}}
+en=Number of Sectors:
+
+{{Main}}
+en=Total 32-bit LBA Sectors:
+
+{{Main}}
+en=Total 48-bit LBA Sectors:
+
+{{Main}}
+en=Logical Sector Size:
+
+{{Main}}
+en=Cache Buffer Size:
+
+{{Main}}
+en=NV Cache Size:
+
+{{Main}}
+en=Sectors Per Track:
+
+{{Main}}
+en=Transfer Modes
+
+{{Main}}
+en=Sectors Per Interrupt:
+
+{{Main}}
+en=Max. PIO Transfer Mode:
+
+{{Main}}
+en=Transfer Width:
+
+{{Main}}
+en=Max. Depth
+
+{{Main}}
+en=Supported (Indeterminate Read After TRIM)
+
+{{Main}}
+en=Supported (Deterministic Read After TRIM, Any Value)
+
+{{Main}}
+en=Supported (Deterministic Read After TRIM, Words = 0)
+
+{{Main}}
+en=TRIM Command:
+
+{{Main}}
+en=Device flags
+
+{{Main}}
+en=Fixed Drive:
+
+{{Main}}
+en=Removable Drive:
+
+{{Main}}
+en=Magnetic Storage:
+
+{{Main}}
+en=LBA Mode:
+
+{{Main}}
+en=DMA Mode:
+
+{{Main}}
+en=IORDY Disableable:
+
+{{MainOpto}}
+en=Fixed Drive:
+
+{{MainOpto}}
+en=Removable Drive:
+
+{{Main}}
+en=Active
+
+{{Main}}
+en=Inactive
+
+{{Main}}
+en=Device Status
+
+{{Main}}
+en=Write Cache:
+
+{{Main}}
+en=S.M.A.R.T. Feature:
+
+{{Main}}
+en=Security Feature:
+
+{{Main}}
+en=Removable Media Feature:
+
+{{Main}}
+en=Power Management:
+
+{{Main}}
+en=Advanced Power Management:
+
+{{Main}}
+en=Packet Interface:
+
+{{Main}}
+en=Look-Ahead Buffer:
+
+{{Main}}
+en=Host Protected Area:
+
+{{Main}}
+en=Power-Up In Standby:
+
+{{Main}}
+en=Automatic Acoustic Management:
+
+{{Main}}
+en=Host-Initiated Link Power Management (HIPM):
+
+{{Main}}
+en=Device-Initiated Link Power Management (DIPM):
+
+{{Main}}
+en=In-Order Data Delivery:
+
+{{Main}}
+en=Hardware Feature Control:
+
+{{Main}}
+en=Software Settings Preservation:
+
+{{Main}}
+en=Hybrid Information Feature:
+
+{{Main}}
+en=Rebuild Assist:
+
+{{Main}}
+en=Power Disable:
+
+{{Main}}
+en=Extended Number of User Addressable Sectors:
+
+{{Main}}
+en=NCQ Priority Information:
+
+{{Main}}
+en=Host-Automatic Partial to Slumber Transitions:
+
+{{Main}}
+en=Device-Automatic Partial to Slumber Transitions:
+
+{{Main}}
+en=NCQ Queue Management Command:
+
+{{Main}}
+en=DevSleep to Reduced Power State:
+
+{{Main}}
+en=Extended Power Conditions Feature:
+
+{{Main}}
+en=Sense Data Reporting Feature:
+
+{{Main}}
+en=Free-Fall Control Feature:
+
+{{Main}}
+en=Write-Read-Verify Feature:
+
+; ATA Security
+{{Main}}
+en=Security
+
+{{Main}}
+en=Security Status:
+
+{{Main}}
+en=Security Locked:
+
+{{Main}}
+en=Security Frozen:
+
+{{Main}}
+en=Trusted Computing:
+
+{{Main}}
+en=Enhanced Security Erase:
+
+{{Main}}
+en=Data
+
+{{Main}}
+en=Device Statistics
+
+{{Main}}
+en=Lifetime Power-On Resets:
+
+{{Main}}
+en=Logical Sectors Written:
+
+{{Main}}
+en=Logical Sectors Read:
+
+{{Main}}
+en=Number of Write Commands:
+
+{{Main}}
+en=Number of Read Commands:
+
+{{Main}}
+en=Pending Error Count:
+
+{{Main}}
+en=Workload Utilization:
+
+{{Main}}
+en=Number of Free-Fall Events Detected:
+
+{{Main}}
+en=Number of Overlimit Shock Events:
+
+{{Main}}
+en=Spindle Motor Power-on Hours:
+
+{{Main}}
+en=Head Load Events:
+
+{{Main}}
+en=Number of Reallocated Logical Sectors:
+
+{{Main}}
+en=Number of Mechanical Start Failures:
+
+{{Main}}
+en=Number of Reallocation Candidate Logical Sectors:
+
+{{Main}}
+en=Number of High Priority Unload Events:
+
+{{Main}}
+en=Number of Reported Uncorrectable Errors:
+
+{{Main}}
+en=Resets Between Command Acceptance and Completion:
+
+{{Main}}
+en=Read Recovery Attempts:
+
+{{Main}}
+en=Head Flying Hours:
+
+{{Main}}
+en=Current Temperature:
+
+{{Main}}
+en=Average Short Term Temperature:
+
+{{Main}}
+en=Average Long Term Temperature:
+
+{{Main}}
+en=Operating Temperature Range:
+
+{{Main}}
+en=Minimum Operating Temperature:
+
+{{Main}}
+en=Maximum Operating Temperature:
+
+{{Main}}
+en=Lifetime Temperature:
+
+{{Main}}
+en=Lowest Temperature:
+
+{{Main}}
+en=Highest Temperature:
+
+{{Main}}
+en=Lifetime Average Short Term Temperature:
+
+{{Main}}
+en=Lowest Average Short Term Temperature:
+
+{{Main}}
+en=Highest Average Short Term Temperature:
+
+{{Main}}
+en=Lifetime Average Long Term Temperature:
+
+{{Main}}
+en=Lowest Average Long Term Temperature:
+
+{{Main}}
+en=Highest Average Long Term Temperature:
+
+{{Main}}
+en=Time in Under-Temperature:
+
+{{Main}}
+en=Time in Over-Temperature:
+
+{{Main}}
+en=Number of Hardware Resets:
+
+{{Main}}
+en=Number of ASR Events:
+
+{{Main}}
+en=Number of Interface CRC Errors:
+
+{{Main}}
+en=Used Endurance Indicator:
+
+{{Main}}
+en=Device Capabilities
+
+{{Main}}
+en=Device capabilities
+
+{{Main}}
+en=Drive can read:
+
+{{Main}}
+en=Drive can write:
+
+{{Main}}
+en=Self-Test Result:
+
+{{Main}}
+en=Failed
+
+{{Main}}
+en=Always OK
+
+{{Main}}
+en=Worst
+
+{{Units}}
+en=mins
+
+{{Units}}
+en=minutes
+
+{{Units}}
+en=hours
+
+{{Units}}
+en=days
+
+{{Units}}
+en=years
+
+{{Main}}
+en=Summary
+
+{{Main}}
+en=Save Report
+
+{{Main}}
+en=Sensors
+
+{{Main}}
+en=About
+
+{{Main}}
+en=Current mode
+
+{{SMART}}
+en=Raw Read Error Rate:
+
+{{SMART}}
+en=Throughput Performance:
+
+{{SMART}}
+en=Start/Stop Count:
+
+{{SMART}}
+en=Reallocated Sector Count:
+
+{{SMART}}
+en=Read Channel Margin:
+
+{{SMART}}
+en=Seek Error Rate:
+
+{{SMART}}
+en=Seek Time Performance:
+
+{{SMART}}
+en=Power-on Hours/Cycle Count:
+
+{{SMART}}
+en=Spin Retry Count:
+
+{{SMART}}
+en=Calibration Retry Count:
+
+{{SMART}}
+en=Power Cycle Count:
+
+{{SMART}}
+en=Soft Read Error Rate:
+
+{{SMART}}
+en=Current Helium Level:
+
+{{SMART}}
+en=Initial Bad Block Count:
+
+{{SMART}}
+en=Current Bad Block Count:
+
+{{SMART}}
+en=Spare Block Count:
+
+{{SMART}}
+en=Average Erase Count:
+
+{{SMART}}
+en=Grown Failing:
+
+{{SMART}}
+en=Program Fail Block Count:
+
+{{SMART}}
+en=Unexpected Power Loss Count:
+
+{{SMART}}
+en=Erase-Fail Block Count:
+
+{{SMART}}
+en=Program Fail Count:
+
+{{SMART}}
+en=Erase Fail Count:
+
+{{SMART}}
+en=SATA Interface Downshift / Runtime Bad Block:
+
+{{SMART}}
+en=End to End Error Detection Count:
+
+{{SMART}}
+en=Head Stability:
+
+{{SMART}}
+en=Induced Op-Vibration Detection:
+
+{{SMART}}
+en=Reported Uncorrectable Errors:
+
+{{SMART}}
+en=Command Timeout Count:
+
+{{SMART}}
+en=High Fly Writes:
+
+{{SMART}}
+en=Airflow Temperature / Exceed Count:
+
+{{SMART}}
+en=G-Sense Error Rate:
+
+{{SMART}}
+en=Power-Off Retract Count:
+
+{{SMART}}
+en=Load/Unload Cycle Count:
+
+{{SMART}}
+en=Hardware ECC Recovered:
+
+{{SMART}}
+en=Reallocation Event Count:
+
+{{SMART}}
+en=Current Pending Sector Count:
+
+{{SMART}}
+en=Off-Line Uncorrectable Sector Count:
+
+{{SMART}}
+en=UltraDMA/SATA CRC Error Rate:
+
+{{SMART}}
+en=Write/Multi-Zone Error Rate:
+
+{{SMART}}
+en=Data Address Mark Errors:
+
+{{SMART}}
+en=Run Out Cancel:
+
+{{SMART}}
+en=Soft ECC Correction:
+
+{{SMART}}
+en=Thermal Asperity Rate:
+
+{{SMART}}
+en=Flying Height:
+
+{{SMART}}
+en=Spin High Current:
+
+{{SMART}}
+en=Spin Buzz:
+
+{{SMART}}
+en=Offline Seek Performance:
+
+{{SMART}}
+en=Vibration During Write:
+
+{{SMART}}
+en=Shock During Write:
+
+{{SMART}}
+en=Disk Shift:
+
+{{SMART}}
+en=Loaded Hours:
+
+{{SMART}}
+en=Load/Unload Retry Count:
+
+{{SMART}}
+en=Load Friction:
+
+{{SMART}}
+en=Load-In Time:
+
+{{SMART}}
+en=Torque Amplification Count:
+
+{{SMART}}
+en=GMR Head Amplitude:
+
+{{SMART}}
+en=Power-on Hours:
+
+{{SMART}}
+en=Available Reserved Space:
+
+{{SMART}}
+en=Lifetime Writes from Host (LBAs Written):
+
+{{SMART}}
+en=Lifetime Reads from Host (LBAs Read):
+
+{{SMART}}
+en=Read Error Retry Rate:
+
+{{SMART}}
+en=Free Fall Protection:
+
+{{SMART}}
+en=Power-on Count:
+
+{{SMART}}
+en=Device Capacity
+
+{{SMART}}
+en=User Capacity:
+
+{{SMART}}
+en=Spare Blocks Available:
+
+{{SMART}}
+en=Remaining Spare Blocks:
+
+{{SMART}}
+en=Gigabytes Erased:
+
+{{SMART}}
+en=SSD Protect Mode:
+
+{{SMART}}
+en=SATA PHY Error Count:
+
+{{SMART}}
+en=Total Bad Block Count:
+
+{{SMART}}
+en=Available Reserved Space/Block Count:
+
+{{SMART}}
+en=Erase Fail Count (Total):
+
+{{SMART}}
+en=Wear Leveling Count/Erase Count:
+
+{{SMART}}
+en=Program/ECC Fail Count:
+
+{{SMART}}
+en=Wear Leveling Count:
+
+{{SMART}}
+en=Used Reserved Block Count (Chip):
+
+{{SMART}}
+en=Used Reserved Block Count (Total):
+
+{{SMART}}
+en=Unused Reserved Block Count (Total):
+
+{{SMART}}
+en=Program Fail Count (Total):
+
+{{SMART}}
+en=Erase Fail Count (Total):
+
+{{SMART}}
+en=End-to-End Data Errors Corrected:
+
+{{SMART}}
+en=Uncorrectable Error Count:
+
+{{SMART}}
+en=Factory Bad Block Count:
+
+{{SMART}}
+en=Airflow Temperature:
+
+{{SMART}}
+en=Unsafe Shutdown Count:
+
+{{SMART}}
+en=ECC Error Rate:
+
+{{SMART}}
+en=SATA CRC Error Count:
+
+{{SMART}}
+en=Uncorrectable Soft Read Error Rate:
+
+{{SMART}}
+en=Percentage Of The Rated Lifetime Used:
+
+{{SMART}}
+en=Soft ECC Correction Rate:
+
+{{SMART}}
+en=Simple Read Retry Attempts:
+
+{{SMART}}
+en=Adaptive Read Retry Attempts:
+
+{{SMART}}
+en=Number of CRC Errors:
+
+{{SMART}}
+en=Timed Workload Media Wear:
+
+{{SMART}}
+en=Timed Workload Host Read/Write Ratio:
+
+{{SMART}}
+en=Timed Workload Timer:
+
+{{SMART}}
+en=Number of Host Writes:
+
+{{SMART}}
+en=SSD Life Left:
+
+{{SMART}}
+en=Remaining Life:
+
+{{SMART}}
+en=SuperCap Health:
+
+{{SMART}}
+en=Total Host Writes:
+
+{{SMART}}
+en=Total Host Reads:
+
+{{SMART}}
+en=ECC Bits Corrected:
+
+{{SMART}}
+en=ECC Cumulative Threshold Events:
+
+{{SMART}}
+en=Cumulative Program NAND Pages:
+
+{{SMART}}
+en=Total Host Sector Writes:
+
+{{SMART}}
+en=Host Program Page Count:
+
+{{SMART}}
+en=Background/FTL Program Page Count:
+
+{{SMART}}
+en=Total NAND Writes:
+
+{{SMART}}
+en=Total NAND Writes (SLC):
+
+{{SMART}}
+en=NAND Read Count:
+
+{{SMART}}
+en=Temperature:
+
+{{SMART}}
+en=Power Loss Protection Failure:
+
+{{SMART}}
+en=SATA Downshift Count:
+
+{{SMART}}
+en=Media Wearout Indicator:
+
+{{SMART}}
+en=Thermal Throttle Status:
+
+{{SMART}}
+en=Per Block Max Erase Count:
+
+{{SMART}}
+en=Power Loss Protection Error:
+
+{{SMART}}
+en=Total Host Bytes Read:
+
+{{SMART}}
+en=Total Host Bytes/Sectors Written:
+
+{{SMART}}
+en=Total NAND Bytes/Sectors Written:
+
+{{SMART}}
+en=Average Block-Erase Count:
+
+{{SMART}}
+en=Unaligned Access Count:
+
+{{SMART}}
+en=SATA Interface Downshift:
+
+{{SMART}}
+en=Error Correction Count:
+
+{{SMART}}
+en=Cumulative ECC Bit Correction Count:
+
+{{SMART}}
+en=Write Error Rate:
+
+{{SMART}}
+en=Successful RAIN Recovery Count:
+
+{{SMART}}
+en=Total Bytes Read:
+
+{{SMART}}
+en=Write Protect Progress:
+
+{{SMART}}
+en=Available Over-Provisioned Block Count:
+
+{{SMART}}
+en=Available Reserved Space/Remaining Life:
+
+{{SMART}}
+en=Average P/E Cycles:
+
+{{SMART}}
+en=Average SLC Erase Count:
+
+{{SMART}}
+en=Average TLC Erase Count:
+
+{{SMART}}
+en=Bad Block Count:
+
+{{SMART}}
+en=Bad Block Full Flag:
+
+{{SMART}}
+en=Bad Cluster Table Count:
+
+{{SMART}}
+en=CRC Error Count:
+
+{{SMART}}
+en=DAS Polarity:
+
+{{SMART}}
+en=DRAM 1-bit Error Count:
+
+{{SMART}}
+en=Erase count:
+
+{{SMART}}
+en=Erase Fail Count In Worst Die:
+
+{{SMART}}
+en=Erase Failure Block Count:
+
+{{SMART}}
+en=Factory Bad Block Count Total:
+
+{{SMART}}
+en=Flash Write Sector Count:
+
+{{SMART}}
+en=Good/Free Block Count:
+
+{{SMART}}
+en=Grown Bad Blocks:
+
+{{SMART}}
+en=Health:
+
+{{SMART}}
+en=In Warranty:
+
+{{SMART}}
+en=Initial Invalid Blocks:
+
+{{SMART}}
+en=Internal Data Path Uncorrectable Errors:
+
+{{SMART}}
+en=Later Bad Block Count:
+
+{{SMART}}
+en=Life Curve Status:
+
+{{SMART}}
+en=Lifetime NAND Read Retries:
+
+{{SMART}}
+en=Lifetime Writes to Flash:
+
+{{SMART}}
+en=Max Erase Count/Total Media Writes:
+
+{{SMART}}
+en=Max Erase Cycle:
+
+{{SMART}}
+en=Maximum Erase Count of Spec:
+
+{{SMART}}
+en=Maximum Erase Count:
+
+{{SMART}}
+en=Maximum PE Count Specification:
+
+{{SMART}}
+en=Maximum SLC Erase Count:
+
+{{SMART}}
+en=Maximum TLC Erase Count:
+
+{{SMART}}
+en=Media Wearout Indicator (Cycles Remaining):
+
+{{SMART}}
+en=Minimum Erase Count:
+
+{{SMART}}
+en=Minimum SLC Erase Count:
+
+{{SMART}}
+en=Minimum TLC Erase Count:
+
+{{SMART}}
+en=NAND GB Written (SLC):
+
+{{SMART}}
+en=NAND GB Written:
+
+{{SMART}}
+en=NAND GiB Written:
+
+{{SMART}}
+en=NAND Page Reads During Retry:
+
+{{SMART}}
+en=NAND Sectors Written:
+
+{{SMART}}
+en=NAND Written:
+
+{{SMART}}
+en=Normalized Media Wear-out:
+
+{{SMART}}
+en=Number of Cache Data Block:
+
+{{SMART}}
+en=Number of Initial Invalid Blocks:
+
+{{SMART}}
+en=Number of Valid Spare Blocks:
+
+{{SMART}}
+en=On-the-Fly ECC Uncorrectable Error Count:
+
+{{SMART}}
+en=Percentage Lifetime Remaining:
+
+{{SMART}}
+en=Percentage Total P/E Count:
+
+{{SMART}}
+en=Phy Error Count:
+
+{{SMART}}
+en=POR Recovery Count:
+
+{{SMART}}
+en=Power Loss Protection:
+
+{{SMART}}
+en=Program Failure Block Count:
+
+{{SMART}}
+en=RAID Recovery Count:
+
+{{SMART}}
+en=Read Failure Block Count:
+
+{{SMART}}
+en=Remaining Life Percent:
+
+{{SMART}}
+en=Reported I/O Error Detection Code Errors:
+
+{{SMART}}
+en=Runtime Bad Block (Total):
+
+{{SMART}}
+en=Runtime Invalid Block Count:
+
+{{SMART}}
+en=SATA Error Count CRC:
+
+{{SMART}}
+en=SATA Error Count Handshake:
+
+{{SMART}}
+en=SATA R-Errors (CRC) Error Count:
+
+{{SMART}}
+en=SATA Uncorrectable Error Count:
+
+{{SMART}}
+en=SLC Average Erase Count:
+
+{{SMART}}
+en=SLC Maximum Erase Count:
+
+{{SMART}}
+en=SLC Minimum Erase Count:
+
+{{SMART}}
+en=SLC Total Erase Count:
+
+{{SMART}}
+en=SSD Mode Status:
+
+{{SMART}}
+en=SuperCap Status:
+
+{{SMART}}
+en=Temperature Throttle Status:
+
+{{SMART}}
+en=Thermal Throttling Count:
+
+{{SMART}}
+en=Total Blocks Erased:
+
+{{SMART}}
+en=Total Count of Error bits from flash:
+
+{{SMART}}
+en=Total Count of Read Commands:
+
+{{SMART}}
+en=Total Count of Read Sectors with Correctable Errors:
+
+{{SMART}}
+en=Total Count of Read Sectors:
+
+{{SMART}}
+en=Total Count of Write Commands:
+
+{{SMART}}
+en=Total Count of Write Sectors:
+
+{{SMART}}
+en=Total Erase Count/Remaining Life:
+
+{{SMART}}
+en=Total Erase Count:
+
+{{SMART}}
+en=Total Erase Failures:
+
+{{SMART}}
+en=Total GB Read:
+
+{{SMART}}
+en=Total GB Written to NAND (SLC):
+
+{{SMART}}
+en=Total GB Written to NAND (TLC):
+
+{{SMART}}
+en=Total GB Written To NAND:
+
+{{SMART}}
+en=Total GB Written:
+
+{{SMART}}
+en=Total NAND Programming Count (pages):
+
+{{SMART}}
+en=Total Number of Corrected Bits:
+
+{{SMART}}
+en=Total Number of NAND Read Retries:
+
+{{SMART}}
+en=Total Number of Read Bits Corrected:
+
+{{SMART}}
+en=Total Programming Failures:
+
+{{SMART}}
+en=Total Read Failures (Uncorrectable):
+
+{{SMART}}
+en=Total Sectors Written:
+
+{{SMART}}
+en=Total SLC Erase Count:
+
+{{SMART}}
+en=Total SLC Write Count:
+
+{{SMART}}
+en=Total TLC Erase Count:
+
+{{SMART}}
+en=Total TLC Write Count:
+
+{{SMART}}
+en=Total Wear Level Count:
+
+{{SMART}}
+en=Uncorrectable Errors:
+
+{{SMART}}
+en=Uncorrectable Sector Count When Read/Write:
+
+{{SMART}}
+en=Uncorrectable Sector Count:
+
+{{SMART}}
+en=Valid Spare Blocks:
+
+{{SMART}}
+en=Wear Range Delta:
+
+{{SMART}}
+en=Host Reads:
+
+{{SMART}}
+en=Host Writes:
+
+{{SMART}}
+en=Lifetime NAND Writes:
+
+{{SMART}}
+en=Max Bad Block per Die:
+
+{{SMART}}
+en=Program Fail Count In Worst Die:
+
+{{SMART}}
+en=Write Throttling Activation Flag:
+
+{{Main}}
+en=System Summary
+
+{{}}
+en=Unplugged
+
+{{Settings}}
+en=Server Role - This computer is a listener and provides data to another machine.
+
+{{Settings}}
+en=Connect
+
+{{Settings}}
+en=Remove Connection
+
+{{Settings}}
+en=Enumerate Network
+
+{{Settings}}
+en=Connection List
+
+{{Settings}}
+en=Computer Name
+
+{{Settings}}
+en=IP Address
+
+{{Settings}}
+en=Connection Status
+
+{{Settings}}
+en=Exceeded maximum number of allowed/licensed connections.
+
+{{Settings}}
+en=Connected
+
+{{Settings}}
+en=Not Connected
+
+{{Settings}}
+en=Connecting...
+
+{{Settings}}
+en=Connection Lost
+
+{{Settings}}
+en=Connection Closed
+
+{{Settings}}
+en=Current Name:
+
+{{Settings}}
+en=Original Name:
+
+; Set Original Name
+{{Settings}}
+en=Set Original
+
+{{Settings}}
+en=Rename Sensor
+
+{{Settings}}
+en=Show Graph
+
+{{Settings}}
+en=Add to tray
+
+{{Settings}}
+en=Remove from tray
+
+{{Settings}}
+en=Disable monitoring
+
+{{Settings}}
+en=Enable monitoring
+
+{{Settings}}
+en=Hide
+
+; Sensors logging
+{{Settings}}
+en=Enable Logging
+
+; Sensors logging
+{{Settings}}
+en=Disable Logging
+
+{{Settings}}
+en=Layout settings...
+
+{{Settings}}
+en=Customize values...
+
+{{Settings}}
+en=Tray icon settings...
+
+{{Settings}}
+en=OSD settings...
+
+{{Settings}}
+en=OSD (RTSS) settings...
+
+{{Settings}}
+en=Alert settings...
+
+{{Settings}}
+en=LG LCD settings...
+
+{{Settings}}
+en=Adjust Tj,max
+
+{{Sensors}}
+en=Sensors Status
+
+{{Settings}}
+en=Save && Quit
+
+{{Settings}}
+en=Save && Close
+
+; Config (Settings) for Sensors
+{{Settings}}
+en=Config
+
+; Sensors logging
+{{Settings}}
+en=Log Start
+
+; Sensors logging
+{{Settings}}
+en=Log Stop
+
+{{Settings}}
+en=Reset Values
+
+{{Settings}}
+en=Expand
+
+{{Settings}}
+en=Shrink
+
+{{Settings}}
+en=Net work
+
+{{Settings}}
+en=Sensor Settings
+
+{{Settings}}
+en=Change Series Color
+
+{{Settings}}
+en=Change Background Color
+
+{{Settings}}
+en=Change Grid Color
+
+{{Settings}}
+en=Language:
+
+{{Main}}
+en=OK
+
+; OK as Normal in SMART
+{{SMART}}
+en=OK
+
+{{Settings}}
+en=Driver Management
+
+{{Settings}}
+en=License Management
+
+{{Settings}}
+en=Change Color
+
+{{Settings}}
+en=Expand Current Node
+
+{{Settings}}
+en=Expand All
+
+{{Settings}}
+en=Collapse All
+
+{{Settings}}
+en=Show All
+
+{{Settings}}
+en=Refresh
+
+{{Settings}}
+en=Main Window
+
+{{Settings}}
+en=Product Info
+
+{{Settings}}
+en=Driver Download
+
+{{Settings}}
+en=Driver Updates
+
+{{Main}}
+en=Driver Update
+
+{{Settings}}
+en=Copy Line
+
+{{Settings}}
+en=Copy Result
+
+{{Main}}
+en=Current Computer
+
+{{Settings}}
+en=Main Settings
+
+{{Settings}}
+en=Validate Window Positions
+
+{{Settings}}
+en=When this option is enabled, HWiNFO will check if the last saved positions of its windows fall inside an active monitor area and if not, it will automatically move them to the default monitor. This can prevent displaying windows in invisible areas, but some users with multiple monitors might need to disable this option in case windows are not restored at their expected positions.
+
+{{}}
+en=License Expired
+
+{{}}
+en=The maintenance period of your license is expired and this version is no longer covered by it.\nRenew the license or revert back to an older HWiNFO64 version covered by your license.\nRenewal notification e-mails are automatically sent prior to expiry, if you haven't received this e-mail please check your 2Checkout account or contact support.
+
+{{}}
+en=A non-commercial (personal) license cannot be used on computers that are members of a domain.\nThis is considered commercial use.
+
+{{}}
+en=HWiNFO Shared Memory Time Limit Exceeded
+
+{{}}
+en=HWiNFO64 Shared Memory limit of 12 hours has been exceeded and will be deactivated.\nUpgrade to HWiNFO64 Pro to remove this limit or enable Shared Memory Support again.
+
+{{Settings}}
+en=Snap Window Edges
+
+{{}}
+en=Create Logfile
+
+{{}}
+en=Battery
+
+{{Main}}
+en=&Program
+
+{{Main}}
+en=&Report
+
+{{Main}}
+en=&Monitoring
+
+{{Main}}
+en=&Help
+
+{{Main}}
+en=&System Summary
+
+{{Main}}
+en=Se&ttings
+
+{{Main}}
+en=Sea&rch...
+
+{{Main}}
+en=E&xit
+
+{{Main}}
+en=S&ensor status
+
+{{Main}}
+en=On-line &Help (forum)
+
+{{Main}}
+en=&About HWiNFO...
+
+{{Main}}
+en=&Create
+
+{{Main}}
+en=Extended CPU ID:
+
+{{Settings}}
+en=Logitech LCD
+
+{{Settings}}
+en=HWiNFO Gadget
+
+{{Main}}
+en=Native Command Queuing:
+
+{{Main}}
+en=Hardware ID:
+
+{{Main}}
+en=Revision ID:
+
+{{Main}}
+en=Monitor Hardware ID:
+
+{{Main}}
+en=Number Of EUs (Execution Units)
+
+{{Main}}
+en=Number of ALUs (cores)
+
+{{Sensors}}
+en=GPU Thermal Limit
+
+{{Sensors}}
+en=Temperature at which thermal throttling starts.
+
+{{Sensors}}
+en=Total Graphics Power (TGP)
+
+{{Sensors}}
+en=Total Board Power (TBP)
+
+{{Main}}
+en=General Properties
+
+{{Main}}
+en=Self-Monitoring, Analysis and Reporting Technology (S.M.A.R.T.)
+
+{{Settings}}
+en=Min
+
+{{Settings}}
+en=Max
+
+{{Sensors}}
+en=Total Power
+
+{{Sensors}}
+en=PMIC High Temperature
+
+{{Settings}}
+en=Highlight changing values
+
+{{Settings}}
+en=Celsius
+
+{{Settings}}
+en=Fahrenheit
+
+{{Settings}}
+en=Are you sure?
+
+{{}}
+en=License Active
+
+{{}}
+en=No License
+
+{{}}
+en=License status:
+
+{{}}
+en=License type:
+
+{{}}
+en=License file location:
+
+{{}}
+en=License Import
+
+{{}}
+en=Copy/Paste the full and unmodified license string content below:
+
+{{}}
+en=Or select a License File:
+
+{{}}
+en=Validate License
+
+{{}}
+en=License File Error
+
+{{}}
+en=Cannot open license file.
+
+{{}}
+en=Invalid license file.
+
+{{}}
+en=Cannot read license file
+
+{{}}
+en=License is valid.\nWould you like to store this license into HWiNFO64 folder?
+
+{{}}
+en=Cannot create license file.
+
+{{}}
+en=Cannot write license file.
+
+{{}}
+en=License Error
+
+{{}}
+en=Invalid license.
+
+{{}}
+en=Make sure the license was obtained legally and its content was not tampered.
+
+{{}}
+en=days left
+
+{{}}
+en=To manage your subscription or recover a lost license visit:
+
+{{}}
+en=End-user License Agreement
+
+{{Settings}}
+en=Search...
+
+{{Settings}}
+en=Enter search phrase:
+
+{{Settings}}
+en=Case-sensitive
+
+{{Settings}}
+en=Theme:
+
+{{}}
+en=Automatic
+
+{{Sensors}}
+en=Select Cancel to never ask again.
+
+{{Sensors}}
+en=PMIC Over Voltage
+
+{{Sensors}}
+en=PMIC Under Voltage
+
+{{Main}}
+en=NPU Name
+
+{{Main}}
+en=NPU Type
+
+{{Main}}
+en=NPU Memory
+
+{{Main}}
+en=NPU Clock
+
+{{Sensors}}
+en=NPU Global Temperature
+
+{{Sensors}}
+en=NPU Core Temperature
+
+{{Sensors}}
+en=NPU Core Voltage
+
+{{SUBST}}
+en=Total NPU Power
+
+{{Sensors}}
+en=NPU Clock
+
+{{Sensors}}
+en=NPU Total Usage
+
+{{Sensors}}
+en=NPU D3D Utilizations
+
+{{Sensors}}
+en=NPU D3D Usage
+
+{{Sensors}}
+en=NPU Copy Engine Usage
+
+{{Sensors}}
+en=NPU D3D Memory Dynamic
+
+{{Sensors}}
+en=NPU Throttle Reasons
+
+{{Sensors}}
+en=NPU Usage
+
+{{Sensors}}
+en=Drive Available Spare
+
+{{Settings}}
+en=Enable Hot Key to Reset Values
+
+{{Settings}}
+en=Enable Hot Key to Pause Monitoring
+
+{{Settings}}
+en=Enable OSD
+
+{{Settings}}
+en=Show in OSD as:
+
+{{Settings}}
+en=Position:
+
+{{Settings}}
+en=Text color:
+
+{{Settings}}
+en=Graph line color:
+
+{{Settings}}
+en=Graph fill color:
+
+{{Settings}}
+en=Show unit in OSD
+
+{{Settings}}
+en=Include sensor name
+
+{{Settings}}
+en=Upscale:
+
+{{Settings}}
+en=Automatic targeting
+
+{{Settings}}
+en=Lock
+
+{{Settings}}
+en=Attached to process
+
+{{Settings}}
+en=Transparency:
+
+{{Settings}}
+en=Overlay
+
+{{Settings}}
+en=Independent Window
+
+{{Settings}}
+en=Text
+
+{{Settings}}
+en=Graph
+
+{{Settings}}
+en=HWiNFO needs to be started from a secure folder (e.g. C:\Program Files\) to properly show the OSD. This is automatically performed by the HWiNFO Installer.
+
+{{Settings}}
+en=Opacity:
+
+{{Settings}}
+en=Background opacity:
+
+{{Settings}}
+en=Top-Left
+
+{{Settings}}
+en=Top-Right
+
+{{Settings}}
+en=Bottom-Left
+
+{{Settings}}
+en=Bottom-Right
+
+{{Settings}}
+en=Freeware version limited to 5 items.\nMore available in HWiNFO64 Pro.
+
+{{Settings}}
+en=Logging Time Limit
+
+{{Sensors}}
+en=Thermal Zone temperature reported via ACPI.
+
+{{Main}}
+en=Another application is blocking HWiNFO by holding a shared synchronization object for an excessive time.\nThis can result in very slow startup of HWiNFO and excessive time required to access hardware. Several other tools might be affected too.\nTry to update the below application or consider discontinuing its use. The problematic application is:
+
+{{Sensors}}
+en=Indicates the reasons why IA (x86) cores frequency is clipped.
+
+{{Sensors}}
+en=Indicates the reasons why GT (graphics) cores frequency is clipped.
+
+{{Sensors}}
+en=Indicates the reasons why CPU Ring frequency is clipped.
+
+{{Sensors}}
+en=Electrical current delivered by individual VR phase.
+
+{{Sensors}}
+en=Active Phase Count
+
+{{Sensors}}
+en=Number of currently active VR phases.
+
+{{Sensors}}
+en=VRM Efficiency
+
+{{Sensors}}
+en=DDR5 SPD Hub temperature.\nThis is usually the temperature of the memory module PCB, not the memory chip hot spot.
+
+{{Sensors}}
+en=Switching regulator voltage measured.
+
+{{Sensors}}
+en=Input supply voltage measured.
+
+{{Sensors}}
+en=Indicates the sum of SWA+SWB+SWC+SWD power measured.
+
+{{Sensors}}
+en=Indicates if the PMIC tempearture exceeded the warning threshold.
+
+{{Sensors}}
+en=Indicates if over voltage happened on SWA-SWD PMIC rails during last power-down.
+
+{{Sensors}}
+en=Indicates if under voltage lockout happened on SWA-SWD PMIC rails during last power-down.
+
+{{Sensors}}
+en=Core Voltages
+
+{{Sensors}}
+en=Voltage supplied to particular core by internal Digital Linear Voltage Regulator (DLVR).
+
+{{Main}}
+en=Drive Letter(s):
+
+{{Main}}
+en=Alternative 1
+
+{{Main}}
+en=PCH PEG/DMI Ratio:
+
+{{Main}}
+en=SKU Number:
+
+{{Main}}
+en=Hardware Security
+
+{{Main}}
+en=Power-on Password:
+
+{{Main}}
+en=Keyboard Password:
+
+{{Main}}
+en=Administrator Password:
+
+{{Main}}
+en=Front Panel Reset
+
+{{Main}}
+en=Status:
+
+{{Main}}
+en=Port Number:
+
+{{Main}}
+en=Device Friendly Name:
+
+{{Main}}
+en=UEFI BIOS:
+
+{{}}
+en=UEFI Boot
+
+{{}}
+en=Secure Boot
+
+{{Main}}
+en=ASIC Manufacturer:
+
+{{Main}}
+en=GPU Type:
+
+{{Main}}
+en=DCH/UWD Driver:
+
+{{Main}}
+en=Model Part Number:
+
+{{Main}}
+en=Revision Level:
+
+{{Main}}
+en=Power Supply Status:
+
+{{Main}}
+en=Power Supply Type:
+
+{{Main}}
+en=Hot replaceable:
+
+{{Main}}
+en=Unplugged from wall:
+
+{{Main}}
+en=Location:
+
+{{Main}}
+en=Voltage Offset (Global):
+
+{{Main}}
+en=System Management BIOS Version:
+
+{{}}
+en=Flushing buffers...
+
+{{Main}}
+en=Internal Graphics:
+
+{{Main}}
+en=2 DIMMs per Channel:
+
+{{Main}}
+en=Dual Channel:
+
+{{Main}}
+en=BCLK Coarse Ratio Support (PCIe Ratio Changing):
+
+{{Main}}
+en=DDR Overclocking:
+
+{{Main}}
+en=DMI Width:
+
+{{Main}}
+en=DMI Gen 2 Mode:
+
+{{Main}}
+en=Camarillo Device:
+
+{{Main}}
+en=Display HD Audio:
+
+{{Main}}
+en=PCIe x16 Port:
+
+{{Main}}
+en=VR Thermal Sensor:
+
+{{SUBST}}
+en=Thermal Monitor
+
+{{SUBST}}
+en=Range
+
+{{Main}}
+en=Legacy device
+
+{{Settings}}
+en=PresentMon Support
+
+{{SUBST}}
+en=Function Number
+
+{{Main}}
+en=Pages
+
+{{Main}}
+en=entries
+
+{{Main}}
+en=Instruction:
+
+{{Main}}
+en=Integrated:
+
+{{Sensors}}
+en=This sensor provides data about Power Delivery-capable USB Type-C Port with monitoring capability.
+
+{{Sensors}}
+en=USB Type-C Port Voltage
+
+{{Sensors}}
+en=Voltage provided via Power Delivery-capable USB Type-C Port
+
+{{Sensors}}
+en=USB Type-C Port Current
+
+{{Sensors}}
+en=Current drawn via Power Delivery-capable USB Type-C Port
+
+{{Sensors}}
+en=USB Type-C Port Power
+
+{{Sensors}}
+en=Power provided via Power Delivery-capable USB Type-C Port
+
+{{Settings}}
+en=Your license is about to expire
+
+{{Settings}}
+en=New version might not be covered by your license.
+
+{{Settings}}
+en=Sensors Status
+
+{{Settings}}
+en=value hidden
+
+{{Settings}}
+en=values hidden
+
+{{Settings}}
+en=PAUSED
+
+{{Settings}}
+en=Number Of Threads
+
+{{Settings}}
+en=Core/Thread Selection
+
+{{Settings}}
+en=Pro Only
+
+{{}}
+en=DIMM SPD Write-Protection
+
+{{}}
+en=SPD Block Status
+
+{{}}
+en=Some SPD blocks that should not be modified are not write-protected.
+
+{{}}
+en=Set recommended values
+
+{{}}
+en=Set Write-Protect
+
+{{}}
+en=This block is write-protected.\nThis state cannot be altered anymore.
+
+{{}}
+en=This block is writeable.
+
+{{}}
+en=It's recommended to write-protect it.
+
+{{}}
+en=Unused
+
+{{}}
+en=Please confirm that you want to write-protect the selected SPD blocks.\nOnce this protection is set, it cannot be disabled.
+
+{{}}
+en=Write-Protection has been applied.
+
+{{}}
+en=Failed to apply Write-Protection.
+
