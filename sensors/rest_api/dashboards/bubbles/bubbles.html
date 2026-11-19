@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>HWiNFO Bubbles</title>
+<style>
+  html, body { margin: 0; height: 100%; background: radial-gradient(ellipse at 50% 30%, #1b2140, #090b16 70%); color: #fff;
+               font: 14px "Segoe UI", system-ui, sans-serif; overflow: hidden; }
+  #sea { position: absolute; inset: 0; }
+  .bubble { position: absolute; border-radius: 50%; display: flex; flex-direction: column; align-items: center; justify-content: center;
+            text-align: center; text-shadow: 0 1px 4px rgba(0,0,0,.55); cursor: default; user-select: none;
+            transition: width .6s, height .6s; will-change: transform; }
+  /* no box-shadow/background transitions: animating blurred shadows on hundreds of bubbles repaints them every frame */
+  .bubble .v { font-weight: 700; line-height: 1.05; }
+  .bubble .l { opacity: .9; font-size: .42em; max-width: 86%; margin-top: 4px; line-height: 1.1; }
+  #st { position: fixed; left: 10px; bottom: 8px; font-size: 12px; opacity: .6; }
+  #st.err { color: #ff8a80; opacity: 1; }
+  /* popped bubble: grows and fades (uses `scale`, so the per-frame `transform` position keeps working) */
+  .bubble { cursor: pointer; }
+  .bubble.pop { animation: pop .32s cubic-bezier(.2,.8,.3,1) forwards; pointer-events: none; }
+  @keyframes pop { 0% { scale: 1; filter: brightness(1); } 35% { scale: 1.22; filter: brightness(2.2); opacity: 1; }
+                   100% { scale: 1.8; filter: brightness(3); opacity: 0; } }
+  /* burst parts are centred on their left/top point */
+  .flash, .ring, .drop, .plus { position: absolute; pointer-events: none; translate: -50% -50%; }
+  .flash { border-radius: 50%; background: radial-gradient(circle, #fff 0%, var(--c) 35%, transparent 70%);
+           animation: flash .4s ease-out forwards; }
+  @keyframes flash { from { scale: .6; opacity: .95; } to { scale: 2.2; opacity: 0; } }
+  .ring { border-radius: 50%; border: 4px solid var(--c); box-shadow: 0 0 18px var(--c), inset 0 0 12px var(--c);
+          animation: ring .65s ease-out forwards; }
+  .ring.r2 { border-width: 2px; animation-duration: .9s; animation-delay: .08s; opacity: 0; }
+  @keyframes ring { from { scale: .7; opacity: 1; } to { scale: 2.6; opacity: 0; } }
+  .drop { border-radius: 50%; animation: drop var(--t) cubic-bezier(.1,.7,.3,1) forwards; }
+  @keyframes drop { 70% { opacity: 1; } to { transform: translate(var(--dx), var(--dy)); scale: .15; opacity: 0; } }
+  .plus { font-weight: 800; font-size: 28px; color: #fff; text-shadow: 0 0 10px var(--c), 0 2px 4px rgba(0,0,0,.6);
+          animation: plus .9s ease-out forwards; }
+  @keyframes plus { from { transform: translateY(0) scale(.6); opacity: 0; } 20% { transform: translateY(-10px) scale(1.15); opacity: 1; }
+                    to { transform: translateY(-70px) scale(1); opacity: 0; } }
+  #blownV.bump { animation: bump .35s ease-out; }
+  @keyframes bump { 40% { scale: 1.6; color: #ffd36b; } }
+  #ctl { position: fixed; right: 10px; bottom: 8px; display: grid; grid-template-columns: auto 140px 3.2em; gap: 4px 10px;
+         align-items: center; padding: 8px 12px; border-radius: 10px; font-size: 12px;
+         background: rgba(10, 13, 30, .55); border: 1px solid rgba(255,255,255,.12); backdrop-filter: blur(6px);
+         opacity: .55; transition: opacity .2s; }
+  #ctl:hover, #ctl:focus-within { opacity: 1; }
+  #ctl input { width: 100%; margin: 0; accent-color: #7fb6ff; }
+  #ctl output { text-align: right; font-variant-numeric: tabular-nums; }
+  #ctl #blownV { display: inline-block; font-weight: 700; font-size: 14px; }
+  #ctl button { font: inherit; font-size: 11px; color: #fff; background: rgba(255,255,255,.1); border: 1px solid rgba(255,255,255,.2);
+                border-radius: 6px; padding: 2px 8px; cursor: pointer; justify-self: start; }
+  #ctl button:disabled { opacity: .4; cursor: default; }
+  @media (max-width: 480px) { #ctl { grid-template-columns: auto 1fr 3.2em; left: 10px; bottom: 30px; } }
+</style>
+</head>
+<body>
+<div id="sea"></div>
+<div id="st">connecting...</div>
+<div id="ctl">
+  <label for="speed">Speed</label><input id="speed" type="range" min="0" max="5" step="0.1" value="1"><output id="speedV"></output>
+  <label for="size">Size</label><input id="size" type="range" min="0.15" max="3" step="0.05" value="1"><output id="sizeV"></output>
+  <span title="Bubbles you popped (double-click a bubble)">Blown</span><button id="restore" disabled title="Show the popped bubbles again">Bring back</button><output id="blownV">0</output>
+</div>
+<script>
+const POLL_MS = 1000;
+const QS = new URLSearchParams(location.search);
+const qsServer = QS.get('server');
+// Absolute paths only (a relative path breaks when the page is served from a nested URL).
+const BASE = qsServer ? (/^https?:\/\//.test(qsServer) ? qsServer : 'http://' + qsServer).replace(/\/+$/, '')
+           : location.protocol === 'file:' ? 'http://127.0.0.1:8080'
+           : '';
+const API = BASE + '/api/sensors/read';
+const SDB_API = BASE + '/api/sensors/sdb';
+
+// Each JSON kind has its own supported Version range (see SKILL.md "Version").
+const VERSIONS = { read: { min: 1, current: 1 }, sdb: { min: 1, current: 1 } };
+function versionError(root, kind) {
+  const r = VERSIONS[kind], v = root && root.Version;
+  if (v === undefined) return `${kind}: 'Version' is missing`;
+  if (!Number.isInteger(v) || v < r.min || v > r.current) return `${kind}: unsupported 'Version' ${v} (supported: ${r.min}..${r.current})`;
+  return '';
+}
+
+// "Major" readings, first match per rule wins. sensor/label are regexes; units = accepted unit -> value treated as 100 % for size/colour.
+const RULES = [
+  { name: 'CPU Temp',  label: /^(CPU Package|CPU \(Tctl\/Tdie\)|CPU Die|Core Max|CPU Tctl)/i, units: { '°C': 100 } },
+  { name: 'CPU Load',  label: /^Total CPU Usage/i,                                            units: { '%': 100 } },
+  { name: 'CPU Power', label: /^CPU Package Power|^CPU PPT/i,                                 units: { 'W': 200 } },
+  { name: 'CPU Clock', label: /^(Core Clocks \(avg\)|Average Effective Clock|Core 0 Clock)/i, units: { 'MHz': 5500 } },
+  { name: 'GPU Temp',  sensor: /GPU|NVIDIA|Radeon|Intel Arc/i, label: /^GPU Temperature$/i,  units: { '°C': 90 } },
+  { name: 'GPU Load',  sensor: /GPU|NVIDIA|Radeon|Intel Arc/i, label: /^GPU Core Load|^GPU Utilization/i, units: { '%': 100 } },
+  { name: 'GPU Power', sensor: /GPU|NVIDIA|Radeon|Intel Arc/i, label: /^GPU (Card |Chip |Total )?Power/i, units: { 'W': 400 } },
+  { name: 'GPU Clock', sensor: /GPU|NVIDIA|Radeon|Intel Arc/i, label: /^GPU Clock$/i,        units: { 'MHz': 3000 } },
+  { name: 'VRAM',      sensor: /GPU|NVIDIA|Radeon|Intel Arc/i, label: /^GPU Memory Usage$/i, units: { '%': 100 } },
+  { name: 'RAM',       label: /^Physical Memory Load$/i,                                      units: { '%': 100 } },
+  { name: 'Disk Temp', sensor: /S\.M\.A\.R\.T|Drive/i, label: /^(Drive )?Temperature( 1)?$/i, units: { '°C': 80 } },
+  { name: 'Fan',       label: /^(CPU|Fan1|Fan #?1|System 1|Chassis1)/i,                       units: { 'RPM': 2500 } },
+  { name: 'Net Down',  label: /^Current DL rate/i,                                            units: { 'KB/s': 100000, 'MB/s': 100 } },
+  { name: 'Net Up',    label: /^Current UP rate/i,                                            units: { 'KB/s': 100000, 'MB/s': 100 } },
+];
+
+// Generic fill-in after the named rules: any other reading with one of these units, up to ?bubbles=N (default 30) in total.
+const EXTRA = [ ['°C', 100], ['%', 100], ['W', 200], ['RPM', 2500], ['V', 14], ['MHz', 5500], ['MB/s', 100], ['KB/s', 100000] ];
+// Optional hard cap (?bubbles=N); by default every numeric reading is a candidate and how many are shown depends only
+// on the Size slider and the window (see fitList): smaller bubbles = more bubbles, until all readings are on screen.
+const MAX_BUBBLES = parseInt(QS.get('bubbles'), 10) || Infinity;
+
+// ---- JSON layout helpers -------------------------------------------------------------------------------------------
+// read: top-level objects are sensors; inside, "<name>": {"<type>": {"Value": ".."}} at any depth (groups may nest).
+// Older flat layout "<name>": {"Value": .., "Unit": ..} is accepted too. Units live in the SDB (fetched once).
+const SEP = '\u0001';
+const SDB_META = new Set(['tSensorLocation', 'tReadingLocation', 'tReadingType']);
+const TYPE_UNIT = { '1': '°C', '2': 'V', '3': 'RPM', '4': 'A', '5': 'W', '6': 'MHz', '7': '%' };  // fallback without SDB
+const isObj = o => o && typeof o === 'object' && !Array.isArray(o);
+const num = v => typeof v === 'number' ? v : parseFloat(String(v).replace(/,/g, ''));
+let units = new Map();   // sensor SEP path [SEP type] -> unit
+
+function sdbWalk(node, sensor, path, out) {
+  for (const [k, o] of Object.entries(node)) {
+    if (!isObj(o) || SDB_META.has(k)) continue;
+    if (/^\d+$/.test(k) && 'hide' in o) {                       // type node
+      if (typeof o.Unit === 'string') out.set(sensor + SEP + path + SEP + k, o.Unit);
+      continue;
+    }
+    const p = path ? path + SEP + k : k;
+    if (typeof o.Unit === 'string') out.set(sensor + SEP + p, o.Unit);   // flat layout (no type level)
+    sdbWalk(o, sensor, p, out);
+  }
+}
+
+async function loadSdb() {
+  try {
+    const ctl = new AbortController();
+    const timer = setTimeout(() => ctl.abort(), 2000);
+    const res = await fetch(SDB_API, { cache: 'no-store', signal: ctl.signal });
+    clearTimeout(timer);
+    if (!res.ok) return;
+    const root = await res.json();
+    if (versionError(root, 'sdb')) return;                      // unusable: fall back to units by reading type
+    const m = new Map();
+    for (const [s, o] of Object.entries(root)) if (isObj(o)) sdbWalk(o, s, '', m);
+    units = m;
+  } catch (e) { /* optional: values still work, units come from the reading type */ }
+}
+
+function readWalk(node, sensor, path, out) {
+  for (const [k, o] of Object.entries(node)) {
+    if (!isObj(o)) continue;
+    if (/^\d+$/.test(k) && 'Value' in o) {                      // type node of the reading at `path`
+      out.push(reading(sensor, path, k, o));
+      continue;
+    }
+    const p = path ? path + SEP + k : k;
+    if ('Value' in o) out.push(reading(sensor, p, String(o.Type ?? ''), o));   // flat layout
+    readWalk(o, sensor, p, out);
+  }
+}
+
+function reading(sensor, path, type, o) {
+  const label = path ? path.slice(path.lastIndexOf(SEP) + 1) : sensor;
+  const unit = typeof o.Unit === 'string' ? o.Unit
+             : units.get(sensor + SEP + path + SEP + type) ?? units.get(sensor + SEP + path) ?? TYPE_UNIT[type] ?? '';
+  return { id: sensor + SEP + path + SEP + type, sensor, label: label.trim(), unit, value: o.Value };
+}
+
+function flatten(root) {
+  const out = [];
+  for (const [s, o] of Object.entries(root)) if (isObj(o)) readWalk(o, s, '', out);
+  return out;
+}
+
+function pick(readings) {
+  const out = [], used = new Set();
+  for (const rule of RULES) {
+    for (const r of readings) {
+      if (rule.sensor && !rule.sensor.test(r.sensor)) continue;
+      const max = rule.units[r.unit];
+      if (max === undefined || !rule.label.test(r.label)) continue;
+      const v = num(r.value);
+      if (!isFinite(v)) continue;
+      used.add(r.id);
+      out.push({ id: rule.name, name: rule.name, v, unit: r.unit, max, cool: COOL.has(rule.name) });
+      break;
+    }
+  }
+  for (const [unit, max] of EXTRA) {
+    for (const r of readings) {
+      if (out.length >= MAX_BUBBLES) return out;
+      if (r.unit !== unit || used.has(r.id)) continue;
+      const v = num(r.value);
+      if (!isFinite(v)) continue;
+      used.add(r.id);
+      out.push({ id: r.id, name: r.label, v, unit, max, cool: unit !== '°C' && unit !== '%' && unit !== 'W' });
+    }
+  }
+  // Last: every other numeric reading (other units or none), so very small bubbles can show everything.
+  for (const r of readings) {
+    if (out.length >= MAX_BUBBLES) return out;
+    if (used.has(r.id)) continue;
+    const v = num(r.value);
+    if (!isFinite(v)) continue;
+    used.add(r.id);
+    out.push({ id: r.id, name: r.label, v, unit: r.unit, max: 100, cool: true });
+  }
+  return out;
+}
+
+// green -> yellow -> red by fraction of max; clocks/fans/network are "cool" colours since high is not bad
+const COOL = new Set(['CPU Clock', 'GPU Clock', 'Fan', 'Net Down', 'Net Up']);
+function colour(b) {
+  const f = Math.min(1, Math.max(0, b.v / b.max));
+  if (b.cool) { const h = 190 + f * 80; return `hsl(${h} 80% 50%)`; }
+  return `hsl(${130 - f * 130} 80% ${48 - f * 4}%)`;
+}
+function fmt(b) {
+  const d = b.unit === 'MHz' || b.unit === 'RPM' || b.unit === '°C' ? 0 : 1;
+  return b.v.toLocaleString('en-US', { maximumFractionDigits: d }) + (b.unit ? ' ' + b.unit : '');
+}
+
+const sea = document.getElementById('sea');
+const stEl = document.getElementById('st');
+const nodes = new Map();   // id -> {el, x, y, vx, vy, d}
+
+// Sliders (memory only, nothing is stored; initial values may come from ?speed= / ?size=).
+const speedEl = document.getElementById('speed'), sizeEl = document.getElementById('size');
+const speedV = document.getElementById('speedV'), sizeV = document.getElementById('sizeV');
+for (const [el, key] of [[speedEl, 'speed'], [sizeEl, 'size']]) {
+  const v = parseFloat(QS.get(key));
+  if (isFinite(v)) el.value = Math.min(+el.max, Math.max(+el.min, v));
+}
+let speed = +speedEl.value, sizeK = +sizeEl.value;
+function showCtl() { speedV.textContent = speed.toFixed(1) + '×'; sizeV.textContent = sizeK.toFixed(2) + '×'; }
+showCtl();
+// Slider drags and window resizes fire many events: re-layout at most once per animation frame.
+let relayoutPending = false;
+function scheduleUpdate() {
+  if (relayoutPending) return;
+  relayoutPending = true;
+  requestAnimationFrame(() => { relayoutPending = false; update(lastList); });
+}
+speedEl.addEventListener('input', () => { speed = +speedEl.value; showCtl(); });
+sizeEl.addEventListener('input', () => { sizeK = +sizeEl.value; showCtl(); scheduleUpdate(); });
+addEventListener('resize', scheduleUpdate);
+
+function sizeFor(b) {
+  const f = Math.min(1, Math.max(0, b.v / b.max));
+  const base = Math.min(innerWidth, innerHeight) / 5.5 * sizeK;
+  return Math.max(24, Math.round(base * (0.7 + 0.6 * f)));
+}
+
+// Bubbles are taken in priority order (named rules first) while their total area fits into FILL of the screen.
+// The first one that does not fit ends the list. Shown bubbles may use the full budget, new ones only 90 % of it,
+// so a bubble at the edge does not pop and reappear on every small value change.
+const FILL = 0.5;
+function fitList(list) {
+  const budget = innerWidth * innerHeight * FILL;
+  const out = [];
+  let used = 0;
+  for (const b of list) {
+    const d = Math.min(sizeFor(b), innerWidth, innerHeight);
+    used += Math.PI / 4 * d * d;
+    if (used > (nodes.has(b.id) ? budget : budget * 0.9)) break;
+    out.push(b);
+  }
+  return out;
+}
+
+// Pop: the bubble leaves the simulation at once, its element plays the burst and is then removed.
+// Burst = white flash + two shock-wave rings + droplets of random size/distance; byUser adds a floating "+1".
+// Effect budget: a full burst is ~20-50 animated elements, so mass pops (Size slider up, window shrink) would create
+// thousands. Only the first FULL_PER_UPDATE pops of one update and only while fewer than MAX_PARTS burst elements are
+// alive get the full burst; the others just play the cheap bubble fade. User pops always get the full burst.
+const FULL_PER_UPDATE = 6, MAX_PARTS = 400;
+let liveParts = 0;
+function part(cls, cx, cy, c, size, ms) {
+  const p = document.createElement('div');
+  p.className = cls;
+  p.style.left = cx + 'px'; p.style.top = cy + 'px'; p.style.setProperty('--c', c);
+  if (size) p.style.width = p.style.height = size + 'px';
+  sea.appendChild(p);
+  liveParts++;
+  setTimeout(() => { p.remove(); liveParts--; }, ms);
+  return p;
+}
+function blow(n, byUser, full = true) {
+  const el = n.el, c = n.colour || '#fff', cx = n.x + n.d / 2, cy = n.y + n.d / 2;
+  el.classList.add('pop');
+  setTimeout(() => el.remove(), 360);
+  if (!byUser && (!full || liveParts >= MAX_PARTS)) return;
+  part('flash', cx, cy, c, n.d, 450);
+  part('ring', cx, cy, c, n.d, 700);
+  part('ring r2', cx, cy, c, n.d, 1050);
+  const count = 18 + Math.round(n.d / 12);
+  for (let i = 0; i < count; i++) {
+    const a = (i / count) * Math.PI * 2 + Math.random() * 0.5, r = n.d * (0.6 + Math.random() * 0.9);
+    const s = 4 + Math.random() * Math.max(6, n.d / 14);
+    const t = 450 + Math.random() * 400;
+    const dr = part('drop', cx, cy, c, s, t + 50);
+    dr.style.background = Math.random() < 0.3 ? '#fff' : c;
+    dr.style.boxShadow = `0 0 8px ${c}`;
+    dr.style.setProperty('--dx', Math.cos(a) * r + 'px');
+    dr.style.setProperty('--dy', Math.sin(a) * r + 'px');
+    dr.style.setProperty('--t', t + 'ms');
+  }
+  if (byUser) part('plus', cx, cy, c, 0, 950).textContent = '+1';
+}
+
+// Double-click pops a bubble for good (until "Bring back"); the freed space lets the next bubbles in.
+const userBlown = new Set();
+let blownCount = 0;
+const blownV = document.getElementById('blownV'), restoreBtn = document.getElementById('restore');
+function showBlown() {
+  blownV.textContent = blownCount;
+  blownV.classList.remove('bump'); void blownV.offsetWidth; blownV.classList.add('bump');
+  restoreBtn.disabled = userBlown.size === 0;
+  restoreBtn.textContent = userBlown.size ? `Bring back (${userBlown.size})` : 'Bring back';
+}
+sea.addEventListener('dblclick', e => {
+  const el = e.target.closest('.bubble');
+  if (!el || el.classList.contains('pop')) return;
+  const n = nodes.get(el.dataset.id);
+  if (!n) return;
+  nodes.delete(el.dataset.id);
+  userBlown.add(el.dataset.id);
+  blownCount++;
+  blow(n, true);
+  showBlown();
+  update(lastList);
+});
+restoreBtn.addEventListener('click', () => { userBlown.clear(); showBlown(); update(lastList); });
+
+let lastList = [];
+function update(all) {
+  lastList = all;
+  const list = fitList(all.filter(b => !userBlown.has(b.id)));
+  const ids = new Set(list.map(b => b.id)), known = new Set(all.map(b => b.id));
+  let pops = 0;
+  for (const [id, n] of nodes) if (!ids.has(id)) {
+    nodes.delete(id);
+    if (known.has(id)) blow(n, false, pops++ < FULL_PER_UPDATE);   // pushed out by size = pop
+    else n.el.remove();                                             // gone from the data = just remove
+  }
+  for (const b of list) {
+    let n = nodes.get(b.id);
+    if (!n) {
+      const el = document.createElement('div');
+      el.className = 'bubble';
+      el.dataset.id = b.id;
+      el.innerHTML = '<div class="v"></div><div class="l"></div>';
+      sea.appendChild(el);
+      const d0 = sizeFor(b);
+      n = { el, x: Math.random() * Math.max(0, innerWidth - d0), y: Math.random() * Math.max(0, innerHeight - d0),
+            vx: (Math.random() - .5) * 40, vy: (Math.random() - .5) * 40, d: d0 };
+      nodes.set(b.id, n);
+    }
+    // Write styles only when they change: with hundreds of bubbles, rewriting unchanged gradients/shadows on every
+    // update forces needless style recalcs and repaints.
+    const d = sizeFor(b), c = colour(b), text = fmt(b), st = n.el.style;
+    n.d = d;
+    n.colour = c;
+    if (n.sd !== d) {
+      n.sd = d;
+      st.width = st.height = d + 'px';
+      st.fontSize = Math.round(d / 5) + 'px';
+    }
+    if (n.sc !== c || n.sdc !== d) {
+      n.sc = c; n.sdc = d;
+      st.background = `radial-gradient(circle at 32% 28%, rgba(255,255,255,.65), ${c} 45%, rgba(0,0,0,.35) 120%)`;
+      st.boxShadow = `0 0 ${Math.round(d / 4)}px ${c}, inset 0 0 ${Math.round(d / 6)}px rgba(255,255,255,.25)`;
+    }
+    if (n.st !== text || n.sn !== b.name) {
+      n.st = text; n.sn = b.name;
+      n.el.firstChild.textContent = text;
+      n.el.lastChild.textContent = b.name;
+      n.el.title = b.name + ': ' + text;
+    }
+  }
+}
+
+// drifting + bouncing off walls and each other
+let last = performance.now();
+function frame(t) {
+  const dt = Math.min(0.05, (t - last) / 1000); last = t;
+  const arr = [...nodes.values()];
+  for (const n of arr) {
+    n.x += n.vx * dt * speed; n.y += n.vy * dt * speed;
+    if (n.x < 0) { n.x = 0; n.vx = Math.abs(n.vx); }
+    if (n.y < 0) { n.y = 0; n.vy = Math.abs(n.vy); }
+    if (n.x + n.d > innerWidth)  { n.x = innerWidth - n.d;  n.vx = -Math.abs(n.vx); }
+    if (n.y + n.d > innerHeight) { n.y = innerHeight - n.d; n.vy = -Math.abs(n.vy); }
+  }
+  for (let i = 0; i < arr.length; i++) for (let j = i + 1; j < arr.length; j++) {
+    const a = arr[i], b = arr[j];
+    const dx = (b.x + b.d / 2) - (a.x + a.d / 2), dy = (b.y + b.d / 2) - (a.y + a.d / 2);
+    const dist = Math.hypot(dx, dy) || 1, min = (a.d + b.d) / 2;
+    if (dist < min) {
+      const nx = dx / dist, ny = dy / dist, push = (min - dist) / 2;
+      a.x -= nx * push; a.y -= ny * push; b.x += nx * push; b.y += ny * push;
+      const rel = (b.vx - a.vx) * nx + (b.vy - a.vy) * ny;
+      if (rel < 0) { a.vx += rel * nx; a.vy += rel * ny; b.vx -= rel * nx; b.vy -= rel * ny; }
+    }
+  }
+  for (const n of arr) n.el.style.transform = `translate(${n.x}px, ${n.y}px)`;
+  requestAnimationFrame(frame);
+}
+requestAnimationFrame(frame);
+
+// Fixed-rate polling: the next tick is scheduled before the fetch; responses older than the last shown one are dropped.
+let seq = 0, shown = 0, stopped = false;
+async function tick() {
+  if (stopped) return;
+  setTimeout(tick, POLL_MS);
+  const my = ++seq;
+  try {
+    const res = await fetch(API, { cache: 'no-store' });
+    const text = await res.text();                              // 404 / 503-while-stopping bodies are plain text
+    let json = null;
+    try { json = JSON.parse(text); } catch (e) { /* not JSON */ }
+    if (!res.ok || !json || json.error) throw new Error((json && json.error) || ('HTTP ' + res.status + (text ? ': ' + text.slice(0, 80) : '')));
+    if (my < shown) return;
+    shown = my;
+    const verr = versionError(json, 'read');
+    if (verr) { stopped = true; throw new Error(verr + ' - polling stopped'); }
+    const list = pick(flatten(json));
+    update(list);
+    stEl.className = '';
+    stEl.textContent = list.length ? String(json.Timestamp || '').trim() + ' · ' + nodes.size + ' bubbles'
+                                   : 'no matching sensors found';
+  } catch (e) {
+    stEl.className = 'err';
+    stEl.textContent = e instanceof TypeError ? 'cannot reach ' + API : (e.message || String(e));
+  }
+}
+loadSdb().then(tick);
+</script>
+</body>
+</html>
