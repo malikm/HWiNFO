@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>My sensors</title>
+<style>
+  body { font: 14px system-ui, sans-serif; margin: 1rem; }
+  h3   { margin: 1rem 0 .25rem; }
+  td   { padding: 2px 12px 2px 0; }
+  .err { color: #b00020; }
+</style>
+</head>
+<body>
+<div id="status">Loading...</div>
+<div id="out"></div>
+<script>
+const POLL_MS = 2000, HOST = location.protocol === 'file:' ? 'https://127.0.0.1:8080' : '';  // opened from disk: set the server address
+let units = {};                         // "sensor/reading/type" -> unit
+ 
+async function getJson(path) {
+  const r = await fetch(HOST + path, { cache: 'no-store' });
+  if (!r.ok) {
+    const t = await r.text();
+    let msg = t;
+    try { msg = JSON.parse(t).error || t; } catch (e) {}
+    throw new Error('HTTP ' + r.status + ': ' + msg);
+  }
+  return r.json();
+}
+ 
+// A reading is an object with "Value" (directly under its name, or under a numeric type key).
+const isReading = v => v && typeof v === 'object' && 'Value' in v;
+ 
+// Collect readings from a sensor (or group) recursively.
+function collect(node, path, out) {
+  for (const [k, v] of Object.entries(node)) {
+    if (!v || typeof v !== 'object') continue;
+    if (isReading(v)) out.push(/^\d+$/.test(k) ? { path: path, type: k, value: v.Value }
+                                              : { path: path.concat(k), type: '', value: v.Value });
+    else collect(v, path.concat(k), out);
+  }
+}
+ 
+// Fill the unit map from the SDB (flagged nodes have "hide").
+function collectUnits(node, path) {
+  for (const [k, v] of Object.entries(node)) {
+    if (!v || typeof v !== 'object') continue;
+    if ('hide' in v) { const p = path.join('/'); units[p + '/' + k] = v.Unit || ''; if (!(p in units)) units[p] = v.Unit || ''; }
+    else collectUnits(v, path.concat(k));
+  }
+}
+ 
+async function loadUnits() {
+  try {
+    const sdb = await getJson('/api/sensors/sdb');
+    for (const [sensor, node] of Object.entries(sdb))
+      if (typeof node === 'object') collectUnits(node, [sensor]);
+  } catch (e) { /* no units, values are still shown */ }
+}
+ 
+function render(data) {
+  const out = document.getElementById('out');
+  out.textContent = '';
+  for (const [sensor, node] of Object.entries(data)) {
+    if (!node || typeof node !== 'object') continue;   // timing fields, Version
+    const rows = [];
+    collect(node, [], rows);
+    const h = document.createElement('h3');
+    h.textContent = sensor;
+    const t = document.createElement('table');
+    for (const r of rows) {
+      const tr = t.insertRow();
+      tr.insertCell().textContent = r.path.join(' / ');
+      const key = sensor + '/' + r.path.join('/');
+      const unit = units[key + '/' + r.type] || units[key] || '';
+      tr.insertCell().textContent = r.value + (unit ? ' ' + unit : '');
+    }
+    out.append(h, t);
+  }
+}
+ 
+async function tick() {
+  const next = setTimeout(tick, POLL_MS);     // fixed rate: schedule first
+  try {
+    const data = await getJson('/api/sensors/read');
+    if (data.Version === undefined) throw new Error('Version is missing');
+    if (data.Version !== 1) throw new Error('Unsupported Version ' + data.Version);
+    render(data);
+    document.getElementById('status').textContent = 'Updated ' + data.Timestamp;
+    document.getElementById('status').className = '';
+  } catch (e) {
+    document.getElementById('status').textContent = e.message;
+    document.getElementById('status').className = 'err';
+  }
+}
+ 
+loadUnits().then(tick);
+</script>
+</body>
+</html>

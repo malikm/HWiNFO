@@ -1,0 +1,1404 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>HWiNFO Sensors Status</title>
+<meta name="color-scheme" content="light dark">
+<script>
+// Theme before first paint: the OS preference. Nothing is stored in the browser; the toggle lasts until reload.
+(function () {
+  var t = matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+  document.documentElement.setAttribute('data-theme', t);
+})();
+</script>
+<style>
+  /* ---- Design tokens. Light is the default; html[data-theme=dark] overrides (set before first paint, see <head>) ---- */
+  :root {
+    color-scheme: light;
+    --bg: #f3f5f9;
+    --bg-glow: radial-gradient(900px 420px at 12% -10%, rgba(79,109,245,.14), transparent 60%),
+               radial-gradient(700px 380px at 100% 0%, rgba(168,85,247,.10), transparent 60%);
+    --surface: #ffffff;
+    --surface-2: #f6f8fc;
+    --glass: rgba(255,255,255,.78);
+    --line: #e5e9f1;
+    --line-soft: #eef1f6;
+    --txt: #141a26;
+    --dim: #667189;
+    --accent: #4f6df5;
+    --accent-2: #a855f7;
+    --accent-soft: rgba(79,109,245,.11);
+    --accent-line: rgba(79,109,245,.35);
+    --ok: #12a150;
+    --err: #e03a3a;
+    --btn: #ffffff;
+    --btn-hover: #f0f3fa;
+    --cur: rgba(79,109,245,.13);
+    --bar: rgba(79,109,245,.30);
+    --shadow: 0 1px 2px rgba(20,26,38,.05), 0 12px 32px -8px rgba(20,26,38,.12);
+    --pop: 0 4px 6px rgba(20,26,38,.06), 0 16px 40px -6px rgba(20,26,38,.22);
+    --grad: linear-gradient(90deg, var(--accent), var(--accent-2));
+    --radius: 14px;
+  }
+  :root[data-theme=dark] {
+    color-scheme: dark;
+    --bg: #0a0d14;
+    --bg-glow: radial-gradient(900px 420px at 12% -10%, rgba(99,122,255,.20), transparent 60%),
+               radial-gradient(700px 380px at 100% 0%, rgba(168,85,247,.14), transparent 60%);
+    --surface: #111622;
+    --surface-2: #161c2b;
+    --glass: rgba(17,22,34,.78);
+    --line: #232b3d;
+    --line-soft: #1a2132;
+    --txt: #e7ebf5;
+    --dim: #8893aa;
+    --accent: #7b92ff;
+    --accent-2: #c084fc;
+    --accent-soft: rgba(123,146,255,.14);
+    --accent-line: rgba(123,146,255,.40);
+    --ok: #34d17b;
+    --err: #ff6b6b;
+    --btn: #1a2133;
+    --btn-hover: #222b42;
+    --cur: rgba(123,146,255,.17);
+    --bar: rgba(123,146,255,.34);
+    --shadow: 0 1px 2px rgba(0,0,0,.4), 0 16px 40px -8px rgba(0,0,0,.6);
+    --pop: 0 4px 6px rgba(0,0,0,.4), 0 18px 44px -6px rgba(0,0,0,.7);
+  }
+  * { box-sizing: border-box; }
+  html { background: var(--bg); }
+  body { margin: 0; min-height: 100vh; background: var(--bg-glow), var(--bg); background-attachment: fixed; color: var(--txt);
+         font: 13px/1.4 Inter, "Segoe UI Variable", "Segoe UI", system-ui, -apple-system, Roboto, Arial, sans-serif;
+         -webkit-font-smoothing: antialiased; transition: background-color .25s, color .25s; }
+  .win { max-width: 980px; margin: 24px auto; background: var(--surface); border: 1px solid var(--line);
+         border-radius: var(--radius); box-shadow: var(--shadow); overflow: clip; }
+  @media (max-width: 1020px) { .win { margin: 0; border-radius: 0; border-left: 0; border-right: 0; } }
+
+  /* ---- Top bar ---- */
+  .title { position: sticky; top: 0; z-index: 5; display: flex; flex-wrap: wrap; align-items: center; gap: 8px 8px;
+           padding: 12px 16px; background: var(--glass); backdrop-filter: blur(14px) saturate(1.4);
+           -webkit-backdrop-filter: blur(14px) saturate(1.4); border-bottom: 1px solid var(--line);
+           font-size: 14px; font-weight: 650; letter-spacing: -.01em; }
+  .title .logo { width: 22px; height: 22px; border-radius: 6px; flex: none;
+                 background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAJdSURBVFhH7ZfPixJhGMfn7HQRHV9/jmTCqOAhESSQxIpg99RWeIqCqP6EPbRn25WtqCWCjY6bsF0ikG0jdNqVrC1B6FYdii4t9OtkQrbzxPOuI877jiWrYxC+8AHn/c7zPB8ZnWEEobPE7Nlp5+zqOsmr2ySvfrOIbefs/XXxyLlpfS5d9gs3CiSvaiSvwpjQ7JeWCrvf/Nj5GbPhBxY3Ye7xWwPywgbbaBi0fccvzgjS5QdVkxCSt54DuyLXq9x5wyDNPawKJK+22AAZhwDORgF2k/InAd/8Uzi4VBvJJdmTQObOS3rcau/A8tZHKsTWD8pQAvq6+ewDVz8oIxH4/uMnVz8oIxHAFVjY22X4fwXwXOXa3/+2lgjgj/LXjka5uvme622pwKHbL0DTtO4+fsZebH/LBI7efcVGcHh5i+tvmQDy5N2X7v6jN5+53gMJyIUNOH2vYUC/4+GT8szqawPunlrPFRVOrTTg5ErDsG9GX4FxIZD9CvxLBEIImOHz+SCVShnweDw08/v9XKbXeb1eLtPrzOgrkEwmDT8yXJFIhGaZTIaNIBAI0CyRSLARxGIxrv9EYCIwEegVaLGbiKIohqcarn4CzWYT3G63qUC73YZgMMj179ASJEmqmgSUSqViaNZPoFgsdmtYgVKpxPXVwdmCKIonCCEaGyLxeBzq9Xq3mZlAuVyGcDhsKlCr1SAajXJ9O2g4e/fl1G6f7yeBZLNZyOVy9PaMx6FQiB6n02nuXFmWaYaSbNaDhjMNb8g2m23K4XCsuVyuT4SQr1aAvZ1O55ooilP63N8B9GmE5q6pEAAAAABJRU5ErkJggg==) center/contain no-repeat; }
+  .title .st { margin-left: auto; font-size: 12px; font-weight: 500; letter-spacing: 0; color: var(--dim);
+               white-space: nowrap; padding: 3px 10px; border-radius: 999px; background: var(--surface-2);
+               border: 1px solid var(--line); max-width: 46ch; overflow: hidden; text-overflow: ellipsis; }
+  .title .st.ok::before  { content: ""; display: inline-block; width: 7px; height: 7px; margin-right: 7px; border-radius: 50%;
+                           background: var(--ok); box-shadow: 0 0 0 3px color-mix(in srgb, var(--ok) 22%, transparent);
+                           vertical-align: 1px; }
+  .title .st.err::before { content: ""; display: inline-block; width: 7px; height: 7px; margin-right: 7px; border-radius: 50%;
+                           background: var(--err); box-shadow: 0 0 0 3px color-mix(in srgb, var(--err) 22%, transparent);
+                           vertical-align: 1px; }
+  .title .st.err { color: var(--err); }
+  .title .ping { font-size: 12px; font-weight: 500; color: var(--dim); white-space: nowrap; font-variant-numeric: tabular-nums; }
+
+  button { font: inherit; font-size: 12px; font-weight: 550; letter-spacing: 0; color: var(--txt); background: var(--btn);
+           border: 1px solid var(--line); border-radius: 9px; padding: 5px 12px; cursor: pointer;
+           transition: background .15s, border-color .15s, transform .08s, box-shadow .15s; }
+  button:hover { background: var(--btn-hover); border-color: var(--accent-line); }
+  button:active { transform: translateY(1px); }
+  button:focus-visible, input:focus-visible { outline: 2px solid var(--accent); outline-offset: 1px; }
+  button:disabled { opacity: .45; cursor: default; transform: none; }
+  button.primary { color: #fff; border-color: transparent; background: var(--grad); }
+  button.primary:hover { filter: brightness(1.08); border-color: transparent; }
+  button.icon { width: 32px; height: 28px; padding: 0; display: inline-grid; place-items: center; }
+  button.icon svg { width: 16px; height: 16px; stroke: currentColor; fill: none; stroke-width: 1.8; stroke-linecap: round; stroke-linejoin: round; }
+  #themeBtn .moon { display: none; }
+  :root[data-theme=dark] #themeBtn .sun { display: none; }
+  :root[data-theme=dark] #themeBtn .moon { display: block; }
+
+  .settings { display: none; padding: 10px 16px; background: var(--surface-2); border-bottom: 1px solid var(--line);
+              font-size: 12px; color: var(--dim); }
+  .settings.open { display: block; }
+  .settings input { width: 84px; margin-left: 8px; font: inherit; color: var(--txt); background: var(--surface);
+                    border: 1px solid var(--line); border-radius: 8px; padding: 3px 8px; }
+  .settings .chk { margin-right: 18px; cursor: pointer; }
+  .settings .chk input { width: auto; margin: 0 6px 0 0; vertical-align: -2px; accent-color: var(--accent); }
+  .settings input:invalid { border-color: var(--err); }
+
+  /* ---- Timing statistics panel ---- */
+  #timing { display: none; padding: 10px 16px; background: var(--surface-2); border-bottom: 1px solid var(--line);
+            font-size: 12px; color: var(--dim); overflow-x: auto; }
+  #timing.open { display: block; }
+  #timing table { width: auto; table-layout: auto; margin: 8px 0; font-variant-numeric: tabular-nums; }
+  #timing th, #timing td { padding: 3px 14px 3px 0; text-align: right; white-space: nowrap; }
+  #timing th { font-weight: 600; color: var(--dim); }
+  #timing th:first-child, #timing td:first-child { text-align: left; }
+  #timing td { color: var(--txt); }
+  #timing td.na { color: var(--dim); }
+  #timing tr.tot td { border-top: 1px solid var(--line); font-weight: 600; }
+
+  /* ---- Live table ---- */
+  table { width: 100%; border-collapse: collapse; table-layout: fixed; }
+  col.name { width: auto; }
+  col.num  { width: 112px; }
+  thead th { position: sticky; top: 0; z-index: 2; background: var(--surface-2); color: var(--dim);
+             font-size: 11px; font-weight: 600; text-transform: uppercase; letter-spacing: .06em;
+             padding: 9px 12px; border-bottom: 1px solid var(--line); text-align: right; }
+  thead th:first-child { text-align: left; }
+
+  tr.sensor td { padding: 14px 12px 4px; }
+  .sh { display: flex; align-items: center; gap: 8px; padding: 7px 10px; font-weight: 650; font-size: 13px; letter-spacing: -.005em;
+        cursor: pointer; user-select: none; position: relative; border-radius: 10px;
+        background: linear-gradient(90deg, var(--accent-soft), transparent 70%); border: 1px solid var(--line-soft);
+        transition: border-color .15s; }
+  .sh:hover { border-color: var(--accent-line); }
+  .sh::before { content: ""; position: absolute; left: 0; top: 7px; bottom: 7px; width: 3px; border-radius: 3px; background: var(--grad); }
+  .chev { width: 14px; text-align: center; color: var(--dim); font-size: 9px; transition: transform .15s; flex: none; }
+  .chev.leaf { visibility: hidden; }
+  .shut > .sh .chev, tr.row.shut td.n .chev { transform: rotate(-90deg); }
+  tbody.collapsed tr.row { display: none; }
+  tr.row.hid { display: none; }
+  tr.gap td { height: 6px; }
+
+  tr.row td { padding: 5px 12px; text-align: right; white-space: nowrap; font-variant-numeric: tabular-nums;
+              border-bottom: 1px solid var(--line-soft); transition: background-color .15s; }
+  tr.row td.n { text-align: left; overflow: hidden; text-overflow: ellipsis; }
+  tr.row td.n svg { vertical-align: -2px; margin-right: 8px; color: var(--dim); }
+  tr.row td.n .chev { display: inline-block; vertical-align: baseline; margin-right: 2px; }
+  tr.row.grp td.n { font-weight: 600; cursor: pointer; user-select: none; }
+  tr.row:hover td { background: var(--accent-soft); }
+  /* Current column: tinted only while the value changed since the previous update */
+  tr.row td.c { font-weight: 600; }
+  tr.row td.c.chg { background-color: var(--cur); }
+
+  /* ---- SDB filter view ---- */
+  #sdb { display: none; }
+  #sdb.open { display: block; }
+  .sdbbar { display: flex; flex-wrap: wrap; align-items: center; gap: 6px; padding: 10px 16px;
+            background: var(--surface-2); border-bottom: 1px solid var(--line); font-size: 12px; color: var(--dim); }
+  .sdbbar .sp { margin-left: auto; font-weight: 500; }
+  #sdbT td.n { cursor: default; user-select: none; }
+  #sdbT .chev { cursor: pointer; }
+  #sdbT tr.row.sel td { background: color-mix(in srgb, var(--accent) 20%, transparent); }
+  #sdbT thead th:nth-child(2) { text-align: left; }
+  #sdbT td.ty { color: var(--dim); white-space: nowrap; text-align: left; }
+  #sdbT td.ck { text-align: center; cursor: pointer; user-select: none; font-size: 16px; color: var(--dim); }
+  #sdbT td.ck.on { color: var(--accent); }
+  #sdbT td.ck.dis { opacity: .35; cursor: not-allowed; }
+  #ctx { position: fixed; z-index: 10; display: none; min-width: 190px; padding: 5px; background: var(--surface);
+         border: 1px solid var(--line); border-radius: 12px; box-shadow: var(--pop); font-size: 13px; }
+  #ctx div { padding: 6px 12px; border-radius: 8px; cursor: pointer; white-space: nowrap; }
+  #ctx div:hover { background: var(--accent-soft); color: var(--accent); }
+  #ctx div.dis { color: var(--dim); opacity: .6; cursor: default; }
+  #ctx div.dis:hover { background: none; color: var(--dim); }
+  #ctx hr { border: 0; border-top: 1px solid var(--line); margin: 5px 4px; }
+  dialog.sortdlg { color: var(--txt); background: var(--surface); border: 1px solid var(--line); border-radius: 16px;
+                   box-shadow: var(--pop); padding: 18px; width: 480px; max-width: 95vw; }
+  dialog.sortdlg::backdrop { background: rgba(8,10,16,.5); backdrop-filter: blur(3px); }
+  .sortdlg p { margin: 0 0 10px; font-weight: 600; }
+  .sortdlg .lst { max-height: 300px; overflow: auto; border: 1px solid var(--line); border-radius: 10px; padding: 6px 10px;
+                  margin-bottom: 10px; background: var(--surface-2); }
+  .sortdlg .lst label { display: block; padding: 2px 0; cursor: pointer; }
+  .sortdlg .lst .sub { margin-left: 22px; color: var(--dim); }
+  .sortdlg fieldset { border: 1px solid var(--line); border-radius: 10px; margin: 10px 0; }
+  .sortdlg legend { color: var(--dim); font-size: 11px; text-transform: uppercase; letter-spacing: .06em; padding: 0 6px; }
+  .sortdlg fieldset label { display: block; padding: 2px 0; }
+  .sortdlg input[type=text] { width: 100%; font: inherit; color: var(--txt); background: var(--surface-2);
+                              border: 1px solid var(--line); border-radius: 8px; padding: 6px 10px; }
+  .sortdlg input[type=checkbox], .sortdlg input[type=radio] { accent-color: var(--accent); }
+  .sortdlg .btns { display: flex; gap: 6px; justify-content: flex-end; }
+  .sortdlg .btns .l { margin-right: auto; display: flex; gap: 6px; }
+  .sortdlg button { padding: 6px 14px; }
+
+  /* ---- Phones: the live table becomes stacked cards (name on top, Current on its own line, Min/Max/Avg below) so every
+          sensor is readable without sideways scrolling; the Filter table scrolls sideways instead ---- */
+  @media (max-width: 640px) {
+    body { font-size: 14px; }
+    .title { padding: 10px 12px; }
+    .title .st { order: 10; flex: 1 1 100%; margin-left: 0; max-width: none; }
+    .settings { padding: 10px 12px; }
+    .settings label { display: inline-block; margin: 3px 0; }
+    .settings .chk { margin-right: 14px; }
+    button { padding: 8px 12px; }                       /* bigger touch targets */
+    button.icon { width: 38px; height: 34px; }
+
+    #t, #t tbody { display: block; }
+    #t thead { display: none; }                          /* column titles are shown per value instead */
+    #t tr.sensor { display: block; }
+    #t tr.sensor td { display: block; padding: 12px 8px 4px; }
+    #t tr.gap { display: block; }
+    #t tbody.collapsed tr.row, #t tr.row.hid { display: none; }
+    #t tr.row:not(.hid) { display: grid; grid-template-columns: repeat(3, 1fr); gap: 2px 8px; padding: 6px 10px 8px;
+                          border-bottom: 1px solid var(--line-soft); }
+    #t tbody.collapsed tr.row:not(.hid) { display: none; }
+    #t tr.row td { border: 0; padding: 1px 4px; text-align: left; min-width: 0; }
+    #t tr.row td.n { grid-column: 1 / -1; white-space: normal; overflow: visible; font-size: 13px; }
+    #t tr.row td:not(.n):empty { display: none; }        /* group rows / text values without statistics */
+    #t tr.row td:not(.n)::before { display: block; font-size: 10px; font-weight: 600; text-transform: uppercase;
+                                   letter-spacing: .06em; color: var(--dim); }
+    #t tr.row td:nth-child(2)::before { content: "Current"; }
+    #t tr.row td:nth-child(3)::before { content: "Minimum"; }
+    #t tr.row td:nth-child(4)::before { content: "Maximum"; }
+    #t tr.row td:nth-child(5)::before { content: "Average"; }
+    #t tr.row td.c { grid-column: 1 / -1; font-size: 17px; border-radius: 6px; }
+
+    #sdb { overflow-x: auto; }
+    #sdbT { min-width: 560px; }
+    .sdbbar { padding: 8px 12px; }
+  }
+
+  @media (prefers-reduced-motion: reduce) { * { transition: none !important; } }
+</style>
+</head>
+<body>
+<div class="win">
+  <div class="title"><span class="logo"></span><span>HWiNFO&reg; Sensors Status</span>
+    <span class="st" id="st">connecting...</span>
+    <button id="refBtn" type="button" title="Read /api/sensors/read now and validate all sensors">Refresh Sensors</button>
+    <button id="setBtn" type="button">Settings</button>
+    <button id="sdbBtn" type="button">Filter</button>
+    <button id="timBtn" type="button" title="Request / readout / response timing statistics">Timing</button>
+    <button id="pingBtn" type="button">Ping</button><span class="ping" id="pingOut"></span>
+    <button id="themeBtn" class="icon" type="button" title="Switch light / dark theme" aria-label="Switch light / dark theme">
+      <svg class="sun" viewBox="0 0 24 24"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg>
+      <svg class="moon" viewBox="0 0 24 24"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg>
+    </button>
+  </div>
+  <div class="settings" id="settings">
+    <label class="chk"><input id="pollOn" type="checkbox" checked> Poll</label>
+    <label class="chk"><input id="showPct" type="checkbox" checked> Show % bars</label>
+    <label>Polling period (ms)<input id="pollMs" type="number" min="50" step="50" value="2000"></label>
+  </div>
+  <div id="timing">
+    <div id="timSync">not synced</div>
+    <table id="timT"><tbody id="timB"></tbody></table>
+    <button id="timSyncBtn" type="button">Sync clock</button>
+    <button id="timReset" type="button">Reset</button>
+    <span id="timNote"></span>
+  </div>
+  <table id="t">
+    <colgroup><col class="name"><col class="num"><col class="num"><col class="num"><col class="num"></colgroup>
+    <thead><tr><th>Sensor</th><th>Current</th><th>Minimum</th><th>Maximum</th><th>Average</th></tr></thead>
+  </table>
+  <div id="sdb">
+    <div class="sdbbar">
+      <button id="sdbReload" type="button">Reload</button>
+      <button id="sdbExp" type="button">Expand all</button>
+      <button id="sdbCol" type="button">Collapse all</button>
+      <button id="sdbUndo" type="button" disabled>Undo</button>
+      <button id="sdbRedo" type="button" disabled>Redo</button>
+      <button id="sortType" type="button">Sort by Reading Type</button>
+      <button id="sortName" type="button">Sort by Name</button>
+      <button id="sortWords" type="button">Sort by Repeating Words</button>
+      <button id="sdbApply" class="primary" type="button">Apply to server</button>
+      <button id="sdbReset" type="button">Reset on server</button>
+      <span class="sp" id="sdbSt"></span>
+    </div>
+    <table id="sdbT">
+      <colgroup><col class="name"><col style="width:90px"><col style="width:60px"><col style="width:70px"><col style="width:60px"></colgroup>
+      <thead><tr><th>Sensor / Group</th><th>Type</th><th style="text-align:center">Hide</th><th style="text-align:center">Monitor</th><th style="text-align:center">Log</th></tr></thead>
+      <tbody id="sdbB"></tbody>
+    </table>
+  </div>
+</div>
+
+<script>
+'use strict';
+// Served by the Crow server -> same-origin relative URL.
+// Opened from disk (file://) -> talk to the local server directly (CORS is enabled on it).
+// Override with  hwinfo_tree_typed.html?server=192.168.1.10:8080
+const qsServer = new URLSearchParams(location.search).get('server');
+const API = qsServer ? 'http://' + qsServer + '/api/sensors/read'
+          : location.protocol === 'file:' ? 'http://127.0.0.1:8080/api/sensors/read'
+          : '/api/sensors/read';   // absolute: the page may be opened as /api/sensors, where a relative URL breaks
+
+// Every JSON of the API has a root "Version" (integer). Received data without it is accepted (missing fields are shown
+// as NA); a different version is an error and the data is not used. The .flt we send carries the same version.
+// Each kind of JSON has its own version (they can change independently): read data, sdb, and the .flt we send.
+// 'current' is what we send; every version min..current is accepted (backward compatibility).
+const VERSIONS = { read: { min: 1, current: 1 }, sdb: { min: 1, current: 1 }, flt: { min: 1, current: 1 } };
+function checkVersion(json, kind) {
+  if (json === null || typeof json !== 'object' || !('Version' in json)) return;
+  const r = VERSIONS[kind], v = json.Version;
+  if (!Number.isInteger(v) || v < r.min || v > r.current)
+    throw new Error('unsupported ' + kind + " 'Version' " + JSON.stringify(v) + ' (supported: ' +
+                    (r.min === r.current ? r.min : r.min + '..' + r.current) + ')');
+}
+
+// decimals shown per unit (HWiNFO style); everything else gets 1
+const DEC = { 'MB': 0, 'RPM': 0, '°C': 0, 'V': 3, 'W': 3, 'A': 3, 'GB': 3, 'MB/s': 3, 'KB/s': 3, '%': 1, 'x': 1, 'MHz': 1 };
+
+const svg = (inner) => '<svg width="12" height="12" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.2">' + inner + '</svg>';
+const ICONS = {
+  clock: svg('<circle cx="6" cy="6" r="4.8"/><path d="M6 3v3.2l2 1.2"/>'),
+  bolt:  svg('<path d="M7 .8 2.6 6.6H6l-1 4.6 4.4-5.8H6z" fill="#f0b429" stroke="#f0b429"/>'),
+  therm: svg('<path d="M5 7.2V2a1 1 0 0 1 2 0v5.2a2.2 2.2 0 1 1-2 0z"/>'),
+  fan:   svg('<circle cx="6" cy="6" r="1"/><path d="M6 5C5 2 7 .8 8 2.2 8.6 3.4 7 4.6 6 5zM7 6c3-1 4.2 1 2.8 2C8.6 8.6 7.4 7 7 6zM6 7c1 3-1 4.2-2 2.8C3.4 8.6 5 7.4 6 7zM5 6C2 7-.2 5 1.2 4 2.4 3.4 4.6 5 5 6z" stroke-width=".8"/>'),
+  usage: svg('<rect x="1.5" y="1.5" width="9" height="9"/><path d="M1.5 10.5V7h9" fill="#7aa2f7" stroke="#7aa2f7"/>'),
+  other: svg('<circle cx="6" cy="6" r="4.8"/><path d="M6 5.4V9M6 3v.8"/>'),
+};
+// SENSOR_ENTRY_TYPE from the HWiNFO shared memory header; the JSON "Type" holds the number.
+const SENSOR_TYPE = ['NONE', 'TEMP', 'VOLT', 'FAN', 'CURRENT', 'POWER', 'CLOCK', 'USAGE', 'OTHER'];
+const TYPE_ICON = [null, 'therm', 'bolt', 'fan', 'bolt', 'bolt', 'clock', 'usage', 'other'];
+function iconFor(node, unit) {
+  const t = node.Type;
+  if (TYPE_ICON[t]) return ICONS[TYPE_ICON[t]];
+  // NONE / missing Type: guess from the unit
+  if (unit === '°C') return ICONS.therm;
+  if (unit === 'V' || unit === 'W' || unit === 'A') return ICONS.bolt;
+  return ICONS.clock;
+}
+// Static texts are NOT sent with /api/sensors/read (they never change): "Unit" and "Tooltip" of a reading come from
+// the SDB (/api/sensors/sdb), strings next to hide/monitoring/logging of the reading's node. info: row path ->
+// { Unit, Tooltip } (see infoFrom). A Unit / Tooltip inside the read JSON (old servers) wins.
+const info = new Map();
+let infoPromise = null;                         // first SDB fetch, the first render waits for it (units!)
+function titleFor(label, node, path) {
+  return node.Tooltip || (info.get(path) || {}).Tooltip || label;
+}
+function unitOf(node, path) {
+  if (typeof node.Unit === 'string') return node.Unit;
+  const e = info.get(path);
+  return e && typeof e.Unit === 'string' ? e.Unit : '';
+}
+
+// Values arrive pre-formatted as strings: "12,952", "37.4", "Yes"/"No". Thousands separators are stripped.
+const num = (v) => parseFloat(String(v).replace(/,/g, ''));
+
+function fmt(v, unit, isAvg) {
+  const n = num(v);
+  if (!isFinite(n)) return String(v ?? '');
+  if (unit === 'Yes/No') {
+    return isAvg ? Math.round(n * 100) + ' %' : (n >= 0.5 ? 'Yes' : 'No');
+  }
+  const d = unit in DEC ? DEC[unit] : 1;
+  const s = n.toLocaleString('en-US', { minimumFractionDigits: d, maximumFractionDigits: d });
+  return unit ? s + ' ' + unit : s;
+}
+
+const $ = (id) => document.getElementById(id);
+const table = $('t');
+const stEl = $('st');
+let signature = '';
+let sensorsOut = [];             // [{name, tb}]
+let rows = [];                   // flat tree rows, see flatten()
+const shut = new Set();          // paths (sensors and groups) the user collapsed
+const seen = new Set();          // groups already met: new ones start collapsed, later user choice is kept
+const stats = {};                // local min/max/avg: the JSON carries only the current value
+
+// A node is a reading if it has "Value"; any child object is a sub-node.
+// A group (object with children) may also carry its own Value/Unit (shown on the group row).
+const isObj = (v) => v !== null && typeof v === 'object';
+const kids = (o) => Object.entries(o).filter(([, v]) => isObj(v));
+
+// Type level: "<name>": { "<type>": {Value, Unit, ...} } (type = SENSOR_ENTRY_TYPE number, a name may repeat with
+// several types). It is not shown as a tree level: untype() folds it into the reading, which gets Type = <type>.
+// A name with one type keeps its plain key; with several types the keys become "<name>\u0001<type>" (unique key,
+// the label shown is the part before \u0001). Old layout (readings with a Type field) passes through unchanged.
+const isTypeNode = (o) => {
+  const e = Object.entries(o);
+  return e.length > 0 && !('Value' in o) &&
+    e.every(([k, c]) => /^\d+$/.test(k) && isObj(c) && 'Value' in c);
+};
+function untype(node) {
+  const out = {};
+  for (const [k, c] of Object.entries(node)) {
+    if (!isObj(c)) { out[k] = c; continue; }
+    if (isTypeNode(c)) {
+      const types = Object.entries(c);
+      for (const [t, r] of types)
+        out[types.length === 1 ? k : k + '\u0001' + t] = { ...untype(r), Type: +t };
+    } else {
+      out[k] = untype(c);
+    }
+  }
+  // A group (sensor with sub-sensors) keeps its own value the same way, next to its sub-nodes:
+  //   "Core VIDs": { "2": {Value, Unit, ...}, "P-core 0 VID": { "2": {...} } }
+  // The numeric entry is folded into the group itself (first type wins, a group row has one value).
+  if (!('Value' in out)) {
+    const own = Object.keys(out).filter(k => /^\d+$/.test(k) && isObj(out[k]) && 'Value' in out[k]);
+    if (own.length && Object.entries(out).some(([k, v]) => !own.includes(k) && isObj(v))) {
+      const first = out[own[0]];
+      for (const k of own) delete out[k];
+      return { ...first, Type: +own[0], ...out };
+    }
+  }
+  return out;
+}
+const labelOf = (key) => key.split('\u0001')[0];
+
+// Depth-first list of {path, label, depth, node, group, parents:[paths]}; path keys joined with \u0000.
+function flatten(node, path, depth, parents, out) {
+  for (const [key, child] of kids(node)) {
+    const label = labelOf(key);
+    const p = path + '\u0000' + key;
+    const group = kids(child).length > 0;
+    out.push({ path: p, label, depth, node: child, group, parents });
+    if (group) flatten(child, p, depth + 1, parents.concat(p), out);
+  }
+}
+
+function build(sensors) {
+  table.querySelectorAll('tbody').forEach(b => b.remove());
+  sensorsOut = []; rows = [];
+  for (const [rawName, tree] of Object.entries(sensors)) {
+    const name = rawName.trim();
+    const sp = '\u0000' + rawName;
+    const tb = document.createElement('tbody');
+    if (shut.has(sp)) tb.className = 'collapsed shut';
+
+    const hr = document.createElement('tr');
+    hr.className = 'sensor';
+    const hd = document.createElement('td');
+    hd.colSpan = 5;
+    hd.innerHTML = '<div class="sh"><span class="chev">&#9660;</span>' + ICONS.clock + '<span></span></div>';
+    hd.querySelector('span:last-child').textContent = name;
+    hd.firstChild.addEventListener('click', () => {
+      const c = tb.classList.toggle('collapsed');
+      tb.classList.toggle('shut', c);
+      c ? shut.add(sp) : shut.delete(sp);
+    });
+    hr.appendChild(hd);
+    tb.appendChild(hr);
+
+    const flat = [];
+    flatten(tree, sp, 0, [], flat);
+    for (const f of flat) if (f.group && !seen.has(f.path)) { seen.add(f.path); shut.add(f.path); }
+    let i = 0;
+    for (const f of flat) {
+      const tr = document.createElement('tr');
+      tr.className = 'row ' + (i++ % 2 ? 'b' : 'a') + (f.group ? ' grp' : '');
+      const n = document.createElement('td');
+      n.className = 'n';
+      n.style.paddingLeft = (6 + 16 * f.depth) + 'px';
+      n.title = titleFor(f.label, f.node, f.path);
+      n.innerHTML = '<span class="chev' + (f.group ? '' : ' leaf') + '">&#9660;</span>' +
+                    iconFor(f.node, unitOf(f.node, f.path));
+      n.appendChild(document.createTextNode(f.label));
+      tr.appendChild(n);
+      const tds = [];
+      for (let k = 0; k < 4; k++) {
+        const td = document.createElement('td');
+        if (k === 0) td.className = 'c';
+        tr.appendChild(td);
+        tds.push(td);
+      }
+      const row = { sensor: rawName, f, tr, tds };
+      if (f.group) {
+        n.addEventListener('click', () => {
+          shut.has(f.path) ? shut.delete(f.path) : shut.add(f.path);
+          applyVisibility();
+        });
+      }
+      tb.appendChild(tr);
+      rows.push(row);
+    }
+    const gap = document.createElement('tr');
+    gap.className = 'gap';
+    gap.innerHTML = '<td colspan="5"></td>';
+    tb.appendChild(gap);
+
+    table.appendChild(tb);
+    sensorsOut.push({ name: rawName, tb });
+  }
+  applyVisibility();
+}
+
+function applyVisibility() {
+  for (const r of rows) {
+    r.tr.classList.toggle('hid', r.f.parents.some(p => shut.has(p)));
+    r.tr.classList.toggle('shut', r.f.group && shut.has(r.f.path));
+  }
+}
+
+// Last value / change time per reading, kept OUTSIDE the rows: build() recreates all rows whenever the list of
+// readings changes, and a change arriving in that very fetch used to be lost (rows started with no previous value).
+const hist = {};
+const histOf = (r) => r.h || (r.h = hist[r.sensor + '\u0000' + r.f.path] || (hist[r.sensor + '\u0000' + r.f.path] = {}));
+let showPct = true, lastSensors = null;   // Settings > Show % bars (default on; not stored in the browser)
+function update(sensors) {
+  lastSensors = sensors;
+  // HWiNFO polls slower than this page (e.g. every 2 s). A "fresh" sample is detected when any
+  // Value differs from the last fetch; the grey/unchanged state is only recomputed then,
+  // so it does not blink back to normal on the in-between fetches.
+  const node = (r) => {
+    let o = sensors[r.sensor];
+    for (const k of r.f.path.split('\u0000').slice(2)) o = o && o[k];
+    return o;
+  };
+  let fresh = false;
+  for (const r of rows) {
+    const o = node(r);
+    if (o && o.Value !== undefined && (histOf(r).prev === undefined || o.Value !== histOf(r).prev)) { fresh = true; break; }
+  }
+
+  for (const r of rows) {
+    const o = node(r);
+    if (!o || o.Value === undefined) {             // no value (e.g. Monitor unchecked): clear, do not keep the last one
+      for (const td of r.tds.slice(0, 4)) { td.textContent = ''; td.style.background = ''; }
+      r.tds[0].classList.remove('chg');
+      histOf(r).prev = histOf(r).changedAt = undefined;
+      continue;
+    }
+    const unit = unitOf(o, r.f.path);
+    const cur = num(o.Value);
+    let min = o.Min, max = o.Max, avg = o.Avg;
+
+    if (!isFinite(cur) && min === undefined) {     // text value ("Yes"/"No"): no statistics
+      min = max = avg = '';
+    } else if (min === undefined) {                     // no Min/Max/Avg in the JSON: track this session
+      const key = r.sensor + r.f.path;
+      const s = stats[key] || (stats[key] = { min: cur, max: cur, sum: 0, n: 0 });
+      if (fresh) { s.min = Math.min(s.min, cur); s.max = Math.max(s.max, cur); s.sum += cur; s.n++; }
+      min = s.min; max = s.max; avg = s.n ? s.sum / s.n : cur;
+    }
+
+    const [c, mn, mx, av] = r.tds;
+    c.textContent  = fmt(o.Value, unit);
+    mn.textContent = fmt(min, unit);
+    mx.textContent = fmt(max, unit);
+    av.textContent = fmt(avg, unit, true);
+
+    // grey only if the value changed since the previous update, otherwise normal row background
+    // Time based per row: HWiNFO updates readings at different moments, so another row changing in the next fetch
+    // must not clear this row's mark early (it used to, which made some changes flash for one fetch or not show).
+    const now = performance.now();
+    const h = histOf(r);
+    if (h.prev !== undefined && h.prev !== o.Value) h.changedAt = now;
+    h.prev = o.Value;
+    const changed = h.changedAt !== undefined && now - h.changedAt < Math.max(300, pollMs * 0.9);
+    c.classList.toggle('chg', changed);
+    if (showPct && unit === '%' && isFinite(cur)) {   // load bar like in HWiNFO (Settings > Show % bars), also when unchanged
+      const p = Math.max(0, Math.min(100, cur));
+      c.style.background = 'linear-gradient(90deg,var(--bar) ' + p + '%, ' + (changed ? 'var(--cur)' : 'transparent') + ' ' + p + '%)';
+    } else {
+      c.style.background = '';
+    }
+  }
+}
+
+// root = { "Timestamp": s, "<sensor>": {tree}, ... } (other string fields, e.g. Timestamp RS/RE, are ignored)
+function render(json) {
+  const sensors = {};
+  for (const [k, v] of Object.entries(json)) if (isObj(v)) sensors[k] = untype(v);
+  const sig = Object.entries(sensors).map(([n, t]) => {
+    const flat = []; flatten(t, '', 0, [], flat);
+    return n + '\u0001' + flat.map(f => f.path).join('\u0001');
+  }).join('\n');
+  if (sig !== signature) { build(sensors); signature = sig; }
+  update(sensors);
+  return String(json['Timestamp'] || 'NA').trim();   // NA = field missing
+}
+
+function setStatus(ok, text) {
+  stEl.className = 'st ' + (ok ? 'ok' : 'err');
+  stEl.textContent = text;
+}
+
+// Checks every sensor of a /read answer: it must be an object holding at least one reading, and every reading
+// (a node without children) needs a string/number "Value" (a string "Unit" if present).
+function validateSensors(json) {
+  const problems = [];
+  let sensors = 0, readings = 0;
+  for (const [name, raw] of Object.entries(json)) {
+    if (!isObj(raw)) continue;                         // Version, Timestamp, ...
+    sensors++;
+    const flat = [];
+    flatten(untype(raw), '', 0, [], flat);
+    let n = 0;
+    for (const f of flat) {
+      if (f.group) continue;
+      const v = f.node.Value;
+      if (typeof v !== 'string' && typeof v !== 'number') problems.push(name.trim() + ' / ' + f.label + ': no Value');
+      else if ('Unit' in f.node && typeof f.node.Unit !== 'string') problems.push(name.trim() + ' / ' + f.label + ': bad Unit');
+      else n++;
+    }
+    if (!flat.length) problems.push(name.trim() + ': no readings');
+    readings += n;
+  }
+  if (!sensors) problems.push('no sensors in the answer');
+  return { sensors, readings, problems };
+}
+
+// ---- Timing statistics (nothing stored in the browser) ----
+// Browser clock with sub-ms resolution, UTC epoch ms. The server stamps "Timestamp RS ms" / "Timestamp ms" /
+// "Timestamp RE ms" (UTC epoch ms) are mapped into it with an offset measured NTP-style against /api/ping ("t").
+const nowMs = () => performance.timeOrigin + performance.now();
+const TIM_PING = API.replace(/sensors\/read$/, 'ping');
+const TIM_KEEP = 200, TIM_SYNC_PINGS = 8, TIM_RESYNC_MS = 60000;
+const TIM_ROWS = [   // key, label, needs the clock offset
+  ['up',    'Request → read start (RS)', true],
+  ['read',  'HWiNFO readout (Timestamp − RS)', false],
+  ['build', 'JSON build (RE − Timestamp)', false],
+  ['srv',   'Server total (RE − RS)', false],
+  ['down',  'RE → response received', true],
+  ['total', 'Total (sent → received)', false],
+];
+const tim = { off: null, rtt: 0, at: 0, syncing: false, neg: 0, hist: {}, last: {} };
+TIM_ROWS.forEach(r => { tim.hist[r[0]] = []; });
+const isNum = (v) => typeof v === 'number' && isFinite(v);
+
+function timingRecord(json, t0, t3) {
+  if (document.hidden) return;                       // throttled timers would distort the numbers
+  const s = {};
+  s.total = t3 - t0;
+  const rs = json['Timestamp RS ms'], rd = json['Timestamp ms'], re = json['Timestamp RE ms'];
+  if (isNum(rs) && isNum(rd) && isNum(re)) {
+    s.read = rd - rs; s.build = re - rd; s.srv = re - rs;
+    if (tim.off !== null) {                          // server time -> browser time: t - off
+      s.up = (rs - tim.off) - t0;
+      s.down = t3 - (re - tim.off);
+      for (const k of ['up', 'down']) if (s[k] < 0) { s[k] = 0; tim.neg++; }   // sync error: clamp and count
+    }
+  }
+  for (const [k] of TIM_ROWS) {
+    const h = tim.hist[k];
+    tim.last[k] = s[k];
+    if (isNum(s[k])) { h.push(s[k]); if (h.length > TIM_KEEP) h.shift(); }
+  }
+  timingRender();
+}
+
+function timFmt(v) { return !isNum(v) ? '–' : v >= 100 ? v.toFixed(0) : v >= 10 ? v.toFixed(1) : v.toFixed(2); }
+
+function timingRender() {
+  const panel = $('timing');
+  if (!panel.classList.contains('open')) return;
+  let html = '<tr><th></th><th>Last</th><th>Min</th><th>Max</th><th>Avg</th><th>P95</th><th>n</th></tr>';
+  for (const [k, label] of TIM_ROWS) {
+    const h = tim.hist[k];
+    let mn, mx, av, p95;
+    if (h.length) {
+      mn = Math.min(...h); mx = Math.max(...h); av = h.reduce((a, b) => a + b, 0) / h.length;
+      p95 = h.slice().sort((a, b) => a - b)[Math.min(h.length - 1, Math.floor(h.length * 0.95))];
+    }
+    const cells = h.length ? [tim.last[k], mn, mx, av, p95] : [];
+    html += '<tr' + (k === 'total' ? ' class="tot"' : '') + '><td>' + label + '</td>' +
+      [0, 1, 2, 3, 4].map(i => '<td' + (h.length ? '' : ' class="na"') + '>' + timFmt(cells[i]) + '</td>').join('') +
+      '<td>' + h.length + '</td></tr>';
+  }
+  $('timB').innerHTML = html;
+  $('timSync').textContent = tim.off === null
+    ? (tim.syncing ? 'syncing clock...' : 'clock not synced (server sends no "t" in /api/ping): sync-dependent rows are n/a')
+    : 'clock offset ' + (tim.off >= 0 ? '+' : '') + tim.off.toFixed(2) + ' ms (server - browser), best sync RTT ' +
+      tim.rtt.toFixed(2) + ' ms (±' + (tim.rtt / 2).toFixed(2) + ' ms), synced ' +
+      Math.round((nowMs() - tim.at) / 1000) + ' s ago';
+  const n = tim.hist.srv.length;
+  $('timNote').textContent = (tim.hist.total.length && !n ? ' server sends no epoch timestamps: only the total is available. ' : ' ') +
+    (tim.neg ? tim.neg + ' value(s) clamped to 0 (sync error). ' : '') + 'Last ' + TIM_KEEP + ' samples.';
+}
+
+// NTP-style: several pings, the one with the smallest round trip gives the offset (error <= RTT/2).
+async function timingSync() {
+  if (tim.syncing) return;
+  tim.syncing = true; timingRender();
+  let best = null;
+  try {
+    for (let i = 0; i < TIM_SYNC_PINGS; i++) {
+      const a = nowMs();
+      const res = await fetch(TIM_PING, { cache: 'no-store' });
+      const j = await res.json();
+      const b = nowMs();
+      if (!res.ok || !isNum(j.t)) { best = null; break; }
+      const rtt = b - a;
+      if (!best || rtt < best.rtt) best = { rtt, off: j.t - (a + b) / 2 };
+    }
+  } catch (e) { best = null; }
+  tim.syncing = false;
+  if (best) { tim.off = best.off; tim.rtt = best.rtt; tim.at = nowMs(); }
+  timingRender();
+}
+$('timBtn').addEventListener('click', () => {
+  $('timing').classList.toggle('open');
+  timingRender();
+});
+$('timSyncBtn').addEventListener('click', timingSync);
+$('timReset').addEventListener('click', () => {
+  for (const k in tim.hist) tim.hist[k].length = 0;
+  tim.last = {}; tim.neg = 0;
+  timingRender();
+});
+timingSync();
+setInterval(timingSync, TIM_RESYNC_MS);
+setInterval(timingRender, 1000);                     // keeps the "synced N s ago" text current
+
+let seq = 0, shown = 0;   // responses can arrive out of order: a stale one is dropped
+// manual = "Refresh Sensors": rebuild the whole list from this answer and validate it
+async function tick(manual) {
+  const my = ++seq;
+  try {
+    const t0 = nowMs();
+    const res = await fetch(API, { cache: 'no-store' });
+    const text = await res.text();
+    const t3 = nowMs();                     // response fully received (before parsing)
+    const json = JSON.parse(text);
+    if (infoPromise) await Promise.race([infoPromise, new Promise(r => setTimeout(r, 2000))]);   // units come from the SDB
+    if (my < shown) return;
+    shown = my;
+    if (!res.ok || json.error) throw new Error(json.error || ('HTTP ' + res.status));
+    checkVersion(json, 'read');
+    timingRecord(json, t0, t3);
+    if (manual) {
+      // no forced rebuild: render() rebuilds when the sensor list changed, and keeping the rows keeps each row's
+      // previous value, so the "changed" marking works exactly as while polling
+      const ts = render(json), v = validateSensors(json);
+      if (v.problems.length) {
+        console.warn('Sensor validation:', v.problems);
+        setStatus(false, ts + ' - ' + v.problems.length + ' problem(s): ' + v.problems[0]);
+      } else {
+        setStatus(true, ts + ' - ' + v.sensors + ' sensors, ' + v.readings + ' readings OK');
+      }
+      return;
+    }
+    setStatus(true, render(json));
+  } catch (e) {
+    setStatus(false, e instanceof TypeError ? 'cannot reach ' + API : (e.message || String(e)));
+  }
+}
+
+// Polling period (Settings). Requests are fired on a fixed schedule (next = previous + period), independent
+// of how long a response takes, so /api/sensors/read is sent exactly every pollMs.
+const POLL_DEFAULT = 2000, POLL_MIN = 50;
+let pollMs = POLL_DEFAULT, pollTimer = 0, nextAt = 0;
+function fire() {
+  const now = performance.now();
+  nextAt += pollMs;
+  if (nextAt < now) nextAt = now + pollMs;   // page was throttled/suspended: resync instead of bursting
+  pollTimer = setTimeout(fire, nextAt - now);
+  tick();
+}
+let pollOn = true;                      // Settings > Poll (always on after a load; nothing is stored in the browser)
+function restartPolling() {
+  clearTimeout(pollTimer);
+  if (!pollOn) { stEl.className = 'st'; stEl.textContent = 'polling off - use Refresh Sensors'; return; }
+  nextAt = performance.now();
+  fire();
+}
+const pollBox = document.getElementById('pollOn');
+pollBox.checked = pollOn;
+pollBox.addEventListener('change', () => {
+  pollOn = pollBox.checked;
+  restartPolling();
+});
+const pctBox = document.getElementById('showPct');
+pctBox.checked = showPct;
+pctBox.addEventListener('change', () => {
+  showPct = pctBox.checked;
+  if (lastSensors) update(lastSensors);   // repaint now with the last data (no new request, no stats change: not fresh)
+});
+document.getElementById('refBtn').addEventListener('click', async (e) => {
+  const b = e.currentTarget;
+  b.disabled = true;
+  try { await tick(true); } finally { b.disabled = false; }
+});
+const pollInput = document.getElementById('pollMs');
+pollInput.value = pollMs;
+pollInput.addEventListener('change', () => {
+  const v = parseInt(pollInput.value, 10);
+  if (!(v >= POLL_MIN)) { pollInput.value = pollMs; return; }
+  pollMs = v;
+  restartPolling();
+});
+document.getElementById('setBtn').addEventListener('click', () =>
+  document.getElementById('settings').classList.toggle('open'));
+
+restartPolling();
+
+// ---- Theme switch (light / dark); the initial value is set in <head> before first paint ----
+$('themeBtn').addEventListener('click', () => {
+  const t = document.documentElement.getAttribute('data-theme') === 'dark' ? 'light' : 'dark';
+  document.documentElement.setAttribute('data-theme', t);
+});
+
+// ---- SDB filter view: same behaviour as sdb_filter_editor.py, data from the server instead of a file ----
+// The .sdb is JSON: a node with a "hide" key is a sensor leaf (hide/monitoring/logging flags + tSensorLocation,
+// tReadingLocation, tReadingType{eType,eTypeUnion}), any other object is a group. Non-object values are ignored.
+const SDB_API = API.replace(/sensors\/read$/, 'sensors/sdb');
+const FLAGS = [['hide', 'Hide'], ['monitoring', 'Monitor'], ['logging', 'Log']];
+const FLT_FIELDS = ['hide', 'monitoring', 'logging'];
+// root["Version"] of the .flt we send (the server requires it and refuses an unsupported one).
+const FLT_VERSION = VERSIONS.flt.current;
+const MAX_UNDO = 200;
+// eType / eTypeUnion labels from reading_tupes.h (same tables as the Python editor)
+const READING_TYPE_NAMES = ['None', 'Temperature', 'Voltage', 'Fan', 'Current', 'Power', 'Clock', 'Usage', 'Other'];
+const READING_SUBTYPE_NAMES = {"1":{"0":"Absolute (°C)","1":"Offset from Tj,max","2":"Tctl (AMD, not real temperature)"},"2":{"0":"Absolute (V)","1":"Offset (e.g. Uncore voltage offset)","2":"Voltage ID (VID, requested to VRM)"},"3":{"0":"Speed (RPM)","1":"Speed (%)","2":"Duty cycle (%)","3":"Pump","4":"Liquid cooling"},"4":{"0":"Consumption (A)"},"5":{"0":"Consumption (W)","1":"Consumption (% of TDP)","2":"Consumption (% of current limit)","3":"Limit (W)"},"6":{"0":"Frequency (MHz)","1":"Effective clock"},"7":{"0":"Utilization","1":"Utilization (average)","2":"State residency (%)","3":"Clock modulation (duty cycles)","4":"Read activity (%)","5":"Write activity (%)","6":"Total (read+write) activity (%)","7":"Charge level (%)","8":"Health"},"8":{"0":"Boolean value","1":"Clock ratio to reference (bus) clock","2":"Memory used/committed (MB)","3":"Memory available (MB)","4":"Memory load (%)","5":"Memory timing parameter [T]","6":"Throttling active (bool)","7":"Critical temperature reached (bool)","8":"Power limit reached (bool)","9":"Performance-limiting reason (bool)","10":"Transfer speed/bandwidth (GT/s)","11":"Transfer speed/bandwidth (Gbps)","12":"Pressure (bar)","13":"Water flow (L/h)","14":"Water flow (L/m)","15":"Efficiency (%)","16":"Error count","17":"Device failure (bool)","18":"Device warning (bool)","19":"Data written (GB / MB for network)","20":"Data read (GB / MB for network)","21":"Read rate (MB/s / KB/s for network)","22":"Write rate (MB/s / KB/s for network)","23":"Intrusion status (bool)","24":"Frequency (Hz)","25":"Frames per second","26":"AC adapter power rating (W)","27":"Remaining capacity (Wh)","28":"Charge level (%)","29":"Charge rate (W)","30":"Wear level (%)","31":"Remaining time (minutes)","32":"C0-state residency (%)","33":"C1-state residency (%)","34":"C2-state residency (%)","35":"C3-state residency (%)","36":"C4-state residency (%)","37":"C5-state residency (%)","38":"C6-state residency (%)","39":"C7-state residency (%)","40":"C8-state residency (%)","41":"C9-state residency (%)","42":"C10-state residency (%)","43":"Noise (dB)","44":"Water leak detected (bool)","45":"Volume (ml)","46":"Energy (kWh)","47":"Uptime (minutes)","48":"Uptime (hours)","49":"Uptime (days)","50":"VRM/PWM active phase count"}};
+
+// A node is any object except the reading metadata objects. It has flags if it carries "hide" (a sensor); a node
+// with flags may also have child nodes (a sensor with sub-sensors); a node without flags is a plain group.
+const SDB_META = new Set(['tSensorLocation', 'tReadingLocation', 'tReadingType']);
+const sdbIsNode = (k, v) => isObj(v) && !Array.isArray(v) && !SDB_META.has(k);
+const sdbHasFlags = (n) => 'hide' in n;
+const sdbKids = (n) => Object.entries(n).filter(([k, v]) => sdbIsNode(k, v));
+// Sensor type level: "<reading name>": { "<type>": {flags + metadata} } - a name can repeat with different types.
+// A 'name node' has no flags and only flag-carrying leaf children with numeric keys; it is shown as one row per
+// type (Type column) instead of a tree level. Key = SENSOR_ENTRY_TYPE (0..8, see READING_TYPE_NAMES).
+const sdbIsNameNode = (n) => !sdbHasFlags(n) && sdbKids(n).length > 0 &&
+  sdbKids(n).every(([k, c]) => /^\d+$/.test(k) && sdbHasFlags(c) && !sdbKids(c).length);
+// A group (sensor with sub-sensors) keeps its own flags the same way, next to the sub-nodes:
+//   "Core VIDs": { "2": {flags}, "P-core 0 VID": { "2": {flags} } }
+// -> [[typeKey, flagNode], ...] (null if the node is not such a group). The group row shows the first one.
+const sdbOwn = (n) => {
+  if (sdbHasFlags(n)) return null;
+  const kids = sdbKids(n);
+  const own = kids.filter(([k, c]) => /^\d+$/.test(k) && sdbHasFlags(c) && !sdbKids(c).length);
+  return own.length && kids.length > own.length ? own : null;
+};
+const sdbOwnKeys = (n) => (sdbOwn(n) || []).map(([k]) => k);
+const sdbTypeName = (k) => /^\d+$/.test(k) ? (READING_TYPE_NAMES[+k] || ('Unknown ' + k)) : k;
+const sdbIsGroup = (n) => !sdbHasFlags(n) || sdbKids(n).length > 0;   // gets a chevron and can hold children
+
+function readingLabel(rt) {
+  if (!isObj(rt)) return '';
+  const cat = READING_TYPE_NAMES[rt.eType] || ('Unknown eType=' + rt.eType);
+  const sub = READING_SUBTYPE_NAMES[rt.eType];
+  return cat + ' / ' + (sub ? (sub[rt.eTypeUnion] || ('Unknown eTypeUnion=' + rt.eTypeUnion)) : ('eTypeUnion=' + rt.eTypeUnion));
+}
+const sdbTyped = (node = sdbData) => sdbKids(node).some(([, v]) => sdbIsNameNode(v) || sdbTyped(v));
+function sdbCount(node) {
+  let c = 0;
+  for (const [, v] of sdbKids(node)) c += (sdbHasFlags(v) ? 1 : 0) + sdbCount(v);
+  return c;
+}
+
+let sdbData = null;
+const sdbShut = new Set();       // collapsed group paths (groups start collapsed, like HWiNFO tree above)
+const sdbSeen = new Set();
+const sdbSel = new Set();        // selected row paths (click, Ctrl+click)
+let sdbUndo = [], sdbRedo = [];
+const sdbB = $('sdbB');
+
+function sdbRender() {
+  sdbB.textContent = '';
+  let i = 0;
+  const walk = (node, path, depth, parents) => {
+    const entries = [];                    // rows of this level; a name node gives one row per type
+    const ownKeys = sdbOwnKeys(node);      // the group's own flag entries are shown on the group row
+    for (const [name, nv] of Object.entries(node)) {
+      if (!sdbIsNode(name, nv) || ownKeys.includes(name)) continue;
+      if (sdbIsNameNode(nv)) {
+        for (const [tk, tv] of sdbKids(nv))
+          entries.push({ key: name, v: tv, p: path + '\u0000' + name + '\u0000' + tk, parent: nv, pkey: tk,
+                         type: sdbTypeName(tk), holder: { parent: node, key: name } });
+      } else {
+        const own = sdbOwn(nv);
+        entries.push({ key: name, v: nv, p: path + '\u0000' + name, parent: node, pkey: name,
+                       type: own ? sdbTypeName(own[0][0]) : '', flags: own ? own[0][1] : null });
+      }
+    }
+    for (const { key, v, p, parent, pkey, type, holder, flags } of entries) {
+      const fv = flags || (sdbHasFlags(v) ? v : null);       // node holding the flags of this row
+      const group = sdbIsGroup(v), leaf = !!fv;               // 'leaf' = has the flag checkboxes
+      if (group && !sdbSeen.has(p)) { sdbSeen.add(p); sdbShut.add(p); }
+      const tr = document.createElement('tr');
+      tr.className = 'row ' + (i++ % 2 ? 'b' : 'a') + (group ? ' grp' : '') + (sdbSel.has(p) ? ' sel' : '');
+      tr._m = { parent, key: pkey, name: key, holder, path: p, group, depth, node: v };
+      if (parents.some(q => sdbShut.has(q))) tr.classList.add('hid');
+      if (group && sdbShut.has(p)) tr.classList.add('shut');
+      const n = document.createElement('td');
+      n.className = 'n';
+      n.style.paddingLeft = (6 + 16 * depth) + 'px';
+      n.title = leaf ? (readingLabel(fv.tReadingType) || key) : key;
+      n.innerHTML = '<span class="chev' + (group ? '' : ' leaf') + '">&#9660;</span>';
+      n.appendChild(document.createTextNode(key));
+      tr.appendChild(n);
+      const tt = document.createElement('td');
+      tt.className = 'ty';
+      tt.textContent = type;
+      tr.appendChild(tt);
+      const cells = {};
+      // A hidden sensor cannot be monitored: Monitor is shown unchecked and disabled while Hide is on.
+      const paint = () => {
+        for (const [f] of FLAGS) {
+          const dis = f === 'monitoring' && fv.hide;
+          cells[f].classList.toggle('on', !!fv[f] && !dis);
+          cells[f].classList.toggle('dis', !!dis);
+          cells[f].textContent = fv[f] && !dis ? '☑' : '☐';
+        }
+      };
+      for (const [f] of FLAGS) {
+        const td = document.createElement('td');
+        td.className = 'ck';
+        cells[f] = td;
+        if (leaf) {
+          td.addEventListener('click', () => {
+            if (f === 'monitoring' && fv.hide) return;
+            sdbPush();
+            fv[f] = fv[f] ? 0 : 1;
+            if (f === 'hide' && fv.hide) fv.monitoring = 0;
+            paint();
+          });
+        }
+        tr.appendChild(td);
+      }
+      if (leaf) paint();
+      const toggle = () => { sdbShut.has(p) ? sdbShut.delete(p) : sdbShut.add(p); sdbRender(); };
+      if (group) {
+        n.firstChild.addEventListener('click', (e) => { e.stopPropagation(); toggle(); });
+        n.addEventListener('dblclick', toggle);
+      }
+      n.addEventListener('click', (e) => {            // select; Ctrl/Shift adds to the selection
+        if (!(e.ctrlKey || e.metaKey || e.shiftKey)) sdbSel.clear();
+        sdbSel.has(p) ? sdbSel.delete(p) : sdbSel.add(p);
+        sdbPaintSel();
+      });
+      sdbB.appendChild(tr);
+      if (group) walk(v, p, depth + 1, parents.concat(p));
+    }
+  };
+  walk(sdbData, '', 0, []);
+  $('sdbUndo').disabled = !sdbUndo.length;
+  $('sdbRedo').disabled = !sdbRedo.length;
+}
+function sdbPaintSel() {
+  for (const tr of sdbB.rows) tr.classList.toggle('sel', sdbSel.has(tr._m.path));
+}
+function sdbPush() {
+  sdbUndo.push(JSON.stringify(sdbData));
+  if (sdbUndo.length > MAX_UNDO) sdbUndo.shift();
+  sdbRedo = [];
+  $('sdbUndo').disabled = false;
+  $('sdbRedo').disabled = true;
+}
+function sdbStep(from, to) {
+  if (!from.length) return;
+  to.push(JSON.stringify(sdbData));
+  sdbData = JSON.parse(from.pop());
+  sdbSel.clear();
+  sdbRender();
+}
+function sdbSetAll(open) {
+  const walk = (node, path) => {
+    for (const [k, v] of sdbKids(node)) if (sdbIsGroup(v)) {
+      const p = path + '\u0000' + k;
+      sdbSeen.add(p);
+      open ? sdbShut.delete(p) : sdbShut.add(p);
+      walk(v, p);
+    }
+  };
+  walk(sdbData, '');
+  sdbRender();
+}
+// Reads "Unit" and "Tooltip" of an SDB tree into 'info', keyed like a live row's path ('\u0000' + sensor + '\u0000' +
+// key ..., the key of a name with several types is "<name>\u0001<type>"). A type node ("8": {flags, Unit, Tooltip})
+// gives its name's info (the first one for the plain name, each one for "<name>\u0001<type>"); in an untyped SDB
+// they sit in the flag node itself.
+function infoFrom(sdb) {
+  info.clear();
+  const put = (key, v) => {
+    const e = {};
+    if (typeof v.Tooltip === 'string' && v.Tooltip) e.Tooltip = v.Tooltip;
+    if (typeof v.Unit === 'string') e.Unit = v.Unit;       // '' = no unit
+    if (e.Tooltip !== undefined || e.Unit !== undefined) info.set(key, e);
+  };
+  const walk = (node, path) => {
+    for (const [k, v] of Object.entries(node)) {
+      if (!sdbIsNode(k, v)) continue;
+      if (/^\d+$/.test(k)) {
+        put(path + '\u0001' + k, v);
+        if (!info.has(path)) put(path, v);
+        continue;
+      }
+      const p = path + '\u0000' + k;
+      put(p, v);
+      walk(v, p);
+    }
+  };
+  walk(sdb, '');
+  signature = null;      // rows built before the SDB arrived are rebuilt (units, icons, tooltips) by the next render
+}
+// Startup fetch (the Filter view fetches it again by itself and refreshes the info). Failure is silent: values show
+// without units and rows with their names until an SDB is available (Filter > Reload).
+async function infoLoad() {
+  try {
+    const res = await fetch(SDB_API, { cache: 'no-store' });
+    const json = await res.json();
+    if (res.ok && isObj(json) && !json.error) { checkVersion(json, 'sdb'); infoFrom(json); }
+  } catch (e) { /* no SDB yet */ }
+}
+async function sdbLoad() {
+  const st = $('sdbSt');
+  st.textContent = 'loading...';
+  try {
+    const res = await fetch(SDB_API, { cache: 'no-store' });
+    const json = await res.json().catch(() => ({ error: 'HTTP ' + res.status + ' (not JSON)' }));
+    if (!res.ok || json.error) throw new Error(json.error || ('HTTP ' + res.status));
+    if (!isObj(json) || Array.isArray(json)) throw new Error('Top level of the .sdb data must be a JSON object');
+    checkVersion(json, 'sdb');
+    infoFrom(json);   // before any edit: the working copy sdbData changes, the info must not
+    sdbData = json;
+    sdbUndo = []; sdbRedo = []; sdbSel.clear();
+    sdbRender();
+    st.textContent = sdbCount(sdbData) + ' sensors';
+  } catch (e) {
+    st.textContent = e instanceof TypeError ? 'cannot reach ' + SDB_API : (e.message || String(e));
+  }
+}
+// .flt = same tree with only the hide/monitoring/logging flags per sensor
+function buildFlt(node) {
+  const out = {};
+  for (const [k, v] of sdbKids(node)) {
+    out[k] = {};
+    if (sdbHasFlags(v)) {
+      for (const f of FLT_FIELDS) out[k][f] = v[f] || 0;
+      if (out[k].hide) out[k].monitoring = 0;     // hidden sensors are not monitored (also for loaded data)
+    }
+    Object.assign(out[k], buildFlt(v));           // sub-sensors / sub-groups
+  }
+  return out;
+}
+$('sdbBtn').addEventListener('click', () => {
+  const open = $('sdb').classList.toggle('open');
+  table.style.display = open ? 'none' : '';
+  $('sdbBtn').textContent = open ? 'Sensors' : 'Filter';
+  if (open && !sdbData) sdbLoad();
+});
+$('sdbReload').addEventListener('click', sdbLoad);
+$('sdbExp').addEventListener('click', () => sdbData && sdbSetAll(true));
+$('sdbCol').addEventListener('click', () => sdbData && sdbSetAll(false));
+$('sdbUndo').addEventListener('click', () => sdbStep(sdbUndo, sdbRedo));
+$('sdbRedo').addEventListener('click', () => sdbStep(sdbRedo, sdbUndo));
+// ---- Right-click menu: Add Group / Add Sensor / Delete (same rules as the Python editor) ----
+const ctx = document.createElement('div');
+ctx.id = 'ctx';
+document.body.appendChild(ctx);
+const ctxHide = () => { ctx.style.display = 'none'; };
+const sdbStatus = () => { $('sdbSt').textContent = sdbCount(sdbData) + ' sensors'; };
+
+// Tree shape: sensor -> sensor, or sensor -> group -> sensor (depth 0 rows are the top-level sensors).
+// New nodes go into row 'm' (null = root). Groups and sensors both carry the flags; at the root an empty
+// top-level sensor is added (flagless container). A group is told from a real sensor by its missing tReadingType.
+function sdbAdd(kind, m) {
+  const target = !m ? sdbData : m.node;
+  const label = !m ? 'top-level sensor' : kind;
+  const name = (prompt('New ' + label + ' name:') || '').trim();
+  if (!name) return;
+  const flags = { hide: 0, monitoring: 1, logging: 1 };
+  if (m && kind === 'sensor' && sdbTyped()) {      // typed layout: "<name>": { "<type>": flags }; same name, other type is fine
+    const t = (prompt('Sensor type (' + READING_TYPE_NAMES.map((n, i) => i + '=' + n).join(', ') + '):', '8') || '').trim();
+    if (!/^\d+$/.test(t)) { if (t) alert('The type must be a number.'); return; }
+    const holder = target[name];
+    if (holder && !sdbIsNameNode(holder)) { alert("'" + name + "' already exists at this level."); return; }
+    if (holder && t in holder) { alert("'" + name + "' with type " + sdbTypeName(t) + ' already exists.'); return; }
+    sdbPush();
+    (target[name] = holder || {})[t] = flags;
+    sdbShut.delete(m.path);
+    sdbRender();
+    sdbStatus();
+    return;
+  }
+  if (name in target) { alert("'" + name + "' already exists at this level."); return; }
+  sdbPush();
+  target[name] = !m ? {} : flags;
+  if (m) sdbShut.delete(m.path);                   // show the new child
+  sdbRender();
+  sdbStatus();
+}
+function sdbDelete(rows) {
+  // a node under another selected group goes away with it
+  const top = rows.filter(m => !rows.some(o => o !== m && m.path.startsWith(o.path + '\u0000')));
+  if (!top.length) return;
+  const nS = top.filter(m => !m.group).length, nG = top.length - nS;
+  const desc = top.length === 1 ? (nG ? 'group' : 'sensor') + " '" + (top[0].name || top[0].key) + "'"
+             : [nS && nS + ' sensor(s)', nG && nG + ' group(s)'].filter(Boolean).join(' and ');
+  if (!confirm('Delete ' + desc + '?' + (nG ? '\nThis will also delete everything inside any group.' : ''))) return;
+  sdbPush();
+  for (const m of top) {
+    delete m.parent[m.key];
+    if (m.holder && !sdbKids(m.parent).length) delete m.holder.parent[m.holder.key];   // last type of a name
+  }
+  sdbSel.clear();
+  sdbRender();
+  sdbStatus();
+}
+// Sets a flag on a top-level sensor and everything under it (the menu offers both directions).
+function sdbSetFlag(m, f, val) {
+  const all = [];
+  const walk = (node) => { if (sdbHasFlags(node)) all.push(node); for (const [, c] of sdbKids(node)) walk(c); };
+  walk(m.node);
+  // Monitoring cannot be enabled on a hidden item (Hide forces Monitoring 0)
+  const todo = all.filter(n => n[f] !== val && !(f === 'monitoring' && val && n.hide));
+  if (!todo.length) return;
+  sdbPush();
+  for (const n of todo) {
+    n[f] = val;
+    if (f === 'hide' && val) n.monitoring = 0;
+  }
+  sdbRender();
+}
+const selectedRows = () => [...sdbB.rows].filter(tr => sdbSel.has(tr._m.path)).map(tr => tr._m);
+
+$('sdb').addEventListener('contextmenu', (e) => {
+  if (!sdbData || e.target.closest('.sdbbar')) return;
+  e.preventDefault();
+  const tr = e.target.closest('#sdbB tr');
+  if (tr && !sdbSel.has(tr._m.path)) { sdbSel.clear(); sdbSel.add(tr._m.path); sdbPaintSel(); }
+  if (!tr) { sdbSel.clear(); sdbPaintSel(); }
+  const sel = selectedRows();
+  const items = [];                                           // [label, action] or null = separator
+  if (sel.length > 1) {
+    items.push(['Delete Selected', () => sdbDelete(sel)]);
+  } else {
+    const m = sel[0];
+    if (!m) items.push(['Add Sensor...', () => sdbAdd('sensor', null)]);
+    else if (m.depth === 0) items.push(['Add Group...', () => sdbAdd('group', m)], ['Add Sensor...', () => sdbAdd('sensor', m)]);
+    else if (m.depth === 1 && (m.group || !('tReadingType' in m.node)))
+      items.push(['Add Sensor...', () => sdbAdd('sensor', m)]);   // a group holds sensors only (no Add Group)
+    if (m && m.depth === 0)                                   // applies to the sensor and all items under it
+      items.push(null, ['Hide all', () => sdbSetFlag(m, 'hide', 1)], ['Unhide all', () => sdbSetFlag(m, 'hide', 0)],
+                 ['Enable monitoring (all)', () => sdbSetFlag(m, 'monitoring', 1)],
+                 ['Disable monitoring (all)', () => sdbSetFlag(m, 'monitoring', 0)],
+                 ['Enable logging (all)', () => sdbSetFlag(m, 'logging', 1)],
+                 ['Disable logging (all)', () => sdbSetFlag(m, 'logging', 0)]);
+    items.push(null, ['Delete', m ? () => sdbDelete([m]) : null]);
+  }
+  ctx.textContent = '';
+  for (const it of items) {
+    if (!it) { ctx.appendChild(document.createElement('hr')); continue; }
+    const d = document.createElement('div');
+    d.textContent = it[0];
+    if (it[1]) d.addEventListener('click', () => { ctxHide(); it[1](); });
+    else d.className = 'dis';
+    ctx.appendChild(d);
+  }
+  ctx.style.display = 'block';
+  ctx.style.left = Math.min(e.clientX, innerWidth - ctx.offsetWidth - 4) + 'px';
+  ctx.style.top = Math.min(e.clientY, innerHeight - ctx.offsetHeight - 4) + 'px';
+});
+document.addEventListener('click', ctxHide);
+document.addEventListener('scroll', ctxHide, true);
+document.addEventListener('keydown', (e) => {
+  if (e.key === 'Escape') ctxHide();
+  else if (e.key === 'Delete' && sdbData && $('sdb').classList.contains('open') && !/INPUT|TEXTAREA/.test(e.target.tagName))
+    sdbDelete(selectedRows());
+});
+
+// ---- Sort = "Filter by Reading Type / Name / Repeating Words" of sdb_filter_editor.py ----
+// Each dialog keeps ONLY or removes the matching items; groups left empty are pruned. A 'leaf' is a sensor without
+// sub-sensors; a node with children is a container (a group, or a sensor with sub-sensors) and is never matched by type.
+const sdbIsLeaf = (n) => sdbHasFlags(n) && !sdbKids(n).length;
+const sdbTypeKey = (n) => isObj(n.tReadingType) && n.tReadingType.eType != null
+  ? n.tReadingType.eType + ',' + n.tReadingType.eTypeUnion : 'none';
+
+function sdbCollect(node, fn) {
+  for (const [k, v] of sdbKids(node)) { if (sdbIsLeaf(v)) fn(k, v, true); else { fn(k, v, false); sdbCollect(v, fn); } }
+}
+// drop(key, leaf) -> true removes the leaf; containers left empty are removed too
+// Sub-nodes of a container without its own flag entries ("2": {flags} of a group); computed BEFORE its children are
+// removed, because a group left with only its own entry would look like a plain typed reading afterwards.
+const sdbRestCount = (n, own) => sdbKids(n).filter(([k]) => !own.includes(k)).length;
+function sdbPrune(node, drop) {
+  for (const [k, v] of sdbKids(node)) {
+    if (sdbIsLeaf(v)) { if (drop(k, v)) delete node[k]; continue; }
+    const own = sdbOwnKeys(v), had = sdbRestCount(v, own);
+    sdbPrune(v, drop);
+    if (!sdbRestCount(v, own) && (had || !sdbHasFlags(v))) delete node[k];   // an emptied group goes with its own flags
+  }
+}
+function sdbNameFilter(node, match, mode) {    // match(lowerCaseName) -> bool; same rules as _filter_by_name
+  const own = sdbOwnKeys(node);
+  for (const [k, v] of sdbKids(node)) {
+    if (own.includes(k)) continue;
+    const m = match(k.toLowerCase());
+    if (sdbIsLeaf(v) || sdbIsNameNode(v)) { if (mode === 'keep' ? !m : m) delete node[k]; continue; }
+    const vown = sdbOwnKeys(v);
+    sdbNameFilter(v, match, mode);
+    if (mode === 'keep' ? (!m && !sdbRestCount(v, vown)) : m) delete node[k];
+  }
+}
+function sdbRepeatingWords(node, counts) {
+  const punct = /^[.,;:!?()\[\]{}"']+|[.,;:!?()\[\]{}"']+$/g;
+  const own = sdbOwnKeys(node);
+  for (const [k, v] of sdbKids(node)) {
+    if (own.includes(k)) continue;
+    for (const w of k.toLowerCase().split(/\s+/)) {
+      const c = w.replace(punct, '');
+      if (c.length > 1) counts[c] = (counts[c] || 0) + 1;
+    }
+    if (!sdbIsNameNode(v)) sdbRepeatingWords(v, counts);   // the type keys of a name node are no names
+  }
+  return counts;
+}
+
+// Modal dialog: intro text, content element, Keep/Remove choice. run(mode) returns an error text to keep it open.
+function sdbDialog(title, intro, content, run, tools) {
+  const d = document.createElement('dialog');
+  d.className = 'sortdlg';
+  const h = document.createElement('p'); h.textContent = title + ' - ' + intro;
+  const fs = document.createElement('fieldset');
+  fs.innerHTML = '<legend>Action</legend>' +
+    '<label><input type="radio" name="m" value="keep" checked> Keep ONLY the matching (remove the rest)</label>' +
+    '<label><input type="radio" name="m" value="remove"> Remove the matching (keep the rest)</label>';
+  const btns = document.createElement('div'); btns.className = 'btns';
+  const left = document.createElement('div'); left.className = 'l';
+  for (const [t, f] of tools || []) { const b = document.createElement('button'); b.type = 'button'; b.textContent = t; b.onclick = f; left.appendChild(b); }
+  const ok = document.createElement('button'); ok.type = 'button'; ok.className = 'primary'; ok.textContent = 'Apply';
+  const no = document.createElement('button'); no.type = 'button'; no.textContent = 'Cancel';
+  no.onclick = () => d.close();
+  ok.onclick = () => {
+    const err = run(fs.querySelector('input:checked').value);
+    if (err) alert(err); else d.close();
+  };
+  btns.append(left, ok, no);
+  d.append(h, content, fs, btns);
+  d.addEventListener('close', () => d.remove());
+  document.body.appendChild(d);
+  d.showModal();
+  return d;
+}
+function sdbSortDone(label, before) {
+  const after = sdbCount(sdbData);
+  sdbSel.clear();
+  sdbRender();
+  $('sdbSt').textContent = label + ' applied: ' + (before - after) + ' sensor(s) removed, ' + after + ' remain.';
+}
+function sdbNeedData(title) {
+  if (sdbData && sdbCount(sdbData)) return true;
+  alert(title + ': load the sensors first.');
+  return false;
+}
+// items: [{label, key, cat?, sub?}]. An item without 'cat' is a category: it toggles the items whose cat is its key
+// and shows indeterminate when only some of them are checked. keys() = checked items that have 'cat'.
+function sdbCheckList(items) {
+  const el = document.createElement('div'); el.className = 'lst';
+  const boxes = [];
+  for (const it of items) {
+    const l = document.createElement('label'); if (it.sub) l.className = 'sub';
+    const cb = document.createElement('input'); cb.type = 'checkbox'; cb.dataset.key = it.key; cb._cat = it.cat;
+    l.append(cb, ' ' + it.label); el.appendChild(l); boxes.push(cb);
+  }
+  const sync = () => {
+    for (const c of boxes) if (c._cat === undefined) {
+      const subs = boxes.filter(b => b._cat === c.dataset.key), n = subs.filter(b => b.checked).length;
+      c.checked = subs.length > 0 && n === subs.length;
+      c.indeterminate = n > 0 && n < subs.length;
+    }
+  };
+  el.addEventListener('change', (e) => {
+    const c = e.target;
+    if (c._cat === undefined) for (const b of boxes) if (b._cat === c.dataset.key) b.checked = c.checked;
+    sync();
+  });
+  return { el, keys: () => boxes.filter(b => b._cat !== undefined && b.checked).map(b => b.dataset.key),
+           setAll: (v) => { for (const b of boxes) b.checked = v; sync(); } };
+}
+
+$('sortType').addEventListener('click', () => {
+  if (!sdbNeedData('Sort by Reading Type')) return;
+  const counts = {};
+  sdbCollect(sdbData, (k, v, leaf) => { if (leaf) counts[sdbTypeKey(v)] = (counts[sdbTypeKey(v)] || 0) + 1; });
+  const byType = {};   // eType -> [[eTypeUnion, count]]
+  for (const [key, c] of Object.entries(counts)) {
+    if (key === 'none') continue;
+    const [t, u] = key.split(',').map(Number);
+    (byType[t] = byType[t] || []).push([u, c]);
+  }
+  const items = [];
+  for (const t of Object.keys(byType).map(Number).sort((a, b) => a - b)) {
+    const subs = byType[t].sort((a, b) => a[0] - b[0]);
+    items.push({ label: (READING_TYPE_NAMES[t] || ('Unknown eType=' + t)) + '  (' + subs.reduce((a, x) => a + x[1], 0) + ' sensor(s))', key: String(t) });
+    const names = READING_SUBTYPE_NAMES[t];
+    for (const [u, c] of subs) {
+      items.push({ label: (names ? (names[u] || ('Unknown eTypeUnion=' + u)) : ('eTypeUnion=' + u)) + '  (' + c + ' sensor(s))',
+                   key: t + ',' + u, cat: String(t), sub: true });
+    }
+  }
+  if (counts.none) items.push({ label: '(sensors with no tReadingType info)  (' + counts.none + ' sensor(s))', key: 'none', cat: '' });
+  const list = sdbCheckList(items);
+  sdbDialog('Sort by Reading Type', 'check the reading types to act on', list.el, (mode) => {
+    const sel = new Set(list.keys());
+    if (!sel.size) return 'Check at least one reading type.';
+    const before = sdbCount(sdbData);
+    sdbPush();
+    sdbPrune(sdbData, (k, v) => sel.has(sdbTypeKey(v)) === (mode === 'remove'));
+    sdbSortDone('Sort by reading type', before);
+  }, [['Select All', () => list.setAll(true)], ['Select None', () => list.setAll(false)]]);
+});
+
+$('sortName').addEventListener('click', () => {
+  if (!sdbNeedData('Sort by Name')) return;
+  const inp = document.createElement('input'); inp.type = 'text'; inp.placeholder = 'text to match in sensor/group names (case-insensitive)';
+  const wrap = document.createElement('div'); wrap.append(inp);
+  sdbDialog('Sort by Name', 'names containing:', wrap, (mode) => {
+    const pat = inp.value.toLowerCase();
+    if (!pat) return 'Enter the text to match.';
+    const before = sdbCount(sdbData);
+    sdbPush();
+    sdbNameFilter(sdbData, (n) => n.includes(pat), mode);
+    sdbSortDone('Sort by name', before);
+  });
+  inp.focus();
+});
+
+$('sortWords').addEventListener('click', () => {
+  if (!sdbNeedData('Sort by Repeating Words')) return;
+  const counts = sdbRepeatingWords(sdbData, {});
+  const words = Object.keys(counts).filter(w => counts[w] > 1).sort();
+  if (!words.length) { alert('No repeating words found in sensor/group names.'); return; }
+  const list = sdbCheckList(words.map(w => ({ label: w + '  (' + counts[w] + ' time(s))', key: w, cat: '' })));
+  sdbDialog('Sort by Repeating Words', 'check the words to act on', list.el, (mode) => {
+    const sel = list.keys();
+    if (!sel.length) return 'Check at least one repeating word.';
+    const before = sdbCount(sdbData);
+    sdbPush();
+    sdbNameFilter(sdbData, (n) => sel.some(w => n.includes(w)), mode);   // a name matching ANY checked word
+    sdbSortDone('Sort by repeating words', before);
+  }, [['Select All', () => list.setAll(true)], ['Select None', () => list.setAll(false)]]);
+});
+
+// POST the .flt JSON to the server; it answers {"ok":true,"sensors":N} or 4xx {"error":".."}
+const SDB_APPLY = API.replace(/sensors\/read$/, 'sensors/filter/apply');
+$('sdbApply').addEventListener('click', async () => {
+  if (!sdbData) return;
+  const btn = $('sdbApply'), st = $('sdbSt');
+  btn.disabled = true;
+  st.textContent = 'sending...';
+  try {
+    const res = await fetch(SDB_APPLY, {
+      method: 'POST',
+      headers: { 'Content-Type': 'text/plain' },   // not application/json: avoids a CORS preflight (file:// use)
+      body: JSON.stringify({ Version: FLT_VERSION, ...buildFlt(sdbData) })
+    });
+    const json = await res.json().catch(() => ({}));
+    if (!res.ok || json.error) throw new Error(json.error || ('HTTP ' + res.status));
+    st.textContent = 'applied: ' + json.sensors + ' sensors';
+  } catch (e) {
+    st.textContent = e instanceof TypeError ? 'cannot reach ' + SDB_APPLY : (e.message || String(e));
+  } finally {
+    btn.disabled = false;
+  }
+});
+// POST with no filter data: the server forgets the filter it was given, then the tree is reloaded from the server
+const SDB_RESET = API.replace(/sensors\/read$/, 'sensors/filter/reset');
+$('sdbReset').addEventListener('click', async () => {
+  const btn = $('sdbReset'), st = $('sdbSt');
+  btn.disabled = true;
+  st.textContent = 'sending...';
+  try {
+    const res = await fetch(SDB_RESET, { method: 'POST', headers: { 'Content-Type': 'text/plain' }, body: '' });
+    const json = await res.json().catch(() => ({}));
+    if (!res.ok || json.error) throw new Error(json.error || ('HTTP ' + res.status));
+    await sdbLoad();                              // show what the server has now (unsaved edits are dropped)
+  } catch (e) {
+    st.textContent = e instanceof TypeError ? 'cannot reach ' + SDB_RESET : (e.message || String(e));
+  } finally {
+    btn.disabled = false;
+  }
+});
+
+// Round-trip time of a tiny request (send + server + response), shown next to the button.
+const PING = API.replace(/sensors\/read$/, 'ping');
+const pingBtn = document.getElementById('pingBtn');
+const pingOut = document.getElementById('pingOut');
+pingBtn.addEventListener('click', async () => {
+  pingBtn.disabled = true;
+  pingOut.textContent = '...';
+  try {
+    const t0 = performance.now();
+    const res = await fetch(PING, { cache: 'no-store' });
+    await res.text();
+    const ms = performance.now() - t0;
+    if (!res.ok) throw new Error('HTTP ' + res.status);
+    pingOut.textContent = ms.toFixed(1) + ' ms';
+  } catch (e) {
+    pingOut.textContent = 'failed';
+  } finally {
+    pingBtn.disabled = false;
+  }
+});
+infoPromise = infoLoad();   // after all consts (SDB_API, sdbIsNode, ...) exist
+</script>
+</body>
+</html>
