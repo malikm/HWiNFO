@@ -6,6 +6,7 @@ Example dashboards built on the **HWiNFO REST API**. Each one is a single, self-
 |---|---|---|
 | [**Simple Example**](simple_example/) | A minimal reference page that lists every sensor reading with its unit. The best starting point for your own dashboard. | <a href="simple_example/"><img src="simple_example/Screenshot.jpg" width="200" alt="Simple Example"></a> |
 | [**Bubbles**](bubbles/) | A playful view where every reading is a floating, colour-coded bubble you can pop. | <a href="bubbles/"><img src="bubbles/Screenshot.jpg" width="200" alt="Bubbles"></a> |
+| [**PC3D**](pc3d/) | A 3D model of your PC where every component shows its live readings. Rotate it, explode it, and click a part for details. | <a href="pc3d/"><img src="pc3d/Screenshot.jpg" width="200" alt="PC3D"></a> |
 | [**Built-in Dashboard**](hwinfo_builtin/) | The full dashboard shipped inside HWiNFO, with live statistics, a sensor filter editor and timing. | <a href="hwinfo_builtin/"><img src="hwinfo_builtin/Screenshot.jpg" width="200" alt="Built-in Dashboard"></a> |
 
 ## Add your own

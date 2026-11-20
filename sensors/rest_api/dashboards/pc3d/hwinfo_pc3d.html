@@ -1,0 +1,949 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>HWiNFO PC3D</title>
+<style>
+  :root {
+    --bg0: #03060c; --bg1: #08111f; --txt: #dbeafe; --dim: #7f94b3; --line: rgba(120,200,255,.18);
+    --cy: #22d3ee; --mg: #c084fc; --ok: #34d399; --err: #fb7185;
+    --glass: rgba(8,16,30,.66);
+    --mono: "Cascadia Mono", "Cascadia Code", Consolas, "SFMono-Regular", Menlo, monospace;
+    --sans: Inter, "Segoe UI Variable", "Segoe UI", system-ui, -apple-system, Roboto, sans-serif;
+  }
+  * { box-sizing: border-box; }
+  html, body { margin: 0; height: 100%; background: var(--bg0); color: var(--txt); font: 13px/1.4 var(--sans);
+               -webkit-font-smoothing: antialiased; }
+  #app { position: fixed; inset: 0; overflow: hidden; user-select: none; touch-action: none;
+         background: radial-gradient(1100px 600px at 50% 38%, #0d2038 0%, var(--bg1) 45%, var(--bg0) 100%); cursor: grab; }
+  #app.drag { cursor: grabbing; }
+  #app::before { content: ""; position: absolute; inset: 0; pointer-events: none; opacity: .55;
+    background-image: radial-gradient(1px 1px at 12% 22%, #9bd 50%, transparent 51%), radial-gradient(1px 1px at 82% 14%, #fff 50%, transparent 51%),
+      radial-gradient(1.5px 1.5px at 66% 72%, #7be 50%, transparent 51%), radial-gradient(1px 1px at 28% 80%, #cbf 50%, transparent 51%),
+      radial-gradient(1px 1px at 92% 58%, #9bd 50%, transparent 51%), radial-gradient(1px 1px at 44% 9%, #fff 50%, transparent 51%);
+    background-size: 520px 420px; }
+  #app::after { content: ""; position: absolute; inset: 0; pointer-events: none; opacity: .5; mix-blend-mode: overlay;
+    background: repeating-linear-gradient(0deg, rgba(255,255,255,.035) 0 1px, transparent 1px 3px); }
+
+  /* ---- 3D scene ---- */
+  #pan { position: absolute; inset: 0; }
+  #stage { position: absolute; inset: 0; perspective: 1500px; }
+  #scene, #world { position: absolute; left: 50%; top: 50%; width: 0; height: 0; transform-style: preserve-3d; }
+  .comp, .box { position: absolute; left: 0; top: 0; width: 0; height: 0; transform-style: preserve-3d; }
+  .plane, .f { position: absolute; backface-visibility: visible; }
+  .plane { transform-style: preserve-3d; }
+
+  .comp { --hue: 195; --glow: .5; }
+  .f { background: linear-gradient(135deg, hsla(var(--hue),95%,60%,.20), hsla(var(--hue),95%,40%,.07)), rgba(6,12,24,.74);
+       border: 1px solid hsla(var(--hue),95%,62%,.62); box-shadow: inset 0 0 16px hsla(var(--hue),95%,55%,.20), 0 0 10px hsla(var(--hue),95%,55%,calc(var(--glow) * .35));
+       display: flex; align-items: center; justify-content: center; overflow: hidden; cursor: pointer;
+       transition: background .25s, box-shadow .25s, border-color .25s; }
+  .f-t { background: linear-gradient(135deg, hsla(var(--hue),95%,62%,.32), hsla(var(--hue),95%,42%,.10)), rgba(8,16,30,.8); }
+  .comp:hover .f { border-color: hsla(var(--hue),100%,75%,.95); box-shadow: inset 0 0 22px hsla(var(--hue),100%,60%,.45), 0 0 18px hsla(var(--hue),100%,60%,.75); }
+  .comp.sel .f { border-color: #fff; animation: pulse 1.6s ease-in-out infinite; }
+  @keyframes pulse { 50% { box-shadow: inset 0 0 28px hsla(var(--hue),100%,65%,.6), 0 0 30px hsla(var(--hue),100%,65%,.95); } }
+  .comp.nodata .f { filter: saturate(.25) brightness(.65); }
+  .f span { font: 700 10px var(--mono); letter-spacing: .12em; color: hsla(var(--hue),100%,82%,.95); text-shadow: 0 0 8px hsla(var(--hue),100%,60%,.9); pointer-events: none; white-space: nowrap; }
+  .fins .f { background: repeating-linear-gradient(90deg, hsla(var(--hue),90%,55%,.30) 0 2px, rgba(6,12,24,.8) 2px 6px); }
+  .fins .f-t, .fins .f-u { background: repeating-linear-gradient(0deg, hsla(var(--hue),90%,55%,.30) 0 2px, rgba(6,12,24,.8) 2px 6px); }
+  .pcb .f { background: linear-gradient(135deg, hsla(var(--hue),80%,45%,.18), rgba(4,10,20,.9)),
+              repeating-linear-gradient(0deg, transparent 0 11px, hsla(var(--hue),90%,60%,.10) 11px 12px),
+              repeating-linear-gradient(90deg, transparent 0 11px, hsla(var(--hue),90%,60%,.10) 11px 12px); }
+  .die .f-f { background: radial-gradient(circle, hsla(var(--hue),100%,70%,.9), hsla(var(--hue),100%,45%,.25) 70%); }
+  .ram .f-f, .ram .f-k { background: linear-gradient(180deg, hsla(var(--hue),95%,60%,.4), rgba(6,12,24,.8) 30%), repeating-linear-gradient(90deg, hsla(var(--hue),95%,70%,.5) 0 3px, transparent 3px 9px); }
+  .empty .f { background: rgba(6,12,24,.35); border-style: dashed; box-shadow: none; filter: none; }
+  .screen .f-f { background: radial-gradient(120% 90% at 50% 40%, hsla(var(--hue),90%,45%,.35), rgba(3,8,16,.95)); }
+  .screen .f-f span { font-size: 26px; letter-spacing: .04em; }
+
+  .shell { position: absolute; pointer-events: none; border: 1px solid rgba(110,200,255,.30);
+           background: linear-gradient(180deg, rgba(60,120,190,.07), rgba(20,40,70,.05)); box-shadow: inset 0 0 40px rgba(34,211,238,.06); }
+  .shell.back { background: repeating-linear-gradient(0deg, transparent 0 14px, rgba(110,200,255,.07) 14px 15px), repeating-linear-gradient(90deg, transparent 0 14px, rgba(110,200,255,.07) 14px 15px), rgba(4,10,20,.6); }
+  .shell.glass { background: linear-gradient(115deg, rgba(160,220,255,.10), rgba(160,220,255,.015) 38%, rgba(255,255,255,.08) 47%, rgba(160,220,255,.015) 58%); border-color: rgba(140,220,255,.55); box-shadow: 0 0 30px rgba(34,211,238,.18), inset 0 0 40px rgba(34,211,238,.08); }
+  .floor { position: absolute; pointer-events: none; background-image: linear-gradient(rgba(34,211,238,.35) 1px, transparent 1px), linear-gradient(90deg, rgba(34,211,238,.35) 1px, transparent 1px);
+           background-size: 60px 60px; -webkit-mask-image: radial-gradient(closest-side, #000 25%, transparent 100%); mask-image: radial-gradient(closest-side, #000 25%, transparent 100%); }
+  .fan { cursor: pointer; }
+  .fan .ring { position: absolute; inset: 0; border-radius: 50%; border: 2px solid hsla(var(--hue),95%,65%,.85); background: radial-gradient(circle, rgba(4,10,20,.7) 55%, hsla(var(--hue),95%,50%,.18) 100%); box-shadow: 0 0 14px hsla(var(--hue),95%,55%,.55); }
+  .fan .rotor { position: absolute; inset: 7%; border-radius: 50%; animation: spin var(--spin, 3s) linear infinite; animation-play-state: var(--run, paused);
+                background: repeating-conic-gradient(hsla(var(--hue),95%,62%,.78) 0 17deg, transparent 17deg 51.43deg); -webkit-mask-image: radial-gradient(circle, transparent 0 14%, #000 15%); mask-image: radial-gradient(circle, transparent 0 14%, #000 15%); }
+  .fan .hub { position: absolute; inset: 40%; border-radius: 50%; background: #06101e; border: 1px solid hsla(var(--hue),95%,65%,.9); }
+  @keyframes spin { to { transform: rotate(360deg); } }
+  .comp:hover .fan .ring { box-shadow: 0 0 24px hsla(var(--hue),100%,65%,.95); }
+
+  /* ---- HUD overlay ---- */
+  #links { position: absolute; inset: 0; width: 100%; height: 100%; pointer-events: none; overflow: visible; }
+  #links path { fill: none; stroke: var(--lc, var(--cy)); stroke-width: 1; opacity: .65; }
+  #links circle { fill: var(--lc, var(--cy)); }
+  #tags { position: absolute; inset: 0; pointer-events: none; }
+  .tag { --h: 195; position: absolute; left: 0; top: 0; min-width: 148px; max-width: 220px; padding: 5px 10px 6px; pointer-events: auto; cursor: pointer;
+         background: var(--glass); backdrop-filter: blur(10px) saturate(1.3); -webkit-backdrop-filter: blur(10px) saturate(1.3);
+         border: 1px solid hsla(var(--h),95%,62%,.5); border-radius: 10px; box-shadow: 0 0 18px hsla(var(--h),95%,55%,.18), inset 0 0 20px hsla(var(--h),95%,55%,.06);
+         transition: opacity .25s, border-color .2s, box-shadow .2s; font-family: var(--mono); will-change: transform; }
+  .tag:hover, .tag.sel { border-color: hsla(var(--h),100%,75%,.95); box-shadow: 0 0 26px hsla(var(--h),100%,60%,.5); }
+  .tag.off { opacity: 0; pointer-events: none; }
+  .tag .th { display: flex; align-items: baseline; gap: 7px; margin-bottom: 4px; }
+  .tag .th i { width: 7px; height: 7px; border-radius: 50%; background: hsl(var(--h),95%,62%); box-shadow: 0 0 8px hsl(var(--h),95%,62%); align-self: center; flex: none; }
+  .tag .th b { font: 700 11px var(--mono); letter-spacing: .14em; text-transform: uppercase; color: hsl(var(--h),100%,82%); white-space: nowrap; }
+  .tag .th small { font: 10px var(--sans); color: var(--dim); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; min-width: 0; flex: 1; }
+  .tag .tr { display: flex; justify-content: space-between; gap: 12px; font-size: 11px; line-height: 1.42; }
+  .tag .tr span { color: var(--dim); letter-spacing: .08em; }
+  .tag .tr em { font-style: normal; color: #eaf6ff; font-variant-numeric: tabular-nums; }
+  .tag .nd { color: var(--dim); font: 10px var(--sans); }
+
+  /* ---- Chrome ---- */
+  header.bar { position: absolute; top: 0; left: 0; right: 0; display: flex; align-items: center; gap: 12px; padding: 12px 18px; z-index: 5; pointer-events: none; }
+  header.bar > * { pointer-events: auto; }
+  .brand { display: flex; align-items: center; gap: 10px; font: 700 14px var(--sans); letter-spacing: .02em; }
+  .brand .lg { width: 26px; height: 26px; border-radius: 8px; background: conic-gradient(from 210deg, var(--cy), var(--mg), var(--cy)); box-shadow: 0 0 18px rgba(34,211,238,.6); position: relative; }
+  .brand .lg::after { content: ""; position: absolute; inset: 5px; border-radius: 5px; background: var(--bg0); }
+  .brand small { display: block; font: 500 10px var(--mono); color: var(--dim); letter-spacing: .18em; text-transform: uppercase; }
+  .pill { margin-left: auto; font: 11px var(--mono); padding: 5px 12px; border-radius: 999px; background: var(--glass); border: 1px solid var(--line); color: var(--dim); backdrop-filter: blur(8px); white-space: nowrap; max-width: 52vw; overflow: hidden; text-overflow: ellipsis; }
+  .pill::before { content: ""; display: inline-block; width: 7px; height: 7px; margin-right: 8px; border-radius: 50%; background: var(--dim); vertical-align: 1px; }
+  .pill.ok::before { background: var(--ok); box-shadow: 0 0 0 3px rgba(52,211,153,.2); animation: blink 2s infinite; }
+  .pill.err::before { background: var(--err); box-shadow: 0 0 0 3px rgba(251,113,133,.2); }
+  .pill.err { color: var(--err); }
+  @keyframes blink { 50% { opacity: .35; } }
+
+  #dock { position: absolute; left: 50%; bottom: 18px; transform: translateX(-50%); z-index: 5; display: flex; gap: 6px; padding: 6px; border-radius: 16px;
+          background: var(--glass); border: 1px solid var(--line); backdrop-filter: blur(14px); box-shadow: 0 10px 40px rgba(0,0,0,.5); max-width: calc(100vw - 20px); flex-wrap: wrap; justify-content: center; }
+  button { font: 600 12px var(--sans); color: var(--txt); background: rgba(34,60,100,.35); border: 1px solid var(--line); border-radius: 10px; padding: 7px 12px; cursor: pointer; transition: background .15s, border-color .15s, box-shadow .15s; }
+  button:hover { background: rgba(34,211,238,.16); border-color: rgba(34,211,238,.6); }
+  button.on { background: rgba(34,211,238,.22); border-color: var(--cy); box-shadow: 0 0 14px rgba(34,211,238,.35); color: #fff; }
+  button:focus-visible, input:focus-visible { outline: 2px solid var(--cy); outline-offset: 1px; }
+  #hint { position: absolute; left: 18px; bottom: 22px; z-index: 4; font: 10px var(--mono); color: var(--dim); letter-spacing: .08em; line-height: 1.7; pointer-events: none; }
+  #hint b { color: var(--cy); font-weight: 600; }
+
+  /* ---- Detail drawer ---- */
+  #drawer { position: absolute; top: 64px; right: 16px; bottom: 82px; width: 368px; z-index: 6; display: flex; flex-direction: column; border-radius: 18px; overflow: hidden;
+            background: rgba(7,14,27,.82); border: 1px solid var(--line); backdrop-filter: blur(18px) saturate(1.4); box-shadow: 0 20px 60px rgba(0,0,0,.6);
+            transform: translateX(calc(100% + 30px)); transition: transform .45s cubic-bezier(.2,.8,.2,1); --h: 195; user-select: text; cursor: default; }
+  #drawer.open { transform: none; }
+  #drawer .dh { display: flex; gap: 12px; align-items: center; padding: 14px 16px; border-bottom: 1px solid var(--line); background: linear-gradient(90deg, hsla(var(--h),95%,55%,.18), transparent); }
+  #drawer .dh .ico { width: 10px; height: 34px; border-radius: 4px; background: hsl(var(--h),95%,60%); box-shadow: 0 0 16px hsl(var(--h),95%,60%); }
+  #drawer h2 { margin: 0; font: 700 15px var(--sans); letter-spacing: .04em; text-transform: uppercase; }
+  #drawer .dh p { margin: 1px 0 0; font: 11px var(--sans); color: var(--dim); }
+  #drawer .dh button { margin-left: auto; padding: 4px 9px; }
+  #drawer .hero { display: grid; grid-template-columns: repeat(3, 1fr); gap: 8px; padding: 12px 14px 4px; }
+  #drawer .card { padding: 8px 9px; border-radius: 10px; background: rgba(20,40,70,.38); border: 1px solid var(--line); cursor: pointer; }
+  #drawer .card.act { border-color: hsl(var(--h),95%,62%); box-shadow: 0 0 14px hsla(var(--h),95%,55%,.35); }
+  #drawer .card small { display: block; font: 9px var(--mono); letter-spacing: .12em; color: var(--dim); text-transform: uppercase; }
+  #drawer .card b { display: block; font: 600 15px var(--mono); margin-top: 2px; font-variant-numeric: tabular-nums; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+  #drawer .card b i { font: 10px var(--sans); color: var(--dim); font-style: normal; margin-left: 3px; }
+  #chart { margin: 8px 14px 2px; padding: 8px 10px; border-radius: 10px; background: rgba(4,10,20,.6); border: 1px solid var(--line); }
+  #chart .cl { display: flex; justify-content: space-between; font: 10px var(--mono); color: var(--dim); margin-bottom: 4px; gap: 8px; }
+  #chart .cl span:first-child { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+  #chart svg { width: 100%; height: 64px; display: block; }
+  #drawer input[type=search] { margin: 8px 14px 6px; padding: 7px 11px; font: 12px var(--sans); color: var(--txt); background: rgba(4,10,20,.6); border: 1px solid var(--line); border-radius: 9px; }
+  #list { flex: 1; overflow: auto; padding: 0 8px 10px 14px; scrollbar-width: thin; scrollbar-color: rgba(120,200,255,.3) transparent; }
+  #list details { margin-bottom: 4px; }
+  #list summary { cursor: pointer; padding: 6px 2px; font: 600 11px var(--mono); letter-spacing: .06em; color: hsl(var(--h),90%,78%); list-style: none; display: flex; gap: 6px; }
+  #list summary::before { content: "\25B8"; color: var(--dim); transition: transform .15s; }
+  #list details[open] > summary::before { transform: rotate(90deg); }
+  #list summary span { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+  #list summary em { margin-left: auto; font-style: normal; color: var(--dim); }
+  #list .rw { display: flex; justify-content: space-between; gap: 10px; padding: 3px 8px; border-radius: 6px; cursor: pointer; font-size: 12px; }
+  #list .rw:hover { background: rgba(34,211,238,.10); }
+  #list .rw.act { background: hsla(var(--h),95%,55%,.18); }
+  #list .rw span { color: #b9c9e3; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+  #list .rw em { font: 12px var(--mono); font-style: normal; font-variant-numeric: tabular-nums; white-space: nowrap; }
+  #list .rw em.chg { animation: flash .9s; }
+  @keyframes flash { from { color: #fff; text-shadow: 0 0 10px #fff; } }
+  #drawer .none { padding: 26px 18px; color: var(--dim); text-align: center; }
+
+  #boot { position: absolute; inset: 0; z-index: 20; display: grid; place-items: center; background: var(--bg0); transition: opacity .8s, visibility .8s; font: 12px var(--mono); letter-spacing: .2em; color: var(--cy); text-align: center; }
+  #boot.gone { opacity: 0; visibility: hidden; }
+  #boot .ring { width: 74px; height: 74px; margin: 0 auto 22px; border-radius: 50%; border: 2px solid rgba(34,211,238,.18); border-top-color: var(--cy); animation: spin 1s linear infinite; }
+  #boot small { display: block; margin-top: 8px; color: var(--dim); letter-spacing: .08em; }
+
+  @media (max-width: 760px) {
+    #drawer { top: auto; left: 8px; right: 8px; bottom: 76px; width: auto; height: 52vh; }
+    #hint { display: none; }
+    .brand small { display: none; }
+  }
+  @media (prefers-reduced-motion: reduce) { *, *::before { animation-duration: .001s !important; transition: none !important; } }
+</style>
+</head>
+<body>
+<div id="app">
+  <div id="pan"><div id="stage"><div id="scene"><div id="world"></div></div></div></div>
+  <svg id="links"></svg>
+  <div id="tags"></div>
+
+  <header class="bar">
+    <div class="brand"><span class="lg"></span><div>HWiNFO PC3D<small>live sensor 3D view</small></div></div>
+    <span class="pill" id="st">connecting...</span>
+  </header>
+
+  <div id="dock">
+    <button id="bAuto" title="Auto-rotate (Space)">Rotate</button>
+    <button id="bEx" title="Exploded view (E)">Explode</button>
+    <button id="bTags" class="on" title="Show sensor labels (L)">Labels</button>
+    <button id="bPause" title="Pause / resume polling (P)">Pause</button>
+    <button id="bIn" title="Zoom in (+)">+</button>
+    <button id="bOut" title="Zoom out (-)">&minus;</button>
+    <button id="bReset" title="Reset view (0)">Reset</button>
+  </div>
+  <div id="hint"><b>DRAG</b> rotate &nbsp; <b>RIGHT-DRAG</b> pan &nbsp; <b>WHEEL / PINCH</b> zoom &nbsp; <b>CLICK</b> a component</div>
+
+  <aside id="drawer" aria-live="polite">
+    <div class="dh"><span class="ico"></span><div><h2 id="dT">-</h2><p id="dS"></p></div><button id="dX" type="button" title="Close (Esc)">&#10005;</button></div>
+    <div class="hero" id="dHero"></div>
+    <div id="chart"><div class="cl"><span id="cN">-</span><span id="cV"></span></div><svg id="cS" viewBox="0 0 300 64" preserveAspectRatio="none"></svg></div>
+    <input type="search" id="dQ" placeholder="Filter readings...">
+    <div id="list"></div>
+  </aside>
+
+  <div id="boot"><div><div class="ring"></div>LINKING TO HWiNFO SERVER<small id="bootMsg">reading sensor database...</small></div></div>
+</div>
+
+<script>
+'use strict';
+// ---------------------------------------------------------------------------------------------------------------
+// HWiNFO PC3D: a CSS-3D PC (no libraries) whose components carry live readings from the web server.
+// Locations come from /api/sensors/sdb (tSensorLocation.eSensorLocation, tReadingLocation.eReadingLocation, see
+// location.txt); values come from /api/sensors/read. Nothing is stored in the browser.
+// Served by the Crow server -> same-origin; opened from disk -> 127.0.0.1:8080; override with ?server=host:port
+// ---------------------------------------------------------------------------------------------------------------
+const qsServer = new URLSearchParams(location.search).get('server');
+const BASE = qsServer ? 'http://' + qsServer : location.protocol === 'file:' ? 'http://127.0.0.1:8080' : '';
+const API_READ = BASE + '/api/sensors/read', API_SDB = BASE + '/api/sensors/sdb';
+const POLL_MS = 2000;
+
+const $ = (id) => document.getElementById(id);
+const el = (tag, cls, parent) => { const e = document.createElement(tag); if (cls) e.className = cls; if (parent) parent.appendChild(e); return e; };
+const isObj = (v) => v !== null && typeof v === 'object' && !Array.isArray(v);
+const num = (v) => parseFloat(String(v).replace(/,/g, ''));
+const clamp = (v, a, b) => Math.min(b, Math.max(a, v));
+const SEP = '\u0001';
+
+// =============================== 3D scene ==================================================================
+const world = $('world'), scene = $('scene'), pan = $('pan'), stage = $('stage');
+const WORLD_CX = 140;                               // pivot: the middle of PC + monitor
+world.style.transform = `translate3d(${-WORLD_CX}px,0,0)`;
+const COMPS = new Map();                            // id -> component
+
+function mkComp(id, name, o) {
+  const w = el('div', 'comp ' + (o.cls || ''), world);
+  w.dataset.id = id;
+  w.style.setProperty('--hue', o.hue);
+  const c = { id, name, w, anchor: o.anchor, d: o.d || [0, 0, 0], base: o.hue, hue: o.hue, fans: [], rs: [], major: [], temp: null, sub: '', order: o.order || 0 };
+  COMPS.set(id, c);
+  return c;
+}
+function box(c, o) {                                // a cuboid centred on (x,y,z); faces f k r l t u = front back right left top bottom
+  const { x, y, z, w, h, d } = o;
+  const b = el('div', 'box ' + (o.cls || ''), c.w);
+  b.style.transform = `translate3d(${x}px,${y}px,${z}px)`;
+  const defs = [['f', w, h, `translateZ(${d / 2}px)`], ['k', w, h, `rotateY(180deg) translateZ(${d / 2}px)`],
+    ['r', d, h, `rotateY(90deg) translateZ(${w / 2}px)`], ['l', d, h, `rotateY(-90deg) translateZ(${w / 2}px)`],
+    ['t', w, d, `rotateX(90deg) translateZ(${h / 2}px)`], ['u', w, d, `rotateX(-90deg) translateZ(${h / 2}px)`]];
+  for (const [n, fw, fh, tf] of defs) {
+    const f = el('div', 'f f-' + n, b);
+    f.style.cssText = `width:${fw}px;height:${fh}px;left:${-fw / 2}px;top:${-fh / 2}px;transform:${tf}`;
+    b[n] = f;
+  }
+  if (o.txt) { el('span', '', b[o.face || 'f']).textContent = o.txt; }
+  return b;
+}
+function plane(parent, o) {
+  const p = el('div', 'plane ' + (o.cls || ''), parent);
+  p.style.cssText = `width:${o.w}px;height:${o.h}px;left:${-o.w / 2}px;top:${-o.h / 2}px;` +
+    `transform:translate3d(${o.x}px,${o.y}px,${o.z}px) rotateY(${o.ry || 0}deg) rotateX(${o.rx || 0}deg)`;
+  return p;
+}
+function fan(c, o) {
+  const p = plane(c.w, { ...o, w: o.dia, h: o.dia, cls: 'fan' });
+  el('div', 'ring', p);
+  const r = el('div', 'rotor', p);
+  el('div', 'hub', p);
+  c.fans.push(r);
+  return p;
+}
+
+function buildStatic() {
+  // --- stage floor and case shell (not clickable) ---
+  plane(world, { x: 0, y: 262, z: 0, w: 1500, h: 1500, rx: 90, cls: 'floor' });
+  plane(world, { x: 0, y: 0, z: -150, w: 340, h: 460, cls: 'shell back' });
+  plane(world, { x: 0, y: 230, z: 0, w: 340, h: 300, rx: 90, cls: 'shell' });
+  plane(world, { x: -170, y: 0, z: 0, w: 300, h: 460, ry: 90, cls: 'shell' });
+  plane(world, { x: 170, y: 0, z: 0, w: 300, h: 460, ry: 90, cls: 'shell' });
+  plane(world, { x: 0, y: 0, z: 150, w: 340, h: 460, cls: 'shell glass' });
+
+  // --- motherboard (z = -140 is its surface) ---
+  let c = mkComp('mobo', 'Motherboard', { hue: 215, anchor: [-45, -10, -138], d: [0, 0, -50], order: 5 });
+  box(c, { x: 40, y: -60, z: -143, w: 200, h: 200, d: 6, cls: 'pcb' });
+  box(c, { x: -12, y: 20, z: -138, w: 36, h: 14, d: 4, cls: '', txt: 'PCIe' });
+
+  c = mkComp('cpu', 'CPU', { hue: 190, anchor: [40, -95, -126], d: [0, 0, 70], order: 1 });
+  box(c, { x: 40, y: -95, z: -135, w: 78, h: 78, d: 10, cls: 'die' });
+
+  c = mkComp('cooler', 'CPU Cooler', { hue: 172, anchor: [-20, -208, -80], d: [0, -70, 80], order: 2 });
+  box(c, { x: 40, y: -95, z: -119, w: 52, h: 52, d: 22, txt: 'PUMP' });
+  box(c, { x: 31, y: -153, z: -106, w: 6, h: 100, d: 6 });
+  box(c, { x: 49, y: -153, z: -106, w: 6, h: 100, d: 6 });
+  box(c, { x: -20, y: -208, z: -80, w: 250, h: 24, d: 120, cls: 'fins', txt: 'RADIATOR', face: 'f' });
+  fan(c, { x: -70, y: -221, z: -80, dia: 112, rx: 90 });
+  fan(c, { x: 30, y: -221, z: -80, dia: 112, rx: 90 });
+
+  c = mkComp('vrm', 'VRM', { hue: 38, anchor: [60, -150, -112], d: [-20, -40, 80], order: 4 });
+  box(c, { x: 50, y: -152, z: -126, w: 132, h: 16, d: 26, cls: 'fins' });
+  box(c, { x: -20, y: -92, z: -126, w: 16, h: 100, d: 26, cls: 'fins' });
+
+  c = mkComp('chipset', 'Chipset', { hue: 232, anchor: [95, 0, -122], d: [40, 40, 80], order: 6 });
+  box(c, { x: 95, y: 0, z: -131, w: 44, h: 44, d: 14, cls: 'fins', txt: 'PCH' });
+
+  c = mkComp('ram', 'Memory', { hue: 285, anchor: [116, -75, -98], d: [70, 0, 70], order: 3 });
+  c.sticks = [];
+
+  c = mkComp('gpu', 'GPU', { hue: 142, anchor: [-20, 75, -28], d: [0, 70, 90], order: 1 });
+  box(c, { x: -20, y: 75, z: -85, w: 250, h: 44, d: 110, txt: 'GPU', face: 'f', cls: '' });
+  box(c, { x: -20, y: 75, z: -85, w: 246, h: 3, d: 106, cls: 'die' });
+
+  c = mkComp('psu', 'Power Supply', { hue: 14, anchor: [70, 190, -14], d: [0, 60, 40], order: 7 });
+  box(c, { x: 70, y: 190, z: -80, w: 190, h: 76, d: 130, txt: 'PSU' });
+
+  c = mkComp('nic', 'Network', { hue: 320, anchor: [160, -80, -80], d: [70, 0, 40], order: 8 });
+  box(c, { x: 152, y: -80, z: -110, w: 28, h: 100, d: 60, txt: 'LAN', face: 'f' });
+  box(c, { x: 186, y: -112, z: -128, w: 4, h: 84, d: 4 });
+  box(c, { x: 186, y: -112, z: -96, w: 4, h: 84, d: 4 });
+
+  c = mkComp('fans', 'Case Fans', { hue: 200, anchor: [-165, -110, 0], d: [-70, 0, 0], order: 9 });
+  fan(c, { x: -167, y: -110, z: 0, dia: 112, ry: 90 });
+  fan(c, { x: -167, y: 15, z: 0, dia: 112, ry: 90 });
+  fan(c, { x: 167, y: -175, z: -62, dia: 78, ry: 90 });
+
+  c = mkComp('case', 'System', { hue: 210, anchor: [-170, -230, 150], d: [0, 0, 0], order: 10 });
+  box(c, { x: -170, y: -232, z: 150, w: 8, h: 8, d: 8 });
+  box(c, { x: 170, y: -232, z: 150, w: 8, h: 8, d: 8 });
+  box(c, { x: -170, y: 232, z: 150, w: 8, h: 8, d: 8 });
+  box(c, { x: 170, y: 232, z: 150, w: 8, h: 8, d: 8 });
+
+  c = mkComp('display', 'Display', { hue: 262, anchor: [330, -40, -34], d: [80, 0, 0], order: 11 });
+  const scr = box(c, { x: 330, y: -45, z: -40, w: 250, h: 150, d: 8, cls: 'screen' });
+  c.screen = el('span', '', scr.f); c.screen.textContent = '-- FPS';
+  box(c, { x: 330, y: 55, z: -40, w: 14, h: 50, d: 14 });
+  box(c, { x: 330, y: 84, z: -40, w: 100, h: 5, d: 60 });
+}
+
+// RAM sticks: rebuilt when the number of DIMMs changes (2 slots, 4 when more than two DIMMs report)
+function buildRam(nDimm) {
+  const c = COMPS.get('ram');
+  for (const s of c.sticks) s.remove();
+  c.sticks = [];
+  const slots = nDimm > 2 ? [100, 112, 124, 136] : [108, 126];
+  slots.forEach((x, i) => c.sticks.push(box(c, { x, y: -75, z: -122, w: 7, h: 132, d: 36, cls: 'ram' + (i < nDimm ? '' : ' empty') })));
+  c.nDimm = nDimm;
+}
+
+// Drives: the first M.2 / NVMe drive sits on the board, others in 2.5" bays at the bottom left
+const diskSlots = { m2: [[30, -6], [30, 22]], bay: [[-90, 152], [-90, 174], [-90, 196]] };
+let m2Used = 0, bayUsed = 0;
+function ensureDisk(id, model) {
+  if (COMPS.has(id)) return COMPS.get(id);
+  const isM2 = /nvme|m\.2|AS2280|PCIe|\bSN\d{3}|\b9[78]0 (PRO|EVO)|WD_BLACK|KC\d{4}/i.test(model);
+  let c;
+  if (isM2 && m2Used < diskSlots.m2.length) {
+    const [x, y] = diskSlots.m2[m2Used++];
+    c = mkComp(id, 'M.2 SSD', { hue: 48, anchor: [x, y, -132], d: [-20, 20, 70], order: 6 });
+    box(c, { x, y, z: -136, w: 84, h: 20, d: 4, txt: 'M.2' });
+  } else if (bayUsed < diskSlots.bay.length) {
+    const [x, y] = diskSlots.bay[bayUsed++];
+    c = mkComp(id, 'SSD / HDD', { hue: 48, anchor: [x, y, -62], d: [-40, 30, 60], order: 6 });
+    box(c, { x, y, z: -100, w: 96, h: 14, d: 70, txt: '2.5"', face: 'f' });
+  } else {
+    c = mkComp(id, 'Drive', { hue: 48, anchor: [-90, 200, -62], d: [-40, 30, 60], order: 6 });
+  }
+  c.model = model;
+  return c;
+}
+
+// =============================== Data: SDB metadata + live readings ========================================
+const SDB_META_KEYS = new Set(['tSensorLocation', 'tReadingLocation', 'tReadingType']);
+let META = new Map();               // path -> {tSensorLocation, tReadingLocation, tReadingType}
+let SENSLOC = new Map();            // sensor name -> tSensorLocation
+let sdbOk = false;
+
+function walkSdb(node, path, out, sensor) {
+  for (const [k, v] of Object.entries(node)) {
+    if (!isObj(v) || SDB_META_KEYS.has(k)) continue;
+    const p = path.concat(k);
+    if ('hide' in v) {
+      out.set(p.join(SEP), v);
+      if (!SENSLOC.has(p[0]) && isObj(v.tSensorLocation)) SENSLOC.set(p[0], v.tSensorLocation);
+    }
+    walkSdb(v, p, out);
+  }
+}
+// Every JSON of the API has a root "Version" (integer): missing = accepted, a different one = error, data not used.
+// Each kind of JSON has its own version (they can change independently): read data, sdb, and the .flt we send.
+// 'current' is what we send; every version min..current is accepted (backward compatibility).
+const VERSIONS = { read: { min: 1, current: 1 }, sdb: { min: 1, current: 1 }, flt: { min: 1, current: 1 } };
+function checkVersion(json, kind) {
+  if (json === null || typeof json !== 'object' || !('Version' in json)) return;
+  const r = VERSIONS[kind], v = json.Version;
+  if (!Number.isInteger(v) || v < r.min || v > r.current)
+    throw new Error('unsupported ' + kind + " 'Version' " + JSON.stringify(v) + ' (supported: ' +
+                    (r.min === r.current ? r.min : r.min + '..' + r.current) + ')');
+}
+async function loadSdb() {
+  try {
+    const res = await fetch(API_SDB, { cache: 'no-store' });
+    const json = await res.json();
+    if (!res.ok || json.error) throw new Error(json.error || 'HTTP ' + res.status);
+    checkVersion(json, 'sdb');
+    META = new Map(); SENSLOC = new Map();
+    walkSdb(json, [], META);
+    sdbOk = META.size > 0;
+  } catch (e) {
+    sdbOk = false;
+    $('bootMsg').textContent = 'sensor database not available - placing sensors by name';
+  }
+}
+
+// Fallback when the SDB has no entry: guess the sensor location from the sensor name
+function guessLoc(sn) {
+  if (/^PresentMon/i.test(sn)) return -1;
+  if (/^CPU \[/i.test(sn)) return 11;
+  if (/^(dGPU|iGPU|GPU) \[|GPU/i.test(sn)) return 13;
+  if (/DIMM|Memory Timings/i.test(sn)) return 17;
+  if (/^(S\.M\.A\.R\.T\.|Drive):/i.test(sn)) return 15;
+  if (/^Network:/i.test(sn)) return 16;
+  if (/Nuvoton|ITE |Super ?I\/O|ROG|MSI |Gigabyte|ASRock/i.test(sn)) return 12;
+  return 10;
+}
+const diskKey = (sn) => sn.replace(/^(S\.M\.A\.R\.T\.|Drive):\s*/i, '').replace(/\s*\[[^\]]*\]\s*$/, '').trim();
+const inR = (v, a, b) => v >= a && v <= b;
+
+// ESENSOR_LOCATION / EREADING_LOCATION (location.txt) -> component id
+function classify(r) {
+  const sn = r.sensor;
+  if (/^PresentMon/i.test(sn)) return 'display';
+  const sloc = SENSLOC.get(sn);
+  const sl = sloc ? sloc.eSensorLocation : guessLoc(sn);
+  const rl = r.meta && r.meta.tReadingLocation ? r.meta.tReadingLocation.eReadingLocation : 0;
+  switch (true) {
+    case sl === 11: return inR(rl, 36, 39) ? 'vrm' : 'cpu';                               // SENSOR_LOC_CPU
+    case sl === 13: return 'gpu';                                                         // SENSOR_LOC_GPU
+    case sl === 14: return 'chipset';                                                     // SENSOR_LOC_CHIPSET
+    case sl === 15: return 'disk:' + diskKey(sn);                                         // SENSOR_LOC_DISK
+    case sl === 16: return 'nic';                                                         // SENSOR_LOC_NETWORK
+    case sl === 17: return 'ram';                                                         // SENSOR_LOC_MEMORY
+    case sl === 21: return 'psu';                                                         // SENSOR_LOC_PSU
+    case sl === 22: return 'cooler';                                                      // SENSOR_LOC_COOLER
+    case inR(sl, 100, 103): return 'vrm';                                                 // SENSOR_LOC_VRM*
+    case sl === 12:                                                                       // SENSOR_LOC_MOBO: refine by reading
+      if (r.type === 3) return (rl === 14 || /^cpu|cooler|pump|aio/i.test(r.name)) ? 'cooler' : 'fans';
+      if (inR(rl, 36, 39) || /vrm|\bVR\b/i.test(r.name)) return 'vrm';
+      if (inR(rl, 500, 508) || /\bpch\b|chipset/i.test(r.name)) return 'chipset';
+      if (inR(rl, 10, 31) || /^cpu/i.test(r.name)) return 'cpu';
+      return 'mobo';
+    default:                                                                              // SYSTEM / unknown / AUX
+      if (inR(rl, 32, 34)) return 'ram';
+      if (rl === 35) return 'mobo';
+      if (inR(rl, 36, 39)) return 'vrm';
+      if (inR(rl, 10, 31)) return 'cpu';
+      if (inR(rl, 100, 113)) return 'gpu';
+      if (inR(rl, 500, 508)) return 'chipset';
+      if (inR(rl, 600, 602)) return 'psu';
+      if (inR(rl, 900, 908)) return 'fans';
+      return 'case';
+  }
+}
+
+// Flatten a /read answer: a reading is a node with "Value"; typed layout "<name>": {"<type>": {Value..}}.
+function flattenRead(json) {
+  const out = [];
+  const walk = (node, path, names, sensor) => {
+    for (const [k, v] of Object.entries(node)) {
+      if (!isObj(v)) continue;
+      const p = path.concat(k);
+      if ('Value' in v) {
+        const meta = META.get(p.join(SEP)) || null;   // SDB node: Unit / Tooltip are not in the read JSON
+        const typed = /^\d+$/.test(k);
+        const name = typed ? (names[names.length - 1] || sensor) : k;
+        const label = (typed ? names : names.concat(k)).join(' › ') || sensor;
+        out.push({ id: p.join(SEP), sensor, name, label, depth: typed ? names.length : names.length + 1,
+                   type: typed ? +k : (v.Type ?? 8), unit: (typeof v.Unit === 'string' ? v.Unit : (meta && meta.Unit) || ''), value: String(v.Value), n: num(v.Value),
+                   tip: v.Tooltip || (meta && meta.Tooltip) || '', meta });
+      } else {
+        walk(v, p, /^\d+$/.test(k) ? names : names.concat(k), sensor);
+      }
+    }
+  };
+  for (const [sn, tree] of Object.entries(json)) if (isObj(tree)) walk(tree, [sn], [], sn);
+  return out;
+}
+
+// "Major" readings per component: [label, type, regex(label), how]
+const MAJOR = {
+  cpu:     [['TEMP', 1, /^CPU Package$/i], ['LOAD', 7, /^Total CPU Usage$/i], ['POWER', 5, /^CPU Package Power$/i], ['CLOCK', 6, /^Core Clocks$/i], ['VCORE', 2, /^Core VIDs$/i]],
+  gpu:     [['TEMP', 1, /^GPU Temperature$/i], ['LOAD', 7, /^GPU Core Load$/i], ['POWER', 5, /^GPU Power$|Total Board Power/i], ['CLOCK', 6, /^GPU Clock$/i], ['VRAM', 7, /^GPU Memory Usage$/i], ['FAN', 3, /GPU Fan/i]],
+  ram:     [['LOAD', 8, /^Physical Memory Load$/i], ['USED', 8, /^Physical Memory Used$/i], ['CLOCK', 6, /^Memory Clock$/i], ['DIMM', 1, /SPD Hub Temperature/i, 'avg'], ['POWER', 5, /^Total Power$/i, 'sum']],
+  mobo:    [['TEMP', 1, /^Motherboard$/i], ['+12V', 2, /^\+12V$/i], ['+5V', 2, /^\+5V$/i], ['3.3V', 2, /^3VCC$/i]],
+  chipset: [['TEMP', 1, /PCH|chipset/i]],
+  vrm:     [['TEMP', 1, /VRM|Vcore VR Temperature/i], ['VOUT', 2, /VR VOUT/i], ['IOUT', 4, /VR IOUT/i]],
+  cooler:  [['FAN', 3, /./]],
+  fans:    [['FAN 1', 3, /./, 'nth0'], ['FAN 2', 3, /./, 'nth1'], ['FAN 3', 3, /./, 'nth2']],
+  disk:    [['TEMP', 1, /Drive Temperature$/i], ['ACTIVITY', 7, /^Total Activity$/i], ['LIFE', 7, /Remaining Life/i], ['WRITTEN', 8, /Total Host Writes/i]],
+  nic:     [['DOWN', 8, /Current DL rate/i, 'sum'], ['UP', 8, /Current UP rate/i, 'sum'], ['TOTAL DL', 8, /^Total DL$/i, 'sum']],
+  psu:     [['12V', 2, /12V/i], ['POWER', 5, /./]],
+  case:    [['WHEA', 8, /Total Errors/i], ['VMEM', 8, /^Virtual Memory Load$/i], ['PAGEFILE', 8, /^Page File Usage$/i]],
+  display: [['FPS', 8, /Framerate Displayed \(avg\)/i], ['PRESENTED', 8, /Framerate Presented \(avg\)/i], ['FRAME', 8, /Frame Time Presented \(avg\)/i], ['1% LOW', 8, /Framerate Displayed \(1% low\)/i]],
+};
+function majors(c) {
+  const spec = MAJOR[c.id.startsWith('disk:') ? 'disk' : c.id] || [];
+  const out = [];
+  for (const [k, type, re, how] of spec) {
+    const cand = c.rs.filter(r => r.type === type && re.test(r.label)).sort((a, b) => a.depth - b.depth);
+    if (!cand.length) continue;
+    let r = cand[0], text = r.value, unit = r.unit, n = r.n;
+    if (how === 'avg' || how === 'sum') {
+      const vals = cand.map(x => x.n).filter(isFinite);
+      if (!vals.length) continue;
+      n = vals.reduce((a, b) => a + b, 0); if (how === 'avg') n /= vals.length;
+      text = n.toLocaleString('en-US', { maximumFractionDigits: 1 });
+    } else if (how && how.startsWith('nth')) {
+      r = cand[+how.slice(3)]; if (!r) continue; text = r.value; unit = r.unit; n = r.n;
+    }
+    out.push({ k, text, unit, n, id: r.id });
+  }
+  if (!out.length && c.rs.length) {                           // nothing matched: show the first few readings
+    for (const r of c.rs.filter(x => x.depth <= 1).slice(0, 3)) out.push({ k: r.name.slice(0, 12).toUpperCase(), text: r.value, unit: r.unit, n: r.n, id: r.id });
+  }
+  return out.slice(0, 5);
+}
+function subtitle(c) {
+  if (!c.rs.length) return '';
+  const sn = c.rs[0].sensor;
+  const loc = SENSLOC.get(sn);
+  const nm = loc && loc.szLocationName ? loc.szLocationName : sn;
+  if (c.id === 'ram') { const m = c.rs.find(r => /DDR\d/i.test(r.sensor)); return (m ? m.sensor.match(/DDR\d/i)[0].toUpperCase() : 'DRAM') + ' · ' + (c.nDimm || 0) + ' DIMM'; }
+  if (c.id === 'nic') return [...new Set(c.rs.map(r => r.sensor.replace(/^Network:\s*/, '').replace(/\s*\(.*$/, '').replace(/\s+\d+MHz.*$/, '')))].join(' + ');
+  if (c.id === 'display') return sn.replace(/^PresentMon\s*/i, '').replace(/[\[\]]/g, '') || 'frame times';
+  const paren = (s) => { const m = s.match(/\(([^)]+)\)\s*$/); return m ? m[1] : ''; };
+  if (c.id === 'mobo') return nm.replace(/\s*\(.*$/, '');
+  if (c.id === 'vrm') return paren(c.rs.find(r => paren(r.sensor))?.sensor || '') || 'voltage regulator';
+  if (c.id === 'chipset') return paren(c.rs.find(r => paren(r.sensor))?.sensor || '') || 'PCH';
+  if (c.id === 'cooler') return 'CPU fan / pump';
+  if (c.id === 'fans') return 'chassis fans';
+  if (c.id === 'case') return 'OS / platform';
+  if (c.id === 'cpu') return nm.replace(/^CPU \[#\d+\]:\s*/, '').replace(/:.*$/, '');
+  if (c.id === 'gpu') return (loc && loc.szLocationName) || nm.replace(/^\w+ \[#\d+\]:\s*/, '').split(':')[0];
+  return nm.replace(/^(S\.M\.A\.R\.T\.|Drive):\s*/i, '').replace(/\s*\(\d+\).*$/, '');
+}
+
+// =============================== State + update per sample =================================================
+const hist = new Map();             // reading id -> last numbers (sparkline)
+const prevVal = new Map();
+let allReadings = [], timestamp = '', lastOk = 0;
+
+function ingest(json) {
+  timestamp = String(json['Timestamp'] || '').trim();
+  allReadings = flattenRead(json);
+  for (const c of COMPS.values()) c.rs = [];
+  for (const r of allReadings) {
+    const id = classify(r);
+    if (id.startsWith('disk:') && !COMPS.has(id)) ensureDisk(id, diskKey(r.sensor).replace(/\s*\(\d+\)\s*$/, ''));
+    const c = COMPS.get(id) || COMPS.get('case');
+    r.comp = c.id;
+    c.rs.push(r);
+    if (isFinite(r.n)) { let h = hist.get(r.id); if (!h) hist.set(r.id, h = []); h.push(r.n); if (h.length > 90) h.shift(); }
+  }
+  const nDimm = new Set(COMPS.get('ram').rs.filter(r => /DIMM/i.test(r.sensor)).map(r => r.sensor)).size;
+  if (COMPS.get('ram').nDimm !== nDimm) buildRam(nDimm);
+
+  for (const c of COMPS.values()) {
+    c.major = majors(c);
+    c.sub = subtitle(c);
+    const t = c.major.find(m => m.k === 'TEMP' || m.k === 'DIMM');
+    c.temp = t && isFinite(t.n) ? t.n : null;
+    // colour: component hue drifts to red as its temperature rises (45 -> 90 C)
+    c.hue = c.temp == null ? c.base : Math.round(c.base * (1 - clamp((c.temp - 45) / 45, 0, 1)));
+    c.w.style.setProperty('--hue', c.hue);
+    c.w.classList.toggle('nodata', !c.rs.length);
+    const fan = c.major.find(m => /^FAN/.test(m.k) && /RPM/i.test(m.unit));
+    for (const r of c.fans) {                              // blade speed follows the fan reading (0 RPM = stopped)
+      const rpm = fan && isFinite(fan.n) ? fan.n : 0;
+      r.style.setProperty('--run', rpm > 0 ? 'running' : 'paused');
+      r.style.setProperty('--spin', clamp(1800 / Math.max(rpm, 1), 0.25, 8).toFixed(2) + 's');
+    }
+    if (c.screen) {
+      const f = c.major.find(m => m.k === 'FPS');
+      c.screen.textContent = f ? Math.round(f.n) + ' FPS' : '-- FPS';
+    }
+  }
+}
+
+// =============================== HUD tags =================================================================
+const tagsEl = $('tags'), linksEl = $('links');
+const TAGS = new Map();             // comp id -> {el, path, dot, w, h}
+let showTags = true, selected = null, hover = null;
+
+function syncTags() {
+  for (const c of COMPS.values()) {
+    let t = TAGS.get(c.id);
+    if (!t) {
+      const e = el('div', 'tag', tagsEl);
+      e.dataset.id = c.id;
+      const path = document.createElementNS('http://www.w3.org/2000/svg', 'path');
+      const dot = document.createElementNS('http://www.w3.org/2000/svg', 'circle');
+      dot.setAttribute('r', 3);
+      linksEl.append(path, dot);
+      t = { e, path, dot, w: 160, h: 60, sig: '' };
+      TAGS.set(c.id, t);
+    }
+    const sig = c.id + c.sub + c.major.map(m => m.k + m.text + m.unit).join('|') + (c.rs.length ? 1 : 0);
+    if (sig !== t.sig) {
+      t.sig = sig;
+      t.e.textContent = '';
+      const th = el('div', 'th', t.e);
+      el('i', '', th);
+      el('b', '', th).textContent = c.name;
+      if (c.sub) el('small', '', th).textContent = c.sub;
+      if (!c.rs.length) el('div', 'nd', t.e).textContent = 'no sensors reported';
+      for (const m of c.major) {
+        const row = el('div', 'tr', t.e);
+        el('span', '', row).textContent = m.k;
+        el('em', '', row).textContent = m.text + (m.unit ? ' ' + m.unit : '');
+      }
+      t.w = t.e.offsetWidth; t.h = t.e.offsetHeight;
+    }
+    t.e.style.setProperty('--h', c.hue);
+    t.path.style.setProperty('--lc', `hsl(${c.hue},95%,62%)`);
+    t.dot.style.setProperty('--lc', `hsl(${c.hue},95%,62%)`);
+  }
+}
+
+// =============================== Camera ===================================================================
+const view = { yaw: -62, pit: -6, zoom: 0.55, px: 0, py: 0, ex: 0 };
+const goal = { yaw: -24, pit: -18, zoom: 1, px: 0, py: 0, ex: 0 };
+let auto = false, W = innerWidth, H = innerHeight, PERSP = 1500, needDraw = true;
+const rad = (d) => d * Math.PI / 180;
+
+function fitZoom() { return clamp(Math.min(W / 900, H / 720), 0.35, 2); }
+function project(p, d, v = view) {
+  const ex = v.ex;
+  const x = p[0] + d[0] * ex - WORLD_CX, y = p[1] + d[1] * ex, z = p[2] + d[2] * ex;
+  const cy = Math.cos(rad(v.yaw)), sy = Math.sin(rad(v.yaw)), cx = Math.cos(rad(v.pit)), sx = Math.sin(rad(v.pit));
+  const x1 = x * cy + z * sy, z1 = -x * sy + z * cy;           // rotateY
+  const y2 = y * cx - z1 * sx, z2 = y * sx + z1 * cx;          // rotateX
+  const k = v.zoom, X = x1 * k, Y = y2 * k, Z = z2 * k;       // scale
+  const s = PERSP / Math.max(PERSP - Z, 60);
+  return { x: W / 2 + v.px + X * s, y: H / 2 + v.py + Y * s, z: Z };
+}
+function applyView() {
+  scene.style.transform = `scale(${view.zoom}) rotateX(${view.pit}deg) rotateY(${view.yaw}deg)`;
+  pan.style.transform = `translate(${view.px}px,${view.py}px)`;
+  for (const c of COMPS.values()) {
+    const e = view.ex;
+    c.w.style.transform = e < 0.002 ? '' : `translate3d(${c.d[0] * e}px,${c.d[1] * e}px,${c.d[2] * e}px)`;
+  }
+  layoutTags();
+}
+function layoutTags() {
+  const rect = $('app').getBoundingClientRect();
+  W = rect.width; H = rect.height;
+  const drawerOpen = $('drawer').classList.contains('open') && W > 760;
+  const maxX = drawerOpen ? W - 400 : W - 8;
+  // screen outline of the whole rig (case + monitor, incl. explode offsets): tags go in columns beside it
+  let bl = 1e9, br = -1e9;
+  for (const x of [-170, 470]) for (const y of [-235, 235]) for (const z of [-150, 150]) {
+    const q = project([x, y, z], [x > 0 ? 80 : -70, 0, 0]);
+    bl = Math.min(bl, q.x); br = Math.max(br, q.x);
+  }
+  const mid = (bl + br) / 2;
+  const left = [], right = [];
+  for (const [id, t] of TAGS) {
+    const c = COMPS.get(id);
+    const p = project(c.anchor, c.d);
+    const visible = showTags || id === selected || id === hover;
+    t.e.classList.toggle('off', !visible);
+    t.e.classList.toggle('sel', id === selected);
+    t.p = p; t.visible = visible;
+    (p.x < mid ? left : right).push(t);
+  }
+  // balance: a column that would run off the screen hands its innermost tags to the other side
+  const avail = H - 64 - 92, hsum = (a) => a.reduce((s, t) => s + t.h + 6, 0);
+  while (hsum(left) > avail && left.length > 1 && hsum(right) + left.reduce((m, t) => Math.max(m, t.h), 0) <= avail + 40) {
+    left.sort((a, b) => a.p.x - b.p.x); right.push(left.pop());
+  }
+  while (hsum(right) > avail && right.length > 1 && hsum(left) + right.reduce((m, t) => Math.max(m, t.h), 0) <= avail + 40) {
+    right.sort((a, b) => a.p.x - b.p.x); left.push(right.shift());
+  }
+  const place = (arr, side) => {
+    arr.sort((a, b) => a.p.y - b.p.y);
+    let prev = 64;
+    for (const t of arr) {
+      let y = Math.max(t.p.y - t.h / 2, prev, 60);
+      let x = side < 0 ? bl - 26 - t.w : br + 26;
+      x = clamp(x, 8, maxX - t.w);
+      t.x = x; t.y = y; prev = y + t.h + 6;
+    }
+    let lim = H - 92;                                          // bottom-up pass: nothing under the dock
+    for (let i = arr.length - 1; i >= 0; i--) { arr[i].y = Math.max(60, Math.min(arr[i].y, lim - arr[i].h)); lim = arr[i].y - 6; }
+    for (const t of arr) t.e.style.transform = `translate(${t.x}px,${t.y}px)`;
+  };
+  place(left, -1); place(right, 1);
+  for (const t of [...left, ...right]) {
+    const ax = t.p.x, ay = t.p.y, tx = t.x + (t.x + t.w / 2 < ax ? t.w : 0), ty = t.y + 16;
+    const mx = (ax + tx) / 2;
+    t.path.setAttribute('d', `M${tx},${ty} C${mx},${ty} ${mx},${ay} ${ax},${ay}`);
+    t.dot.setAttribute('cx', ax); t.dot.setAttribute('cy', ay);
+    const vis = t.visible ? '' : 'none';
+    t.path.style.display = vis; t.dot.style.display = vis;
+  }
+}
+
+let lastT = performance.now();
+function frame(now) {
+  const dt = Math.min(0.05, (now - lastT) / 1000); lastT = now;
+  if (auto && !dragging) goal.yaw += dt * 9;
+  const k = 1 - Math.exp(-dt * 9);
+  let moved = false;
+  for (const key of ['yaw', 'pit', 'zoom', 'px', 'py', 'ex']) {
+    const d = goal[key] - view[key];
+    if (Math.abs(d) > (key === 'zoom' || key === 'ex' ? 0.0005 : 0.02)) { view[key] += d * k; moved = true; }
+  }
+  if (moved || needDraw) { applyView(); needDraw = false; }
+  requestAnimationFrame(frame);
+}
+
+// --- interaction: drag = rotate, right-drag / Shift = pan, wheel / pinch = zoom, click = select ---
+let dragging = false, moved = false, mode = '', last = null;
+const ptrs = new Map();
+let pinch0 = 0, zoom0 = 1;
+const app = $('app');
+app.addEventListener('pointerdown', (e) => {
+  if (e.target.closest('#dock, #drawer, header, .tag')) return;
+  ptrs.set(e.pointerId, { x: e.clientX, y: e.clientY });
+  app.setPointerCapture?.(e.pointerId);
+  dragging = true; moved = false; last = { x: e.clientX, y: e.clientY };
+  mode = (e.button === 2 || e.shiftKey || e.button === 1) ? 'pan' : 'rot';
+  if (ptrs.size === 2) { const [a, b] = [...ptrs.values()]; pinch0 = Math.hypot(a.x - b.x, a.y - b.y); zoom0 = goal.zoom; }
+  app.classList.add('drag');
+});
+app.addEventListener('pointermove', (e) => {
+  if (ptrs.has(e.pointerId)) ptrs.set(e.pointerId, { x: e.clientX, y: e.clientY });
+  if (!dragging) { hoverAt(e); return; }
+  if (ptrs.size === 2) {
+    const [a, b] = [...ptrs.values()];
+    goal.zoom = clamp(zoom0 * Math.hypot(a.x - b.x, a.y - b.y) / pinch0, 0.3, 4); moved = true; return;
+  }
+  const dx = e.clientX - last.x, dy = e.clientY - last.y;
+  if (!moved && Math.hypot(dx, dy) < 4) return;
+  moved = true;
+  last = { x: e.clientX, y: e.clientY };
+  if (mode === 'pan') { goal.px += dx; goal.py += dy; view.px += dx; view.py += dy; }
+  else { goal.yaw += dx * 0.4; goal.pit = clamp(goal.pit - dy * 0.3, -85, 35); }
+});
+const endDrag = (e) => {
+  ptrs.delete(e.pointerId);
+  if (!ptrs.size) { dragging = false; app.classList.remove('drag'); }
+};
+app.addEventListener('pointerup', (e) => {
+  const wasClick = !moved && dragging && ptrs.size === 1;
+  endDrag(e);
+  if (wasClick) {                                              // the click lands on the 3D face under the pointer
+    const t = document.elementFromPoint(e.clientX, e.clientY);
+    const c = t && t.closest('.comp');
+    select(c ? c.dataset.id : null, true);
+  }
+});
+app.addEventListener('pointercancel', endDrag);
+app.addEventListener('contextmenu', (e) => e.preventDefault());
+app.addEventListener('wheel', (e) => {
+  if (e.target.closest('#drawer')) return;
+  e.preventDefault();
+  zoomAt(Math.exp(-e.deltaY * 0.0016), e.clientX, e.clientY);
+}, { passive: false });
+function zoomAt(f, cx, cy) {                                   // keep the point under the cursor fixed
+  const z = clamp(goal.zoom * f, 0.3, 4), r = z / goal.zoom;
+  const rx = cx - W / 2, ry = cy - H / 2;
+  goal.px = rx - r * (rx - goal.px); goal.py = ry - r * (ry - goal.py);
+  goal.zoom = z;
+}
+function hoverAt(e) {
+  const t = e.target.closest && e.target.closest('.comp, .tag');
+  const id = t ? (t.dataset.id) : null;
+  if (id !== hover) { hover = id; needDraw = true; }
+}
+tagsEl.addEventListener('click', (e) => { const t = e.target.closest('.tag'); if (t) select(t.dataset.id, true); });
+
+// --- buttons / keys ---
+function toggle(btn, val) { btn.classList.toggle('on', val); }
+function setAuto(v) { auto = v; toggle($('bAuto'), v); }
+function setEx(v) { goal.ex = v ? 1 : 0; toggle($('bEx'), v); }
+function setTags(v) { showTags = v; toggle($('bTags'), v); needDraw = true; }
+let paused = false;
+function setPause(v) { paused = v; toggle($('bPause'), v); $('bPause').textContent = v ? 'Resume' : 'Pause'; if (!v) restartPolling(); else clearTimeout(pollTimer); }
+function resetView() { Object.assign(goal, { yaw: -24, pit: -18, zoom: fitZoom(), px: 0, py: 0 }); select(null); }
+$('bAuto').onclick = () => setAuto(!auto);
+$('bEx').onclick = () => setEx(goal.ex < 0.5);
+$('bTags').onclick = () => setTags(!showTags);
+$('bPause').onclick = () => setPause(!paused);
+$('bIn').onclick = () => zoomAt(1.25, W / 2, H / 2);
+$('bOut').onclick = () => zoomAt(0.8, W / 2, H / 2);
+$('bReset').onclick = resetView;
+$('dX').onclick = () => select(null);
+addEventListener('keydown', (e) => {
+  if (/INPUT|TEXTAREA/.test(e.target.tagName)) { if (e.key === 'Escape') e.target.blur(); return; }
+  const k = e.key;
+  if (k === 'ArrowLeft') goal.yaw -= 8; else if (k === 'ArrowRight') goal.yaw += 8;
+  else if (k === 'ArrowUp') goal.pit = clamp(goal.pit + 5, -85, 35); else if (k === 'ArrowDown') goal.pit = clamp(goal.pit - 5, -85, 35);
+  else if (k === '+' || k === '=') zoomAt(1.2, W / 2, H / 2); else if (k === '-') zoomAt(0.83, W / 2, H / 2);
+  else if (k === '0') resetView(); else if (k === 'Escape') select(null);
+  else if (k === ' ') { setAuto(!auto); e.preventDefault(); } else if (k === 'e' || k === 'E') setEx(goal.ex < 0.5);
+  else if (k === 'l' || k === 'L') setTags(!showTags); else if (k === 'p' || k === 'P') setPause(!paused);
+});
+addEventListener('resize', () => { W = innerWidth; H = innerHeight; needDraw = true; });
+
+// =============================== Selection + detail drawer ================================================
+const drawer = $('drawer');
+let chartId = null, rowEls = new Map();
+function select(id, focus) {
+  for (const c of COMPS.values()) c.w.classList.toggle('sel', c.id === id);
+  selected = id;
+  if (!id) { drawer.classList.remove('open'); needDraw = true; return; }
+  const c = COMPS.get(id);
+  if (!c) return;
+  buildDrawer(c);
+  drawer.classList.add('open');
+  if (focus) focusOn(c);
+  needDraw = true;
+}
+function focusOn(c) {                                          // pan + zoom so the component sits in the free area
+  const z = Math.max(goal.zoom, Math.min(1.5, fitZoom() * 1.5));
+  const free = W > 760 ? (W - 400) / 2 : W / 2;
+  const v = { ...view, zoom: z, px: 0, py: 0, ex: goal.ex, yaw: goal.yaw, pit: goal.pit };
+  const p = project(c.anchor, c.d, v);
+  goal.zoom = z; goal.px = free - p.x; goal.py = H * 0.46 - p.y;
+}
+function fmtUnit(r) { return r.value + (r.unit ? ' ' + r.unit : ''); }
+function buildDrawer(c) {
+  drawer.style.setProperty('--h', c.hue);
+  $('dT').textContent = c.name;
+  $('dS').textContent = c.sub || (c.rs.length ? '' : 'No sensors reported by HWiNFO for this component');
+  $('dQ').value = '';
+  chartId = null; rowEls = new Map();
+  const list = $('list'); list.textContent = '';
+  if (!c.rs.length) { el('div', 'none', list).textContent = 'No readings are mapped to this component.'; $('dHero').textContent = ''; drawChart(); return; }
+  const groups = new Map();
+  for (const r of c.rs) { if (!groups.has(r.sensor)) groups.set(r.sensor, []); groups.get(r.sensor).push(r); }
+  let first = true;
+  for (const [sn, rs] of groups) {
+    const d = el('details', '', list); if (first || groups.size === 1) d.open = true; first = false;
+    const s = el('summary', '', d); el('span', '', s).textContent = sn; el('em', '', s).textContent = rs.length;
+    for (const r of rs) {
+      const row = el('div', 'rw', d); row.title = r.tip || r.label;
+      row.dataset.q = (r.label + ' ' + sn).toLowerCase();
+      el('span', '', row).textContent = r.label;
+      const v = el('em', '', row); v.textContent = fmtUnit(r);
+      row.onclick = () => { chartId = r.id; markAct(); drawChart(); };
+      rowEls.set(r.id, { row, v, last: r.value });
+    }
+  }
+  heroRefresh(c, true);
+  chartId = (c.major[0] && c.major[0].id) || c.rs[0].id;
+  markAct(); drawChart();
+}
+function heroRefresh(c, rebuild) {
+  const hero = $('dHero');
+  if (rebuild || hero.children.length !== c.major.length) {
+    hero.textContent = '';
+    for (const m of c.major) {
+      const card = el('div', 'card', hero); card.dataset.id = m.id;
+      el('small', '', card).textContent = m.k;
+      const b = el('b', '', card); el('span', '', b); el('i', '', b);
+      card.onclick = () => { chartId = m.id; markAct(); drawChart(); };
+    }
+  }
+  [...hero.children].forEach((card, i) => {
+    const m = c.major[i]; if (!m) return;
+    card.dataset.id = m.id;
+    card.querySelector('b span').textContent = m.text;
+    card.querySelector('b i').textContent = m.unit;
+  });
+}
+function markAct() {
+  for (const [id, o] of rowEls) o.row.classList.toggle('act', id === chartId);
+  for (const card of $('dHero').children) card.classList.toggle('act', card.dataset.id === chartId);
+}
+function drawChart() {
+  const svg = $('cS'); svg.textContent = '';
+  const h = chartId && hist.get(chartId);
+  const r = allReadings.find(x => x.id === chartId);
+  $('cN').textContent = r ? r.label : '-'; $('cV').textContent = r ? fmtUnit(r) : '';
+  if (!h || h.length < 2) return;
+  let lo = Math.min(...h), hi = Math.max(...h); if (hi - lo < 1e-9) { lo -= 1; hi += 1; }
+  const pts = h.map((v, i) => [(i / (h.length - 1)) * 300, 58 - ((v - lo) / (hi - lo)) * 52]);
+  const ns = 'http://www.w3.org/2000/svg';
+  const area = document.createElementNS(ns, 'path');
+  area.setAttribute('d', 'M0,64 L' + pts.map(p => p.join(',')).join(' L') + ' L300,64 Z');
+  area.setAttribute('fill', `hsla(${COMPS.get(selected).hue},95%,60%,.18)`);
+  const line = document.createElementNS(ns, 'polyline');
+  line.setAttribute('points', pts.map(p => p.join(',')).join(' '));
+  line.setAttribute('fill', 'none'); line.setAttribute('stroke', `hsl(${COMPS.get(selected).hue},95%,62%)`); line.setAttribute('stroke-width', '1.6');
+  line.setAttribute('vector-effect', 'non-scaling-stroke');
+  svg.append(area, line);
+}
+function refreshDrawer() {
+  if (!selected) return;
+  const c = COMPS.get(selected);
+  if (!c) return;
+  drawer.style.setProperty('--h', c.hue);
+  if (c.rs.length !== rowEls.size) { const q = $('dQ').value; buildDrawer(c); $('dQ').value = q; filterRows(); return; }
+  for (const r of c.rs) {
+    const o = rowEls.get(r.id); if (!o) continue;
+    if (o.last !== r.value) { o.v.textContent = fmtUnit(r); o.v.classList.remove('chg'); void o.v.offsetWidth; o.v.classList.add('chg'); o.last = r.value; }
+  }
+  heroRefresh(c, false); drawChart();
+}
+function filterRows() {
+  const q = $('dQ').value.trim().toLowerCase();
+  for (const o of rowEls.values()) o.row.style.display = !q || o.row.dataset.q.includes(q) ? '' : 'none';
+  if (q) for (const d of $('list').querySelectorAll('details')) d.open = true;
+}
+$('dQ').addEventListener('input', filterRows);
+
+// =============================== Polling ==================================================================
+const st = $('st');
+let pollTimer = 0, nextAt = 0, seq = 0, shown = 0, firstData = false;
+function setStatus(ok, text) { st.className = 'pill ' + (ok ? 'ok' : 'err'); st.textContent = text; }
+async function tick() {
+  const my = ++seq;
+  try {
+    const res = await fetch(API_READ, { cache: 'no-store' });
+    const json = await res.json();
+    if (my < shown) return;
+    shown = my;
+    if (!res.ok || json.error) throw new Error(json.error || 'HTTP ' + res.status);
+    checkVersion(json, 'read');
+    if (!sdbOk && !tick.sdbTried) { tick.sdbTried = true; loadSdb(); }      // retry the database once if it was missing
+    ingest(json);
+    syncTags(); needDraw = true; refreshDrawer();
+    setStatus(true, (timestamp || 'live') + ' · ' + allReadings.length + ' readings' + (sdbOk ? '' : ' · name-based placement'));
+    if (!firstData) { firstData = true; $('boot').classList.add('gone'); resetView(); }
+  } catch (e) {
+    setStatus(false, e instanceof TypeError ? 'cannot reach ' + (BASE || location.host) : (e.message || String(e)));
+    $('bootMsg').textContent = 'waiting for the server at ' + (BASE || location.host) + ' ...';
+  }
+}
+function fire() {
+  const now = performance.now();
+  nextAt += POLL_MS; if (nextAt < now) nextAt = now + POLL_MS;
+  pollTimer = setTimeout(fire, nextAt - now);
+  tick();
+}
+function restartPolling() { clearTimeout(pollTimer); nextAt = performance.now(); fire(); }
+
+// =============================== Boot =====================================================================
+buildStatic();
+buildRam(2);
+syncTags();
+view.zoom = fitZoom() * 0.6; goal.zoom = fitZoom();
+if (innerWidth < 760) setTags(false);          // narrow screen: labels would cover the PC (button toggles them)
+requestAnimationFrame(frame);
+loadSdb().then(restartPolling);
+</script>
+</body>
+</html>
