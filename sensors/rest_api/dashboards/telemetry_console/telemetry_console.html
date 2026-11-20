@@ -1,0 +1,1343 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>HARDWARE · Telemetry Console</title>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%23060912'/%3E%3Cpath d='M8 22V10l8 6 8-6v12' fill='none' stroke='%232fe0e6' stroke-width='2.4' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E" />
+<!-- Optional web fonts: without internet the page falls back to Segoe UI / Cascadia / Consolas. -->
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet" />
+<style>
+  :root{
+    --bg:#060912; --bg2:#0a0f1c;
+    --panel:rgba(15,23,39,.66);
+    --panel-solid:#0c1424;
+    --brd:rgba(96,150,205,.16);
+    --brd-strong:rgba(96,150,205,.34);
+    --ink:#e7eefb; --muted:#8493ad; --faint:#5d6c89;
+    --cyan:#2fe0e6; --cyan-glow:rgba(47,224,230,.5);
+    --amber:#ffb454; --red:#ff5470; --green:#3ddc97; --magenta:#ff5ce1; --violet:#9b8cff; --gold:#ffd166;
+    --font-h:'Chakra Petch','Segoe UI',system-ui,sans-serif;
+    --font-m:'JetBrains Mono','Cascadia Code',ui-monospace,Consolas,monospace;
+    --r:12px;
+  }
+  *{box-sizing:border-box}
+  ::-webkit-scrollbar{width:10px;height:10px}
+  ::-webkit-scrollbar-track{background:rgba(10,16,28,.5)}
+  ::-webkit-scrollbar-thumb{background:rgba(96,150,205,.3);border-radius:6px}
+  ::-webkit-scrollbar-thumb:hover{background:rgba(47,224,230,.5)}
+  html,body{margin:0;min-height:100%}
+  body{
+    background:
+      radial-gradient(1200px 700px at 78% -8%, rgba(47,224,230,.10), transparent 60%),
+      radial-gradient(900px 600px at 10% 110%, rgba(255,92,225,.07), transparent 55%),
+      linear-gradient(180deg,var(--bg2),var(--bg));
+    background-color:var(--bg);
+    color:var(--ink); font-family:var(--font-h);
+    -webkit-font-smoothing:antialiased; overflow-x:hidden;
+    min-height:100vh;
+  }
+  .bg-grid{position:fixed;inset:0;z-index:0;pointer-events:none;
+    background-image:
+      linear-gradient(rgba(96,150,205,.05) 1px,transparent 1px),
+      linear-gradient(90deg,rgba(96,150,205,.05) 1px,transparent 1px);
+    background-size:46px 46px; mask-image:radial-gradient(ellipse 120% 90% at 50% 0%,#000 40%,transparent 100%);}
+  .bg-scan{position:fixed;inset:0;z-index:0;pointer-events:none;opacity:.5;
+    background:repeating-linear-gradient(0deg,rgba(255,255,255,.012) 0 2px,transparent 2px 4px);}
+  .wrap{position:relative;z-index:1;max-width:1600px;margin:0 auto;padding:18px 20px 60px}
+  .wrap.stale .panel{opacity:.55;filter:saturate(.4)}
+
+  /* ---------- header ---------- */
+  header{display:flex;align-items:center;gap:18px;flex-wrap:wrap;
+    padding:14px 18px;border:1px solid var(--brd);border-radius:var(--r);
+    background:linear-gradient(180deg,rgba(18,28,46,.7),rgba(10,15,28,.5));
+    backdrop-filter:blur(8px); margin-bottom:16px; position:relative; overflow:hidden;}
+  header::before{content:"";position:absolute;left:0;right:0;top:0;height:1px;
+    background:linear-gradient(90deg,transparent,var(--cyan),transparent);opacity:.6}
+  .brand{display:flex;align-items:center;gap:12px}
+  .brand .mark{width:38px;height:38px;flex:0 0 auto;filter:drop-shadow(0 0 8px var(--cyan-glow))}
+  .brand h1{font-size:19px;font-weight:700;letter-spacing:.14em;margin:0;line-height:1}
+  .brand .sub{font-size:11px;color:var(--muted);letter-spacing:.22em;margin-top:4px;text-transform:uppercase}
+  .head-metrics{display:flex;gap:22px;margin-left:auto;flex-wrap:wrap;align-items:center}
+  .hm{display:flex;flex-direction:column;gap:3px;min-width:70px}
+  .hm .k{font-size:9.5px;letter-spacing:.2em;color:var(--faint);text-transform:uppercase}
+  .hm .v{font-family:var(--font-m);font-size:15px;font-weight:600;color:var(--ink);line-height:1}
+  .hm .v small{font-size:10px;color:var(--muted);font-weight:400}
+  .status{display:flex;align-items:center;gap:9px;padding:7px 13px;border-radius:20px;
+    border:1px solid var(--brd);background:rgba(10,16,28,.6);font-size:11px;letter-spacing:.16em;
+    font-weight:600;text-transform:uppercase}
+  .led{width:9px;height:9px;border-radius:50%;background:var(--faint);transition:background .3s}
+  .status.live .led{background:var(--green);box-shadow:0 0 10px 1px var(--green);animation:beat 1.8s infinite}
+  .status.live{color:var(--green);border-color:rgba(61,220,151,.35)}
+  .status.connecting .led,.status.paused .led{background:var(--amber);box-shadow:0 0 10px 1px var(--amber);animation:beat .9s infinite}
+  .status.connecting,.status.paused{color:var(--amber);border-color:rgba(255,180,84,.35)}
+  .status.paused .led{animation:none}
+  .status.error .led{background:var(--red);box-shadow:0 0 10px 1px var(--red)}
+  .status.error{color:var(--red);border-color:rgba(255,84,112,.4)}
+  @keyframes beat{0%,100%{opacity:1}50%{opacity:.35}}
+  .gear{cursor:pointer;border:1px solid var(--brd);background:rgba(10,16,28,.5);color:var(--muted);
+    width:38px;height:38px;border-radius:9px;font-size:16px;display:grid;place-items:center;transition:.2s}
+  .gear:hover,.gear:focus-visible{color:var(--cyan);border-color:var(--brd-strong);box-shadow:0 0 14px rgba(47,224,230,.25);outline:none}
+
+  /* ---------- hero band ---------- */
+  #hero{display:grid;grid-template-columns:340px minmax(0,1fr);gap:16px;margin-bottom:16px}
+  .panel{position:relative;min-width:0;border:1px solid var(--brd);border-radius:var(--r);
+    background:var(--panel);backdrop-filter:blur(6px);overflow:hidden;
+    box-shadow:0 18px 40px -30px rgba(0,0,0,.9);transition:border-color .3s,opacity .4s,filter .4s}
+  .panel::after{content:"";position:absolute;inset:0;border-radius:var(--r);pointer-events:none;
+    box-shadow:inset 0 0 60px -40px rgba(47,224,230,.5);opacity:.5}
+  .panel:hover{border-color:var(--brd-strong)}
+  .core-panel{display:flex;flex-direction:column}
+  .core-wrap{position:relative;flex:1;min-height:230px}
+  #coreCanvas{position:absolute;inset:0;width:100%;height:100%}
+  .core-tag{position:absolute;left:14px;bottom:12px;font-size:10px;letter-spacing:.24em;color:var(--faint);text-transform:uppercase}
+  .core-load{position:absolute;right:14px;bottom:12px;text-align:right}
+  .core-load .n{font-family:var(--font-m);font-size:22px;font-weight:700;line-height:1}
+  .core-load .u{font-size:9px;letter-spacing:.2em;color:var(--faint);text-transform:uppercase}
+  .hero-right{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr) minmax(0,1.1fr);gap:16px}
+  .gauge-card{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:6px;padding:14px}
+  .gauge{position:relative;width:150px;height:150px}
+  .gauge svg{width:100%;height:100%;transform:rotate(135deg)}
+  .gauge .track{fill:none;stroke:rgba(96,150,205,.14);stroke-width:9;stroke-linecap:round}
+  .gauge .val{fill:none;stroke-width:9;stroke-linecap:round;transition:stroke-dashoffset .9s cubic-bezier(.4,0,.2,1),stroke .5s}
+  .gauge .center{position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center}
+  .gauge .center .big{font-family:var(--font-m);font-size:38px;font-weight:700;line-height:1}
+  .gauge .center .big small{font-size:14px;font-weight:400;color:var(--muted)}
+  .gauge .center .lbl{font-size:9px;letter-spacing:.2em;color:var(--faint);text-transform:uppercase;margin-top:4px}
+  .gauge-title{font-size:12px;letter-spacing:.18em;text-transform:uppercase;color:var(--muted);font-weight:600;text-align:center}
+  .gauge-title b{color:var(--ink);font-weight:600;text-transform:none;letter-spacing:.03em}
+  .gauge-foot{font-family:var(--font-m);font-size:11px;color:var(--muted)}
+  .stat-stack{display:flex;flex-direction:column;gap:10px;justify-content:center;padding:12px;height:100%}
+  .stat{display:flex;align-items:center;justify-content:space-between;gap:10px;padding:9px 13px;border:1px solid var(--brd);
+    border-radius:9px;background:rgba(10,16,28,.4)}
+  .stat .k{font-size:10.5px;letter-spacing:.14em;color:var(--muted);text-transform:uppercase}
+  .stat .v{font-family:var(--font-m);font-size:17px;font-weight:600;white-space:nowrap}
+  .stat .v small{font-size:10px;color:var(--muted);font-weight:400}
+  .bar-mini{width:120px;height:6px;border-radius:4px;background:rgba(96,150,205,.14);overflow:hidden;position:relative}
+  .bar-mini>i{position:absolute;left:0;top:0;bottom:0;width:0;border-radius:4px;transition:width .8s cubic-bezier(.4,0,.2,1),background .5s}
+
+  /* ---------- main grid ---------- */
+  .grid{display:grid;grid-template-columns:repeat(12,minmax(0,1fr));gap:16px}
+  #health{grid-column:span 12}
+  #cpu{grid-column:span 7} #gpu{grid-column:span 5}
+  #mem{grid-column:span 4} #storage{grid-column:span 4} #net{grid-column:span 4}
+  #perf{grid-column:span 4} #volt{grid-column:span 8}
+  #thermal{grid-column:span 12}
+
+  .panel-head{display:flex;align-items:baseline;gap:10px;padding:13px 16px;border-bottom:1px solid var(--brd);min-width:0}
+  .panel-head h2{font-size:13px;font-weight:700;letter-spacing:.16em;text-transform:uppercase;margin:0;color:var(--ink);white-space:nowrap}
+  .panel-head h2::before{content:"";display:inline-block;width:7px;height:7px;background:var(--cyan);
+    border-radius:2px;margin-right:9px;box-shadow:0 0 8px var(--cyan-glow);transform:rotate(45deg)}
+  .panel-sub{font-size:10.5px;color:var(--muted);letter-spacing:.06em;font-family:var(--font-m);white-space:nowrap;overflow:hidden;text-overflow:ellipsis;min-width:0}
+  .panel-head .right{margin-left:auto;font-size:10px;color:var(--faint);letter-spacing:.12em;font-family:var(--font-m);white-space:nowrap}
+  .panel-body{padding:14px 16px}
+
+  /* core map */
+  .coremap{display:flex;align-items:flex-end;gap:8px;height:150px;padding-top:6px}
+  .corecol{flex:1;display:flex;flex-direction:column;align-items:center;gap:5px;height:100%;justify-content:flex-end;min-width:0}
+  .corebar-wrap{flex:1;width:100%;display:flex;gap:3px;align-items:flex-end;justify-content:center;
+    background:linear-gradient(180deg,transparent,rgba(96,150,205,.06));border-radius:4px}
+  .corebar{width:40%;max-width:14px;border-radius:3px 3px 1px 1px;background:linear-gradient(180deg,var(--cyan),rgba(47,224,230,.25));
+    height:2%;transition:height .7s cubic-bezier(.3,0,.2,1),background .5s;box-shadow:0 0 10px -2px var(--cyan-glow);min-height:2px}
+  .corebar.e{background:linear-gradient(180deg,var(--violet),rgba(155,140,255,.25));box-shadow:0 0 10px -2px rgba(155,140,255,.5)}
+  .corebar.warn{background:linear-gradient(180deg,var(--amber),rgba(255,180,84,.25));box-shadow:0 0 10px -2px rgba(255,180,84,.5)}
+  .corebar.hot{background:linear-gradient(180deg,var(--red),rgba(255,84,112,.25));box-shadow:0 0 12px -2px rgba(255,84,112,.6)}
+  .corelbl{font-family:var(--font-m);font-size:9.5px;color:var(--muted);letter-spacing:.05em}
+  .coretmp{font-family:var(--font-m);font-size:10px;font-weight:600;line-height:1}
+  .legend{display:flex;gap:14px;font-size:9.5px;color:var(--faint);letter-spacing:.1em;text-transform:uppercase;margin-top:10px}
+  .legend i{display:inline-block;width:8px;height:8px;border-radius:2px;margin-right:6px;vertical-align:-1px}
+  .cpu-foot{display:flex;gap:20px;margin-top:14px;flex-wrap:wrap}
+  .m{display:flex;flex-direction:column;gap:3px}
+  .m .k{font-size:9px;letter-spacing:.16em;color:var(--faint);text-transform:uppercase}
+  .m .v{font-family:var(--font-m);font-size:15px;font-weight:600}
+  .m .v small{font-size:10px;color:var(--muted)}
+  .chips{display:flex;flex-wrap:wrap;gap:6px;margin-top:12px;min-height:22px;align-items:center}
+  .chips .lab{font-size:9px;letter-spacing:.16em;color:var(--faint);text-transform:uppercase;margin-right:4px}
+  .chip{font-family:var(--font-m);font-size:10px;padding:3px 8px;border-radius:20px;border:1px solid var(--brd);color:var(--muted);background:rgba(10,16,28,.5)}
+  .chip.ok{color:var(--green);border-color:rgba(61,220,151,.35)}
+  .chip.warn{color:var(--amber);border-color:rgba(255,180,84,.4)}
+  .chip.bad{color:var(--red);border-color:rgba(255,84,112,.45);box-shadow:0 0 10px -3px rgba(255,84,112,.7)}
+
+  .kv{display:flex;align-items:center;justify-content:space-between;gap:10px;padding:8px 0;border-bottom:1px dashed rgba(96,150,205,.1)}
+  .kv:last-child{border-bottom:none}
+  .kv .k{font-size:11px;color:var(--muted);letter-spacing:.04em}
+  .kv .v{font-family:var(--font-m);font-size:14px;font-weight:600;text-align:right}
+  .kv .v small{font-size:10px;color:var(--muted);font-weight:400}
+
+  .spark{width:100%;height:44px;display:block;margin-top:8px}
+  .spark.tall{height:60px}
+  .two{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+  .subcard{border:1px solid var(--brd);border-radius:9px;padding:11px 12px;background:rgba(10,16,28,.35);min-width:0}
+  .subcard+.subcard{margin-top:10px}
+  .two .subcard+.subcard{margin-top:0}
+  .subcard .t{font-size:9.5px;letter-spacing:.16em;color:var(--faint);text-transform:uppercase;margin-bottom:8px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+  .subcard .big{font-family:var(--font-m);font-size:24px;font-weight:700;line-height:1}
+  .subcard .big small{font-size:11px;color:var(--muted);font-weight:400}
+  .subcard .delta{font-size:10px;color:var(--muted);margin-top:5px;font-family:var(--font-m)}
+  .rw{display:flex;justify-content:space-between;align-items:baseline;gap:8px}
+  .rw .big{font-size:19px}
+  .rw .tag{font-size:9px;letter-spacing:.14em;color:var(--faint);margin-right:5px}
+
+  /* thermal map */
+  .thermal-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(128px,1fr));gap:8px}
+  .tgroup{grid-column:1/-1;font-size:10px;letter-spacing:.2em;color:var(--faint);text-transform:uppercase;margin-top:6px;
+    display:flex;align-items:center;gap:10px}
+  .tgroup::after{content:"";flex:1;height:1px;background:var(--brd)}
+  .tgroup:first-child{margin-top:0}
+  .tcell{border:1px solid var(--brd);border-radius:8px;padding:9px 10px;background:rgba(10,16,28,.4);position:relative;overflow:hidden}
+  .tcell .name{font-size:9.5px;color:var(--muted);white-space:nowrap;overflow:hidden;text-overflow:ellipsis;letter-spacing:.02em;position:relative}
+  .tcell .val{font-family:var(--font-m);font-size:18px;font-weight:700;margin-top:5px;line-height:1;position:relative}
+  .tcell .val small{font-size:10px;color:var(--muted);font-weight:400}
+  .tcell .fill{position:absolute;left:0;top:0;bottom:0;width:0;opacity:.16;transition:width .7s,background .5s}
+  .tcell.peak{border-color:rgba(255,84,112,.5);box-shadow:0 0 16px -6px rgba(255,84,112,.8)}
+
+  /* volt grid */
+  .volt-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(180px,1fr));gap:8px}
+  .vcell{display:flex;align-items:center;justify-content:space-between;gap:6px;padding:8px 11px;border:1px solid var(--brd);
+    border-radius:8px;background:rgba(10,16,28,.35);min-width:0}
+  .vcell .k{font-size:10px;color:var(--muted);white-space:nowrap;overflow:hidden;text-overflow:ellipsis;min-width:0}
+  .vcell .v{font-family:var(--font-m);font-size:14px;font-weight:600;color:var(--cyan);white-space:nowrap}
+  .vcell .v small{font-size:9px;color:var(--faint)}
+  .vcell .dev{font-family:var(--font-m);font-size:9px;margin-left:5px}
+
+  /* ---------- system health ---------- */
+  .health-body{display:grid;grid-template-columns:170px minmax(0,1fr) minmax(0,1fr);gap:18px;align-items:start}
+  .score{position:relative;width:150px;height:150px;margin:0 auto}
+  .score svg{width:100%;height:100%;transform:rotate(-90deg)}
+  .score .track{fill:none;stroke:rgba(96,150,205,.14);stroke-width:8}
+  .score .arc{fill:none;stroke-width:8;stroke-linecap:round;transition:stroke-dashoffset 1s cubic-bezier(.4,0,.2,1),stroke .5s}
+  .score .ticks{fill:none;stroke:rgba(96,150,205,.25);stroke-width:2;stroke-dasharray:1 5.28}
+  .score-c{position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center}
+  .score-v{font-family:var(--font-m);font-size:44px;font-weight:700;line-height:1;text-shadow:0 0 18px currentColor}
+  .score-s{font-family:var(--font-m);font-size:11px;color:var(--muted);margin-top:4px}
+  .score-cap{text-align:center;font-size:9.5px;letter-spacing:.2em;color:var(--faint);text-transform:uppercase;margin-top:6px}
+  .col-t{font-size:9.5px;letter-spacing:.2em;color:var(--faint);text-transform:uppercase;margin-bottom:8px}
+  .factor{display:grid;grid-template-columns:1fr auto;gap:2px 10px;padding:6px 0;border-bottom:1px dashed rgba(96,150,205,.1);font-size:11px}
+  .factor:last-child{border-bottom:none}
+  .factor .n{color:var(--muted)}
+  .factor .p{font-family:var(--font-m);font-weight:600}
+  .factor .b{grid-column:1/-1;height:4px;border-radius:3px;background:rgba(96,150,205,.14);overflow:hidden}
+  .factor .b i{display:block;height:100%;width:0;border-radius:3px;transition:width .8s,background .5s}
+  .rec{display:flex;justify-content:space-between;align-items:center;gap:8px;padding:6px 0;border-bottom:1px dashed rgba(96,150,205,.1);font-size:11px}
+  .rec:last-child{border-bottom:none}
+  .rec .n{color:var(--muted)}
+  .rec .v{font-family:var(--font-m);font-weight:600;font-size:13px;white-space:nowrap}
+  .rec .v small{font-size:9.5px;color:var(--muted);font-weight:400}
+
+  /* settings popover */
+  .pop{position:fixed;top:74px;right:20px;z-index:50;width:310px;max-width:calc(100vw - 32px);border:1px solid var(--brd-strong);
+    border-radius:var(--r);background:var(--panel-solid);box-shadow:0 24px 60px -20px rgba(0,0,0,.9);
+    padding:16px;display:none}
+  .pop.open{display:block}
+  .pop h3{font-size:12px;letter-spacing:.16em;text-transform:uppercase;margin:0 0 14px;color:var(--cyan)}
+  .pop .note{font-size:10px;color:var(--faint);margin:8px 0 0;line-height:1.5}
+  .field{margin-bottom:13px}
+  .field label{display:block;font-size:10px;letter-spacing:.14em;color:var(--faint);text-transform:uppercase;margin-bottom:6px}
+  .field input,.field select{width:100%;background:rgba(8,13,24,.8);border:1px solid var(--brd);border-radius:8px;
+    color:var(--ink);font-family:var(--font-m);font-size:13px;padding:9px 11px;outline:none}
+  .field input:focus,.field select:focus{border-color:var(--cyan);box-shadow:0 0 0 2px rgba(47,224,230,.15)}
+  .pop .btnrow{display:flex;gap:8px;margin-top:8px}
+  .btn{flex:1;cursor:pointer;border:1px solid var(--brd);background:rgba(10,16,28,.5);color:var(--ink);
+    border-radius:8px;padding:10px;font-family:var(--font-h);font-size:11px;letter-spacing:.1em;text-transform:uppercase;font-weight:600;transition:.2s}
+  .btn:hover,.btn:focus-visible{border-color:var(--brd-strong);box-shadow:0 0 14px rgba(47,224,230,.2);outline:none}
+  .btn.primary{background:linear-gradient(180deg,rgba(47,224,230,.2),rgba(47,224,230,.08));border-color:rgba(47,224,230,.4);color:var(--cyan)}
+  .btn.danger:hover{border-color:rgba(255,84,112,.5);color:var(--red);box-shadow:0 0 14px rgba(255,84,112,.2)}
+
+  /* banner + toasts */
+  #banner{display:none;position:fixed;left:50%;bottom:22px;transform:translateX(-50%);z-index:60;
+    background:rgba(20,10,14,.92);border:1px solid rgba(255,84,112,.5);color:#ffd7de;padding:12px 20px;
+    border-radius:10px;font-family:var(--font-m);font-size:12px;box-shadow:0 20px 50px -20px rgba(255,84,112,.5);
+    max-width:min(90vw,720px)}
+  #banner.show{display:block}
+  #banner.info{background:rgba(8,20,24,.92);border-color:rgba(47,224,230,.5);color:#d6fbfc}
+  #toasts{position:fixed;right:20px;bottom:20px;z-index:70;display:flex;flex-direction:column;gap:8px;align-items:flex-end;pointer-events:none}
+  .toast{display:flex;align-items:center;gap:10px;padding:10px 14px;border-radius:10px;min-width:220px;max-width:min(360px,calc(100vw - 40px));
+    background:linear-gradient(135deg,rgba(40,30,8,.95),rgba(12,20,36,.95));border:1px solid rgba(255,209,102,.5);
+    box-shadow:0 18px 40px -16px rgba(255,209,102,.45);animation:tin .45s cubic-bezier(.2,1.4,.4,1)}
+  .toast.out{animation:tout .35s forwards}
+  .toast .ico{font-size:20px}
+  .toast .t1{font-size:9px;letter-spacing:.2em;color:var(--gold);text-transform:uppercase}
+  .toast .t2{font-size:13px;font-weight:600}
+  .toast .t3{font-size:10.5px;color:var(--muted)}
+  @keyframes tin{from{transform:translateX(40px) scale(.9);opacity:0}to{transform:none;opacity:1}}
+  @keyframes tout{to{transform:translateX(40px);opacity:0}}
+
+  .empty{color:var(--faint);font-size:12px;font-family:var(--font-m);text-align:center;padding:24px 0;letter-spacing:.05em;width:100%}
+  @media(max-width:1150px){
+    #hero{grid-template-columns:minmax(0,1fr)} .core-wrap{min-height:260px}
+    #cpu,#gpu,#mem,#storage,#net,#perf,#volt{grid-column:span 6}
+  }
+  @media(max-width:760px){
+    .wrap{padding:12px 12px 60px}
+    .hero-right{grid-template-columns:minmax(0,1fr)}
+    .health-body{grid-template-columns:minmax(0,1fr)}
+    .stat .k{letter-spacing:.08em}
+    #cpu,#gpu,#mem,#storage,#net,#thermal,#perf,#volt{grid-column:span 12}
+    .head-metrics{margin-left:0;width:100%;gap:14px}
+    .coremap{gap:4px}
+    .two{grid-template-columns:minmax(0,1fr)}
+    .two .subcard+.subcard{margin-top:10px}
+  }
+  @media (prefers-reduced-motion: reduce){
+    *{animation-duration:.001ms!important;animation-iteration-count:1!important;transition-duration:.001ms!important}
+  }
+</style>
+</head>
+<body>
+<div class="bg-grid"></div>
+<div class="bg-scan"></div>
+<div class="wrap" id="wrap">
+
+  <header>
+    <div class="brand">
+      <svg class="mark" viewBox="0 0 32 32" fill="none" aria-hidden="true">
+        <rect x="1" y="1" width="30" height="30" rx="7" stroke="#2fe0e6" stroke-opacity=".4"/>
+        <path d="M8 22V10l8 6 8-6v12" stroke="#2fe0e6" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+      <div>
+        <h1>HARDWARE</h1>
+        <div class="sub">Telemetry Console</div>
+      </div>
+    </div>
+    <div class="head-metrics">
+      <div class="hm" title="Duration of the last /api/sensors/read request"><span class="k">Round-trip</span><span class="v" id="hm-rtt">— <small>ms</small></span></div>
+      <div class="hm" title="Server clock minus this browser's clock (from /api/ping)"><span class="k">Clock Δ</span><span class="v" id="hm-offset">— <small>ms</small></span></div>
+      <div class="hm"><span class="k">Sensors</span><span class="v" id="hm-sensors">—</span></div>
+      <div class="hm"><span class="k">Readings</span><span class="v" id="hm-reads">—</span></div>
+      <div class="hm" title="Server timestamp of the last reading"><span class="k">Updated</span><span class="v" id="hm-upd">—</span></div>
+    </div>
+    <div class="status connecting" id="status"><span class="led"></span><span id="status-txt">Connecting</span></div>
+    <button class="gear" id="gear" title="Settings" aria-label="Settings" aria-expanded="false">⚙</button>
+  </header>
+
+  <section id="hero">
+    <div class="panel core-panel">
+      <div class="core-wrap">
+        <canvas id="coreCanvas" aria-hidden="true"></canvas>
+        <div class="core-tag">System Core</div>
+        <div class="core-load"><div class="n" id="core-load-n">—</div><div class="u">System Load %</div></div>
+      </div>
+    </div>
+    <div class="hero-right">
+      <div class="panel gauge-card">
+        <div class="gauge-title">CPU <b id="g-cpu-name">—</b></div>
+        <div class="gauge">
+          <svg viewBox="0 0 120 120" aria-hidden="true">
+            <circle class="track" cx="60" cy="60" r="52" pathLength="100" stroke-dasharray="75 100"/>
+            <circle class="val" id="g-cpu-arc" cx="60" cy="60" r="52" pathLength="100" stroke-dasharray="75 100" stroke-dashoffset="75" stroke="#2fe0e6"/>
+          </svg>
+          <div class="center"><div class="big" id="g-cpu">—</div><div class="lbl">Total Usage</div></div>
+        </div>
+        <div class="gauge-foot" id="g-cpu-foot">&nbsp;</div>
+      </div>
+      <div class="panel gauge-card">
+        <div class="gauge-title">GPU <b id="g-gpu-name">—</b></div>
+        <div class="gauge">
+          <svg viewBox="0 0 120 120" aria-hidden="true">
+            <circle class="track" cx="60" cy="60" r="52" pathLength="100" stroke-dasharray="75 100"/>
+            <circle class="val" id="g-gpu-arc" cx="60" cy="60" r="52" pathLength="100" stroke-dasharray="75 100" stroke-dashoffset="75" stroke="#2fe0e6"/>
+          </svg>
+          <div class="center"><div class="big" id="g-gpu">—</div><div class="lbl">Core Load</div></div>
+        </div>
+        <div class="gauge-foot" id="g-gpu-foot">&nbsp;</div>
+      </div>
+      <div class="panel">
+        <div class="stat-stack">
+          <div class="stat"><span class="k">CPU + GPU Power</span><span class="v" id="hs-power">—</span></div>
+          <div class="stat"><span class="k">CPU Package</span><span class="v" id="hs-cput">—</span></div>
+          <div class="stat"><span class="k">GPU Hot Spot</span><span class="v" id="hs-gput">—</span></div>
+          <div class="stat"><span class="k">Net ▼ / ▲</span><span class="v" id="hs-net">—</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="grid">
+    <!-- SYSTEM HEALTH -->
+    <section class="panel" id="health">
+      <div class="panel-head"><h2>System Health</h2><span class="panel-sub">Since the page was opened · nothing is saved</span><span class="right" id="health-uptime"></span></div>
+      <div class="panel-body health-body">
+        <div>
+          <div class="score">
+            <svg viewBox="0 0 120 120" aria-hidden="true">
+              <circle class="ticks" cx="60" cy="60" r="58" pathLength="100"/>
+              <circle class="track" cx="60" cy="60" r="50" pathLength="100"/>
+              <circle class="arc" id="score-arc" cx="60" cy="60" r="50" pathLength="100" stroke-dasharray="100 100" stroke-dashoffset="100" stroke="#2fe0e6"/>
+            </svg>
+            <div class="score-c"><div class="score-v" id="score-v">—</div><div class="score-s">/ 100</div></div>
+          </div>
+          <div class="score-cap">Health Score</div>
+        </div>
+        <div><div class="col-t">Health factors</div><div id="factors"></div></div>
+        <div><div class="col-t">Peak values</div><div id="records"></div></div>
+      </div>
+    </section>
+
+    <!-- CPU -->
+    <section class="panel" id="cpu">
+      <div class="panel-head"><h2>CPU</h2><span class="panel-sub" id="cpu-sub">—</span><span class="right" id="cpu-loads"></span></div>
+      <div class="panel-body">
+        <div class="coremap" id="coremap"></div>
+        <div class="legend"><span><i style="background:var(--cyan)"></i>P-core</span><span><i style="background:var(--violet)"></i>E-core</span><span><i style="background:var(--amber)"></i>&ge; 55 %</span><span><i style="background:var(--red)"></i>&ge; 85 %</span></div>
+        <canvas class="spark" id="sp-cpu" aria-label="CPU usage history"></canvas>
+        <div class="cpu-foot">
+          <div class="m"><span class="k">Package Temp</span><span class="v" id="cpu-pkgtemp">—</span></div>
+          <div class="m"><span class="k">Package Power</span><span class="v" id="cpu-pow">—</span></div>
+          <div class="m"><span class="k">Effective Clock</span><span class="v" id="cpu-eff">—</span></div>
+          <div class="m"><span class="k">Ring / LLC</span><span class="v" id="cpu-ring">—</span></div>
+          <div class="m"><span class="k">Core VID (avg)</span><span class="v" id="cpu-vid">—</span></div>
+        </div>
+        <div class="chips" id="cpu-limits"></div>
+      </div>
+    </section>
+
+    <!-- GPU -->
+    <section class="panel" id="gpu">
+      <div class="panel-head"><h2>GPU</h2><span class="panel-sub" id="gpu-sub">—</span></div>
+      <div class="panel-body">
+        <div class="two">
+          <div class="subcard">
+            <div class="t">Core Load</div>
+            <div class="big" id="gpu-load">—</div>
+            <canvas class="spark" id="sp-gpu"></canvas>
+          </div>
+          <div class="subcard">
+            <div class="t">Memory Usage</div>
+            <div class="big" id="gpu-mem">—</div>
+            <canvas class="spark" id="sp-gpumem"></canvas>
+          </div>
+        </div>
+        <div style="margin-top:12px">
+          <div class="kv"><span class="k">Temperature</span><span class="v" id="gpu-temp">—</span></div>
+          <div class="kv"><span class="k">Hot Spot / Mem Junction</span><span class="v" id="gpu-hot">—</span></div>
+          <div class="kv"><span class="k">Clock · Mem Clock</span><span class="v" id="gpu-clock">—</span></div>
+          <div class="kv"><span class="k">Power</span><span class="v" id="gpu-power">—</span></div>
+          <div class="kv"><span class="k">VRAM Allocated</span><span class="v" id="gpu-vram">—</span></div>
+          <div class="kv"><span class="k">Fan · Core Voltage</span><span class="v" id="gpu-fanvolt">—</span></div>
+        </div>
+        <div class="chips" id="gpu-limits"></div>
+      </div>
+    </section>
+
+    <!-- MEMORY -->
+    <section class="panel" id="mem">
+      <div class="panel-head"><h2>Memory</h2><span class="panel-sub" id="mem-sub">—</span></div>
+      <div class="panel-body">
+        <div class="subcard" style="margin-bottom:12px">
+          <div class="t">Physical</div>
+          <div class="big" id="mem-phys">—</div>
+          <div class="bar-mini" style="width:100%;margin-top:9px"><i id="mem-phys-bar"></i></div>
+          <div class="delta" id="mem-phys-delta"></div>
+          <canvas class="spark" id="sp-mem"></canvas>
+        </div>
+        <div class="kv"><span class="k">Virtual Committed</span><span class="v" id="mem-virt">—</span></div>
+        <div class="kv"><span class="k">Page File Usage</span><span class="v" id="mem-page">—</span></div>
+        <div class="kv"><span class="k">DIMM Temperatures</span><span class="v" id="mem-dimm">—</span></div>
+        <div class="kv"><span class="k">DIMM Power</span><span class="v" id="mem-dimmp">—</span></div>
+      </div>
+    </section>
+
+    <!-- STORAGE -->
+    <section class="panel" id="storage">
+      <div class="panel-head"><h2>Storage</h2><span class="panel-sub" id="storage-sub">Drives</span></div>
+      <div class="panel-body" id="storage-body"></div>
+    </section>
+
+    <!-- NETWORK -->
+    <section class="panel" id="net">
+      <div class="panel-head"><h2>Network</h2><span class="panel-sub">Interfaces</span></div>
+      <div class="panel-body" id="net-body"></div>
+    </section>
+
+    <!-- PERFORMANCE / PRESENTMON -->
+    <section class="panel" id="perf">
+      <div class="panel-head"><h2>Display</h2><span class="panel-sub" id="perf-sub">PresentMon</span></div>
+      <div class="panel-body" id="perf-body">
+        <div class="subcard" style="margin-bottom:10px">
+          <div class="t">Framerate (avg)</div>
+          <div class="big" id="perf-fps">—</div>
+          <canvas class="spark tall" id="sp-fps"></canvas>
+        </div>
+        <div class="kv"><span class="k">Frame Time (avg)</span><span class="v" id="perf-ft">—</span></div>
+        <div class="kv"><span class="k">1% / 0.1% Low</span><span class="v" id="perf-low">—</span></div>
+        <div class="kv"><span class="k">GPU Busy · CPU Busy</span><span class="v" id="perf-busy">—</span></div>
+      </div>
+    </section>
+
+    <!-- VOLTAGE -->
+    <section class="panel" id="volt">
+      <div class="panel-head"><h2>Rails</h2><span class="panel-sub">Voltages · deviation from nominal</span></div>
+      <div class="panel-body"><div class="volt-grid" id="volt-grid"></div></div>
+    </section>
+
+    <!-- THERMAL -->
+    <section class="panel" id="thermal">
+      <div class="panel-head"><h2>Thermal Map</h2><span class="panel-sub" id="thermal-sub">—</span><span class="right" id="thermal-hot"></span></div>
+      <div class="panel-body"><div class="thermal-grid" id="thermal-grid"></div></div>
+    </section>
+  </div>
+</div>
+
+<!-- settings -->
+<div class="pop" id="pop" role="dialog" aria-label="Settings">
+  <h3>Console Settings</h3>
+  <div class="field"><label for="set-base">Server Base URL</label><input id="set-base" placeholder="(this server)" spellcheck="false" /></div>
+  <div class="field"><label for="set-interval">Poll Interval</label>
+    <select id="set-interval">
+      <option value="500">0.5 s</option>
+      <option value="1000">1.0 s</option>
+      <option value="1500">1.5 s</option>
+      <option value="2000">2.0 s</option>
+      <option value="3000">3.0 s</option>
+      <option value="5000">5.0 s</option>
+    </select>
+  </div>
+  <div class="field"><label for="set-motion">3D Core Motion</label>
+    <select id="set-motion"><option value="auto">Auto (follow load)</option><option value="on">Always on</option><option value="off">Off</option></select>
+  </div>
+  <div class="btnrow">
+    <button class="btn primary" id="set-save">Apply</button>
+    <button class="btn" id="set-pause">Pause</button>
+  </div>
+  <div class="btnrow">
+    <button class="btn danger" id="set-resetfilter">Reset Sensor Filter</button>
+  </div>
+  <p class="note">Settings are not saved (the page stores nothing in the browser). Use URL parameters for a fixed setup: <code>?base=https://PC:8080&amp;poll=1000</code>. Empty base = the server that serves this page.</p>
+</div>
+
+<div id="banner" role="status"></div>
+<div id="toasts" aria-live="polite"></div>
+
+<script>
+"use strict";
+/* ============================ CONFIG ============================ */
+// Nothing is stored in the browser (project rule): settings live in memory or come from the URL.
+const QS = new URLSearchParams(location.search);
+const reduced = matchMedia('(prefers-reduced-motion: reduce)').matches;
+function clampInt(v, lo, hi, def){ const n=parseInt(v,10); return isNaN(n)?def:Math.max(lo,Math.min(hi,n)); }
+function cleanBase(s){ return String(s||'').trim().replace(/\/+$/,''); }
+const CFG = {
+  // empty = same origin (page served by the server). Opened from disk: the default local server over HTTP (--http).
+  base: QS.has('base') ? cleanBase(QS.get('base')) : (location.protocol==='file:' ? 'http://127.0.0.1:8080' : ''),
+  pollMs: clampInt(QS.get('poll'), 500, 10000, 2000),
+  motion: QS.get('motion') || (reduced ? 'off' : 'auto'),
+  versions: { read:{min:1,current:1}, sdb:{min:1,current:1} },   // each JSON has its own Version range
+  historyN: 60,
+  resyncMs: 60000
+};
+const DIGITS = /^\d+$/;
+const SDB_META = new Set(['tSensorLocation','tReadingLocation','tReadingType']);
+const DEFAULT_UNIT = {1:'°C',2:'V',3:'RPM',4:'A',5:'W',6:'MHz',7:'%'};
+const $ = s=>document.querySelector(s);
+const byId = id=>document.getElementById(id);
+
+/* ============================ STATE ============================ */
+let R = {};               // sensor -> readingName -> type -> {value,num,unit,tooltip,group,isGroup}
+let meta = {};            // key(sensor,name,type) -> {unit,tooltip}
+let typesByName = {};     // sensor\0name -> [types]  (for a flat read layout without type keys)
+const H = {};             // history: key -> [numbers]
+let conn = 'connecting';
+let clockOffset = null, lastRtt = null, lastSync = 0;
+let paused = false, stopped = false;
+let pollTimer = null, gen = 0, reqSeq = 0, appliedSeq = 0;
+let loadTarget = 0;
+let liveSince = null;
+
+/* ============================ HELPERS ============================ */
+const isObj = o => o!==null && typeof o==='object' && !Array.isArray(o);
+const key = (s,r,t)=> s + '\u0000' + r + '\u0000' + t;
+const clamp01 = f => Math.max(0, Math.min(1, f||0));
+function esc(s){ return String(s).replace(/[&<>"']/g, c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c])); }
+function toNum(s){
+  if (typeof s==='number') return isFinite(s)?s:null;
+  if (typeof s!=='string') return null;
+  const t=s.replace(/,/g,'').trim();
+  if (!/^[-+]?(\d+\.?\d*|\.\d+)(e[-+]?\d+)?$/i.test(t)) return null;   // "Yes"/"No" etc. are not numbers
+  return parseFloat(t);
+}
+function fmtNum(n, digits){
+  if (n==null || !isFinite(n)) return '—';
+  const a=Math.abs(n);
+  const d = digits!=null ? digits : (a>=1000?0 : a>=100?1 : a>=1?2 : 3);
+  return n.toLocaleString('en-US',{maximumFractionDigits:d, minimumFractionDigits:0});
+}
+function unitOf(r){
+  if(!r) return '';
+  const u=(r.unit||'').trim();
+  if(u && u!=='None') return u;
+  return DEFAULT_UNIT[r.type]||'';
+}
+function vu(r, digits, color){            // value + unit html
+  if(!r || r.num==null) return '—';
+  const u=unitOf(r); const v=esc(fmtNum(r.num,digits));
+  return (color?`<span style="color:${color}">${v}</span>`:v) + (u?` <small>${esc(u)}</small>`:'');
+}
+/* thermal color: f in [0,1] -> rgb string */
+const STOPS=[[0,[47,224,230]],[0.5,[255,180,84]],[1,[255,84,112]]];
+function thermal(f){
+  f=clamp01(f);
+  for(let i=0;i<STOPS.length-1;i++){
+    const [p0,c0]=STOPS[i],[p1,c1]=STOPS[i+1];
+    if(f<=p1){ const k=(f-p0)/(p1-p0);
+      return `rgb(${Math.round(c0[0]+(c1[0]-c0[0])*k)},${Math.round(c0[1]+(c1[1]-c0[1])*k)},${Math.round(c0[2]+(c1[2]-c0[2])*k)})`;
+    }
+  }
+  return 'rgb(255,84,112)';
+}
+const tempFrac = t => (t-35)/(95-35);          // 35..95 °C -> 0..1
+const tcol = r => r&&r.num!=null ? thermal(tempFrac(r.num)) : null;
+function rgba(rgb,a){ const m=String(rgb).match(/\d+/g); if(!m) return `rgba(47,224,230,${a})`; if(rgb[0]==='#'){const h=rgb.slice(1);return `rgba(${parseInt(h.substr(0,2),16)},${parseInt(h.substr(2,2),16)},${parseInt(h.substr(4,2),16)},${a})`;} return `rgba(${m[0]},${m[1]},${m[2]},${a})`; }
+// Network rates -> KB/s (HWiNFO reports "KB/s"; also accept MB/s, B/s)
+function toKBps(r){ if(!r||r.num==null) return 0; const u=unitOf(r).toLowerCase();
+  if(u.startsWith('mb')) return r.num*1024; if(u.startsWith('gb')) return r.num*1048576; if(u==='b/s') return r.num/1024; return r.num; }
+function fmtRate(kb){ if(kb>=1048576) return [fmtNum(kb/1048576,2),'GB/s']; if(kb>=1024) return [fmtNum(kb/1024,kb>=10240?1:2),'MB/s']; return [fmtNum(kb,kb>=100?0:1),'KB/s']; }
+function rateHtml(kb,color){ const [v,u]=fmtRate(kb); return `<span${color?` style="color:${color}"`:''}>${esc(v)}</span> <small>${u}</small>`; }
+
+/* lookups */
+function find(sensorRe, name, type){
+  for(const s in R){ if(!sensorRe.test(s)) continue; const n=R[s][name]; if(n && n[type]) return n[type]; }
+  return null;
+}
+function findAll(sensorRe, name, type){
+  const out=[]; for(const s in R){ if(!sensorRe.test(s)) continue; const n=R[s][name]; if(n && n[type]) out.push({sensor:s, r:n[type]}); }
+  return out;
+}
+function at(sensor, name, type){ const n=sensor&&R[sensor]&&R[sensor][name]; return n&&n[type]||null; }
+function each(sensor, fn){ const s=R[sensor]; if(!s) return; for(const name in s) for(const t in s[name]) fn(name,t,s[name][t]); }
+const firstSensor = re => Object.keys(R).find(s=>re.test(s)) || null;
+const devTag = s => { const m=s.match(/\[([A-Z]):\]/); if(m) return m[1]+':'; const n=s.match(/\[#(\d+)\]/); return n?'#'+n[1]:''; };
+
+/* ============================ PARSE: SDB ============================ */
+function setMeta(sensor,name,t,node){
+  meta[key(sensor,name,t)]={unit:typeof node.Unit==='string'?node.Unit:'', tooltip:typeof node.Tooltip==='string'?node.Tooltip:''};
+  const k=sensor+'\u0000'+name; (typesByName[k]=typesByName[k]||[]).includes(t) || typesByName[k].push(t);
+}
+function walkSdb(node, sensor){
+  for(const [name,child] of Object.entries(node)){
+    if(!isObj(child) || SDB_META.has(name)) continue;
+    if('hide' in child){                         // old layout without a type level
+      const t=isObj(child.tReadingType)&&child.tReadingType.eType!=null?String(child.tReadingType.eType):'0';
+      setMeta(sensor,name,t,child);
+    }
+    const kids={};
+    for(const [k,v] of Object.entries(child)){
+      if(!isObj(v)) continue;
+      if(DIGITS.test(k)) setMeta(sensor,name,k,v);
+      else if(!SDB_META.has(k)) kids[k]=v;
+    }
+    walkSdb(kids, sensor);
+  }
+}
+function versionError(j, range, what){
+  if(!isObj(j)) return what+': not a JSON object';
+  if(j.Version===undefined) return what+": 'Version' is missing";
+  if(!Number.isInteger(j.Version)) return what+": 'Version' must be an integer";
+  if(j.Version<range.min || j.Version>range.current) return `${what}: unsupported Version ${j.Version} (this page supports ${range.min}..${range.current})`;
+  return '';
+}
+function parseSdb(j){
+  const e=versionError(j, CFG.versions.sdb, 'SDB'); if(e) throw new Error(e);
+  meta={}; typesByName={};
+  for(const [name,child] of Object.entries(j)) if(name!=='Version' && isObj(child)) walkSdb(child,name);
+}
+
+/* ============================ PARSE: READ ============================ */
+function addReading(out,sensor,name,t,v,group,isGroup){
+  const m=meta[key(sensor,name,t)]||{};
+  (out[name]=out[name]||{})[t]={ value:v.Value, num:toNum(v.Value), type:t, group, isGroup,
+    unit: m.unit || (typeof v.Unit==='string'?v.Unit:''), tooltip: m.tooltip || (typeof v.Tooltip==='string'?v.Tooltip:'') };
+}
+function walkRead(node, sensor, out, group){
+  for(const [name,child] of Object.entries(node)){
+    if(!isObj(child)) continue;
+    if('Value' in child && !isObj(child.Value)){      // flat layout: "<name>": {"Value": ..}
+      const t = child.Type!=null ? String(child.Type) : ((typesByName[sensor+'\u0000'+name]||['0'])[0]);
+      addReading(out,sensor,name,t,child,group,false); continue;
+    }
+    const kids={}; let hasKids=false;
+    for(const [k,v] of Object.entries(child)) if(!DIGITS.test(k) && isObj(v)){ kids[k]=v; hasKids=true; }
+    for(const [k,v] of Object.entries(child)) if(DIGITS.test(k) && isObj(v) && 'Value' in v) addReading(out,sensor,name,k,v,group,hasKids);
+    if(hasKids) walkRead(kids, sensor, out, name);
+  }
+}
+function parseRead(j){
+  const e=versionError(j, CFG.versions.read, 'read'); if(e) throw Object.assign(new Error(e),{fatal:true});
+  const sensors={}; let n=0;
+  for(const [name,node] of Object.entries(j)){
+    if(!isObj(node)) continue;                       // Version + timing fields
+    const out={}; walkRead(node,name,out,null); sensors[name]=out;
+    for(const rn in out) for(const t in out[rn]) if(!out[rn][t].isGroup) n++;
+  }
+  return {sensors, count:n};
+}
+
+/* ============================ NETWORK ============================ */
+async function api(path){
+  const t0=performance.now();
+  const res=await fetch(CFG.base+path,{cache:'no-store',headers:{'Accept':'application/json'}});
+  const rtt=performance.now()-t0;
+  const text=await res.text();
+  let data=null; try{ data=JSON.parse(text); }catch(_){}
+  if(!res.ok) return {ok:false, status:res.status, error:(data&&data.error)||text.trim()||res.statusText, rtt};
+  if(data===null) return {ok:false, status:res.status, error:'response is not JSON', rtt};
+  return {ok:true, data, rtt};
+}
+async function post(path){
+  // text/plain = "simple" request: no CORS preflight (Crow answers OPTIONS without CORS headers)
+  const res=await fetch(CFG.base+path,{method:'POST',headers:{'Content-Type':'text/plain'},body:''});
+  let j={}; try{ j=await res.json(); }catch(_){}
+  if(!res.ok || j.error) throw new Error(j.error || ('HTTP '+res.status));
+  return j;
+}
+async function syncClock(){
+  // NTP style: offset from the ping with the smallest round trip
+  let best=null;
+  for(let i=0;i<6;i++){
+    const t0=performance.timeOrigin+performance.now();
+    try{
+      const r=await fetch(CFG.base+'/api/ping',{cache:'no-store'});
+      const j=await r.json(); const t3=performance.timeOrigin+performance.now();
+      if(j && typeof j.t==='number'){ const rtt=t3-t0; if(!best||rtt<best.rtt) best={rtt, offset:j.t-(t0+t3)/2}; }
+    }catch(_){ break; }
+  }
+  if(best){ clockOffset=best.offset; }
+  lastSync=Date.now();
+}
+
+/* ============================ POLLING ============================ */
+// Fixed rate: the next poll is scheduled BEFORE the fetch; responses older than the newest applied one are dropped.
+function schedule(g){ pollTimer=setTimeout(()=>tick(g), CFG.pollMs); }
+function tick(g){
+  if(g!==gen || paused || stopped) return;
+  schedule(g);
+  poll();
+  if(Date.now()-lastSync>CFG.resyncMs) syncClock();
+}
+function startPolling(){ clearTimeout(pollTimer); gen++; stopped=false; tick(gen); }
+function stopPolling(){ clearTimeout(pollTimer); gen++; }
+
+async function poll(){
+  const seq=++reqSeq;
+  let r;
+  try{ r=await api('/api/sensors/read'); }
+  catch(e){ if(seq>=appliedSeq) fail('Cannot reach '+(CFG.base||location.origin)+' ('+e.message+'). Is the server running, and is its certificate accepted in this browser?'); return; }
+  if(seq<appliedSeq) return;                         // stale
+  appliedSeq=seq;
+  if(!r.ok){ fail(r.status===503 ? 'Sensor source unavailable: '+r.error : `Read failed (HTTP ${r.status}): ${r.error}`); return; }
+  let parsed;
+  try{ parsed=parseRead(r.data); }
+  catch(e){
+    if(e.fatal){ stopped=true; stopPolling(); fail(e.message+' — polling stopped.'); return; }
+    fail('Data error: '+e.message); return;
+  }
+  R=parsed.sensors; lastRtt=r.rtt;
+  if(!liveSince) liveSince=Date.now();
+  setStatus('live'); setBanner(null); byId('wrap').classList.remove('stale');
+  render();
+  pushHistory();
+  updateHeader(parsed.count, r.data.Timestamp);
+  updateHealth();
+}
+function fail(msg){
+  setStatus('error'); setBanner(msg);
+  if(Object.keys(R).length) byId('wrap').classList.add('stale');
+}
+async function boot(){
+  stopPolling();
+  setStatus('connecting');
+  try{
+    const s=await api('/api/sensors/sdb');           // units + tooltips (optional)
+    if(s.ok){ try{ parseSdb(s.data); }catch(e){ meta={}; typesByName={}; toast('⚠','SDB ignored',e.message,'Units fall back to defaults'); } }
+  }catch(_){ /* the read poll reports connection problems */ }
+  syncClock();
+  startPolling();
+}
+
+/* ============================ HISTORY / SPARKLINES ============================ */
+function hist(k,v){ if(v==null||!isFinite(v)) return; const a=(H[k]=H[k]||[]); a.push(v); if(a.length>CFG.historyN) a.shift(); }
+const sparkDefs={};       // canvasId -> {series:[[histKey,color]], max, minMax}
+function defSpark(id, series, opts){ sparkDefs[id]=Object.assign({series, max:null, minMax:1}, opts||{}); }
+function drawSpark(id){
+  const d=sparkDefs[id], cv=byId(id); if(!d||!cv) return;
+  const w=cv.clientWidth, h=cv.clientHeight; if(!w||!h) return;
+  const dpr=Math.min(devicePixelRatio||1,2);
+  if(cv.width!==Math.round(w*dpr)||cv.height!==Math.round(h*dpr)){ cv.width=Math.round(w*dpr); cv.height=Math.round(h*dpr); }
+  const ctx=cv.getContext('2d'); ctx.setTransform(dpr,0,0,dpr,0,0); ctx.clearRect(0,0,w,h);
+  // baseline grid
+  ctx.strokeStyle='rgba(96,150,205,.10)'; ctx.lineWidth=1;
+  for(const f of [.5]){ ctx.beginPath(); ctx.moveTo(0,Math.round(h*f)+.5); ctx.lineTo(w,Math.round(h*f)+.5); ctx.stroke(); }
+  const ser=d.series.map(([k,c])=>({a:H[k]||[],c}));
+  let max=d.max;
+  if(max==null){ max=d.minMax; for(const s of ser) for(const v of s.a) if(v>max) max=v; max*=1.1; }
+  const N=CFG.historyN;
+  const X=i=> (i/(N-1))*w;
+  const Y=v=> h-2-(Math.max(0,Math.min(max,v))/max)*(h-6);
+  for(const s of ser){
+    const a=s.a, n=a.length; if(n<2) continue;
+    const off=N-n;
+    const g=ctx.createLinearGradient(0,0,0,h); g.addColorStop(0,rgba(s.c,.26)); g.addColorStop(1,rgba(s.c,0));
+    ctx.beginPath(); ctx.moveTo(X(off),h);
+    for(let i=0;i<n;i++) ctx.lineTo(X(off+i),Y(a[i]));
+    ctx.lineTo(X(N-1),h); ctx.closePath(); ctx.fillStyle=g; ctx.fill();
+    ctx.beginPath();
+    for(let i=0;i<n;i++){ const x=X(off+i),y=Y(a[i]); i?ctx.lineTo(x,y):ctx.moveTo(x,y); }
+    ctx.strokeStyle=s.c; ctx.lineWidth=1.6; ctx.lineJoin='round';
+    ctx.shadowColor=rgba(s.c,.6); ctx.shadowBlur=6; ctx.stroke(); ctx.shadowBlur=0;
+    ctx.beginPath(); ctx.arc(X(N-1),Y(a[n-1]),2.2,0,7); ctx.fillStyle=s.c; ctx.fill();
+  }
+}
+function drawAllSparks(){ for(const id in sparkDefs) drawSpark(id); }
+
+let cur = {};             // current headline numbers (used by history, health, peak values)
+function pushHistory(){
+  hist('cpu',cur.cpu); hist('gpu',cur.gpu); hist('gpumem',cur.gpumem); hist('fps',cur.fps); hist('mem',cur.mem);
+  for(const d of drives) { hist('dr'+d.i,d.r); hist('dw'+d.i,d.w); }
+  for(const n of nics)   { hist('nd'+n.i,n.dl); hist('nu'+n.i,n.ul); }
+  drawAllSparks();
+}
+
+/* ============================ RENDER ============================ */
+function setGauge(arcId, numId, f, color, html){
+  const arc=byId(arcId);
+  arc.setAttribute('stroke-dashoffset', (75-75*clamp01(f)).toFixed(2));   // arc = first 75 of 100 (270°)
+  arc.setAttribute('stroke', color);
+  arc.style.filter=`drop-shadow(0 0 6px ${color})`;
+  byId(numId).innerHTML=html;
+}
+function setHtml(id, html){ const e=byId(id); if(e && e.innerHTML!==html) e.innerHTML=html; }
+function setText(id, t){ const e=byId(id); if(e && e.textContent!==t) e.textContent=t; }
+function setBar(id, f, color){ const e=byId(id); if(e){ e.style.width=(clamp01(f)*100)+'%'; if(color) e.style.background=color; } }
+function chips(id, label, items, okText){
+  const html = `<span class="lab">${esc(label)}</span>` + (items.length
+    ? items.map(x=>`<span class="chip ${x.cls||'warn'}" title="${esc(x.title||x.text)}">${esc(x.text)}</span>`).join('')
+    : `<span class="chip ok">${esc(okText)}</span>`);
+  setHtml(id, html);
+}
+
+const CPU_RE=/^CPU \[#0\]: /;
+let gpuSensor=null;
+function render(){
+  gpuSensor = firstSensor(/^dGPU \[#\d+\]/) || firstSensor(/^GPU \[#\d+\]/);
+  const cpuSensor = Object.keys(R).filter(s=>CPU_RE.test(s)).sort((a,b)=>a.length-b.length)[0] || null;
+  const G=(n,t)=>at(gpuSensor,n,t);
+
+  // ---- names ----
+  const cpuName = cpuSensor ? cpuSensor.replace(CPU_RE,'').split(':')[0].trim() : '—';
+  const gpuName = gpuSensor ? gpuSensor.replace(/^d?GPU \[#\d+\]:\s*/,'').split(': ')[0].trim() : '—';
+  setText('g-cpu-name',cpuName); setText('cpu-sub',cpuName);
+  setText('g-gpu-name',gpuName); setText('gpu-sub',gpuName);
+
+  // ---- hero gauges ----
+  const c=find(CPU_RE,'Total CPU Usage','7');
+  const g=G('GPU Core Load','7') || G('GPU D3D Usage','7');
+  const cf=c?clamp01(c.num/100):0, gf=g?clamp01(g.num/100):0;
+  setGauge('g-cpu-arc','g-cpu',cf,thermal(cf), c?`${Math.round(c.num)}<small>%</small>`:'—');
+  setGauge('g-gpu-arc','g-gpu',gf,thermal(gf), g?`${Math.round(g.num)}<small>%</small>`:'—');
+  const cclk=find(CPU_RE,'Average Effective Clock','6'), cpk=find(/^CPU \[#0\]:.*DTS/,'CPU Package','1')||find(CPU_RE,'CPU Package','1');
+  setHtml('g-cpu-foot', [cpk?vu(cpk,0,tcol(cpk)):'', cclk?vu(cclk,0):''].filter(Boolean).join(' · ')||'&nbsp;');
+  const gt=G('GPU Temperature','1'), gclk=G('GPU Clock','6');
+  setHtml('g-gpu-foot', [gt?vu(gt,0,tcol(gt)):'', gclk?vu(gclk,0):''].filter(Boolean).join(' · ')||'&nbsp;');
+  cur.cpu=c?c.num:null; cur.gpu=g?g.num:null;
+  loadTarget=Math.max(cf,gf);
+  setText('core-load-n', String(Math.round(loadTarget*100)));
+
+  // ---- hero quick stats ----
+  const cpuP=find(CPU_RE,'CPU Package Power','5'), gpuP=G('GPU Power','5');
+  const totalP=(cpuP||gpuP)?((cpuP&&cpuP.num)||0)+((gpuP&&gpuP.num)||0):null;
+  cur.power=totalP;
+  setHtml('hs-power', totalP!=null?`<span style="color:#2fe0e6">${esc(fmtNum(totalP,1))}</span> <small>W</small>`:'—');
+  setHtml('hs-cput', cpk?vu(cpk,0,tcol(cpk)):'—');
+  const hot=G('GPU Hot Spot Temperature','1')||gt;
+  setHtml('hs-gput', hot?vu(hot,1,tcol(hot)):'—');
+  let dl=0, ul=0; for(const s in R) if(/^Network:/.test(s)){ dl+=toKBps(at(s,'Current DL rate','8')); ul+=toKBps(at(s,'Current UP rate','8')); }
+  cur.net=dl+ul;
+  setHtml('hs-net', rateHtml(dl,'#3ddc97')+' <small style="color:#5d6c89">/</small> '+rateHtml(ul,'#ffb454'));
+
+  // ---- CPU ----
+  renderCoreMap();
+  setHtml('cpu-pkgtemp', cpk?vu(cpk,0,tcol(cpk)):'—');
+  setHtml('cpu-pow', cpuP?vu(cpuP,1):'—');
+  setHtml('cpu-eff', cclk?vu(cclk,0):'—');
+  setHtml('cpu-ring', vu(find(CPU_RE,'Ring/LLC Clock','6'),0));
+  let vid=find(CPU_RE,'Core VIDs','2');            // group average when the server sends it
+  if(!vid){ const vs=[]; for(const s in R) if(CPU_RE.test(s)) each(s,(n,t,r)=>{ if(t==='2'&&/^[PE]?-?core \d+ VID$/i.test(n)&&r.num!=null) vs.push(r.num); });
+    if(vs.length) vid={num:vs.reduce((a,b)=>a+b,0)/vs.length,type:'2',unit:'V'}; }
+  setHtml('cpu-vid', vu(vid,3));
+  const lim=[]; let thr=false;
+  for(const s in R){
+    if(/^CPU \[#0\]:.*DTS/.test(s)) each(s,(n,t,r)=>{ if(!r.isGroup && /Thermal Throttling$/.test(n) && r.value==='Yes') thr=true; });
+    if(/^CPU \[#0\]:.*Performance Limit Reasons/.test(s)) each(s,(n,t,r)=>{ if(!r.isGroup && r.value==='Yes') lim.push({text:n, cls:/PROCHOT|Thermal|Critical/i.test(n)?'bad':'warn'}); });
+  }
+  if(thr) lim.unshift({text:'THERMAL THROTTLING', cls:'bad'});
+  cur.throttle=thr;
+  chips('cpu-limits','Limits',lim,'none active');
+  setHtml('cpu-loads', esc(cpuThreadsTxt));
+
+  // ---- GPU ----
+  const gmem=G('GPU Memory Usage','7');
+  cur.gpumem=gmem?gmem.num:null;
+  setHtml('gpu-load', g?vu(g,1,thermal(gf)):'—');
+  setHtml('gpu-mem', gmem?vu(gmem,1,'#ff5ce1'):'—');
+  setHtml('gpu-temp', vu(gt,1,tcol(gt)));
+  const mj=G('GPU Memory Junction Temperature','1'), hs=G('GPU Hot Spot Temperature','1');
+  setHtml('gpu-hot', (hs||mj)?[hs,mj].map(x=>x?`<span style="color:${tcol(x)}">${esc(fmtNum(x.num,1))}</span>`:'—').join(' <small>/</small> ')+' <small>°C</small>':'—');
+  const mclk=G('GPU Memory Clock','6');
+  setHtml('gpu-clock', (gclk||mclk)?`${vu(gclk,0)} · ${vu(mclk,0)}`:'—');
+  const tdp=G('Total GPU Power [% of TDP]','8');
+  setHtml('gpu-power', gpuP?vu(gpuP,1,'#2fe0e6')+(tdp&&tdp.num!=null?` <small>(${esc(fmtNum(tdp.num,0))}% TDP)</small>`:''):'—');
+  const va=G('GPU Memory Allocated','8'), vf=G('GPU Memory Available','8');
+  setHtml('gpu-vram', va?vu(va,0)+(vf&&vf.num!=null?` <small>of ${esc(fmtNum(va.num+vf.num,0))}</small>`:''):'—');
+  const fan=G('GPU Fan1','3')||G('GPU Fan','3'), vcore=G('GPU Core Voltage','2');
+  setHtml('gpu-fanvolt', (fan||vcore)?`${vu(fan,0)} · ${vu(vcore,3)}`:'—');
+  const gl=[];
+  if(gpuSensor) each(gpuSensor,(n,t,r)=>{ if(!r.isGroup && r.group==='GPU Performance Limiters' && r.value==='Yes')
+    gl.push({text:n.replace(/^Performance Limit - /,''), cls:/Thermal|Power/.test(n)?'bad':'warn', title:n}); });
+  chips('gpu-limits','Limiters',gl,'none active');
+
+  // ---- memory ----
+  const pmUsed=find(/^System:/,'Physical Memory Used','8'), pmAvail=find(/^System:/,'Physical Memory Available','8'), pmLoad=find(/^System:/,'Physical Memory Load','8');
+  const total=(pmUsed&&pmAvail)?pmUsed.num+pmAvail.num:null;
+  const mf=pmLoad?clamp01(pmLoad.num/100):(total?pmUsed.num/total:0);
+  cur.mem=pmLoad?pmLoad.num:(total?mf*100:null);
+  setHtml('mem-phys', pmUsed?vu(pmUsed,0,thermal(mf)):'—');
+  setBar('mem-phys-bar',mf,thermal(mf));
+  setText('mem-phys-delta', total?`of ${fmtNum(total,0)} ${unitOf(pmUsed)||'MB'} · ${fmtNum(cur.mem,1)} % load`:'');
+  setHtml('mem-virt', vu(find(/^System:/,'Virtual Memory Committed','8'),0));
+  setHtml('mem-page', vu(find(/^System:/,'Page File Usage','8'),1));
+  const dimmT=findAll(/DIMM/,'SPD Hub Temperature','1');
+  setHtml('mem-dimm', dimmT.length? dimmT.map(x=>`<span style="color:${tcol(x.r)}">${esc(fmtNum(x.r.num,1))}</span>`).join(' <small>·</small> ')+' <small>°C</small>':'—');
+  const dimmP=findAll(/DIMM/,'Total Power','5');
+  setHtml('mem-dimmp', dimmP.length? esc(fmtNum(dimmP.reduce((a,x)=>a+(x.r.num||0),0),2))+' <small>W</small>':'—');
+  const mclkM=find(/^Memory Timings/,'Memory Clock','6');
+  const tim=['Tcas','Trcd','Trp','Tras'].map(n=>find(/^Memory Timings/,n,'8')).filter(Boolean);
+  setText('mem-sub', [mclkM&&mclkM.num?fmtNum(mclkM.num*2,0)+' MT/s':'', tim.length===4?'CL '+tim.map(x=>fmtNum(x.num,0)).join('-'):''].filter(Boolean).join(' · ')||'—');
+
+  renderDrives();
+  renderNics();
+  renderPerf();
+  renderVoltages();
+  renderThermal();
+}
+
+/* ---- core map (per-thread usage, per-core temperature) ---- */
+let coreSig='', cpuThreadsTxt='';
+function coreList(){
+  const cores=[];
+  for(const s in R){ if(!CPU_RE.test(s)) continue;
+    each(s,(n,t,r)=>{
+      const m=t==='7' && n.match(/^(?:(P|E)-)?[Cc]ore (\d+)(?: (T\d+))? Usage$/);
+      if(!m) return;
+      const idx=+m[2]; const c=cores[idx]||(cores[idx]={idx, type:m[1]||'P', threads:[]});
+      c.threads.push({t:m[3]||'T0', v:clamp01((r.num||0)/100)*100});
+    });
+  }
+  return cores.filter(Boolean);
+}
+function renderCoreMap(){
+  const cores=coreList(), el=byId('coremap');
+  const sig=cores.map(c=>c.type+c.idx+':'+c.threads.map(t=>t.t).join(',')).join('|');
+  if(!cores.length){ if(coreSig!=='none'){ el.innerHTML='<div class="empty">No per-core usage reported</div>'; coreSig='none'; cpuThreadsTxt=''; } return; }
+  if(sig!==coreSig){
+    el.innerHTML=cores.map(c=>`<div class="corecol" title="${esc(c.type)}-core ${c.idx}">
+        <div class="coretmp" id="ct-${c.idx}"></div>
+        <div class="corebar-wrap">${c.threads.map(t=>`<div class="corebar ${c.type==='E'?'e':''}" id="cb-${c.idx}-${t.t}"></div>`).join('')}</div>
+        <div class="corelbl">${esc(c.type)}${c.idx}</div></div>`).join('');
+    coreSig=sig;
+    cpuThreadsTxt=`${cores.length}C · ${cores.reduce((a,c)=>a+c.threads.length,0)}T`;
+  }
+  for(const c of cores){
+    const temp=find(/^CPU \[#0\]:.*DTS/, `${c.type}-core ${c.idx}`,'1') || find(/^CPU \[#0\]:.*DTS/, `Core ${c.idx}`,'1');
+    const clk=find(CPU_RE, `${c.type}-core ${c.idx} Clock`,'6') || find(CPU_RE, `Core ${c.idx} Clock`,'6');
+    const te=byId('ct-'+c.idx);
+    if(te){ te.textContent=temp&&temp.num!=null?Math.round(temp.num)+'°':''; te.style.color=tcol(temp)||''; }
+    const col=te&&te.parentElement; if(col) col.title=`${c.type}-core ${c.idx}`+(temp?` · ${fmtNum(temp.num,0)} °C`:'')+(clk?` · ${fmtNum(clk.num,0)} MHz`:'')+' · '+c.threads.map(t=>`${t.t} ${fmtNum(t.v,1)} %`).join(', ');
+    for(const t of c.threads){
+      const bar=byId(`cb-${c.idx}-${t.t}`); if(!bar) continue;
+      bar.style.height=Math.max(2,t.v)+'%';
+      bar.classList.toggle('warn', t.v>=55&&t.v<85);
+      bar.classList.toggle('hot', t.v>=85);
+    }
+  }
+}
+
+/* ---- drives: "Drive: X [C:]" paired with "S.M.A.R.T.: X [C:]" ---- */
+let drives=[], driveSig='';
+function renderDrives(){
+  const list=Object.keys(R).filter(s=>/^Drive: /.test(s));
+  const el=byId('storage-body');
+  const sig=list.join('|');
+  if(sig!==driveSig){
+    driveSig=sig;
+    for(const id in sparkDefs) if(/^sp-drv/.test(id)) delete sparkDefs[id];
+    for(const k in H) if(/^d[rw]\d/.test(k)) delete H[k];
+    drives=list.map((s,i)=>{ const body=s.replace(/^Drive: /,''); return {i, sensor:s, smart:'S.M.A.R.T.: '+body, tag:devTag(s), name:body.replace(/\s*\([^)]*\)/g,'').replace(/\s*\[[^\]]*\]\s*$/,'').trim()}; });
+    el.innerHTML = drives.length ? drives.map(d=>`
+      <div class="subcard">
+        <div class="t" title="${esc(d.sensor)}">${esc(d.tag||('#'+d.i))} ${esc(d.name)}</div>
+        <div class="rw"><span class="big" id="drv-r-${d.i}"></span><span class="big" id="drv-w-${d.i}"></span></div>
+        <canvas class="spark" id="sp-drv${d.i}"></canvas>
+        <div class="bar-mini" style="width:100%;margin-top:8px" title="Total activity"><i id="drv-a-${d.i}"></i></div>
+        <div class="delta" id="drv-x-${d.i}"></div>
+      </div>`).join('') : '<div class="empty">No drives reported</div>';
+    for(const d of drives) defSpark('sp-drv'+d.i, [['dr'+d.i,'#2fe0e6'],['dw'+d.i,'#3ddc97']], {minMax:1});
+    setText('storage-sub', drives.length+' drive'+(drives.length===1?'':'s')+' · read / write');
+  }
+  for(const d of drives){
+    const rd=at(d.sensor,'Read Rate','8'), wr=at(d.sensor,'Write Rate','8'), act=at(d.sensor,'Total Activity','7');
+    d.r=rd?rd.num:null; d.w=wr?wr.num:null;
+    setHtml('drv-r-'+d.i, `<span class="tag">R</span>`+vu(rd,2,'#2fe0e6'));
+    setHtml('drv-w-'+d.i, `<span class="tag">W</span>`+vu(wr,2,'#3ddc97'));
+    setBar('drv-a-'+d.i, act?act.num/100:0, thermal(act?act.num/100:0));
+    const temp=at(d.smart,'Drive Temperature','1'), life=at(d.smart,'Drive Remaining Life','7'), warn=at(d.smart,'Drive Warning','8'), fl=at(d.smart,'Drive Failure','8');
+    const parts=[];
+    if(act) parts.push(`Activity ${esc(fmtNum(act.num,1))} %`);
+    if(temp) parts.push(`<span style="color:${tcol(temp)}">${esc(fmtNum(temp.num,0))} °C</span>`);
+    if(life) parts.push(`Life <span style="color:${life.num<50?'#ff5470':life.num<80?'#ffb454':'#3ddc97'}">${esc(fmtNum(life.num,0))} %</span>`);
+    if((fl&&fl.value==='Yes')||(warn&&warn.value==='Yes')) parts.push('<span style="color:#ff5470">S.M.A.R.T. WARNING</span>');
+    setHtml('drv-x-'+d.i, parts.join(' · '));
+  }
+}
+
+/* ---- network interfaces ---- */
+let nics=[], nicSig='';
+function renderNics(){
+  const list=Object.keys(R).filter(s=>/^Network: /.test(s));
+  const el=byId('net-body');
+  const sig=list.join('|');
+  if(sig!==nicSig){
+    nicSig=sig;
+    for(const id in sparkDefs) if(/^sp-nic/.test(id)) delete sparkDefs[id];
+    for(const k in H) if(/^n[du]\d/.test(k)) delete H[k];
+    nics=list.map((s,i)=>{ const body=s.replace(/^Network: /,''); const kind=/Wi-?Fi|Wireless|WLAN/i.test(body)?'Wi-Fi':'Ethernet';
+      return {i, sensor:s, kind, name:body.replace(/\s*-\s*(Wi-?Fi|Ethernet.*)$/i,'').replace(/\s*\([^)]*\)/g,'').trim()}; });
+    el.innerHTML = nics.length ? nics.map(n=>`
+      <div class="subcard">
+        <div class="t" title="${esc(n.sensor)}">${esc(n.kind)} · ${esc(n.name)}</div>
+        <div class="rw"><span class="big" id="nic-dl-${n.i}"></span><span class="big" id="nic-up-${n.i}"></span></div>
+        <canvas class="spark" id="sp-nic${n.i}"></canvas>
+        <div class="delta" id="nic-x-${n.i}"></div>
+      </div>`).join('') : '<div class="empty">No interfaces reported</div>';
+    for(const n of nics) defSpark('sp-nic'+n.i, [['nd'+n.i,'#3ddc97'],['nu'+n.i,'#ffb454']], {minMax:8});
+  }
+  for(const n of nics){
+    n.dl=toKBps(at(n.sensor,'Current DL rate','8')); n.ul=toKBps(at(n.sensor,'Current UP rate','8'));
+    setHtml('nic-dl-'+n.i, '<span class="tag">▼</span>'+rateHtml(n.dl,'#3ddc97'));
+    setHtml('nic-up-'+n.i, '<span class="tag">▲</span>'+rateHtml(n.ul,'#ffb454'));
+    const td=at(n.sensor,'Total DL','8'), tu=at(n.sensor,'Total UP','8');
+    setHtml('nic-x-'+n.i, (td||tu)?`Total ▼ ${vu(td,0)} · ▲ ${vu(tu,0)}`:'');
+  }
+}
+
+/* ---- PresentMon ---- */
+function renderPerf(){
+  const pm=firstSensor(/^PresentMon/);
+  setText('perf-sub', pm ? (pm.match(/\[(.*)\]/)||[,'PresentMon'])[1] : 'PresentMon · no data');
+  const P=(n)=>at(pm,n,'8');
+  const fps=P('Framerate Presented (avg)')||P('Framerate (avg)'), ft=P('Frame Time Presented (avg)');
+  const l1=P('Framerate Presented (1% low)'), l01=P('Framerate Presented (0.1% low)');
+  cur.fps=fps?fps.num:null;
+  const fc = fps&&fps.num!=null ? (fps.num>=100?'#3ddc97':fps.num>=50?'#2fe0e6':fps.num>=30?'#ffb454':'#ff5470') : null;
+  setHtml('perf-fps', fps?`<span style="color:${fc}">${esc(fmtNum(fps.num,1))}</span> <small>FPS</small>`:'—');
+  setHtml('perf-ft', ft?`${esc(fmtNum(ft.num,2))} <small>ms</small>`:'—');
+  setHtml('perf-low', (l1||l01)?`${esc(l1?fmtNum(l1.num,1):'—')} / ${esc(l01?fmtNum(l01.num,1):'—')} <small>FPS</small>`:'—');
+  const gb=P('GPU Busy (avg)'), cb=P('CPU Busy (avg)');
+  setHtml('perf-busy', (gb||cb)?`${esc(gb?fmtNum(gb.num,2):'—')} · ${esc(cb?fmtNum(cb.num,2):'—')} <small>ms</small>`:'—');
+}
+
+/* ---- voltages ---- */
+let voltSig='';
+const NOMINAL=[[/^\+?12V\b|\+12V/,12],[/^\+?5V\b|\+5V/,5],[/3VCC|3VSB|AVSB|3\.3V/,3.3],[/BAT/,3.0]];
+function renderVoltages(){
+  const cells=[];
+  for(const s in R){
+    if(/^CPU \[#0\]:.*(DTS|C-State|Limit)/.test(s)) continue;
+    each(s,(n,t,r)=>{
+      if(t!=='2' || r.num==null) return;
+      if(/Offset/.test(n) || r.group==='Voltage Offsets' || /^VIN\d|^VHIF/.test(n)) return;
+      if(/^[PE]-core \d+ VID$/.test(n)) return;          // per-core VIDs -> the group average "Core VIDs"
+      if(r.group==='GPU Rail Voltages') return;
+      let label=n==='Core VIDs'?'Core VID (avg)':n;
+      if(/^DDR\d? ?DIMM|DIMM/.test(s)) label='DIMM'+devTag(s)+' '+n.replace(/ Voltage$/,'');
+      else if(gpuSensor && s===gpuSensor) label=n;
+      cells.push({id:s+'|'+n, label, r, sensor:s});
+    });
+  }
+  // DIMMs repeat the same rails: keep only the first DIMM's set
+  const seen=new Set(); const sel=[];
+  for(const c of cells){ const k=c.label.replace(/^DIMM#\d+/,'DIMM'); if(/^DIMM/.test(c.label)){ if(seen.has(k)) continue; seen.add(k); c.label=k; } sel.push(c); }
+  const grid=byId('volt-grid');
+  const sig=sel.map(c=>c.id).join('|');
+  if(!sel.length){ if(voltSig!=='none'){ grid.innerHTML='<div class="empty">No voltage readings</div>'; voltSig='none'; } return; }
+  if(sig!==voltSig){
+    grid.innerHTML=sel.map((c,i)=>`<div class="vcell" title="${esc(c.sensor+' · '+c.r.tooltip)}"><span class="k">${esc(c.label)}</span><span class="v" id="vv-${i}"></span></div>`).join('');
+    voltSig=sig;
+  }
+  sel.forEach((c,i)=>{
+    const nom=(NOMINAL.find(([re])=>re.test(c.label))||[])[1];
+    let dev='';
+    if(nom){ const p=(c.r.num-nom)/nom*100; const a=Math.abs(p);
+      dev=`<span class="dev" style="color:${a<3?'#3ddc97':a<5?'#ffb454':'#ff5470'}">${p>=0?'+':''}${fmtNum(p,1)}%</span>`; }
+    setHtml('vv-'+i, `${esc(fmtNum(c.r.num,3))} <small>V</small>${dev}`);
+  });
+}
+
+/* ---- thermal map: grouped by device, stable order ---- */
+let thermSig='';
+function devGroup(s){
+  if(/^CPU \[/.test(s)) return 'CPU';
+  if(/GPU \[/.test(s)) return 'GPU';
+  if(/DIMM|^Memory/.test(s)) return 'Memory';
+  if(/^S\.M\.A\.R\.T\.|^Drive:/.test(s)) return 'Storage';
+  return 'Board';
+}
+const GROUP_ORDER=['CPU','GPU','Memory','Storage','Board'];
+let peakTemp=null;
+function renderThermal(){
+  const cells=[]; const used={};
+  for(const s in R){
+    const grp=devGroup(s);
+    each(s,(n,t,r)=>{
+      if(t!=='1' || r.num==null || r.isGroup) return;
+      if(/Distance to TjMAX|Thermal Limit|Critical Temperature/i.test(n)) return;   // not a temperature of a part
+      let name=n.replace(/^⊙/,'').replace(/ Temperature$/,'').replace(/^GPU Memory /,'VRAM ');
+      if(grp==='Storage'||grp==='Memory'){ const tag=devTag(s); if(tag) name=tag+' '+name; }
+      const k=grp+'|'+name; if(used[k]) return; used[k]=1;          // same part reported by two sensors (CPU Package)
+      cells.push({id:k, grp, name, r, sensor:s});
+    });
+  }
+  cells.sort((a,b)=>GROUP_ORDER.indexOf(a.grp)-GROUP_ORDER.indexOf(b.grp));
+  const grid=byId('thermal-grid');
+  if(!cells.length){ if(thermSig!=='none'){ grid.innerHTML='<div class="empty">No temperature readings</div>'; thermSig='none'; } setText('thermal-sub','—'); return; }
+  const sig=cells.map(c=>c.id).join('|');
+  if(sig!==thermSig){
+    let html='', last='';
+    cells.forEach((c,i)=>{
+      if(c.grp!==last){ html+=`<div class="tgroup">${esc(c.grp)}</div>`; last=c.grp; }
+      html+=`<div class="tcell" id="tc-${i}" title="${esc(c.sensor+' · '+c.r.tooltip)}"><div class="fill" id="tf-${i}"></div><div class="name">${esc(c.name)}</div><div class="val" id="tv-${i}"></div></div>`;
+    });
+    grid.innerHTML=html; thermSig=sig;
+  }
+  let pk=-1, pkName='';
+  cells.forEach((c,i)=>{ if(c.r.num>pk){ pk=c.r.num; pkName=c.name; } });
+  peakTemp=pk>=0?pk:null; cur.hottest=peakTemp;
+  cells.forEach((c,i)=>{
+    const f=tempFrac(c.r.num), col=thermal(f);
+    const v=byId('tv-'+i); v.innerHTML=`${esc(fmtNum(c.r.num,c.r.num%1?1:0))} <small>°C</small>`; v.style.color=col;
+    const fill=byId('tf-'+i); fill.style.width=(clamp01(f)*100)+'%'; fill.style.background=col;
+    byId('tc-'+i).classList.toggle('peak', c.r.num===pk && pk>=70);
+  });
+  setText('thermal-sub', cells.length+' sensors');
+  setHtml('thermal-hot', pkName?`Hottest ${esc(pkName)} <span style="color:${thermal(tempFrac(pk))}">${esc(fmtNum(pk,1))} °C</span>`:'');
+}
+
+/* ============================ SYSTEM HEALTH (since the page was opened, nothing saved) ============================ */
+const PEAKS=[
+  {k:'cpu',   n:'Peak CPU load',  u:'%',  d:0},
+  {k:'gpu',   n:'Peak GPU load',  u:'%',  d:0},
+  {k:'hottest',n:'Hottest part',  u:'°C', d:1},
+  {k:'power', n:'Max CPU+GPU power', u:'W', d:1},
+  {k:'fps',   n:'Max framerate',  u:'FPS',d:1},
+  {k:'net',   n:'Max network rate', u:'rate'},
+];
+const best={};
+function buildHealth(){
+  byId('records').innerHTML=PEAKS.map(r=>`<div class="rec"><span class="n">${esc(r.n)}</span><span class="v" id="recv-${r.k}">—</span></div>`).join('');
+}
+function healthScore(){
+  const f=[];
+  // thermal headroom (60 pts): 45 °C or less = full, 95 °C = 0
+  const h=cur.hottest;
+  const pT = h==null?null:Math.round(60*clamp01((95-h)/(95-45)));
+  f.push({n:'Thermal headroom', p:pT, max:60, txt:h==null?'no data':fmtNum(h,0)+' °C hottest'});
+  // throttling (20)
+  f.push({n:'No throttling', p:cur.throttle?0:20, max:20, txt:cur.throttle?'throttling!':'clear'});
+  // hardware errors (10)
+  const w=find(/WHEA/,'Total Errors','8'); cur.whea=w&&w.num!=null?w.num:null;
+  f.push({n:'Hardware errors', p:cur.whea==null?null:(cur.whea===0?10:0), max:10, txt:cur.whea==null?'no data':fmtNum(cur.whea,0)+' WHEA'});
+  // storage health (10)
+  const lifes=findAll(/^S\.M\.A\.R\.T\./,'Drive Remaining Life','7').map(x=>x.r.num).filter(x=>x!=null);
+  const warn=findAll(/^S\.M\.A\.R\.T\./,'Drive Warning','8').some(x=>x.r.value==='Yes')||findAll(/^S\.M\.A\.R\.T\./,'Drive Failure','8').some(x=>x.r.value==='Yes');
+  const minLife=lifes.length?Math.min(...lifes):null;
+  f.push({n:'Storage health', p:minLife==null?null:(warn?0:Math.round(10*clamp01(minLife/100))), max:10, txt:minLife==null?'no data':(warn?'S.M.A.R.T. warning':fmtNum(minLife,0)+' % life')});
+  // missing data: scale what is known to 100
+  const known=f.filter(x=>x.p!=null); const got=known.reduce((a,x)=>a+x.p,0), max=known.reduce((a,x)=>a+x.max,0);
+  return {score: max?Math.round(got/max*100):null, factors:f};
+}
+function scoreColour(s){ return s>=75?'#3ddc97':s>=60?'#2fe0e6':s>=40?'#ffb454':'#ff5470'; }
+function updateHealth(){
+  const {score,factors}=healthScore();
+  if(score!=null){
+    const col=scoreColour(score);
+    const v=byId('score-v'); v.textContent=String(score); v.style.color=col;
+    const arc=byId('score-arc'); arc.setAttribute('stroke-dashoffset',String(100-score)); arc.setAttribute('stroke',col); arc.style.filter=`drop-shadow(0 0 6px ${col})`;
+  }
+  setHtml('factors', factors.map(x=>{ const fr=x.p==null?0:x.p/x.max; const c=x.p==null?'#5d6c89':thermal(1-fr);
+    return `<div class="factor"><span class="n">${esc(x.n)} <small style="color:#5d6c89">· ${esc(x.txt)}</small></span><span class="p" style="color:${c}">${x.p==null?'—':x.p+'/'+x.max}</span><span class="b"><i style="width:${fr*100}%;background:${c}"></i></span></div>`; }).join(''));
+  // peak values
+  for(const r of PEAKS){
+    const v=cur[r.k]; if(v==null||!isFinite(v)) continue;
+    if(best[r.k]==null || v>best[r.k]+1e-9){
+      best[r.k]=v;
+      setHtml('recv-'+r.k, r.u==='rate' ? rateHtml(v) : `${esc(fmtNum(v,r.d))} <small>${esc(r.u)}</small>`);
+    }
+  }
+  const up=liveSince?Math.floor((Date.now()-liveSince)/1000):0;
+  setText('health-uptime', `LIVE ${Math.floor(up/60)}:${String(up%60).padStart(2,'0')}`);
+}
+
+/* toasts (queued, max 3 visible) */
+const toastQ=[]; let toastsOn=0;
+function toast(ico,t1,t2,t3){ toastQ.push({ico,t1,t2,t3}); pumpToasts(); }
+function pumpToasts(){
+  while(toastsOn<3 && toastQ.length){
+    const x=toastQ.shift(); toastsOn++;
+    const el=document.createElement('div'); el.className='toast';
+    el.innerHTML=`<span class="ico">${esc(x.ico)}</span><div><div class="t1">${esc(x.t1)}</div><div class="t2">${esc(x.t2)}</div><div class="t3">${esc(x.t3||'')}</div></div>`;
+    byId('toasts').appendChild(el);
+    setTimeout(()=>{ el.classList.add('out'); setTimeout(()=>{ el.remove(); toastsOn--; pumpToasts(); },350); }, 3800);
+  }
+}
+
+/* ============================ HEADER / STATUS ============================ */
+function updateHeader(count, ts){
+  setText('hm-sensors', String(Object.keys(R).length));
+  setText('hm-reads', String(count));
+  setHtml('hm-rtt', lastRtt!=null?`${lastRtt.toFixed(1)} <small>ms</small>`:'— <small>ms</small>');
+  setHtml('hm-offset', clockOffset!=null?`${(clockOffset>=0?'+':'')+Math.round(clockOffset)} <small>ms</small>`:'— <small>ms</small>');
+  const m=typeof ts==='string' && ts.match(/(\d{1,2}:\d{2}:\d{2})/);
+  setText('hm-upd', m?m[1]:new Date().toLocaleTimeString('en-GB',{hour12:false}));
+}
+function setStatus(s){
+  conn=s; byId('status').className='status '+s;
+  setText('status-txt', {live:'Live', connecting:'Connecting', error:'Error', paused:'Paused'}[s]||s);
+}
+function setBanner(msg, info){
+  const b=byId('banner');
+  if(!msg){ b.classList.remove('show'); return; }
+  b.textContent=msg; b.classList.toggle('info',!!info); b.classList.add('show');
+}
+
+/* ============================ 3D CORE ============================ */
+function normalize(v){ const l=Math.hypot(v[0],v[1],v[2])||1; return [v[0]/l,v[1]/l,v[2]/l]; }
+function icosphere(subdiv){
+  const t=(1+Math.sqrt(5))/2;
+  let verts=[[-1,t,0],[1,t,0],[-1,-t,0],[1,-t,0],[0,-1,t],[0,1,t],[0,-1,-t],[0,1,-t],[t,0,-1],[t,0,1],[-t,0,-1],[-t,0,1]].map(normalize);
+  let faces=[[0,11,5],[0,5,1],[0,1,7],[0,7,10],[0,10,11],[1,5,9],[5,11,4],[11,10,2],[10,7,6],[7,1,8],[3,9,4],[3,4,2],[3,2,6],[3,6,8],[3,8,9],[4,9,5],[2,4,11],[6,2,10],[8,6,7],[9,8,1]];
+  for(let s=0;s<subdiv;s++){
+    const nf=[], cache={};
+    const mid=(a,b)=>{ const k=a<b?a+'_'+b:b+'_'+a; if(cache[k]!=null) return cache[k];
+      verts.push(normalize([(verts[a][0]+verts[b][0])/2,(verts[a][1]+verts[b][1])/2,(verts[a][2]+verts[b][2])/2])); return cache[k]=verts.length-1; };
+    for(const [a,b,c] of faces){ const ab=mid(a,b),bc=mid(b,c),ca=mid(c,a); nf.push([a,ab,ca],[b,bc,ab],[c,ca,bc],[ab,bc,ca]); }
+    faces=nf;
+  }
+  const es=new Set(), edges=[];
+  for(const [a,b,c] of faces) for(const [p,q] of [[a,b],[b,c],[c,a]]){ const k=p<q?p+'_'+q:q+'_'+p; if(!es.has(k)){ es.add(k); edges.push([p,q]); } }
+  return {verts,edges};
+}
+const core={load:0, rotY:0};
+function initCore(){
+  const cv=byId('coreCanvas'); core.cv=cv; core.ctx=cv.getContext('2d');
+  core.geo=icosphere(2);
+  core.parts=[]; for(let i=0;i<46;i++){ const a=Math.random()*Math.PI*2, b=Math.acos(2*Math.random()-1), r=1.5+Math.random()*0.4;
+    core.parts.push({x:r*Math.sin(b)*Math.cos(a), y:r*Math.sin(b)*Math.sin(a), z:r*Math.cos(b), ph:Math.random()*6.28}); }
+  sizeCore();
+  requestAnimationFrame(coreFrame);
+}
+function sizeCore(){
+  const dpr=Math.min(devicePixelRatio||1,2), r=core.cv.getBoundingClientRect();
+  core.cv.width=Math.max(1,Math.round(r.width*dpr)); core.cv.height=Math.max(1,Math.round(r.height*dpr));
+  core.ctx.setTransform(dpr,0,0,dpr,0,0); core.W=r.width; core.H=r.height;
+}
+let lastFrame=0;
+function coreFrame(ts){
+  requestAnimationFrame(coreFrame);
+  const dt=Math.min(100, ts-(lastFrame||ts)); lastFrame=ts;
+  core.load += (loadTarget-core.load)*Math.min(1,dt*0.004);      // smooth towards the latest load (~250 ms)
+  const ctx=core.ctx, W=core.W, H=core.H; if(!W) return;
+  const still = CFG.motion==='off';
+  const t = still ? 0 : ts;
+  ctx.clearRect(0,0,W,H);
+  const cx=W/2, cy=H/2, R0=Math.min(W,H)*0.32;
+  const load = CFG.motion==='on' ? 0.4+0.3*Math.sin(ts*0.0006) : core.load;
+  if(!still) core.rotY += (0.0016 + load*0.011)*(dt/16.7);
+  const rotX = still ? 0.35 : Math.sin(t*0.00025)*0.35;
+  const col=thermal(load);
+  const pulse=0.55+0.45*Math.sin(t*0.002);
+  const glowR=R0*(1.25+0.12*pulse*load);
+  const g=ctx.createRadialGradient(cx,cy,0,cx,cy,glowR);
+  g.addColorStop(0, rgba(col,0.30+0.25*load*pulse)); g.addColorStop(0.5, rgba(col,0.10)); g.addColorStop(1,'rgba(0,0,0,0)');
+  ctx.fillStyle=g; ctx.beginPath(); ctx.arc(cx,cy,glowR,0,7); ctx.fill();
+  // HUD rings: outer ring + load arc
+  ctx.strokeStyle='rgba(96,150,205,.22)'; ctx.lineWidth=1;
+  ctx.beginPath(); ctx.arc(cx,cy,R0*1.5,0,7); ctx.stroke();
+  ctx.strokeStyle=rgba(col,.85); ctx.lineWidth=2.5; ctx.lineCap='round';
+  ctx.beginPath(); ctx.arc(cx,cy,R0*1.5,-Math.PI/2,-Math.PI/2+Math.PI*2*Math.max(0.002,load)); ctx.stroke();
+  for(let i=0;i<60;i++){ const a=i/60*Math.PI*2, r1=R0*1.58, r2=R0*(i%5?1.62:1.68);
+    ctx.strokeStyle=i/60<=load?rgba(col,.7):'rgba(96,150,205,.18)'; ctx.lineWidth=1;
+    ctx.beginPath(); ctx.moveTo(cx+Math.cos(a-Math.PI/2)*r1,cy+Math.sin(a-Math.PI/2)*r1); ctx.lineTo(cx+Math.cos(a-Math.PI/2)*r2,cy+Math.sin(a-Math.PI/2)*r2); ctx.stroke(); }
+  const cY=Math.cos(core.rotY),sY=Math.sin(core.rotY),cX=Math.cos(rotX),sX=Math.sin(rotX);
+  const proj=v=>{ const x=v[0],y=v[1],z=v[2];
+    const x1=x*cY+z*sY, z1=-x*sY+z*cY, y1=y*cX-z1*sX, z2=y*sX+z1*cX, f=2.4/(2.4-z2);
+    return [cx+x1*R0*f, cy+y1*R0*f, z2]; };
+  const P=core.geo.verts.map(proj);
+  for(const [a,b] of core.geo.edges){
+    const pa=P[a], pb=P[b], depth=((pa[2]+pb[2])/2+1)/2;
+    ctx.strokeStyle=rgba(col,0.10+0.72*depth); ctx.lineWidth=0.6+0.7*depth;
+    ctx.beginPath(); ctx.moveTo(pa[0],pa[1]); ctx.lineTo(pb[0],pb[1]); ctx.stroke();
+  }
+  for(const p of P){ const depth=(p[2]+1)/2; ctx.fillStyle=rgba(col,0.25+0.7*depth); ctx.beginPath(); ctx.arc(p[0],p[1],1.1+0.9*depth,0,7); ctx.fill(); }
+  for(const p of core.parts){
+    const a=t*0.0004+p.ph, x=p.x*Math.cos(a)-p.z*Math.sin(a), z=p.x*Math.sin(a)+p.z*Math.cos(a);
+    const pr=proj([x,p.y,z]), depth=(pr[2]+1)/2;
+    ctx.fillStyle=rgba(col,0.12+0.5*depth); ctx.beginPath(); ctx.arc(pr[0],pr[1],1.0+0.8*depth,0,7); ctx.fill();
+  }
+}
+
+/* ============================ SETTINGS ============================ */
+function wireSettings(){
+  const pop=byId('pop'), gear=byId('gear');
+  const open=o=>{ pop.classList.toggle('open',o); gear.setAttribute('aria-expanded',String(o));
+    if(o){ byId('set-base').value=CFG.base; byId('set-interval').value=String(CFG.pollMs); byId('set-motion').value=CFG.motion; } };
+  gear.addEventListener('click',e=>{ e.stopPropagation(); open(!pop.classList.contains('open')); });
+  document.addEventListener('click',e=>{ if(pop.classList.contains('open') && !pop.contains(e.target)) open(false); });
+  document.addEventListener('keydown',e=>{ if(e.key==='Escape') open(false); });
+  if(!byId('set-interval').querySelector(`option[value="${CFG.pollMs}"]`)){
+    const o=document.createElement('option'); o.value=String(CFG.pollMs); o.textContent=(CFG.pollMs/1000)+' s'; byId('set-interval').appendChild(o); }
+  byId('set-save').addEventListener('click',()=>{
+    const nb=cleanBase(byId('set-base').value);
+    const baseChanged=nb!==CFG.base;
+    CFG.base=nb; CFG.pollMs=clampInt(byId('set-interval').value,500,10000,2000); CFG.motion=byId('set-motion').value;
+    open(false);
+    if(baseChanged){ R={}; boot(); }
+    else if(!paused){ startPolling(); }
+  });
+  byId('set-pause').addEventListener('click',e=>{
+    paused=!paused; e.target.textContent=paused?'Resume':'Pause'; e.target.classList.toggle('primary',paused);
+    if(paused){ stopPolling(); setStatus('paused'); } else { setStatus('connecting'); startPolling(); }
+  });
+  byId('set-resetfilter').addEventListener('click',async()=>{
+    if(!confirm('Reset the sensor filter on the server?\nAll hidden / disabled readings become visible again for every client.')) return;
+    try{ await post('/api/sensors/filter/reset'); setBanner('Sensor filter reset: the original sensor tree is active.',true); setTimeout(()=>setBanner(null),3000); boot(); }
+    catch(e){ setBanner('Filter reset failed: '+e.message); }
+  });
+}
+window.addEventListener('unhandledrejection', e=>{ const m=(e.reason&&(e.reason.message||e.reason.code))||String(e.reason); setBanner('Unexpected error: '+m); });
+window.addEventListener('error', e=>{ if(e.error instanceof Error) setBanner('Unexpected error: '+e.error.message); });
+
+/* ============================ BOOT ============================ */
+let rz=0;
+window.addEventListener('resize', ()=>{ cancelAnimationFrame(rz); rz=requestAnimationFrame(()=>{ sizeCore(); drawAllSparks(); }); });
+defSpark('sp-cpu',[['cpu','#2fe0e6']],{max:100});
+defSpark('sp-gpu',[['gpu','#2fe0e6']],{max:100});
+defSpark('sp-gpumem',[['gpumem','#ff5ce1']],{max:100});
+defSpark('sp-mem',[['mem','#ffb454']],{max:100});
+defSpark('sp-fps',[['fps','#3ddc97']],{minMax:30});
+buildHealth();
+initCore();
+wireSettings();
+boot();
+</script>
+</body>
+</html>
